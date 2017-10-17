@@ -1,0 +1,23 @@
+<div>
+	<div id="pdfExport" class='panel'>
+		<div class="row"> 
+			<div class="col-xs-9">
+				<h1>{{title}} Reference #{{invoice.reference_number}}</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<input-box type='text' title='{{"Payment Terms"|translate}}' ng-model='user_input.payment_terms'></input-box>
+			</div>
+		</div>
+		<div class='panel-section'>
+			
+	
+		</div>
+		
+	</div>
+	
+	<button class='_secondary' ng-click="exportPdf('a4')">Export A4</button>
+	<button class='_secondary' ng-click="exportPdf('a5')">Export A5</button>
+	<button class='_secondary' ng-click="backToInvoice()">Back to Invoice</button>
+</div>

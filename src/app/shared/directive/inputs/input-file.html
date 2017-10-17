@@ -1,0 +1,11 @@
+<div class='input-box _file'>
+  <p class='input-box__title'>{{file.name}}</p>
+  <input id='upload-image' class='input-box__file' type='file' input-file-read>
+  <label for='upload-image' ng-hide='file'>
+    <div class='_add'>
+      <div class='_add__plus'><span>+</span></div>
+      {{'Upload'|translate}}
+    </div>
+  </label>
+  <button class="_remove" ng-click='removeFile()' ng-show='file'>{{'Remove File'|translate}}</button>
+</div>

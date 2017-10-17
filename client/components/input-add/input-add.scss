@@ -1,0 +1,10 @@
+.input-add{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  .input-add__btn {
+    padding-right: 10px;
+  }
+}

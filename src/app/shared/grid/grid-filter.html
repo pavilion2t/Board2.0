@@ -1,0 +1,110 @@
+<div class='grid__filters'>
+  <div class='filters__main' ng-show='isShowingFilters'>
+    <div class='main__list'>
+      <div class='list__filter' ng-repeat='(i, filter) in newFilters'>
+        <div class='filter__id'><span>{{i + 1}}</span></div>
+        <select
+          ng-model='filter.column'
+          ng-change='setCondition(filter)'
+          ng-options='column as translate(column.name) for column in filterColumns'>
+        </select>
+
+        <select ng-if='filter.column && !filter.column.types' ng-model='filter.condition'>
+          <option disabled selected value=''>{{'Select Type'|translate}}</option>
+          <option value='contain'>{{'Contains'|translate}}</option>
+          <option value='equal'>{{'Is'|translate}}</option>
+          <option value='between'>{{'Is Between'|translate}}</option>
+        </select>
+        <select
+          ng-if='filter.column && filter.column.types'
+          ng-model='filter.condition'
+          ng-options='type as translate(filterText[type]) for type in filter.column.types'>
+          <option disabled selected value=''>{{'Select Type'|translate}}</option>
+          <!-- <option ng-if='filter.column.types.length > 1' disabled selected value=''>Select Type</option> -->
+        </select>
+
+        <select
+          ng-show='filter.column && filter.column.selectOptions'
+          ng-model='filter.optionValue'
+          ng-change='changeOption(filter)'
+          ng-options='value as value.label for value in filter.column.selectOptions'>
+          <!-- <option ng-if='filter.column.types.length > 1' disabled selected value=''>Select Type</option> -->
+        </select>
+
+		<span ng-if='!filter.column.selectOptions && !filter.column.customFilter'>
+			<span ng-if='!filter.column.isDate'>
+		        <span ng-if='(filter.condition === "equal" || filter.condition === "contain")'>
+		          <input ng-model='filter.value' type='text' placeholder="{{'Target' |translate}}">
+		        </span>
+		        <span ng-if='filter.condition === "options"'>
+		          <select ng-model='filter.value' ng-options='value as key for (key, value) in filter.column.options'></select>
+		        </span>
+		        <span ng-if='filter.condition === "between"'>
+		          <input ng-model='filter.from' type='text' placeholder="{{'From' |translate}}">
+		          <div class='filter__and'>{{'and' |translate}}</div>
+		          <input ng-model='filter.to' type='text' placeholder="{{'To' |translate}}">
+		        </span>
+		    </span>
+		    <span ng-if='filter.column.isDate'>
+		        <span ng-if='filter.condition === "equal"'>
+		          <input type='text' ng-model='filter.value' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder="{{'Date' |translate}}">
+		        </span>
+		        <span ng-if='filter.condition === "between"'>
+		          <input type='text' ng-model='filter.from' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder="{{'Starting Date' |translate}}">
+		          <div class='filter__and'>{{'To' |translate}}</div>
+		          <input type='text' ng-model='filter.to' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder="{{'Ending Date' |translate}}">
+		        </span>
+		    </span>
+        </span>
+		<span ng-if='filter.column.customFilter'>
+			<span ng-if='filter.column.customFilter === "add_customer"'>
+				<add-customer customer-name="filter.optionValue" customer-id="filter.value"></add-customer>
+			</span>
+		</span>
+		
+        <button class='_remove _remove-mini filter__remove' ng-click='removeFilter(i)'></button>
+      </div>
+      <button class='_add' ng-click='addFilter()'>{{'Add Filter'|translate}}</button>
+    </div>
+  </div>
+  <div class='filters__options' ng-class='{_active: isShowingFilters}'>
+    <button class='options__toggle _main' ng-click='toggleFilters()' ng-class='{_disabled: filterNotReady}' ng-disabled='filterNotReady'>
+      {{isShowingFilters ? 'Hide' : 'Search'|translate}}<i class='fa' ng-class='{"fa-angle-down": !isShowingFilters, "fa-angle-up": isShowingFilters}'></i>
+    </button>
+    <span class='_right' ng-show='isShowingFilters'>
+      <button class='_saved-filters' disabled ng-hide='getNumberOfFilters()'>
+        {{'No Saved Searches'|translate}}
+      </button>
+      <button class='_saved-filters' ng-click='isShowingSavedFilters = !isShowingSavedFilters' ng-show='getNumberOfFilters()'>
+        {{'Saved Searches'|translate}}<i class='fa' ng-class='{"fa-angle-down": !isShowingSavedFilters, "fa-angle-up": isShowingFilters}'></i>
+      </button>
+      <button class='_save-filters' ng-click='isSavingFilters = true'>{{'Save'|translate}}</button>
+      <button class='_secondary' ng-click='applyFilters()'>{{'Search'|translate}}</button>
+    </span>
+
+    <div class="options__saved-filters" ng-show='isShowingSavedFilters' ng-mouseleave='isShowingSavedFilters = false'>
+      <div class="clearfix" ng-repeat='(name, filterSet) in savedFilters[currentStateName]'>
+        <button class='_remove _remove-mini remove-filters' ng-click='removeSavedFilters(name)'></button>
+        <button class="actions-button" ng-click='applySavedFilters(filterSet)'>{{name}}</button>
+      </div>
+    </div>
+
+  </div>
+  <div class='filters__saving' ng-show='isSavingFilters'>
+    <div class='saving__modal _modal'>
+      <div class='modal__header'>
+        <h5>{{'Save Filter'|translate}}</h5>
+      </div>
+      <div class='modal__content'>
+        <div class='_message' ng-if='saveFiltersErrorMessage'>{{saveFiltersErrorMessage}}</div>
+        <input-box title='Filter Set Name' ng-model='savedFilterSetName' type='text'></input-box>
+      </div>
+      <div class='modal__bottom'>
+        <button class='_secondary' ng-click='isSavingFilters = false'>{{'Cancel'|translate}}</button>
+        <button class='_primary' ng-click='saveFilters()'>{{'Save'|translate}}</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

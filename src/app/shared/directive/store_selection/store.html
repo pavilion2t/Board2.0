@@ -1,0 +1,51 @@
+<div class='add-listings' style="height:600px">
+  <div class='ngdialog-header add-listings-header' style="position:relative;height:50px">
+    <form >
+      <h1>{{title}}</h1>
+    </form>
+  </div>
+
+  <div class="editable-grid-wrapper" style="position:absolute;width:100%;padding:15px;height:calc(100% - 160px)">
+    <h1 ng-show="searching">Searching...</h1>
+    <table class="editable-grid" ng-class="{_edit: editMode}" ng-show="!searching">
+      <thead class="editable-grid__head">
+      <tr>
+        <td class="editable-grid__cell editable-grid__head-cell">ID</td>
+        <td class="editable-grid__cell editable-grid__head-cell">Title</td>
+        <td class="editable-grid__cell editable-grid__head-cell">
+          <input type="image" ng-class="{'toggle-on': selectedAll, 'toggle-off': !selectedAll}" ng-click="selectAll()" style="width:20px;height:20px;margin-top: 2px;" src="{{selectedAll?'assets/images/icons/toggle-on@2x.png':'assets/images/icons/toggle-off@2x.png'}}" class="toggle-on">
+          <span style="position: absolute;padding-left: 5px;">Select</span></td>
+      </tr>
+      </thead>
+      <tbody class="editable-grid__body" style="background: #EAEAEA;">
+      <tr ng-repeat="store in stores">
+        <td>
+          <span  ng-bind="store.id"></span>
+        </td>
+        <td>
+          <span ng-bind="store.name"></span>
+          <span></span>
+        </td>
+
+
+        <td>
+
+          <input type="image" ng-class="{'toggle-on': store._selected, 'toggle-off': !store._selected}" ng-click="selectStore(store)" style="width:20px;height:20px;margin-left: 10px;" src="{{store._selected?'assets/images/icons/toggle-on@2x.png':'assets/images/icons/toggle-off@2x.png'}}" class="toggle-on">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="xgrid" style="position:absolute;width:100%;bottom:0px;padding: 15px;height:60px;margin-left: 0px;    background-color: #eee;">
+
+    <div class="xgrid-cell -default-75">
+
+
+    </div>
+    <div class="xgrid-cell -default-25">
+      <button class="_full _primary" ng-click='confirm()'>Continue</button>
+    </div>
+  </div>
+
+</div>

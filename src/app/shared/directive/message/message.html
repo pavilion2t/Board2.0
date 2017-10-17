@@ -1,0 +1,6 @@
+<div>
+  <div class='message' ng-repeat="message in messages" ng-class="cookClass(message.type)">
+    {{message.text}}
+    <span class="message-close" ng-click="remove(message)">&times;</span>
+  </div>
+</div>

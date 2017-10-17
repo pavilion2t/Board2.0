@@ -1,0 +1,39 @@
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+.importer_preview {
+  margin-top: 20px;
+  overflow: auto;
+}
+
+.importer_preview-table {
+ tbody {
+   font-size: 0.8em;
+   tr {
+     border: #ddd solid 1px;
+     td {
+       font-size: .8em;
+       border: none;
+       line-height: .8em;
+       color: #000;
+     }
+   }
+ }
+}
+
+.importer_result{
+  margin-top: 20px;
+}

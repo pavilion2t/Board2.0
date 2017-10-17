@@ -1,0 +1,19 @@
+<div class='grid'>
+  <div class='grid__department-notice _message' ng-hide='isLoadingList'>{{'Drag to arrange.'|translate}}<span ng-if='hasChanged'> {{'You currently have unsaved changes.'|translate}}</span></div>
+  <div ui-sortable='sortableOptions' class='grid__list _departments department__children' ng-model='listedDepartments'>
+    <div ng-repeat='department in listedDepartments'>
+      <listed-department department='department' departments='departments' listed-departments='listedDepartments' diffs='_deptDiffs' sortable-options='sortableOptions' expanding='isExpandingLists' deleted-departments='_deletedDepts' save-changes="saveChanges()"></listed-department>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2>{{title|translate}}</h2>
+
+    <div class='content-bottom-actions'>
+      <button ng-if="editPermission" ng-hide='isHidingNewButton' class="_new" ng-click='createNewDepartment()'>{{'New Department'|translate}}</button>
+      <button ng-if="editPermission" ng-show='hasChanged' class='_secondary' ng-click='discardChanges()'>{{'Discard Changes'|translate}}</button>
+      <button ng-if="editPermission" ng-show='hasChanged' class='_primary' ng-click='saveChanges()'>{{'Save Changes'|translate}}</button>
+
+    </div>
+  </div>
+</div>

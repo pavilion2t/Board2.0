@@ -1,0 +1,148 @@
+
+<div>
+	<h1 translate>Receive Order</h1>
+
+	<div class="card" ng-repeat="receive_order in receive_orders">
+		<h3 class="_left _margin-0">
+			<span translate>Receive Order: &nbsp;</span><span
+				ng-bind="receive_order.id"></span> &nbsp; - &nbsp;<i class="status-icon {{receive_order.state}}"></i><span ng-bind="receive_order.state|titleCase"><i class="status-icon {{receive_order.state}}"></i></span>
+
+
+
+		</h3>
+		<div class="_right">
+
+			<div ng-if="!receive_order._show">
+				<button ng-if="receive_order.state === null || receive_order.state === 'pending' || receive_order.state === 'created'" class="_secondary" ng-click="receive_order._show=true;receive_order._edit=true">Edit</button>
+				<button ng-if="
+				receive_order.state === 'received' ||
+				receive_order.state === 'partially_received' ||
+				receive_order.state === 'canceled'" class="_secondary" ng-click="receive_order._show=true;">View</button>
+			</div>
+			<div ng-if="receive_order._show">
+				<button class="_secondary" ng-click="receive_order._show=false;receive_order._edit=false">Hide</button>
+			</div>
+		</div>
+		<div class="_clear"></div>
+		<div ng-show="receive_order._show">
+
+			<div class="xgrid">
+				<div class="xgrid-cell -default-50">
+					<label>{{'Expected Receive Date'|translate}}</label>
+                    <input ng-if="receive_order._edit" class='input -full' type='text'
+						ng-model='receive_order.expected_receive_date'
+						ui-date='dateOptions' ui-date-format='yy-mm-dd'>
+					<span ng-if="!receive_order._edit" ng-bind="receive_order.expected_receive_date"></span>
+				</div>
+                <div class="xgrid-cell -default-50">
+                    <label>{{'Received Date'|translate}}</label>
+                    <input ng-if="receive_order._edit" class='input -full' type='text'
+                           ng-model='receive_order.receive_date'
+                           ui-date='dateOptions' ui-date-format='yy-mm-dd'>
+                    <span ng-if="!receive_order._edit" ng-bind="receive_order.receive_date"></span>
+                </div>
+			</div>
+
+			<div class="xgrid">
+				<div class="xgrid-cell -default-50">
+					<label>{{'Supplier'|translate}}</label>
+
+					<span>{{cookSupplier(order.supplier_id).name}}</span>
+				</div>
+                <div class="xgrid-cell -default-50">
+                    <label>{{'PO Number'|translate}}</label>
+                    <span ng-bind="order.number"></span>
+                </div>
+			</div>
+
+			<div class="xgrid">
+				<div class="xgrid-cell -default-50">
+					<label>{{'Created At'|translate}}</label>
+
+					<span ng-bind="receive_order.created_at|moment"></span>
+				</div>
+                <div class="xgrid-cell -default-50">
+                    <label>{{'Created By'|translate}}</label>
+                    <span ng-bind="receive_order.created_by"></span>
+                </div>
+			</div>
+
+            <hr>
+
+            <table class="editable-grid _edit receive_order_table" ng-class="{_edit: editMode}">
+                <thead class="editable-grid__head">
+                <tr>
+
+                    <th class="editable-grid__cell editable-grid__head-cell" style="width: 40%;" translate>Name</th>
+                    <th class="editable-grid__cell editable-grid__head-cell" style="width: 8%;" translate>Ordered</th>
+                    <th class="editable-grid__cell editable-grid__head-cell" style="width: 8%;" translate>Received</th>
+                    <th class="editable-grid__cell editable-grid__head-cell" style="width: 8%;" ng-if="receive_order._edit" translate>Fulfilling</th>
+                    <th class="editable-grid__cell editable-grid__head-cell" style="width: 8%;" translate>In Transit</th>
+                    <th class="editable-grid__cell editable-grid__head-cell" style="width: 28%;" translate>Fulfillment note</th>
+
+                    <th class="editable-grid__cell editable-grid__head-cell -icon-cell">&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody class="editable-grid__body">
+
+                <tr ng-repeat="receive_order_item in receive_order.receive_order_items">
+                    <td class="editable-grid__cell">
+                        <span ng-bind="receive_order_item.receive_order_item.description"></span>
+                    </td>
+                    <td class="editable-grid__cell">
+                        <input class="receive_order_field" ng-if="receive_order._edit" type="number" ng-model="receive_order_item.receive_order_item.quantity" ng-change="checkFulfillAmount(receive_order)"></span>
+                    	<span ng-if="!receive_order._edit" ng-bind="receive_order_item.receive_order_item.quantity"></span>
+                    </td>
+                    <td class="editable-grid__cell">
+                    	<span ng-bind="receive_order_item.receive_order_item.qty_received"></span>
+                    </td>
+                    <td class="editable-grid__cell" ng-if="receive_order._edit">
+                        <input class="receive_order_field" ng-if="receive_order._edit" type="number" ng-model="receive_order_item.receive_order_item.fulfilling" ng-change="checkFulfillAmount(receive_order)"></span>
+                    </td>
+                    <td class="editable-grid__cell">
+                        <span>{{receive_order_item.receive_order_item.inTransit}}</span>
+                    </td>
+                    <td class="editable-grid__cell">
+                        <input ng-if="receive_order._edit" type="text" ng-model="receive_order_item.receive_order_item.fulfilment_note"></span>
+                    	<span ng-if="!receive_order._edit" ng-bind="receive_order_item.receive_order_item.fulfilment_note"></span>
+                    </td>
+                </tr>
+                <tr ng-if="receive_order.receive_order_items.length > 0">
+                    <td class="editable-grid__cell">
+
+                    </td>
+                    <td class="editable-grid__cell">
+                        {{receive_order._order_sum}}
+                    </td>
+                    <td class="editable-grid__cell">
+                        {{receive_order._received_sum}}
+                    </td>
+                    <td class="editable-grid__cell" ng-if="receive_order._edit">
+        				<button ng-if="receive_order._edit" class="_primary _right" ng-click="fulfillAll(receive_order)">Fulfill All</button>
+                    </td>
+                    <td class="editable-grid__cell">
+                        {{receive_order._order_sum - receive_order._received_sum}}
+                    </td>
+                    <td class="editable-grid__cell">
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+			<hr>
+			<div class="_clearfix">
+				<div class="_left">
+				</div>
+				<p ng-if="receive_order._edit">NOTE: If the "Fulfilled" column of all items are non-zero, the receive order will be fulfilled after submission.</p>
+				<p ng-if="receive_order._edit">NOTE: Any fulfilled or cancelled receive orders are finalized.</p>
+				<div class="_right" ng-if="receive_order._edit">
+					<button class="_secondary" ng-click="cancelReceiveOrder(receive_order)">Cancel</button>
+					<button class="_primary" ng-click="saveReceiveOrder(receive_order)">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<button class='_secondary' ng-click='createReceiveOrder()'>{{'Create Receive Order'|translate}}</button>
+</div>

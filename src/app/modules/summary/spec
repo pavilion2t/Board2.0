@@ -1,0 +1,9 @@
+describe('Summary Module', function() {
+  it('should view summary', function() {
+    browser.get('/#/1651/summary');
+    browser.ignoreSynchronization = true;
+    browser.manage().timeouts().implicitlyWait(1000);
+
+    expect(browser.getTitle()).toEqual('Bindo Dashboard - Summary');
+  });
+});

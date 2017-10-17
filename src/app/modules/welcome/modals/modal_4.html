@@ -1,0 +1,63 @@
+<div id='modal-4' class="modal-content">
+  <div class="modal-header">
+    <h3 class="modal-title" id="myModalLabel" translate>Create Your Store</h3>
+  </div>
+  <div class="modal-body">
+    <div class='modal-subheader'>
+      <div class='modal-done-steps'>
+        <div class='step-box' ng-repeat='step in createRange(1, currentModal)' ng-class='"step-box" + step'>
+          <div class='step' ng-class='{end: step === currentModal - 1}'>
+            <img ng-hide='step === currentModal - 1' src='assets/images/steps-tick.png'>
+            <p ng-show='step === currentModal - 1'>{{step}}</p>
+          </div>
+        </div>
+        <h2 translate>Credit Card Processing</h2>
+      </div>
+      <div class='modal-remaining-steps'>
+        <span class='step' ng-repeat='step in createRange(currentModal, 6)'>
+          <p>{{step}}</p>
+        </span>
+      </div>
+    </div>
+    <div class='modal-body-content'>
+      <form class='modal-form up'>
+        <div class='input-medium left'>
+          <p translate>Current Processor</p>
+          <select name='survey_card_processing' ng-model='answers.cardAcceptance' ng-class='{attention: attention && !answers.cardAcceptance}'>
+            <option value='' disabled selected>{{'Select an Answer'|translate}}</option>
+            <option ng-repeat='(i, option) in cardAcceptances' ng-value='option'>{{option}}</option>
+          </select>
+        </div>
+        <div class='input-medium right'>
+          <p translate>Processing Needed by</p>
+          <select name='survey_processing_needed_by' ng-model='answers.startBindo' ng-class='{attention: attention && !answers.startBindo}'>
+            <option value='' disabled selected>{{'Select an Answer'|translate}}</option>
+            <option ng-repeat='(i, option) in startBindos' ng-value='option'>{{option}}</option>
+          </select>
+        </div>
+        <div class='input-medium left'>
+          <p translate>Average Sales Amount</p>
+          <select name='survey_avg_sales_amount' ng-model='answers.averageSalesAmount' ng-class='{attention: attention && !answers.averageSalesAmount}'>
+            <option value='' disabled selected>{{'Select an Answer'|translate}}</option>
+            <option ng-repeat='(i, option) in averageSalesAmounts' ng-value='option'>{{option}}</option>
+          </select>
+        </div>
+        <div class='input-medium right'>
+          <p translate>Monthly Revenue</p>
+          <select name='survey_monthly_revenue' ng-model='answers.monthlyRevenue' ng-class='{attention: attention && !answers.monthlyRevenue}'>
+            <option value='' disabled selected>{{'Select an Answer'|translate}}</option>
+            <option ng-repeat='(i, option) in monthlyRevenues' ng-value='option'>{{option}}</option>
+          </select>
+        </div>
+      </form>
+      <div class='modal-tips'>
+        <div class='question-mark'><p>?</p></div>
+        <div class='tips'><p translate>Bindo supports 99% of merchant processors. Help us connect you to the right processor.</p></div>
+      </div> 
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="_secondary" ng-click='back()'>{{'Go Back'|translate}}</button>
+    <button type="button" class="_primary" ng-click='surveyContinue()'>{{'Continue'|translate}}</button>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+action,bpid,listing_name,description,qty_on_shelf,qty_in_stockroom,brand,department,upc_ean,secondary_barcode,standard_price,tax,serial_numbers,in_store_only,discountinued,supplier_name,supplier_product_id,cost,reorder_trigger_point,reorder_amount,is_parent,parent_name,matrix_key_1,matrix_value_1,matrix_key_2,matrix_value_2,matrix_key_3,matrix_value_3,image_names,category
+add,(empty for add mode),Must,Optional,Must,Must,Optional,Optional,Optional,Optional,Must,"Optional
+Tax must be created before importing",Optional,default n,default n,"Must create supplier first
+if this cell is empty, O-R should not exist",Optional,Optional,Optional,Optional,"Mandatory if you have matrix
+Y or N","Optional
+If this cell exist, must fill in at least T to U",,,,,,,Optional,
+,,Macbook 15 White,,3,10,Apple,Electronic=>Mac=>macbook,,,5.53,GST|NYT,123-456-789|987-654-321|1357-2468-10|,,,,,,,,N,Macbook,size,15,color,White,,,aaa.jpg|bbb.jpg,

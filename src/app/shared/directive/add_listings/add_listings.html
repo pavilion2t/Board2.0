@@ -1,0 +1,68 @@
+<div class='add-listings'>
+    <div class='ngdialog-header add-listings-header'>
+      <h3 class="pull-left">{{'Select Inventory'|translate}}</h3>
+      <form class='pull-right' >
+        <select ng-model="filter" ng-change="keyword='';keywords=''" ng-options="filter as filter.name for filter in filters">
+        </select>
+        <input class='' type='text' placeholder='Search in Inventory...' ng-model='keyword' ng-change="test()">
+        <input ng-show="filter.keys===2" class='' type='text' placeholder='Search in Inventory...' ng-model='keywordb' ng-change="test()">
+        <button class="_primary" ng-click='searchListings(keyword,keywordb)'>Search</button>
+
+        <button ng-if="searched" class="_secondary" ng-click="previous()">Previous</button>
+        <button ng-if="searched" class="_secondary" ng-click="next()">Next</button>
+        <span ng-if="searched">Page: {{page}}/{{totalPages}}</span>
+      </form>
+    </div>
+    <div class='_message' ng-if='addErrorMessage'>{{addErrorMessage}}</div>
+    <div class="ngdialog-body">
+      <table class="table listing-table" ng-hide="searching">
+        <thead>
+          <tr>
+            <th class="_item" colspan="2">{{'Item'|translate}}</th>
+            <th>{{'Price'|translate}}</th>
+            <th ng-if="!singleSelect" class="_qty-current">{{'Current QTY'|translate}}</th>
+            <th ng-if="!singleSelect" class="_qty-requested">{{'QTY requested'|translate}}</th>
+            <th ng-if="singleSelect">{{'Select'|translate}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat='(i, listing) in selectableListings'
+              ng-class='{_selected: selectedItemIndex === i, _fade: takenIds.indexOf(listing.id) !== -1 }'>
+            <td class="figure">
+              <img placeholder-src="inventory" class='listing-table__figure' ng-src='{{listing.image_url}}'>
+
+            </td>
+            <td class='_item'>
+              <h4>{{listing.name}}</h4>
+              <p ng-show='listing.upc'>Code: {{listing.upc}}</p>
+            </td>
+            <td>
+              <h4>{{listing.price|myCurrency}}</h4>
+            </td>
+            <td ng-if="!singleSelect" class='_qty-current'>
+              <p>{{listing.track_quantity ? listing.quantity : 'Unlimited'}}</p>
+            </td>
+            <td ng-if="!singleSelect" class='_qty-requested'>
+              <input min='1' class='listing-table__qty-input' type='number' ng-model='listing.qtyRequested'>
+            </td>
+            <td ng-if="singleSelect">
+              <button ng-if='listing.qtyRequested===0 || !listing.qtyRequested' class='_primary'  ng-click='select(listing)'>
+                <span >{{'Select'|translate}}</span>
+              </button>
+              <button ng-if='listing.qtyRequested===1' class='_alert'  ng-click='select(listing)'>
+                <span >{{'Un-select'|translate}}</span>
+              </button>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="_margin-2em" ng-show="searching">Searching inventory...</p>
+      <p class="_margin-2em" ng-show="addErrorMessage">{{addErrorMessage}}</p>
+    </div>
+    <div class='ngdialog-footer _align-right'>
+      <button class='_secondary' ng-click='closeThisDialog(null)'>{{'Cancel'|translate}}</button>
+      <button class='_primary' ng-click='add(newListingsToAdd)'>{{'Save'|translate}}</button>
+    </div>
+
+</div>

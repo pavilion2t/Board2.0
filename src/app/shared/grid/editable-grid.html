@@ -1,0 +1,32 @@
+<div class="editable-grid-wrapper">
+  <table class='editable-grid' ng-class='{_edit: editMode}'>
+    <thead class='editable-grid__head'>
+      <tr>
+        <th class='editable-grid__cell editable-grid__head-cell' ng-repeat='column in columns' ng-style='{width: column.ratio}'>{{column.name|translate}}</th>
+        <th class='editable-grid__cell editable-grid__head-cell -icon-cell'>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody class='editable-grid__body'>
+      <tr ng-repeat-start='(i, item) in data' ng-hide="item.deleted">
+        <td class='editable-grid__cell' ng-repeat='column in columns' ng-class="column.cssClass">
+          <span ng-if='column.bindHtml' ng-bind-html='toTrustedHtml(column.formatter(item[column.field], item))'></span>
+          <span ng-if='!column.bindHtml' ng-hide='editMode && column.editable'>{{column.formatter ? column.formatter(item[column.field], item) : item[column.field]}}</span>
+          <input ng-pattern='column.pattern ? column.pattern : defaultPattern'
+          type='{{column.type ? column.type : "text"}}' ng-if='editMode && column.editable' class='editable-grid__cell-input' ng-model='item[column.field]'>
+        </td>
+        <td class='editable-grid__cell'>
+          <button class='_remove _remove-mini' ng-show='editMode && !hideRemove' ng-click='remove(i, item)'></button>
+          <span ng-if="item.deleted">Remove</span>
+        <td>
+      </tr>
+      <tr ng-repeat='(j, group) in item[groupingField]'>
+        <td class='editable-grid__cell' ng-repeat='column in columnsForExtraData' ng-class="column.cssClass">
+          <span ng-if='column.bindHtml' ng-bind-html='toTrustedHtml(column.formatter(group[column.field], group))'></span>
+          <span ng-if='!column.bindHtml'>{{column.formatter ? column.formatter(group[column.field], group) : group[column.field]}}</span>
+        </td>
+        <td class='editable-grid__cell'>&nbsp;<td>
+      </tr>
+    <tr ng-repeat-end ></tr>
+    </tbody>
+  </table>
+</div>

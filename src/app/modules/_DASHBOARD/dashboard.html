@@ -1,0 +1,15 @@
+<message class="content__message"></message>
+<header>
+    <header-store-selector></header-store-selector>
+    <header-profile></header-profile>
+</header>
+<menu class='content__menu'></menu>
+<div class="content__view _edit" ng-class="{'extended':$root.extendedView}" ui-view ng-if="!blocked"></div>
+<div class="content__view" ng-if="blocked">
+  <div class="card"><h1>{{blockedMessage}}</h1></div>
+</div>
+<div class='loading-spinner-backdrop' ng-show="$root.requestCounter">
+  <div class='loading-spinner'>
+    <i class='fa fa-circle-o-notch fa-spin'></i>{{$root.requestMessage || 'Working...' | translate}}
+  </div>
+</div>

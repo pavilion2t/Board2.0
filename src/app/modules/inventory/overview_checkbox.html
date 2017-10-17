@@ -1,0 +1,10 @@
+<div>
+  <h2 translate>Extended Features</h2>
+  <p ng-if='!isMultiStore'><input-checkbox label='checkbox1' ng-model='listing.in_store_only' ng-disabled='!editMode'></input-checkbox> {{'In Store Only'|translate}}</p>
+  <p ng-if='!isMultiStore'><input-checkbox label='checkbox2' ng-model='listing.discontinued' ng-disabled='!editMode'></input-checkbox> {{'Discontinued'|translate}}</p>
+  <p ng-if='!isMultiStore'><input-checkbox label='checkbox3' ng-model='listing.exempt_loyalty' ng-disabled='!editMode'></input-checkbox> {{'Exempt item from loyalty program'|translate}}</p>
+  <p ng-if='!isMultiStore'><input-checkbox label='checkbox4' ng-model='listing.exempt_discount' ng-disabled='!editMode'></input-checkbox> {{'Exclude from all discount'|translate}}</p>
+  <p ng-if='!isMultiStore'><input-checkbox label='checkbox5' ng-model='listing.storefront_allow_negative_quantity' ng-disabled='!editMode'></input-checkbox> {{'Store front allow negative quantity'|translate}}</p>
+  <p ng-if='!isMultiStore'><input-checkbox label='checkbox6' ng-model='listing.sold_out' ng-disabled='!editMode'></input-checkbox> {{'Sold out'|translate}}</p>
+  <p ng-if='!isMultiStore'><input-checkbox label='checkbox7' ng-model='listing.expiration_date_enabled' ng-disabled='!editMode'></input-checkbox> {{'Enable expiration date'|translate}}</p>
+</div>

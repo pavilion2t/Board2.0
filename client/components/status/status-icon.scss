@@ -1,0 +1,53 @@
+.status-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 90px;
+    display: inline-block;
+    margin-right: 10px;
+    background: 0 0;
+}
+.status-icon.canceled,
+.status-icon.cancelled,
+.status-icon.refunded,
+.status-icon.voided {
+    background-color: #aaa;
+}
+.status-icon.fulfilled,
+.status-icon.paid,
+.status-icon.received,
+.status-icon.sent {
+    background-color: #8cd678;
+}
+.status-icon.active,
+.status-icon.created,
+.status-icon.pending,
+.status-icon.pending_pick_up,
+.status-icon.unfulfilled {
+    background-color: #ffc91e;
+}
+.status-icon.draft {
+    background-color: #49bbeb;
+}
+.status-icon.overdued {
+    background-color: #ff5d5d;
+}
+.status-icon.expired {
+    background-color: #bb80ef;
+}
+.status-icon.partial_paid,
+.status-icon.pending_confirmation,
+.status-icon.submitted {
+    background-color: #ffb427;
+}
+.status-icon.unpaid {
+    background-color: #ff9530;
+}
+.status-icon.in_transit,
+.status-icon.partially_fulfilled,
+.status-icon.partially_received,
+.status-icon.partially_sent {
+    background-color: #49bbeb;
+}
+.status-icon.approved {
+    background-color: #ff9530;
+}

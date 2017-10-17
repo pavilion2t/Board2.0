@@ -1,0 +1,37 @@
+<div class='grid'>
+  <div class="panel _padding-1">
+    <div class="xgrid _margin-2em">
+      <div>
+        <span translate>Expiration Date</span><br/>
+        <input class='date-picker__input' type='text' ng-model='dateFrom' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder="{{'From'|translate}}">
+        <input class='date-picker__input' type='text' ng-model='dateTo' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder="{{'To'|translate}}">&nbsp;&nbsp;&nbsp;
+        &nbsp;
+        <span>
+          <button class="_secondary" ng-click="selectProduct()" translate>Select Product</button>
+          &nbsp;
+          <input-checkbox label='zero' ng-model="showZeroBalance"></input-checkbox><span translate>Show lots with zero balance</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="_primary" ng-click="loadData()" translate>Search</button>
+      <button class="_secondary" ng-click="clear()" translate>Clear</button>
+        </span>
+      </div>
+    </div>
+    <div ui-grid="gridOptions" class="ag-fresh" ui-grid-resize-columns ui-grid-grouping ui-grid-exporter>
+      <div class="report-no-rows" ng-show="gridMessage">
+        <div class="report-no-rows-message">
+          <span>{{gridMessage}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2>&nbsp;</h2>
+    <div class='content-bottom-actions'>
+      <button class="_button _secondary" ng-click="download('xls')" ng-disabled="$root.requestCounter !== 0">Excel</button>
+      <button class="_button _secondary" ng-click="download('pdf')" id="test-download-pdf" ng-disabled="$root.requestCounter !== 0">PDF</button>
+      <button class="_button _secondary" ng-click="download('csv')" ng-disabled="$root.requestCounter !== 0">CSV</button>
+    </div>
+  </div>
+</div>

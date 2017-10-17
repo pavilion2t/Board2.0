@@ -1,0 +1,21 @@
+
+<form name="myForm"  class="form-horizontal" novalidate>
+    <div class='edit'>
+        <div class='edit__body'>
+            <div class='nav-tabs'>
+                <a class='nav-tabs-item' ng-class='{"-active": section === "overview"}' ng-click='section = "overview"'>{{'Overview'|translate}}</a>
+                <a class='nav-tabs-item' ng-class='{"-active": section === "items"}' ng-click='section = "items"'>{{'Items'|translate}}</a>
+                <a class='nav-tabs-item' ng-class='{"-active": section === "departments"}' ng-click='section = "departments"'>{{'Departments'|translate}}</a>
+            </div>
+            <div class='panel' ng-show='section === "overview"'>
+                <div ng-include="'app/modules/modifiers/overview.html'"></div>
+            </div>
+            <div class='panel' ng-show='section === "items"'>
+                <div ng-include="'app/modules/modifiers/item.html'"></div>
+            </div>
+            <div class='panel' ng-show='section === "departments"'>
+                <div ng-include="'app/modules/modifiers/department.html'"></div>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,59 @@
+<div class='edit _gift-card'>
+  <div class='edit__body'>
+    <div class='nav-tabs'>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "overview"}' ng-click='section = "overview"'>Overview</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "history"}' ng-click='section = "history"'>History</a>
+    </div>
+    <div class='panel' ng-show='section === "overview"'>
+      <div class='panel-section'>
+        <div>
+          <input-box class='_full' type='text' title='Card Number' ng-model='giftCard.card_number' ng-readonly='true'></input-box>
+        </div>
+          <div>
+              <input-box class='_full' type='text' title='Customer' ng-model='giftCard.customer_id' ng-readonly='!editMode'></input-box>
+          </div>
+        <div>
+            <div class="input-box  input-box" >
+                <p class="input-box__title">Current Balance</p>
+                <label class="input-box__input" ng-bind='giftCard.current_balance | myCurrency'></label>
+            </div>
+
+            <div class="input-box  input-box _right">
+                <p class="input-box__title">Spent</p>
+                <label class="input-box__input" ng-bind='giftCard.spent | myCurrency'></label>
+            </div>
+
+        </div>
+        <div>
+            <div class="input-box  input-box">
+                <p class="input-box__title">Purchased At</p>
+                <label class="input-box__input" ng-bind='giftCard.purchased_at|moment'></label>
+            </div>
+            <div class="input-box  input-box _right">
+                <p class="input-box__title">Late Update</p>
+                <label class="input-box__input" ng-bind='giftCard.last_update|moment'></label>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class='panel' ng-show='section === "history"'>
+      <div class='panel-section'>
+        <h2 translate>History</h2>
+        <div class='grid'>
+          <editable-grid ng-hide='history && history.length === 0' columns='editHistoryColumns' data='history' edit-mode='false'></editable-grid>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2><span ng-show='editMode'>{{"Edit"|translate}} </span>{{'View Gift Card'|translate}} #{{giftCard.card_number}}</h2>
+    <div class='content-bottom-actions'>
+      <button ng-if="editPermission" ng-hide='editMode' class='_secondary' ng-click="enableEditMode()">{{'Edit'|translate}}</button>
+      <button ng-show='editMode' ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+  </div>
+
+
+
+</div>

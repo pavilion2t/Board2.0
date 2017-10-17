@@ -1,0 +1,73 @@
+<div>
+  <div class='ngdialog-header'>
+    <h3 class="ngdialog-title">{{'Fulfill Transfer'|translate}}</h3>
+  </div>
+
+
+  <div class="ngdialog-body">
+    <div class='_message' ng-if='fulfillingTransferMessage'>{{fulfillingTransferMessage}}</div>
+    <table class="table transfer-table">
+      <thead>
+        <tr>
+          <th class="title">Item</th>
+          <th class="num">QTY Requested</th>
+          <th class="num">QTY Departed</th>
+          <th class="num">QTY Recieved</th>
+          <th>Serial Numbers</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="item in stockTransferItems">
+          <td class="title">
+            <div class="_line-item">
+              <img src="assets/images/inventory_placeholder.png" width="60" class="thumbnail">
+                <p>{{ item.listing.name }}</p>
+                <p class="id">{{ item.listing.upc }}</p>
+                <p class="id">Product ID {{ item.listing.product_id }}</p>
+            </div>
+          </td>
+          <td>
+            <input
+              type='number'
+              ng-model='item.qty_requested'
+              disabled
+              >
+
+          </td>
+          <td>
+            <input
+              type='number'
+              ng-model='item.qty_departed'
+              disabled
+              >
+
+          </td>
+          <td>
+            <input
+              type='number'
+              ng-model='item.qty_received'
+              ng-disabled="item.listing.serial_number_enabled"
+              ng-change="validateQtyReceived($index)"
+              >
+          </td>
+
+          <td>
+            <div ng-if="!item.listing.serial_number_enabled">Serial number not enabled for this item</div>
+            <div ng-if="item.listing.serial_number_enabled" ng-repeat="serial in item.serial_numbers track by $index">
+              <input
+                type='checkbox'
+                ng-model='serial.received'
+                ng-change="updateQtyReceived(item)">
+                {{serial.number}}
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="_align-right"><button class="_secondary" ng-click="fulfillAll()">Fulfill all items</button> &nbsp;&nbsp;&nbsp;</p>
+  </div>
+  <div class='ngdialog-footer _align-right'>
+    <button class='_secondary' ng-click='closeThisDialog()'>{{'Cancel'|translate}}</button>
+    <button class='_primary' ng-click='updateQuantities()'>{{'Save Fulfilled Quantities'|translate}}</button>
+  </div>
+</div>

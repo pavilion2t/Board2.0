@@ -1,0 +1,62 @@
+<!-- Section only visible if iframe has been activated for store -->
+<div class="iframe-index" ng-show="iframeActive">
+  <h2>{{'General Settings'|translate}}</h2>
+  <p ng-if="iframeSetting">{{'Edit your general Storefront settings below. These settings will be applied to all Storefront pages that you create.'|translate}}</p>
+  <table class="table" ng-show='iframeSetting'>
+    <thead>
+      <tr>
+        <th>{{'Additional Languages'|translate}}</th>
+        <th>{{'Shipping type'|translate}}</th>
+        <th>{{'Country'|translate}}</th>
+        <th>{{'Product layout'|translate}}</th>
+        <th>{{'Quick add'|translate}}</th>
+        <th>{{'Hide price'|translate}}</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{iframeSetting.multi_lang}}</td>
+        <td>{{deliveryTypeString(iframeSetting.delivery_type)}}</td>
+        <td>{{iframeSetting.country}}</td>
+        <td>{{'Align'|translate}} {{iframeSetting.layout ? iframeSetting.layout : 'left'}}</td>
+        <td>{{iframeSetting.show_add_to_cart}}</td>
+        <td>{{iframeSetting.hide_price }}</td>
+        <td><a ui-sref='app.dashboard.settings.iframe.setting' class="iframe-settings__edit">{{'Edit'|translate}}</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+  <h2>{{'Page Settings'|translate}}</h2>
+  <p ng-if="iframePages.length === 0">{{'Add your first Storefront page! Customize as many online store pages as you like, and simply add the embed codes to your website.'|translate}}</p>
+  <table class="table" ng-show='iframePages.length > 0'>
+    <thead>
+      <tr>
+        <th>{{'Image size'|translate}}</th>
+        <th>{{'Btn color'|translate}}</th>
+        <th>{{'Btn text color'|translate}}</th>
+        <th>{{'Highlight color'|translate}}</th>
+        <th>{{'Multi section layout'|translate}}</th>
+        <th>{{'Embed code'|translate}}</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="iframePage in iframePages">
+        <td>{{iframePage.image_size ? iframePage.image_size : 'medium'}}</td>
+        <td>{{iframePage.btn_color}}</td>
+        <td>{{iframePage.btn_text_color}}</td>
+        <td>{{iframePage.highlight_color}}</td>
+        <td>{{iframePage.multi_section_layout ? iframePage.multi_section_layout : 'false' }}</td>
+
+        <td><a ng-click="viewCode(iframePage.id)"><b translate>View</b></a></td>
+        <td><a ng-click="editIframePage(iframePage.id)"><b translate>Edit</b></a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a ui-sref="app.dashboard.settings.iframe.new"  class="_button _add">
+    {{'New page'|translate}}
+  </a>
+</div>

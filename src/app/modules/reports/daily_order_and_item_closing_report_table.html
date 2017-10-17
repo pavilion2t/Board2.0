@@ -1,0 +1,17 @@
+
+<table class="table-horizontal dsr-table">
+  <thead>
+    <tr>
+      <th colspan="{{schema.length}}" class="title">{{title |translate}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th ng-repeat="col in schema">{{ col.name |translate}}</th>
+    </tr>
+    <tr ng-repeat="entry in entries">
+      <td ng-repeat="col in schema">{{ applyFilter(entry[col.key], col) }}</td>
+    </tr>
+  </tbody>
+</table>
+

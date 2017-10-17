@@ -1,0 +1,86 @@
+<p ng-hide="store.module['permission_enabled']">
+  You must check "Enable Store Permission" on the Bindo app under <strong>Bindo Settings &gt; Add-Ons</strong> in order to set customizable permissions. <a href="http://support.bindo.com/article/52-associate-permissions" target="_blank">Read more about customizable permissions settings here</a>.
+</p>
+
+
+<div class='edit _customer' ng-show="store.module['permission_enabled']">
+
+  <div ng-if="editMode" class='content-top editMode'>
+    <img src="assets/images/icons/edit-icon@2x.png" class="edit-icon">
+    <h2>{{'Editing Item'| translate }}</h2>
+    <p>{{"Check to toggle permissions, then press 'Save' "| translate }}</p>
+  </div>
+
+  <div>
+    <div class="xgrid">
+      <div class="xgrid-cell">
+        <h2 class="_left" translate>Permission Settings</h2>
+      </div>
+      <div class="xgrid-cell _align-right">
+
+        <button class="_secondary" ng-hide='editMode' ng-click="editRoles()">Edit Roles</button>
+        <button class="_primary" ng-hide='editMode' ng-click="enableEditMode()">{{'Edit Permissions' |translate}}</button>
+        <button class="_secondary" ng-show='editMode' ng-click="cancelEdit()">{{'Cancel' |translate}}</button>
+        <button class="_primary" ng-show='editMode' ng-click="saveEdit()">{{'Save' |translate}}</button>
+      </div>
+    </div>
+
+    <table class='table'>
+      <thead>
+        <tr>
+          <th style="width:20%"></th>
+          <th class="_text-center" ng-repeat = "role in permissions.store_permissions track by $index">
+            {{role.store_role_name}}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="groupTitle" ng-repeat-start = "perm in permissionList track by $index" >
+        	<td  ng-click="perm.show=!perm.show" colspan={{permissions.store_permissions.length+1}}><b><span ng-bind="perm.name|titleCaseWithDash"></span></b>
+
+        	<i class="fa fa-angle-down" ng-class="{'fa-angle-down': !perm.show,'fa-angle-up': perm.show}"></i>
+        	</td>
+        </tr>
+
+
+        <tr ng-repeat = "key in perm.list" ng-if="perm.show">
+          <td class="permissionRow">{{key | titleCaseWithDash }}</td>
+          <td class="_text-center" ng-repeat = "role in permissions.store_permissions track by $index">
+            <input type="image"
+              ng-class="{'toggle-on': permissions.store_permissions[$index].permissions[key], 'toggle-off': !permissions.store_permissions[$index].permissions[key]}"
+              ng-src="{{permissions.store_permissions[$index].permissions[key] == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+              ng-disabled='!editMode'
+              ng-click="toggle(key, keys.permissions, role.store_role_name, permissions.store_permissions[$index].permissions, $event);"/>
+          </td>
+
+        </tr>
+        <tr ng-repeat-end>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="_text-center" ng-repeat = "role in permissions.store_permissions track by $index">
+            <button class="_secondary" style="width: 90px;"
+              ng-class="selectAll"
+              ng-disabled="!editMode"
+              ng-click="toggleCol(role.permissions)"
+              >
+              {{ isSelectedAll(role.permissions) ? 'Unselect all' : 'Select All' }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+  <hr>
+  <div class="_align-right">
+    <button class="_secondary" ng-hide='editMode' ng-click="editRoles()">Edit Roles</button>
+    <button class="_primary" ng-hide='editMode' ng-click="enableEditMode()">{{'Edit Permissions' |translate}}</button>
+    <button class="_secondary" ng-show='editMode' ng-click="cancelEdit()">{{'Cancel' |translate}}</button>
+    <button class="_primary" ng-show='editMode' ng-click="saveEdit()">{{'Save' |translate}}</button>
+  </div>
+  <hr>
+
+</div>

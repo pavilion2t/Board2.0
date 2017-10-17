@@ -1,0 +1,51 @@
+.store-menu-item {
+  > div {
+    vertical-align: text-top;
+  }
+
+  .image {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rbga(0,0,0,.1);
+    margin-right: 10px;
+  }
+  .details {
+    height: 40px;
+    p {
+      font-size: 14px;
+      margin: 0;
+      line-height: 18px;
+
+      &.details__title {
+        font-weight: 700;
+      }
+    }
+  }
+  .current__selector {
+    height: 40px;
+    position: relative;
+
+    .selector__toggle {
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+
+      margin: 0 10px;
+
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+
+      .actions-arrow {
+        position: absolute;
+        left: 3.5px;
+        top: 1px;
+        font-size: 14px;
+      }
+    }
+  }
+  .store-checkbox {
+    transform: scale(1.2, 1.2);
+  }
+}

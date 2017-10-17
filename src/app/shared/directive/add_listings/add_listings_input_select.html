@@ -1,0 +1,45 @@
+<div class='add-listings'>
+    <div class='ngdialog-header add-listings-header'>
+      <h3 class="pull-left" ng-bind="title"></h3>
+      <form ng-show="isSearch" class='pull-right' ng-submit='searchListings(keyword)'>
+        <input class='' type='text' placeholder='Search in Inventory...' ng-model='keyword'>
+        <button class="_primary">Search</button>
+      </form>
+    </div>
+    <div class='_message' ng-if='addErrorMessage'>{{addErrorMessage}}</div>
+    <div class="ngdialog-body">
+      <table class="table listing-table" ng-hide="searching">
+        <thead>
+          <tr>
+            <th class="_item">
+              <input-checkbox label="checkbox-auto-apply" ng-click="toggleAll()" ng-model=isAllSelected class="ng-isolate-scope ng-pristine ng-valid"> </input-checkbox>
+            </th>
+
+            <th>{{'NAME'|translate}}</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat='(i, listing) in lists'
+              ng-class='{_selected: selectedItemIndex === i}'>
+            <td class="figure">
+              <input-checkbox label="checkbox-{{i}}" ng-model="listing.selected"
+              class="ng-isolate-scope ng-pristine ng-valid"> </input-checkbox>
+            </td>
+
+            <td class='_item'>
+              <h4>{{listing.name}}</h4>
+            </td>
+
+          </tr>
+        </tbody>
+      </table>
+      <p class="_margin-2em" ng-show="searching">Searching inventory...</p>
+      <p class="_margin-2em" ng-show="addErrorMessage">{{addErrorMessage}}</p>
+    </div>
+    <div class='ngdialog-footer _align-right'>
+      <button class='_secondary' ng-click='closeThisDialog(null)'>{{'Cancel'|translate}}</button>
+      <button class='_primary' ng-click='add()'>{{'Save'|translate}}</button>
+    </div>
+
+</div>

@@ -1,0 +1,6 @@
+<h3>Fulfill Items</h3>
+<editable-grid columns="editColumns" data="purchase_items" edit-mode="true" row-height="editRowHeight" hide-remove="true"></editable-grid>
+<p class="_align-right">
+  <button class="_secondary" ng-click="closeThisDialog(null)">{{"Cancel"|translate}}</button>
+  <button class="_primary" ng-click="returnFulfill(purchase_items)">{{"Fulfill"|translate}}</button>
+</p>

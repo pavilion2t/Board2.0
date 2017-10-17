@@ -1,0 +1,16 @@
+<p>Sales Time Segment</p>
+
+    <div>
+        <div ng-repeat="hours in time_segments_array track by $index">
+            <div time-segment-row index="$index" has-title="true" hours="hours" collection="time_segments_array" class="_full"></div>
+        </div>
+    </div>
+<a ng-click="addNewSegments()" class="_button _add">Add New Hours</a>
+
+<hr>
+
+
+    <div class="_right">
+        <button class="_primary" ng-click="saveTimeSegments()">Save</button>
+    </div>
+<hr>

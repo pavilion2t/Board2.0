@@ -1,0 +1,144 @@
+.report-item {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  float: left;
+  font-size: 13px
+}
+
+.report-no-rows {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  &-message {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 2em;
+    text-align: center;
+    font-size: 36px;
+  }
+}
+
+.fixed-panel {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  right: 1em;
+  bottom: 0;
+}
+
+.fixed-grid {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.fixed-grid-up {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  bottom: 40%;
+}
+.fixed-grid-down {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.ag-root {
+  border: none !important;
+  background-color: #fff !important;
+}
+
+/* Sales Summary Table */
+.sales-summary-report-table {
+  .title {
+    width: 30%;
+    text-transform: capitalize;
+  }
+  .amount {
+    width: 20%;
+  }
+  .count {
+    width: 20%;
+  }
+}
+
+.report-filter {
+  > select {
+    width: 10em;
+  }
+}
+
+.report-filter-date {
+  width: 7.5em;
+}
+.report-filter-select {
+  width: 7.5em;
+}
+
+/* Daily Summary Table */
+.dsr-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  width: 100%;
+  margin-bottom: 20px;
+
+  td, th {
+    font-size: inherit;
+    margin: 0;
+    overflow: visible; /*to make ths where the title is really long work*/
+    padding: 0.5em 1em; /* cell padding */
+    text-align: right;
+  }
+
+  thead {
+    background-color: #E9EFF3;
+    color: #000000;
+    text-align: left;
+    vertical-align: bottom;
+
+    .title {text-align: left; text-transform: uppercase;}
+  }
+
+  tr.empty-row {height: 30px !important;}
+  .bold {font-weight: bold;}
+}
+
+/* HORIZONTAL BORDERED TABLES */
+
+.table-horizontal td,
+.table-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #cbcbcb;
+}
+.table-horizontal tbody > tr:last-child > td {
+    border-bottom: 1px solid #cbcbcb;
+}
+.table-horizontal tbody > tr > th:first-child {
+    text-align: left;
+}
+.table-horizontal tbody > tr > td:first-child {
+    text-align: left;
+}
+.table-horizontal tbody > tr > th:first-child {
+    text-align: left;
+}
+
+.ui-grid-footer-cell {
+  text-transform: capitalize;
+}

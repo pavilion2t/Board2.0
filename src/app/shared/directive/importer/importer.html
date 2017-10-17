@@ -1,0 +1,102 @@
+<div class='add-listings'>
+  <div class='ngdialog-header add-listings-header'>
+    <h3 class="pull-left">{{name}}</h3>
+  </div>
+  <div class="ngdialog-body">
+    <form style="padding:15px" ng-submit="uploadFiles()">
+
+      <div class="impRow impBb" ng-show="!submitting">
+        <div  class="impCol2 impRb">
+          <img src="assets/images/document_upload.png" width="32" height="32"> <h2 class="impTitle">&nbsp;CSV File</h2> <br>
+          <a ng-if="sample" href="{{sample}}" target="_blank">Sample CSV (Simple)</a><br>
+          <a ng-if="fullsample" href="{{fullsample}}" target="_blank">Sample CSV (Full)</a><br>
+          <input  id="csvFileInput" type="file" ng-model="data" app-filereader filedata="filedata"/>
+        </div>
+
+        <div class="impCol2">
+          <img src="assets/images/image_upload.png" width="32" height="32"><h2 class="impTitle">&nbsp;Images in Zip File</h2>
+          <br>
+          <a href="assets/importer/jpg.zip" target="_blank">Sample Image in ZIP</a><br>
+
+          <ul><li>Images have to be in PNG or JPG format</li><li>They cannot be inside folders</li></ul>
+          <input id="imageFileInput" type="file" ng-model="imagemodel" app-filereader filedata="imagefiledata"/>
+          <br>
+        </div>
+      </div>
+
+      <div style="clear:both">
+        <div  ng-show="!submitting" class="" style="padding-top:10px;padding-left:15px;padding-bottom: 10px">
+          <button class="_primary" type="submit">Submit</button>
+        </div>
+      </div>
+
+      <div ng-show="submitting">
+        <label>Status</label>
+        <h3 ng-bind="status"></h3>
+        <div ng-if="step>-1" class="progress">
+          <div class="progress-bar" role="progressbar" ng-style="{width: rate*100 +'%'}">
+            <span class="sr-only"></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div style="padding-top:15px;border-top:1px solid #ddd" ng-if="submitted"  ng-show="!submitting">
+
+        <h2 >Result </h2>
+
+        <div ng-show="!submitting" ng-class="{'impResponseError':noOfErrors>0,'impResponseSuccess':noOfErrors===0}">
+          <span ng-if="noOfWarnings>0 && noOfErrors===0">Import is successful but there are some warnings - </span>
+          <span ng-if="noOfErrors>0">Import is unsuccessful due to errors - </span>
+          <span ng-if="noOfWarnings===0 && noOfErrors===0">Import is successful - </span>
+
+          <img style="top: 2px;" ng-if="noOfErrors===0" width="16" height="16" src="images/upload-icon-success.png"><span ng-if="noOfErrors===0">1 Success</span>
+          <img style="top: 2px;" ng-if="noOfErrors>0" width="16" height="16" src="images/upload-icon-error.png"><span ng-if="noOfErrors>0">{{noOfErrors}} Error</span>
+          <img style="top: 2px;" ng-if="noOfWarnings>0" width="16" height="16" src="images/upload-icon-warning.png"><span ng-if="noOfWarnings>0">{{noOfWarnings}} Warning</span>
+          <a style="margin-left: 50px;" ng-if="errors.length > 0" ng-click="showDetail()" ng-show="!detailShown">Show Details</a>
+          <a style="margin-left: 50px;" ng-if="errors.length > 0" ng-click="hideDetail()" ng-show="detailShown">Hide Details</a>
+        </div>
+
+        <table class="table listing-table" ng-if="detailShown">
+          <thead>
+
+          </thead>
+          <tbody>
+
+
+          <tr ng-repeat="problem in errors track by $index">
+            <td class="impTd" style="width:16px"><img width="16" height="16" src="images/upload-icon-error.png" ng-show="problem.type==='error'"><img width="16" height="16" src="images/upload-icon-warning.png" ng-show="problem.type==='warning'"></td>
+            <td class="impTd">Row {{problem.row}}</td>
+            <td class="impTd">{{problem.type}} - {{problem.value}}</td>
+          </tr>
+
+
+
+          </tbody>
+        </table>
+      </div>
+
+
+
+      <div style="padding-top:15px;border-top:1px solid #ddd" ng-if="data.length" ng-show="!submitting">
+        <h2>Preview</h2>
+
+        <div style="border:1px #ddd solid;overflow: scroll">
+          <table class="table listing-table">
+            <thead>
+
+            </thead>
+            <tbody style="font-size: 0.8em;">
+            <tr ng-repeat="row in table track by $index"  style="border:#ddd solid 1px">
+              <td class="impTd">{{$index+1}}</td>
+              <td  class="impTd" ng-repeat="col in row track by $index" ng-bind="col" style="border:#ddd solid 1px"></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+    </form>
+  </div>
+</div>

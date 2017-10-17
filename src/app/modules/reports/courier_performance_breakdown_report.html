@@ -1,0 +1,24 @@
+<div class="panel _clearfix fixed-panel">
+  <h2 translate>Courier Performance Breakdown Report</h2>
+  <div class="report-filter">
+    <report-time-filter range="range" advance="true"></report-time-filter></report-time-filter>
+    <button class="_primary" ng-click="update()" translate>Update</button>
+      <select ng-model="filter.searchColumn">
+        <option value="" selected translate>filter...</option>
+        <option value="courier" translate>courier</option>
+        <option value="created_by" translate>created by</option>
+        <option value="order_number" translate>order number</option>
+      </select>
+      <input type="text" ng-model="filter.search" ng-change="filterReport(filter)" placeholder="filter by {{filter.searchColumn}}">
+      <span ng-include="'app/modules/reports/download_report.html'"></span>
+  </div>
+  <br>
+  <div ui-grid="gridOptions" ui-grid-resize-columns class="ag-fresh fixed-grid">
+    <div class="report-no-rows" ng-show="gridMessage">
+      <div class="report-no-rows-message">
+        <span>{{gridMessage}}</span>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,851 @@
+
+<div class='edit' ng-controller="advancedDiscountFormController">
+  <div class='edit__body'>
+      <div class='nav-tabs'>
+          <a class='nav-tabs-item' ng-class='{"-active": section === "overview"}'
+          ng-init='section = "overview"' ng-click='section = "overview"'>
+          	Overview
+          </a>
+      </div>
+  </div>
+
+  <div class='panel' ng-show='section === "overview"'>
+  	<div class='panel-section'>
+	  	<div class="input-box _full">
+				<p class="input-box__title">title</p>
+				<input class="input-box__input" type="text"
+					placeholder="TITLE"
+					ng-readonly='!editMode'
+					ng-model="name"/>
+		    </div>
+
+
+	    <div class="input-box _full">
+			<input-textarea class="input-box__input" title='description'
+				ng-model='notes'
+				ng-readonly='!editMode'></input-textarea>
+	    </div>
+    </div>
+    <div class='panel-section'>
+    	<div class="xgrid">
+	    	<div class="xgrid-cell -default-50">
+				  <h3 translate>Discount code</h3>
+				  <input class='input -full' type='text' ng-model='code' ng-readonly='!editMode' ng-disabled='!editMode'>
+			  </div>
+			  <div class="xgrid-cell -default-50"></div>
+		  </div>
+    </div>
+    <div class='panel-section'>
+    	<h3>TRIGGER - PRODUCT or ORDER TOTAL</h3>
+    	<div class="xgrid">
+    		<div class="xgrid-cell -default-5">
+				<select ng-disabled='!editMode' ng-model="trigger_by"
+					ng-options="trigger.value as trigger.name for trigger in trigger_options">
+				</select>
+			</div>
+		</div>
+
+		<div class="xgrid">
+    		<div class="xgrid-cell -default-5">
+				<select ng-disabled='!editMode' ng-model="trigger_type"
+					ng-options="trigger.value as trigger.name for trigger in trigger_type_options">
+				</select>
+			</div>
+		</div>
+
+		<div class="xgrid" ng-hide="trigger_type === TRIGGER.COMPARATOR_ANY">
+			<div class="xgrid-cell -default-50">
+		  		<input class='input -full' type='number'
+		  		 ng-disabled='!editMode'
+		  		 ng-model="trigger_amount"
+		  		 placeholder="{{trigger_placeholder}}"
+		  		 min="0.0"
+		  		 ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="1"/>
+			</div>
+			<div class="xgrid-cell -default-50"> </div>
+		</div>
+
+		<h3>CRITERIA - PRODUCTS<small>(Mandatory if discount is triggered by product)</small></h3>
+
+			<div class="xgrid">
+				<div class="xgrid-cell -default-100">
+		      		<span class="xgrid-cell -default-5">
+		        		<input type="image"
+			              ng-class="{'toggle-on': criteria.isAnyProducts, 'toggle-off': !criteria.isAnyProducts}"
+			              ng-src="{{criteria.isAnyProducts == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+			              ng-disabled='!editMode'
+			              ng-click="criteria.isAnyProducts = true;
+			              	criteria.isOnlyDepartments = false;
+			              	criteria.isExceptDepartments = false;
+			              	criteria.isOnlyProducts = false;
+			              	criteria.isExceptProducts = false;
+			              	"/>
+		      		</span>
+		      		<span class="xgrid-cell -default-10"><b>ANY</b></span>
+	      	</div>
+			</div>
+
+			<div class="xgrid">
+				<div class="xgrid-cell -default-50">
+		      		<span class="xgrid-cell -default-10">
+		        		<input type="image"
+			              ng-class="{'toggle-on': criteria.isOnlyDepartments, 'toggle-off': !criteria.isOnlyDepartments}"
+			              ng-src="{{criteria.isOnlyDepartments == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+			              ng-disabled='!editMode'
+			              ng-click="criteria.isOnlyDepartments = !criteria.isOnlyDepartments;
+			              	criteria.isAnyProducts = false;
+			              	criteria.isExceptDepartments = false;
+                      fetchDepartments()"/>
+		      		</span>
+		      		<span class="xgrid-cell -default-90">
+
+		      			 <add-listings-input-select-department ng-disabled="!criteria.isOnlyDepartments" hidden-values="onlyDepartments" fetch-list="departmentLists"  placeholder="'Only Selected Department'"
+		      			 title="'Select departments'"> </add-listings-input-select-department>
+					</span>
+				</div>
+				<div class="xgrid-cell -default-50">
+		      		<span class="xgrid-cell -default-10">
+		        		<input type="image"
+			              ng-class="{'toggle-on': criteria.isExceptDepartments, 'toggle-off': !criteria.isExceptDepartments}"
+			              ng-src="{{criteria.isExceptDepartments == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+			              ng-disabled='!editMode'
+			              ng-click="criteria.isExceptDepartments = !criteria.isExceptDepartments;
+			              	criteria.isAnyProducts = false;
+			              	criteria.isOnlyDepartments = false;
+                      fetchDepartments()"/>
+		      		</span>
+		      		<span class="xgrid-cell -default-90">
+		      		<add-listings-input-select-department ng-disabled="!criteria.isExceptDepartments" hidden-values="exceptDepartments" fetch-list="departmentLists"  placeholder="'All Except Selected Departments'"
+		      			 title="'Select departments'"> </add-listings-input-select-department>
+					</span>
+				</div>
+			</div>
+			<div class="xgrid">
+				<div class="xgrid-cell -default-50">
+		      		<span class="xgrid-cell -default-10">
+		        		<input type="image"
+			              ng-class="{'toggle-on': criteria.isOnlyProducts, 'toggle-off': !criteria.isOnlyProducts}"
+			              ng-src="{{criteria.isOnlyProducts == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+			              ng-disabled='!editMode'
+			              ng-click="criteria.isOnlyProducts = !criteria.isOnlyProducts;
+			              	criteria.isAnyProducts = false;
+			              	criteria.isExceptProducts = false;"/>
+		      		</span>
+		      		<span class="xgrid-cell -default-90">
+		      			 <add-listings-input-select show-search="true" ng-disabled="!criteria.isOnlyProducts"
+		      			 hidden-values="onlyProducts"
+		      			 title="'Select products'"
+		      			 search="searchProducts"
+		      			 fetch-list="productLists"
+		      			 placeholder="'Only Selected Products'"> </add-listings-input-select>
+					</span>
+				</div>
+				<div class="xgrid-cell -default-50">
+		      		<span class="xgrid-cell -default-10">
+		        		<input type="image"
+			              ng-class="{'toggle-on': criteria.isExceptProducts, 'toggle-off': !criteria.isExceptProducts}"
+			              ng-src="{{criteria.isExceptProducts == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+			              ng-disabled='!editMode'
+			              ng-click="criteria.isExceptProducts = !criteria.isExceptProducts;
+			              	criteria.isAnyProducts = false;
+			              	criteria.isOnlyProducts = false;"/>
+		      		</span>
+		      		<span class="xgrid-cell -default-90">
+			      	 	<add-listings-input-select show-search="true" ng-disabled="!criteria.isExceptProducts"
+			      	 	title="'Select products'"
+			      	 	fetch-list="productLists"
+			      	 	hidden-values="exceptProducts" search="searchProducts" placeholder="'All Except Selected Products'"> </add-listings-input-select>
+
+					</span>
+				</div>
+			</div>
+
+
+
+  	</div>
+  	<div class='panel-section'>
+		<h3>CRITERIA - CUSTOMER</h3>
+		<div class="xgrid">
+			<div class="xgrid-cell -default-100">
+      			<span class="xgrid-cell -default-5">
+	        		<input type="image"
+		              ng-class="{'toggle-on': criteria.isAnyCustomers, 'toggle-off': !criteria.isAnyCustomers}"
+		              ng-src="{{criteria.isAnyCustomers == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+		              ng-disabled='!editMode'
+		              ng-click="criteria.isAnyCustomers = true;
+		              	criteria.isOnlyCustomerGroup = false;
+		              	criteria.isExceptCustomerGroup = false;
+		              	criteria.isOnlyCustomers = false;
+		              	criteria.isExceptCustomers = false;
+		              	onlyCustomers = [];
+		              	exceptCustomers =[];
+
+		              	"/>
+      			</span>
+      			<span class="xgrid-cell -default-10"><b>ANY</b></span>
+  			</div>
+		</div>
+
+		<div class="xgrid" ng-hide="hideCustomerGroup">
+			<div class="xgrid-cell -default-50">
+	      		<span class="xgrid-cell -default-10">
+	        		<input type="image"
+		              ng-class="{'toggle-on': isOnlyCustomerGroup, 'toggle-off': !isOnlyCustomerGroup}"
+		              ng-src="{{isOnlyCustomerGroup == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+		              ng-disabled='!editMode'
+		              ng-click="isOnlyCustomerGroup = !isOnlyCustomerGroup;
+		              	isAnyCustomers = false;
+		              	isExceptCustomerGroup = false;"/>
+	      		</span>
+	      		<span class="xgrid-cell -default-90">
+
+		      		  <add-listings-input-select ng-disabled="!isOnlyCustomerGroup" hidden-values="onlyCustomerGroup"
+		      		  fetch-list="customerLists" placeholder="'Only Selected Customer Groups'"
+		      		  title="'Select customers'"> </add-listings-input-select>
+				</span>
+			</div>
+			<div class="xgrid-cell -default-50">
+	      		<span class="xgrid-cell -default-10">
+	        		<input type="image"
+		              ng-class="{'toggle-on': isExceptCustomerGroup, 'toggle-off': !isExceptCustomerGroup}"
+		              ng-src="{{isExceptCustomerGroup == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+		              ng-disabled='!editMode'
+		              ng-click="isExceptCustomerGroup = !isExceptCustomerGroup;
+		              	isAnyCustomers = false;
+		              	isOnlyCustomerGroup = false;"/>
+	      		</span>
+	      		<span class="xgrid-cell -default-90">
+		      		<add-listings-input-select ng-disabled="!isExceptCustomerGroup" hidden-values="exceptCustomerGroup" fetch-list="customerLists" placeholder="'All Except Selected Customer Groups'" title="'Select customers'"> </add-listings-input-select>
+				</span>
+			</div>
+		</div>
+		<div class="xgrid">
+			<div class="xgrid-cell -default-50">
+	      		<span class="xgrid-cell -default-10">
+	        		<input type="image"
+		              ng-class="{'toggle-on': criteria.isOnlyCustomers, 'toggle-off': !criteria.isOnlyCustomers}"
+		              ng-src="{{criteria.isOnlyCustomers == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+		              ng-disabled='!editMode'
+		              ng-click="criteria.isOnlyCustomers = !criteria.isOnlyCustomers;
+		              	criteria.isAnyCustomers = false;
+		              	criteria.isExceptCustomers = false;
+                    fetchCustomers()"/>
+	      		</span>
+	      		<span class="xgrid-cell -default-90">
+		      		<add-listings-input-select ng-disabled="!criteria.isOnlyCustomers || !fetchedCustomers" fetch-list="customerLists"
+	      			 placeholder="'Only Selected Customers'" hidden-values="onlyCustomers"
+	      			 title="'Select customers'"> </add-listings-input-select>
+				</span>
+			</div>
+			<div class="xgrid-cell -default-50">
+	      		<span class="xgrid-cell -default-10">
+	        		<input type="image"
+		              ng-class="{'toggle-on': criteria.isExceptCustomers, 'toggle-off': !criteria.isExceptCustomers}"
+		              ng-src="{{criteria.isExceptCustomers == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+		              ng-disabled='!editMode'
+		              ng-click="criteria.isExceptCustomers = !criteria.isExceptCustomers;
+		              	criteria.isAnyCustomers = false;
+		              	criteria.isOnlyCustomers = false;
+                    fetchCustomers()"/>
+	      		</span>
+	      		<span class="xgrid-cell -default-90">
+		      		<add-listings-input-select ng-disabled="!criteria.isExceptCustomers || !fetchedCustomers" hidden-values="exceptCustomers" fetch-list="customerLists" placeholder="'All Except Selected Customers'"> </add-listings-input-select>
+				</span>
+			</div>
+		</div>
+
+		<div class='panel-section'>
+		<h3>CRITERIA - MEMBERSHIP LEVEL</h3>
+		<div class="xgrid">
+			<div class="xgrid-cell -default-100">
+      			<span class="xgrid-cell -default-5">
+	        		<input type="image"
+		              ng-class="{'toggle-on': criteria.isAnyMembership, 'toggle-off': !criteria.isAnyMembership}"
+		              ng-src="{{criteria.isAnyMembership == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+		              ng-disabled='!editMode'
+		              ng-click="criteria.isAnyMembership = true;
+		              	criteria.isOnlyMembership = false;
+		              	criteria.isExceptMembership = false;
+		              	exceptMembership = [];
+		              	onlyMembership =[];
+		              	"/>
+      			</span>
+      			<span class="xgrid-cell -default-10"><b>ANY</b></span>
+  			</div>
+		</div>
+
+		<div class="xgrid">
+			<div class="xgrid-cell -default-50">
+	      		<span class="xgrid-cell -default-10">
+	        		<input type="image"
+		              ng-class="{'toggle-on': criteria.isOnlyMembership, 'toggle-off': !criteria.isOnlyMembership}"
+		              ng-src="{{criteria.isOnlyMembership == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+		              ng-disabled='!editMode'
+		              ng-click="criteria.isOnlyMembership = !criteria.isOnlyMembership;
+		              	criteria.isAnyMembership = false;
+		              	criteria.isExceptMembership = false;"/>
+	      		</span>
+	      		<span class="xgrid-cell -default-90">
+		      		<add-listings-input-select ng-disabled="!criteria.isOnlyMembership" fetch-list="membershipLists"
+	      			 placeholder="'Only Selected Membership'" hidden-values="onlyMembership"
+	      			 title="'Select Membership'"> </add-listings-input-select>
+				</span>
+			</div>
+			<div class="xgrid-cell -default-50">
+	      		<span class="xgrid-cell -default-10">
+	        		<input type="image"
+		              ng-class="{'toggle-on': criteria.isExceptMembership, 'toggle-off': !criteria.isExceptMembership}"
+		              ng-src="{{criteria.isExceptMembership == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+		              ng-disabled='!editMode'
+		              ng-click="criteria.isExceptMembership = !criteria.isExceptMembership;
+		              	criteria.isAnyMembership = false;
+		              	criteria.isOnlyMembership = false;"/>
+	      		</span>
+	      		<span class="xgrid-cell -default-90">
+		      		<add-listings-input-select ng-disabled="!criteria.isExceptMembership" hidden-values="exceptMembership" fetch-list="membershipLists" placeholder="'All Except Selected Membership'"> </add-listings-input-select>
+				</span>
+			</div>
+		</div>
+
+
+  	</div>
+  	<div class='panel-section'>
+		<h3>CRITERIA - DAY OF THE WEEK</h3>
+  		<div class="xgrid">
+  			<div class="xgrid-cell -default-100">
+  				 <add-listings-input-select ng-disabled=false hidden-values="days_of_week" fetch-list="dayOfWeek"
+  				 placeholder="'Select Days'" title="'Select days'"> </add-listings-input-select>
+  			</div>
+  		</div>
+  	</div>
+  	<div class='panel-section'>
+  		<h3>CRITERIA - EFFECTIVE DAY</h3>
+  		<div class="xgrid">
+			<div class="xgrid-cell -default-25">
+				<label>&nbsp</label>
+			 	<select class="_full" ng-disabled='!editMode' ng-model="time_range_type"
+				  ng-options="type.value as type.name for type in time_range_options">
+				</select>
+			</div>
+		  	<div class="xgrid-cell -default-50">
+				<label>{{'Start time'|translate}}</label>
+				<input class="input _full" type="time" ng-disabled='!editMode' ng-model="effectiveDay.time_start_from"/>
+		   	</div>
+		   	<div class="xgrid-cell -default-50">
+		   		<label>{{'End time'|translate}}</label>
+		   		<input class="input _full" type="time" ng-disabled='!editMode' ng-model="effectiveDay.time_end_at"/>
+		   	</div>
+			<div class="xgrid-cell -default-75"></div>
+		</div>
+		<div ui-sortable="sortableOptions" ng-model="effectiveDay.date_ranges">
+			<div ng-repeat='(i, date_range) in effectiveDay.date_ranges' class="sortable-items">
+				<div class="xgrid"></div>
+		  		<div class="xgrid" ng-hide="i == 0">
+		  			<div class="xgrid-cell"><strong>And</strong></div>
+		  		</div>
+				<div class="xgrid">
+					<div class="xgrid-cell -default-5 drag-anchor">
+						<label> &nbsp</label>
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+					<div class="xgrid-cell -default-20">
+						<label>&nbsp</label>
+						<select class="_full" ng-disabled='!editMode' ng-model="date_range.exclude"
+							ng-options="type.value as type.name for type in date_range_exclude_options">
+						</select>
+					</div>
+					<div class="xgrid-cell -default-35">
+						<label>{{'Start date'|translate}}</label>
+						<input class='input -full' type='text' ng-model='date_range.date_start_from'
+							ui-date='dateOptions' ui-date-format='yy-mm-dd' ng-readonly='!editMode' ng-disabled='!editMode'
+						/>
+					</div>
+					<div class="xgrid-cell -default-35">
+						<label>{{'End date'|translate}}</label>
+						<input class='input -full' type='text' ng-model='date_range.date_end_at'
+							ui-date='dateOptions'	ui-date-format='yy-mm-dd' ng-readonly='!editMode' ng-disabled='!editMode'
+						/>
+					</div>
+					<div class="xgrid-cell -default-5">
+						<label> &nbsp</label>
+						<button class="_remove" ng-click="removeDateRange(i)" ng-show="editMode"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="_add" ng-click="addDateRange()" ng-show="editMode">Add Another Date Range</button>
+  	</div>
+  	<div class='panel-section'>
+  		<h3>CRITERIA - PARTY SIZE</h3>
+  		<div class="xgrid">
+  			<div class="xgrid-cell -default-50">
+  				<select class="_full" ng-disabled='!editMode' ng-model="party_size_type"
+				  ng-options="equation.value as equation.name for equation in partysize_equations">
+				</select>
+  			</div>
+  			<div class="xgrid-cell -default-50">
+  				<input class="input _full" type="number" ng-readonly='!editMode'
+  				ng-model="party_size" ng-disabled="party_size_type === TRIGGER.COMPARATOR_ANY">
+  			</div>
+  		</div>
+  	</div>
+  	<div class='panel-section'>
+  		<h3>CRITERIA - CHANNEL</h3>
+  		<div class="xgrid">
+  			<div class="xgrid-cell -default-50">
+		  		<add-listings-input-select hidden-values="channels" fetch-list="channel_options" placeholder="'select channels'"
+		  		title="'Select channels'" ng-disabled='!editMode'> </add-listings-input-select>
+			</div>
+			<div class="xgrid-cell -default-50"></div>
+
+		</div>
+	</div>
+
+	<div class='panel-section'>
+  		<h3>CRITERIA - PROCUREMENT METHOD</h3>
+  		<div class="xgrid">
+  			<div class="xgrid-cell -default-50">
+		  		<add-listings-input-select hidden-values="shipping_methods" fetch-list="ship_method_options"
+		  		 placeholder="'select method'"
+		  		 title="'Select method'" ng-disabled='!editMode'> </add-listings-input-select>
+			</div>
+			<div class="xgrid-cell -default-50"></div>
+		</div>
+	</div>
+
+
+
+  <div class='panel-section' ng-if="isChain">
+    <h3>EXCLUDE STORES</h3>
+    <div class="xgrid">
+      <div class="xgrid-cell -default-50">
+        <store-selection store-ids="factory.selectedStores" disabled="!editMode" title="Exclude Stores"></store-selection>
+      </div>
+      <div class="xgrid-cell -default-50"></div>
+    </div>
+  </div>
+
+
+	<div class='panel-section'>
+		<h3>STACKABILITY</h3>
+    <div class="xgrid -default-100">
+      <span class="xgrid-cell -default-5">
+          <input type="image"
+                 ng-class="{'toggle-on': stackability == STACKTABLE.STACKTABLE_ALL, 'toggle-off': stackability != STACKTABLE.STACKTABLE_ALL }"
+                 ng-src="{{stackability == STACKTABLE.STACKTABLE_ALL ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+                 ng-disabled='!editMode'
+                 ng-click="stackability = STACKTABLE.STACKTABLE_ALL"/>
+        </span>
+      <span class="xgrid-cell -default-20"><b>Stackable to all</b></span>
+      <span class="xgrid-cell -default-5">
+        <input type="image"
+               ng-class="{'toggle-on': stackability == STACKTABLE.STACKTABLE_TO, 'toggle-off': stackability != STACKTABLE.STACKTABLE_TO}"
+               ng-src="{{stackability == STACKTABLE.STACKTABLE_TO ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+               ng-disabled='!editMode'
+               ng-click="stackability = STACKTABLE.STACKTABLE_TO"/>
+      </span>
+      <span class="xgrid-cell -default-15"><b>Stackable to</b></span>
+      <span class="xgrid-cell -default-40">
+        <select-discount ng-disabled="stackability != STACKTABLE.STACKTABLE_TO || !editMode"
+                         selected-ids="stackability_selectedIds"
+                         fetch-list="discountLists"
+                         close="updateSelected"
+                         hidden-value="stackability != STACKTABLE.STACKTABLE_TO"
+                         only-advance="true"
+                         placeholder="'Select Discount'">
+        </select-discount>
+      </span>
+      <span class="xgrid-cell -default-15"></span>
+    </div>
+    <div class="xgrid -default-100">
+      <span class="xgrid-cell -default-5">
+        <input type="image"
+               ng-class="{'toggle-on': stackability == STACKTABLE.NOT_STACKTABLE_ALL, 'toggle-off': stackability != STACKTABLE.NOT_STACKTABLE_ALL}"
+               ng-src="{{stackability == STACKTABLE.NOT_STACKTABLE_ALL ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+               ng-disabled='!editMode'
+               ng-click="stackability = STACKTABLE.NOT_STACKTABLE_ALL"/>
+      </span>
+      <span class="xgrid-cell -default-20">
+          <b>Non-stackable to all</b>
+      </span>
+      <span class="xgrid-cell -default-5">
+	      <input type="image"
+               ng-class="{'toggle-on': stackability == STACKTABLE.NOT_STACKTABLE_TO, 'toggle-off': stackability != STACKTABLE.NOT_STACKTABLE_TO}"
+               ng-src="{{stackability == STACKTABLE.NOT_STACKTABLE_TO ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+               ng-disabled='!editMode'
+               ng-click="stackability = STACKTABLE.NOT_STACKTABLE_TO"/>
+      </span>
+      <span class="xgrid-cell -default-15"><b>Non-stackable to</b></span>
+      <span class="xgrid-cell -default-40">
+        <select-discount ng-disabled="stackability != STACKTABLE.NOT_STACKTABLE_TO || !editMode"
+                         selected-ids="stackability_selectedIds"
+                         fetch-list="discountLists"
+                         hidden-value="stackability != STACKTABLE.NOT_STACKTABLE_TO"
+                         close="updateSelected"
+                         only-advance="true"
+                         placeholder="'Select Discount'">
+				</span>
+      <span class="xgrid-cell -default-15"></span>
+    </div>
+	</div>
+
+	<div class='panel-section'>
+  		<h3>SETTINGS</h3>
+  		<div class="xgrid">
+	  		<div class="xgrid-cell -default-5">
+	  			<input type="image"
+	              ng-class="{'toggle-on': deduct_tax_base, 'toggle-off': !deduct_tax_base}"
+	              ng-src="{{deduct_tax_base == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+	              ng-disabled='!editMode'
+	              ng-click="deduct_tax_base = !deduct_tax_base"/>
+	  		</div>
+	  		<div class="xgrid-cell -default-95">
+	  			<b>Deduct Tax and Service Charge Base</b>
+	        	<p>Check this if this is a store coupon or discount. Leave it unchecked if this is a manufacturer coupon.</p>
+	  		</div>
+  		</div>
+  		<div class="xgrid">
+	  		<div class="xgrid-cell -default-5">
+	  			<input type="image"
+	              ng-class="{'toggle-on': auto_apply, 'toggle-off': !auto_apply}"
+	              ng-src="{{auto_apply == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+	              ng-disabled='!editMode'
+	              ng-click="auto_apply = !auto_apply"/>
+	  		</div>
+	  		<div class="xgrid-cell -default-95">
+	  			<b>Apply Discount Automatically</b>
+	  		</div>
+  		</div>
+  		<div class="xgrid" ng-show="deduct_tax_base === false">
+	  		<div class="xgrid-cell -default-5">
+	  			<input type="image"
+	              ng-class="{'toggle-on': include_service_fee, 'toggle-off': !include_service_fee}"
+	              ng-src="{{include_service_fee == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+	              ng-disabled='!editMode'
+	              ng-click="include_service_fee = !include_service_fee"/>
+	  		</div>
+	  		<div class="xgrid-cell -default-95">
+	  			<b>Calculate discount after service charge</b>
+	  		</div>
+  		</div>
+  	</div>
+
+  	<div class='panel-section'>
+      <h3>OUTCOME (<b>can set multiple tiers</b>)</h3>
+  		<div ui-sortable="sortableOptions" ng-model="outcome_set.outcomes">
+		  	<div ng-repeat='(i, outcome) in outcome_set.outcomes' class="sortable-items">
+		  		<div class="xgrid"></div>
+		  		<div class="xgrid" ng-hide="i == 0">
+		  			<div class="xgrid-cell"><strong>And</strong></div>
+		  		</div>
+		  		<div class="xgrid">
+		  			<div class="xgrid-cell -default-5 drag-anchor">
+		  				<label> &nbsp</label>
+		  				<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+                    <div ng-class="outcome.type === OUTCOMES.OFF_ENTIRE || outcome.type === OUTCOMES.OFF_SERVICE
+		  			? 'xgrid-cell -default-45' :
+					outcome.type === OUTCOMES.OFF_SPECIFIC ?
+					'xgrid-cell -default-20' : 'xgrid-cell -default-35' ">
+		  			<label>{{'OUTCOME OPTION'|translate}}</label>
+						<select class="_full" ng-disabled='!editMode' ng-model="outcome.type"
+							ng-options="opt.value as opt.name for opt in outcomes_options">
+						</select>
+					</div>
+					<div class="xgrid-cell -default-35" ng-show="outcome.type === OUTCOMES.OFF_SPECIFIC">
+			  			<label>{{'PRODUCTS'|translate}}</label>
+			  			<add-listings-input-select ng-show="outcome.type === OUTCOMES.OFF_SPECIFIC"
+				  			hidden-values="outcome.product_ids"
+				  			show-search="true"
+				  			search="searchProducts"
+				  			fetch-list="outcomeProductLists[i]" placeholder="'Select Products'"> </add-listings-input-select>
+					</div>
+					<div ng-class="outcome.type === OUTCOMES.OFF_SPECIFIC ? 'xgrid-cell -default-15' : 'xgrid-cell -default-30'">
+			  			<label>{{'TYPE'|translate}}</label>
+						<select class="_full" ng-disabled='!editMode' ng-model="outcome.value_type"
+							ng-options="opt.value as opt.name for opt in value_type_options">
+						</select>
+					</div>
+            <div class="xgrid-cell -default-15"
+                 ng-show="outcome.type === OUTCOMES.OFF_ENTIRE && outcome.value_type === OUTCOMES.ABSOLUTE">
+              <label>{{'MAX QTY'|translate}}</label>
+              <input class="input-box__input _full" ng-show="outcome.quantity" type="number" min="0" ng-readonly='!editMode' ng-model="outcome.quantity">
+              <input class="input-box__input _full" ng-show="!outcome.quantity" type="text" ng-readonly='!editMode' value="Unlimited" ng-keyup="handleOutcomeMaxInput($event, outcome)">
+            </div>
+					<div ng-class="outcome.type === OUTCOMES.OFF_SPECIFIC ? 'xgrid-cell -default-10' : 'xgrid-cell -default-15'"
+						ng-hide="outcome.type === OUTCOMES.OFF_SERVICE || outcome.type === OUTCOMES.OFF_ENTIRE">
+			  		<label>{{'QTY'|translate}}</label>
+						<input class="input-box__input _full" type="number" min="0" ng-readonly='!editMode' ng-model="outcome.quantity">
+					</div>
+					<div ng-class="outcome.type === OUTCOMES.OFF_SPECIFIC ? 'xgrid-cell -default-10' : 'xgrid-cell -default-15'">
+			  			<label>{{'VALUE'|translate}}</label>
+			  			<div class="input unit">
+	    					<span class="units" ng-bind="outcome.value_type === 'percentage' ? '%' : null"></span>
+								<input class="input-box__input _full" type="number" min="0" ng-readonly='!editMode || variableOutcome' ng-model="outcome.value">
+						</div>
+
+
+					</div>
+					<div class="xgrid-cell -default-5">
+						<label> &nbsp</label>
+						<button class="_remove" ng-click="removeOutcome(i)" ng-show="editMode && i != 0"></button>
+					</div>
+		  		</div>
+		  		<!--exclude/include departments-->
+		  		<div class="xgrid" ng-hide="outcome.type === OUTCOMES.OFF_SERVICE || outcome.type === OUTCOMES.OFF_DELIVERY || outcome.type === OUTCOMES.OFF_SPECIFIC">
+						<div class="xgrid-cell -default-50" ng-hide="outcome.type === OUTCOMES.OFF_ENTIRE">
+				      		<span class="xgrid-cell -default-10">
+				        		<input type="image"
+					              ng-class="{'toggle-on': !outcome.exclude_department, 'toggle-off': outcome.exclude_department}"
+					              ng-src="{{outcome.exclude_department == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+					              ng-disabled='!editMode'
+					              ng-click="outcome.exclude_department = !outcome.exclude_department;
+					              outcome.exclude_department_ids = [];
+					              "/>
+				      		</span>
+				      		<span class="xgrid-cell -default-90">
+
+				      			 <add-listings-input-select-department ng-disabled="!outcome.exclude_department" hidden-values="outcome.department_ids" fetch-list="departmentLists"  placeholder="'Only Selected Department'"
+				      			 title="'Select departments'"> </add-listings-input-select-department>
+							</span>
+						</div>
+						<div class="xgrid-cell -default-50" ng-hide="outcome.type === OUTCOMES.OFF_SPECIFIC">
+				      		<span class="xgrid-cell -default-10">
+				        		<input type="image"
+					              ng-class="{'toggle-on': outcome.exclude_department, 'toggle-off': !outcome.exclude_department}"
+					              ng-src="{{outcome.exclude_department == false ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+					              ng-disabled='!editMode'
+					              ng-click="outcome.exclude_department = !outcome.exclude_department;
+					              outcome.department_ids = [];
+					              "/>
+				      		</span>
+				      		<span class="xgrid-cell -default-90">
+				      		<add-listings-input-select-department ng-disabled="outcome.exclude_department" hidden-values="outcome.exclude_department_ids" fetch-list="departmentLists"  placeholder="'All Except Selected Departments'"
+				      			 title="'Select departments'"> </add-listings-input-select-department>
+							</span>
+						</div>
+					</div>
+					<!--exclude/include departments-->
+					<!--exclude/include products-->
+					<div class="xgrid" ng-hide="outcome.type === OUTCOMES.OFF_SERVICE || outcome.type === OUTCOMES.OFF_DELIVERY || outcome.type === OUTCOMES.OFF_SPECIFIC">
+						<div class="xgrid-cell -default-50" ng-hide="outcome.type === OUTCOMES.OFF_ENTIRE">
+				      		<span class="xgrid-cell -default-10">
+				        		<input type="image"
+					              ng-class="{'toggle-on': !outcome.exclude_product, 'toggle-off': outcome.exclude_product}"
+					              ng-src="{{outcome.exclude_product == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+					              ng-disabled='!editMode'
+					              ng-click="outcome.exclude_product = !outcome.exclude_product;
+					              outcome.exlcude_product_ids = [];"/>
+				      		</span>
+				      		<span class="xgrid-cell -default-90">
+				      			 <add-listings-input-select show-search="true" ng-disabled="!outcome.exclude_product || $root.requestCounter !== 0"
+				      			 hidden-values="outcome.product_ids"
+				      			 title="'Select products'"
+				      			 search="searchProducts"
+				      			 fetch-list="outcomeProductLists[i]"
+				      			 placeholder="'Only Selected Products'"> </add-listings-input-select>
+							</span>
+						</div>
+						<div class="xgrid-cell -default-50" ng-hide="outcome.type === OUTCOMES.OFF_SPECIFIC">
+				      		<span class="xgrid-cell -default-10">
+				        		<input type="image"
+					              ng-class="{'toggle-on': outcome.exclude_product, 'toggle-off': !outcome.exclude_product}"
+					              ng-src="{{outcome.exclude_product == false ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+					              ng-disabled='!editMode'
+					              ng-click="outcome.exclude_product = !outcome.exclude_product;
+					              outcome.product_ids = [];
+					              "/>
+				      		</span>
+				      		<span class="xgrid-cell -default-90">
+					      	 	<add-listings-input-select show-search="true" ng-disabled="outcome.exclude_product ||
+					      	 	$root.requestCounter !== 0"
+					      	 	title="'Select products'"
+					      	 	fetch-list="outcomeInExProductLists[i]"
+					      	 	hidden-values="outcome.exlcude_product_ids" search="searchProducts" placeholder="'All Except Selected Products'"> </add-listings-input-select>
+
+							</span>
+						</div>
+					</div>
+
+					<!--exclude/include products-->
+
+
+
+
+
+		  	</div>
+		 </div>
+  		<button ng-show="!variableOutcome" class="_add" ng-click="addOutcome()" ng-show="editMode">Add Another Outcome</button>
+  	</div>
+
+  	<div ng-hide="hideTiers" class='panel-section'>
+  		<h3>Tiers</h3>
+  		<div ng-repeat='(i, tier) in tiers'>
+
+	  		<div class="xgrid" ng-hide="i == 0">
+	  			<div class="xgrid-cell"><strong >And</strong>
+	  			</div>
+	  		</div>
+
+	  		<div class="xgrid">
+	  			<div class="xgrid-cell -default-35">
+	  				<label>{{tiers_trigger_placeholder |translate}}</label>
+	  				<input class="input-box__input _full" type="text" ng-readonly='!editMode'
+	  				ng-model="tier.trigger_amount"/>
+	  			</div>
+	  			<div class="xgrid-cell -default-65">
+	  				<label>&nbsp</label>
+	  				<button class="_remove" ng-click="removeTier(i)">Remove this tier</button>
+	  			</div>
+	  		</div>
+
+	  		<div ui-sortable="sortableOptions2" ng-model="tier.outcome_set.outcomes">
+		  		<div ng-repeat='(j, outcome) in tier.outcome_set.outcomes'>
+			  		<div class="xgrid">
+			  			<div class="xgrid-cell -default-5 drag-anchor">
+			  				<label> &nbsp</label>
+			  				<i class="fa fa-bars" aria-hidden="true"></i>
+						</div>
+				   <div ng-class="outcome.type === OUTCOMES.OFF_ENTIRE || outcome.type === OUTCOMES.OFF_SERVICE
+                       ? 'xgrid-cell -default-45' :
+                       outcome.type === OUTCOMES.OFF_SPECIFIC ?
+                       'xgrid-cell -default-20' : 'xgrid-cell -default-35' ">
+				  			<label>{{'OUTCOME OPTION'|translate}}</label>
+							<select class="_full" ng-disabled='!editMode' ng-model="outcome.type"
+								ng-options="opt.value as opt.name for opt in outcomes_options">
+							</select>
+						</div>
+						<div class="xgrid-cell -default-30">
+							<div ng-show="outcome.type === OUTCOMES.OFF_SPECIFIC">
+								<label>{{'PRODUCTS'|translate}}</label>
+				  			<add-listings-input-select ng-show="outcome.type === OUTCOMES.OFF_SPECIFIC"
+					  			hidden-values="outcome.product_ids"
+					  			show-search="true"
+					  			search="searchProducts"
+					  			fetch-list="tiersOutcomeProductLists[i]" placeholder="'Select Products'"> </add-listings-input-select>
+                            </div>
+                        </div>
+						<div ng-class="outcome.type === OUTCOMES.OFF_SPECIFIC ? 'xgrid-cell -default-15' : 'xgrid-cell -default-30'">
+				  			<label>{{'TYPE'|translate}}</label>
+								<select class="_full" ng-disabled='!editMode' ng-model="outcome.value_type"
+									ng-options="opt.value as opt.name for opt in value_type_options">
+								</select>
+						</div>
+						<div ng-hide="outcome.type === OUTCOMES.OFF_SERVICE || outcome.type === OUTCOMES.OFF_ENTIRE" ng-class="outcome.type === OUTCOMES.OFF_SPECIFIC ? 'xgrid-cell -default-10' : 'xgrid-cell -default-15'">
+				  			<label>{{'QTY'|translate}}</label>
+							<input class="input-box__input _full" type="number" min="0" ng-readonly='!editMode' ng-model="outcome.quantity">
+						</div>
+						<div ng-class="outcome.type === OUTCOMES.OFF_SPECIFIC ? 'xgrid-cell -default-10' : 'xgrid-cell -default-15'">
+				  			<label>{{'VALUE'|translate}}</label>
+				  			<div class="input unit">
+                                <span class="units" ng-bind="['percentage','variable_percentage'].includes(outcome.value_type) ? '%' : null"></span>
+								<input class="input-box__input _full" type="number" min="0" ng-readonly='!editMode' ng-model="outcome.value">
+							</div>
+						</div>
+						<div class="xgrid-cell -default-5">
+							<label> &nbsp</label>
+							<button class="_remove" ng-click="removeTierOutcome(j, tier.outcome_set.outcomes)" ng-show="editMode && j != 0"></button>
+						</div>
+			  		</div>
+
+
+
+
+	  			  		<!--exclude/include departments-->
+		  		<div class="xgrid" ng-hide="outcome.type === OUTCOMES.OFF_SERVICE || outcome.type === OUTCOMES.OFF_DELIVERY">
+						<div class="xgrid-cell -default-50" ng-hide="outcome.type === OUTCOMES.OFF_ENTIRE">
+				      		<span class="xgrid-cell -default-10">
+				        		<input type="image"
+					              ng-class="{'toggle-on': !outcome.exclude_department, 'toggle-off': outcome.exclude_department}"
+					              ng-src="{{outcome.exclude_department == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+					              ng-disabled='!editMode'
+					              ng-click="outcome.exclude_department = !outcome.exclude_department;
+					              outcome.exclude_department_ids = [];
+					              "/>
+				      		</span>
+				      		<span class="xgrid-cell -default-90">
+
+				      			 <add-listings-input-select-department ng-disabled="!outcome.exclude_department || $root.requestCounter !== 0" hidden-values="outcome.department_ids" fetch-list="departmentLists"  placeholder="'Only Selected Department'"
+				      			 title="'Select departments'"> </add-listings-input-select-department>
+							</span>
+						</div>
+						<div class="xgrid-cell -default-50" ng-hide="outcome.type === OUTCOMES.OFF_SPECIFIC">
+				      		<span class="xgrid-cell -default-10">
+				        		<input type="image"
+					              ng-class="{'toggle-on': outcome.exclude_department, 'toggle-off': !outcome.exclude_department}"
+					              ng-src="{{outcome.exclude_department == false ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+					              ng-disabled='!editMode'
+					              ng-click="outcome.exclude_department = !outcome.exclude_department;
+					              outcome.department_ids = [];
+					              "/>
+				      		</span>
+				      		<span class="xgrid-cell -default-90">
+				      		<add-listings-input-select-department ng-disabled="outcome.exclude_department || $root.requestCounter !== 0" hidden-values="outcome.exclude_department_ids" fetch-list="departmentLists"  placeholder="'All Except Selected Departments'"
+				      			 title="'Select departments'"> </add-listings-input-select-department>
+							</span>
+						</div>
+					</div>
+					<!--exclude/include departments-->
+					<!--exclude/include products-->
+					<div class="xgrid" ng-hide="outcome.type === OUTCOMES.OFF_SERVICE || outcome.type === OUTCOMES.OFF_DELIVERY">
+						<div class="xgrid-cell -default-50" ng-hide="outcome.type === OUTCOMES.OFF_ENTIRE">
+				      		<span class="xgrid-cell -default-10">
+				        		<input type="image"
+					              ng-class="{'toggle-on': !outcome.exclude_product, 'toggle-off': outcome.exclude_product}"
+					              ng-src="{{outcome.exclude_product == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+					              ng-disabled='!editMode'
+					              ng-click="outcome.exclude_product = !outcome.exclude_product;
+					              outcome.exlcude_product_ids = [];"/>
+				      		</span>
+				      		<span class="xgrid-cell -default-90">
+				      			 <add-listings-input-select show-search="true"
+				      			 ng-disabled="!outcome.exclude_product || $root.requestCounter !== 0"
+				      			 hidden-values="outcome.product_ids"
+				      			 title="'Select products'"
+				      			 search="searchProducts"
+				      			 fetch-list="outcomeInExProductLists[i]"
+				      			 placeholder="'Only Selected Products'"> </add-listings-input-select>
+							</span>
+						</div>
+						<div class="xgrid-cell -default-50" ng-hide="outcome.type === OUTCOMES.OFF_SPECIFIC">
+				      		<span class="xgrid-cell -default-10">
+				        		<input type="image"
+					              ng-class="{'toggle-on': outcome.exclude_product, 'toggle-off': !outcome.exclude_product}"
+					              ng-src="{{outcome.exclude_product == false ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+					              ng-disabled='!editMode'
+					              ng-click="outcome.exclude_product = !outcome.exclude_product;
+					              outcome.product_ids = [];
+					              "/>
+				      		</span>
+				      		<span class="xgrid-cell -default-90">
+					      	 	<add-listings-input-select show-search="true"
+					      	 	ng-disabled="outcome.exclude_product || $root.requestCounter !== 0"
+					      	 	title="'Select products'"
+					      	 	fetch-list="outcomeInExProductLists[i]"
+					      	 	hidden-values="outcome.exlcude_product_ids" search="searchProducts" placeholder="'All Except Selected Products'"> </add-listings-input-select>
+
+							</span>
+						</div>
+					</div>
+
+					<!--exclude/include products-->
+
+
+
+			  	</div>
+			</div>
+	  		<button class="_add" ng-click="addTierOutcome(tier.outcome_set.outcomes)" ng-show="editMode">Add Another Outcome</button>
+
+
+
+
+	  	</div>
+  	</div>
+
+  	<button class="_add" ng-click="addTier()"  ng-hide="hideTiers || !editMode">Add Another Tier</button>
+
+</div>
+</div>
+
+
+</div>

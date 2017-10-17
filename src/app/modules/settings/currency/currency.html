@@ -1,0 +1,24 @@
+ 
+   
+<div class='panel-section' >
+	<label for="multiple-currency">
+		<input-checkbox label="multiple-currency" ng-model='isMultiple' ng-disabled='isMultiple' ng-show="editMode"></input-checkbox>
+		<b translate>Support Multiple Currency</b>
+	</label>
+	<div ng-show="isMultiple">
+	<my-currency ng-disabled="true" title="Default curency" default-currency="defaultCurrency"></my-currency>
+	</div>
+	
+
+	<div ng-repeat="c in exchange_rates">
+		<my-currency ng-disabled="!editMode" title="other curency" default-currency="c"> </my-currency>
+	</div>
+
+	<button ng-show="isMultiple" ng-disabled="!editMode" class="_add" ng-click="addCurrency()">Add currency</button>
+</div>
+
+<button ng-show='!editMode' class="_secondary _right" ng-click="editMode = true;">Edit</button>	
+
+<div class='content-bottom-actions _right'>
+    <button ng-show='editMode' ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+</div>

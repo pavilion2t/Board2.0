@@ -1,0 +1,34 @@
+
+<div>
+  <div class="xgrid">
+    <div class="xgrid-cell -default-75">
+      <input-box type="text" class="_full" title="Name" ng-model="attribute.name" required />
+    </div>
+    <div class="xgrid-cell -default-25">
+      <div class="_full input-box  input-box">
+      <p class="input-box__title" translate=""><span>Format</span></p>
+      <select ng-if="attribute._new" class='_full' ng-model="attribute.field_format" ng-options="filter.value as filter.label for filter in fieldFormats">
+      </select>
+      <span ng-if="!attribute._new" ng-bind="attribute.field_format|titleCase"></span>
+      </div>
+    </div>
+  </div>
+  <div  ng-if="attribute.field_format === 'list'">
+    <div class="_full input-box  input-box">
+      <p class="input-box__title" translate=""><span>Possible Values</span></p>
+    </div>
+    <div ng-repeat="value in attribute._possible_values track by $index">
+      <input type="text" style="float:left;width:70%" ng-model="value.value" />
+      <div  style="background-color:{{value.value|colorFilter}};" class="color-review">&nbsp;</div>
+      <button class="_remove" ng-click="removePossibleValue(attribute,$index)">Remove</button>
+    </div>
+    <div style="clear:both"></div>
+    <button class="_add" ng-click="addPossibleValue(attribute)"  ng-if="attribute.field_format === 'list'">Add Possible Values</button>
+  </div>
+  <div class="_align-right">
+    <button class="_secondary" ng-if="attribute._new" ng-click="cancel($index)">Cancel</button>
+    <button class="_secondary" ng-if="!attribute._new && !attribute._forced" ng-click="delete(attribute)">Delete</button>
+    <button class="_alert" ng-if="!attribute._new && attribute._forced" ng-click="delete(attribute,true)">Forced Delete</button>
+    <button class="_primary" ng-click="save(attribute)">Save</button>
+  </div>
+</div>

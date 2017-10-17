@@ -1,0 +1,29 @@
+html, body {
+  height: 100%
+}
+
+body {
+  font-family: Lato,"Open Sans","helvetica neue",helvetica,"arial sans";
+  font-size: 14px;
+  color: #505458;
+}
+
+img {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background: #91A6BC;
+  }
+}
+
+a {
+  font-weight: 700;
+}

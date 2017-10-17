@@ -1,0 +1,14 @@
+<div class='grid'>
+  <grid-body ng-hide='gridIsEmpty'></grid-body>
+  <grid-empty ng-show='gridIsEmpty'></grid-empty>
+  <grid-import ng-show='isImporting'></grid-import>
+  <div class='content-bottom'>
+    <h2>{{title|translate}}</h2>
+
+    <!-- beware: actions only usable for 25 per page view -->
+
+    <div class='content-bottom-actions'>
+      <button class='_primary' ng-click='newFee()'>{{'New Fee'|translate}}</button>
+    </div>
+  </div>
+</div>

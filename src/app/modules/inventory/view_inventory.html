@@ -1,0 +1,75 @@
+<form name="myForm" class="form-horizontal" novalidate>
+<div class='edit'>
+  <div class='edit__body'>
+    <div class='nav-tabs'>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "overview"}' ng-click='section = "overview"'>{{'Overview'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "suppliers"}' ng-click='section = "suppliers"' ng-show='suppliersTab && !isMultiStore'>{{'Suppliers'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "attributes"}' ng-click='section = "attributes"'>{{'Custom Attributes'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "modifiers"}' ng-click='section = "modifiers"' ng-show='title==="Inventory" && !isMultiStore'>{{'Modifiers'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "bom"}' ng-click='section = "bom"' ng-show='bomViewPermission && !isMultiStore'>{{'BOM'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "tax"}' ng-click='section = "tax"'>{{'Tax Options'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "log"}' ng-click='section = "log"'>{{'Log'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "storelevel"}' ng-click='section = "storelevel"'>{{'S/L'|translate}}</a>
+    </div>
+
+    <div class='panel' ng-show='section === "overview"'>
+      <div ng-include=" 'app/modules/inventory/overview_extended.html' "></div>
+
+    </div>
+
+    <div class='panel' ng-show='section === "attributes"'>
+      <div ng-include=" 'app/modules/inventory/attributes.html' "></div>
+    </div>
+
+    <div class='panel' ng-show='section === "suppliers"' ng-show='currentStores[0].associate_type === "MANAGER"'>
+      <div ng-include=" 'app/modules/inventory/suppliers.html' "></div>
+
+    </div>
+
+    <div class='panel' ng-show='section === "tax"'>
+      <div ng-include=" 'app/modules/inventory/tax.html' "></div>
+    </div>
+
+    <div class='panel' ng-show='section === "bom"'>
+      <div ng-include=" 'app/modules/inventory/bom.html' "></div>
+    </div>
+
+    <div class='panel' ng-show='section === "serialNumber"'>
+      <div class='panel-section'>
+        <h2 translate>Serial Number</h2>
+        <p>Coming soon...</p>
+      </div>
+    </div>
+
+    <div class='panel' ng-show='section === "matrix"'>
+      <div class='panel-section'>
+        <h2 translate>Matrix</h2>
+        <p>Coming soon...</p>
+      </div>
+    </div>
+
+
+    <div class='panel' ng-show='section === "modifiers"'>
+      <div ng-include=" 'app/modules/inventory/modifiers.html' "></div>
+    </div>
+
+    <div class='panel' ng-show='section === "log"'>
+      <div ng-include=" 'app/modules/inventory/log.html' "></div>
+    </div>
+
+    <div class='panel' ng-show='section === "storelevel"'>
+      <div ng-include=" 'app/modules/inventory/storelevel.html' "></div>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2><span ng-show='editMode'>{{"Edit"|translate}} </span>{{title |translate}} #{{listing.id}} - {{listing.name}}</h2>
+    <div class='content-bottom-actions'>
+
+      <button ng-if="editPermission" ng-hide='hideEditBtn()' class='_secondary' ng-click="enableEditMode()">{{'Edit'|translate}}</button>
+      <button ng-show='editMode' ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+  </div>
+
+</div>
+</form>

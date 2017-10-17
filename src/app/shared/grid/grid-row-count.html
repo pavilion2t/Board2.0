@@ -1,0 +1,11 @@
+<div class='grid__row-count' ng-hide=''>
+    <span ng-if='returnAll'>{{'Showing'|translate}} {{gridIsEmpty ? 0 : 1}}-{{totalEntries}} {{"of"|translate}} {{totalEntries}} {{"results"|translate}}.</span>
+    <span ng-if='!returnAll'>{{'Showing'|translate}} {{gridIsEmpty ? 0 : (pageNumber - 1) * rowCount + 1}}-{{Math.min(pageNumber * rowCount, totalEntries)}} {{"of"|translate}} {{totalEntries}} {{"results"|translate}}.</span>
+    <span>{{"Show"|translate}}
+      <span class='row-count__switch' ><a ng-hide='!returnAll && rowCount === 25' ng-click='returnAll = false;updateRowCount(25)'>25</a><span ng-show='!returnAll && rowCount === 25'>25</span> / </span>
+      <span class='row-count__switch'><a ng-hide='!returnAll && rowCount === 50' ng-click='returnAll = false;updateRowCount(50)'>50</a><span ng-show='!returnAll && rowCount === 50'>50</span> / </span>
+      <span class='row-count__switch'><a ng-hide='!returnAll && rowCount === 100' ng-click='returnAll = false;updateRowCount(100)'>100</a><span ng-show='!returnAll && rowCount === 100'>100</span> / </span>
+      <span class='row-count__switch'><a ng-hide='!returnAll && rowCount === 200' ng-click='returnAll = false;updateRowCount(200)'>200</a><span ng-show='!returnAll && rowCount === 200'>200</span> <span ng-if="!disableAll">/</span> </span>
+      <span ng-if="!disableAll" class='row-count__switch'><a ng-hide='returnAll' ng-click='returnAll = true;updateRowCount(totalEntries);'>{{"All"|translate}}</a><span ng-show='returnAll'>{{"All"|translate}}</span></span>
+    </span>
+</div>

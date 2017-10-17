@@ -1,0 +1,130 @@
+<div ng-controller="DiscountFormController">
+  <div>
+      <div class='nav-tabs'>
+          <a class='nav-tabs-item' ng-class='{"-active": section === "overview"}' ng-click='section = "overview"' ng-init='section = "overview"'>{{'Overview'|translate}}</a>
+          <a class='nav-tabs-item' ng-class='{"-active": section === "department"}' ng-click='section = "department"'>{{'Departments'|translate}}</a>
+      </div>
+	<div class='panel' ng-show='section === "overview"'>
+	  <ng-include src=" 'app/shared/edit/add_listings.html' "></ng-include>
+
+
+
+	  <div class='panel-section' >
+		<div>
+		  <input-box class='_full' type='text' title="{{'Discount Title'|translate}}" ng-model='discount.name' ng-readonly='!editMode'></input-box>
+		</div>
+		<div>
+		  <div class='input-box'>
+			<p class='input-box__title' translate>Discount Type</p>
+			<select id="discountType" ng-model='parent.discountType' ng-options="discount.value as discount.name for discount in parent.discountTypes" ng-disabled='!editMode' ng-change="update()">
+			  <option value='' disabled translate>Choose Discount Type...</option>
+			</select>
+		  </div>
+
+            <div class="_right input-box  input-box" ng-show='discountType === "percentage"'>
+                <p class="input-box__title" translate>Discount Percentage(%)</p>
+                <input class="input-box__input" type="text" placeholder="Discount Percentage(%)" input-percentage ng-model="discount.percentage" ng-readonly="!editMode">
+            </div>
+
+            <div class="_right input-box  input-box" ng-show='discountType === "amount"'>
+                <p class="input-box__title" translate>Discount Amount</p>
+                <input class="input-box__input" type="text" placeholder="Discount Amount" input-currency ng-model="discount.amount" ng-readonly="!editMode">
+            </div>
+
+             <div class="input-box">
+                <p class="input-box__title" translate>Discount Code</p>
+                <input class="input-box__input" type="text" placeholder="Discount Code" ng-model="discount.code" ng-readonly="!editMode">
+            </div>
+
+
+		</div>
+	  <div class='panel-section'>
+		<div>
+		  <p>
+			<input-checkbox label='checkbox-deduct-tax-base' ng-model='discount.deduct_tax_base' ng-disabled='!editMode'></input-checkbox>
+			<b translate>Deduct Tax Base</b></p>
+		  <p translate>Check this if this is a store coupon or discount.</p>
+		  <p translate>Leave it unchecked if this is a manufacturer coupon.</p>
+		</div>
+    <div ng-hide="discount.deduct_tax_base === true">
+      <input-checkbox label='checkbox-inclue-service-fee' ng-model='discount.include_service_fee' ng-disabled='!editMode'></input-checkbox>
+      <b translate>Calculate discount after service charge</b>
+    </div>
+	  </div>
+	  <div class='panel-section xgrid'>
+		  <div class="xgrid-cell -default-50">
+		<div>
+		  <p>
+			<input-checkbox label='checkbox-auto-apply' ng-model='discount.auto_apply' ng-disabled='!editMode'></input-checkbox>
+			<b translate>Automatically Apply Discount</b></p>
+		</div>
+
+		  <div>
+			  <p>
+				  <input-checkbox label='checkbox-mix-and-match' ng-model='discount.mix_and_match' ng-disabled='!editMode'></input-checkbox>
+				  <b translate>Mix and Match</b></p>
+		  </div>
+		</div>
+
+		  <div class="xgrid-cell -default-25">
+			  <label>{{'Start date'|translate}}</label>
+			  <input class='input -full' type='text' ng-model='discount.start_from' ui-date='dateOptions' ui-date-format='yy-mm-dd' ng-readonly='!editMode' ng-disabled='!editMode'>
+		  </div>
+		  <div class="xgrid-cell -default-25">
+			  <label>{{'End date'|translate}}</label>
+			  <input class='input -full' type='text' ng-model='discount.end_at' ui-date='dateOptions' ui-date-format='yy-mm-dd' ng-readonly='!editMode' ng-disabled='!editMode'>
+		  </div>
+
+
+	  </div>
+
+		  <div class='panel-section xgrid'>
+			  <div class="xgrid-cell -default-25">
+				  <h3>{{'Items'|translate}}</h3>
+				  <div>
+					  <p>
+						  <input-checkbox label='checkbox-apply-all' ng-model='itemFactory.allitems' ng-disabled='!editMode'></input-checkbox>
+						  <b translate>Apply to All Items</b></p>
+				  </div>
+				  <editable-grid columns="editColumns" data="itemFactory.items" edit-mode="editMode" row-height="editRowHeight" ng-show="itemFactory.items.length && !itemFactory.allitems"></editable-grid>
+				  <button class="_add" ng-click="startAddingListings()" ng-show="editMode && !itemFactory.allitems"  >{{"Add New Items"|translate}}</button>
+			  </div>
+		  </div>
+
+	  <div class='panel-section'>
+		<input-textarea title='Notes' ng-model='discount.notes' ng-readonly='!editMode'></input-textarea>
+	  </div>
+	</div>
+
+
+  </div>
+  <div class='panel' ng-show='section === "department"'>
+          <div>
+              <p>
+                  <input-checkbox label='checkbox-apply-all-departments' ng-model='itemFactory.alldepartments' ng-disabled='!editMode'></input-checkbox>
+                  <b translate>Apply to All Departments</b></p>
+          </div>
+          <table class="listing-table table" ng-show="!itemFactory.alldepartments">
+              <thead>
+                  <tr>
+                      <th class="_select" width="10%" translate>Select</th>
+                      <th class="_item" translate>Department</th>
+                  </tr>
+              </thead>
+              <tr ng-repeat='department in itemFactory.departments'>
+                  <td class='_select'>
+                      <input-checkbox label='checkbox-selected{{department.id}}' ng-model='department.selected' ng-disabled='!editMode'></input-checkbox>
+                  </td>
+                  <td class="_item left_border" ><span value='{{department.id}}' ng-bind-html="department.display"></span></td>
+              </tr>
+
+          </table>
+  </div>
+  <div class='content-bottom'>
+	<h2><span ng-show='editMode'>Edit</span> Discount #{{discount.id}} - {{discount.name}}</h2>
+	<div class='content-bottom-actions'>
+	  <button ng-if="editPermission" ng-hide='editMode' class='_secondary' ng-click="enableEditMode()">Edit</button>
+	  <button ng-show='editMode' ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+	</div>
+  </div>
+</div>

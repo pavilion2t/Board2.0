@@ -1,0 +1,61 @@
+.editable-grid-wrapper {
+  overflow-x: auto;
+
+}
+.editable-grid {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 1em;
+
+  &__cell {
+    vertical-align: top;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgb(230,230,230);
+    color: $text-dark-brown;
+  }
+
+  &__head-cell {
+    border: 1px solid #fff;
+    padding: 3px 10px;
+    background-color:$light-gray;
+    color: white;
+    line-height: 24px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: left;
+
+    &.-icon-cell {
+      width: 2em;
+    }
+  }
+  &__body &__cell + &__cell {
+    border-left: 1px dotted rgb(235,235,235);
+  }
+
+  // TODO: remove !important after lowen spefcity of input
+  &__cell-input {
+    width: 100% !important;
+    border: 1px solid rgb(255,180,109) !important;
+    border-radius: 4px !important;
+    height: 30px !important;
+    padding: 0 10px !important;
+    margin: 0 !important;
+  }
+
+  ._line-item {
+    img {
+      float: left;
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+    }
+    p {
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+  }
+  ._remove-mini {
+    margin-top: 6px;
+  }
+}

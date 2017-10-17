@@ -1,0 +1,121 @@
+.grid {
+  position: relative;
+
+  .grid__add-modifiers {
+    @include modal-backdrop;
+
+    button:disabled {
+      opacity: 0.5;
+    }
+    .add-modifiers__modal {
+      width: 740px;
+      height: 560px;
+      margin-left: -370px;
+      margin-top: -280px;
+    }
+    .modal__saving {
+      @include modal-backdrop;
+
+      .saving__message {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 120px;
+        height: 40px;
+        margin-left: -60px;
+        margin-top: -20px;
+        background-color: rgba(57,64,76,0.8);
+        border-radius: 40px;
+        text-align: center;
+        p {
+          font-weight: 700;
+          color: white;
+          line-height: 40px;
+          i {
+            position: relative;
+            top: 2px;
+            margin-right: 10px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .content__search {
+      .search__keyword {
+        width: 590px;
+        margin-right: 10px;
+      }
+      .search__submit {
+        width: 100px;
+      }
+    }
+    .content__results {
+      height: 420px;
+      overflow-y: auto;
+
+      .results__item {
+        height: 70px;
+
+        &._selected {
+          background-color: rgb(220,220,220);
+        }
+        >img, >div {
+          display: inline-block;
+          vertical-align: text-top;
+        }
+
+        .item__image {
+          width: 30px;
+          height: 30px;
+          float: left;
+          margin: 20px;
+        }
+        .item__details {
+          width: 500px;
+          margin: 10px 0;
+          white-space: nowrap;
+
+          h5, p {
+            margin: 0;
+            line-height: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        .item__select {
+          float: right;
+          width: 50px;
+          line-height: 70px;
+        }
+      }
+    }
+  }
+}
+
+.modifier-options {
+  width: 100%;
+
+  th {
+    text-align: left;
+    font-weight: normal;
+    color: #AFA59E;
+    white-space: nowrap;
+  }
+  th, td {
+    padding: 0.5em 0.3em;
+  }
+
+  thead {
+    border-bottom: 1px solid #ccc;
+  }
+
+  &-name {
+    width: 50%;
+  }
+  &-default {
+    text-align: center;
+  }
+  &-pool {
+    text-align: center;
+  }
+}

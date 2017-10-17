@@ -1,0 +1,51 @@
+<p>Drag to set priority.</p>
+<div ui-sortable="sortableOptions" ng-model="taxOptions">
+  <div class="card" ng-repeat="taxOption in taxOptions" >
+    <h3 class="_left _margin-0 _move">{{taxOption.name}}
+      ({{taxOption.tax_rate_text}} {{taxOption.tax_type_name}})
+      <small>{{taxOption.department_tax_options.length}} departments /
+        {{taxOption.listing_tax_options.length}} listings</small>
+
+      <span ng-if="taxOption.store_id !== store_id"><small>(Store ID: {{taxOption.store_id}})</small></span>
+
+
+    </h3>
+    <div class="_right">
+      <button ng-if="!taxOption.primary && taxOption.store_id === store_id" class="_secondary"  ng-click="makePrimary(taxOption)">Make Primary</button>
+      <span class="primary" ng-if="taxOption.primary" >PRIMARY</span>
+      <span class="readonly" ng-if="taxOption.store_id !== store_id" >READ-ONLY</span>
+      <span class="servicecharge" ng-if="taxOption.stack_to_service_fee_line_item" >SERVICE CHARGE</span>
+      <button class="_secondary" ng-click="taxOption._show=!taxOption._show" ng-if="taxOption.store_id === store_id">Edit</button>
+      <button class="_secondary" ng-click="taxOption._show=!taxOption._show" ng-if="taxOption.store_id !== store_id">Show</button>
+
+    </div>
+    <div class="_clear"></div>
+    <div class="ng-hide" ng-show="taxOption._show">
+      <tax-option-form tax-option="taxOption" tax-types="taxTypes" tax-methods="taxMethods"></tax-option-form>
+      <hr>
+      <div class="_clearfix">
+        <div class="_left">
+
+          <p><input-checkbox label='included_in_price-{{taxOption.id}}' ng-model='taxOption.included_in_price' ng-disabled="taxOption.store_id !== store_id"></input-checkbox> {{'Included In Price'|translate}}</p>
+          <p class="text-note">When this feature is enabled, the relevant taxes will show up on the receipt</p>
+       <br>
+
+          <p><input-checkbox label='service_charge-{{taxOption.id}}' ng-model='taxOption.stack_to_service_fee_line_item' ng-disabled="taxOption.store_id !== store_id"></input-checkbox> {{'Include Service Charge'|translate}}</p>
+          <p class="text-note">Only one tax item could be assigned to service charge</p>
+        </div>
+
+        <div class="_right">
+          <br>
+          <br>
+          <button ng-if="taxOption.store_id === store_id" class="_secondary" ng-click="removeOption(taxOption)">Delete</button>
+          <button ng-if="taxOption.store_id === store_id" class="_primary" ng-click="updateOption(taxOption)">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<hr>
+
+<a ui-sref="app.dashboard.settings.tax.new" class="_button _add">Add New Tax</button>

@@ -1,0 +1,23 @@
+<div class='grid'>
+  <grid-filter></grid-filter>
+  <grid-body ng-hide='gridIsEmpty'></grid-body>
+  <grid-empty ng-show='gridIsEmpty'></grid-empty>
+  <grid-pagination ng-hide='loadingGrid || returnAll || gridIsEmpty || pagination.total_pages < 2' ng-model='testPageNumber'></grid-pagination>
+  <grid-row-count ng-hide='loadingGrid || gridIsEmpty'></grid-row-count>
+  <grid-import ng-show='isImporting'></grid-import>
+
+  <div class='content-bottom'>
+    <h2>{{title|translate}}</h2>
+    <!-- beware: actions only usable for 25 per page view -->
+    <div class='content-bottom-actions'>
+	  <button class='_secondary' ng-click='exportExcel()'>{{'Excel'|translate}}{{getSelectedItems().length ? " Selected" : ""}} </button>
+      <button class='_secondary' ng-click='exportPdf()'>{{'PDF'|translate}}{{getSelectedItems().length ? " Selected" : ""}} </button>
+      <button class='_secondary' ng-click='exportCsv()'>{{'CSV'|translate}}{{getSelectedItems().length ? " Selected" : ""}} </button>
+
+      <importer ng-if="editPermission" sample="assets/importer/inventory_importer.csv" fullsample="assets/importer/inventory_importer_full.csv" response-layer="null" service="inventory_imports" datakey="inventory_import[csv]" name="{{'Import'|translate}} {{newItemName|translate}}"></importer>
+
+      <button ng-if="editPermission" class="_new" ng-click='createNewGtidItem()' ng-disabled="isMultiStore" translate>New UPC Item</button>
+      <button ng-if="editPermission" class="_new" ng-click='createNewCustomItem()'ng-disabled="isMultiStore" translate>New Custom Item</button>
+    </div>
+  </div>
+</div>

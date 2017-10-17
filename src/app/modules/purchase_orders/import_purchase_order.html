@@ -1,0 +1,67 @@
+<div class="card">
+  <h1>Import Purchase Order</h1>
+  <p>You can download a <a href="{{templateLink}}">CSV Purchase Order template</a> to get started.
+  <p><b>Tips:</b> To make sure you entered the correct Product name or UPC, you can <a ng-click="exportInventoryCSV()">Export Simplified Inventory Report</a> with the corresponding columns as your Purchase Order template.</p>
+
+  <h3>Import Template Sample</h3>
+  <table class="table table-csv">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>UPC / EAN</th>
+        <th>Supplier Product ID</th>
+        <th>Order Qty</th>
+        <th>Unit Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dog Shampoo - 370ML</td>
+        <td></td>
+        <td>DS370</td>
+        <td>36</td>
+        <td>$7.99</td>
+      </tr>
+      <tr>
+        <td>Dog Shampoo - 700ML</td>
+        <td></td>
+        <td>DS700</td>
+        <td>12</td>
+        <td>$9.99</td>
+      </tr>
+      <tr>
+        <td>Dog Treats 25g</td>
+        <td>428475638471</td>
+        <td></td>
+        <td>24</td>
+        <td>$3.00</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>"PC / EAN" and "Supplier Product ID" are optional.</p>
+
+  <hr>
+
+  <!-- Todo: DRY -->
+  <ui-select ng-model="order.supplier_id" theme="select2" class="form-control" style="width:330px;">
+    <ui-select-match placeholder=" Select or search supplier...">{{$select.selected.name}}</ui-select-match>
+
+    <ui-select-choices repeat="supplier.id as supplier in suppliers | filter: $select.search">
+      <span ng-bind-html="supplier.name | highlight: $select.search"></span>
+    </ui-select-choices>
+  </ui-select>
+
+
+  <h4>Select CSV file</h4>
+  <input type="file" onChange="angular.element(this).scope().selectCSV(this.files)" ng-model="order.csv" accept=".csv">
+
+</div>
+
+<div class="content-bottom">
+    <h2>Import Purchase Order</h2>
+    <div class="content-bottom-actions">
+      <button class="_secondary" ng-click="back()">Cancel</button>
+      <button class="_primary" ng-click="import(order)">Import now</button>
+
+    </div>
+  </div>

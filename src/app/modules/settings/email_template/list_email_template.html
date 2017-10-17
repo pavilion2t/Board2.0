@@ -1,0 +1,10 @@
+<div class='grid'>
+  <grid-body ng-hide='gridIsEmpty'></grid-body>
+  <grid-empty ng-show='gridIsEmpty'></grid-empty>
+  <div class='content-bottom'>
+    <h2>{{title|translate}}</h2>
+    <div class='content-bottom-actions'>
+      <button class="_new" ng-click='createNewItem()' translate>New Item</button>
+    </div>
+  </div>
+</div>

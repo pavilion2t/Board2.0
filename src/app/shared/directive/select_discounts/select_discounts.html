@@ -1,0 +1,31 @@
+<div class='select-discount'>
+  <div class='ngdialog-header add-listings-header'>
+    <h3 class="pull-left">{{'Select Discount'|translate}}</h3>
+  </div>
+  <div class='_message' ng-if='loadErrorMessage'>{{loadErrorMessage}}</div>
+  <div class="ngdialog-body">
+    <table class="table listing-table" ng-hide="loading">
+      <thead>
+      <tr>
+        <th></th>
+        <th class="_title" colspan="2">{{'Title'|translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat='discount in allDiscounts'>
+        <td class="cell-check">
+          <input type="checkbox" ng-model="discount.checked">
+        </td>
+        <td class='_title'>
+          <h4>{{discount.name}}</h4>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <p class="_margin-2em" ng-show="loading">Loading discounts...</p>
+  </div>
+  <div class='ngdialog-footer _align-right'>
+    <button class='_secondary' ng-click='closeThisDialog(null)'>{{'Cancel'|translate}}</button>
+    <button class='_primary' ng-click='select()' ng-disabled='!isEnablingSaveButton()'>{{'Save'|translate}}</button>
+  </div>
+</div>

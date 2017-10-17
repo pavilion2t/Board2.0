@@ -1,0 +1,39 @@
+<div class='edit'>
+  <div class='edit__body'>
+    <div class='nav-tabs'>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "overview"}' ng-click='section = "overview"'>{{'Overview'|translate}}</a>
+      <!-- <a class='nav-tabs-item' ng-class='{"-active": section === "products"}' ng-click='section = "products"'>Products</a> -->
+      <a class='nav-tabs-item' ng-class='{"-active": section === "po_history"}' ng-click='section = "po_history"'>{{'P.O. History'|translate}}</a>
+    </div>
+    <div class='panel' ng-show='section === "overview"'>
+      <ng-include src=" 'app/modules/suppliers/supplier_form.html' "></ng-include>
+
+    </div>
+    <div class='panel' ng-show='section === "products"'>
+      <div class='panel-section'>
+        <h2 translate>Products</h2>
+        <div class='grid'>
+          <editable-grid ng-hide='!supplier.listing_items || supplier.listing_items.length === 0' columns='editProductColumns' data='supplier.listing_items' edit-mode='editMode'></editable-grid>
+          <p ng-show='!supplier.listing_items || supplier.listing_items.length === 0'>{{'No Products Yet.'|translate}}</p>
+        </div>
+      </div>
+    </div>
+    <div class='panel' ng-show='section === "po_history"'>
+      <div class='panel-section'>
+        <h2 translate>P.O. History</h2>
+        <div class='grid'>
+          <editable-grid ng-hide='orders && orders.length === 0' columns='editPoHistoryColumns' data='orders' edit-mode='false'></editable-grid>
+          <p ng-show='orders && orders.length === 0' translate>No Purchase Orders Yet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2><span ng-show='editMode'>Edit </span>Supplier #{{supplier.id}} - {{supplier.name}}</h2>
+    <div class='content-bottom-actions'>
+      <button ng-if="editPermission" ng-hide='editMode' class='_secondary' ng-click="enableEditMode()">Edit</button>
+      <button ng-show='editMode' ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+  </div>
+</div>

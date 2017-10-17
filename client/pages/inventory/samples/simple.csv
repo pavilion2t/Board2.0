@@ -1,0 +1,5 @@
+listing_name,description,qty_on_shelf,qty_in_stockroom,brand,category,department,secondary_barcode,standard_price,tax,serial_numbers,in_store_only,discountinued,supplier_name,supplier_product_id,cost,reorder_trigger_point,reorder_amount,parent_name,matrix_key_1,matrix_value_1,matrix_key_2,matrix_value_2,matrix_key_3,matrix_value_3,image_names
+Must,can be empty,Must,Must,can be empty,can be empty,can be empty,can be empty,Must,"can be empty
+must create tax first",can be empty,default n,default n,"Must create supplier first
+if null, O-R should not exist",,,,,"If empty, T-U should exist",,,,,,,can be empty
+Macbook 15 White,,3,10,Apple,Computer,Electronic->Mac->macbook,,,GST|NYT,123-456-789|987-654-321|1357-2468-10|,,,,,,,,Macbook,size,15,color,White,,,aaa.jpg|bbb.jpg

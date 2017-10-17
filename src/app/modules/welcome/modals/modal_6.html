@@ -1,0 +1,69 @@
+<div id='modal-6' class="modal-content">
+  <div class="modal-header">
+    <h3 class="modal-title" id="myModalLabel" translate>Create Your Store</h3>
+  </div>
+  <div class="modal-body">
+    <div class='modal-subheader'>
+      <div class='modal-done-steps'>
+        <div class='step-box' ng-repeat='step in createRange(1, currentModal)' ng-class='"step-box" + step'>
+          <div class='step' ng-class='{end: step === currentModal - 1}'>
+            <img ng-hide='step === currentModal - 1' src='assets/images/steps-tick.png'>
+            <p ng-show='step === currentModal - 1'>{{step}}</p>
+          </div>
+        </div>
+        <h2 translate>Data Migration</h2>
+      </div>
+      <div class='modal-remaining-steps'>
+        <span class='step' ng-repeat='step in createRange(currentModal, 6)'>
+          <p>{{step}}</p>
+        </span>
+      </div>
+
+    </div>
+    <div class='modal-body-content'>
+      <form class='modal-form up'>
+        <div class='input-medium left'>
+          <p translate>Current POS / Inventory System</p>
+          <input name='survey_current_pos' ng-model='answers.currentPOS' placeholder='Enter Your Answer...' ng-class='{attention: attention && !answers.currentPOS}'>
+        </div>
+        <div class='input-medium right'>
+          <p translate>I've Been Using It since</p>
+          <select name='survey_current_pos_using_since' ng-model='answers.usingSince' ng-class='{attention: attention && !answers.usingSince}'>
+            <option value='' disabled selected>Select an Answer</option>
+            <option ng-repeat='(i, option) in usingSinces' ng-value='option'>{{option}}</option>
+          </select>
+        </div>
+        <div class='input-medium left'>
+          <p translate>Number of Registers</p>
+          <select name='survey_number_of_registers' ng-model='answers.registerNumber' ng-class='{attention: attention && !answers.registerNumber}'>
+            <option value='' disabled selected>{{'Select an Answer'|translate}}</option>
+            <option ng-repeat='(i, option) in registerNumbers' ng-value='option'>{{option}}</option>
+          </select>
+        </div>
+        <div class='input-medium right tall'>
+          <p translate>Pros & Cons (Optional)</p>
+          <textarea name='survey_current_pos_pros_and_cons' ng-model='answers.prosAndCons'></textarea>
+        </div>
+        <div>
+          <p translate>I Need to Migrate</p>
+          <div class='migrate' ng-repeat='(i, migrate) in migrates'>
+            <div>
+              <input id='migrate-checkbox-{{i}}' class='input-checkbox' type='checkbox' ng-model='answers.needToMigrate[migrate]'>
+              <label for='migrate-checkbox-{{i}}'></label>
+            </div>
+            <span class='migrate-text'>{{migrate}}</span>
+          </div>
+        </div>
+      </form>
+      <div class='modal-tips'>
+        <div class='question-mark'><p>?</p></div>
+        <div class='tips'><p translate>Dreading the POS migration? Don't. Our setup and migration has never taken more than 20 minutes.</p></div>
+      </div> 
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="_secondary" ng-click='back()'>{{'Go Back'|translate}}</button>
+    <button type="button" class="_primary" ng-click='surveyContinue()'>{{'Continue'|translate}}</button>
+
+  </div>
+</div>

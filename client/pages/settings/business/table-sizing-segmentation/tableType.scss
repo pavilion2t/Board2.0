@@ -1,0 +1,12 @@
+.table-type{
+  .table-type_remove{
+    height: 68px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .btn{
+      width: 75px;
+    }
+  }
+}

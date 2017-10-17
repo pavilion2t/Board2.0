@@ -1,0 +1,15 @@
+<div class='edit'>
+  <div class='edit__body'>
+    <div class='panel'>
+      <h2><span ng-show='editMode'>{{'New'|translate}} </span>{{'Supplier'|translate}}</h2>
+      <ng-include src=" 'app/modules/suppliers/supplier_form.html' "></ng-include>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2>New Supplier</h2>
+    <div class='content-bottom-actions'>
+      <button ng-show='editMode' ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]}}</button></div>
+    </div>
+  </div>
+</div>

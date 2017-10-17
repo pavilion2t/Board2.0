@@ -1,0 +1,24 @@
+@import '../base/stylesheets/_variables.scss';
+
+.main-content-header {
+    box-sizing: border-box;
+    z-index: 200;
+    position: fixed;
+    left: $layout-menu-width;
+    right: 0;
+    bottom: 0;
+    height: $layout-footer-height;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    .btn {
+        margin: 0 5px;
+    }
+    .main-content-title {
+        font-size: 20px;
+        margin: 0;
+    }
+}

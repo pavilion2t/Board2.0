@@ -1,0 +1,22 @@
+<div >
+    <div class="ngdialog-header">
+      <h3 class="ngdialog-title">Select Department</h3>
+    </div>
+    <div class="ngdialog-body">
+      <div class="select-department">
+        <ul class="_unstyled">
+          <li ng-repeat="department in departments">
+            <div class="card -s">
+              <label><input type="checkbox" ng-model="department.checked"> {{department.display}}</label>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="ngdialog-footer _align-right">
+      <button class="_secondary ng-binding" ng-click="closeThisDialog(null)">Cancel</button>
+      <button class="_primary ng-binding" ng-click="select(department)">Save</button>
+    </div>
+
+</div>

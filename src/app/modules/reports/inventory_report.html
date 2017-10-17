@@ -1,0 +1,35 @@
+<div class="panel _clearfix fixed-panel">
+	<h2 translate>Inventory Report</h2>
+	<div class="report-filter">
+		<select ng-model="filter.searchColumn" ng-change="filterReport(filter)">
+			<option value="dept" selected translate>department</option>
+			<option value="supplier" translate>supplier</option>
+			<option value="category" translate>category</option>
+			<option value="brand" translate>brand</option>
+		</select>
+
+		<input type="text" ng-model="filter.search"
+			ng-change="filterReport(filter)"
+			placeholder="{{'filter by' |translate}} {{filter.searchColumn |translate}}">
+
+		<select ng-model="filter.searchType" ng-change="filterReport(filter)">
+			<option value="similar" selected translate>similar</option>
+			<option value="startsWith" translate>starts with</option>
+			<option value="exact" translate>exact</option>
+		</select>
+
+		<span
+			ng-include="'app/modules/reports/download_report.html'"></span>
+
+
+	</div>
+	<br>
+  <div ui-grid="gridOptions" class="ag-fresh fixed-grid" ui-grid-resize-columns ui-grid-grouping ui-grid-exporter>
+    <div class="report-no-rows" ng-show="gridMessage">
+      <div class="report-no-rows-message">
+        <span>{{gridMessage}}</span>
+      </div>
+    </div>
+  </div>
+
+</div>

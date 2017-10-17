@@ -1,0 +1,98 @@
+<div class='edit'>
+
+	<div class='edit__body'>
+		<div id="pdfExport" class='panel'>
+			<div class="row">
+				<div class="col-xs-9">
+					<h1>{{title}} Reference #{{invoice.reference_number}}</h1>
+				</div>
+			</div>
+			<div class='panel-section'>
+			
+				<h2>User Input Values</h2>
+				<div class="xgrid">
+					<div class="xgrid-cell">
+						<input-box class='_full' type='text'
+							title='{{"Shipping Method"|translate}}'
+							ng-model='user_input.shipping_method'></input-box>
+					</div>
+					<div class="xgrid-cell">
+						<input-box class='_full' type='text'
+							title='{{"Handling Liable To"|translate}}'
+							ng-model='user_input.handling_liable'></input-box>
+
+					</div>
+				</div>
+				<div class="xgrid">
+					<div class="xgrid-cell">
+						<input-box class='_full' type='text'
+							title='{{"Goods Aspect"|translate}}'
+							ng-model='user_input.goods_aspect'></input-box>
+					</div>
+					<div class="xgrid-cell">
+						<input-box class='_full' type='text'
+							title='{{"Carriage"|translate}}' ng-model='user_input.carriage'></input-box>
+					</div>
+
+				</div>
+				<div class="xgrid">
+					<div class="xgrid-cell">
+						<input-box class='_full' type='text'
+							title='{{"Remarks"|translate}}' ng-model='user_input.remarks'></input-box>
+					</div>
+					<div class="xgrid-cell">
+					</div>
+				</div>
+				<div class="xgrid">
+					<div class="xgrid-cell">
+						<input-box class='_full' type='text'
+							title='{{"Shipping Agent 1"|translate}}'
+							ng-model='user_input.shipping_agent_1'></input-box>
+					</div>
+					<div class="xgrid-cell">
+						<input-box class='_full' type='text'
+							title='{{"Shipping Agent 2"|translate}}'
+							ng-model='user_input.shipping_agent_2'></input-box>
+					</div>
+				</div>
+			</div>
+			<div class='panel-section'>
+				<h2>Delivery Orders</h2>
+				
+				<button class="_primary" ng-click="selectAll()">Select All</button>
+				<button class="_primary" ng-click="selectNone()">Select None</button>
+			
+				<div class="card"
+					ng-repeat="delivery_order in delivery_orders track by $index">
+
+					<h3 class="_left _margin-0">
+						<span translate>Delivery Order: &nbsp;</span><span
+							ng-bind="delivery_order.id"></span> &nbsp; - &nbsp;<i
+							class="status-icon {{delivery_order.state}}"></i><span
+							ng-bind="delivery_order.state|titleCase"><i
+							class="status-icon {{delivery_order.state}}"></i></span>
+
+
+
+					</h3>
+					<div class="_right">
+
+						<input-checkbox ng-model="delivery_order.selected"
+							label='Selected' ng-disabled='false'></input-checkbox>
+					</div>
+					<div class="_clearfix"></div>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<button class='_secondary' ng-click="exportPdf('a4')">Export
+			A4</button>
+		<button class='_secondary' ng-click="exportPdf('a5')">Export
+			A5</button>
+		<button class='_secondary' ng-click="backToInvoice()">Back to
+			Invoice</button>
+	</div>
+</div>

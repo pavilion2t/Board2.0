@@ -1,0 +1,616 @@
+
+// button
+button, input[type=submit], ._button {
+  white-space: nowrap;
+  box-sizing: border-box;
+  user-select: none;
+  min-width: 60px;
+  height: 30px;
+  box-shadow: 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 0 10px;
+  text-align: center;
+  font-family: $fonts;
+  font-size: 14px;
+  font-weight: 700;
+
+  &:focus {
+    outline: none;
+  }
+  &[disabled], &[disabled]:hover {
+    opacity: 0.4 !important;
+  }
+
+
+  // prevent hover effect on iPad
+  // .no-touch on <body>
+  .no-touch &:hover {
+    opacity: 0.5;
+  }
+  &._last {
+    margin-right: 0;
+  }
+  &._primary, &._new {
+    background-color: $orange;
+    color: white;
+  }
+  &._secondary {
+    border: 1px $light-gray solid;
+    background-color: white;
+    color: $orange;
+  }
+  &._alert {
+    border: 1px $light-gray solid;
+    background-color: red;
+    color: white;
+  }
+  &._new {
+    &:before {
+      content: '+';
+      position: relative;
+      display: inline-block;
+      font-size: 12px;
+      width: 15px;
+      height: 15px;
+      line-height: 13px;
+      margin-right: 0.5em;
+      color: white;
+      border: 1px solid white;
+      border-radius: 50%;
+      font-weight: 200;
+      vertical-align: 1px;
+    }
+  }
+  &._add, &._remove, {
+    background: none;
+    min-width: 120px;
+    text-align: left;
+
+
+  }
+  &._add {
+    color: $green;
+    &:before {
+      content: '+';
+      display: inline-block;
+      width: 1.1em;
+      height: 1.1em;
+      line-height: 1.1em;
+      border-radius: 50%;
+      margin: 0 10px 0 -10px; // same as button padding
+      background: $green;
+      text-align: center;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #fff;
+      position: relative;
+      top: 1px;
+    }
+  }
+  &._remove {
+    color: $red;
+
+    &:before {
+      content: 'x';
+      display: block;
+      float: left;
+      text-align: center;
+      position: relative;
+      box-sizing: content-box;
+
+      top: 0;
+      width: 19px;
+      height: 19px;
+      line-height: 0.8;
+      margin: 0 10px 0 -10px; // same as button padding
+      border-radius: 50%;
+      color: white;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      background-color: $red;
+
+    }
+  }
+  &._remove._remove-mini {
+    min-width: 0;
+    width: 0;
+
+    &:before {
+      border: 1px solid $text-light-brown;
+      color: $text-light-brown;
+      background-color: transparent;
+    }
+  }
+  &.crm-status {
+    cursor: default;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &._icon {
+    width: 2.5em;
+    min-width: 0;
+    text-align: center;
+  }
+
+  &.btn-link-danger {
+    background: transparent;
+    color: #c00;
+    font-weight: normal;
+  }
+}
+
+button + button, ._button + ._button {
+  margin-left: 5px ;
+  margin-right: 5px;
+}
+
+a._button, span._button {
+  padding: 0.4em 1em;
+}
+
+//input - text
+input {
+  font-family: $fonts;
+  outline: none;
+}
+input[type="time"], input[type="text"], input[type="number"], input[type="email"], input[type="password"], textarea {
+  box-sizing: border-box;
+  height: 30px;
+  border: 1px solid rgb(170,170,170);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-family: $fonts;
+  font-size: 14px;
+  line-height: 22px;
+  color: $text-dark-brown;
+
+  // temp
+  min-height: 30px;
+  height: 30px !important;
+  //
+
+  &:disabled {
+    border: 0;
+    background-color: rgb(248,248,248);
+  }
+  &:focus {
+    background-color: white;
+    border-color: $border-orange;
+  }
+  &.input-error, &.ng-invalid {
+    background-color: rgba(#F9E5E5, 0.5);
+    border-color: rgb(255,93,93);
+  }
+  &[readonly] {
+    border: 0 !important;
+    background-color: rgb(248,248,248) !important;
+    cursor: default !important;
+  }
+}
+
+.input {
+  &.-full {
+    width: 100%;
+  }
+
+  &.unit{
+    position: relative;
+    .units{
+      position: absolute;
+      top: 5px;
+      right: 4px;
+    }
+  }
+}
+
+
+textarea {
+  width: 100%;
+  height: 120px !important;
+  resize: none;
+}
+textarea.cke_source{
+  height: 100% !important;
+}
+// input select directive
+.input-select{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  i{
+    padding: 8px;
+    position: absolute;
+    right: 0;
+  }
+  input{
+    pointer-events: none;
+    tab-index: -1;
+    width: 100%;
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+// input box directive
+.input-box, .input-textarea {
+  margin: 10px 0;
+
+  .input-box__title, .input-textarea__title {
+    margin-bottom: 0;
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $text-dark-brown;
+
+    &._hidden {
+      // temp hacks
+      display: block !important;
+      width: auto !important;
+      height: auto !important;
+      visibility: hidden;
+    }
+  }
+}
+
+.input-box {
+  position: relative;
+  .input-box__error-msg {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    color: red;
+  }
+}
+
+.input-box.-full {
+  width: 100%;
+
+  input, select {
+    width: 100%;
+  }
+}
+
+.input-box__input, .input-textarea__textarea {
+  &[readonly] {
+    border: 0;
+    background-color: rgb(248,248,248) !important;
+    cursor: default;
+  }
+}
+
+input.input-box__input[type="text"]:disabled {
+  background-color: transparent;
+  padding: 0 ;
+  cursor: text;
+}
+select.input-box__select:disabled {
+  background-color: transparent;
+  border: none;
+  padding: 0 ;
+  cursor: text;
+  color: #5F4A3D;
+  font-weight: normal;
+  margin-left: -8px ;
+}
+
+
+// input - checkbox
+.input-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+
+  &.-large {
+    width: 24px;
+    height: 24px;
+
+    label {
+      width: 24px;
+      height: 24px;
+    }
+
+    label:after {
+      width: 13px;
+      height: 9px;
+      top: 3px;
+      left: 3px;
+    }
+  }
+
+  input[type=checkbox] {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  label {
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+  }
+  input[type=checkbox]:checked + label {
+    border-color: $border-orange;
+  }
+  input[type=checkbox]:disabled + label {
+    background-color: rgb(248,248,248);
+  }
+  label:after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    background: transparent;
+    top: 3px;
+    left: 3px;
+    border-left: 1px solid $orange;
+    border-bottom: 1px solid $orange;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  input[type=checkbox]:checked + label:after {
+      opacity: 1;
+  }
+
+  // prevent hover effect on iPad
+  // .no-touch on <body>
+  .no-touch & label:not(:checked):hover::after {
+      opacity: 0.5;
+  }
+}
+// input - radio
+.input-radio {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+
+  input[type=radio] {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  label {
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border: 1px solid $light-gray;
+    border-radius: 8px;
+  }
+  input[type=radio]:checked + label {
+    border-color: $border-orange;
+  }
+  input[type=radio]:disabled + label {
+    background-color: rgb(248,248,248);
+  }
+  label:after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 4px;
+    left: 4px;
+    background-color: $orange;
+    border-radius: 50%;
+  }
+  label:not(:checked):hover::after {
+      opacity: 0.5;
+  }
+  input[type=radio]:checked + label:after {
+      opacity: 1;
+  }
+}
+// input - toggle
+.input-toggle {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+
+  input[type=checkbox] {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  input[type=checkbox] + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    padding: 2px;
+    width: 70px;
+    height: 30px;
+    background-color: $light-gray;
+    border-radius: 50px;
+    transition: background 0.25s;
+  }
+  input[type=checkbox]:checked + label {
+    background-color: $green;
+  }
+  input[type=checkbox] + label:before,
+  input[type=checkbox] + label:after {
+    position: absolute;
+  }
+  // background + text
+  input[type=checkbox] + label:before {
+    right: 11px;
+    top: 5px;
+    color: white;
+    content: "NO";
+  }
+  input[type=checkbox]:checked + label:before {
+    left: 11px;
+    content: "YES";
+  }
+  // circle
+  input[type=checkbox] + label:after {
+    top: 3px;
+    left: 3px;
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border-radius: 24px;
+    transition: margin 0.25s, background 0.25s;
+    content: "";
+  }
+  input[type=checkbox]:checked + label:after {
+    margin-left: 40px;
+  }
+}
+.input-listing {
+  border-top: 1px solid rgba(204,204,204,.3);
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.5);
+
+  .input-listing__input {
+    margin: 10px;
+  }
+  .input-listing__list {
+    height: 500px;
+    overflow: auto;
+
+    .list__item {
+      height: 100px;
+
+      &._selected {
+        background-color: rgb(220,220,220);
+      }
+      .item__image {
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin: 20px;
+      }
+      .item__details {
+        display: inline-block;
+        margin: 14px 0;
+        h5, p {
+          margin: 0;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+// select
+select {
+  box-sizing: border-box;
+  height: 30px;
+  border: 1px solid $light-gray;
+  border-radius: 4px;
+
+  // temp
+  min-height: 30px;
+  height: 30px !important;
+  //
+
+  font-family: $fonts;
+  font-size: 14px;
+  font-weight: 700;
+  color: $orange;
+  &:focus {
+    background-color: white;
+    border-color: $border-orange;
+  }
+  &:disabled {
+    background-color: rgb(248,248,248);
+  }
+  option {
+    font-family: $fonts;
+    background-color: white;
+  }
+}
+
+.select {
+  &.-full {
+    width: 100%;
+  }
+}
+
+
+// INPUT FILE
+._file {
+  text-align: left;
+  max-width: 300px;
+
+  ._add, ._remove, {
+    background: none;
+    min-width: 120px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+
+
+    // prevent hover effect on iPad
+    // .no-touch on <body>
+    .no-touch &:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    ._add__plus, ._remove__cross {
+      user-select: none;
+      position: relative;
+      display: inline-block;
+      top: 4px;
+      width: 19px;
+      height: 19px;
+      margin-right: 8px;
+      border-radius: 9.5px;
+      color: white;
+      span {
+        position: absolute;
+        font-size: 18px;
+      }
+    }
+  }
+  ._add {
+    color: $green;
+    ._add__plus {
+      background-color: $green;
+      span {
+        left: 4px;
+        top: -1px;
+        font-weight: 200;
+      }
+    }
+  }
+  ._remove {
+    padding: 0 0;
+    color: $red;
+    ._remove__cross {
+      background-color: $red;
+      span {
+        transform: rotate(45deg);
+        left: 5px;
+        top: -1px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+._file ._add ._add__plus{
+  line-height: 1.2;
+}

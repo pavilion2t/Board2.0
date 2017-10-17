@@ -1,0 +1,167 @@
+<div class='edit _gift-card'>
+  <div class='edit__body'>
+    <div class='nav-tabs'>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "overview"}' ng-click='section = "overview"'>Overview</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "remarks"}' ng-click='section = "remarks"'>Remarks</a>
+    </div>
+    <div class='panel' ng-show='section === "overview"'>
+      <div>
+        <div class="xgrid">
+          <div class="xgrid-cell -default-50">
+            <div>
+              <input-box class='input -full' type='text' title='{{"Supplier"|translate}}' ng-model='supplier.name' ng-readonly='!editMode'></input-box>
+            </div>
+          </div>
+          <div class="xgrid-cell -default-50" ng-if="type === 'return'">
+            <div>
+              <br>
+              <br>
+              <p>Note Type: <b>{{title}}</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="xgrid">
+          <div class="xgrid-cell -default-50">Phone: <b>{{supplier.phone}}</b></div>
+          <div class="xgrid-cell -default-50">{{abbrtitle}} Number: <b>{{receive_order.number}}</b></div>
+        </div>
+        <div class="xgrid">
+          <div class="xgrid-cell -default-50">Address: <b>{{supplier.address}}</b></div>
+          <div class="xgrid-cell -default-50">Created at: <b>{{receive_order.created_at|moment}}</b></div>
+        </div>
+        <div class="xgrid">
+          <div class="xgrid-cell -default-50">Status: <b>{{receive_order.state_for_display|titleCase}}</b></div>
+          <div class="xgrid-cell -default-50">Created by: <b>{{receive_order.created_by}}</b></div>
+        </div>
+        <div class="xgrid">
+          <div class="xgrid-cell -default-50">
+            <input-box type='text' title='{{"Reference Number"|translate}}' ng-model='receive_order.reference_number' ng-readonly='!editMode'></input-box>
+          </div>
+          <div class="xgrid-cell -default-50">
+            <label>{{'Expect '+receivetitle+' Date'|translate}}</label>
+            <input class='input -full' type='text' ng-model='receive_order.expected_receive_date' ui-date='dateOptions' ui-date-format='yy-mm-dd' ng-readonly='!editMode' ng-disabled='!editMode'>
+          </div>
+        </div>
+
+        <div ng-repeat="order in receive_order.new_purchase_orders track by $index" style="border:1px #ddd solid;border-radius:5px;padding:15px">
+          <div class="xgrid">
+            <div class="xgrid-cell -default-40">Purchase Order: <b>{{order.number}}</b></div>
+            <div class="xgrid-cell -default-40">Status: <b>{{order.state|titleCase}}</b></div>
+            <div class="xgrid-cell -default-20">
+              <button ng-if="editMode" class="_remove _remove-mini ng-scope" ng-click="deletePO(order,$index)">Delete</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="editable-grid-wrapper" ng-repeat="order in receive_order.new_purchase_orders track by $index">
+          <table class="editable-grid" ng-class="{_edit: editMode}">
+            <thead class="editable-grid__head">
+            <tr>
+              <td class="editable-grid__cell editable-grid__head-cell">Purchase Order {{order.number}}</td>
+              <td class="editable-grid__cell editable-grid__head-cell" ng-if="mode === 'view' || mode === 'new'">Ordered Qty</td>
+              <td class="editable-grid__cell editable-grid__head-cell" ng-if="mode === 'view'"><span ng-bind="receivetitle"></span> Qty</td>
+              <td class="editable-grid__cell editable-grid__head-cell" ng-if="mode === 'view'"><span ng-bind="receivedtitle"></span> Qty</td>
+              <td class="editable-grid__cell editable-grid__head-cell" ng-if="mode === 'view' && note_type === 1">Remaining Qty</td>
+              <td class="editable-grid__cell editable-grid__head-cell">{{costTitle}}</td>
+              <td ng-if="editMode" class="editable-grid__cell editable-grid__head-cell"></td>
+            </tr>
+            </thead>
+          <tbody class="editable-grid__body">
+            <tr ng-repeat="item in order.items track by $index">
+              <td>
+                <span style="color:orangered;font-weight:bold" ng-bind="item.name"></span><br>
+                <span> UPC/EAN: {{ item.gtid || item.upc || item.ean || item.ean13 || item.upc_e || item.upc_ean | available}}</span><br>
+                <span> SKU/PLU: {{item.barcode || item.listing_barcode | available}}</span><br>
+                <span> Listing Reference Codes: {{item.listing_reference_codes | pick: 'code' | available}}</span>
+                <div ng-if="item.serial_number_enabled" style="border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;">
+                Serial Numbers:
+                <div ng-repeat="number in item._serial track by $index">
+                    <span ng-if="!item._enableSerialNumberEdit">S/N: {{number.value}}</span>
+                    <input ng-if="item._enableSerialNumberEdit" placeholder="S/N" type="text" ng-model="number.value"/>
+                    <button style="margin-left: 10px;padding-top: 15px;" ng-if="item.enableSerialNumberEdit" class="_remove _remove-mini" ng-click="deleteSerial(item,$index)"></button>
+                  </div>
+                  <br ng-if="item._enableSerialNumberEdit">
+                  <button ng-if="editMode && item.serial_number_enabled && item._enableSerialNumberEdit" class="_add" ng-click="addSerialNumber(item)">Add Another Serial Number</button>
+                </div>
+
+                <div ng-if="item.expiration_date_enabled" style="border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 5px;
+                    margin: 5px;">
+
+                  <span ng-if="!item._enableExpirationDateEdit">Expiration Date: {{item.expiration_date|momentDate}}</span>
+                  <input ng-if="item._enableExpirationDateEdit" placeholder="Expiration Date" class='input -full' type='text' ng-model='item.expiration_date' ui-date='dateOptions' ui-date-format='yy-mm-dd'/>
+                </div>
+                <br>
+                <div>
+                  <button ng-if="editMode && item.expiration_date_enabled && !item._enableExpirationDateEdit" class="_primary" ng-click="enterExpirationDate(item)">Edit Expiration Date</button>
+                  <button ng-if="editMode && item.expiration_date_enabled && item._enableExpirationDateEdit" class="_primary" ng-click="finishExpirationDate(item)">Finish Edit Expiration Date</button>
+
+                  <button ng-if="editMode && item.serial_number_enabled && !item._enableSerialNumberEdit" class="_primary" ng-click="enterSerialNumber(item)">Edit Serial Number</button>
+                  <button ng-if="editMode && item.serial_number_enabled && item._enableSerialNumberEdit" class="_primary" ng-click="finishSerialNumber(item)">Finish Edit Serial Number</button>
+                </div>
+              </td>
+                <td class="_align-center" ng-if="mode === 'view'">
+                  <input class="_align-right" type="text" ng-model="item.poquantity" ng-readonly='true'/>
+                </td>
+                <td class="_align-center" ng-if="mode === 'view'">
+                  <input class="_align-right" type="number" ng-model="item.quantity" ng-readonly="!editMode || mode === 'new'" ng-change="itemUpdated(item)"/>
+                </td>
+                <td class="_align-center" ng-if="mode === 'view'">
+                  <input class="_align-right" type="number" ng-model="item.qty_received" ng-readonly="true"/>
+                </td>
+                <td class="_align-right" ng-if="mode === 'view' && note_type === 1">
+                  <input class="_align-right" type="text" ng-model="item.qty_remaining" ng-readonly='true'/>
+                </td>
+                <td class="_align-center">
+                  <input class="_align-right" type="text" ng-model="item.cost" ng-readonly="!editMode || mode === 'new'"/>
+                </td>
+                <td class="_align-center" ng-if="editMode"><button ng-if="editMode" class="_remove _remove-mini" ng-click="deleteItem(order,$index)"></button></td>
+              </tr>
+              </tbody>
+            </table>
+        </div>
+        <div ng-if="editMode">
+          <add-po on-close="addPO" supplier="supplier" taken-ids="receive_order.purchase_order_ids"></add-po>
+          <span ng-if="mode === 'view' && receive_order.new_purchase_orders.length">
+            <button class='_primary' ng-click="fulfillAll()">{{'Fulfill All'|translate}}</button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class='panel' ng-if='section === "remarks"'>
+      <div class='panel-section'>
+        <h2 translate>Remarks</h2>
+        <div class="xgrid">
+
+          <div class="xgrid-cell -default-100">
+            <div>
+              <input-box type='text' title='{{"Remarks"|translate}}' ng-model='receive_order.remarks' ng-readonly='!editMode'></input-box>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class='content-bottom'>
+    <h2><span ng-show='editMode'>{{"Edit"|translate}} </span>{{'View '+title|translate}} #{{receive_order.number}}</h2>
+    <div class='content-bottom-actions' ng-if="showEditBtnByStatus">
+      <button ng-if="editPermission && receive_order.state !=='received'" ng-hide="editMode" class='_secondary' ng-click="enableEditMode()">{{'Edit'|translate}}</button>
+      <button ng-if="editPermission && receive_order.state !=='received'" ng-hide="editMode" class='_secondary' ng-click="markAsReceived()">Mark as {{receivedtitle}}</button>
+      <button ng-show='editMode'
+              ng-if="action[3]() == true"
+              ng-class='{"_primary": action[2], "_secondary": !action[2]}'
+              ng-repeat='(i, action) in bottomActions'
+              ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+  </div>
+
+
+
+</div>

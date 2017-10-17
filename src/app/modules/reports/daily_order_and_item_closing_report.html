@@ -1,0 +1,73 @@
+<div class="panel _clearfix">
+  <h2 translate>Daily Order and Item Closing Report</h2>
+  <div class="report-filter">
+    <input class='date-picker__input' type='text' ng-model='dateFrom' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder='From'>
+    <input class='date-picker__input' type='text' ng-model='dateTo' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder='To'>
+    <button class="_primary" ng-click="update()" translate>Update</button>
+    <span ng-include="'app/modules/reports/download_report.html'"></span>
+  </div>
+  <hr>
+   <div class="xgrid">
+      <div class='xgrid-cell -default-50'>
+        <table class="dsr-table table-horizontal _margin-right-1em">
+          <thead>
+            <tr>
+              <th colspan="2" class="title">{{"Sales Income" | translate}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{"Number of Invoice" | translate}}</td>
+              <td>{{data.invoice_entry.number_of_invoice}}</td>
+            </tr>
+            <tr>
+              <td>{{"Item Sold Qty" | translate}}</td>
+              <td>{{data.invoice_entry.item_sold_qty}}</td>
+            </tr>
+            <tr>
+              <td>{{"Item Return Qty" | translate}}</td>
+              <td>{{data.invoice_entry.item_return_qty}}</td>
+            </tr>
+            <tr>
+              <td>{{"Total Sold Amount" | translate}}</td>
+              <td>{{data.invoice_entry.total_sold_amount | myCurrencyReport}}</td>
+            </tr>
+            <tr>
+              <td>{{"Total Return Amount" | translate}}</td>
+              <td>{{data.invoice_entry.total_return_amount | myCurrencyReport}}</td>
+            </tr>
+            <tr>
+              <td>{{"Total Discount" | translate}}</td>
+              <td>{{data.invoice_entry.total_discount | myCurrencyReport}}</td>
+            </tr>
+            <tr>
+              <td>{{"Net Sales" | translate}}</td>
+              <td>{{data.invoice_entry.net_sales | myCurrencyReport}}</td>
+            </tr>
+          </tbody>
+        </table>
+
+    </div>
+
+    <div class='xgrid-cell -default-50'>
+      <daily-order-and-item-closing-report
+        title="'Payment'"
+        entries="data.payment_entries"
+        schema="data.schema.payment_entries"></daily-order-and-item-closing-report>
+    </div>
+
+  </div>
+  <daily-order-and-item-closing-report
+    title="'Open Orders'"
+    entries="data.open_orders_entries"
+    schema="data.schema.open_orders_entries">
+  </daily-order-and-item-closing-report>
+
+<daily-order-and-item-closing-report
+    title="'Item Sales Summary'"
+    entries="data.item_summary_entries"
+    schema="data.schema.item_summary_entries">
+</daily-order-and-item-closing-report>
+
+</div><!--End of Page -->
+

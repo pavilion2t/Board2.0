@@ -1,0 +1,11 @@
+{
+  "name": "dashboardbindo",
+  "private": true,
+  "dependencies": {
+    "chai": "~1.8.0",
+    "mocha": "~1.14.0",
+    "angular-mocks": "https://github.com/angular/bower-angular-mocks.git#1.3.0-build.2996+sha.3625803",
+    "jasmine-sinon": "~0.3.2"
+  },
+  "devDependencies": {}
+}

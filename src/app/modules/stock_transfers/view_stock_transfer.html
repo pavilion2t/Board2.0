@@ -1,0 +1,84 @@
+<div class='edit _stock-transfer'>
+  <div class="status-bar" ng-class=" '-'+stockTransfer.state "></div>
+  <div class='panel'>
+    <div class='xgrid'>
+      <div class="xgrid-cell -default-60">
+        <h2 class='edit__transfer-type' ng-show='stockTransfer.type === "outbound"'>{{'Outgoing Transfer'|translate}} </h2>
+        <h2 class='edit__transfer-type' ng-show='stockTransfer.type === "inbound"'>{{'Incoming Transfer'|translate}} </h2>
+      </div>
+      <div class="xgrid-cell -default-40">
+        <input-box type='text' title='Reference Number' ng-model='stockTransfer.number' ng-disabled='true'></input-box>
+      </div>
+    </div>
+    <div class='xgrid'>
+      <div class="xgrid-cell -default-30">
+        <input-box type='text' title='Receiving Store' ng-model='stockTransfer.receiving_store_title' ng-disabled='true'></input-box>
+      </div>
+      <div class="xgrid-cell -default-30">
+        <input-box type='text' title='Departing Store' ng-model='stockTransfer.departing_store_title' ng-disabled='true'></input-box>
+      </div>
+      <div class="xgrid-cell -default-20">
+        <input-box type='text' title='Created Date' ng-model='stockTransfer.created_date' ng-disabled='true'></input-box>
+      </div>
+      <div class="xgrid-cell -default-20">
+        <input-box type='text' title='Created By' ng-model='stockTransfer.creator_name' ng-disabled='true'></input-box>
+      </div>
+    </div>
+
+    <div class='xgrid'>
+      <div class="xgrid-cell -default-30">
+        <input-date class="-full" title='Shipping Date' ng-model='stockTransfer.shipping_date' ng-disabled='!editMode'></input-date>
+      </div>
+      <div class="xgrid-cell -default-30">
+        <input-date class="-full" title='Receiving Date' ng-model='stockTransfer.receiving_date' ng-disabled='!editMode'></input-date>
+      </div>
+      <div class="xgrid-cell -default-20">
+      </div>
+      <div class="xgrid-cell -default-20">
+      </div>
+    </div>
+
+    <hr class="panel-divider">
+
+    <div>
+      <h5 translate>Transferred Items</h5>
+      <editable-grid columns='editColumns'
+                     data='stockTransfer.stock_transfer_items'
+                     columns-for-extra-data='columnsForExtraData'
+                     grouping-field="'stock_transfer_item_batches'"
+                     edit-mode='editMode'
+                     row-height='editRowHeight'
+                     ng-show='stockTransfer.stock_transfer_items.length'
+                     customRemove='removeStockTransferItem'
+                     remove-callback='removeStockTransferItem'
+                     ></editable-grid>
+      <br>
+      <div>
+
+        <add-listings ng-show="editMode" on-close="addItems" store-id="stockTransfer.departing_store_id">
+        </add-listings>
+        <!-- search departing store if receiving-->
+
+        <add-listings-by-barcode store-id="stockTransfer.departing_store_id" line-items="stockTransfer.stock_transfer_items" add-items="addItems"
+          ng-show="editMode"> </add-listings-by-barcode>
+
+      </div>
+    </div>
+
+    <hr class="panel-divider">
+
+    <div>
+      <input-textarea title='Remarks' ng-model='stockTransfer.remarks' ng-disabled='!editMode'></input-textarea>
+    </div>
+  </div>
+  <div ui-view></div>
+
+  <div class='content-bottom'>
+    <h2><span ng-show='editMode'>{{'Edit'|translate}}</span> {{'Stock Transfer'|translate}} #{{stockTransfer.id}}</h2>
+    <div class='content-bottom-actions'>
+      <button ng-hide='editMode || !editable()' class='_secondary' ng-click='editMode = true'>{{'Edit'|translate}}</button>
+      <button ng-class='{"_primary": action[3], "_secondary": !action[3]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'
+        ng-if='!action[2] || (stockTransfer && action[2](stockTransfer))'>{{action[0]|translate}}</button></div>
+  </div>
+</div>
+</div>

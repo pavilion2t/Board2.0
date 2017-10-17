@@ -1,0 +1,65 @@
+<div class='add-listing' ng-show='isAddingListings'>
+  <div class='mega-modal'>
+    <div class='mega-modal__header'>
+      <h5>{{'Select Inventory'|translate}}</h5>
+    </div>
+    <div class='mega-modal__message _message' ng-if='addErrorMessage'>{{addErrorMessage}}</div>
+    <div class="mega-modal__fixed-content">
+      <form class='mega-modal__content' ng-submit='searchListings(keyword)'>
+        <input class='search__keyword' type='text' placeholder='Search in Inventory...' ng-model='keyword'>
+        <input type='submit' class='_primary search__submit _margin-0' value='Search'>
+      </form>
+
+      <div class="add-listing__fixed-header">
+        <table class="listing-table">
+          <thead>
+            <tr>
+              <th class="_select"></th>
+              <th class="_item">Item</th>
+              <th ng-if="!hideQuantity" class="_qty-current">Current QTY</th>
+              <th ng-if="!hideQuantity" class="_qty-requested">QTY requested</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="add-listing__fixed-table">
+        <table class="table listing-table">
+          <thead>
+            <tr>
+              <th class="_select"></th>
+              <th class="_item">{{'Item'|translate}}</th>
+              <th ng-if="!hideQuantity" class="_qty-current">{{'Current QTY'|translate}}</th>
+              <th ng-if="!hideQuantity" class="_qty-requested">{{'QTY requested'|translate}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat='(i, listing) in selectableListings'
+                ng-class='{_selected: selectedItemIndex === i, _fade: takenIds.indexOf(listing.id) !== -1 }'>
+              <td class='_select'>
+                <input-checkbox label='listing-{{i}}'
+                                ng-model='newListingsToAdd[i]'
+                                ng-hide="takenIds.indexOf(listing.id) !== -1"></input-checkbox>
+              </td>
+              <td class='_x`item'>
+                <img placeholder-src="inventory" class='listing-table__figure' ng-src='{{listing.image_url}}'>
+                <h5>{{listing.name}}</h5>
+                <p ng-show='listing.upc'>Code: {{listing.upc}}</p>
+              </td>
+              <td ng-if="!hideQuantity" class='_qty-current'>
+                <p>{{listing.track_quantity ? listing.quantity : 'Unlimited'}}</p>
+              </td>
+              <td ng-if="!hideQuantity" class='_qty-requested'>
+                <input min='1' ng-show='newListingsToAdd[i]' class='listing-table__qty-input' type='number' ng-model='listing.qtyRequested'>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class='mega-modal__bottom'>
+      <button class='_secondary' ng-click='cancelAddingListings()'>{{'Cancel'|translate}}</button>
+      <button class='_primary' ng-click='addToListings()' ng-disabled='!isEnablingSaveButton()'>{{'Save'|translate}}</button>
+    </div>
+
+  </div>
+</div>

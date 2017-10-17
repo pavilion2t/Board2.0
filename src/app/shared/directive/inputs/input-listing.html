@@ -1,0 +1,13 @@
+<div class='input-listing'>
+  <input class='input-listing__input' type='text' placeholder='{{title|translate}}' ng-model='keyword' ng-disabled='disabled' ng-keydown='pressInput($event)'>
+  <div class='input-listing__list'>
+    <div class='list__item' ng-repeat='(i, listing) in displayedListings' ng-class='{_selected: selectedItemIndex === i}' ng-click='addNewItem(listing)' ng-mouseover='hoverOverItem(i)'>
+      <img placeholder-src="inventory" class='item__image' ng-src='{{listing.image_url}}'>
+      <div class='item__details'>
+        <h5>{{listing.name}}</h5>
+        <p>{{listing.upc}}</p>
+        <p>Product ID: {{listing.product_id}}</p>
+      </div>
+    </div>
+  </div>
+</div>

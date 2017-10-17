@@ -1,0 +1,99 @@
+.select2-results{
+  color: #ff7800;
+}
+
+.ui-select-container.-full{
+  width: 100%;
+}
+
+#intercom-container {
+  .intercom-app-container {
+    .intercom-app {
+      .intercom-launcher-frame {
+        display: none;
+      }
+      .intercom-messenger-frame {
+        height: calc(100% - 70px - 20px)!important;
+        bottom: 70px !important;
+      }
+    }
+  }
+}
+
+.ngdialog-theme-white {
+  .ngdialog-content {
+    background-color: #fff !important;
+
+  }
+}
+
+.ngdialog.ngdialog-theme-mega.width-42p{
+  .ngdialog-content {
+    width: 42%;
+    margin: 0 auto;
+  }
+}
+
+.ngdialog.ngdialog-theme-mega {
+
+  padding: 0;
+
+  .ngdialog-content {
+    position: absolute;
+    left: 6%;
+    top:6%;
+    right: 6%;
+    bottom: 6%;
+    background-color: #fff !important;
+    width: auto;
+    padding: 0;
+  }
+  .ngdialog-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.7em 1em;
+    background-color: #eee;
+    z-index: 10;
+  }
+  .ngdialog-title {
+    margin: 0;
+  }
+  .ngdialog-body {
+    position: absolute;
+    top: 3.2em;
+    bottom: 3.2em;
+    left: 0;
+    right: 0;
+    overflow: auto;
+  }
+  .ngdialog-footer {
+    background-color: #eee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.7em 1em;
+    z-index: 10;
+
+  }
+  .ngdialog-close {
+    z-index: 11;
+  }
+}
+
+.ngdialog .ngdialog-overlay {
+  animation: none;
+}
+
+.ngdialog.ngdialog-theme-default.ngdialog-closing .ngdialog-overlay {
+  animation: none;
+}
+
+
+.ag-fresh {
+  div:focus {
+    outline: none;
+  }
+}

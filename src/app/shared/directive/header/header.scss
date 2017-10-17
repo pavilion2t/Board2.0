@@ -1,0 +1,34 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: $header-height;  
+  z-index: 500;
+
+  &__logo {
+    float: left;
+    width: $menu-width;
+    height: $header-height;
+    background-color: rgb(42,58,72);
+
+    img {
+      margin: 20px;
+      height: 20px;
+    }
+    @media #{$small-only} {
+      display: none;
+    }
+  }
+  &__bar {
+    height: $header-height;
+    box-sizing: border-box;
+    margin-left: $menu-width;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 1px 0 0 $light-gray;
+
+    @media #{$small-only} {
+      margin-left: 0;
+    }
+  }
+};

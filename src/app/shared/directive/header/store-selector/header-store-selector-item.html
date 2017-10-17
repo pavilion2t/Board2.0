@@ -1,0 +1,22 @@
+<div class="stores__store">
+  <div class='store__info'
+    ng-class='{_current: $root.updatedStores[store.id]}'
+    ng-click='clickStore($event, store, false)'>
+    <img class='info__image' ng-src='{{store.logo_url}}' placeholder-src="store">
+    <div class='info__details'>
+      <p class='details__title'>{{store.title}}</p>
+      <p class='details__address' ng-if='store._children'>
+        Chain with {{store._children.length}} Stores
+      </p>
+      <p class='details__address' ng-if='!store._children'>{{store.address1}}</p>
+    </div>
+    <div class='info__checkbox'>
+      <input-checkbox ng-click='clickStore($event, store, true)' label='selected-store-{{store.id}}' ng-model='$root.updatedStores[store.id]'></input-checkbox>
+    </div>
+  </div>
+  <div class='store__children' ng-if='store._children && store._children.length > 0'>
+    <div ng-repeat="childStore in store._children | orderBy: 'title'">
+      <header-store-selector-item store="childStore"></header-store-selector-item>
+    </div>
+  </div>
+</div>

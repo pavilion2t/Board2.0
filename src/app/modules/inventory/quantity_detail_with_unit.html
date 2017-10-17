@@ -1,0 +1,69 @@
+<div class='add-listings'>
+  <div class='ngdialog-header add-listings-header'>
+    <h3 class="pull-left">{{'Current Inventory'|translate}}</h3>
+    <br>
+    <br>
+    <table class="table table__condensed">
+      <thead>
+      <tr>
+        <th class="_undelined">Description</th>
+        <th class="_undelined"></th>
+        <th class="_align-right _undelined">In {{reference_unit_name}}</th>
+        <th class="_undelined"></th>
+        <th class="_align-right _undelined">In {{selected_unit_name}}</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>{{'Quantity Available'|translate}}</td>
+        <td></td>
+        <td class="_align-right">{{listing.qty_on_shelf | number:precision }}</td>
+        <td></td>
+        <td class="_align-right">{{listing.qty_on_shelf / ratio | number:precision }}</td>
+      </tr>
+      <tr>
+        <td>{{'Unit Cost'|translate}}</td>
+        <td>$</td>
+        <td class="_align-right ">{{listing.cost | number: 2 }}</td>
+        <td class="_align-center">$</td>
+        <td class="_align-right">{{listing.cost / ratio | number: 2 }}</td>
+      </tr>
+      <tr>
+        <td class="_undelined">{{'Total Cost'|translate}}</td>
+        <td class="_undelined">$</td>
+        <td class="_align-right _undelined _margin-right-1em">{{listing.cost * quantity | number: 2 }}</td>
+        <td class="_undelined _align-center">$</td>
+        <td class="_align-right _undelined">{{listing.cost * quantity / ratio | number: 2 }}</td>
+      </tr>
+      <tr>
+        <td>{{'QTY Reserved for Invoice'|translate}}</td>
+        <td></td>
+        <td class="_align-right ">{{listing.qty_reserved_for_invoice | number:precision}}</td>
+        <td></td>
+        <td class="_align-right">{{listing.qty_reserved_for_invoice / ratio | number:precision}}</td>
+      </tr>
+      <tr>
+        <td>{{'QTY Reserved for Transfer'|translate}}</td>
+        <td></td>
+        <td class="_align-right">{{listing.qty_reserved_for_transfer | number:precision}}</td>
+        <td></td>
+        <td class="_align-right">{{listing.qty_reserved_for_transfer / ratio | number:precision}}</td>
+      </tr>
+      <tr>
+        <td>{{'QTY In Transit from Supplier'|translate}}</td>
+        <td></td>
+        <td class="_align-right">{{listing.qty_in_transit_from_supplier | number:precision}}</td>
+        <td></td>
+        <td class="_align-right">{{listing.qty_in_transit_from_supplier / ratio | number:precision}}</td>
+      </tr>
+      <tr>
+        <td>{{'QTY In Transit from Transfer'|translate}}</td>
+        <td></td>
+        <td class="_align-right">{{listing.qty_in_transit_from_transfer | number:precision}}</td>
+        <td></td>
+        <td class="_align-right">{{listing.qty_in_transit_from_transfer / ratio | number:precision}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

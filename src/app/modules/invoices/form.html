@@ -1,0 +1,47 @@
+<div class='panel-section'>
+  <div ng-show="showStoreName">
+     <ui-select on-select="onSelectedStore($item)" ng-model="current_store_id" theme="select2" class="form-control">
+        <ui-select-match placeholder=" Select or search store...">{{$select.selected.title}}</ui-select-match>
+        <ui-select-choices repeat="store.id as store in stores | filter: $select.search">
+          <span ng-bind-html="store.title | highlight: $select.search"></span>
+        </ui-select-choices>
+      </ui-select>
+  </div>
+  <div>
+    <input-box type='text' title='{{"Reference Number"|translate}}' ng-model='invoice.reference_number' ng-readonly='!editMode'></input-box>
+    <input-date class='_right' title='{{"Due Date"|translate}}' ng-model='invoice.due_date' ng-readonly='!editMode'></input-date>
+  </div>
+  <div>
+    <div class='input-box'>
+      <p class='input-box__title'>{{'Bill To'|translate}}</p>
+
+      <ui-select ng-model="invoice.customer_id" theme="select2" class="form-control" ng-disabled='!editMode'>
+        <ui-select-match placeholder="Search customer...">{{$select.selected.name}}</ui-select-match>
+
+        <ui-select-choices repeat="cus.id as cus in customers"
+           refresh="searchCustomers($select.search)"
+           refresh-delay="1500">
+           <span ng-bind-html="cus.name + ' - ' + cus.phone | highlight: $select.search"></span>
+        </ui-select-choices>
+      </ui-select>
+
+    </div>
+    <input-box class='_right' type='text' title='{{"Customer Email Address"|translate}}' ng-model='customer.email' ng-readonly='true'></input-box>
+  </div>
+  <div>
+    <div class='input-box'>
+      <p class='input-box__title'>{{'Ship To'|translate}}</p>
+
+      <ui-select ng-model="invoice.ship_to_id" theme="select2" class="form-control" ng-disabled='!editMode'>
+        <ui-select-match placeholder="Search customer...">{{$select.selected.name}}</ui-select-match>
+
+        <ui-select-choices repeat="cus.id as cus in customers"
+           refresh="searchCustomers($select.search)"
+           refresh-delay="1500">
+           <span ng-bind-html="cus.name + ' - ' + cus.phone | highlight: $select.search"></span>
+        </ui-select-choices>
+      </ui-select>
+
+    </div>
+  </div>
+</div>

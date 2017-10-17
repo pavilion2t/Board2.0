@@ -1,0 +1,52 @@
+<div class='edit'>
+
+  <h1 translate>Rounding Behavior</h1>
+  <div class="xgrid">
+    <div class="xgrid-cell -default-50">
+      <p class='input-box__title'>Line Item Rounding</p>
+      <select class='_full' ng-model="store.line_item_rounding_type">
+        <option value="0" translate>Arithmetic Rounding</option>
+        <option value="1" translate>Round Down</option>
+        <option value="2" translate>Round Up</option>
+        <option value="3" translate>Round To Nearest Five</option>
+      </select>
+
+    </div>
+    <div class="xgrid-cell -default-50">
+      <p class='input-box__title'>Decimal Points</p>
+      <select class='_full' ng-model="store.line_item_decimal_points">
+        <option value="0" translate>0</option>
+        <option value="1" translate>1</option>
+        <option value="2" translate>2</option>
+      </select>
+    </div>
+
+  </div>
+
+  <div class="xgrid">
+    <div class="xgrid-cell -default-50">
+      <p class='input-box__title'>Order Level Rounding (Smaller or same as line-item level)</p>
+      <select class='_full' ng-model="store.rounding_type">
+        <option value="0" translate>Arithmetic Rounding</option>
+        <option value="1" translate>Round Down</option>
+        <option value="2" translate>Round Up</option>
+        <option value="3" translate>Round To Nearest Five</option>
+      </select>
+    </div>
+    <div class="xgrid-cell -default-50">
+      <p class='input-box__title'>Decimal Points</p>
+      <select class='_full' ng-model="store.decimal_points">
+        <option value="0" translate>0</option>
+        <option value="1" translate>1</option>
+        <option value="2" translate>2</option>
+      </select>
+    </div>
+  </div>
+
+  <hr>
+  <div class="_align-right">
+    <button class="_secondary" ng-click="cancel()">Cancel</button>
+    <button class="_primary" ng-click="save()">Save</button>
+  </div>
+  <hr>
+</div>

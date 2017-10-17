@@ -1,0 +1,40 @@
+<div class="card">
+
+<div class="line-item-meta">
+  <dl class="dl-horizon" >
+    <dt>Line Item</dt>
+    <dd>{{lineItem.label || '---'}}</dd>
+    <dt>Barcode</dt>
+    <dd>{{lineItem.barcode || '---'}}</dd>
+    <dt>Order No.</dt>
+    <dd>{{orderNumber}}</dd>
+  </dl>
+
+</div>
+
+
+
+  <div class="xgrid">
+    <div class="xgrid-cell -default-5"></div>
+    <div class="xgrid-cell -default-90">
+      <table class="editable-grid">
+        <thead>
+          <tr>
+            <th class="editable-grid__cell editable-grid__head-cell">Time</th>
+            <th class="editable-grid__cell editable-grid__head-cell">Status</th>
+            <th class="editable-grid__cell editable-grid__head-cell">Employee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="status in statusHistory">
+            <td class="editable-grid__cell">{{status.created_at | moment}}</td>
+            <td class="editable-grid__cell">{{status.line_item_status.status}}</td>
+            <td class="editable-grid__cell">{{status.user.display_name || 'N/A'}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <div class="xgrid-cell -default-5"></div>
+  </div>
+</div>

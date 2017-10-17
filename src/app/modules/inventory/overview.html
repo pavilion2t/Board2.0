@@ -1,0 +1,310 @@
+
+<h2 translate>Description</h2>
+<div class="xgrid">
+	<div class="xgrid-cell  -default-75">
+		<div class="_full input-box  input-box " type="text" title="Title">
+			<p class="input-box__title"
+				ng-class="{_hidden: (listing.name === undefined || listing.name === null || listing.name === '') }"
+				translate>Title</p>
+			<input valid-input name="listingName" class="input-box__input"
+				type="text" placeholder="Title" ng-model="listing.name"
+				ng-readonly="!editMode || !listing.customized" ng-required="true">
+			<div valid-messages for="listingName" key="required"
+				err-message="Required"></div>
+		</div>
+	</div>
+	<div class="xgrid-cell -default-25">
+
+		<div class="_full input-box">
+			<p class="input-box__title" translate>Product ID</p>
+			<input class="input-box__input" type="text" ng-readonly='true'
+				value="{{listing.product_id}}">
+
+		</div>
+	</div>
+</div>
+<div></div>
+<div class="xgrid" ng-if="kitchenAliasEnabled">
+	<div class="xgrid-cell">
+		<input-box class='_full' type='text'
+			title='{{"Kitchen Alias"|translate}}'
+			ng-model='listing.kitchen_alias_name' ng-readonly='!editMode'></input-box>
+	</div>
+</div>
+<div></div>
+<div class="xgrid">
+	<div class="xgrid-cell">
+		<input-textarea class='_full' title='Description (Optional)'
+			ng-model='listing.description'
+			ng-readonly='!editMode || !listing.customized'></input-textarea>
+	</div>
+</div>
+
+<button ng-if="locales.length > 0 && !showTranslationEnabled"
+	class='_primary' ng-click='showTranslation()'>{{'Show Other Languages'|translate}}</button>
+<button ng-if="locales.length > 0 && showTranslationEnabled"
+	class='_primary' ng-click='showTranslation()'>{{'Hide Other Languages'|translate}}</button>
+
+<div ng-repeat="locale in locales" ng-if="showTranslationEnabled">
+	<hr>
+	<div class="xgrid">
+		<div class="xgrid-cell">
+			<h3>{{locale.language}} - {{locale.locale}}</h3>
+		</div>
+	</div>
+	<div></div>
+	<div class="xgrid">
+		<div class="xgrid-cell">
+			<input-box class='_full' type='text'
+				title='{{"Title"|translate}} ({{locale.language}})'
+				ng-model='listing._product_translation_map[locale.locale].name'
+				ng-readonly='!editMode'></input-box>
+		</div>
+	</div>
+	<div></div>
+	<div class="xgrid">
+		<div class="xgrid-cell">
+			<input-textarea class='_full'
+				title='{{"Description"|translate}} ({{locale.language}})'
+				ng-model='listing._product_translation_map[locale.locale].description'
+				ng-readonly='!editMode || !listing.customized'></input-textarea>
+		</div>
+	</div>
+</div>
+
+<hr>
+<h2 translate>Details</h2>
+
+<div class="xgrid">
+	<div class="xgrid-cell  -default-50">
+		<input-box class='_full' type='text' title='{{"UPC/EAN"|translate}}'
+			ng-model='listing.gtid' ng-readonly='true'></input-box>
+	</div>
+
+
+	<div class="xgrid-cell -default-25">
+		<div class="_full input-box">
+			<p class="input-box__title">
+				<span>
+					{{"Available Quantity" | translate}}
+					<span ng-if='listing.serial_number_enabled' translate> ( Serial Number Enabled ) </span>
+				</span>
+			</p>
+      <input valid-input name="quantity" class="input-box__input"
+             type="text" placeholder="Quantity"
+             ng-if='listing.track_quantity && !listing.serial_number_enabled'
+             ng-model='listing.quantity'
+             ng-readonly='!editMode || !quantityAndCostEditable'
+             ui-negative-number
+             ui-number-mask="0" ng-required="quantityAndCostEditable">
+      <input
+        class="input-box__input" type="text" ng-if='!listing.track_quantity'
+        ng-readonly='true' value="{{'Unlimited' | translate}}">
+      <input
+        class="input-box__input" type="text"
+        ng-if='listing.serial_number_enabled' ng-readonly='true'
+        value="{{listing.quantity|number}}">
+
+    </div>
+	</div>
+	<div class="xgrid-cell -default-25" style="padding-top: 10px;">
+		<a ng-click="openQuantityDetail()">{{"Current Inventory" | translate}}</a>
+		<!--
+    <p ng-if="!listing.serial_number_enabled"><input-checkbox label='track_quantity' ng-model='listing.track_quantity' ng-disabled='!editMode'  ></input-checkbox> {{'Track Quantity'|translate}}</p>-->
+	</div>
+
+
+</div>
+
+
+<div></div>
+<div class="xgrid">
+	<div class="xgrid-cell -default-50">
+		<input-box class='_full' type='text' title='{{"PLU/SKU"|translate}}'
+			ng-model='listing.listing_barcode' ng-readonly='!editMode'></input-box>
+	</div>
+	<div class="xgrid-cell -default-50">
+		<div class='_full input-box'>
+			<p class='input-box__title' translate>Price</p>
+			<input ng-if="listing.sellable!==false" valid-input name="price"
+				class='input-box__input' type='text' ng-model='listing.price'
+				ng-readonly='!editMode' ui-money-mask="2" ng-required="true"
+				ng-if="title==='Inventory'">
+			<div valid-messages for="price" key="required" err-message="Required"></div>
+		</div>
+	</div>
+
+</div>
+
+<div></div>
+<div class="xgrid">
+	<div class="xgrid-cell -default-50">
+		<input-box class='_full' type='text' title='{{"Brand"|translate}}'
+			ng-model='listing.brand_name'
+			ng-readonly='!editMode || !listing.customized'></input-box>
+	</div>
+  <div class="xgrid-cell -default-50">
+    <div class='_full input-box'>
+      <p class='input-box__title' translate>Original Price</p>
+      <input name="madeup_price"
+             class='input-box__input'
+             type='text'
+             ng-model='listing.madeup_price'
+             ng-readonly='!editMode'
+             ui-money-mask="2"
+             ng-if="title==='Inventory'">
+    </div>
+  </div>
+</div>
+
+<div></div>
+<div class="xgrid">
+	<div class="xgrid-cell -default-50">
+		<div class='input-box _full'>
+			<p class='input-box__title' translate>Department</p>
+			<select class='_full' ng-model='listing.department_id'
+				ng-disabled='!editMode'>
+				<option value='' translate>NONE</option>
+				<option ng-repeat='department in departmentsSorted'
+					value='{{department.id}}' ng-bind-html="department.stackdisplay"></option>
+			</select>
+		</div>
+	</div>
+	<div class="xgrid-cell -default-50">
+		<div class='input-box _full'>
+			<p class='input-box__title' translate>Category</p>
+			<select class='_full' ng-model='listing.category_id' ng-disabled='!editMode'
+				ng-options='category.id as category.name for category in categories'>
+				<option value='' translate>NONE</option>
+			</select>
+		</div>
+	</div>
+  <div class="xgrid-cell -default-50" ng-hide="listing.tax_option_ids.length > 0">
+    <div class='input-box _full'>
+      <p class="input-box__title" translate>
+        <span translate>Tax Option</span>
+      </p>
+      <select class='_full' ng-model='listing.tax_option_id'
+              ng-disabled='!editMode'>
+        <option value='' selected translate>NONE</option>
+        <option ng-repeat='taxOption in taxOptions' value='{{taxOption.id}}'>{{taxOption.name}}({{taxOption.tax_rate_text}})</option>
+      </select>
+    </div>
+  </div>
+  <!--<div class="xgrid-cell">
+    <div class='input-box _full'>
+      <p class='input-box__title' translate>Costing Method</p>
+      <select  class='_full' ng-model='listing.costing_method' ng-disabled='!editMode' ng-change="changeCostingMethod()">
+        <option ng-repeat='method in costingMethodOptions' ng-value='method.id' ng-selected="listing.costing_method == method.id">{{method.name}}</option>
+      </select>
+    </div>
+  </div>-->
+</div>
+<div class="xgrid">
+  <div class="xgrid-cell -default-100">
+    <div class='input-box _full'  ng-repeat='entity in listing.listing_reference_codes'>
+      <p ng-if='$first == true' class='input-box__title' translate>Reference Code</p>
+      <p ng-if='$first != true' class='input-box__title' translate>&nbsp;</p>
+      <input class='input-box__input _half'
+             type='text'
+             ng-model='entity.code'
+             ng-readonly='!editMode'
+             ng-change="validateReferenceCode($index)"
+             ng-class="{ 'ng-dirty ng-invalid' : entity.error }"
+             ng-if="title==='Inventory'"/>
+      <span ng-hide="!entity.error"
+            class="input-box__error-msg error"
+           >{{ entity.error }}</span>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <div class="_inline_flex" ng-if="editMode">
+        <button class="_remove _remove-mini" ng-click="removeReferenceCode($index)"></button>
+        &nbsp;
+        &nbsp;
+        <button class="_add" ng-click="addReferenceCode()" ng-if="$last && $index!= 4"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h2 translate>Unit of Measure</h2>
+
+<div class="xgrid">
+	<div class="xgrid-cell" ng-if="viewCostPermission">
+		<div class='_full input-box'>
+			<p class='input-box__title' translate>Cost</p>
+			<input valid-input name="cost" class='input-box__input' type='text'
+				ng-model='listing.cost' ng-readonly='!editMode || !quantityAndCostEditable' ui-money-mask="2" ui-negative-number>
+		</div>
+
+	</div>
+	<div class="xgrid-cell">
+		<div class='input-box _full'>
+			<p class='input-box__title' translate>Item Type</p>
+			<select class='_full' ng-model='listing.track_quantity'
+				ng-options="auto_assembly_value.value as translate(auto_assembly_value.name) for auto_assembly_value in auto_assembly_values"
+				ng-disabled='!editMode'>
+
+			</select>
+		</div>
+	</div>
+	<div class="xgrid-cell">
+		<div class='input-box _full'>
+			<p class='input-box__title' translate>Sellable</p>
+			<select class='_full' ng-model='listing.sellable'
+				ng-options="sellable_value.value as translate(sellable_value.name) for sellable_value in sellable_values"
+				ng-disabled='!editMode'>
+
+			</select>
+		</div>
+	</div>
+</div>
+
+<div></div>
+
+<div class="xgrid" ng-show="unit_groups.length > 0">
+
+	<div class="xgrid-cell">
+		<div class='input-box _full'>
+			<p class='input-box__title' translate>Select UOM Group</p>
+			<select class='_full' ng-model='listing.unit_group'
+				ng-options="unit_group as unit_group.name for unit_group in unit_groups"
+				ng-disabled='!editMode' ng-change="changeUnit(listing.unit_group)">
+				<option value='' selected>NONE</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="xgrid-cell">
+		<div class='input-box _full'>
+			<p class='input-box__title' translate>Default Sales Unit</p>
+			<select class='_full' ng-model='listing.default_order_unit'
+				ng-disabled='!editMode'
+				ng-options="unit as unit.name for unit in listing.unit_group.units"
+				ng-disabled='!editMode'
+				ng-change="listing.default_order_unit_id = listing.default_order_unit.id">
+				<option value='' selected>NONE</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="xgrid-cell">
+		<div class='input-box _full'>
+			<p class='input-box__title' translate>Default Purchase Unit</p>
+			<select class='_full' ng-model='listing.default_purchase_order_unit'
+				ng-disabled='!editMode'
+				ng-options="unit as unit.name for unit in listing.unit_group.units"
+				ng-disabled='!editMode'
+				ng-change="listing.default_purchase_order_unit_id = listing.default_purchase_order_unit.id">
+				<option value='' selected>NONE</option>
+			</select>
+		</div>
+	</div>
+</div>
+
+<div class='input-box _right'></div>
+</div>

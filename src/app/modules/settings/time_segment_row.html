@@ -1,0 +1,56 @@
+<div>
+    <div class="xgrid">
+        <div class="xgrid-cell -default-20"  ng-if="hasTitle">
+            <div class="_full input-box  input-box">
+                <p class="input-box__title" translate>Title</p>
+                <input type="text" ng-model="hours.title"/>
+            </div>
+        </div>
+        <div class="xgrid-cell -default-35">
+            <input-time title="Start Time" ng-model="hours.start" class="_full"></input-time>
+        </div>
+        <div class="xgrid-cell -default-35">
+            <input-time title="End Time" ng-model="hours.end" class="_full"></input-time>
+        </div>
+            <!--
+            <div class="_full input-box  input-box">
+                <p class="input-box__title" translate>Start Time</p>
+                <input type="text" ng-model="hours.start" ui-time-mask="short"/>
+            </div>
+        </div>
+        <div class="xgrid-cell -default-15">
+            <div class="_full input-box  input-box">
+                <p class="input-box__title" translate>&nbsp;</p>
+                <select class="xgrid-cell -default-25" ng-model="hours.startMeridiem">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select>
+            </div>
+        </div>
+        <div class="xgrid-cell -default-20">
+            <div class="_full input-box  input-box">
+                <p class="input-box__title" translate>End Time</p>
+                <input type="text" ng-model="hours.end" ui-time-mask="short"/>
+            </div>
+        </div>
+        <div class="xgrid-cell -default-15">
+            <div class="_full input-box  input-box">
+                <p class="input-box__title" translate>&nbsp;</p>
+                <select class="xgrid-cell -default-25" ng-model="hours.endMeridiem">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select>
+            </div>-->
+
+        <div class="xgrid-cell -default-10">
+            <div class="_full input-box  input-box ">
+                <p class="input-box__title" >&nbsp;</p>
+                <button class="_remove _remove-mini" ng-click="removeHours(index,collection)"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="error" ng-repeat="(key, value) in hours.error">
+        <span class="error">{{key}}</span>
+    </div>
+</div>

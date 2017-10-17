@@ -1,0 +1,9 @@
+describe('Costomers Module', function() {
+  it('should view Customers', function() {
+    browser.get('/#/1651/customers');
+    browser.ignoreSynchronization = true;
+    browser.manage().timeouts().implicitlyWait(1000);
+
+    expect(browser.getTitle()).toEqual('Bindo Dashboard - Customers');
+  });
+});

@@ -1,0 +1,72 @@
+.add-listing {
+  @include modal-backdrop;
+
+  &__fixed-header {
+    position: absolute ;
+    left: 0;
+    top: 60px;
+    right: 0;
+    z-index: 3;
+  }
+
+  &__fixed-table {
+    position: absolute ;
+    left: 0;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+  }
+}
+
+
+.listing-table {
+  width: 100%;
+
+  th, td {
+    padding: 0.5em;
+    text-align: left;
+  }
+  th:first-child, td:first-child {
+    padding-left: 1em;
+  }
+
+  > thead {
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+  }
+  > thead > tr > th {
+    background-color: #F8F8F8;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 1em;
+    color: #A27F75;
+    font-weight: normal;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  > tbody > tr > td {
+      color: #A27F75;
+  }
+
+  &__figure {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  ._item {
+    font-size: 13px;
+    h4, p {
+      margin: 0;
+    }
+  }
+
+  ._qty-current, ._qty-requested {
+    width: 140px;
+    vertical-align: middle;
+  }
+
+  &__qty-input {
+    width: 60px !important;
+  }
+}

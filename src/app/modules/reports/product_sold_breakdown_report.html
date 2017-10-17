@@ -1,0 +1,23 @@
+<div class="panel _clearfix grid-report">
+  <h2 translate>Product Sold Breakdown Report</h2>
+  <div class="report-filter">
+    <input class='date-picker__input' type='text' ng-model='dateFrom' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder='{{"From" |translate}}'>
+    <input class='date-picker__input' type='text' ng-model='dateTo' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder='{{"To" |translate}}'>
+    <button class="_primary" ng-click="update()" translate>Update</button> &nbsp;&nbsp;&nbsp;&nbsp;
+    <span
+      ng-include="'app/modules/reports/download_report.html'"></span>
+
+  </div>
+
+  <div class="panel _clearfix">
+    <div style="left:20px;right:20px" ui-grid="gridOptions" ui-grid-resize-columns ui-grid-grouping ui-grid-exporter class="ag-fresh fixed-grid">
+      <div class="report-no-rows" ng-show="gridMessage">
+        <div class="report-no-rows-message">
+          <span>{{gridMessage1}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <index-paginator ng-if="pagingReady" fetch-data="update" pagination="pagination"/>
+</div>
+

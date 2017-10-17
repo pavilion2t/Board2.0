@@ -1,0 +1,20 @@
+.listing-name-thumbnail {
+  max-width: 300px;
+
+  ._thumbnail {
+    width: 60px;
+    height: 60px;
+    font-size: 11px;
+    color: #999;
+  }
+  ._name {
+    margin-bottom: 5px;
+    line-height: 24px;
+  }
+  ._code {
+    font-size: 0.8em;
+    color: #999;
+    margin-bottom: 0;
+    line-height: 1.1em;
+  }
+}

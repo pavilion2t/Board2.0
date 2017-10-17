@@ -1,0 +1,45 @@
+<h4>Add new custom field for Customer</h4>
+
+<input-box class='_full' type='text' title='Name' ng-model='listing.name'></input-box>
+<input-textarea title='Description (Optional)' ng-model='listing.description'></input-textarea>
+<div>
+
+  <div class='input-box'>
+    <p class='input-box__title'>field format</p>
+    <select ng-model='customfield.format'>
+      <option value='' disabled selected>Choose field format...</option>
+      <option value='text'>Text</option>
+      <option value='list'>List</option>
+    </select>
+  </div>
+  <input-box class="_right" type='text'
+             title='default value'
+             ng-show="customfield.format=='text' "
+             ng-model='listing.price'></input-box>
+</div>
+<div class="input- " ng-show="customfield.format=='list' ">
+  <p>Set a list of possible values</p>
+  <ul class="list-unstyled">
+    <li>
+      <input class="input-box__input" type="text" placeholder="possible value" ng-model="model" ng-disabled="disabled" ng-readonly="readonly" ng-keyup="checkIfInvalid($event)">
+      <button class="_icon _secondary"><i class="fa fa-remove"></i></button>
+      <input type="radio" name="defaultValue"> Default value
+    </li>
+    <li>
+      <input class="input-box__input" type="text" placeholder="possible value" ng-model="model" ng-disabled="disabled" ng-readonly="readonly" ng-keyup="checkIfInvalid($event)">
+      <button class="_icon _secondary"><i class="fa fa-remove"></i></button>
+        <input type="radio" name="defaultValue"> Default value
+    </li>
+  </ul>
+  <p>
+    <input class="input-box__input" type="text" placeholder="add a possible value" ng-model="model" ng-disabled="disabled" ng-readonly="readonly" ng-keyup="checkIfInvalid($event)">
+    <button class="_icon _primary"><i class="fa fa-plus"></i></button>
+
+  </p>
+</div>
+
+<hr>
+<button class="_primary">Save custom field settings</button>
+<a ui-sref="app.dashboard.settings.custom-fields.index">back to listing</a>
+
+

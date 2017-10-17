@@ -1,0 +1,30 @@
+<div class='login__box _main'>
+  <div class='box__logo'>
+    <img src='assets/images/bindo-dashboard-logo-large.png'>
+  </div>
+  <div class='box__form'>
+    <form ng-submit='login(user)'>
+      <div class='_message' ng-if='hasLoginError'>{{errorMessage}}</div>
+      <input name="username" type='text' placeholder='Bindo ID / Email' ng-model='user.username' ng-disabled='isLoggingIn'>
+      <input name="password" type='password' placeholder="{{'Password'|translate}}" ng-model='user.password' ng-disabled='isLoggingIn'>
+      <div class='form__remember'>
+        <div class='input-checkbox'>
+          <input id='checkbox-remember' type='checkbox' ng-model='user.remember'>
+          <label for='checkbox-remember'></label>
+        </div>
+        {{'Remember me for 7 days'|translate}}
+      </div>
+      <input class='_hidden' type='submit'>
+    </form>
+  </div>
+  <div class='box__options'>
+    <a class='options__forgot-password' href='/#/recover-password' translate>Forgot Password?</a>
+    <a href='https://bindopos.com/signup'>
+      <button class='_secondary' translate>Sign Up</button>
+    </a>
+    <button class='_primary _last' ng-click='login(user)'>
+      <span ng-show='isLoggingIn'><i class='fa fa-spin fa-circle-o-notch'></i>Loading</span>
+      <span ng-hide='isLoggingIn' translate>Log In</span>
+    </button>
+  </div>
+</div>

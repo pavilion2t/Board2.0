@@ -1,0 +1,13 @@
+<div class='edit'>
+  <div class='edit__body'>
+
+  <ng-include src="'app/modules/discounts/discount_form.html' "></ng-include>
+
+  <div class='content-bottom'>
+    <h2><span ng-show='editMode'>Edit</span> Discount #{{discount.id}} - {{discount.name}}</h2>
+    <div class='content-bottom-actions'>
+      <button ng-if="editPermission" ng-hide='editMode' class='_secondary' ng-click="enableEditMode()">Edit</button>
+      <button ng-show='editMode' ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+
+</div>

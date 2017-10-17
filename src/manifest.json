@@ -1,0 +1,32 @@
+{
+  "name": "Bindo Dashboard",
+  "icons": [
+    {
+      "src": "touch-icon-iphone.png",
+      "sizes": "60x60",
+      "type": "image/png",
+      "density": "1.0"
+    },
+    {
+      "src": "touch-icon-iphone-retina.png",
+      "sizes": "120x120",
+      "type": "image/png",
+      "density": "2.0"
+    },
+    {
+      "src": "touch-icon-ipad.png",
+      "sizes": "76x76",
+      "type": "image/png",
+      "density": "1.0"
+    },
+    {
+      "src": "touch-icon-ipad-retina.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "density": "2.0"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "landscape"
+}

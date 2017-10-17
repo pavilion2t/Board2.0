@@ -1,0 +1,93 @@
+<div class='list-menus'>
+  <div class='_message' ng-hide='isLoadingList'>
+    {{'Drag to arrange.'|translate}}<span ng-if='getMenusToUpdate(menus).length'> {{'You currently have unsaved changes.'|translate}}</span>
+  </div>
+  <div class='menus-list'>
+    <div ui-sortable='menuSortingOptions'>
+      <div class='menus-list-menu' ng-repeat='menu in menus'>
+        <span class='_name'>{{menu.name}}</span>
+
+        <div class='_toggle' ng-click='showActions = !showActions'><i class='fa fa-angle-down actions-arrow'></i></div>
+        <div class='_actions' ng-show='showActions' ng-mouseleave='showActions = false'>
+          <button class='actions-button' ng-click='startEditingMenu(menu)'>{{'Edit'|translate}}</button>
+          <button class='actions-button' ng-click='goToMenu(menu)'>{{'Edit Sections'|translate}}</button>
+          <button class='actions-button' ng-click='removeMenu(menu)'>{{'Remove'|translate}}</button>
+        </div>
+      </div>
+    </div>
+    <button class='menus-list-new-menu' ng-click='startCreatingNewMenu()' translate>
+      New Menu
+    </button>
+  </div>
+
+  <!-- CREATING NEW MENU -->
+  <div class='menus-create' ng-show='isCreatingNewMenu'>
+    <div class='menus-create-modal _modal'>
+      <div class='modal__header'>
+        <h5>{{'New Menu'|translate}}</h5>
+      </div>
+      <div class='_message' ng-if='createErrorMessage'>{{createErrorMessage}}</div>
+      <div class='modal__content'>
+        <input-box title='{{"Name"|translate}}' ng-model='newMenu.name' type='text'></input-box>
+        <div class='input-box'>
+          <p class='input-box__title'>Available Days</p>
+          <input-checkbox label='new-available-day-all' ng-model='newMenu.everyday' ng-getter-setter='true'>
+          </input-checkbox>Every day in the week</br>
+          <input-checkbox label='new-available-day-0' ng-model='newMenu.available_days[1]'></input-checkbox>Every Sunday</br>
+          <input-checkbox label='new-available-day-1' ng-model='newMenu.available_days[2]'></input-checkbox>Every Monday</br>
+          <input-checkbox label='new-available-day-2' ng-model='newMenu.available_days[3]'></input-checkbox>Every Tuesday</br>
+          <input-checkbox label='new-available-day-3' ng-model='newMenu.available_days[4]'></input-checkbox>Every Wednesday</br>
+          <input-checkbox label='new-available-day-4' ng-model='newMenu.available_days[5]'></input-checkbox>Every Thursday</br>
+          <input-checkbox label='new-available-day-5' ng-model='newMenu.available_days[6]'></input-checkbox>Every Friday</br>
+          <input-checkbox label='new-available-day-6' ng-model='newMenu.available_days[7]'></input-checkbox>Every Saturday</br>
+        </div>
+        <input-box title='{{"Time Available From"|translate}} (HH:MM:SS)' ng-model='newMenu.available_time_from' type='text'></input-box>
+        <input-box title='{{"Time Available To"|translate}} (HH:MM:SS)' ng-model='newMenu.available_time_to' type='text'></input-box>
+      </div>
+      <div class='modal__bottom'>
+        <button class='_secondary' ng-click='cancelCreatingNewMenu()'>{{'Cancel'|translate}}</button>
+        <button class='_primary' ng-click='saveNewMenu()'>{{'Save'|translate}}</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- UPDATING EXISTING MENU -->
+  <div class='menus-create' ng-show='isEditingMenu'>
+    <div class='menus-create-modal _modal'>
+      <div class='modal__header'>
+        <h5>{{'Edit Menu'|translate}}</h5>
+      </div>
+      <div class='_message' ng-if='editErrorMessage'>{{editErrorMessage}}</div>
+      <div class='modal__content'>
+        <input-box title='{{"Name"|translate}}' ng-model='editedMenu.name' type='text'></input-box>
+        <div class='input-box'>
+          <p class='input-box__title'>Available Days</p>
+          <input-checkbox label='edit-available-day-all' ng-model='editedMenu.everyday' ng-getter-setter='true'>
+          </input-checkbox>Every day in the week</br>
+          <input-checkbox label='edit-available-day-0' ng-model='editedMenu.available_days["1"]'></input-checkbox>Every Sunday</br>
+          <input-checkbox label='edit-available-day-1' ng-model='editedMenu.available_days["2"]'></input-checkbox>Every Monday</br>
+          <input-checkbox label='edit-available-day-2' ng-model='editedMenu.available_days["3"]'></input-checkbox>Every Tuesday</br>
+          <input-checkbox label='edit-available-day-3' ng-model='editedMenu.available_days["4"]'></input-checkbox>Every Wednesday</br>
+          <input-checkbox label='edit-available-day-4' ng-model='editedMenu.available_days["5"]'></input-checkbox>Every Thursday</br>
+          <input-checkbox label='edit-available-day-5' ng-model='editedMenu.available_days["6"]'></input-checkbox>Every Friday</br>
+          <input-checkbox label='edit-available-day-6' ng-model='editedMenu.available_days["7"]'></input-checkbox>Every Saturday</br>
+        </div>
+        <input-box title='{{"Time Available From"|translate}} (HH:MM:SS)' ng-model='editedMenu.available_time_from' type='text'></input-box>
+        <input-box title='{{"Time Available To"|translate}} (HH:MM:SS)' ng-model='editedMenu.available_time_to' type='text'></input-box>
+      </div>
+      <div class='modal__bottom'>
+        <button class='_secondary' ng-click='cancelEditingMenu()'>{{'Cancel'|translate}}</button>
+        <button class='_primary' ng-click='updateMenu()'>{{'Save'|translate}}</button>
+      </div>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2>{{title|translate}}</h2>
+    <!-- beware: actions only usable for 25 per page view -->
+    <div class='content-bottom-actions'>
+      <button ng-show='getMenusToUpdate(menus).length' class='_secondary' ng-click='discardChanges()'>{{'Discard Changes'|translate}}</button>
+      <button ng-show='getMenusToUpdate(menus).length' class='_primary' ng-click='saveChanges()'>{{'Save Changes'|translate}}</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.main-content-tab {
+    background: #c1d3df;
+
+    .nav-tabs {
+        border: 0;
+        padding: 12px 12px 0;
+    }
+    .nav-item {
+    }
+    .nav-item + .nav-item {
+        margin-left: 12px;
+    }
+    .nav-link {
+        background-color: rgba(#fff, .6);
+        color: #aaaaaa;
+        border: 0;
+        min-width: 10em;
+        font-size: 14px;
+        text-align: center;
+
+        &.active, &.active:focus {
+            background: #fff;
+            color: #ff7800;
+        }
+    }
+}

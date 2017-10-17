@@ -1,0 +1,9 @@
+describe('Purchase Orders Module', function() {
+  it('should view Purchase Orders', function() {
+    browser.get('/#/1651/purchase-orders');
+    browser.ignoreSynchronization = true;
+    browser.manage().timeouts().implicitlyWait(1000);
+
+    expect(browser.getTitle()).toEqual('Bindo Dashboard - Purchase Orders');
+  });
+});

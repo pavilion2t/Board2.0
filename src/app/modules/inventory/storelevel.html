@@ -1,0 +1,7 @@
+<div class='panel-section'>
+  <h2>{{'S/L'|translate}}</h2>
+  <div class='grid'>
+    <editable-grid ng-hide='!storeLevelListings || storeLevelListings.length === 0' columns='storeLevelColumns' data='storeLevelListings' edit-mode='false'></editable-grid>
+    <p ng-show='!storeLevelListings || storeLevelListings.length === 0'>{{'No Data.'|translate}}</p>
+  </div>
+</div>

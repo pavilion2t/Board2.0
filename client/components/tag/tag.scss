@@ -1,0 +1,22 @@
+@import "../../pages/layout/base/stylesheets/_variables.scss";
+
+.tag{
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(204,204,204,0.5);
+  border-radius: 4px;
+  padding: 3px 6px;
+  font: $base-font-family;
+  margin: 3px 7px;
+
+  .tag__label{
+    color: #666;
+  }
+  .tag__times{
+    color: #666;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+}

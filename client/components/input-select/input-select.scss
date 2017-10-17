@@ -1,0 +1,25 @@
+.input-select {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  i {
+    padding: 8px;
+    position: absolute;
+    right: 0;
+  }
+  input{
+    pointer-events: none;
+    tab-index: -1;
+    width: 100%;
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &--readonly,
+  &--disabled {
+    cursor: default;
+  }
+}

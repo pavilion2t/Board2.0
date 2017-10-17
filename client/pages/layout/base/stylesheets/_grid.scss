@@ -1,0 +1,99 @@
+$xsmall-up: "only screen";
+$xsmall-only: "only screen and (max-width: 35.438em)";
+
+$small-up: "only screen and (min-width:35.5em)";
+$small-only: "only screen and (min-width:35.5em) and (max-width:47.938em)";
+
+$medium-up: "only screen and (min-width:48em)";
+$medium-only: "only screen and (min-width:48em) and (max-width:63.938em)";
+
+$large-up: "only screen and (min-width:64em)";
+$large-only: "only screen and (min-width:64em) and (max-width:79.938em)";
+
+$xlarge-up: "only screen and (min-width:80em)";
+
+
+
+.xgrid-container {
+  width: 1000px ;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  &.-fluid {
+    width: auto;
+  }
+}
+
+.xgrid {
+  display: flex;
+  margin-right: -10px;
+  margin-left: -10px;
+  justify-content: left;
+
+  &.-gallery {
+   flex-wrap: wrap;
+   align-content: flex-start;
+
+    .xgrid-cell {
+      flex-grow: 0;
+      flex-shrink: 1;
+    }
+  }
+  @media #{$xsmall-only} {
+    flex-wrap: wrap;
+  }
+
+  $margins: 5 10 15 20 25 30;
+  @each $margin in $margins  {
+    &.-gutter-#{$margin} {
+      margin-left: -$margin + px;
+      margin-right: -$margin + px;
+
+      > .xgrid-cell {
+        padding-left: $margin + px;
+        padding-right: $margin + px;
+      }
+    }
+  }
+}
+.xgrid + .xgrid {
+  margin-top: 1.5em;
+}
+
+.xgrid-cell {
+  float: left;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+
+  $widths: 5 10 15 20 25 30 33 35 40 45 50 55 60 65 66 70 75 80 85 90 95 100;
+  @each $width in $widths  {
+    &.-default-#{$width} {
+
+      @media #{$small-up} {
+        width: percentage($width/100);
+        flex-basis: percentage($width/100);
+      }
+    }
+  }
+  @each $width in $widths  {
+    &.-xs-#{$width} {
+
+      @media #{$xsmall-only} {
+        width: percentage($width/100);
+        flex-basis: percentage($width/100);
+      }
+    }
+  }
+}
+
+// clearfix for gird
+.xgrid:after {
+  content: "";
+  display: table;
+  clear: both;
+}

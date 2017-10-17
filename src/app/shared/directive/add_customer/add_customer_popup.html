@@ -1,0 +1,55 @@
+<div class='add-listings'>
+    <div class='ngdialog-header add-listings-header'>
+      <h3 class="pull-left">{{'Select Customer'|translate}}</h3>
+      <form class='pull-right' >
+		<span> Search by Name, Phone or Email</span>
+        <input class='' type='text' placeholder='Search Customer' ng-model='keyword'>
+        <button class="_primary" ng-click='searchCustomer(keyword)'>Search</button>
+        <button ng-if="searched" class="_secondary" ng-click="previous()">Previous</button>
+        <button ng-if="searched" class="_secondary" ng-click="next()">Next</button>
+        <span ng-if="searched">Page: {{page}}/{{totalPages}}</span>
+      </form>
+    </div>
+    <div class='_message' ng-if='addErrorMessage'>{{addErrorMessage}}</div>
+    <div class="ngdialog-body">
+      <table class="table listing-table" ng-hide="searching">
+        <thead>
+          <tr>
+            <th>{{'Customer'|translate}}</th>
+            <th>{{'Customer ID'|translate}}</th>
+            <th>{{'Gender'|translate}}</th>
+            <th>{{'Phone'|translate}}</th>
+            <th>{{'Email'|translate}}</th>
+            <th>{{'Select'|translate}}</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr ng-repeat='customer in customers'>
+            <td class="figure" ng-bind="customer.name">
+              
+
+            </td>
+            <td class='_item' ng-bind="customer.id">
+              
+            </td>
+            <td ng-bind="customer.gender|genderFilterFormatter">
+             
+            </td>
+            <td ng-bind="customer.phone">
+              
+            </td>
+            <td ng-bind="customer.email">
+              
+            </td>
+            <td >
+              <button class='_primary'  ng-click='select(customer)'>Select</button>
+             
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="_margin-2em" ng-show="searching">Searching inventory...</p>
+      <p class="_margin-2em" ng-show="addErrorMessage">{{addErrorMessage}}</p>
+    </div>
+</div>

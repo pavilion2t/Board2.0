@@ -1,0 +1,76 @@
+@import "../../pages/layout/base/stylesheets/_variables.scss";
+@import "../../pages/layout/base/stylesheets/_mixins.scss";
+
+.discounts .grid{
+  padding: 0px;
+}
+
+.grid {
+  position: relative;
+  padding-bottom: $bottom-height;
+  cursor: default;
+
+  .grid__body {
+    border-radius: 2px;
+  }
+  .grid__footer {
+    margin: 0 10px;
+  }
+  .grid__loading {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgb(233,239,243);
+    opacity: 0.5;
+
+    .loading__message {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      width: 120px;
+      height: 40px;
+      background-color: rgba(57,64,76,0.8);
+      border-radius: 40px;
+      text-align: center;
+      p {
+        font-weight: 700;
+        color: white;
+        line-height: 40px;
+        i {
+          position: relative;
+          top: 2px;
+          margin-right: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .grid__pagination {
+    display: inline-block;
+    margin: 15px 0;
+    .pagination__link {
+      margin-right: 20px;
+      a {
+        cursor: pointer;
+        &._current {
+          color: $text-orange;
+        }
+      }
+    }
+  }
+  .grid__row-count {
+    display: inline-block;
+    float: right;
+    margin: 15px 0;
+    p {
+      font-size: 16px;
+    }
+    .row-count__switch {
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+}

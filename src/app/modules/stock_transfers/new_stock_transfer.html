@@ -1,0 +1,51 @@
+<div class='edit _stock-transfer'>
+  <div class='panel'>
+    <div class="xgrid">
+      <div class="xgrid-cell -default-70">
+        <h2 class='edit__transfer-type' ng-show='stockTransfer.type === "departing"'>{{'Outgoing Transfer'|translate}}</h2>
+        <h2 class='edit__transfer-type' ng-show='stockTransfer.type === "receiving"'>{{'Incoming Transfer'|translate}}</h2>
+      </div>
+
+    </div>
+    <div class="xgrid">
+      <div class="xgrid-cell -default-40">
+        <div class='input-box -full' ng-show='stockTransfer.type === "departing"'>
+          <p class='input-box__title' translate>Receiving Store</p>
+          <select ng-options='store.id as store.title for store in stores | filter: {id: "!{{store_id}}"}' ng-model='stockTransfer.receiving_store_id'></select>
+        </div>
+        <div class='input-box -full' ng-show='stockTransfer.type === "receiving"'>
+          <p class='input-box__title' translate>Departing Store</p>
+          <select ng-options='store.id as store.title for store in stores | filter: {id: "!{{store_id}}"}' ng-model='stockTransfer.departing_store_id'></select>
+        </div>
+      </div>
+      <div class="xgrid-cell -default-30">
+        <input-date class="-full" title='Shipping Date' ng-model='stockTransfer.shipping_date'></input-date>
+      </div>
+      <div class="xgrid-cell -default-30">
+        <input-date class='-full' title='Receiving Date' ng-model='stockTransfer.receiving_date'></input-date>
+      </div>
+    </div>
+    <hr class="panel-divider">
+    <div>
+      <h3 translate>Transferred Items</h3>
+      <editable-grid columns='editColumns' data='stockTransfer.stock_transfer_items' edit-mode='true' row-height='editRowHeight' ng-show='stockTransfer.stock_transfer_items.length'></editable-grid>
+      <br>
+      <div>
+        <add-listings on-close="addItems" store-id="stockTransfer.departing_store_id" ng-show="canAddListing()"></add-listings> <!-- search departing store if receiving-->
+        <add-listings-by-barcode store-id="stockTransfer.departing_store_id" line-items="stockTransfer.stock_transfer_items" add-items="addItems" ng-show="canAddListing()"> </add-listings-by-barcode>
+        <p ng-hide="canAddListing()">{{'Select a store before adding items'|translate}}</p>
+      </div>
+    </div>
+    <hr class="panel-divider">
+    <div>
+      <input-textarea title='Remarks' ng-model='stockTransfer.remarks'></input-textarea>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2><span ng-show='editMode'>Edit</span> Stock Transfer #{{stockTransfer.id}}</h2>
+    <div class='content-bottom-actions'>
+      <button ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+  </div>
+</div>

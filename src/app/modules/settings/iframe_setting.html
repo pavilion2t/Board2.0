@@ -1,0 +1,101 @@
+<h2>{{'General Settings'|translate}}</h2>
+
+<p ng-show="firstSetup">{{'Please set your general Storefront settings to get started. These settings will be applied to all Storefront pages that you create.'|translate}}</p>
+<p ng-hide="firstSetup">{{'Edit your general Storefront settings below. These settings will be applied to all Storefront pages that you create.'|translate}}</p>
+
+<form ng-submit="saveSetting(formData)">
+
+  <div class="xgrid">
+    <div class="xgrid-cell -default-15">
+      <h4 class="_margin-0">{{'Addition Languages other then English'|translate}}</h4>
+    </div>
+    <div class="xgrid-cell -default-85">
+      <label class="label-inline">
+        <input type="checkbox" ng-model="formData.langs['zh_tw']" /> Traditional Chinese
+      </label>
+      <label class="label-inline">
+        <input type="checkbox" ng-model="formData.langs['zh_cn']" /> Simplified Chinese
+      </label>
+      <br>
+      <div class="xgrid">
+        <div class="xgrid-cell -default-33">
+          <label>{{'Custom shipping description'|translate}} ({{'optional'|translate}})</label>
+          <input type="text" class="_full" ng-model="formData.custom_shipping_desc" id="">
+        </div>
+        <div class="xgrid-cell -default-33" ng-show="formData.langs['zh_tw']">
+          <label>自訂中文運送說明（繁）</label>
+          <input type="text" class="_full" ng-model="formData.custom_shipping_desc_zh_tw" id="">
+        </div>
+        <div class="xgrid-cell -default-33" ng-show="formData.langs['zh_cn']">
+          <label>自訂中文運送說明（簡）</label>
+          <input type="text" class="_full" ng-model="formData.custom_shipping_desc_zh_cn" id="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="xgrid">
+    <div class="xgrid-cell -default-15">
+      <h4 class="_margin-0">Shipping Type</h4>
+    </div>
+    <div class="xgrid-cell -default-85">
+      <label class="label-inline"><input type="radio" ng-model="formData.delivery_type" value="flat"> {{'Flat rate shipping'|translate}}</label>
+      <label class="label-inline"><input type="radio" ng-model="formData.delivery_type" value="free"> {{'Free shipping'|translate}}</label>
+      <label class="label-inline"><input type="radio" ng-model="formData.delivery_type" value="pickup"> {{'Pick up only'|translate}} ({{'default'|translate}})</label>
+
+      <div ng-show=" formData.delivery_type=='flat' ">
+        <div class="xgrid">
+          <div class="xgrid-cell -default-50">
+            <label for="">{{'Shipping rate'|translate}}</label>
+            <input type="text" class="_full" placeholder="Eg. 5.99" ng-model="formData.flat_rate_shipping_amount">
+          </div>
+          <div class="xgrid-cell -default-50">
+            <label for="">{{'Order amount to qualify for free shipping'|translate}} ({{'optional'|translate}})</label>
+            <input type="text"  class="_full" placeholder="Eg. 99.99" ng-model="formData.order_amount_for_free_shipping">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="xgrid">
+    <div class="xgrid-cell -default-15">
+      <h4 class="_margin-0">Country</h4>
+    </div>
+    <div class="xgrid-cell -default-85">
+      <label class="label-inline"><input type="radio" ng-model="formData.country" value="HK"> Hong Kong</label>
+      <label class="label-inline"><input type="radio" ng-model="formData.country" value="US"> United States (default)</label>
+    </div>
+  </div>
+
+  <div class="xgrid">
+    <div class="xgrid-cell -default-15">
+      <h4 class="_margin-0">Product Text Layout</h4>
+    </div>
+    <div class="xgrid-cell -default-85">
+      <label class="label-inline"><input type="radio" ng-model="formData.layout" value="left"> Align left</label>
+      <label class="label-inline"><input type="radio" ng-model="formData.layout" value="center"> Align center</label>
+    </div>
+  </div>
+
+  <div class="xgrid">
+    <div class="xgrid-cell -default-15">
+      <h4 class="_margin-0">Main Display Settings</h4>
+    </div>
+    <div class="xgrid-cell -default-85">
+      <label><input type="checkbox" ng-model="formData.hide_price" /> Hide price</label>
+      <label><input type="checkbox" ng-model="formData.show_add_to_cart" /> Show quick add to cart button</label>
+      <!-- UNCOMMENT when implemented on storefront -->
+      <!-- <label><input type="checkbox" ng-model="formData.hide_out_of_stock" /> Hide out of stock items</label> -->
+      <!-- UNCOMMENT when implemented on storefront -->
+      <!-- <label><input type="checkbox" ng-model="formData.show_cart_menu" /> Always show cart menu</label> -->
+    </div>
+  </div>
+
+  <div class="form-section">
+    <span class="_button _secondary" ng-click="goToIndex()">Cancel</span>
+    <button class="_button _primary" ng-click="saveSetting(formData)">Save</button>
+  </div>
+
+</form>

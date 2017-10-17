@@ -1,0 +1,115 @@
+
+<div class="xgrid">
+	<div class="xgrid-cell  -default-75">
+		<div class="_full input-box  input-box " type="text" title="Title">
+			<p class="input-box__title"
+				ng-class="{_hidden: (listing.name === undefined || listing.name === null || listing.name === '') }"
+				translate>Title</p>
+			<input valid-input name="listingName" class="input-box__input"
+				type="text" placeholder="Title" ng-model="listing.name"
+				ng-readonly="true" ng-required="true">
+			<div valid-messages for="listingName" key="required"
+				err-message="Required"></div>
+		</div>
+	</div>
+	<div class="xgrid-cell -default-25">
+		<span>Product ID: {{listing.id}}</span>
+	</div>
+</div>
+<div class="xgrid">
+	<div class="xgrid-cell  -default-100">
+		<input-textarea title='Description (Optional)'
+			ng-model='listing.description' ng-readonly='true'></input-textarea>
+	</div>
+</div>
+
+<div class="xgrid">
+	<div class="xgrid-cell">
+		<input-box class='_full' type='text'
+			title='{{"Manufacturer Barcode"|translate}}' ng-model='listing.gtid'
+			ng-readonly='true'></input-box>
+	</div>
+
+
+	<div class="xgrid-cell">
+
+		<p class="input-box__title">
+			<span translate> Quantity </span> &nbsp; <span
+				ng-if='listing.serial_number_enabled' translate> ( Serial
+				Number Enabled ) </span>
+		</p>
+
+		<div class="xgrid-cell -default-50">
+			<input valid-input name="quantity" class="input-box__input"
+				type="text" placeholder="Quantity"
+				ng-if='listing.track_quantity && !listing.serial_number_enabled'
+				ng-model='listing.quantity' ng-readonly='true' ui-number-mask="0"
+				ng-required="true">
+			<div ng-if='listing.track_quantity' valid-messages for="quantity"
+				key="required" err-message="Required"></div>
+			<p class="input-box__title" translate ng-if='!listing.track_quantity'>Unlimited</p>
+			<p class="input-box__title" translate
+				ng-if='listing.serial_number_enabled'>{{listing.quantity|number}}</p>
+
+		</div>
+		<div class="xgrid-cell -default-50"></div>
+	</div>
+
+</div>
+
+<div class="xgrid">
+	<div class="xgrid-cell">
+		<input-box class='_full' type='text'
+			title='{{"Secondary Barcode"|translate}}'
+			ng-model='listing.listing_barcode' ng-readonly='true'></input-box>
+	</div>
+
+	<div class="xgrid-cell">
+
+
+
+		<div class='_full input-box'>
+			<p class='input-box__title' translate>Price</p>
+			<input valid-input name="price" class='input-box__input' type='text'
+				ng-model='listing.price' ng-readonly='!editMode' ui-money-mask="2"
+				ng-required="true">
+			<div valid-messages for="price" key="required" err-message="Required"></div>
+		</div>
+
+	</div>
+</div>
+
+<div></div>
+<div class="xgrid">
+	<div class="xgrid-cell">
+		<input-box class='_full' type='text' title='{{"Brand"|translate}}'
+			ng-model='listing.brand_name' ng-readonly='true'></input-box>
+	</div>
+	<div class="xgrid-cell" ng-hide="listing.tax_option_ids.length > 0">
+		<p class='input-box__title' translate>Tax Option</p>
+		<select class='_full' ng-model='listing.tax_option_id'
+			ng-disabled='true'>
+			<option value='' selected>NONE</option>
+			<option ng-repeat='taxOption in taxOptions' value='{{taxOption.id}}'>{{taxOption.name}}({{taxOption.tax_rate_text}})</option>
+		</select>
+	</div>
+</div>
+
+
+<div class="xgrid">
+	<div class="xgrid-cell">
+		<p class='input-box__title' translate>Department</p>
+		<select class='_full' ng-model='listing.department_id'
+			ng-disabled='true'>
+			<option value=''>NONE</option>
+			<option ng-repeat='department in departmentsSorted'
+				value='{{department.id}}' ng-bind-html="department.stackdisplay"></option>
+		</select>
+	</div>
+	<div class="xgrid-cell"></div>
+</div>
+
+
+
+<div class='input-box _right'></div>
+</div>

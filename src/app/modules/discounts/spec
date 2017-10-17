@@ -1,0 +1,9 @@
+describe('Discounts Module', function() {
+  it('should view Discounts', function() {
+    browser.get('/#/1651/discounts');
+    browser.ignoreSynchronization = true;
+    browser.manage().timeouts().implicitlyWait(1000);
+
+    expect(browser.getTitle()).toEqual('Bindo Dashboard - Discounts');
+  });
+});

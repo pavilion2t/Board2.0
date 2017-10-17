@@ -1,0 +1,57 @@
+#upload-image{
+    position: absolute;
+    bottom: 23px;
+    height: 23px !important;
+    opacity: 0;
+    cursor: pointer;
+    left: -82px;
+}
+
+.edit {
+  position: relative;
+  color: $text-dark-brown;
+  padding: 20px 0;
+  .primarySpan {
+  	margin:20px
+  }
+
+  .input-box {
+    display: inline-block;
+    vertical-align: text-top;
+    min-width: 48%;
+
+    &._right {
+      // disgusting hack
+      position: relative;
+      top: 1px;
+      float: right;
+    }
+    &._full {
+      width: 100%;
+    }
+    input, select {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .input-checkbox {
+    // vertical-align: text-top;
+    margin: 3px 10px 0 0;
+  }
+
+}
+
+.text-block {
+  background-color: #fcfcfc;
+  padding: 1em;
+  white-space: pre-wrap;
+}
+
+.img-preview {
+  max-width: 200px;
+  height: auto;
+}
+
+.link-control {
+  margin: 0 0.5em;
+}

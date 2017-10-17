@@ -1,0 +1,8 @@
+<h3>Fulfill Items</h3>
+<editable-grid columns="editColumns" data="lineItems" edit-mode="true" row-height="editRowHeight" hide-remove="true"></editable-grid>
+<p class="_align-right">
+  <button class="_secondary" ng-click="closeThisDialog(null)">{{"Cancel"|translate}}</button>
+  <button class="_secondary" ng-click="setAllFulfill(lineItems)">{{"Set Fulfull All"|translate}}</button>
+  <button class="_primary" ng-click="returnFulfill(lineItems)">{{"Fulfill"|translate}}</button>
+
+</p>

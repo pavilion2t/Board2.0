@@ -1,0 +1,126 @@
+<div class='panel-section'>
+    <h3 translate>Overview</h3>
+    <input-box class='_full' type='text' title='{{"Set Title"|translate}}' ng-model='modifierSet.title' ng-readonly='!editMode' required>
+    </input-box>
+
+    <div class="xgrid">
+        <div class="xgrid-cell -default-50">
+            <p class='input-box__title'>Operation</p>
+            <select class='_full' ng-model="modifierSet.operation" ng-disabled='!editMode'>
+                <option value="1" translate>Add</option>
+                <option value="2" translate>Deduct</option>
+            </select>
+        </div>
+        <div class="xgrid-cell -default-50">
+            <p class='input-box__title'>Choose Type</p>
+            <select class='_full' ng-model="modifierSet.choose_type" ng-disabled='!editMode'>
+                <option value="1" translate>One Option</option>
+                <option value="2" translate>Multiple</option>
+            </select>
+        </div>
+    </div>
+    <div class="xgrid">
+        <div class="xgrid-cell -default-50">
+            <input-box class='_full' type='text' title='{{"Choose At Least"|translate}}' ng-model='modifierSet.choose_at_least' ng-readonly='!editMode' required>
+            </input-box>
+        </div>
+        <div class="xgrid-cell -default-50">
+            <input-box class='_full' type='text' title='{{"Choose Up To"|translate}}' ng-model='modifierSet.choose_up_to' ng-readonly='!editMode' required>
+            </input-box>
+        </div>
+    </div>
+    <div class="xgrid">
+      <div class="xgrid-cell -default-50">
+          <p><input-checkbox label='choose_same_option' ng-model='modifierSet.choose_same_option' ng-disabled='!editMode'  ></input-checkbox> {{'Choose Same Option'|translate}}</p>
+      </div>
+    </div>
+
+</div>
+<!--
+operation: 1 = ADD, 2 = DEDUCT
+choose type: 1 = choose one option only, 2 = can choose multiple-->
+
+<div ng-repeat="option in modifierSet.modifier_set_options track by $index" ng-if="!option.delete" class="card">
+
+    <div class="xgrid">
+        <div class="xgrid-cell -default-50">
+            <input-box class='_full' type='text' title='{{"Name"|translate}}' ng-model='option.option_name' ng-readonly='!editMode' required>
+            </input-box>
+        </div>
+        <div class="xgrid-cell -default-40">
+            <input-box class='_full' type='text' title='{{"Modifier ID"|translate}}' ng-model='option.code' ng-readonly='!editMode'>
+            </input-box>
+        </div>
+        <div class="xgrid-cell -default-10">
+          <div class="_full input-box  input-box ">
+            <p class="input-box__title" >&nbsp;</p>
+            <button ng-if="editMode" class="_remove _remove-mini" ng-click="delete(option,$index,modifierSet.modifier_set_options)">Delete</button>
+          </div>
+        </div>
+    </div>
+    <div class="xgrid">
+        <div class="xgrid-cell -default-25">
+            <input-box class='_full' type='text' title='{{"Quantity"|translate}}' ng-model='option.quantity' ng-readonly='!editMode'>
+            </input-box>
+        </div>
+
+        <div class="xgrid-cell -default-25">
+            <input-box class='_full' type='text' title='{{"Change In Price"|translate}}' ng-model='option.change_in_price' ng-readonly='!editMode' required>
+            </input-box>
+        </div>
+
+        <div class="xgrid-cell -default-25">
+            <p class='input-box__title'>&nbsp;</p>
+            <p><input-checkbox ng-value='true' name="pool-{{$index}}" label='pool-{{$index}}' ng-model='option.enable_credit_pool' ng-disabled='!editMode'  ></input-checkbox> {{'Enable Credit Pool'|translate}}</p>
+        </div>
+
+    </div>
+
+
+    <div class="xgrid" ng-if="option._product">
+      <table class="editable-grid _edit receive_order_table" ng-class="{_edit: editMode}">
+        <thead class="editable-grid__head">
+        <tr>
+
+          <th class="editable-grid__cell editable-grid__head-cell" style="width: 40%;" translate>Name</th>
+          <th class="editable-grid__cell editable-grid__head-cell" style="width: 40%;" translate>Category</th>
+
+          <th class="editable-grid__cell editable-grid__head-cell" style="width: 20%;" translate>Product ID</th>
+
+
+          <th class="editable-grid__cell editable-grid__head-cell -icon-cell">&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody class="editable-grid__body">
+
+        <tr>
+          <td class="editable-grid__cell">
+            <img style="width:50px" class="item__image" ng-if="option._product.image_url" src="{{option._product.image_url}}">
+            <img style="width:50px" class="item__image" ng-if="!option._product.image_url" src="assets/images/inventory_placeholder.png">
+            <span style="vertical-align: top;" ng-bind="option._product.name"></span>
+          </td>
+          <td class="editable-grid__cell">
+            <span ng-bind="option._product.category_name"></span>
+          </td>
+          <td class="editable-grid__cell">
+            <span ng-bind="option._product.product_id"></span>
+          </td>
+          <td class="editable-grid__cell">
+            <button class="_remove _remove-mini" ng-show="editMode" ng-click="removeProduct(option)"></button>
+          </td>
+
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="xgrid">
+
+      <div class="xgrid-cell -default-100">
+        <add-listings on-close="addItems" ng-show="editMode" single-select="true" one-item-select="true" callback-item="option"></add-listings>
+      </div>
+    </div>
+
+</div>
+<a ng-if="editMode" ng-click="add(modifierSet.modifier_set_options)" class="_button _add" translate>Add New Option</a>

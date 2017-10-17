@@ -1,0 +1,33 @@
+ <div class="xgrid">
+	<div class="xgrid-cell -default-40">
+		<div class='input-box -full'>
+			<p class='input-box__title' translate>{{title}}</p>
+			<ui-select ng-model="defaultCurrency.currency_to" ng-disabled="isDisabled" theme="select2" 
+				class="form-control -full" on-select="onSelectCallback($item, $model)">
+        		<ui-select-match placeholder="Search currency...">{{$select.selected.name}}</ui-select-match>
+        		<ui-select-choices repeat="c.currency_to as c in currency | filter: $select.search" >
+           			<span ng-bind-html="c.name | highlight: $select.search"></span>
+           			<span class="pull-right">{{c.symbol}} {{c.currency_to}}</span>
+        		</ui-select-choices>
+  			</ui-select>
+		</div>
+	</div>
+	<div class="xgrid-cell -default-15">
+		<div class='input-box'>
+			<p class='input-box__title' translate>Code</p>
+			<input class="input-box__input" type="text" ng-model="defaultCurrency.currency_to" ng-readonly="true">
+		</div>
+	</div>
+	<div class="xgrid-cell -default-15">
+		<div class='input-box'>
+			<p class='input-box__title' translate>symbol</p>
+			<input class="input-box__input" type="text" ng-model="defaultCurrency.symbol" ng-readonly="true">
+		</div>
+	</div>
+	<div class="xgrid-cell -default-30">
+		<div class='input-box'>
+			<p class='input-box__title' translate>value</p>
+			<input ng-pattern="currencyPattern" class="input-box__input" type="text" ng-model="defaultCurrency.rate" ng-readonly="isDisabled">
+		</div>
+	</div>
+</div>

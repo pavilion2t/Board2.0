@@ -1,0 +1,13 @@
+.main-content-section {
+    padding: 15px;
+    padding-bottom: 7px;
+
+    & + & {
+        border-top: 1px solid #eee;
+        padding-top: 7px;
+    }
+
+    &:last-child {
+        padding-bottom: 15px;
+    }
+}

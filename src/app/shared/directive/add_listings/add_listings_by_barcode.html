@@ -1,0 +1,4 @@
+<form class="form-inline" ng-submit='searchBarcodes(keyword)'>
+	<input ng-keyup="searchBarcodesKeyUp($event.keyCode, keyword)" type='text' placeholder='UPC/EAN/PLU/SKU' ng-model='keyword'  ng-disabled='isDisabled'>
+	<button class="_primary">Enter</button>
+</form>

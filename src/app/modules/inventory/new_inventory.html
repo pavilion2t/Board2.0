@@ -1,0 +1,45 @@
+
+<form name="myForm" class="form-horizontal" novalidate>
+<div class='edit _new-inventory'>
+  <div class='edit__body'>
+    <div class='nav-tabs'>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "overview"}' ng-click='section = "overview"' translate>New {{title}}</a>
+    </div>
+    <div class='panel' ng-show='section === "overview"'>
+      <div class='panel-section'>
+        <div ng-include=" 'app/modules/inventory/overview.html' "></div>
+      </div>
+      <div class='panel-section'>
+        <div ng-include=" 'app/modules/inventory/overview_checkbox.html' "></div>
+      </div>
+      <div class='panel-section'>
+        <input-image title='{{"Add Image"|translate}}' on-select='addImage'></input-image>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal-backdrop' ng-show='isEnteringGtid'>
+    <div class='enter-code _modal'>
+      <div class='modal__header'>
+        <h5 translate>New Item</h5>
+      </div>
+      <div class='modal__content'>
+        <div class='_message' ng-if='selectItemMessage'>{{selectItemMessage}}</div>
+        <p>Enter UPC/EAN/GTIN code if available.</p>
+        <input-box title='UPC/GTID' ng-model='gtid' type='text'></input-box>
+      </div>
+      <div class='modal__bottom'>
+        <button class='_secondary' ng-click='cancelAddingNewItem()'>{{'Cancel'|translate}}</button>
+        <button class='_primary' ng-click='selectNewItemGtid()'>{{'Next'|translate}}</button>
+      </div>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2 translate>New {{title}}</h2>
+    <div class='content-bottom-actions'>
+      <button ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+  </div>
+</div>
+</form>

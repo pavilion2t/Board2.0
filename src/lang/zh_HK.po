@@ -1,0 +1,10195 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2017-09-07 18:00+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_HK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=1  plural=0 \n"
+
+#: app/modules/modifiers/modifiersController.js:29
+msgid "# of Items"
+msgstr "項目＃"
+
+#: app/modules/modifiers/view_modifier.html:52
+msgid "* Price must greater then 0"
+msgstr "金額必須大於0"
+
+#: app/modules/modifiers/view_modifier.html:77
+msgid "* Price must lesser then 0"
+msgstr "金額必須小於0"
+
+#: app/modules/time_clock/timeClockController.js:18
+#: app/modules/time_clock/timeClockController.js:57
+msgid "API"
+msgstr "API"
+
+#: app/modules/settings/iframe.html:11
+msgid "Access Requested"
+msgstr "正在請求訪問"
+
+#: app/modules/purchase_orders/purchase_order_form.html:18
+#: app/modules/suppliers/view_supplier.html:26
+msgid "Account Number"
+msgstr "賬戶號碼"
+
+#: app/modules/bank_accounts/bankAccountsController.js:8
+msgid "Account Type"
+msgstr "賬戶類型"
+
+#: app/modules/settings/iframe.html:7
+msgid "Activate Your Storefront"
+msgstr "激活您的店面"
+
+#: app/shared/grid/grid-filter.html:47
+msgid "Add Filter"
+msgstr "添加過濾器"
+
+#: app/modules/inventory/new_inventory.html:44
+msgid "Add Image"
+msgstr "新增圖片"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:36
+#: app/modules/stock_transfers/view_stock_transfer.html:39
+msgid "Add Items"
+msgstr "添加項目"
+
+#: app/modules/modifiers/list_modifiers.html:12
+msgid "Add Modifiers To Items"
+msgstr "添加附加選項到商品"
+
+#: app/modules/invoices/new_invoice.html:30
+#: app/modules/purchase_orders/purchase_order_form.html:80
+msgid "Add New Items"
+msgstr "添加新項"
+
+#: app/modules/modifiers/new_modifier.html:17
+#: app/modules/modifiers/new_modifier.html:26
+#: app/modules/modifiers/new_modifier.html:50
+#: app/modules/modifiers/new_modifier.html:71
+#: app/modules/modifiers/new_modifier.html:78
+#: app/modules/modifiers/view_modifier.html:19
+#: app/modules/modifiers/view_modifier.html:30
+#: app/modules/modifiers/view_modifier.html:59
+#: app/modules/modifiers/view_modifier.html:67
+#: app/modules/modifiers/view_modifier.html:84
+#: app/modules/modifiers/view_modifier.html:92
+msgid "Add To Price"
+msgstr "添加到價格"
+
+#: app/modules/settings/line_item_status_index.html:10
+msgid "Add new status"
+msgstr "添加新的狀態"
+
+#: app/modules/settings/iframe_new.html:73
+msgid "Add section"
+msgstr "新增區塊"
+
+#: app/modules/settings/iframe_index.html:32
+msgid ""
+"Add your first Storefront page! Customize as many online store pages as you "
+"like, and simply add the embed codes to your website."
+msgstr ""
+"添加第一個店面頁面！自定在線商店頁面，並簡單地將嵌入代碼添加到您的網站。"
+
+#: app/modules/modifiers/new_modifier.html:43
+#: app/modules/modifiers/view_modifier.html:50
+msgid "Add-on Options"
+msgstr "插件選項"
+
+#: app/modules/settings/iframe_setting.html:10
+msgid "Addition Languages other then English"
+msgstr "啟用英文之外的語言"
+
+#: app/modules/settings/iframe_index.html:8
+msgid "Additional Languages"
+msgstr "其他語言"
+
+#: app/modules/customers/customersController.js:59
+#: app/modules/customers/customersController.js:99
+#: app/modules/purchase_orders/purchase_order_form.html:22
+#: app/modules/suppliers/suppliersController.js:14
+#: app/modules/suppliers/suppliersController.js:21
+#: app/modules/suppliers/view_supplier.html:19
+msgid "Address"
+msgstr "地址"
+
+#: app/modules/settings/iframe_index.html:22
+msgid "Align"
+msgstr "對齊"
+
+#: app/shared/grid/grid-row-count.html:9
+msgid "All"
+msgstr "全部"
+
+#: app/modules/summary/summary.html:150
+msgid "All Stores"
+msgstr "所有商店"
+
+#: app/modules/modifiers/new_modifier.html:66
+#: app/modules/modifiers/view_modifier.html:76
+msgid "Allows you to deselect unwanted options"
+msgstr "允許您取消選擇不想要的選項"
+
+#: app/modules/modifiers/new_modifier.html:44
+#: app/modules/modifiers/view_modifier.html:51
+msgid "Allows you to select multiple add-ons to the item"
+msgstr "允許您選擇多個加載項的項目"
+
+#: app/modules/inventory/view_inventory.html:134
+#: app/modules/modifiers/new_modifier.html:11
+#: app/modules/modifiers/view_modifier.html:12
+msgid "Allows you to select one option for each Single Choice Modifier"
+msgstr "每個單一的附加選項允許您選擇一個選項"
+
+#: app/modules/invoices/invoicesQuotesController.js:40
+#: app/modules/invoices/invoicesQuotesController.js:79
+msgid "Amount"
+msgstr "金額"
+
+#: app/modules/discounts/new_discount.html:12
+#: app/modules/discounts/view_discount.html:14
+msgid "Amount Off"
+msgstr "減少售價"
+
+#: app/modules/welcome/modals/modal_2.html:65
+msgid "Apartment / Suite"
+msgstr "公寓 / 單元"
+
+#: app/modules/time_clock/timeClockController.js:12
+#: app/modules/time_clock/timeClockController.js:51
+msgid "Associate"
+msgstr "關聯"
+
+#: app/modules/inventory/new_inventory.html:7
+#: app/modules/inventory/new_inventory.html:75
+#: app/modules/inventory/view_inventory.html:109
+msgid "Attributes"
+msgstr "屬性"
+
+#: app/modules/discounts/discountsController.js:72
+msgid "Auto Apply Discount"
+msgstr "自動應用折扣"
+
+#: app/modules/discounts/new_discount.html:30
+#: app/modules/discounts/view_discount.html:31
+msgid "Automatically Apply Discount"
+msgstr "自動應用的折扣"
+
+#: app/modules/summary/summary.html:63
+msgid "Average Sale"
+msgstr "平均銷售"
+
+#: app/modules/welcome/modals/modal_4.html:39
+msgid "Average Sales Amount"
+msgstr "平均銷售金額"
+
+#: app/modules/purchase_orders/purchase_order_form.html:57
+msgid "Bank transfer"
+msgstr "銀行轉賬"
+
+#: app/modules/invoices/new_invoice.html:11
+#: app/modules/invoices/view_invoice.html:11
+msgid "Bill To"
+msgstr "開賬單給"
+
+#: app/modules/invoices/invoicesQuotesController.js:36
+msgid "Bill to"
+msgstr "開賬單給"
+
+#: app/modules/customers/customersController.js:81
+#: app/modules/customers/view_customer.html:41
+msgid "Billing Address"
+msgstr "賬單地址"
+
+#: app/modules/time_clock/timeClockController.js:15
+#: app/modules/time_clock/timeClockController.js:54
+msgid "Bindo Account Manager"
+msgstr "Bindo 客戶經理"
+
+#: app/modules/time_clock/timeClockController.js:13
+#: app/modules/time_clock/timeClockController.js:52
+msgid "Bindo Sales Associate"
+msgstr "Bindo 銷售助理"
+
+#: app/modules/time_clock/timeClockController.js:14
+#: app/modules/time_clock/timeClockController.js:53
+msgid "Bindo Sales Manager"
+msgstr "Bindo 銷售經理"
+
+#: app/modules/settings/iframe.html:8
+msgid ""
+"Bindo Storefront is the easiest way to sell online through your existing "
+"website. After requesting access to the Storefront Builder, you can "
+"instantly create online store pages that automatically sync with your Bindo "
+"POS inventory."
+msgstr ""
+"Bindo Storefront 是，通過您現有的網站在線銷售最簡單的方法。在申請使用店面生成"
+"器後，您可以立即創建在線商店頁面，能與Bindo POS自動同步庫存。"
+
+#: app/modules/welcome/modals/modal_4.html:55
+msgid ""
+"Bindo supports 99% of merchant processors. Help us connect you to the right "
+"processor."
+msgstr ""
+"Bindo 支持 99%的merchant processors。請幫助我們將您連接到正確的processor。"
+
+#: app/modules/customers/customersController.js:36
+msgid "Birthday (MM-DD)"
+msgstr "生日 （MM-DD）"
+
+#: app/modules/inventory/new_inventory.html:19
+#: app/modules/inventory/view_inventory.html:22
+msgid "Brand"
+msgstr "品牌"
+
+#: app/modules/settings/iframe_index.html:37
+msgid "Btn color"
+msgstr "按鈕顏色"
+
+#: app/modules/settings/iframe_index.html:38
+msgid "Btn text color"
+msgstr "按鈕文字顏色"
+
+#: app/modules/welcome/modals/modal_3.html:32
+msgid "Business Type"
+msgstr "商業類型"
+
+#: app/modules/settings/iframe_new.html:18
+msgid "Button background color"
+msgstr "按鈕背景顏色"
+
+#: app/modules/sales/salesController.js:25
+msgid "Buyer"
+msgstr "買方"
+
+#: app/modules/welcome/modals/modal_3.html:62
+msgid ""
+"By answering these questions, you can customize your POS and dashboard the "
+"way you need it. No more, no less."
+msgstr "通過回答這些問題，你可以自定義你 POS 和儀表板，剛好適合你的需要。"
+
+#: app/modules/welcome/modals/modal_5.html:47
+msgid ""
+"By filling out this info, you'll be able to automate your tax calculations, "
+"saving you a lot of time."
+msgstr "填寫此信息，你會能夠自動化您的稅務計算，節省你大量的時間。"
+
+#: app/modules/activating/activating.html:43
+#: app/modules/welcome/modals/modal_7.html:41
+msgid "Can't wait? Call"
+msgstr "不能等嗎？打電話"
+
+#: app/modules/activating/activating.html:38
+#: app/modules/departments/list_departments.html:26
+#: app/modules/departments/listed-department.html:29
+#: app/modules/inventory/new_inventory.html:92
+#: app/modules/invoices/view_invoice.html:51
+#: app/modules/menus/list_menus.html:47
+#: app/modules/menus/list_menus.html:77
+#: app/modules/menus/view_menu.html:107
+#: app/modules/menus/view_menu.html:143
+#: app/modules/menus/view_menu.html:54
+#: app/modules/menus/view_menu.html:71
+#: app/modules/purchase_orders/fulfill.html:4
+#: app/modules/purchase_orders/view_purchase_order.html:21
+#: app/modules/settings/iframe_new.html:109
+#: app/modules/stock_transfers/view_stock_transfer.html:116
+#: app/modules/stock_transfers/view_stock_transfer.html:63
+#: app/modules/stock_transfers/view_stock_transfer.html:81
+#: app/modules/stock_transfers/view_stock_transfer.html:99
+#: app/modules/welcome/modals/modal_7.html:36
+#: app/modules/login/views/recover-password.html:17
+#: app/shared/edit/add_listings.html:60 app/shared/grid/grid-filter.html:83
+msgid "Cancel"
+msgstr "取消"
+
+#: app/modules/gift_cards/giftCardsController.js:13
+#: app/modules/gift_cards/giftCardsController.js:25
+msgid "Card Number"
+msgstr "卡號"
+
+#: app/modules/purchase_orders/purchase_order_form.html:58
+msgid "Cash"
+msgstr "現金"
+
+#: app/modules/inventory/inventoryController.js:94
+msgid "Category"
+msgstr "分類"
+
+#: app/modules/menus/view_menu.html:21
+msgid "Change Product"
+msgstr "變更商品"
+
+#: app/modules/menus/view_menu.html:117
+msgid "Change Product of Menu Item"
+msgstr "變更選單的商品"
+
+#: app/modules/purchase_orders/purchase_order_form.html:59
+msgid "Check"
+msgstr "支票"
+
+#: app/modules/discounts/new_discount.html:23
+#: app/modules/discounts/view_discount.html:24
+msgid "Check this if this is a store coupon or discount."
+msgstr "檢查這是店鋪優惠券或折扣。"
+
+#: app/modules/discounts/new_discount.html:10
+#: app/modules/discounts/view_discount.html:12
+msgid "Choose Discount Type..."
+msgstr "請選擇折扣類型..."
+
+#: app/modules/customers/new_customer.html:19
+#: app/modules/customers/view_customer.html:29
+msgid "Choose Gender..."
+msgstr "選擇性別......"
+
+#: app/modules/inventory/new_inventory.html:52
+msgid "Choose a Supplier..."
+msgstr "選擇一個供應商......"
+
+#: app/modules/welcome/modals/modal_2.html:69
+msgid "City"
+msgstr "城市"
+
+#: app/modules/settings/iframe_new.html:106
+msgid "Click save to see Embed Code and preview your Storefront page"
+msgstr "單擊保存，取得嵌入代碼和預覽您的店面頁面"
+
+#: app/modules/settings/iframe_new.html:120
+msgid "Close preview"
+msgstr "關閉頁面預覽"
+
+#: app/modules/inventory/new_inventory.html:14
+#: app/modules/inventory/view_inventory.html:17
+msgid "Code"
+msgstr "郵編"
+
+#: app/modules/settings/iframe_new.html:7
+msgid "Colors"
+msgstr "顏色"
+
+#: app/modules/inventory/new_inventory.html:70
+#: app/modules/inventory/new_inventory.html:76
+msgid "Coming soon..."
+msgstr "即將推出"
+
+#: app/modules/welcome/modals/modal_1.html:15
+#: app/modules/welcome/modals/modal_2.html:15
+msgid "Configure Your Store"
+msgstr "激活您的店面"
+
+#: app/modules/purchase_orders/purchase_order_form.html:23
+#: app/modules/suppliers/suppliersController.js:15
+#: app/modules/suppliers/suppliersController.js:22
+#: app/modules/suppliers/view_supplier.html:21
+msgid "Contact"
+msgstr "聯系"
+
+#: app/modules/purchase_orders/purchase_order_form.html:25
+#: app/modules/suppliers/view_supplier.html:25
+msgid "Contact Email"
+msgstr "聯絡Email"
+
+#: app/modules/purchase_orders/purchase_order_form.html:24
+#: app/modules/suppliers/view_supplier.html:22
+msgid "Contact Phone"
+msgstr "聯絡電話"
+
+#: app/shared/grid/grid-filter.html:13
+msgid "Contains"
+msgstr "包含"
+
+msgid "contains"
+msgstr "包含"
+
+msgid "Target"
+msgstr "目標"
+
+msgid "Hide"
+msgstr "隱藏"
+
+#: app/modules/welcome/modals/modal_1.html:56
+#: app/modules/welcome/modals/modal_2.html:86
+#: app/modules/welcome/modals/modal_3.html:68
+#: app/modules/welcome/modals/modal_4.html:61
+#: app/modules/welcome/modals/modal_5.html:53
+#: app/modules/welcome/modals/modal_6.html:66
+msgid "Continue"
+msgstr "繼續"
+
+#: app/modules/inventory/inventoryController.js:178
+#: app/modules/inventory/new_inventory.html:57
+msgid "Cost"
+msgstr "費用"
+
+#: app/modules/settings/iframe_index.html:10
+#: app/modules/welcome/modals/modal_1.html:31
+msgid "Country"
+msgstr "國家"
+
+#: app/modules/welcome/modals/modal_3.html:3
+#: app/modules/welcome/modals/modal_4.html:3
+#: app/modules/welcome/modals/modal_5.html:3
+#: app/modules/welcome/modals/modal_6.html:3
+msgid "Create Your Store"
+msgstr "創建您的商店"
+
+#: app/modules/bank_accounts/bankAccountsController.js:12
+msgid "Created At"
+msgstr "創建"
+
+#: app/modules/purchase_orders/purchase_order_form.html:31
+msgid "Created at"
+msgstr "建立時間"
+
+#: app/modules/purchase_orders/purchase_order_form.html:32
+msgid "Created by"
+msgstr "建立者"
+
+#: app/modules/welcome/modals/modal_4.html:14
+msgid "Credit Card Processing"
+msgstr "信用卡處理"
+
+#: app/modules/purchase_orders/purchase_order_form.html:60
+msgid "Credit card"
+msgstr "信用卡"
+
+#: app/modules/welcome/modals/modal_6.html:26
+msgid "Current POS / Inventory System"
+msgstr "當前 POS / 庫存系統"
+
+#: app/modules/welcome/modals/modal_4.html:25
+msgid "Current Processor"
+msgstr "當前處理器"
+
+#: app/modules/inventory/inventoryController.js:176
+#: app/shared/edit/add_listings.html:31
+msgid "Current QTY"
+msgstr "當前數量"
+
+#: app/modules/summary/summary.html:288
+msgid "Custom Range"
+msgstr "自定義範圍"
+
+#: app/modules/settings/iframe_setting.html:22
+msgid "Custom shipping description"
+msgstr "自定運費說明"
+
+#: app/modules/customers/customersController.js:35
+#: app/modules/customers/view_customer.html:92
+#: app/modules/invoices/invoicesQuotesController.js:76
+#: app/modules/sales/view_sale.html:24
+msgid "Customer"
+msgstr "顧客"
+
+#: app/modules/invoices/new_invoice.html:16
+msgid "Customer Email Address"
+msgstr "客戶電子郵件地址"
+
+#: app/modules/customers/customersController.js:55
+msgid "Customer Profile Type"
+msgstr "客戶類型"
+
+#: app/shared/menu/menu-generic.html:40
+msgid "Customers"
+msgstr "客戶"
+
+#: app/modules/welcome/modals/modal_0.html:3
+msgid "Customize Your Back Office"
+msgstr "自定義您的後勤"
+
+#: app/modules/settings/iframe_new.html:3
+msgid ""
+"Customize your Storefront page to fit the look and feel of your website by "
+"choosing from the options below. Then simply copy the embed code and add it "
+"to your webpage."
+msgstr ""
+"自定您的店面頁後，可以通過從下面的選項中選擇適合您的網站的外觀和感覺。然後簡"
+"單地複製嵌入代碼並將其添加到您的網頁。"
+
+#: app/modules/welcome/modals/modal_6.html:14
+msgid "Data Migration"
+msgstr "數據遷移"
+
+#: app/modules/invoices/invoicesQuotesController.js:37
+#: app/modules/invoices/invoicesQuotesController.js:77
+#: app/modules/purchase_orders/purchaseOrdersController.js:25
+#: app/modules/sales/view_sale.html:21
+msgid "Date"
+msgstr "日期"
+
+#: app/modules/customers/customersController.js:61
+msgid "Date Created"
+msgstr "創建日期"
+
+#: app/modules/customers/customersController.js:79
+#: app/modules/customers/view_customer.html:37
+msgid "Date of Birth"
+msgstr "出生日期"
+
+#: app/modules/customers/customersController.js:100
+#: app/modules/customers/customersController.js:60
+msgid "Date of Birth (MM-DD)"
+msgstr "生日 （MM-DD）"
+
+#: app/modules/purchase_orders/purchase_order_form.html:61
+msgid "Debit card"
+msgstr "記帳卡"
+
+#: app/modules/discounts/discountsController.js:71
+#: app/modules/discounts/new_discount.html:22
+#: app/modules/discounts/view_discount.html:23
+msgid "Deduct Tax Base"
+msgstr "減去計稅基礎"
+
+#: app/modules/inventory/view_inventory.html:141
+#: app/modules/inventory/view_inventory.html:146
+#: app/modules/inventory/view_inventory.html:164
+#: app/modules/inventory/view_inventory.html:169
+#: app/modules/inventory/view_inventory.html:182
+#: app/modules/inventory/view_inventory.html:187
+#: app/modules/modifiers/new_modifier.html:19
+#: app/modules/modifiers/new_modifier.html:28
+#: app/modules/modifiers/new_modifier.html:74
+#: app/modules/modifiers/new_modifier.html:79
+#: app/modules/modifiers/view_modifier.html:21
+#: app/modules/modifiers/view_modifier.html:32
+#: app/modules/modifiers/view_modifier.html:63
+#: app/modules/modifiers/view_modifier.html:88
+#: app/modules/modifiers/view_modifier.html:93
+msgid "Default"
+msgstr "默認"
+
+#: app/modules/modifiers/view_modifier.html:68
+msgid "Default:"
+msgstr "默認"
+
+#: app/modules/sales/view_sale.html:26
+msgid "Delivery Address"
+msgstr "交付地址"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:19
+#: app/modules/stock_transfers/stockTransferController.js:69
+msgid "Departing Store"
+msgstr "出貨商店"
+
+#: app/modules/inventory/new_inventory.html:30
+#: app/modules/inventory/view_inventory.html:34
+msgid "Department"
+msgstr "部門"
+
+#: app/modules/settings/iframe_new.html:35
+#: app/shared/menu/menu-generic.html:28
+msgid "Departments"
+msgstr "部門"
+
+#: app/modules/inventory/new_inventory.html:12
+msgid "Description (Optional)"
+msgstr "描述 (可選)"
+
+#: app/modules/departments/list_departments.html:39
+#: app/modules/menus/list_menus.html:87
+#: app/modules/menus/view_menu.html:154
+msgid "Discard Changes"
+msgstr "放棄更改"
+
+#: app/modules/inventory/new_inventory.html:40
+#: app/modules/inventory/view_inventory.html:44
+msgid "Discontinued"
+msgstr "停止"
+
+#: app/modules/discounts/discountsController.js:31
+#: app/modules/discounts/discountsController.js:70
+msgid "Discount"
+msgstr "折扣"
+
+#: app/modules/discounts/view_discount.html:10
+msgid "Discount Type"
+msgstr "折扣類型"
+
+#: app/shared/menu/menu-generic.html:34
+msgid "Discounts"
+msgstr "折扣"
+
+#: app/modules/summary/summary.html:298
+msgid "Displayed Date"
+msgstr "顯示的日期"
+
+#: app/modules/summary/summary.html:299
+msgid "Displayed Date Range"
+msgstr "顯示的日期範圍"
+
+#: app/modules/departments/list_departments.html:2
+#: app/modules/menus/list_menus.html:3
+#: app/modules/menus/view_menu.html:3
+msgid "Drag to arrange."
+msgstr "通過拖動來排列。"
+
+#: app/modules/welcome/modals/modal_6.html:60
+msgid ""
+"Dreading the POS migration? Don't. Our setup and migration has never taken "
+"more than 20 minutes."
+msgstr "害怕 POS 遷移嗎？不要。我們的安裝和遷移已經永遠不會超過 20 分鐘。"
+
+#: app/modules/invoices/new_invoice.html:7
+msgid "Due Date"
+msgstr "到期日"
+
+#: app/modules/customers/view_customer.html:92
+#: app/modules/customers/view_customer.html:94
+#: app/modules/departments/listed-department.html:8
+#: app/modules/inventory/view_inventory.html:207
+#: app/modules/inventory/view_inventory.html:209
+#: app/modules/invoices/view_invoice.html:59
+#: app/modules/menus/list_menus.html:12
+#: app/modules/menus/view_menu.html:33
+#: app/modules/modifiers/view_modifier.html:104
+#: app/modules/purchase_orders/view_purchase_order.html:29
+#: app/modules/purchase_orders/view_purchase_order.html:31
+#: app/modules/settings/custom_fields_index.html:27
+#: app/modules/settings/iframe_index.html:25
+#: app/modules/settings/iframe_index.html:54
+#: app/modules/stock_transfers/view_stock_transfer.html:123
+#: app/modules/stock_transfers/view_stock_transfer.html:125
+msgid "Edit"
+msgstr "編輯"
+
+#: app/modules/departments/listed-department.html:15
+msgid "Edit Department"
+msgstr "編輯部門"
+
+#: app/modules/menus/list_menus.html:57
+msgid "Edit Menu"
+msgstr "編輯選單"
+
+#: app/modules/menus/view_menu.html:64
+msgid "Edit Menu Section"
+msgstr "編輯選單區塊"
+
+#: app/modules/menus/list_menus.html:13
+msgid "Edit Sections"
+msgstr "編輯區塊"
+
+#: app/modules/settings/iframe_index.html:4
+#: app/modules/settings/iframe_setting.html:4
+msgid ""
+"Edit your general Storefront settings below. These settings will be applied "
+"to all Storefront pages that you create."
+msgstr "編輯下面你一般店面設置。這些設置將應用於您創建的所有店面頁面。"
+
+#: app/modules/customers/customersController.js:56
+#: app/modules/customers/customersController.js:80
+#: app/modules/customers/customersController.js:96
+#: app/modules/customers/view_customer.html:38
+#: app/modules/purchase_orders/purchase_order_form.html:21
+#: app/modules/suppliers/suppliersController.js:13
+#: app/modules/suppliers/suppliersController.js:20
+#: app/modules/suppliers/view_supplier.html:16
+msgid "Email"
+msgstr "郵件"
+
+#: app/modules/settings/iframe_new.html:99
+msgid "Embed Code"
+msgstr "嵌入代碼"
+
+#: app/modules/settings/iframe_index.html:41
+msgid "Embed code"
+msgstr "嵌入代碼"
+
+#: app/modules/settings/iframe_new.html:40
+msgid "Enable multi-section layout"
+msgstr "啓用多節佈局"
+
+#: app/modules/purchase_orders/purchase_order_form.html:81
+msgid "Enter Miscellaneous charge"
+msgstr "輸入雜項費用"
+
+#: app/modules/purchase_orders/view_purchase_order.html:17
+#: app/modules/stock_transfers/view_stock_transfer.html:77
+msgid "Enter quantity to fulfill."
+msgstr "輸入要入庫的數量"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:59
+msgid "Enter quantity to send."
+msgstr "輸入要發送的數量。"
+
+#: app/modules/login/views/recover-password.html:8
+msgid "Enter your email to recover your password."
+msgstr "輸入您的電子郵件地址來重設密碼"
+
+#: app/modules/inventory/new_inventory.html:41
+#: app/modules/inventory/view_inventory.html:45
+msgid "Exempt item from loyalty program"
+msgstr "不計入顧客忠誠計劃中"
+
+#: app/modules/purchase_orders/purchase_order_form.html:67
+msgid "Expect delivery date"
+msgstr "預計交貨日期"
+
+#: app/modules/departments/list_departments.html:37
+#: app/modules/inventory/list_inventory.html:13
+#: app/shared/grid/grid_view.html:15
+msgid "Export"
+msgstr "導出"
+
+#: app/modules/purchase_orders/purchase_order_form.html:20
+#: app/modules/suppliers/view_supplier.html:17
+msgid "Fax"
+msgstr "傳真號碼"
+
+#: app/modules/customers/new_customer.html:21
+#: app/modules/customers/view_customer.html:31
+msgid "Female"
+msgstr "女"
+
+#: app/modules/settings/iframe_setting.html:42
+msgid "Flat rate shipping"
+msgstr "單一運費"
+
+#: app/modules/welcome/modals/modal_0.html:9
+msgid "For easier access, bookmark https://dashboard.bindo.com"
+msgstr "為了便於訪問，書簽 https://dashboard.bindo.com"
+
+#: app/modules/login/views/main-login.html:22
+msgid "Forgot Password?"
+msgstr "忘記密碼"
+
+#: app/modules/settings/iframe_setting.html:43
+msgid "Free shipping"
+msgstr "免運費"
+
+#: app/modules/sales/view_sale.html:25
+msgid "From"
+msgstr "來自"
+
+#: app/modules/purchase_orders/fulfill.html:5
+msgid "Fulfill"
+msgstr "履行"
+
+#: app/modules/invoices/view_invoice.html:52
+#: app/modules/purchase_orders/view_purchase_order.html:22
+#: app/modules/stock_transfers/view_stock_transfer.html:82
+msgid "Fulfill All"
+msgstr "全部入庫"
+
+#: app/modules/purchase_orders/view_purchase_order.html:13
+#: app/modules/stock_transfers/view_stock_transfer.html:73
+msgid "Fulfill Item"
+msgstr "商品入庫"
+
+#: app/modules/invoices/view_invoice.html:53
+#: app/modules/purchase_orders/view_purchase_order.html:23
+#: app/modules/stock_transfers/view_stock_transfer.html:83
+msgid "Fulfill Specified"
+msgstr "選擇的入庫"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:108
+msgid "Fulfill Transfer"
+msgstr "入庫的轉移"
+
+#: app/modules/customers/view_customer.html:22
+msgid "Full Name"
+msgstr "用戶全名"
+
+#: app/modules/customers/customersController.js:57
+#: app/modules/customers/customersController.js:77
+#: app/modules/customers/customersController.js:97
+#: app/modules/customers/view_customer.html:27
+msgid "Gender"
+msgstr "性別"
+
+#: app/modules/settings/iframe_index.html:3
+#: app/modules/settings/iframe_setting.html:1
+msgid "General Settings"
+msgstr "通用設定"
+
+#: app/modules/welcome/modals/modal_2.html:3
+msgid "Getting Started"
+msgstr "開始使用"
+
+#: app/shared/menu/menu-generic.html:46
+msgid "Gift Cards"
+msgstr "禮品卡"
+
+#: app/modules/welcome/modals/modal_1.html:52
+#: app/modules/welcome/modals/modal_2.html:85
+#: app/modules/welcome/modals/modal_3.html:67
+#: app/modules/welcome/modals/modal_4.html:60
+#: app/modules/welcome/modals/modal_5.html:52
+#: app/modules/welcome/modals/modal_6.html:65
+msgid "Go Back"
+msgstr "返回"
+
+#: app/modules/summary/summary.html:175
+msgid "Gross Margin"
+msgstr "毛利率"
+
+#: app/modules/summary/summary.html:119
+msgid "Gross Profit"
+msgstr "毛利潤"
+
+#: app/modules/modifiers/modifiersController.js:27
+msgid "Group Name"
+msgstr "群組名稱"
+
+#: app/modules/modifiers/new_modifier.html:6
+#: app/modules/modifiers/view_modifier.html:6
+msgid "Group Title"
+msgstr "組標題"
+
+#: app/modules/settings/iframe_new.html:35
+#: app/modules/settings/iframe_new.html:44
+msgid "Header"
+msgstr "標頭"
+
+#: app/shared/menu/menu-generic.html:137
+msgid "Help"
+msgstr "幫助"
+
+#: app/modules/settings/iframe_index.html:13
+msgid "Hide price"
+msgstr "隱藏價格"
+
+#: app/modules/settings/iframe_index.html:39
+#: app/modules/settings/iframe_new.html:12
+msgid "Highlight color"
+msgstr "高亮顏色"
+
+#: app/modules/gift_cards/view_gift-card.html:24
+msgid "History"
+msgstr "歷史記錄"
+
+#: app/modules/customers/customersController.js:78
+#: app/modules/customers/view_customer.html:34
+msgid "Home Phone"
+msgstr "家庭電話"
+
+#: app/modules/welcome/modals/modal_3.html:53
+msgid "How did your hear about Bindo POS?"
+msgstr "您是如何知道我們的？"
+
+#: app/modules/welcome/modals/modal_6.html:48
+msgid "I Need to Migrate"
+msgstr "我需要遷移"
+
+#: app/modules/welcome/modals/modal_6.html:30
+msgid "I've Been Using It since"
+msgstr "我一直在使用它自"
+
+#: app/modules/settings/iframe_index.html:36
+msgid "Image size"
+msgstr "圖片尺寸"
+
+#: app/shared/grid/grid_view.html:14
+msgid "Import"
+msgstr "導入"
+
+#: app/modules/inventory/inventoryController.js:78
+msgid "In Stock"
+msgstr "有貨"
+
+#: app/modules/inventory/new_inventory.html:39
+#: app/modules/inventory/view_inventory.html:43
+msgid "In Store Only"
+msgstr "店內限定"
+
+#: app/modules/stock_transfers/stockTransferController.js:68
+msgid "In/Out"
+msgstr "輸入/輸出"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:6
+#: app/modules/stock_transfers/view_stock_transfer.html:7
+msgid "Incoming Transfer"
+msgstr "傳入的轉移"
+
+#: app/shared/menu/menu-generic.html:14
+msgid "Inventory"
+msgstr "庫存清單"
+
+#: app/modules/invoices/invoicesQuotesController.js:42
+msgid "Inventory Status"
+msgstr "商品狀態"
+
+#: app/modules/invoices/view_invoice.html:59
+msgid "Invoice"
+msgstr "發票"
+
+#: app/shared/menu/menu-generic.html:66
+msgid "Invoices"
+msgstr "發票"
+
+#: app/shared/grid/grid-filter.html:14
+msgid "Is"
+msgstr "是"
+
+msgid "is"
+msgstr "是"
+
+#: app/shared/grid/grid-filter.html:15
+msgid "Is Between"
+msgstr "介於"
+
+msgid "is between"
+msgstr "介於"
+
+#: app/shared/edit/add_listings.html:30
+msgid "Item"
+msgstr "物件"
+
+#: app/modules/purchase_orders/purchase_order_form.html:78
+msgid "Items"
+msgstr "物件"
+
+#: app/modules/time_clock/timeClockController.js:17
+#: app/modules/time_clock/timeClockController.js:56
+msgid "Junior Associate"
+msgstr "初級助理"
+
+#: app/modules/settings/iframe_new.html:89
+msgid "Large"
+msgstr "大"
+
+#: app/modules/time_clock/timeClockController.js:31
+#: app/modules/time_clock/timeClockController.js:70
+msgid "Last Clock-in At"
+msgstr "最後一次登入"
+
+#: app/modules/time_clock/timeClockController.js:32
+#: app/modules/time_clock/timeClockController.js:44
+#: app/modules/time_clock/timeClockController.js:71
+msgid "Last Session Length"
+msgstr "上次會話時間長度"
+
+#: app/modules/modifiers/modifiersController.js:30
+msgid "Last Updated"
+msgstr "最新更新"
+
+#: app/modules/discounts/new_discount.html:24
+#: app/modules/discounts/view_discount.html:25
+msgid "Leave it unchecked if this is a manufacturer coupon."
+msgstr "如果這是制造商優惠券，保留未選狀態。"
+
+#: app/modules/invoices/new_invoice.html:28
+#: app/modules/invoices/view_invoice.html:28
+msgid "Line Items"
+msgstr "項目"
+
+#: app/modules/settings/line_item_status.html:2
+#: app/modules/settings/settings.html:21
+msgid "Line item status"
+msgstr "項目狀態"
+
+#: app/modules/gift_cards/giftCardsController.js:15
+msgid "Linked At"
+msgstr "鏈接於"
+
+#: app/modules/inventory/view_inventory.html:10
+#: app/modules/inventory/view_inventory.html:196
+msgid "Log"
+msgstr "紀錄"
+
+#: app/modules/login/views/main-login.html:28
+msgid "Log In"
+msgstr "登錄"
+
+#: app/shared/header/profile/header-profile.html:21
+msgid "Logout"
+msgstr "退出"
+
+#: app/modules/customers/view_customer.html:82
+msgid "Loyalty"
+msgstr "顧客忠誠"
+
+#: app/modules/customers/view_customer.html:8
+msgid "Loyalty Program"
+msgstr "顧客忠誠計劃"
+
+#: app/modules/customers/new_customer.html:20
+#: app/modules/customers/view_customer.html:30
+msgid "Male"
+msgstr "男"
+
+#: app/modules/time_clock/timeClockController.js:11
+#: app/modules/time_clock/timeClockController.js:50
+msgid "Manager"
+msgstr "管理員"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:95
+msgid "Mark All As Departed"
+msgstr "全部標為送達"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:112
+msgid "Mark All As Fulfilled"
+msgstr "全部標為入庫"
+
+#: app/modules/inventory/new_inventory.html:51
+msgid "Mark as default supplier"
+msgstr "標記為默認供應商"
+
+#: app/modules/inventory/view_inventory.html:103
+msgid "Matrix"
+msgstr "矩陣"
+
+#: app/modules/settings/iframe_new.html:58
+msgid "Maximum # of products to show"
+msgstr "最多商品顯示數量"
+
+#: app/modules/settings/iframe_new.html:88
+msgid "Medium (default)"
+msgstr "中"
+
+#: app/modules/customers/customersController.js:76
+#: app/modules/customers/view_customer.html:23
+msgid "Mobile Phone"
+msgstr "手機"
+
+#: app/modules/modifiers/view_modifier.html:104
+msgid "Modifier Group"
+msgstr "附加選項組"
+
+#: app/modules/modifiers/new_modifier.html:13
+#: app/modules/modifiers/view_modifier.html:14
+msgid "Modifier Title"
+msgstr "附加選項標題"
+
+#: app/modules/inventory/view_inventory.html:116
+#: app/modules/inventory/view_inventory.html:9
+#: app/shared/menu/menu-generic.html:21
+msgid "Modifiers"
+msgstr "附加選項"
+
+#: app/modules/summary/summary.html:286
+msgid "Month"
+msgstr "月"
+
+#: app/modules/welcome/modals/modal_4.html:46
+msgid "Monthly Revenue"
+msgstr "每月收入"
+
+#: app/modules/settings/iframe_index.html:40
+msgid "Multi section layout"
+msgstr "啓用多節佈局"
+
+#: app/modules/inventory/new_inventory.html:25
+msgid "NONE"
+msgstr "無"
+
+#: app/modules/bank_accounts/bankAccountsController.js:7
+#: app/modules/customers/customersController.js:54
+#: app/modules/customers/customersController.js:75
+#: app/modules/customers/customersController.js:95
+#: app/modules/departments/list_departments.html:16
+#: app/modules/menus/list_menus.html:31
+#: app/modules/menus/list_menus.html:61
+#: app/modules/menus/view_menu.html:51
+#: app/modules/menus/view_menu.html:68
+#: app/modules/time_clock/timeClockController.js:29
+#: app/modules/time_clock/timeClockController.js:42
+#: app/modules/time_clock/timeClockController.js:68
+msgid "Name"
+msgstr "名稱"
+
+#: app/modules/suppliers/new_supplier.html:4
+#: app/shared/grid/grid_view.html:16
+msgid "New"
+msgstr "新建"
+
+#: app/modules/modifiers/new_modifier.html:61
+#: app/modules/modifiers/view_modifier.html:71
+msgid "New Add-on Option"
+msgstr "新插件選項"
+
+#: app/modules/inventory/list_inventory.html:15
+msgid "New Custom Item"
+msgstr "新自訂商品"
+
+#: app/modules/customers/new_customer.html:43
+msgid "New Customer"
+msgstr "新客戶"
+
+#: app/modules/departments/list_departments.html:12
+#: app/modules/departments/list_departments.html:38
+msgid "New Department"
+msgstr "新增部門"
+
+#: app/modules/stock_transfers/list_stock_transfers.html:17
+msgid "New Incoming Stock Transfer"
+msgstr "新建傳入庫存轉移"
+
+#: app/modules/inventory/new_inventory.html:99
+msgid "New Inventory Item"
+msgstr "新建庫存物料"
+
+#: app/modules/invoices/new_invoice.html:41
+msgid "New Invoice"
+msgstr "新建發票"
+
+#: app/modules/inventory/list_inventory.html:14
+#: app/modules/inventory/new_inventory.html:84
+msgid "New Item"
+msgstr "新項目"
+
+#: app/modules/menus/list_menus.html:27
+msgid "New Menu"
+msgstr "新選單"
+
+#: app/modules/menus/view_menu.html:81
+msgid "New Menu Item - Choose the Product to Display"
+msgstr "新選單 -  選擇顯示商品"
+
+#: app/modules/menus/view_menu.html:47
+msgid "New Menu Section"
+msgstr "新選單區塊"
+
+#: app/modules/modifiers/list_modifiers.html:44
+msgid "New Modifier"
+msgstr "新建附加選項"
+
+#: app/modules/modifiers/new_modifier.html:89
+msgid "New Modifier Group"
+msgstr "新建附加選項"
+
+#: app/modules/modifiers/new_modifier.html:82
+#: app/modules/modifiers/view_modifier.html:96
+msgid "New Opt-out Option"
+msgstr "新的退出選項"
+
+#: app/modules/modifiers/new_modifier.html:35
+#: app/modules/modifiers/view_modifier.html:42
+msgid "New Option"
+msgstr "新的選項"
+
+#: app/modules/stock_transfers/list_stock_transfers.html:18
+msgid "New Outgoing Stock Transfer"
+msgstr "新庫存傳遞"
+
+#: app/modules/purchase_orders/new_purchase_order.html:11
+msgid "New Purchase Order"
+msgstr "新採購訂單"
+
+#: app/modules/modifiers/new_modifier.html:39
+#: app/modules/modifiers/view_modifier.html:46
+msgid "New Single Choice Modifier"
+msgstr "新單一選擇附加選項"
+
+#: app/modules/welcome/modals/modal_5.html:43
+msgid "New Tax Rate"
+msgstr "新稅率"
+
+#: app/modules/settings/iframe_index.html:60
+msgid "New page"
+msgstr "新頁面"
+
+#: app/modules/inventory/new_inventory.html:93
+msgid "Next"
+msgstr "下一個"
+
+#: app/modules/inventory/view_inventory.html:199
+msgid "No Log Yet."
+msgstr "沒有紀錄產生"
+
+#: app/modules/customers/view_customer.html:85
+msgid "No Loyalty History."
+msgstr "沒有顧客忠誠紀錄"
+
+#: app/modules/customers/view_customer.html:58
+msgid "No Orders Yet."
+msgstr "還沒有訂單。"
+
+#: app/modules/suppliers/view_supplier.html:38
+msgid "No Products Yet."
+msgstr "沒有產品。"
+
+#: app/modules/suppliers/view_supplier.html:47
+msgid "No Purchase Orders Yet."
+msgstr "沒有採購訂單。"
+
+#: app/modules/customers/view_customer.html:67
+msgid "No Purchased Items Yet."
+msgstr "還沒已購買的物品。"
+
+#: app/shared/grid/grid-filter.html:56
+msgid "No Saved Searches"
+msgstr "沒有已保存的搜索"
+
+#: app/modules/customers/view_customer.html:76
+msgid "No Store Credit Yet."
+msgstr "還沒有購物金。"
+
+#: app/modules/inventory/new_inventory.html:64
+msgid "No Suppliers Yet."
+msgstr "還沒有供應商。"
+
+#: app/modules/summary/summary.html:240
+#: app/modules/summary/summary.html:272
+msgid "No items sold in the period."
+msgstr "這時期沒有項目出售。"
+
+#: app/modules/welcome/modals/modal_2.html:53
+msgid "None of the above"
+msgstr "以上都不是"
+
+#: app/modules/customers/view_customer.html:46
+#: app/modules/discounts/discountsController.js:73
+msgid "Notes"
+msgstr "筆記"
+
+#: app/modules/bank_accounts/bankAccountsController.js:6
+#: app/modules/invoices/invoicesQuotesController.js:39
+#: app/modules/invoices/invoicesQuotesController.js:78
+#: app/modules/stock_transfers/stockTransferController.js:165
+#: app/modules/stock_transfers/stockTransferController.js:67
+msgid "Number"
+msgstr "編號"
+
+#: app/modules/welcome/modals/modal_3.html:25
+msgid "Number of Locations"
+msgstr "地點數目"
+
+#: app/modules/welcome/modals/modal_6.html:37
+msgid "Number of Registers"
+msgstr "收銀台數量"
+
+#: app/modules/welcome/modals/modal_3.html:39
+msgid "Number of Unique SKUs"
+msgstr "獨特的 Sku 的數目"
+
+#: app/modules/stock_transfers/list_stock_transfers.html:2
+msgid "Only chain store and function enabled can transfer stock."
+msgstr "只有連鎖商店並啟用可以傳送庫存"
+
+#: app/modules/modifiers/new_modifier.html:65
+#: app/modules/modifiers/view_modifier.html:75
+msgid "Opt-out Options"
+msgstr "退出選項"
+
+#: app/modules/modifiers/new_modifier.html:16
+#: app/modules/modifiers/new_modifier.html:25
+#: app/modules/modifiers/new_modifier.html:47
+#: app/modules/modifiers/new_modifier.html:69
+#: app/modules/modifiers/new_modifier.html:77
+#: app/modules/modifiers/view_modifier.html:18
+#: app/modules/modifiers/view_modifier.html:29
+#: app/modules/modifiers/view_modifier.html:56
+#: app/modules/modifiers/view_modifier.html:66
+#: app/modules/modifiers/view_modifier.html:81
+#: app/modules/modifiers/view_modifier.html:91
+msgid "Option Name"
+msgstr "選項名稱"
+
+#: app/modules/sales/salesController.js:24
+#: app/modules/sales/salesController.js:39
+msgid "Order Date"
+msgstr "訂單日期"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:23
+#: app/modules/sales/salesController.js:23
+#: app/modules/sales/salesController.js:38
+#: app/modules/sales/view_sale.html:22
+msgid "Order Number"
+msgstr "訂單編號"
+
+#: app/modules/invoices/invoicesQuotesController.js:41
+msgid "Order Status"
+msgstr "訂單狀態"
+
+#: app/modules/settings/iframe_setting.html:53
+msgid "Order amount to qualify for free shipping"
+msgstr "免運費最低金額"
+
+#: app/modules/purchase_orders/purchase_order_form.html:62
+msgid "Other"
+msgstr "其他"
+
+#: app/modules/purchase_orders/purchase_order_form.html:93
+msgid "Others"
+msgstr "其它"
+
+#: app/modules/activating/activating.html:11
+#: app/modules/welcome/modals/modal_7.html:9
+msgid "Our staff will contact you within 24 hours to help set you up."
+msgstr "我們的工作人員將24 小時內與您聯系以幫助您設置。 "
+
+#: app/modules/stock_transfers/new_stock_transfer.html:5
+#: app/modules/stock_transfers/view_stock_transfer.html:6
+msgid "Outgoing Transfer"
+msgstr "傳出的轉移"
+
+#: app/modules/customers/view_customer.html:4
+#: app/modules/inventory/new_inventory.html:4
+#: app/modules/inventory/view_inventory.html:4
+#: app/modules/suppliers/view_supplier.html:4
+msgid "Overview"
+msgstr "概述"
+
+#: app/modules/suppliers/view_supplier.html:44
+#: app/modules/suppliers/view_supplier.html:6
+msgid "P.O. History"
+msgstr "採購訂單歷史"
+
+#: app/modules/purchase_orders/purchase_order_form.html:30
+msgid "PO Number"
+msgstr "採購訂單編號"
+
+#: app/modules/settings/iframe_index.html:31
+msgid "Page Settings"
+msgstr "頁面設定"
+
+#: app/modules/purchase_orders/purchase_order_form.html:47
+msgid "Paid"
+msgstr "已付款"
+
+#: app/modules/departments/list_departments.html:18
+msgid "Parent Department"
+msgstr "上級部門"
+
+#: app/modules/purchase_orders/purchase_order_form.html:46
+msgid "Partial paid"
+msgstr "以部分付款"
+
+#: app/modules/login/views/main-login.html:10
+msgid "Password"
+msgstr "密碼"
+
+#: app/modules/purchase_orders/purchase_order_form.html:54
+msgid "Payment Method"
+msgstr "付款方式"
+
+#: app/modules/purchase_orders/purchase_order_form.html:42
+msgid "Payment Status"
+msgstr "付款狀態"
+
+#: app/modules/purchase_orders/purchase_order_form.html:71
+msgid "Payment due date"
+msgstr "付款截止日期"
+
+#: app/modules/discounts/new_discount.html:11
+#: app/modules/discounts/view_discount.html:13
+msgid "Percentage Off"
+msgstr "減少金額"
+
+#: app/modules/customers/customersController.js:98
+#: app/modules/suppliers/suppliersController.js:12
+#: app/modules/suppliers/suppliersController.js:19
+msgid "Phone"
+msgstr "電話"
+
+#: app/modules/suppliers/view_supplier.html:12
+msgid "Phone 1"
+msgstr "電話 1"
+
+#: app/modules/suppliers/view_supplier.html:13
+msgid "Phone 2"
+msgstr "電話 2"
+
+#: app/modules/settings/iframe_setting.html:44
+msgid "Pick up only"
+msgstr "店內限定"
+
+#: app/modules/activating/activating.html:12
+#: app/modules/welcome/modals/modal_7.html:10
+msgid ""
+"Please make sure your contact info is correct, or we won't be able to "
+"activate your store."
+msgstr "請確保您的聯系信息是正確的否則我們就不能激活你的商店。"
+
+#: app/modules/settings/iframe_setting.html:3
+msgid ""
+"Please set your general Storefront settings to get started. These settings "
+"will be applied to all Storefront pages that you create."
+msgstr "請開始設置您一般店面。這些設置將應用於您創建的所有店面頁面。"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:91
+msgid "Prepare for Shipment"
+msgstr "準備裝運"
+
+#: app/modules/settings/iframe_new.html:112
+msgid "Preview Storefront"
+msgstr "預覽店面"
+
+#: app/modules/inventory/inventoryController.js:103
+#: app/modules/inventory/inventoryController.js:177
+#: app/modules/inventory/inventoryController.js:79
+#: app/modules/inventory/inventoryController.js:96
+#: app/modules/inventory/new_inventory.html:18
+#: app/modules/inventory/view_inventory.html:21
+msgid "Price"
+msgstr "價格"
+
+#: app/modules/bank_accounts/bankAccountsController.js:10
+msgid "Primary"
+msgstr "首要"
+
+#: app/modules/activating/activating.html:48
+#: app/modules/welcome/modals/modal_7.html:46
+msgid "Privacy Policy"
+msgstr "隱私政策"
+
+#: app/modules/welcome/modals/modal_4.html:32
+msgid "Processing Needed by"
+msgstr "所需的處理"
+
+#: app/modules/inventory/inventoryController.js:76
+msgid "Product"
+msgstr "產品"
+
+#: app/modules/settings/iframe_new.html:81
+msgid "Product Image Size"
+msgstr "商品圖片大小"
+
+#: app/modules/inventory/inventoryController.js:93
+#: app/modules/inventory/inventoryController.js:99
+msgid "Product Name"
+msgstr "產品名稱"
+
+#: app/modules/settings/iframe_new.html:49
+msgid "Product departments"
+msgstr "產品部門"
+
+#: app/modules/settings/iframe_index.html:11
+msgid "Product layout"
+msgstr "商品排版"
+
+#: app/modules/suppliers/view_supplier.html:35
+msgid "Products"
+msgstr "商品"
+
+#: app/modules/inventory/inventoryController.js:179
+msgid "Profit"
+msgstr "利潤"
+
+#: app/modules/welcome/modals/modal_6.html:44
+msgid "Pros & Cons (Optional)"
+msgstr "利弊（選填）"
+
+#: app/modules/purchase_orders/view_purchase_order.html:29
+msgid "Purchase Order"
+msgstr "採購訂單"
+
+#: app/shared/menu/menu-generic.html:78
+msgid "Purchase Orders"
+msgstr "採購訂單"
+
+#: app/modules/customers/view_customer.html:6
+#: app/modules/customers/view_customer.html:64
+msgid "Purchased Items"
+msgstr "採購的物件"
+
+#: app/modules/inventory/inventoryController.js:175
+msgid "QTY Delta"
+msgstr "要求的數量"
+
+#: app/modules/stock_transfers/stockTransferController.js:72
+msgid "QTY Departed"
+msgstr "離去的數量"
+
+#: app/modules/stock_transfers/stockTransferController.js:73
+msgid "QTY Received"
+msgstr "收到的數量"
+
+#: app/modules/stock_transfers/stockTransferController.js:71
+msgid "QTY Requested"
+msgstr "要求的數量"
+
+#: app/modules/inventory/inventoryController.js:102
+#: app/modules/inventory/inventoryController.js:95
+msgid "QTY on shelf"
+msgstr "貨架上的數量"
+
+#: app/shared/edit/add_listings.html:32
+msgid "QTY requested"
+msgstr "要求的數量"
+
+#: app/modules/inventory/inventoryController.js:101
+#: app/modules/inventory/new_inventory.html:15
+#: app/modules/inventory/view_inventory.html:18
+#: app/modules/sales/salesController.js:26
+msgid "Quantity"
+msgstr "數量"
+
+#: app/modules/settings/iframe_index.html:12
+msgid "Quick add"
+msgstr "快速新增"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:15
+#: app/modules/stock_transfers/stockTransferController.js:70
+msgid "Receiving Store"
+msgstr "收貨商店"
+
+#: app/modules/customers/view_customer.html:5
+#: app/modules/customers/view_customer.html:55
+msgid "Recent Orders"
+msgstr "最近的訂單"
+
+#: app/modules/login/views/recover-password.html:19
+msgid "Recover"
+msgstr "恢覆"
+
+#: app/modules/invoices/new_invoice.html:6
+msgid "Reference Number"
+msgstr "參考號碼"
+
+#: app/modules/login/views/main-login.html:16
+msgid "Remember me for 7 days"
+msgstr "記得 7 天"
+
+#: app/modules/departments/listed-department.html:9
+#: app/modules/menus/list_menus.html:14
+#: app/modules/menus/view_menu.html:22
+#: app/modules/menus/view_menu.html:34
+msgid "Remove"
+msgstr "移除"
+
+#: app/shared/inputs/input-file.html:10
+msgid "Remove File"
+msgstr "删除文件"
+
+#: app/modules/inventory/view_inventory.html:51
+msgid "Remove Image"
+msgstr "移除圖片"
+
+#: app/modules/modifiers/new_modifier.html:36
+#: app/modules/modifiers/view_modifier.html:43
+msgid "Remove Modifier"
+msgstr "移除附加選項"
+
+#: app/modules/settings/iframe_new.html:65
+msgid "Remove section"
+msgstr "刪除區塊"
+
+#: app/modules/inventory/new_inventory.html:58
+msgid "Reorder Amount"
+msgstr "重新訂購數量"
+
+#: app/modules/inventory/new_inventory.html:56
+msgid "Reorder Trigger Point"
+msgstr "重新訂購的觸發點"
+
+#: app/shared/menu/menu-generic.html:136
+msgid "Report a problem"
+msgstr "報告網站問題"
+
+#: app/modules/settings/iframe.html:10
+msgid "Request Access"
+msgstr "請求訪問"
+
+#: app/modules/time_clock/timeClockController.js:30
+#: app/modules/time_clock/timeClockController.js:43
+#: app/modules/time_clock/timeClockController.js:69
+msgid "Role"
+msgstr "角色"
+
+#: app/modules/bank_accounts/bankAccountsController.js:9
+msgid "Routing"
+msgstr "派送規則"
+
+#: app/modules/welcome/modals/modal_3.html:46
+msgid "SKUs with Barcodes"
+msgstr "條形碼 Sku "
+
+#: app/shared/menu/menu-generic.html:60
+msgid "Sales"
+msgstr "銷售額"
+
+#: app/modules/inventory/inventoryController.js:174
+msgid "Sales/Purchase Order"
+msgstr "銷售/採購訂單"
+
+#: app/modules/departments/list_departments.html:27
+#: app/modules/departments/listed-department.html:30
+#: app/modules/menus/list_menus.html:48
+#: app/modules/menus/list_menus.html:78
+#: app/modules/menus/view_menu.html:108
+#: app/modules/menus/view_menu.html:144
+#: app/modules/menus/view_menu.html:55
+#: app/modules/menus/view_menu.html:72
+#: app/modules/settings/iframe_new.html:110
+#: app/shared/edit/add_listings.html:61 app/shared/grid/grid-filter.html:61
+#: app/shared/grid/grid-filter.html:84
+msgid "Save"
+msgstr "保存"
+
+#: app/modules/departments/list_departments.html:40
+#: app/modules/menus/list_menus.html:88
+#: app/modules/menus/view_menu.html:155
+msgid "Save Changes"
+msgstr "保存更改"
+
+#: app/shared/grid/grid-filter.html:76
+msgid "Save Filter"
+msgstr "保存過濾器"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:100
+#: app/modules/stock_transfers/view_stock_transfer.html:117
+msgid "Save New Quantities"
+msgstr "保存新的數量"
+
+#: app/shared/grid/grid-filter.html:59
+msgid "Saved Searches"
+msgstr "保存搜索"
+
+#: app/shared/grid/grid-filter.html:62
+msgid "Search"
+msgstr "搜索"
+
+#: app/modules/settings/iframe_new.html:86
+msgid "Select Image Size..."
+msgstr "選擇圖像大小..."
+
+#: app/shared/edit/add_listings.html:4
+msgid "Select Inventory"
+msgstr "選擇庫存"
+
+#: app/shared/grid/grid-filter.html:12 app/shared/grid/grid-filter.html:21
+msgid "Select Type"
+msgstr "選擇類型"
+
+#: app/modules/welcome/modals/modal_3.html:27
+#: app/modules/welcome/modals/modal_3.html:34
+#: app/modules/welcome/modals/modal_3.html:41
+#: app/modules/welcome/modals/modal_3.html:48
+#: app/modules/welcome/modals/modal_4.html:27
+#: app/modules/welcome/modals/modal_4.html:34
+#: app/modules/welcome/modals/modal_4.html:41
+#: app/modules/welcome/modals/modal_4.html:48
+#: app/modules/welcome/modals/modal_6.html:39
+msgid "Select an Answer"
+msgstr "選擇一個答案"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:64
+msgid "Send All"
+msgstr "全部發送"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:65
+msgid "Send Specified"
+msgstr "指定的發送"
+
+#: app/modules/inventory/new_inventory.html:6
+#: app/modules/inventory/new_inventory.html:69
+#: app/modules/inventory/view_inventory.html:97
+msgid "Serial Number"
+msgstr "序列號"
+
+#: app/modules/customers/new_customer.html:6
+#: app/modules/customers/view_customer.html:17
+msgid "Set Photo"
+msgstr "設置照片"
+
+#: app/modules/settings/settings.html:32
+#: app/shared/menu/menu-generic.html:122
+msgid "Settings"
+msgstr "設置"
+
+#: app/modules/invoices/new_invoice.html:20
+#: app/modules/invoices/view_invoice.html:20
+msgid "Shipped To"
+msgstr "運到"
+
+#: app/modules/customers/customersController.js:82
+#: app/modules/customers/view_customer.html:42
+msgid "Shipping Address"
+msgstr "配送地址"
+
+#: app/modules/settings/iframe_setting.html:49
+msgid "Shipping rate"
+msgstr "運費"
+
+#: app/modules/settings/iframe_index.html:9
+msgid "Shipping type"
+msgstr "運送方式"
+
+#: app/shared/grid/grid-row-count.html:4
+msgid "Show"
+msgstr "顯示"
+
+#: app/shared/grid/grid-row-count.html:2 app/shared/grid/grid-row-count.html:3
+msgid "Showing"
+msgstr "顯示"
+
+#: app/modules/login/views/main-login.html:24
+msgid "Sign Up"
+msgstr "註冊"
+
+#: app/modules/inventory/view_inventory.html:133
+#: app/modules/modifiers/new_modifier.html:10
+#: app/modules/modifiers/view_modifier.html:11
+msgid "Single Choice Modifier"
+msgstr "單一選擇附加選項"
+
+#: app/modules/settings/iframe_new.html:87
+msgid "Small"
+msgstr "小"
+
+#: app/modules/welcome/modals/modal_0.html:13
+msgid "Start"
+msgstr "開始"
+
+#: app/modules/sales/salesController.js:27
+#: app/modules/sales/view_sale.html:20
+#: app/modules/stock_transfers/stockTransferController.js:166
+#: app/modules/stock_transfers/stockTransferController.js:74
+#: app/modules/welcome/modals/modal_2.html:74
+msgid "State"
+msgstr "狀態"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:27
+#: app/modules/purchase_orders/purchase_order_form.html:33
+msgid "Status"
+msgstr "狀態"
+
+#: app/modules/settings/line_item_status_index.html:1
+msgid "Status not set yet."
+msgstr "狀態未設置"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:123
+msgid "Stock Transfer"
+msgstr "庫存傳遞"
+
+#: app/shared/menu/menu-generic.html:84
+msgid "Stock Transfers"
+msgstr "庫存傳遞"
+
+#: app/modules/inventory/inventoryController.js:77
+msgid "Store"
+msgstr "商店"
+
+#: app/modules/customers/view_customer.html:7
+#: app/modules/customers/view_customer.html:73
+msgid "Store Credit"
+msgstr "積分"
+
+#: app/modules/welcome/modals/modal_3.html:14
+msgid "Store Info"
+msgstr "商店信息"
+
+#: app/modules/welcome/modals/modal_1.html:27
+msgid "Store Name"
+msgstr "商店名稱"
+
+#: app/modules/welcome/modals/modal_1.html:41
+msgid "Store Phone Number"
+msgstr "商店電話號碼"
+
+#: app/modules/settings/settings.html:16
+msgid "Storefront"
+msgstr "店面"
+
+#: app/modules/purchase_orders/purchase_order_form.html:92
+msgid "Subtotal"
+msgstr "小計："
+
+#: app/modules/sales/view_sale.html:62
+msgid "Subtotal:"
+msgstr "小計："
+
+#: app/shared/menu/menu-generic.html:7
+msgid "Summary"
+msgstr "摘要"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:24
+#: app/modules/suppliers/new_supplier.html:4
+msgid "Supplier"
+msgstr "供應商"
+
+#: app/modules/inventory/new_inventory.html:53
+msgid "Supplier ID"
+msgstr "供應商 ID"
+
+#: app/modules/suppliers/suppliersController.js:11
+#: app/modules/suppliers/suppliersController.js:18
+msgid "Supplier Name"
+msgstr "供應商名稱"
+
+#: app/modules/inventory/new_inventory.html:54
+msgid "Supplier Product ID"
+msgstr "供應商產品 ID"
+
+#: app/modules/inventory/new_inventory.html:49
+#: app/modules/inventory/new_inventory.html:5
+#: app/modules/inventory/view_inventory.html:5
+#: app/modules/inventory/view_inventory.html:60
+#: app/shared/menu/menu-generic.html:72
+msgid "Suppliers"
+msgstr "供應商"
+
+#: app/modules/inventory/new_inventory.html:23
+#: app/modules/inventory/view_inventory.html:26
+msgid "Tax Option"
+msgstr "稅選項"
+
+#: app/modules/welcome/modals/modal_5.html:14
+msgid "Tax Rate"
+msgstr "稅率"
+
+#: app/modules/sales/view_sale.html:66
+msgid "Tax:"
+msgstr "稅:"
+
+#: app/modules/purchase_orders/purchase_order_form.html:19
+msgid "Tel"
+msgstr "電話"
+
+#: app/modules/login/views/recover-password.html:9
+msgid "The email you entered is invalid."
+msgstr "您輸入的電子郵件是無效的。"
+
+#: app/modules/menus/list_menus.html:43
+#: app/modules/menus/list_menus.html:73
+msgid "Time Available From"
+msgstr "開始時間"
+
+#: app/modules/menus/list_menus.html:44
+#: app/modules/menus/list_menus.html:74
+msgid "Time Available To"
+msgstr "結束時間"
+
+#: app/modules/discounts/discountsController.js:29
+#: app/modules/discounts/discountsController.js:68
+#: app/modules/inventory/new_inventory.html:11
+#: app/modules/inventory/view_inventory.html:14
+#: app/modules/purchase_orders/miscellaneous_charge.html:2
+#: app/modules/suppliers/view_supplier.html:10
+msgid "Title"
+msgstr "標題"
+
+#: app/modules/summary/summary.html:283
+msgid "Today"
+msgstr "今天"
+
+#: app/modules/summary/summary.html:250
+msgid "Top Departments by Sales"
+msgstr "由銷售部门"
+
+#: app/modules/summary/summary.html:219
+msgid "Top Items by Sales"
+msgstr "銷售最高項目"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:26
+#: app/modules/purchase_orders/purchase_order_form.html:94
+#: app/modules/sales/salesController.js:28
+#: app/modules/sales/salesController.js:42
+msgid "Total"
+msgstr "總計"
+
+#: app/modules/sales/view_sale.html:58
+msgid "Total Item:"
+msgstr "項目總計"
+
+#: app/modules/purchase_orders/purchase_order_form.html:91
+msgid "Total Quantity"
+msgstr "總數量"
+
+#: app/modules/summary/summary.html:7
+msgid "Total Sales"
+msgstr "銷售總計"
+
+#: app/modules/sales/view_sale.html:70
+msgid "Total:"
+msgstr "總計"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:32
+#: app/modules/stock_transfers/view_stock_transfer.html:35
+msgid "Transferred Items"
+msgstr "已轉接項目"
+
+#: app/modules/discounts/discountsController.js:30
+#: app/modules/discounts/discountsController.js:69
+#: app/modules/modifiers/modifiersController.js:28
+msgid "Type"
+msgstr "類型"
+
+#: app/modules/inventory/inventoryController.js:100
+msgid "UPC"
+msgstr "UPC"
+
+#: app/modules/purchase_orders/purchase_order_form.html:45
+msgid "Unpaid"
+msgstr "未支付"
+
+#: app/modules/activating/activating.html:39
+#: app/modules/welcome/modals/modal_7.html:37
+msgid "Update"
+msgstr "更新"
+
+#: app/modules/welcome/modals/modal_7.html:17
+msgid "Update Contact Info"
+msgstr "更新聯系方式"
+
+#: app/modules/inventory/inventoryController.js:104
+msgid "Updated At"
+msgstr "更新於"
+
+#: app/modules/summary/summary.html:302
+msgid "Updated at"
+msgstr "更新於"
+
+#: app/shared/inputs/input-file.html:7
+msgid "Upload"
+msgstr "上傳"
+
+#: app/modules/welcome/modals/modal_0.html:8
+msgid "Use Bindo Dashboard to manage your stores."
+msgstr "使用 Bindo Dashboard 來管理您的商店。"
+
+#: app/modules/time_clock/timeClockController.js:16
+#: app/modules/time_clock/timeClockController.js:55
+msgid "Vendor Salespeople"
+msgstr "供應商銷售人員"
+
+#: app/modules/bank_accounts/bankAccountsController.js:11
+msgid "Verified"
+msgstr "已驗證"
+
+#: app/modules/settings/iframe_index.html:53
+msgid "View"
+msgstr "瀏覽"
+
+#: app/modules/gift_cards/view_gift-card.html:33
+msgid "View Gift Card"
+msgstr "查看禮品卡"
+
+#: app/modules/welcome/modals/modal_1.html:47
+msgid ""
+"We need to know your store location so we can assign someone in your area to "
+"assist you."
+msgstr "我們需要知道您的商店位置，讓我們可以指派專人在您的地區協助你。"
+
+#: app/modules/welcome/modals/modal_7.html:45
+msgid "We'll never share your info with third parties."
+msgstr "我們不會對第三方分享你的資料。"
+
+#: app/modules/summary/summary.html:285
+msgid "Week"
+msgstr "週"
+
+#: app/modules/summary/summary.html:287
+msgid "Year"
+msgstr "年"
+
+#: app/modules/summary/summary.html:284
+msgid "Yesterday"
+msgstr "昨天"
+
+#: app/modules/departments/list_departments.html:2
+#: app/modules/menus/list_menus.html:3
+#: app/modules/menus/view_menu.html:3
+msgid "You currently have unsaved changes."
+msgstr "您目前有未保存的更改。"
+
+#: app/modules/activating/activating.html:17
+#: app/modules/activating/activating.html:31
+#: app/modules/welcome/modals/modal_7.html:15
+#: app/modules/welcome/modals/modal_7.html:29
+msgid "Your Email:"
+msgstr "您的Email:"
+
+#: app/modules/activating/activating.html:16
+#: app/modules/activating/activating.html:27
+#: app/modules/welcome/modals/modal_7.html:14
+#: app/modules/welcome/modals/modal_7.html:25
+msgid "Your Phone Number:"
+msgstr "電話號碼："
+
+#: app/modules/activating/activating.html:10
+#: app/modules/welcome/modals/modal_7.html:8
+msgid "Your Store Is Being Activated"
+msgstr "已經激活您的商店"
+
+#: app/modules/welcome/modals/modal_2.html:78
+msgid "ZIP Code"
+msgstr "郵編"
+
+#: app/modules/welcome/modals/modal_1.html:37
+msgid "Zip Code"
+msgstr "郵編"
+
+#: app/modules/settings/iframe_new.html:58
+#: app/modules/settings/iframe_setting.html:44
+msgid "default"
+msgstr "預設"
+
+#: app/modules/settings/iframe_new.html:49
+msgid "leave blank to show all products"
+msgstr "留空顯示所有產品"
+
+#: app/shared/grid/grid-row-count.html:2 app/shared/grid/grid-row-count.html:3
+msgid "of"
+msgstr "的"
+
+#: app/modules/settings/iframe_setting.html:22
+#: app/modules/settings/iframe_setting.html:53
+msgid "optional"
+msgstr "選用"
+
+#: app/shared/grid/grid-row-count.html:2 app/shared/grid/grid-row-count.html:3
+msgid "results"
+msgstr "結果"
+
+#: app/modules/activating/activating.html:43
+#: app/modules/welcome/modals/modal_7.html:41
+msgid "to get started right away!"
+msgstr "以馬上開始使用！"
+
+msgid "Center"
+msgstr "居中"
+
+msgid ""
+#~ "Customize your online store page by choosing from the options below, then "
+#~ "simply copy the embed code and add it to your website."
+msgstr "通過選項自訂你的線上商店，然後將代碼嵌入到你的網站上。"
+
+msgid "Delete"
+msgstr "刪除"
+
+msgid "Leave blank to show products in all departments"
+msgstr "如果需要顯示所有部門，請留空"
+
+msgid "Left (default)"
+msgstr "左（默認）"
+
+msgid "Main Layout"
+msgstr "主要布局"
+
+msgid "New Storefront Page"
+msgstr "新店面頁"
+
+msgid "Page Header"
+msgstr "頁面標題"
+
+msgid "Remove Photo"
+msgstr "刪除照片"
+
+msgid "Saving..."
+msgstr "保存中..."
+
+msgid "Select Text Align..."
+msgstr "選擇文本對齊......"
+
+msgid "Show quick add button"
+msgstr "顯示快速購買按鈕"
+
+msgid "Top Categories by Sales"
+msgstr "銷售最多類別"
+
+msgid "No Sales Yet."
+msgstr "還沒有銷售。"
+
+msgid "e.g."
+msgstr "EG"
+
+msgid "Loading..."
+msgstr "載入中..."
+
+msgid "Tax"
+msgstr "稅金"
+
+msgid "Total Item"
+msgstr "項目總計"
+
+msgid "set status"
+msgstr "狀態設置"
+
+msgid "Card Not Yet Activated"
+msgstr "該卡未激活"
+
+msgid "Card Blocked"
+msgstr "該卡被禁用"
+
+msgid "The card has been swiped"
+msgstr "該卡已被刷過"
+
+msgid "Payment Again"
+msgstr "重新刷卡"
+
+msgid "Swiped"
+msgstr "已刷卡"
+
+msgid "Without Swiped"
+msgstr "未刷卡"
+
+msgid "Card Transferred"
+msgstr "該卡已轉移"
+
+msgid "Unknown Card Status"
+msgstr "該卡狀態不明"
+
+msgid "Please swipe your gift card on iPad"
+msgstr "請在iPad上進行刷卡"
+
+msgid "Card No."
+msgstr "卡號"
+
+msgid "Minimal Pay"
+msgstr "小額支付"
+
+msgid "Top-Up"
+msgstr "充值"
+
+msgid "Can't read the card number from this gift card"
+msgstr "無法讀取禮品卡號碼"
+
+msgid "GIFT CARD NUMBER"
+msgstr "禮品卡號碼"
+
+msgid "BALANCE"
+msgstr "餘額"
+
+msgid "Enter or Swipe to search"
+msgstr "在此輸入或刷卡進行查詢"
+
+msgid "PURCHASED AT"
+msgstr "購買日期"
+
+msgid "LAST UPDATED"
+msgstr "最近更新"
+
+msgid "NOTE"
+msgstr "記錄"
+
+msgid "TOTAL SPENT"
+msgstr "總消費金額"
+
+msgid "ORDER NUMBER"
+msgstr "訂單號碼"
+
+msgid "Available for Public"
+msgstr "可公開使用"
+
+msgid "Unlinked"
+msgstr "未連接"
+
+msgid "AMOUNT"
+msgstr "金額"
+
+msgid "Card No."
+msgstr "卡號."
+
+msgid "Please set up Table Size Segmentation on Dashboard first"
+msgstr "請在 Dashboard 設置座位人數組別"
+
+msgid "Cannot remove customer that already linked with reservation"
+msgstr "不可移除與訂台連結的客人"
+
+msgid "Cannot change customer that already linked with reservation"
+msgstr "不可更改與訂台連結的客人"
+
+msgid "REF. #"
+msgstr "單號"
+
+msgid "Dine-in"
+msgstr "堂食"
+
+msgid "TABLE NO."
+msgstr "台號"
+
+msgid "ORDER"
+msgstr "訂單"
+
+msgid "PAYMENT"
+msgstr "付款"
+
+msgid "ATTENTION"
+msgstr "待辦"
+
+msgid "CREATE AT"
+msgstr "創建日期"
+
+msgid "Pending Sales"
+msgstr "待處理訂單"
+
+msgid "All Servers"
+msgstr "全部服務員"
+
+msgid "Notify"
+msgstr "通知取餐"
+
+msgid "Dismiss"
+msgstr "清除顯示"
+
+msgid "You don't have permission to view this page."
+msgstr "你沒有權限瀏覽此頁面"
+
+msgid "Allow change procurement type after sent"
+msgstr "允許訂單發送後修改類型"
+
+msgid "Send All Remaining"
+msgstr "發送所有未發送厨房單"
+
+msgid "Resend All"
+msgstr "重新發送所有厨房單"
+
+msgid "Send Selected"
+msgstr "发送已选厨房單"
+
+msgid "No Kitchen Slip now"
+msgstr "暫無厨房單"
+
+msgid "TIME"
+msgstr "時間"
+
+msgid "CUSTOMER"
+msgstr "客戶"
+
+msgid "TABLE"
+msgstr "餐桌號"
+
+msgid "DETAILS"
+msgstr "詳情"
+
+msgid "Reservation Summary"
+msgstr "餐桌預定概要"
+
+msgid "Print Reservation List"
+msgstr "打印餐桌預定列表"
+
+msgid "Segment"
+msgstr "時間段"
+
+msgid "Sort"
+msgstr "排序"
+
+msgid "Sorting"
+msgstr "排序"
+
+msgid "Ascending"
+msgstr "升序"
+
+msgid "Descending"
+msgstr "降序"
+
+msgid "Recently Active Users"
+msgstr "最近登陸用戶"
+
+msgid "All Other Users"
+msgstr "其他用戶"
+
+msgid "Print Done"
+msgstr "打印完成"
+
+msgid "Print Reservation"
+msgstr "打印預訂單"
+
+msgid "No Reservations"
+msgstr "當前沒有任何預定"
+
+msgid "Reservation Date"
+msgstr "預定日期"
+
+msgid "None"
+msgstr "無"
+
+msgid "Loading Reservations..."
+msgstr "加載餐桌預定中..."
+
+msgid "Redeem Voucher"
+msgstr "兌換禮券"
+
+msgid "Redeem"
+msgstr "兌換"
+
+msgid "Invalid Voucher Number"
+msgstr "無效的禮券號碼"
+
+msgid "GUEST INFORMATION"
+msgstr "顧客信息"
+
+msgid "Search by name or phone"
+msgstr "搜索顧客姓名或電話"
+
+msgid "Add New Guest"
+msgstr "添加新顧客"
+
+msgid "Automatically sold out if quantity equal or below to 0"
+msgstr "自動沽清"
+
+msgid "Not enough quantity!"
+msgstr "庫存不足!"
+
+msgid "Only %ld qty available !"
+msgstr "僅剩 %ld 數量可選"
+
+msgid "Not enough quantity for modifier option: %@!\n"
+msgstr "%@ 附加選項的庫存不足!"
+
+msgid "Shipped By"
+msgstr "發貨人"
+
+msgid "Delivered"
+msgstr "已送達"
+
+msgid "Day End Completed"
+msgstr "日結完成"
+
+msgid "Opened Time:"
+msgstr "開始時間"
+
+msgid "Closed Time:"
+msgstr "關閉時間"
+
+msgid "Closed By:"
+msgstr "員工"
+
+msgid "Terminal:"
+msgstr "終端機"
+
+msgid "Enable Kitchen Alias"
+msgstr "開啓使用厨房別名"
+
+msgid "Print receipt when line-item is voided and sent"
+msgstr "取消商品時打印收據"
+
+msgid "Allow Manually Daily Closing"
+msgstr "允許手動日結清機"
+
+msgid "Show Barcode on printed receipt"
+msgstr "打印標簽于收據上"
+
+msgid "Show Tax in price total on printed receipt"
+msgstr "打印稅額于收據上"
+
+msgid "Enter Cover"
+msgstr "輸入人數"
+
+msgid "Listing Event"
+msgstr "商品事件"
+
+msgid "Select Invoice"
+msgstr "選擇發票"
+
+msgid "sidebar.advancedreports"
+msgstr "進階報表"
+
+msgid "Goods Received Notes"
+msgstr "貨物接收記錄"
+
+msgid "Unlimited Quantity"
+msgstr "不限數量"
+
+msgid "Allow the user to select the same option more than once"
+msgstr "重複選取同一選項不會被視為多重選項"
+
+msgid "Allow modifier to affect the entire order"
+msgstr "可將此修改為所有訂單項"
+
+#:  Common
+
+msgid "Close"
+msgstr "關閉"
+
+msgid "E.g. Size"
+msgstr "例如：尺寸"
+
+msgid "E.g. Small"
+msgstr "例如：小"
+
+msgid "Look Up Table"
+msgstr "尋找桌子"
+
+msgid "Search Result"
+msgstr "搜尋結果"
+
+msgid "Enter Cover To Create Table"
+msgstr "輸入人數開新單"
+
+msgid "ENTER"
+msgstr "輸入"
+
+msgid "Completed"
+msgstr "已完成"
+
+msgid "Start updating listing"
+msgstr "開始更新清單"
+
+msgid "Alert"
+msgstr "提醒"
+
+msgid "NO"
+msgstr "不"
+
+msgid "No"
+msgstr "不"
+
+msgid "YES"
+msgstr "是"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "OK"
+msgstr "好"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Done"
+msgstr "確定"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Title"
+msgstr "標題"
+
+msgid "Amount"
+msgstr "合計"
+
+msgid "Deposit"
+msgstr "按金"
+
+msgid "Show modifier price on print check and checkout receipt"
+msgstr "顯示附加選項價錢於印單上"
+
+msgid "Show zero amount modifier"
+msgstr "顯示零價格附加選項"
+
+msgid "Daily reset reference number"
+msgstr "每天自動重設單據編號"
+
+msgid "Display discounted subtotal on register"
+msgstr "在收銀台顯示折扣後小計"
+
+msgid "Tips"
+msgstr "小費"
+
+msgid "Store Credit"
+msgstr "商店代幣"
+
+msgid "Store credit"
+msgstr "商店代幣"
+
+msgid "Next"
+msgstr "下一步"
+
+msgid "Error"
+msgstr "錯誤"
+
+msgid "Password"
+ msgstr "密碼"
+
+msgid "Note"
+msgstr "註釋"
+
+msgid "Notes"
+msgstr "註釋"
+
+msgid "Since"
+msgstr "開始于"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Loading..."
+msgstr "正在加載..."
+
+msgid "Processing..."
+msgstr "正在處理..."
+
+msgid "Overview"
+msgstr "概觀"
+
+msgid "Contact"
+msgstr "聯係"
+
+msgid "Order History"
+msgstr "歷史訂單"
+
+msgid "Order"
+msgstr "訂單"
+
+msgid "Orders"
+msgstr "訂單"
+
+msgid "Full Name"
+msgstr "全名"
+
+msgid "Mobile"
+msgstr "手機號碼"
+
+msgid "Phone"
+msgstr "電話"
+
+msgid "Email"
+msgstr "電子郵件"
+
+msgid "Gender"
+msgstr "性別"
+
+msgid "Male"
+msgstr "男性"
+
+msgid "Female"
+msgstr "女性"
+
+msgid "None"
+msgstr "無"
+
+msgid "Date of Birth"
+msgstr "生日"
+
+msgid "Billing Address"
+msgstr "賬單地址"
+
+msgid "Shipping Address"
+msgstr "送貨地址"
+
+msgid "Other Address"
+msgstr "其他地址"
+
+msgid "Credit Cards"
+msgstr "信用卡"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Time"
+msgstr "時間"
+
+msgid "Purchases"
+msgstr "購買記錄"
+
+msgid "Qty"
+msgstr "數量"
+
+msgid "Price"
+msgstr "價格"
+
+msgid "Cost"
+msgstr "成本"
+
+msgid "Profit"
+msgstr "利润"
+
+msgid "Reward"
+msgstr "獎勵"
+
+msgid "Select"
+msgstr "選擇"
+
+msgid "Take Photo"
+msgstr "拍照"
+
+msgid "Choose Photo"
+msgstr "相冊"
+
+msgid "Please validate the form first."
+msgstr "請先驗證您的輸入是否正確。"
+
+msgid "Confirm"
+msgstr "確認"
+
+msgid "N/A"
+msgstr "無"
+
+msgid "No Order Yet."
+msgstr "沒有訂單。"
+
+msgid "Tier"
+msgstr "等級"
+
+msgid "Total"
+msgstr "總計"
+
+msgid "Payment"
+msgstr "支付"
+
+msgid "Choose Payment Method"
+msgstr "選擇支付方式"
+
+msgid "is not supported anymore."
+msgstr "不再支持。"
+
+msgid "Waiting for EMV transaction..."
+msgstr "正在等待 EMV 交易..."
+
+msgid "Split Manually"
+msgstr "手動分單"
+
+msgid "Manually enter the amount charged for each check."
+msgstr "手動輸入每張帳單應收的金額"
+
+msgid "Split Equally"
+msgstr "平均分單"
+
+msgid "Each check will charge the same amount."
+msgstr "每張帳單會收取同樣的金額"
+
+msgid "Split by Item"
+msgstr "項目分單"
+
+msgid "Select which item to charge for each check."
+msgstr "選擇每張帳單的應收費項目"
+
+msgid "Each Bill Amount"
+msgstr "每張帳單金額"
+
+msgid "CHECK TOTAL"
+msgstr "帳單總額"
+
+msgid "AVERAGE PER CHECK"
+msgstr "平均每張帳單金額"
+
+msgid "SPLIT TO"
+msgstr "分單數量"
+
+msgid "Payment Method"
+msgstr "支付方式"
+
+msgid "BILL"
+msgstr "帳單"
+
+msgid "COVER"
+msgstr "人數"
+
+msgid "Save and Print All Checks"
+msgstr "保存和打印所有帳單"
+
+msgid "Bill %d, "
+msgstr "帳單 %d, "
+
+msgid " shared."
+msgstr " 共用"
+
+msgid "Cash"
+msgstr "現金"
+
+msgid "Others"
+msgstr "其他"
+
+msgid "Change"
+msgstr "找零"
+
+msgid "Check"
+msgstr "支票"
+
+msgid "Credit Card"
+msgstr "信用卡"
+
+msgid "CREDIT CARD"
+msgstr "信用卡"
+
+msgid "Credit card number"
+msgstr "信用卡卡號"
+
+msgid "MM/YY"
+msgstr "月/年"
+
+msgid "CVV"
+msgstr "安全碼"
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Associates"
+msgstr "店員"
+
+msgid "Associate"
+msgstr "店員"
+
+msgid "Hardware Accessories"
+msgstr "硬件配置"
+
+msgid "Tax Options"
+msgstr "稅率"
+
+msgid "Add"
+msgstr "添加"
+
+msgid "Supplier"
+msgstr "供應商"
+
+msgid "Attribute"
+msgstr "特性"
+
+msgid "Dept"
+msgstr "部門"
+
+msgid "Sub-Dept"
+msgstr "子部門"
+
+msgid "Sales"
+msgstr "發票"
+
+msgid "Sales.man"
+msgstr "出納員"
+
+msgid "Inventory"
+msgstr "庫存"
+
+msgid "Description"
+msgstr "商品簡介"
+
+msgid "Code"
+msgstr "編碼"
+
+msgid "Manufacturer Barcode"
+msgstr "生產商編碼"
+
+msgid "Add Manufacturer Barcode"
+msgstr "添加生產商編碼"
+
+msgid "Secondary Barcode"
+msgstr "從屬編碼"
+
+msgid "Add Secondary Barcode"
+msgstr "添加從屬編碼"
+
+msgid "Scan or enter here"
+msgstr "在此掃描或輸入"
+
+msgid "This barcode is already associated with another inventory"
+msgstr "此編碼已經與另一個商品綁定"
+
+msgid "Invalid Manufacturer Barcode"
+msgstr "無效生產商編碼"
+
+msgid "Is this the manufacturer barcode you are trying to add?"
+msgstr "確認是您所想添加的生產商編碼？"
+
+msgid "Not correct? Report this product."
+msgstr "信息不正確？幫助反饋該商品正確信息。"
+
+msgid "Brand"
+msgstr "品牌"
+
+msgid "Category"
+msgstr "分類"
+
+msgid "Department"
+msgstr "部門"
+
+msgid "Standard Pricing"
+msgstr "標準價格"
+
+msgid "Fixed Pricing"
+msgstr "固定選項價格"
+
+msgid "Variable Pricing"
+msgstr "浮動價格"
+
+msgid "Bulk Pricing"
+msgstr "數量定價"
+
+msgid "Pricing By Weight"
+msgstr "重量定價"
+
+msgid "Pricing By Weight Variable"
+msgstr "浮動重量定價"
+
+msgid "每次使用時輸入價格"
+msgstr "每次售賣時輸入價格"
+
+msgid "Unit"
+msgstr "單位"
+
+msgid "Variety"
+msgstr "選項"
+
+msgid "From %@"
+msgstr "%@ 起"
+
+msgid "Variable/%@"
+msgstr "浮動價格/%@"
+
+msgid "New Fixed Price Option"
+msgstr "新固定選項價格"
+
+msgid "Pricing"
+msgstr "價格"
+
+msgid "New Bulk Price Option"
+msgstr "新數量定價"
+
+msgid "Scan or enter barcode"
+msgstr "掃描或輸入條形碼"
+
+msgid "Scan or enter here"
+msgstr "掃描或輸入"
+
+msgid "Enter Reference Code"
+msgstr "輸入參考碼"
+
+msgid "New Reference Code"
+msgstr "新參考碼"
+
+msgid "Add Reference Code"
+msgstr "新增參考碼"
+
+msgid "Add serial number"
+msgstr "新增貨序號 "
+
+msgid "Serial Number: %@"
+msgstr "貨序號: %@"
+
+msgid "Serial Number %lu"
+msgstr "貨序號 %lu"
+
+msgid "No product photo yet."
+msgstr "沒有圖片。"
+
+msgid "Quantity"
+msgstr "數量"
+
+msgid "Mark As Default"
+msgstr "設爲默認"
+
+msgid "Anytime"
+msgstr "任何時間"
+
+msgid "Products"
+msgstr "商品"
+
+msgid "Default"
+msgstr "默認"
+
+msgid "Margin"
+msgstr "利率"
+
+msgid "New"
+msgstr "新的"
+
+msgid "Edit"
+msgstr "編輯"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Remove"
+msgstr "刪除"
+
+msgid "Adjust"
+msgstr "調整"
+
+msgid "Preview Clock In Image"
+msgstr "預覽開始打卡圖片"
+
+msgid "Preview Clock Out Image"
+msgstr "預覽結束打卡圖片"
+
+msgid "No Photo Yet."
+msgstr "無照片"
+
+msgid "Balance"
+msgstr "餘額"
+
+msgid "Loyalty"
+msgstr "忠誠度"
+
+msgid "Order Number"
+msgstr "單號"
+
+msgid "Sales Order"
+msgstr "發票記錄"
+
+msgid "Print Receipt"
+msgstr "打印收據"
+
+msgid "Gift Card"
+msgstr "禮品卡"
+
+msgid "Loading %@..."
+msgstr "正在加載%@..."
+
+msgid "Subtotal"
+msgstr "小計"
+
+msgid "Sub-total"
+msgstr "小計"
+
+msgid "Discounted Subtotal"
+msgstr "折扣後小計"
+
+msgid "Discounted Sub-total"
+msgstr "折扣後小計"
+
+msgid "Tax@%0.4f%%"
+msgstr "稅額@%0.4f%%"
+
+msgid "Regular Price"
+msgstr "標準價格"
+
+msgid "Serial Number"
+msgstr "序列號"
+
+msgid "Discount"
+msgstr "折扣"
+
+msgid "Tax"
+msgstr "稅額"
+
+msgid "Service Charge"
+msgstr "服務費"
+
+msgid "Tax & Service Charge"
+msgstr "稅額和服務費"
+
+msgid "Tax & Service Charge Refund"
+msgstr "稅額和服務費退款"
+
+msgid "Refund Entire Order"
+msgstr "全額退款"
+
+msgid "Account"
+msgstr "賬戶"
+
+msgid "Fax"
+msgstr "傳真"
+
+msgid "Phone 1"
+msgstr "電話1"
+
+msgid "Phone 2"
+msgstr "電話2"
+
+msgid "Product"
+msgstr "商品"
+
+msgid "Preview"
+msgstr "預覽"
+
+msgid "Please enter here..."
+msgstr "請在這裏輸入..."
+
+msgid "Unlimited"
+msgstr "無限"
+
+msgid "No Result."
+msgstr "沒有記錄。"
+
+msgid "No result"
+msgstr "沒有記錄。"
+
+msgid "Photo"
+msgstr "照片"
+
+msgid "Export"
+msgstr "導出"
+
+msgid "or"
+msgstr "或者"
+
+msgid "Failed to send email."
+msgstr "發送郵件失敗。"
+
+msgid "Duplicate"
+msgstr "複製"
+
+msgid "Deduct"
+msgstr "減少"
+
+msgid "Unknown"
+msgstr "未知"
+
+msgid "Signature"
+msgstr "簽名"
+
+msgid "Searching..."
+msgstr "正在搜索..."
+
+msgid "The application Bindo POS quit unexpectedly. Would you like to send us a feedback?"
+msgstr "Bindo POS 上次運行出現故障，您願意發送您的反饋嗎？"
+
+msgid "Warning"
+msgstr "提醒"
+
+msgid "Last Update"
+msgstr "最後更新"
+
+msgid "Continue"
+msgstr "繼續"
+
+msgid "Phone Number"
+msgstr "電話號碼"
+
+msgid "Off"
+msgstr "折扣"
+
+msgid "Fee"
+msgstr "費用"
+
+msgid "Cashier"
+msgstr "收銀員"
+
+msgid "Welcome to"
+msgstr "歡迎光臨"
+
+msgid "Never"
+msgstr "從不"
+
+msgid "Store"
+msgstr "商店"
+
+msgid "Skip"
+msgstr "略過"
+
+msgid "Message"
+msgstr "消息"
+
+#:  Date
+
+msgid "Today"
+msgstr "今日"
+
+msgid "Yesterday"
+msgstr "昨日"
+
+msgid "This Week"
+msgstr "這一周"
+
+msgid "Last Week"
+msgstr "前一周"
+
+msgid "This Month"
+msgstr "這一月"
+
+msgid "Last Month"
+msgstr "前一月"
+
+msgid "Last 3 Months"
+msgstr "前三月"
+
+msgid "Last 6 Months"
+msgstr "前六月"
+
+msgid "From"
+msgstr "由"
+
+msgid "To"
+msgstr "至"
+
+msgid "and"
+msgstr "和"
+
+#:  Units
+
+msgid "%d hours (plural rule: other)"
+msgstr "%d個小時"
+
+msgid "%d Product (plural rule: other)"
+msgstr "%d個商品"
+
+msgid "%d Sale (plural rule: other)"
+msgstr "%d個訂單"
+
+msgid "%d Customer (plural rule: one)"
+msgstr "%d個客戶"
+
+msgid "%d Customer (plural rule: other)"
+msgstr "%d個客戶"
+
+msgid "%d Card (plural rule: other)"
+msgstr "%d張卡"
+
+msgid "%d Stamp (plural rule: other)"
+msgstr "%d个印花"
+
+msgid "%d Discount (plural rule: other)"
+msgstr "%d個折扣"
+
+msgid "%d Gift Card (plural rule: other)"
+msgstr "%d張禮品卡"
+
+msgid "%d Supplier (plural rule: other)"
+msgstr "%d家供應商"
+
+msgid "%d Purchase Order (plural rule: other)"
+msgstr "%d張訂購單"
+
+msgid "%d Invoice (plural rule: other)"
+msgstr "%d張訂單"
+
+msgid "%d Payment (plural rule: other)"
+msgstr "%d次付款"
+
+msgid "%d Day (plural rule: other)"
+msgstr "%d天"
+
+msgid "%d Shift (plural rule: other)"
+msgstr "%d個錢櫃記錄"
+
+msgid "%d Associate (plural rule: other)"
+msgstr "%d個店員"
+
+msgid "%d character left (plural rule: other)"
+msgstr "還可以輸入%d個字符"
+
+msgid "%d Modifier Set (plural rule: zero)"
+msgstr "無附加選項設定"
+
+msgid "%d Modifier Set (plural rule: one)"
+msgstr "%d個附加選項設定"
+
+msgid "%d Modifier Set (plural rule: other)"
+msgstr "%d個附加選項設定"
+
+msgid "%d Department (plural rule: zero)"
+msgstr "無部門"
+
+msgid "%d Department (plural rule: one)"
+msgstr "%d個部門"
+
+msgid "%d Department (plural rule: other)"
+msgstr "%d個部門"
+
+msgid "%d Category (plural rule: zero)"
+msgstr "無類別"
+
+msgid "%d Category (plural rule: one)"
+msgstr "%d個類別"
+
+msgid "%d Category (plural rule: other)"
+msgstr "%d個類別"
+
+msgid "%d Brand (plural rule: zero)"
+msgstr "無品牌"
+
+msgid "%d Brand (plural rule: one)"
+msgstr "%d個品牌"
+
+msgid "%d Brand (plural rule: other)"
+msgstr "%d個品牌"
+
+msgid "%d Item (plural rule: zero)"
+msgstr "無物品"
+
+msgid "%d Item (plural rule: one)"
+msgstr "%d個物品"
+
+msgid "%d Item (plural rule: other)"
+msgstr "%d個物品"
+
+msgid "%d Reservation (plural rule: zero)"
+msgstr "無預訂"
+
+msgid "%d Reservation (plural rule: one)"
+msgstr "%d 個預訂"
+
+msgid "%d Reservation (plural rule: other)"
+msgstr "%d 個預訂"
+
+msgid "%d available seat (plural rule: zero)"
+msgstr "%d 個空餘座位"
+
+msgid "%d available seat (plural rule: one)"
+msgstr "%d 個空餘座位"
+
+msgid "%d available seat (plural rule: other)"
+msgstr "%d 個空餘座位"
+
+msgid "%d people (plural rule: zero)"
+msgstr "%d 位客人"
+
+msgid "%d people (plural rule: one)"
+msgstr "%d 位客人"
+
+msgid "%d people (plural rule: other)"
+msgstr "%d 位客人"
+
+msgid "%d Goods Received Note (plural rule: zero)"
+msgstr "%d 個收貨單"
+
+msgid "%d Goods Received Note (plural rule: one)"
+msgstr "%d 個收貨單"
+
+msgid "%d Goods Received Note (plural rule: other)"
+msgstr "%d 個收貨單"
+
+msgid "%d Delivery Notes (plural rule: zero)"
+msgstr "%d 個收貨單"
+
+msgid "%d Delivery Notes (plural rule: one)"
+msgstr "%d 送貨單"
+
+msgid "%d Delivery Notes (plural rule: other)"
+msgstr "%d 送貨單"
+
+msgid "%d Stock Transfer (plural rule: zero)"
+msgstr "%d 個存貨調動"
+
+msgid "%d Stock Transfer (plural rule: one)"
+msgstr "%d 個存貨調動"
+
+msgid "%d Stock Transfer (plural rule: other)"
+msgstr "%d 個存貨調動"
+
+msgid "%d order (plural rule: one)"
+msgstr "%d 個訂單"
+
+msgid "%d order (plural rule: other)"
+msgstr "%d 個訂單"
+
+
+#:  Error
+
+msgid "Bindo POS is unable to connect to master server. Please check your connection to master server."
+msgstr "Bindo POS 無法連接主終端，請檢查主終端連線是否正常。"
+
+msgid "Bindo POS is unable to connect to server. Please check your internet connection."
+msgstr "Bindo POS 連接不到網絡，請檢查您的網絡連接。"
+
+msgid "Request time out, please retry."
+msgstr "請求超時，請重試。"
+
+msgid "Unknown error. Please contact 1-800-MY-BINDO for assistance."
+msgstr "發生未知錯誤，請聯繫 1-800-MY-BINDO 詢問。"
+
+msgid "You are logged out because you have logged in with another device. Please sign in again."
+msgstr "您的賬號在另外一台設備上登陸，請重新登陸。"
+
+msgid "Your store is being activated. Please contact 1-800-MY-BINDO for assistance."
+msgstr "您的商店等待被激活，您可以聯繫 1-800-MY-BINDO 詢問。"
+
+msgid "The resource not found."
+msgstr "您請求的資源不存在。"
+
+msgid "The resource not found. The item named \"%@\" might be removed."
+msgstr "您請求的資源不存在。 \"%@\"可能已被刪除"
+
+msgid "This customer reference number is already in use"
+msgstr "此參考編號已被其他顧客使用"
+
+#:  POS Display
+
+msgid "Pair Invitation"
+msgstr "介面顯示配對邀請"
+
+msgid "Received pair invitation from %@"
+msgstr "從 %@ 接收到邀請"
+
+msgid "Reject"
+msgstr "拒絕"
+
+msgid "Accept"
+msgstr "接受"
+
+#:  Edit Page
+
+msgid "No %@ yet."
+msgstr "還沒有%@。"
+
+msgid "Create New Item"
+msgstr "新建商品"
+
+msgid "Are you sure you want to cancel the editing for this %@?"
+msgstr "您確定要取消編輯這個%@嗎?"
+
+#:  Welcome
+
+msgid "Sign In"
+msgstr "登入"
+
+msgid "Start My Free Trial"
+msgstr "免費試用"
+
+#:  Sign Up
+
+msgid "Sign Up"
+msgstr "註冊"
+
+msgid "Store Name"
+msgstr "商店名字"
+
+msgid "Your Full Name"
+msgstr "您的全名"
+
+msgid "Password (At lease 6 characters)"
+msgstr "密碼 (至少6位)"
+
+msgid "%@ By clicking \"%@\", you are agreeing to our <a href='https://bindopos.com/legal'>Terms and Conditions</a> and our <a href='https://bindopos.com/legal#privacy-policy'>Privacy Policy</a>."
+msgstr "%@ 點擊\"%@\"之後, 表示您同意 <a href='https://bindopos.com/legal'>條款和條件</a> 和<a href='https://bindopos.com /legal#privacy-policy'>隱私政策</a>.";
+
+msgid "%@ By continuing, you are agreeing to our <a href='https://bindopos.com/legal'>Terms and Conditions</a> and our <a href='https://bindopos.com/legal#privacy-policy'>Privacy Policy</a>."
+msgstr "%@ 同意<a href='https://bindopos.com/legal'>條款和條件</a> 和<a href='https://bindopos.com/legal#privacy-policy'>隱私政策< /a>.";
+
+msgid "Telephone area code should be selected"
+msgstr "請先選擇國家代碼"
+
+msgid "Store name cannot be blank"
+msgstr "商店名字不能為空"
+
+msgid "Full name cannot be blank"
+msgstr "名字不能為空"
+
+msgid "Email cannot be blank"
+msgstr "電子郵件不能為空"
+
+msgid "Please enter valid Email"
+msgstr "請輸入正確的電子郵件"
+
+msgid "Phone number cannot be blank"
+msgstr "電話號碼不能為空"
+
+msgid "Please enter valid phone number"
+msgstr "請輸入正確的電話號碼"
+
+msgid "Password cannot be blank"
+msgstr "密碼不能為空"
+
+msgid "Password should be at least 6 characters"
+msgstr "密碼長度必須大於6位"
+
+msgid "Please enter valid zipcode"
+msgstr "請輸入正確的郵編號碼"
+
+msgid "Please select a country"
+msgstr "請選擇國家"
+
+msgid "Welcome to Bindo POS!"
+msgstr "歡迎使用 Bindo POS!"
+
+msgid "Trusted by thousands of customers."
+msgstr "我們被幾千客戶的選擇和信任。"
+
+msgid "See why it will be great for your business."
+msgstr "看一下它為什麼會讓您的業務更加好。"
+
+msgid "Powerful reporting. Simple access. Actionable insights."
+msgstr "強大的報表。使用簡單。一目了然。"
+
+msgid "Powerful reporting. Simple access."
+msgstr "強大的報表。使用簡單。"
+
+msgid "Actionable insights."
+msgstr "一目了然。"
+
+msgid "Accept it all. From cash to credit cards"
+msgstr "從現金到信用卡支付，無所不能。"
+
+msgid "to custom gift cards with loyalty."
+msgstr "更支持禮品卡和客戶忠誠計劃。"
+
+msgid "Set Up Your Store in 2 Mins"
+msgstr "兩分鐘設置您的商店"
+
+msgid "Store Set Up"
+msgstr "商店設置"
+
+msgid "Almost done! 2 mins left!"
+msgstr "很快就完成! 只要兩分鐘!"
+
+msgid "Country"
+msgstr "國家"
+
+msgid "Zip Code"
+msgstr "郵編號碼"
+
+msgid "Your phone number and zip code help us assign a Bindo POS expert to your account"
+msgstr "輸入您的電話號碼和郵編號碼，我們馬上會安排我們的專家聯繫您為您服務。"
+
+msgid "Select City"
+msgstr "選擇城市"
+
+msgid "Street Address"
+msgstr "街道地址"
+
+msgid "Apartment / Suite (optional)"
+msgstr "公寓 / 單位 (可選)"
+
+msgid "City"
+msgstr "城市"
+
+msgid "State (optional)"
+msgstr "州 (非必須)"
+
+msgid "Current Credit Card Processor"
+msgstr "當前信用卡設備"
+
+msgid "Processing Needed By"
+msgstr "設備需求"
+
+msgid "Average Sale Amount"
+msgstr "每筆平均銷售額"
+
+msgid "Monthly Revenue"
+msgstr "月收入"
+
+msgid "Information about your store helps us suggest the best credit card processor for your needs."
+msgstr "您的商店信息將幫助我們為您推薦最合適的信用卡設備。"
+
+msgid "I'll use my current processor"
+msgstr "使用目前的信用卡設備"
+
+msgid "I need a credit card processor"
+msgstr "需要一個信用卡設備"
+
+msgid "I only accept cash"
+msgstr "只收現金"
+
+msgid "In a week"
+msgstr "一周内"
+
+msgid "In a month"
+msgstr "一月内"
+
+msgid "In a few months"
+msgstr "几个月内"
+
+msgid "Unplanned"
+msgstr "沒有計劃"
+
+msgid "Less than $20"
+msgstr "少於￥20"
+
+msgid "$21-$50"
+msgstr "￥21-￥50"
+
+msgid "Over $50"
+msgstr "超過 ￥50"
+
+msgid "Less than $1,000"
+msgstr "少於￥1,000"
+
+msgid "$1000-$10,000"
+msgstr "￥1000-￥10,000"
+
+msgid "$10,001-$50,000"
+msgstr "￥10,001-￥50,000"
+
+msgid "Over $50,000"
+msgstr "超過￥50,000"
+
+msgid "Current POS/Inventory System"
+msgstr "當前POS/庫存管理系統"
+
+msgid "I've Been Using It Since"
+msgstr "在什麼時候開始使用"
+
+msgid "Number of Registers"
+msgstr "收銀台數量"
+
+msgid "Pros & Cons (Optional)"
+msgstr "優缺點(可選)"
+
+msgid "I Need to Migrate:"
+msgstr "我需要遷移:"
+
+msgid "Migrate Inventory"
+msgstr "遷移庫存"
+
+msgid "Don't worry, our experts can migrate your data in under an hour."
+msgstr "我們的專家會在一個小時內幫您遷移所有數據。"
+
+msgid "Less than 1 year"
+msgstr "少於1年"
+
+msgid "1-3 years"
+msgstr "1-3年"
+
+msgid "3+ years"
+msgstr "3年以上"
+
+msgid "Almost done! 1 min left"
+msgstr "接近完成! 只要一分鐘"
+
+msgid "Number of Locations"
+msgstr "商店數量"
+
+msgid "Business Type"
+msgstr "業務類型"
+
+msgid "Number of Unique SKUs"
+msgstr "SKU數量"
+
+msgid "SKUs with Barcodes"
+msgstr "有條形碼的SKU數量"
+
+msgid "How did you hear about Bindo POS?"
+msgstr "您是如何得知 Bindo POS?"
+
+msgid "These questions help us choose the best Bindo service for your business."
+msgstr "這些問題可以我們針對您的業務類型選擇最好的服務。"
+
+msgid "Not Open Yet"
+msgstr "還沒有開業"
+
+msgid "1 Store"
+msgstr "1個商店"
+
+msgid "2-5 Stores"
+msgstr "2-5個商店"
+
+msgid "6-10 Stores"
+msgstr "6-10個商店"
+
+msgid "11-50 stores"
+msgstr "11-50個商店"
+
+msgid "Over 50 Stores"
+msgstr "超过50個商店"
+
+msgid "Antiques"
+msgstr "古玩"
+
+msgid "Auto Parts"
+msgstr "汽車配件"
+
+msgid "Beauty Supplies"
+msgstr "美容用品"
+
+msgid "Beer, Wine & Spirits"
+msgstr "酒類專賣"
+
+msgid "Bikes & Scooters"
+msgstr "自行車&電動車"
+
+msgid "Books"
+msgstr "圖書"
+
+msgid "Clothing"
+msgstr "服飾"
+
+msgid "Dispensaries & Smokeshops"
+msgstr "菸類專賣"
+
+msgid "Electronics"
+msgstr "電器"
+
+msgid "Footwear"
+msgstr "鞋類"
+
+msgid "Groceries & Food"
+msgstr "雜貨 & 食品"
+
+msgid "Hardware & Tools"
+msgstr "五金 & 工具"
+
+msgid "Home Furnishings"
+msgstr "家居"
+
+msgid "Jewelry"
+msgstr "珠寶"
+
+msgid "Office Supplies"
+msgstr "辦公室用品"
+
+msgid "Pet Supplies"
+msgstr "寵物用品"
+
+msgid "Pharmacy"
+msgstr "藥店"
+
+msgid "Sporting Goods"
+msgstr "運動裝備"
+
+msgid "Toys & Collectibles"
+msgstr "玩具 & 收集"
+
+msgid "Less than 50"
+msgstr "少於50"
+
+msgid "Less than 10%"
+msgstr "小於10%"
+
+msgid "Internet Search"
+msgstr "互聯網搜索"
+
+msgid "Mail"
+msgstr "郵件"
+
+msgid "Merchant Referral"
+msgstr "商家推薦"
+
+msgid "Customer Referral"
+msgstr "客戶推薦"
+
+msgid "Partner Referral"
+msgstr "合作夥伴推薦"
+
+msgid "Press"
+msgstr "報紙"
+
+msgid "Radio Ad"
+msgstr "廣播"
+
+msgid "Social Media Site"
+msgstr "社交媒體"
+
+msgid "Magazine Ads"
+msgstr "雜誌"
+
+msgid "Trade Show"
+msgstr "貿易展"
+
+msgid "Word of Mouth"
+msgstr "口頭聽說"
+
+msgid "30 seconds left"
+msgstr "還剩30秒"
+
+msgid "Almost there! 20 seconds"
+msgstr "幾乎完成! 剩下20秒！"
+
+msgid "These are the final questions."
+msgstr "最後的一些問題。"
+
+msgid "By filling out this info, you'll be able to automate your tax calculations, saving a lot of time."
+msgstr "輸入這些信息，可以自動計算稅率信息，節省大量時間。"
+
+msgid "Tax Name"
+msgstr "稅率標題"
+
+msgid "Add new tax option"
+msgstr "新建稅率"
+
+msgid "Your Store Is Being Activated"
+msgstr "您的商店將被激活"
+
+msgid "A Bindo POS Specialist will contact you to activate your business. Please make sure your contact is correct, or we won't be able to activate your store."
+msgstr "我們的 Bindo POS 專家會聯繫您激活您的商店，請確認您的聯繫方式是否正確。"
+
+msgid "option 2 to get started right away!"
+msgstr "馬上就可以使用!"
+
+msgid "Area Code"
+msgstr "國家號碼"
+
+msgid "Pending Approval"
+msgstr "等待批准"
+
+msgid "Pending Activation"
+msgstr "等待激活"
+
+msgid "Please wait for a store manager to activate your store."
+msgstr "請等待商店管理員批准您的申請。"
+
+msgid "We'll contact you shortly."
+msgstr "我們會很快聯繫您。"
+
+msgid "Can't wait? Call 1-800-My-Bindo"
+msgstr "不想等待？打電話給 1-800-My-Bindo"
+
+#:  Log In
+
+msgid "Bindo ID / Email"
+msgstr "Bindo 賬戶 / 電子郵件"
+
+msgid "Incorrect Username and Password."
+msgstr "賬戶或者密碼錯誤。"
+
+msgid "Login Failed"
+msgstr "登錄失敗"
+
+#:  Recover Password
+
+msgid "Forgot Password"
+msgstr "忘記密碼"
+
+msgid "Send"
+msgstr "發送"
+
+msgid "Please enter valid Bindo ID or Email"
+msgstr "請輸入您的 Bindo 賬戶或者電子郵件。"
+
+msgid "We will send you an email with instructions to recover your password."
+msgstr "我們會向您發送一份恢復密碼的電子郵件。"
+
+msgid "Password Recovery"
+msgstr "密碼恢復"
+
+msgid "Please check your email for instructions."
+msgstr "請檢查您的電子郵件."
+
+msgid "Proceed to sign in"
+msgstr "返回切換用戶頁面"
+
+#:  Store Picker
+
+msgid "Create Store"
+msgstr "新建商店"
+
+msgid "Select Store"
+msgstr "選擇商店"
+
+#:  Loading Store
+
+msgid "Initial Connection..."
+msgstr "初始化鏈接..."
+
+msgid "Downloading Products Package..."
+msgstr "正在下載商品列表..."
+
+msgid "Importing Products..."
+msgstr "正在加載商品..."
+
+msgid "Importing %@..."
+msgstr "正在加載%@..."
+
+msgid "Imported %@"
+msgstr "%@已加載"
+
+msgid "Synchronizing %@..."
+msgstr "正在同步%@..."
+
+msgid "Synchronized %@"
+msgstr "%@已同步"
+
+msgid "Step %d/%d"
+msgstr "進度 %d/%d"
+
+msgid "Switching store will empty your receipts. Would you like to continue?"
+msgstr "切換商店會清空當前訂單，確定繼續嗎?"
+
+msgid "You have unsaved sale, do you want to clear it?"
+msgstr "你有未保存的訂單，需要清除？"
+
+#:  Sync Items
+
+msgid "Listings"
+msgstr "商品"
+
+msgid "Discounts"
+msgstr "折扣"
+
+msgid "Customers"
+msgstr "客户"
+
+msgid "Customer"
+msgstr "客戶"
+
+msgid "Store Permissions"
+msgstr "商店權限"
+
+msgid "Rooms"
+msgstr "房間"
+
+msgid "Vouchers"
+msgstr "折扣券"
+
+msgid "Departments"
+msgstr "部門"
+
+msgid "Suppliers"
+msgstr "供應商"
+
+msgid "TaxOptions"
+msgstr "稅率"
+
+msgid "ShortCuts"
+msgstr "快捷按鈕"
+
+msgid "ShortCuts Bar"
+msgstr "快捷按鈕欄"
+
+msgid "ShortCuts Subsection"
+msgstr "子快捷菜單"
+
+msgid "Store Settings"
+msgstr "商店設置"
+
+msgid "Store Roles"
+msgstr "商店權限"
+
+msgid "Device Data"
+msgstr "設備數據"
+
+msgid "Store Additional Fees"
+msgstr "商店附加費"
+
+msgid "User Permission"
+msgstr "用戶權限"
+
+msgid "Gift Cards"
+msgstr "禮品卡"
+
+msgid "Payment Instruments"
+msgstr "支付方法"
+
+msgid "Store Associates"
+msgstr "店員"
+
+#:  Sidebar
+
+msgid "sidebar.register"
+msgstr "收銀台"
+
+msgid "sidebar.menusetup"
+msgstr "菜單設置"
+
+msgid "sidebar.floorplansetup"
+msgstr "平面圖設置"
+
+msgid "sidebar.serverassignment"
+msgstr "服務員分配"
+
+msgid "sidebar.tablemanagement"
+msgstr "餐桌管理"
+
+msgid "sidebar.inventory"
+msgstr "庫存"
+
+msgid "sidebar.modifiersets"
+msgstr "附加選項"
+
+msgid "sidebar.customers"
+msgstr "客户"
+
+msgid "sidebar.giftcards"
+msgstr "禮品卡"
+
+msgid "sidebar.sales"
+msgstr "發票"
+
+msgid "sidebar.discounts"
+msgstr "折扣"
+
+msgid "sidebar.suppliers"
+msgstr "供應商"
+
+msgid "sidebar.purchaseorders"
+msgstr "訂貨單"
+
+msgid "sidebar.invoices"
+msgstr "訂單"
+
+msgid "sidebar.goodsreceivednotes"
+msgstr "收貨單"
+
+msgid "sidebar.deliverynotes"
+msgstr "送貨單"
+
+msgid "sidebar.stocktransfers"
+msgstr "存貨調動"
+
+msgid "sidebar.registershifts"
+msgstr "錢櫃"
+
+msgid "sidebar.reports"
+msgstr "報表"
+
+msgid "sidebar.advancedreports"
+msgstr "進楷報表"
+
+msgid "sidebar.timeclock"
+msgstr "出勤記錄"
+
+msgid "sidebar.settings"
+msgstr "設定"
+
+#:  Menu Setup
+
+msgid "Text"
+msgstr "文字"
+
+msgid "Grid %lux%lu"
+msgstr "網格 %lux%lu"
+
+msgid "Menu Setup"
+msgstr "菜單設置"
+
+msgid "Edit Days"
+msgstr "編輯日期"
+
+msgid "Edit Period"
+msgstr "編緝時間"
+
+msgid "All Day"
+msgstr "整日"
+
+msgid "Every Day"
+msgstr "每天"
+
+msgid "Select Items"
+msgstr "選擇商品"
+
+msgid "Deselect All"
+msgstr "取消全部"
+
+msgid "Filters"
+msgstr "過濾"
+
+msgid "PRODUCT"
+msgstr "產品"
+
+msgid "%ld Sections"
+msgstr "%ld 部分"
+
+msgid "%ld Subsections"
+msgstr "%ld 附屬部分"
+
+msgid "%ld Items"
+msgstr "%ld 商品"
+
+msgid "Every Day"
+msgstr "每天"
+
+msgid "Sun"
+msgstr "日"
+
+msgid "Mon"
+msgstr "一"
+
+msgid "Tue"
+msgstr "二"
+
+msgid "Wed"
+msgstr "三"
+
+msgid "Thu"
+msgstr "四"
+
+msgid "Fri"
+msgstr "五"
+
+msgid "Sat"
+msgstr "六"
+
+msgid "items"
+msgstr "件商品"
+
+msgid "OVERWRITE PRICE"
+msgstr "開啓使用不同價格"
+
+msgid "Enter Shortcut Code"
+msgstr "產品代碼"
+
+msgid "Voucher"
+msgstr "禮券"
+
+msgid "Vouchers"
+msgstr "禮券"
+
+#:  Floor Plan Setup
+
+msgid "Multiple Parties"
+msgstr "允許多單同桌"
+
+msgid "Floor Plan Setup"
+msgstr "平面圖設置"
+
+msgid "Tables"
+msgstr "檯"
+
+msgid "Seats"
+msgstr "座位"
+
+msgid "Zones"
+msgstr "區域"
+
+msgid "New Zone"
+msgstr "新區域"
+
+msgid "Edit Table"
+msgstr "編輯台"
+
+msgid "TABLE NUMBER"
+msgstr "台號"
+
+msgid "Edit Floor Plan"
+msgstr "編輯平面圖設置"
+
+msgid "Drag and drop to add. Tap to adjust."
+msgstr "拖放添加。點擊調節。"
+
+msgid "Menu Item Alias"
+msgstr "別名"
+
+#: Server Assignment
+
+msgid "Server Assignment"
+msgstr "指派服務員"
+
+msgid "No Tables Yet"
+msgstr "沒有已建立的台"
+
+msgid "Reset All Servers"
+msgstr "重置所有服務員"
+
+msgid "Servers"
+msgstr "服務員"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "Clocked in"
+msgstr "上班中"
+
+msgid "Clocked out"
+msgstr "已下班"
+
+msgid "Not serving any table"
+msgstr "閑置"
+
+msgid "Table"
+msgstr "台號"
+
+msgid "just now"
+msgstr "剛剛"
+
+#: Table Management
+
+msgid "Please set reservation time"
+msgstr "請設置預定時間"
+
+msgid "Table Management"
+msgstr "餐桌管理"
+
+msgid "Booked"
+msgstr "已預訂"
+
+msgid "Confirmed"
+msgstr "已確認"
+
+msgid "Voicemail"
+msgstr "留言"
+
+msgid "Arrived"
+msgstr "已到達"
+
+msgid "No-Show"
+msgstr "沒有出現"
+
+msgid "Cancelled"
+msgstr "已取消"
+
+msgid "SEATED"
+msgstr "已座台"
+
+msgid "ORDERED"
+msgstr "已下單"
+
+msgid "CHECK_DROPPED"
+msgstr "已印單"
+
+msgid "PAID"
+msgstr "已付款"
+
+msgid "MULTIPLE"
+msgstr "混合台"
+
+msgid "RESERVED"
+msgstr "已預訂"
+
+msgid "AVAILABLE"
+msgstr "可使用"
+
+msgid "CURRENT PARTIES"
+msgstr "現時客人"
+
+msgid "UPCOMING"
+msgstr "即將到來的客人"
+
+msgid "IN LINE"
+msgstr "排隊的客人"
+
+msgid "FINISHED"
+msgstr "已完成"
+
+msgid "Save and Print"
+msgstr "保存並打印"
+
+msgid "New Wait List Entry"
+msgstr "新候補登記"
+
+msgid "Enter full name"
+msgstr "輸入全名"
+
+msgid "Enter mobile"
+msgstr "輸入電話"
+
+msgid "TURN TIME"
+msgstr "限時"
+
+msgid "PARTY SIZE"
+msgstr "人數"
+
+msgid "NOTE"
+msgstr "注釋"
+
+msgid "TIME ADDED"
+msgstr "時間建立於"
+
+msgid "WAITED"
+msgstr "以等待"
+
+msgid "PRE-SELECTED TABLES"
+msgstr "已預設台號"
+
+msgid "Pre-Select Table"
+msgstr "現在預設台號"
+
+msgid "All"
+msgstr "所有"
+
+msgid "Waitlist"
+msgstr "正在等候"
+
+msgid "Reserved or Waitlisted"
+msgstr "預留或正在等候"
+
+msgid "Wait List"
+msgstr "等候列表"
+
+msgid "EFFECTIVE DATE"
+msgstr "生效日期"
+
+msgid "Customer can Pre-pay, Pre-order or Pre-select table for reservation."
+msgstr "客戶可以預先支付，預先訂購或預訂座台。"
+
+msgid "Please enter or select customer"
+msgstr "請輸入或選擇客人名稱"
+
+msgid "Please enter phone number"
+msgstr "請輸入電話號碼"
+
+msgid "Please set cover"
+msgstr "請設定人數"
+
+msgid "Pre-pay"
+msgstr "預先支付"
+
+msgid "Pre-order"
+msgstr "預先訂購"
+
+msgid "Pre-select Table"
+msgstr "預定坐台"
+
+#:  Register
+
+msgid "All Terminal"
+msgstr "所有裝置"
+
+msgid "Overwrite Product Name"
+msgstr "覆寫產品名"
+
+msgid "All Terminals"
+msgstr "所有裝置"
+
+msgid "All Payment"
+msgstr "所有支付狀態"
+
+msgid "Tap to Refresh Table"
+msgstr "點擊刷新座台"
+
+msgid "New Pickup Order"
+msgstr "新外賣單"
+
+msgid "New Delivery Order"
+msgstr "新送貨單"
+
+msgid "Lock"
+msgstr "鎖定"
+
+msgid "Register"
+msgstr "收銀台"
+
+msgid "Manager"
+msgstr "經理"
+
+msgid "Associate"
+msgstr "服務員"
+
+msgid "Junior Associate"
+msgstr "初級服務員"
+
+msgid "Kitchen Slips"
+msgstr "廚房單"
+
+msgid "Print Check"
+msgstr "印單"
+
+msgid "PRINT CHECK"
+msgstr "印單"
+
+msgid "Hold"
+msgstr "暫存"msgid
+
+msgid "Pickup"
+msgstr "外賣"
+
+msgid "Pickups"
+msgstr "外賣"
+
+msgid "Dine-In"
+msgstr "堂食"
+
+msgid "Dine-Ins"
+msgstr "堂食"
+
+msgid "Delivery"
+msgstr "送貨"
+
+msgid "Deliveries"
+msgstr "送貨"
+
+msgid "TABLE #"
+msgstr "台號"
+
+msgid "Party of %@"
+msgstr "人數: %@"
+
+msgid "Server: %@"
+msgstr "服務員: %@"
+
+msgid "CREATED AT"
+msgstr "建立時間"
+
+msgid "Added on %@"
+msgstr "建立於 %@"
+
+msgid "ITEMS"
+msgstr "產品"
+
+msgid "SERVER"
+msgstr "服務員"
+
+msgid "STATUS"
+msgstr "狀態"
+
+msgid "Send to Kitchen"
+msgstr "發送到廚房"
+
+msgid "Resend"
+msgstr "重新發送"
+
+msgid "SENT"
+msgstr "已發送"
+
+msgid "CK DROPPED"
+msgstr "已印單"
+
+msgid "You have unsaved invoice, do you want to clear it?"
+msgstr "您有未保存的訂單，需要清除？"
+
+msgid "You cannot send unsaved invoice to kitchen."
+msgstr "請先保存訂單"
+
+msgid "FULL NAME"
+msgstr "姓名"
+
+msgid "MOBILE"
+msgstr "電話"
+
+msgid "SHIPPING ADDRESS"
+msgstr "送貨地址"
+
+msgid "Choose Table"
+msgstr "選擇台號"
+
+msgid "Seat Now"
+msgstr "確認座位"
+
+msgid "Move Table"
+msgstr "轉台"
+
+msgid "Move Table From %@ To %@"
+msgstr "轉台 %@ 轉到 %@"
+
+msgid "Unseat This Party"
+msgstr "取消座位"
+
+msgid "Turn Time"
+msgstr "限時"
+
+msgid "Move Line Item To Other Table"
+msgstr "轉移項目"
+
+msgid "Merge with Another Party"
+msgstr "合并台"
+
+msgid "Void"
+msgstr "取消"
+
+msgid "Void Items"
+msgstr "取消產品"
+
+msgid "VOID ITEM"
+msgstr "取消產品"
+
+msgid "Apply Modifier"
+msgstr "添加附加選項"
+
+msgid "No modifier available in order level."
+msgstr "無可用附加選項供整張訂單使用。"
+
+msgid "There's no sent line items to void."
+msgstr "當前沒有符合的產品可以刪除。"
+
+msgid "Select Void Reason"
+msgstr "選擇取消原因"
+
+msgid "Reservation"
+msgstr "預約"
+
+msgid "Delivery Info"
+msgstr "送貨資料"
+
+msgid "Courier"
+msgstr "送貨員"
+
+msgid "Server"
+msgstr "服務員"
+
+msgid "Sale Associate"
+msgstr "服務員"
+
+msgid "Edit Sales"msgid
+msgstr "編輯項目"
+
+msgid "Print Item"
+msgstr "列印項目"
+
+msgid "Charge"
+msgstr "結賬"
+
+msgid "Total Item"
+msgstr "總件數"
+
+msgid "Total Items"
+msgstr "總件數"
+
+msgid "Total Items:"
+msgstr "總件數:"
+
+msgid "Tax Included In Price"
+msgstr "已包含稅"
+
+msgid "Split Checks"
+msgstr "分單"
+
+msgid "Enter Number of Checks"
+msgstr "輸入分單數量"
+
+msgid "Print Customer Food Record"
+msgstr "列印顧客食品記錄"
+
+msgid "Processing... Please do not remove card"
+msgstr "正在處理... 請不要拿掉信用卡。"
+
+msgid "We cannot detect your credit card correctly, please try again"
+msgstr "不能正確的檢測信用卡, 請重試。"
+
+msgid "Sorry, you need to turn on Store credit feature in settings page first."
+msgstr "您需要先在設定裡開啟商店代幣功能。"
+
+msgid "This bill has been applied customer, please remove it first."
+msgstr "該單已經添加了客戶，請先將其移除。"
+
+msgid "Your current gift card balance is $0.00, please use other payment."
+msgstr "禮品卡餘額不足，請使用其他付款方式。"
+
+msgid "The gift card doesn't have sufficient balance, would you like split payment?"
+msgstr "這張禮品卡餘額不足, 使用拆分付款?"
+
+msgid "Duplicated Order"
+msgstr "訂單重複"
+
+msgid "Checkout Failed"
+msgstr "結賬失敗"
+
+msgid "Pending Sync"
+msgstr "正在同步"
+
+msgid "Shortcut Title"
+msgstr "快捷按鈕標題"
+
+msgid "Modifier"
+msgstr "附加選項"
+
+msgid "Available in order level"
+msgstr "供整張訂單使用"
+
+msgid "Add to Price"
+msgstr "添加到價格"
+
+msgid "Single Choice"
+msgstr "單選"
+
+msgid "Options"
+msgstr "選項"
+
+msgid "Add-ons Options"
+msgstr "附加選項"
+
+msgid "KDS Stations"
+msgstr "廚房顯示系統"
+
+msgid "Store KDS Workflows"
+msgstr "Store KDS Workflows"
+
+msgid "Station History"
+msgstr "Station History"
+
+msgid "SettingsKDSStationListViewController.Station name"
+msgstr "Station name"
+
+msgid "SettingsKDSStationListViewController.Last connected"
+msgstr "Last connected"
+
+msgid "SettingsKDSStationListViewController.IP"
+msgstr "IP"
+
+msgid "SettingsKDSStationListViewController.Detail"
+msgstr "Detail"
+
+msgid "SettingsKDSStationListViewController.Sync Station Data"
+msgstr "同步廚房顯示系統數據"
+
+msgid "SettingsKDSStationListViewController.Enable KDS Service"
+msgstr "啟用廚房顯示系統"
+
+msgid "Opt-Out Options"
+msgstr "剔除選項"
+
+msgid "The serial number for product name doesn't match any of the serial numbers on file. Continue anyway?"
+msgstr "在該商品已添加序列號列表中未找到該序列號。是否繼續？"
+
+msgid "iPad idle for 2 mins. Please reload the order again."
+msgstr "iPad 已待機兩分鐘，請重新載入訂單。"
+
+msgid "No such table found."
+msgstr "沒有這張桌。"
+
+#:  Add Line Item
+
+msgid "Add New Line Item"
+msgstr "新增項目"
+
+msgid "Add Charge"
+msgstr "新增費用"
+
+msgid "Add % Discount"
+msgstr "使用 % 折扣"
+
+msgid "Add $ Discount"
+msgstr "使用 ￥ 折扣"
+
+msgid "Purchase Store Credit"
+msgstr "購買商店代幣"
+
+msgid "Purchase Gift Card"
+msgstr "購買禮品卡"
+
+#:  Purchase Store Credit
+
+msgid "Enter Store Credit Amount"
+msgstr "請輸入商店代幣數額"
+
+#:  Purchase Gift Card
+
+msgid "Purchase Gift Card - Step 1"
+msgstr "購買積分卡 - 第一步"
+
+msgid "Purchase Gift Card - Step 1"
+msgstr "購買積分卡 - 第二步"
+
+msgid "This gift card is already added to the receipt. Please try another gift card."
+msgstr "這張禮品卡已經被使用， 請使用其他禮品卡。"
+
+#:  Voucher
+
+msgid "Voucher Sales"
+msgstr "票券出售"
+
+msgid "Total Voucher"
+msgstr "總票券"
+
+msgid "Voucher Number List"
+msgstr "票券號單"
+
+msgid "Bulk Voucher Input"
+msgstr "票券批量導入"
+
+msgid "First Voucher Number"
+msgstr "第一張票券號"
+
+msgid "Last Voucher Number"
+msgstr "最後一張票券號"
+
+msgid "Scan or Enter Voucher Number"
+msgstr "掃描或者輸入票券號"
+
+msgid "Bulk Scan"
+msgstr "批量掃描"
+
+msgid "Voucher Number"
+msgstr "票券號"
+
+msgid "Sell Voucher"
+msgstr "出售票券"
+
+msgid "Invalid Coupons: %@."
+msgstr "無效禮券：%@ 。"
+
+msgid "Duplicated coupon to sell: %@ ."
+msgstr "重複銷售的禮券：%@ 。"
+
+msgid "No matched coupon found for this Voucher."
+msgstr "未能從票券中找到匹配禮券。"
+
+msgid "No coupon to check."
+msgstr "無禮券可檢測。"
+
+msgid "Coupon \"%@\" exists in current order's line item \"%@\"."
+msgstr "禮券 \"%@\" 已被當前 \"%@\" 所使用。"
+
+msgid "Coupon \"%@\" is linked with customer \"%@\", you need to select this customer in order first."
+msgstr "禮券 \"%@\" 屬於客戶 \"%@\"，需要先在訂單中選擇該客戶。"
+
+msgid "Coupon \"%@\" is not redeemable."
+msgstr "禮券 \"%@\" 無法使用"
+
+msgid "No associated listing available for coupon \"%@\"."
+msgstr "當前沒有產品可以被使用於此禮券 \"%@\"。"
+
+msgid "Sorry, you're not allowed to sell voucher."
+msgstr "抱歉，您無權銷售禮券。"
+
+msgid "Please enable voucher feature in admin first."
+msgstr "請先在管理員面板開啟票券特性。"
+
+msgid "Please settle redeem voucher first, then purchase new voucher."
+msgstr "請先兌換禮券。"
+
+msgid "Please settle purchase voucher first, then redeem voucher."
+msgstr "請先購買禮券才可兌換。"
+
+msgid "This voucher is not available in blackout date."
+msgstr "該禮券不在可使用期。"
+
+#:  Switchers
+
+msgid "Scan"
+msgstr "掃描"
+
+msgid "Time Clock"
+msgstr "出勤記錄"
+
+msgid "Pending Orders"
+msgstr "未處理的訂單"
+
+msgid "Stores"
+msgstr "商店列表"
+
+msgid "Switch User"
+msgstr "切換用戶"
+
+msgid "Sign Out"
+msgstr "登出"
+
+#:  Modifier Set
+
+msgid "Fixed Pricing"
+msgstr "固定價錢"
+
+msgid "Variable Pricing"
+msgstr "可變的價錢"
+
+msgid "Auto popup modifier"
+msgstr "自動彈出附加選項"
+
+msgid "Replace Item"
+msgstr "置換產品"
+
+msgid "Automatically show modifier options when the item is added to sale"
+msgstr "被添加到項目銷售時附加選項會自動彈出"
+
+msgid "Modifier Sets"
+msgstr "附加選項"
+
+msgid "TITLE"
+msgstr "名稱"
+
+msgid "ADD"
+msgstr "加收"
+
+msgid "Add"
+msgstr "加收"
+
+msgid "Total Price"
+msgstr "總數"
+
+msgid "Deduct"
+msgstr "減收"
+
+msgid "CHOOSE AT LEAST"
+msgstr "至少選擇"
+
+msgid "CHOOSE UP TO"
+msgstr "最多選擇"
+
+msgid "No option in the list will be chosen by default."
+msgstr "在列表中沒有選項會自動被選取"
+
+msgid "The first option in the list will be chosen by default."
+msgstr "在列表中第一選項會自動被選取"
+
+msgid "The first %d options in the list will be chosen by default."
+msgstr "在列表中最先%d個選項會自動被選取"
+
+msgid "Customers Can Choose the Same Option More Than Once"
+msgstr "客戶可以選擇相同的選項多於一次"
+
+msgid "Duplicated options will be counted as multiple options"
+msgstr "重複選取同一選項會被視為多重選項"
+
+msgid "Sorry, you can only choose up to %@ in this modifier set."
+msgstr "只可在列表中選擇其中%@項"
+
+msgid "APPLY TO"
+msgstr "適用於"
+
+msgid "OPTION"
+msgstr "選項"
+
+msgid "QTY"
+msgstr "數量"
+
+msgid "CHANGE IN PRICE"
+msgstr "價錢影響"
+
+msgid "CREDIT POOL"
+msgstr "加入備用庫"
+
+msgid "Suspend"
+msgstr "暫停"
+
+#:  Cash Management
+
+msgid "No shift yet."
+msgstr "還沒有現金記錄."
+
+msgid "Open Amount"
+msgstr "存放金額"
+
+msgid "Pay In / Pay Out"
+msgstr "收入 / 支出"
+
+msgid "+ Pay In"
+msgstr "+ 收入"
+
+msgid "- Pay Out"
+msgstr "- 支出"
+
+msgid "Pay out amount is over cash in drawer."
+msgstr "支出金額超出錢櫃數額。"
+
+msgid "Expected cash in cash drawer is %@"
+msgstr "預期錢櫃金額為%@"
+
+msgid "Cash Count"
+msgstr "現金數額"
+
+msgid "Final Adjustment"
+msgstr "最後調整"
+
+msgid "Your cash count was exactly as expected."
+msgstr "您的現金數額跟預期一樣。"
+
+msgid "Cash was %@ %@ expected."
+msgstr "現金為%@， %@預期。"
+
+msgid "under"
+msgstr "低於"
+
+msgid "over"
+msgstr "高於"
+
+msgid "(Float %@)"
+msgstr "(浮動金額 %@)"
+
+msgid "Take Out"
+msgstr "取出"
+
+msgid "Open by %@"
+msgstr "由%@打開"
+
+msgid "Details"
+msgstr "詳細"
+
+msgid "No detail yet."
+msgstr "沒有詳細。"
+
+msgid "Cash Sales"
+msgstr "現金銷售"
+
+msgid "Cash Refunds"
+msgstr "現金退款"
+
+msgid "Paid In"
+msgstr "已收入"
+
+msgid "Paid Out"
+msgstr "已支出"
+
+msgid "Expected Amount"
+msgstr "預期金額"
+
+msgid "Open Shift"
+msgstr "開啟現金管理"
+
+msgid "Close Shift"
+msgstr "關閉現金管理"
+
+#:  Switching User
+
+msgid "Please input password"
+msgstr "請輸入密碼"
+
+msgid "Loading Role..."
+msgstr "正在加載權限..."
+
+msgid "Sorry, login failed, please try again."
+msgstr "對不起， 登入失敗， 請再嘗試。"
+
+#:  Time Clock List
+
+msgid "Currently In"
+msgstr "目前登入"
+
+msgid "Currently Out"
+msgstr "目前登出"
+
+msgid "Last seen"
+msgstr "結束於"
+
+msgid "Edit Workshift"
+msgstr "修改出勤記錄"
+
+#:  Clock In
+
+msgid "Enter PIN"
+msgstr "輸入簡易密碼"
+
+msgid "Enter Password"
+msgstr "輸入密碼"
+
+msgid "Clock In"
+msgstr "開始打卡"
+
+msgid "Clock Out"
+msgstr "結束打卡"
+
+#:  Feedback
+
+msgid "Please enter your comment or report issue."
+msgstr "我們很重視您的意見和反饋，請輸入您對Bindo POS的意見或者反饋。"
+
+#:  Delivery
+
+msgid "Delivery Note"
+msgstr "送貨單"
+
+msgid "Delivery Address"
+msgstr "送貨地址"
+
+msgid "Delivery Address:"
+msgstr "送貨地址:"
+
+msgid "Delivery Date"
+msgstr "送貨日期"
+
+msgid "Choose Address"
+msgstr "選擇地址"
+
+msgid "Pick Up"
+msgstr "自行提取"
+
+msgid "Overdue"
+msgstr "逾時"
+
+msgid "Dine In"
+msgstr "堂食"
+
+msgid "Dine-in (unassigned)"
+msgstr "堂食（沒有台號)"
+
+msgid "Are you sure to clean cached delivery note template?"
+msgstr "確定要清理保存的送貨單模板嗎?"
+
+#:  Customer Selection
+
+msgid "Customer Details"
+msgstr "客戶詳細信息"
+
+msgid "New Customer"
+msgstr "新建一個用戶"
+
+msgid "Edit Customer"
+msgstr "編輯客戶信息"
+
+msgid "Customer Highlights"
+msgstr "客戶重要信息"
+
+msgid "Average Amount"
+msgstr "平均消費金額"
+
+msgid "Lmsgid ast Visit"
+msgstr "最後一次購物"
+
+msgid "Average Visit"
+msgstr "平均購物次數"
+
+msgid "Total Spent"
+msgstr "消費總額"
+
+msgid "Reward Status"
+msgstr "獎勵信息"
+
+msgid "Available Points"
+msgstr "可用點數"
+
+msgid "Life Time Points"
+msgstr "累計點數"
+
+msgid "Redeemed Points"
+msgstr "已兌現的點數"
+
+msgid "Redemptions"
+msgstr "兌現次數"
+
+msgid "Last Redemption"
+msgstr "最後一次兌現"
+
+msgid "Qualified Rewards"
+msgstr "滿足的獎勵"
+
+msgid "Sorry, current user does not hit any reward."
+msgstr "當前用戶沒有滿足任何獎勵。"
+
+msgid "Are you sure that %@ will redeem %@? This is added to store credit."
+msgstr "您確定給%@兌現獎勵嗎？兌現的獎勵將會加入商店代幣。"
+
+msgid "Select Available Reward"
+msgstr "選擇可兌現的獎勵"
+
+msgid "Tier %d"
+msgstr "等級 %d"
+
+msgid "%@ Store Credit"
+msgstr "%@ 商店代幣"
+
+msgid "Redeem"
+msgstr "兌現"
+
+msgid "Membership Level"
+msgstr "會員等級"
+
+#:  Payment
+
+msgid "Tender"
+msgstr "付款"
+
+msgid "Split Tender"
+msgstr "拆分付款"
+
+msgid "First Payment"
+msgstr "第一種支付方式"
+
+msgid "Second Payment"
+msgstr "第二種支付方式"
+
+msgid "Third Payment"
+msgstr "第三種支付方式"
+
+msgid "Split Amount"
+msgstr "拆分金額"
+
+msgid "Card on File"
+msgstr "保存的信用卡"
+
+msgid "Transaction not find."
+msgstr "找不到交易記錄"
+
+#: Other Payments
+msgid "Others"
+msgstr "其它"
+
+msgid "Select Payment Type"
+msgstr "選擇支付方式"
+
+msgid "We cannot detect your credit card correctly, please try again."
+msgstr "不能檢測到信用卡，請重試。"
+
+msgid "Sorry, you need to turn on Store credit feature in settings page first."
+msgstr "您需要先在設定裡開啟商店代幣功能。"
+
+msgid "Your current gift card balance is $0.00, please use other payment."
+msgstr "這張禮品卡餘額為零，請使用其他支付方式。"
+
+msgid "The gift card doesn't have sufficient balance, would you like split payment?"
+msgstr "這張禮品卡餘額不足，使用拆分付款方式嗎？"
+
+msgid "Sorry, Store Credit payment not available for current customer. Please use other payment."
+msgstr "當前客戶不能使用商店代幣付款，請使用其他付款方式。"
+
+msgid "Store Updated"
+msgstr "更新商店"
+
+msgid "The store has been updated."
+msgstr "商店已被更新。"
+
+#:  Send Receipt
+
+msgid "Payment Receipt"
+msgstr "已付款收據"
+
+msgid "Email or print receipt"
+msgstr "發送郵件或者打印收據"
+
+msgid "Print Gift Receipt"
+msgstr "打印禮品收據"
+
+msgid "Refund Receipt"
+msgstr "退款收據"
+
+msgid "Tips: "
+msgstr "小費： "
+
+msgid "Total: "
+msgstr "總額： "
+
+msgid "Order of %@%.2f is completed."
+msgstr "完成 %@%.2f 訂單"
+
+msgid "Order Refunded."
+msgstr "訂單已退款。"
+
+msgid "View Order"
+msgstr "查看訂單"
+
+msgid "Fetching order detail..."
+msgstr "正在加載訂單詳情..."
+
+msgid "Enter email address"
+msgstr "輸入電郵地址"
+
+msgid "Order of %@$%.2f is completed."
+msgstr "這筆%@￥%.2f的訂單已完成。"
+
+msgid "No Default Printer"
+msgstr "沒有默認打印機"
+
+msgid "Assign Department"
+msgstr "設置部門"
+
+msgid "Assign Backup Printer"
+msgstr "設置備用打印機"
+
+msgid "Printer Setting"
+msgstr "打印機設定"
+
+msgid "Printer Setting Enabled"
+msgstr "啟用打印機設定"
+
+msgid "Please set up the default printer in settings."
+msgstr "請在設置頁面連接打印機。"
+
+msgid "The default printer is disconnected. Please set up the default printer in settings again when it is ready."
+msgstr "默認打印機已斷開連接，請在設置頁面重新連接。"
+
+msgid "Unknown error occurs."
+msgstr "發生未知錯誤。"
+
+#:  Edit Line Item
+
+msgid "Edit Line Item"
+msgstr "編輯項目"
+
+msgid "Tax Rate"
+msgstr "稅率"
+
+msgid "Sales Associates"
+msgstr "出納員"
+
+msgid "Overwrite Price"
+msgstr "重新定價"
+
+msgid "Add Serial Number"
+msgstr "添加序列號"
+
+msgid "Add Later"
+msgstr "稍後添加"
+
+msgid "New Price"
+msgstr "新的價格"
+
+msgid "Please enter notes."
+msgstr "請寫註釋"
+
+msgid "Original Price: %@"
+msgstr "原始價格: %@"
+
+msgid "Scan or enter serial number"
+msgstr "掃描或者輸入序列號"
+
+msgid "Sorry, you've already added serial number \"%@\" to listing \"%@\"."
+msgstr "商品已經包含這個序列號。"
+
+msgid "Sorry, invalid serial number."
+msgstr "無效的序列號。"
+
+msgid "Are you sure to cancel add serial number? This item will be removed from the list."
+msgstr "這個操作會把這個商品從購物列表裡刪除，您確定要需要添加序列號？"
+
+msgid "Enter Amount"
+msgstr "輸入金額"
+
+#:  Good Recieve Notes
+
+msgid "SUPPLIER"
+msgstr "供應商"
+
+msgid "GRN NUMBER"
+msgstr "GRN號碼"
+
+msgid "REFERENCE NUMBER"
+msgstr "參考編號"
+
+msgid "DELIVERY RECEIVED"
+msgstr "參考編號收貨日期"
+
+msgid "RECEIVED BY"
+msgstr "收貨人"
+
+msgid "ORDERED"
+msgstr "已下單"
+
+msgid "RECEIVED"
+msgstr "已接收"
+
+msgid "COST"
+msgstr "成本"
+
+msgid "REMAINING"
+msgstr "剩餘"
+
+msgid "ADDED PURCHASE ORDER"
+msgstr "已增加訂單"
+
+msgid "ADDED PURCHASE ORDERS"
+msgstr "已增加訂單"
+
+msgid "DATE＆TIME"
+msgstr "日期和時間"
+
+msgid "DESCRIPTION"
+msgstr "商品簡介"
+
+msgid "USER"
+msgstr "用戶"
+
+msgid "STATUS"
+msgstr "狀態"
+
+msgid "QTY RECEIVED"
+msgstr "已接受"
+
+msgid "Mark As Received"
+msgstr "標記為已接收"
+
+msgid "Edited"
+msgstr "已更改"
+
+msgid "Received"
+msgstr "已接收"
+
+msgid "Then simply scan the items"
+msgstr "可開始掃描項目"
+
+#:  Stock Transfer
+
+msgid "DEPARTING STORE"
+msgstr "出貨店"
+
+msgid "RECEIVING STORE"
+msgstr "接收店"
+
+msgid "TOTAL ITEMS"
+msgstr "縂件數"
+
+msgid "OUT"
+msgstr "出"
+
+msgid "IN"
+msgstr "入"
+
+msgid "REQUESTED"
+msgstr "要求數量"
+
+msgid "DEPARTED"
+msgstr "已出貨"
+
+msgid "RECEIVED"
+msgstr "已接收"
+
+msgid "APPROVED"
+msgstr "已確認"
+
+msgid "PENDING"
+msgstr "確認中"
+
+msgid "IN TRANSIT"
+msgstr "運送中"
+
+msgid "CANCELED"
+msgstr "已取消"
+
+msgid "FULFILLED"
+msgstr "已收貨"
+
+msgid "Outgoing Stock Transfer"
+msgstr "出的存貨調動"
+
+msgid "Incoming Stock Transfer"
+msgstr "入的存貨調動"
+
+msgid "Choose from Inventory"
+msgstr "從庫存選擇"
+
+msgid "IN STOCK"
+msgstr "庫存"
+
+#:  Inventory
+
+msgid "No Modifier Set"
+msgstr "沒有附加選項。"
+
+msgid "Filter"
+msgstr "過濾"
+
+msgid "Select Brand"
+msgstr "選擇品牌"
+
+msgid "Sold Out"
+msgstr "售罄"
+
+msgid "Select Category"
+msgstr "選擇類別"
+
+msgid "Select Supplier"
+msgstr "選擇供應商"
+
+msgid "Multiple Brands"
+msgstr "多個品牌"
+
+msgid "Multiple Categories"
+msgstr "多個類別"
+
+msgid "Multiple Suppliers"
+msgstr "多個供應商"
+
+msgid "All Brands"
+msgstr "所有品牌"
+
+msgid "All Categories"
+msgstr "所有類別"
+
+msgid "All Suppliers"
+msgstr "所有供應商"
+
+msgid "Custome Attribute"
+msgstr "自定義屬性"
+
+msgid "Custome Attributes"
+msgstr "自定義屬性"
+
+msgid "Multiple Custom Attributes"
+msgstr "多個自定義屬性"
+
+msgid "Clean"
+msgstr "清除"
+
+msgid "No Attribute."
+msgstr "没有特性。"
+
+msgid "Get productImage failed: %@"
+msgstr "獲取產品圖片失敗: %@"
+
+msgid "Set productImage default failed: %@"
+msgstr "設置默認產品圖片失敗: %@"
+
+msgid "Create New Brand"
+msgstr "新建品牌"
+
+msgid "Create New Category"
+msgstr "新建分類"
+
+msgid "In Store Only"
+msgstr "只在商店"
+
+msgid "Discontinued"
+msgstr "已終止"
+
+msgid "Exempt item from loyalty program"
+msgstr "不計入顧客忠誠計劃"
+
+msgid "Exempt item from discount"
+msgstr "不計入任何折扣"
+
+msgid "Allow Decimal"
+msgstr "允許小數位"
+
+msgid "Report Image"
+msgstr "舉報圖片"
+
+msgid "Still uploading! try later."
+msgstr "正在上傳，請稍後。"
+
+msgid "You can't delete default product image!"
+msgstr "您不能刪除默認產品圖片！"
+
+msgid "Multiple Discounts"
+msgstr "多重折扣"
+
+msgid "Remove Supplier"
+msgstr "刪除供應商"
+
+msgid "Supplier Product ID"
+msgstr "供應商產品ID	"
+
+msgid "Reorder Trigger Point"
+msgstr "訂購觸發數量"
+
+msgid "Reorder Amount"
+msgstr "訂購數量"
+
+msgid "Margin cannot be 100% when cost is not zero."
+msgstr "當成本為零時利潤不能為100%."
+
+msgid "Invalid Supplier Product ID."
+msgstr "無效的供應商產品ID"
+
+msgid "Add other supplier for this item"
+msgstr "增加一個其他供應商"
+
+msgid "Default Supplier"
+msgstr "默認供應商"
+
+msgid "Other Supplier"
+msgstr "其他供應商"
+
+msgid "Mandate serial number for this product"
+msgstr "這個商品需要使用序列號才能購買"
+
+msgid "* You will be required to enter serial number during checkout.\n* Quantity of this product will equal to the number of serial number entered."
+msgstr "* 在購買此商品時您需要輸入序列號。 \n* 商品的數量會變成序列號的數量。"
+
+msgid "Type"
+msgstr "類型"
+
+msgid "Add new attribute"
+msgstr "增加新特性"
+
+msgid "E.g. Size"
+msgstr "例如：尺寸"
+
+msgid "E.g. Small"
+msgstr "例如：小"
+
+msgid "This listing is not available in this document"
+msgstr "此產品於此文件中不存在"
+
+msgid "Matrix"
+msgstr "群組"
+
+msgid "No Matrix."
+msgstr "沒有群組."
+
+msgid "Total variants: "
+msgstr "特性總數: "
+
+msgid "Attributes"
+msgstr "特性"
+
+msgid "Values"
+msgstr "值"
+
+msgid "No Sales History."
+msgstr "沒有銷售記錄。"
+
+msgid "Total Items: "
+msgstr "總件數: "
+
+msgid "Avg. Profit: "
+msgstr "平均利潤: "
+
+msgid "Sales / Purchase Order"
+msgstr "訂單"
+
+msgid "Qty Delta"
+msgstr "數量變化"
+
+msgid "Latest Qty"
+msgstr "最新數量"
+
+msgid "Add Inventory"
+msgstr "新增商品"
+
+msgid "g"
+msgstr "克"
+
+msgid "kg"
+msgstr "公斤"
+
+msgid "oz"
+msgstr "安士"
+
+msgid "lb"
+msgstr "磅"
+
+msgid "catty"
+msgstr "斤"
+
+msgid "Gram (g)"
+msgstr "克"
+
+msgid "Kilogram (kg)"
+msgstr "公斤"
+
+msgid "Ounce (oz)"
+msgstr "安士"
+
+msgid "Pound (lb)"
+msgstr "磅"
+
+msgid "Catty"
+msgstr "斤"
+
+msgid "Weight"
+msgstr "重量"
+
+msgid "Please set up decimal inventory quantity in Settings / Add-on before use pricing by weight option"
+msgstr "請先到設定/插件/打開 "允許小數點庫存數量" 設定後，才可使用重量定價"
+
+msgid "Scan or enter UPC/EAN/GTIN code if available"
+msgstr "掃描或者輸入UPC/EAN/GTIN碼"
+
+msgid "We'll enter the info for you."
+msgstr "我們會為您自動輸入產品信息。"
+
+msgid "Enter UPC here"
+msgstr "輸入UPC"
+
+msgid "No UPC/EAN/GTIN code?"
+msgstr "沒有UPC/EAN/GTIN嗎?"
+
+msgid "Enter info manually"
+msgstr "手動輸入產品信息"
+
+msgid "This item already in Inventory"
+msgstr "此商品已在庫存中"
+
+msgid "%@ is not a valid UPC or EAN barcode, Would you like to save it as Custom Item?"
+msgstr "%@ 是無效的 UPC 或者 EAN 編碼, 您想要把它當作自定義商品嗎?"
+
+msgid "Edit Group"
+msgstr "編輯產品租"
+
+msgid "Create Matrix"
+msgstr "創建群組"
+
+msgid "Edit Matrix"
+msgstr "編輯群組"
+
+msgid "Print Label"
+msgstr "打印條形碼標籤"
+
+msgid "Print Secondary Label"
+msgstr "打印從屬條形碼標籤"
+
+msgid "Report Product Info"
+msgstr "舉報產品信息"
+
+msgid "Code: %@"
+msgstr "編碼: %@"
+
+msgid "Reference Code"
+msgstr "參考碼"
+
+msgid "Untitled Product - %@"
+msgstr "無標題的商品 - %@"
+
+msgid "Create New Department"
+msgstr "新建部門"
+
+msgid "Add this department to loyalty program"
+msgstr "把這個部門加入顧客忠誠計劃"
+
+msgid "Department title"
+msgstr "部門名字"
+
+msgid "Are you sure to delete the department: %@"
+msgstr "您確定移除這個部門: %@"
+
+#:  Customer
+
+msgid "Manual Adjustment"
+msgstr "手動調整"
+
+msgid "No Customer Yet"
+msgstr "没有客户"
+
+msgid "Sorry, you need to turn on Store credit feature in settings page first."
+msgstr "對不起，您需要先在設定裡開啟商店代幣功能。"
+
+msgid "Swiped an invalid gift card."
+msgstr "無效的禮品卡"
+
+msgid "The gift card is not linked"
+msgstr "這張禮品卡沒有被使用。"
+
+msgid "Failed to send the report."
+msgstr "發送報表失敗。"
+
+msgid "Add New Address"
+msgstr "添加地址"
+
+msgid "Special Discount"
+msgstr "特殊折扣"
+
+msgid "Enter note here."
+msgstr "在這裡輸入註釋。"
+
+msgid "Available Addresses"
+msgstr "可用地址"
+
+msgid "Default Shipping Address"
+msgstr "默認送貨地址"
+
+msgid "Default Billing Address"
+msgstr "默認賬單地址"
+
+msgid "Default Billing And Shipping Address"
+msgstr "默認送貨和賬單地址"
+
+msgid "Address"
+msgstr "地址"
+
+msgid "Total Spent:"
+msgstr "消費總額:"
+
+msgid "Total Order:"
+msgstr "總訂單數:"
+
+msgid "Product Sold"
+msgstr "產品銷售量"
+
+msgid "Purchased Items"
+msgstr "購買記錄"
+
+msgid "No Purchase Item Yet."
+msgstr "沒有購買記錄。"
+
+msgid "Link Gift Card To This Profile"
+msgstr "為這位客戶創建一張禮品卡"
+
+msgid "Link A Different Gift Card To This Profile"
+msgstr "為這位客戶創建另一張禮品卡"
+
+msgid "The customer already linked with %@."
+msgstr "這位客戶已經與 %@ 相關聯。"
+
+msgid "Are you sure to link this account to a different gift card? Your old card will be suspended immediately."
+msgstr "確認將此賬戶關聯到另一張禮品卡？舊的禮品卡將會立即失效。"
+
+msgid "Link Gift Card Confirmation"
+msgstr "禮品卡關聯確認"
+
+msgid "Link Gift Card Success!"
+msgstr "關聯禮品卡成功！"
+
+msgid "Store Credit History"
+msgstr "商店代幣消費記錄"
+
+msgid "No Store Credit History."
+msgstr "沒有商店代幣消費記錄。"
+
+msgid "Earn / Redeem"
+msgstr "獲得 / 兌現"
+
+msgid "No Loyalty History"
+msgstr "沒有忠誠度記錄。"
+
+msgid "Last Redeemed"
+msgstr "最近一次兌現"
+
+msgid "Adjusted by: %@"
+msgstr "被%@調整"
+
+msgid "Created by"
+msgstr "創建者"
+
+#:  Gift Card
+
+msgid "Are you sure to suspend this gift card? This action can not be reverted."
+msgstr "您確定暫停這張禮品卡？這個操作不能還原。"
+
+msgid "Linked"
+msgstr "已被使用"
+
+msgid "Suspended"
+msgstr "已被暫停"
+
+msgid "Card Number"
+msgstr "卡號"
+
+msgid "Current Balance"
+msgstr "餘額"
+
+msgid "Spent"
+msgstr "消費總額"
+
+msgid "Purchased At:"
+msgstr "購買日期:"
+
+msgid "History"
+msgstr "歷史記錄"
+
+msgid "Total Spent:"
+msgstr "消費總額:"
+
+msgid "Transfer Gift Card"
+msgstr "轉讓禮品卡"
+
+msgid "Cannot select the same gift card"
+msgstr "不能選擇同一張禮品卡"
+
+msgid "Cannot select a gift card which is suspended or linked to another customer"
+msgstr "不能選擇已經被暫停或者被其他客戶使用的禮品卡"
+
+msgid "Transfer Gift Card - Confirmation"
+msgstr "轉讓禮品卡 - 確認"
+
+msgid "Are you sure to transfer this gift card of %@ to the following customer?"
+msgstr "您確定轉讓這張禮品卡%@給以下的客戶？"
+
+msgid "Are you sure to transfer this gift card of %@ to the following gift card?"
+msgstr "您確定轉讓這張禮品卡%@去以下的禮品卡？"
+
+msgid "Gift Card Is Successfully Suspended!"
+msgstr "這張禮品卡已被暫停！"
+
+msgid "Gift Card Transfer Success!"
+msgstr "這張禮品卡已被轉移!"
+
+#:  Order
+
+msgid "Receipt"
+msgstr "發票"
+
+msgid "Loading order detail..."
+msgstr "正在加載訂單詳情..."
+
+msgid "Loading orders..."
+msgstr "加載訂單..."
+
+msgid "Confirm Availability"
+msgstr "確認有效"
+
+msgid "Mark as Picked Up"
+msgstr "已自提"
+
+msgid "Mark as Delivered"
+msgstr "已送達"
+
+msgid "Enter Pickup Code"
+msgstr "已送達輸入應答碼"
+
+msgid "Append Signature"
+msgstr "補充簽名"
+
+msgid "Issue Refund"
+msgstr "退款"
+
+msgid "Duplicate Receipt"
+msgstr "打印收據"
+
+msgid "Submitting refund..."
+msgstr "正在提交退款..."
+
+msgid "Tap an item on this receipt to refund or refund all items of this receipt"
+msgstr "在收據上點擊一個商品進行退款, 或者選擇全額退款。"
+
+msgid "Refund All"
+msgstr "全額退款"
+
+msgid "Submit Refund"
+msgstr "提交退款"
+
+msgid "Back to Orders"
+msgstr "回到訂單詳情"
+
+msgid "Submit Refund (%@)"
+msgstr "提交退款(%@)"
+
+msgid "Order #: %@"
+msgstr "訂單號: %@"
+
+msgid "Cashier: %@"
+msgstr "收銀員: %@"
+
+msgid "From: WEB"
+msgstr "來自: WEB"
+
+msgid "From: POS"
+msgstr "來自: POS"
+
+msgid "Customer: %@"
+msgstr "客户: %@"
+
+msgid "State: %@"
+msgstr "狀態: %@"
+
+msgid "Delivery Address: %@"
+msgstr "送貨地址: %@"
+
+msgid "Delivery Date: %@"
+msgstr "送貨日期: %@"
+
+msgid "Phone Number: %@"
+msgstr "電話號碼: %@"
+
+msgid "Delivery Notes: %@"
+msgstr "送貨註釋: %@"
+
+msgid "Partial Refund"
+msgstr "部分退款"
+
+msgid "Full Refund"
+msgstr "全額退款"
+
+msgid "Add Sales Notes"
+msgstr "添加銷售註釋"
+
+msgid "Sales: %@"
+msgstr "出納員: %@"
+
+msgid "Regular Price: %@"
+msgstr "原價: %@"
+
+msgid "Serial Number: %@"
+msgstr "序列號: %@"
+
+msgid "Refund on %@ at %@"
+msgstr "已退款 %@ 日期 %@"
+
+msgid "%@ via %@"
+msgstr "%@，方式: %@"
+
+msgid "%@ Payment"
+msgstr "%@付款方式"
+
+msgid "Cardholder"
+msgstr "＝持卡人"
+
+msgid "Transaction Type"
+msgstr "交易類型"
+
+msgid "Transaction Time"
+msgstr "交易時間"
+
+msgid "Approval Code"
+msgstr "授權碼"
+
+msgid "Entry Mode"
+msgstr "進入模式"
+
+msgid "Change Due"
+msgstr "找零"
+
+msgid "No Sales Yet."
+msgstr "還沒有發票。"
+
+msgid "Paid"
+msgstr "付款"
+
+msgid "New Refund"
+msgstr "新的退款"
+
+msgid "New Product Refund"
+msgstr "新的商品退款"
+
+msgid "New Tax Refund"
+msgstr "新的稅額退款"
+
+msgid "New Total Refund"
+msgstr "新的退款總額"
+
+msgid "Refund Confirmation"
+msgstr "退款確認"
+
+msgid "Refund Method"
+msgstr "退款方式"
+
+msgid "Choose Refund Method"
+msgstr "選擇退款方式"
+
+msgid "Original Payment"
+msgstr "原始付款方式"
+
+msgid "Refund Reason"
+msgstr "退款原因"
+
+msgid "Enter refund reason here."
+msgstr "請在這裡輸入退款原因。"
+
+msgid "Are you sure to issue refund %@ to original method of payment?"
+msgstr "您確定退款%@到原始的付款方式？"
+
+msgid "Are you sure to issue refund %@ to store credit?"
+msgstr "您確定退款%@到商店代幣？"
+
+msgid "Refund To Store Credit"
+msgstr "退款到商店代幣"
+
+msgid "Are you sure to issue refund this order?"
+msgstr "您確定要為這個訂單進行退款嗎？"
+
+msgid "Refund Amount"
+msgstr "退款金額"
+
+msgid "Refund up to %@"
+msgstr "最多退%@"
+
+msgid "Credit Card Not Present"
+msgstr "没有保存的信用卡"
+
+msgid "Are you sure to issue refund %@ to original method of payment and store credit?"
+msgstr "您確定退款%@到原來的付款方式和商店代幣嗎？"
+
+#:  Discount
+
+msgid "Discount Code"
+msgstr "折扣代碼"
+
+msgid "$ Discount"
+msgstr "￥ 折扣"
+
+msgid "No $ Discount yet"
+msgstr "还没有 ￥ 折扣"
+
+msgid "% Discount"
+msgstr "% 折扣"
+
+msgid "No % Discount yet"
+msgstr "还没有 % 折扣"
+
+msgid "New Discount"
+msgstr "新增折扣"
+
+msgid "Regular Discount"
+msgstr "常規折扣"
+
+msgid "Mix & Match Discount"
+msgstr "混合搭配折扣"
+
+msgid "New % Discount"
+msgstr "新的 % 折扣"
+
+msgid "New $ Discount"
+msgstr "新的 ￥ 折扣"
+
+msgid "Discount Title"
+msgstr "折扣標題"
+
+msgid "Percentage Off Amount"
+msgstr "百分比折扣"
+
+msgid "Dollar Off Amount"
+msgstr "折扣金額"
+
+msgid "Multiple Departments"
+msgstr "多個部門"
+
+msgid "Multiple Products"
+msgstr "多個商品"
+
+msgid "Deduct Tax Base"
+msgstr "計算稅額"
+
+msgid "Automatically apply discount"
+msgstr "自動使用折扣"
+
+msgid "Percentage Off"
+msgstr "百分比折扣"
+
+msgid "Percentage Off:"
+msgstr "百分比折扣:"
+
+msgid "Amount Off"
+msgstr "數額折扣"
+
+msgid "Amount Off:"
+msgstr "數額折扣:"
+
+msgid "Group Name"
+msgstr "組名"
+
+msgid "Qty Required"
+msgstr "需要的數量"
+
+msgid "Enter % discount"
+msgstr "輸入%折扣"
+
+msgid "Enter $ discount"
+msgstr "輸入￥折扣"
+
+msgid "Please check if sales tax applies to the discounted amount.(E.g. Manufaturer Coupon)"
+msgstr "請先檢查稅額是否算入折扣數額（比如，製造商禮券）"
+
+msgid "Products or Departments"
+msgstr "商品或者部門"
+
+msgid "Department or Product"
+msgstr "商品或者部門"
+
+msgid "Duration"
+msgstr "持續時間"
+
+msgid "Selected Products"
+msgstr "選擇的商品"
+
+msgid "Unit Price"
+msgstr "單價"
+
+msgid "Discount title"
+msgstr "折扣標題"
+
+msgid "Deduct Tax Base. Checked if this is a store coupon / discount. Unchecked if this is a manufacturer coupon."
+msgstr "如果有商店禮券或者折扣，勾選。如果這是製造商禮券，請不要勾選。"
+
+msgid "You can choose 1 or more department or product"
+msgstr "您可以選擇一個或者多個部門或者產品"
+
+msgid "Select None"
+msgstr "取消選擇"
+
+msgid "Select All"
+msgstr "選擇全部"
+
+msgid "Discount Duration"
+msgstr "折扣持續時間"
+
+msgid "Starts"
+msgstr "開始於"
+
+msgid "Ends"
+msgstr "結束於"
+
+msgid "Select Product"
+msgstr "選擇商品"
+
+msgid "Select Department"
+msgstr "選擇部門"
+
+msgid "The Date Range must start and end on today or later."
+msgstr "日期範圍必須開始或者結束於今天或晚於今天。"
+
+msgid "Start Date must be today or later."
+msgstr "開始日期必須不能早於今天。"
+
+msgid "The End Date must be on or after the Start Date."
+msgstr "結束日期不能早於今天或開始日期。"
+
+#:  Supplier
+
+msgid "Generate Purchase Order"
+msgstr "創建訂貨單"
+
+msgid "All Products"
+msgstr "全部商品"
+
+msgid "Products Below Reorder Qty"
+msgstr "數量低於重新訂購數的商品"
+
+msgid "Total Product:"
+msgstr "總商品數:"
+
+msgid "Products Required Reordering:"
+msgstr "需要訂購的商品數量:"
+
+msgid "Current Stock Value:"
+msgstr "當前庫存:"
+
+msgid "New P.O. Cost:"
+msgstr "新的訂購單成本:"
+
+msgid "No Product Yet."
+msgstr "還沒有商品需要訂購。"
+
+msgid "Reorder Point"
+msgstr "訂購觸發數量"
+
+#:  Purchase Order
+
+msgid "Fulfill"
+msgstr "收貨"
+
+msgid "Fulfill All"
+msgstr "全部收貨"
+
+msgid "Edit Goods Received Note"
+msgstr "編輯收貨單"
+
+msgid "New Goods Received Note"
+msgstr "新收貨單"
+
+msgid "No Goods Received Note"
+msgstr "沒有收貨單。"
+
+msgid "Goods Received Note"
+msgstr "收貨單"
+
+msgid "P.O. History"
+msgstr "訂購單歷史"
+
+msgid "P.O. Number"
+msgstr "訂購單號"
+
+msgid "Payment Status"
+msgstr "付款狀態"
+
+msgid "Payment Method"
+msgstr "支付方式"
+
+msgid "Expect Delivery Date"
+msgstr "預計交貨日期"
+
+msgid "Payment Due"
+msgstr "付款到期"
+
+msgid "Remarks:"
+msgstr "摘要:"
+
+msgid "Remarks"
+msgstr "摘要"
+
+msgid "Paid via Other"
+msgstr "其他支付"
+
+msgid "Others:"
+msgstr "其他:"
+
+msgid "No pictures"
+msgstr "沒有圖片"
+
+msgid "PO#:"
+msgstr "訂購單號:"
+
+msgid "Created at:"
+msgstr "創建時間:"
+
+msgid "Created by:"
+msgstr "創建者:"
+
+msgid "Status:"
+msgstr "狀態:"
+
+msgid "In Stock: %@"
+msgstr "庫存: %@"
+
+msgid "Product ID: %@"
+msgstr "商品ID: %@"
+
+msgid "Order Qty"
+msgstr "訂購數量"
+
+msgid "This supplier has items below the reorder trigger point. Add these items to the PO?"
+msgstr "這個供應商有低於需要重新訂購的商品，需要訂購這些嗎？"
+
+msgid "Purchase Orders"
+msgstr "訂購單"
+
+msgid "Purchase Order"
+msgstr "訂購單"
+
+msgid "No photos."
+msgstr "没有照片。"
+
+msgid "Submit via Email"
+msgstr "通過郵件提交"
+
+msgid "Resubmit via Email"
+msgstr "通過郵件重新提交"
+
+msgid "Mark as Submitted"
+msgstr "標記為已提交"
+
+msgid "Mark as Fulfilled"
+msgstr "標記為已完成"
+
+msgid "Mark as Cancelled"
+msgstr "標記為已取消"
+
+msgid "Skip Email"
+msgstr "略過郵件"
+
+msgid "Add Misc"
+msgstr "添加雜項"
+
+"Select supplier here"
+msgstr "選擇供應商"
+
+msgid "Created"
+msgstr "已創建"
+
+msgid "Submitted"
+msgstr "已提交"
+
+msgid "Fulfilled"
+msgstr "已入庫"
+
+msgid "Cancelled"
+msgstr "已取消"
+
+msgid "Are you confirm send purchase order to %@"
+msgstr "您確定要發送這張訂購單給%@嗎？"
+
+msgid "Are you confirm send purchase order?"
+msgstr "確定要發送這張訂購單嗎?"
+
+msgid "Are you sure you want to cancel the purchase order?"
+msgstr "您確定要取消這張訂購單嗎?"
+
+msgid "Print"
+msgstr "打印"
+
+msgid "Print Qty"
+msgstr "打印數量"
+
+msgid "Parent item with 2+ attributes does not support matrix box, please choose child items."
+msgstr "含有2個以上屬性的父項不支持矩陣編輯，請選擇子項。"
+
+#:  Invoice
+
+msgid "Effective Date"
+msgstr "生效日期"
+
+msgid "Tap Here to Add Signature"
+msgstr "點擊此處添加簽名"
+
+msgid "Fulfill Delivery Order"
+msgstr "履行送貨訂單"
+
+msgid "No Delivery Note"
+msgstr "沒有送貨單"
+
+msgid "Delivery Notes"
+msgstr "送貨單"
+
+msgid "New Delivery Note"
+msgstr "新送貨單"
+
+msgid "Invoices"
+msgstr "訂單"
+
+msgid "Invoice Filter"
+msgstr "訂單篩選"
+
+msgid "Are you sure to void payments in 24hrs for this invoice?"
+msgstr "確認要取消此訂單的付款記錄？"
+
+msgid "Are you sure you want to void this %@ (irreversible)?"
+msgstr "確認要使此訂單作廢嗎？這是不可逆的決定。"
+
+msgid "Are you sure to void payment?"
+msgstr "確認要取消此訂單的付款記錄？"
+
+msgid "New Quote"
+msgstr "添加報價單"
+
+msgid "New Invoice"
+msgstr "添加訂單"
+
+msgid "Send Invoicemsgid "
+msgstr "發送訂單"
+
+msgid "Full Payment"
+msgstr "全額付款"
+
+msgid "Partial Payment"
+msgstr "部分付款"
+
+msgid "Table No."
+msgstr "台號"
+
+msgid "Table No:"
+msgstr "台號:"
+
+msgid "Cover "
+msgstr "人數 "
+
+msgid "Cover  "
+msgstr "人數  "
+
+msgid "Send Quote"
+msgstr "發送報價單"
+
+msgid "Change Payment Method"
+msgstr "更改支付方式"
+
+msgid "Void Payment"
+msgstr "使付款無效"
+
+msgid "Air Print"
+msgstr "Air Print"
+
+msgid "Clean Cached Invoice Template"
+msgstr "清除訂單模板"
+
+msgid "You must Void Payment before Void Invoice"
+msgstr "取消訂單前需要先取消支付"
+
+msgid "Convert Quote to Invoice"
+msgstr "把報價單轉成訂單"
+
+msgid "Go To Sales"
+msgstr "去訂單詳情"
+
+msgid "Are you sure you want to cancel this %@"
+msgstr "您確定要取消這張%@嗎？"
+
+msgid "Quote"
+msgstr "報價單"
+
+msgid "QUOTE"
+msgstr "報價單"
+
+msgid "Invoice"
+msgstr "訂單"
+
+msgid "INVOICE"
+msgstr "訂單"
+
+msgid "Expired"
+msgstr "已過期"
+
+msgid "Active"
+msgstr "有效"
+
+msgid "Unpaid"
+msgstr "未付款"
+
+msgid "Voided"
+msgstr "已作廢"
+
+msgid "Partial Paid"
+msgstr "部分已付款"
+
+msgid "Unfulfilled"
+msgstr "未取貨"
+
+msgid "Overdue"
+msgstr "已逾期"
+
+msgid "Bill To"
+msgstr "賬單地址"
+
+msgid "Ship To"
+msgstr "送貨地址"
+
+msgid "Reference Number"
+msgstr "參考號碼"
+
+msgid "Created By"
+msgstr "創建者"
+
+msgid "CREATED BY"
+msgstr "創建者"
+
+msgid "Created At"
+msgstr "創建時間"
+
+msgid "Refund Qty"
+msgstr "退貨數量"
+
+msgid "Courier"
+msgstr "送遞者"
+
+msgid "Shipping Method"
+msgstr "送遞方式"
+
+msgid "Countdown"
+msgstr "剩下時間"
+
+msgid "Fulfillment Type"
+msgstr "送貨狀態"
+
+msgid "Due Date"
+msgstr "逾期日"
+
+msgid "Amount Left: %@"
+msgstr "未付款金額: %@"
+
+msgid "Paid: %@"
+msgstr "已付: %@"
+
+msgid "Invalid Due Date"
+msgstr "無效的逾期日期"
+
+msgid "Partial Payment"
+msgstr "部分付款"
+
+msgid "Order amount: %@"
+msgstr "訂單金額: %@"
+
+msgid "Log"
+msgstr "記錄"
+
+msgid "Invoice Total"
+msgstr "總訂單金額"
+
+msgid "Owed"
+msgstr "未支付"
+
+msgid "Date & Time"
+msgstr "日期及時間"
+
+msgid "User"
+msgstr "用户"
+
+msgid "Amount Owed"
+msgstr "未支付金額"
+
+msgid "Full Paid"
+msgstr "一次性付款"
+
+#:  Register Shifts
+
+msgid "Register Shifts"
+msgstr "錢櫃記錄"
+
+msgid "Shift"
+msgstr "錢櫃"
+
+msgid "Shifts"
+msgstr "錢櫃記錄"
+
+msgid "Open"
+msgstr "打開的"
+
+#:  Associate
+
+msgid "Time Clock"
+msgstr "出勤記錄"
+
+msgid "Work Hour"
+msgstr "工時"
+
+msgid "Adjustment Note"
+msgstr "調整註釋"
+
+msgid "No Time Clock Yet."
+msgstr "還沒有出勤記錄。"
+
+msgid "Are you sure want to remove this workshift?"
+msgstr "您確定刪除這個出勤記錄?"
+
+msgid "Added By %@"
+msgstr "被%@添加"
+
+msgid "Note: %@"
+msgstr "註釋: %@"
+
+msgid "Adjust Note: %@"
+msgstr "調整註釋: %@"
+
+msgid "Workshift: %@ Time"
+msgstr "出勤: %@時間"
+
+msgid "Total work hour: "
+msgstr "總工時: "
+
+msgid "Edit Workshift"
+msgstr "編輯出勤記錄"
+
+
+#:  daily closing
+msgid Daily Closing"
+msgstr "日結"
+
+msgid "Paid Bills"
+msgstr "已支付賬單"
+
+msgid "Unpaid Bills"
+msgstr "未支付賬單"
+
+msgid "Partial Paid Bills"
+msgstr "部分支付賬單"
+
+msgid "Receivable Invoice:"
+msgstr "待收訂單:"
+
+msgid "Refunded Invoice:"
+msgstr "退款訂單:"
+
+msgid "Clocked In"
+msgstr "打卡上班"
+
+msgid "Clocked Out"
+msgstr "打卡下班"
+
+#:  Reports
+
+msgid "Reports"
+msgstr "報表"
+
+msgid "Export Report"
+msgstr "導出報表"
+
+msgid "Sales Report"
+msgstr "銷售報表"
+
+msgid "Sales Summary Report"
+msgstr "銷售摘要報表"
+
+msgid "Current internet connection is slow, please try again."
+msgstr "當前網絡響應比較慢，請重試。"
+
+msgid "Try Again"
+msgstr "重試"
+
+msgid "Daily Earning Report"
+msgstr "每日收入報表"
+
+msgid "Product Sold Report"
+msgstr "商品銷售報表"
+
+msgid "Product Sold Summary Report"
+msgstr "商品銷售摘要報表"
+
+msgid "Product Sold Breakdown Report"
+msgstr "商品銷售詳細報表"
+
+msgid "Transaction Breakdown Report"
+msgstr "交易詳細報表"
+
+msgid "Cashier Transaction Report"
+msgstr "收銀匯總報表"
+
+msgid "Octopus Transaction Breakdown Report"
+msgstr "八達通交易詳細報表"
+
+msgid "Inventory Report"
+msgstr "庫存報表"
+
+msgid "Inventory Summary Report"
+msgstr "庫存摘要報表"
+
+msgid "Tax Summary Report"
+msgstr "稅務摘要報表"
+
+msgid "Discounts Applied Summary Report"
+msgstr "折扣應用總結報表"
+
+msgid "Group By Day"
+msgstr "按日期合計"
+
+msgid "Group By Month"
+msgstr "按整月合計"
+
+msgid "Batch Report"
+msgstr "批別報表"
+
+msgid "Refund Report"
+msgstr "退款報表"
+
+msgid "Time Clock Report"
+msgstr "出勤記錄報表"
+
+msgid "Sales Performance Report"
+msgstr "銷售業績報表"
+
+msgid "Sales Accounting Report"
+msgstr "會計報表"
+
+msgid "Gift Card Report"
+msgstr "會員卡報表"
+
+msgid "Purchased"
+msgstr "購買日期"
+
+msgid "Updated"
+msgstr "更新日期"
+
+msgid "YES"
+msgstr "是"
+
+msgid "NO"
+msgstr "否"
+
+msgid "Customer Report"
+msgstr "客戶報表"
+
+msgid "Generating Customer Report"
+msgstr "生成客戶報表"
+
+msgid "Report will be sent to your email shortly."
+msgstr "報表將會發送至您提供的郵件"
+
+msgid "Export Report Setting"
+msgstr "導出報表設置"
+
+msgid "Per Report Items Count"
+msgstr "單個報表項目個數"
+
+msgid "Please set a value bigger than %d"
+msgstr "請輸入一個比 %d 大的數"
+
+msgid "Serialized Report"
+msgstr "序列報表"
+
+msgid "Accounts Receivable Report"
+msgstr "應收賬款報表"
+
+msgid "Report Date: %@ %@"
+msgstr "報表日期: %@ %@"
+
+msgid "Revenue Breakdown"
+msgstr "利潤統計"
+
+msgid "Avg"
+msgstr "平均"
+
+msgid "Net Sales Breakdown"
+msgstr "淨銷售統計"
+
+msgid "Product Sales"
+msgstr "商品銷量"
+
+msgid "Delivery Charge"
+msgstr "送貨費用"
+
+msgid "Total Revenue"
+msgstr "總收入"
+
+msgid "Product Sales"
+msgstr "產品銷售量"
+
+msgid "Gross Sales"
+msgstr "銷售總量"
+
+msgid "Discount Breakdown"
+msgstr "折扣詳細"
+
+msgid "Sales By Time Segments & Dept"
+msgstr "時段和部門銷售量詳細"
+
+msgid "Sales By Time Segments"
+msgstr "時段銷售量"
+
+msgid "Party By Zone"
+msgstr "區域人數"
+
+msgid "Total (CC)"
+msgstr "總數"
+
+msgid "Total (Non-CC)"
+msgstr "總數"
+
+msgid "Tips Breakdown"
+msgstr "小費詳細"
+
+msgid "Canceled Invoices"
+msgstr "取消的訂單"
+
+msgid "Canceled Service Charge"
+msgstr "取消的服務費"
+
+msgid "Canceled Tips"
+msgstr "取消的小費"
+
+msgid "Canceled Discount"
+msgstr "取消的折扣"
+
+msgid "Net Sales"
+msgstr "淨銷售額"
+
+msgid "Gross Profit"
+msgstr "毛利"
+
+msgid "COGS Register Sales"
+msgstr "前台銷售成本"
+
+msgid "COGS Invoice Sales"
+msgstr "訂單銷售成本"
+
+msgid "COGS Web Sales"
+msgstr "網絡銷售成本"
+
+msgid "COGS Other"
+msgstr "其它成本"
+
+msgid "COGS Register Refunds"
+msgstr "前台退款成本"
+
+msgid "COGS Invoice Refunds"
+msgstr "訂單退款成本"
+
+msgid "COGS Web Refunds"
+msgstr "網絡退款成本"
+
+msgid "COGS Canceled Invoices"
+msgstr "取消的訂單成本"
+
+msgid "Net COGS"
+msgstr "淨成本"
+
+msgid "Tax Breakdown"
+msgstr "稅務統計"
+
+msgid "Tax Collected"
+msgstr "徵稅款"
+
+msgid "Tax Refunded"
+msgstr "退稅款"
+
+msgid "Service Charge Collected"
+msgstr "服務費"
+
+msgid "Service Charge Refunded"
+msgstr "服務費退款"
+
+msgid "Rounding in Total"
+msgstr "取整總額"
+
+msgid "Rounding Collected"
+msgstr "收入的取整"
+
+msgid "Rounding Refunded"
+msgstr "退款的取整"
+
+msgid "Payment By Tender"
+msgstr "付款銷售量"
+
+msgid "Refund By Tender"
+msgstr "付款退款"
+
+msgid "Total Discount Applied"
+msgstr "折扣總額"
+
+msgid "Purchased Store Credit"
+msgstr "售出的商店代幣"
+
+msgid "Redeemed Store Credit"
+msgstr "兌現的商店代幣"
+
+msgid "Sales By Department"
+msgstr "部門銷售量"
+
+msgid "Tender By Associates"
+msgstr "店員銷售量"
+
+msgid "Octopus Transactions"
+msgstr "八達通交易"
+
+msgid "Payment Value"
+msgstr "支付值"
+
+msgid "Cash Add Value"
+msgstr "現金值"
+
+msgid "Transactions Value"
+msgstr "交易值"
+
+msgid "# Of Order"
+msgstr "訂單號"
+
+msgid "Credit Card Processing Fees"
+msgstr "信用卡交易費"
+
+msgid "Earning"
+msgstr "收入"
+
+msgid "All Departments"
+msgstr "全部部門"
+
+msgid "GTID"
+msgstr "GTID"
+
+msgid "Product Name"
+msgstr "商品名"
+
+msgid "Sold Qty"
+msgstr "銷售量"
+
+msgid "Average Cost"
+msgstr "平均成本"
+
+msgid "Average Price"
+msgstr "平均單價"
+
+msgid "Average Unit Profit"
+msgstr "平均單位利潤"
+
+msgid "Average Margin"
+msgstr "平均利潤"
+
+msgid "Total Profit"
+msgstr "總利潤"
+
+msgid "Total Cost"
+msgstr "總成本"
+
+msgid "Sales %"
+msgstr "銷售百分比"
+
+msgid "Profit %"
+msgstr "利潤百分比"
+
+msgid "Total Collected"
+msgstr "總徵收"
+
+msgid "Sales Type"
+msgstr "銷售類型"
+
+msgid "All Payments"
+msgstr "全部支付方式"
+
+msgid "All Sources"
+msgstr "全部來源"
+
+msgid "Batch ID"
+msgstr "别批ID"
+
+msgid "Multiple Departments"
+msgstr "多個部門"
+
+msgid "Sales Tax Rate"
+msgstr "稅率"
+
+msgid "Stock Value"
+msgstr "庫存價格"
+
+msgid "Stock Transfer"
+msgstr "存貨調動"
+
+msgid "Market Value"
+msgstr "市場價格"
+
+msgid "Batch Time"
+msgstr "別批時間"
+
+msgid "Total Amount"
+msgstr "總額"
+
+msgid "Batch Amount"
+msgstr "別批金額"
+
+msgid "Amount Refund"
+msgstr "退款金額"
+
+msgid "Refund To"
+msgstr "退款人"
+
+msgid "Total Hours"
+msgstr "總工時"
+
+msgid "Sales Person"
+msgstr "出納員"
+
+msgid "Item Sold"
+msgstr "售出數量"
+
+msgid "Final Price"
+msgstr "最終價格"
+
+msgid "Net Taxable Sales"
+msgstr "淨應收稅銷售"
+
+msgid "Net Sales Tax Collected"
+msgstr "淨銷售稅款"
+
+msgid "Net Non-taxable Sales"
+msgstr "淨未收稅銷售"
+
+msgid "Delivery Fees"
+msgstr "送貨費用"
+
+msgid "Gift Cards / Store Credit Sold"
+msgstr "禮品卡/商店代幣售出"
+
+msgid "Tip Received"
+msgstr "小費"
+
+msgid "Net Sales with Tax"
+msgstr "淨銷售額（含稅）"
+
+msgid "CC Total"
+msgstr "信用卡總額"
+
+msgid "Cash Received"
+msgstr "現金收入"
+
+msgid Check Received"
+msgstr "支票收入"
+
+msgid "Gift Cards / Store Credit Tendered"
+msgstr "禮品卡/商店代幣收款"
+
+msgid "Total Debits"
+msgstr "借記總額"
+
+msgid "COGS Partial Refund"
+msgstr "部分退貨銷貨成本"
+
+msgid "COGS Full Refund"
+msgstr "全部退貨銷貨成本"
+
+msgid "Total Product Refunds"
+msgstr "總商品退貨"
+
+msgid "Tax Refunds"
+msgstr "稅款退貨"
+
+msgid "Delivery Refunds"
+msgstr "送貨退貨"
+
+msgid "Total Orders"
+msgstr "全部訂單"
+
+msgid "Gift Card Linked"
+msgstr "激活的禮品卡"
+
+msgid "Added At"
+msgstr "添加時間"
+
+msgid "31 to 60 days"
+msgstr "31到60天"
+
+msgid "61 to 90 days"
+msgstr "61到90天"
+
+msgid "91 to 120 days"
+msgstr "91到120天"
+
+msgid "121+ days"
+msgstr "121+天"
+
+msgid "Invoice #"
+msgstr "訂單單號"
+
+msgid "Invoice Date"
+msgstr "訂單時間"
+
+msgid "Invoice Amount"
+msgstr "訂單金額"
+
+msgid "Amount Paid"
+msgstr "已付款金額"
+
+msgid "Age (days)"
+msgstr "時間(天數)"
+
+msgid "Current Amount Due"
+msgstr "當前應付款"
+
+msgid "All Suppliers"
+msgstr "全部供應商"
+
+msgid "All Categories"
+msgstr "全部分類"
+
+msgid "All Brands"
+msgstr "全部品牌"
+
+msgid "All Age"
+msgstr "全部時間"
+
+msgid "All Customers"
+msgstr "全部客户"
+
+msgid "All Gender"
+msgstr "全部性别"
+
+msgid "All Date"
+msgstr "全部日期"
+
+msgid "Last Visit"
+msgstr "最後訪問"
+
+msgid "Group By Departments"
+msgstr "根據部門分組"
+
+msgid "Group By Suppliers"
+msgstr "根據供應商分組"
+
+msgid "Group By Categories"
+msgstr "根據分類分組"
+
+msgid "Group By Brands"
+msgstr "根據品牌分組"
+
+msgid "Group By"
+msgstr "分組"
+
+msgid "All Refunds"
+msgstr "全部退款"
+
+msgid "All Sales Person"
+msgstr "全部出納員"
+
+msgid "All Associates"
+msgstr "全部店員"
+
+msgid "Cannot send mail on this device - this iPad's Mail app is not configured. Please open Mail and follow the instructions to add your e-mail address."
+msgstr "無法在此設備上發送電子郵件 - 該設備的郵件應用程序未配置。請打開郵件應用，並按照說明添加您的電子郵件地址。"
+
+#:  Settings
+
+msgid "Settings"
+msgstr "設置"
+
+msgid "Rounding Behavior"
+msgstr "小數位除整"
+
+msgid "Arithmetic Rounding"
+msgstr "四舍五入"
+
+msgid "Rounding Up"
+msgstr "上舍入"
+
+msgid "Rounding Down"
+msgstr "下舍入"
+
+msgid "Round to Nearest Five"
+msgstr "除整至最接近的五分"
+
+msgid "Business"
+msgstr "業務"
+
+msgid "Enable Warehouse Management"
+msgstr "啟用倉庫管理"
+
+msgid "Allow decimal inventory quantity"
+msgstr "允許小數點庫存數量"
+
+msgid "Allow all"
+msgstr "允許全部"
+
+msgid "Allow partially"
+msgstr "允許部份"
+
+msgid "Decimal Points"
+msgstr "小數位"
+
+msgid "Behavior"
+msgstr "用法"
+
+msgid "Line Item Level Rounding"
+msgstr "單品取整"
+
+msgid "Order Level Rounding"
+msgstr "訂單取整"
+
+msgid "Tax Order Level Rounding"
+msgstr "訂單總稅額取整"
+
+msgid "Tax Order Level Decimal Points"
+msgstr "訂單總稅額小數位"
+
+msgid "Hub"
+msgstr "外置設定"
+
+msgid "Show zero amount line item on printed receipt"
+msgstr "打印零價格項目於收據上"
+
+msgid "Display product quantity for menu"
+msgstr "顯示產品剩餘數量於菜單上"
+
+msgid "29mm Width"
+msgstr "29mm 寬度"
+
+msgid "62mm Width"
+msgstr "62mm 寬度"
+
+msgid "Zebra"
+msgstr "Zebra"
+
+msgid "sales today"
+msgstr "今天營業額"
+
+msgid "Local Network Overview"
+msgstr "本地網絡概覽"
+
+msgid "Turn on Kitchen Printing Master"
+msgstr "打開廚房主終端機"
+
+msgid "Please turn on Kitchen Printing Master in Add-ons page first."
+msgstr "請先在設定的配件內，打開廚房主終端機。"
+
+msgid "Unsent pending orders"
+msgstr "還沒有發送出的單"
+
+msgid "There are pending orders not sent to server, please wait them to be sent."
+msgstr "還有未傳送到主終端的單，請等待。"
+
+#: Payments
+
+msgid "Payments"
+msgstr "支付"
+
+msgid "Minimum amount to require customer signature for credit card payment:"
+msgstr "信用卡簽賬額高於此數需簽名："
+
+#: Payment Type
+
+msgid "Tipping Option"
+msgstr "允許小費"
+
+msgid "Payment Type"
+msgstr "支付方式"
+
+msgid "Settings.Payments.EmptyTip"
+msgstr "系統默認支付方式有：現金、支票和信用卡等。您可以創建新的支付方式來追踪付款渠道。"
+
+msgid "Create New Payment Type"
+msgstr "創建新支付方式"
+
+msgid "Another Payment Type"
+msgstr "添加支付方式"
+
+msgid "e.g. Cash on Delivery (COD)"
+msgstr "例如：貨到付款"
+
+msgid "Hardware"
+msgstr "配件"
+
+msgid "Appearance"
+msgstr "樣式"
+
+msgid "Add-ons"
+msgstr "插件"
+
+msgid "Support"
+msgstr "支持"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "SettingsiPadViewController.version"
+msgstr "版本"
+
+msgid "SettingsiPadViewController.diagnostics"
+msgstr "診斷"
+
+msgid "Policies"
+msgstr "政策"
+
+msgid "Accessories"
+msgstr "配件"
+
+msgid "Kitchen Printer"
+msgstr "廚房打印機"
+
+msgid "Store Highlight"
+msgstr "商店介紹"
+
+msgid "Return and Exchange Policy"
+msgstr "退換貨政策"
+
+"Enable local delivery"
+msgstr "開啟本地投遞"
+
+msgid "Maximum distance (in mile):"
+msgstr "最大距離(英里):"
+
+msgid "0.00 miles"
+msgstr "0.00英里"
+
+msgid "Minimum order:"
+msgstr "最低訂單金額:"
+
+msgid "Delivery charge if minimum order is not met:"
+msgstr "如果沒有達到最低訂單金額，收取快遞費用:"
+
+msgid "Enter $0.00 if you provide free delivery for all orders."
+msgstr "輸過免費為所有訂單送貨，請輸入￥0.00。:"
+
+msgid "Other pick up and delivery information"
+msgstr "其他上門取貨或者送貨信息"
+
+msgid "Rate"
+msgstr "費率"
+
+msgid "Role"
+msgstr "角色"
+
+msgid "Added By"
+msgstr "添加者"
+
+msgid "Manager"
+msgstr "管理員"
+
+msgid "Associate"
+msgstr "店員"
+
+msgid "Junior Associate"
+msgstr "初級店員"
+
+msgid "Promote to Manager"
+msgstr "設為管理員"
+
+msgid "Promote to Associate"
+msgstr "設為店員"
+
+msgid "Promote to Junior Associate"
+msgstr "設為初級店員"
+
+msgid "Create New Associate"
+msgstr "添加新店員"
+
+msgid "Add Existing User"
+msgstr "添加已有用户"
+
+msgid "Username cannot be blank"
+msgstr "用戶名不能為空"
+
+msgid "Role cannot be blank"
+msgstr "角色不能為空"
+
+msgid "     Pending Approval     "
+msgstr "     待批准     "
+
+msgid "Require signature for orders below $20.00"
+msgstr "當訂單金額高於￥20.00時要求籤名。"
+
+msgid "Barcode Scanner"
+msgstr "條碼掃描器"
+
+msgid "Card Reader"
+msgstr "信用卡讀卡器"
+
+msgid "EMV Card Reader"
+msgstr "EMV信用卡讀卡器"
+
+msgid "Add New EMV Reader"
+msgstr "+ 添加新的EMV信用卡讀卡器"
+
+msgid "Edit EMV Credit Card Reader"
+msgstr "修改EMV信用卡讀卡器"
+
+msgid "New EMV Credit Card Reader"
+msgstr "添加新的EMV信用卡讀卡器"
+
+msgid "Please find the information on the back of the EMV reader."
+msgstr "請從EMV 讀卡器背後找到這些信息."
+
+msgid "Register ID"
+msgstr "Register ID"
+
+msgid "Auth Key"
+msgstr "Auth Key"
+
+msgid "Please set up EMV credit card reader in Settings/Hardware page."
+msgstr "請先到 Settings/Hardware 頁面設置 EMV 信用卡讀卡器"
+
+msgid "Printer"
+msgstr "收據打印機"
+
+msgid "Receipt Printer"
+msgstr "收據打印機"
+
+msgid "Label Printer"
+msgstr "標籤打印機"
+
+msgid "Display"
+msgstr "客戶顯示器"
+
+msgid "Status"
+msgstr "狀態"
+
+msgid "Name"
+msgstr "名字"
+
+msgid "Connection"
+msgstr "連接方式"
+
+msgid "Connect"
+msgstr "連接"
+
+msgid "Disconnect"
+msgstr "斷開"
+
+msgid "Not Connected"
+msgstr "未連接"
+
+msgid "Store Photo"
+msgstr "商店照片"
+
+msgid "Screensaver"
+msgstr "屏保"
+
+msgid "Print Log"
+msgstr "列印記錄"
+
+msgid "Show screensaver when the device is idle."
+msgstr "當設備空閒時打開屏保。"
+
+msgid "Edit Reference ID"
+msgstr "修改參考編號"
+
+msgid "Remove Reference ID"
+msgstr "刪除參考編號"
+
+msgid "Email Receipt"
+msgstr "郵件收據"
+
+msgid "Printed Receipt"
+msgstr "打印收據"
+
+msgid "Enable Time Clock"
+msgstr "開啟出勤記錄"
+
+msgid "Enable Loyalty"
+msgstr "開啟客戶忠誠計劃"
+
+msgid "Gift Receipt"
+msgstr "禮品收據"
+
+msgid "Auto-group like-items on the receipt"
+msgstr "在收據上把類似的商品放在一組"
+
+msgid "Allow manager to overwrite product price at checkout"
+msgstr "收銀時允許管理員修改價格"
+
+msgid "Allow associate to see Sales summary report"
+msgstr "允許服務員查看銷售摘要報表"
+
+msgid "Use A5 paper for AirPrint receipt (default A4)"
+msgstr "使用 A5 紙張作為 AirPrint 訂單尺寸（默認為 A4）"
+
+msgid "Always print receipt when checkout"
+msgstr "結賬時自動打印收據"
+
+msgid "Double print receipt"
+msgstr "打印兩張收據"
+
+msgid "Support Serialized Inventory"
+msgstr "支持商品序列號功能"
+
+msgid "Track sales by associate"
+msgstr "記錄店員銷售"
+
+msgid "Automatically attribute line-item to cashier"
+msgstr "自動記錄出納員售出的商品"
+
+msgid "Cash Management"
+msgstr "現金管理"
+
+msgid "Register Name"
+msgstr "收銀台名"
+
+msgid "Open, close shifts and cash tracking."
+msgstr "打開, 關閉錢櫃和現金記錄。"
+
+msgid "Enable Store Permission"
+msgstr "開啟店舖管理權限"
+
+msgid "Use decimal keypad"
+msgstr "使用小數點鍵盤"
+
+msgid "Allow associate to see sales summary report"
+msgstr "允許店員進入銷售摘要報表"
+
+msgid "Auto popup modifier when checkout"
+msgstr "點菜時自動彈出附加選項"
+
+msgid "Automatically lock POS when an order is saved"
+msgstr "當保存訂單時自動登出"
+
+msgid "Show discount breakdown on printed receipt"
+msgstr "打印收據時顯示折扣於每個項目"
+
+msgid "Show modifier on print check and checkout receipt"
+msgstr "顯示附加選項於印單和收據上"
+
+msgid "Show signature field on print check and checkout receipt"
+msgstr "打印簽名欄於印單和收據上"
+
+msgid "Enable Line Item Tagging"
+msgstr "使用項目標記"
+
+msgid "Enable Line Item Barcode"
+msgstr "使用項目條碼"
+
+msgid "Round Tax Line Item Level"
+msgstr "在項目級別對稅取整"
+
+msgid "Apply Tax for Purchase Order"
+msgstr "使用稅率於訂貨單"
+
+msgid "Show order time for each line item"
+msgstr "顯示下單時間於每個項目"
+
+msgid "Clear table after checkout"
+msgstr "結帳後自動清桌"
+
+msgid "Set as Master for Kitchen Printing (Please do not turn off once it is on)"
+msgstr "設定這台iPad為打印廚房單主機(開啟後請不要關閉)"
+
+msgid "One slip per line item"
+msgstr "每列項目打印一張廚房單"
+
+msgid "One slip per quantity"
+msgstr "每件產品打印一張廚房單"
+
+msgid "Aggregated as per printer"
+msgstr "每張訂單打印一張廚房單"
+
+msgid "Aggregate same line item into one slip"
+msgstr "所有屬相同產品的列項目打印一張廚房單"
+
+msgid "Auto print receipt when save"
+msgstr "儲存訂單時自動打印發票"
+
+msgid "Enable print double kitchen slips"
+msgstr "一式兩份廚房單"
+
+msgid "Allow Associate and Junior Associate to see shift status"
+msgstr "允許店員和初級店員查看錢櫃記錄"
+
+msgid "All Associates"
+msgstr "所有店員"
+
+msgid "Pin"
+msgstr "簡易密碼"
+
+msgid "PIN"
+msgstr "簡易密碼"
+
+msgid "Edit pin"
+msgstr "更新密碼"
+
+msgid "Set up pin"
+msgstr "設置密碼"
+
+msgid "Not set up yet"
+msgstr "還沒有設置"
+
+msgid "Update Successful!"
+msgstr "已更新!"
+
+msgid "Audio Jack"
+msgstr "音頻"
+
+msgid "Bluetooth"
+msgstr "藍牙"
+
+msgid "Ethernet"
+msgstr "本地網絡"
+
+msgid "Test Print"
+msgstr "測試打印"
+
+msgid "Test Swipe"
+msgstr "測試刷咭"
+
+msgid "Swipe a credit card to test it."
+msgstr "請刷信用咭測試"
+
+msgid "Select Label Template"
+msgstr "先擇標籤模板"
+
+msgid "Template %d"
+msgstr "模板%d"
+
+msgid "Label Template Preview"
+msgstr "標籤模板預覽"
+
+#:  Card Reader Error
+
+msgid "Cannot read credit card properly. Please try again"
+msgstr "讀卡錯誤， 請再試一遍。"
+
+#:  Template selection table view cell
+
+msgid "Brother 29mm label"
+msgstr "Brother 29mm 標籤"
+
+msgid "Zebra jewelry label"
+msgstr "Zebra 珠寶 標籤"
+
+msgid "Listing Weight"
+msgstr "稱重"
+
+msgid "Auto Weight"
+msgstr "自動稱重"
+
+msgid "Custom Weight"
+msgstr "自定義重量"
+
+msgid "Custom Price"
+msgstr "自定義價格"
+
+#:  SettingHardwareBaseAccessoryViewController.h
+
+msgid "Connected"
+msgstr "連接"
+
+msgid "Disconnected"
+msgstr "斷開"
+
+msgid "Custom Price"
+msgstr "自定義價格"
+
+#:  Invoices Log
+
+msgid "Edited Invoice Total $%.02f to $%.02f"
+msgstr "編輯訂單總數 ¥%.02f 至 ¥%.02f"
+
+msgid "Edited Quote Total $%.02f to $%.02f"
+msgstr "編輯報價單總數 ¥%.02f 至 ¥%.02f"
+
+#:  BPBBPOSCreditCardReaderHandler
+
+msgid "Please swipe again."
+msgstr "請重新刷卡。"
+
+msgid "Bad Swipe"
+msgstr "刷卡錯誤"
+
+#:  InvoicesPageViewController
+
+msgid "Fulfill Order"
+msgstr "履行訂單"
+
+msgid "Bad Swipe"
+msgstr "刷卡錯誤"
+
+msgid "Connecting..."
+msgstr "正在連接..."
+
+msgid "Partial Fulfilled"
+msgstr "部分收貨"
+
+msgid "Octopus"
+msgstr "八達通"
+
+msgid "Allow Octopus Add Value"
+msgstr "允許八達通增值"
+
+msgid "Octopus Add Value"
+msgstr "八達通增值服務"
+
+msgid "Cannot connect to Octopus"
+msgstr "無法連接八達通"
+
+msgid "MOP connection failure"
+msgstr "未能接駁八達通收費器"
+
+msgid "Read card error, retry please"
+msgstr "讀卡錯誤,請重試"
+
+msgid "Invalid card"
+msgstr "此卡失效"
+
+msgid "No card present"
+msgstr "請再拍卡"
+
+msgid "Present card again"
+msgstr "請再拍卡"
+
+msgid "Invalid Octopus, please contact MTR Customer Service Center"
+msgstr "此八達通卡或產品已失效,請聯絡港鐵客務中心"
+
+msgid "+++ DO NOT CANCEL THE TXN +++\n\nTransactionIncomplete\nPlease request customer to present the same card again to complete the transaction"
+msgstr "+++ 請勿取消交易 +++\n交易未能完成\n請通知顧客用同一張卡\n再次拍卡,以確保交易\n無誤\n\n請重試"
+
+msgid "+++ DO NOT CANCEL THE TXN +++\n\nTransactionIncomplete\nPlease request customer to present the same card again to complete the transaction (%@)"
+msgstr "+++ 請勿取消交易 +++\n交易未能完成\n請通知顧客用同一張卡\n再次拍卡,以確保交易\n無誤 (%@)"
+
+msgid "Incomplete transaction, retry please"
+msgstr "交易未完成,請重試"
+
+msgid "Insufficient value"
+msgstr "餘額不足"
+
+msgid "Stored value exceeds limit"
+msgstr "儲值額超出上限"
+
+msgid "Invalid POS controller ID"
+msgstr "控制台識別號碼不正確"
+
+msgid "Reader Number"
+msgstr "讀卡器號碼"
+
+msgid "Remaining Value"
+msgstr "餘額"
+
+msgid "Last Add Value Type"
+msgstr "最後增值類別"
+
+msgid "Last Add Value Device"
+msgstr "最後增值-讀卡器號碼"
+
+msgid "Last Add Value Date"
+msgstr "最後增值日期"
+
+msgid "Fulfilled Qty"
+msgstr "履行數量"
+
+msgid "Reserved"
+msgstr "預留"
+
+msgid "Octopus Payment"
+msgstr "八達通付款"
+
+msgid "Success! Your receipt of %@ has been emailed to"
+msgstr "結帳成功! 您結帳%@的收據已發送到以下電郵"
+
+msgid "Success! Your receipt of %@ has been printed."
+msgstr "結帳成功! 您結帳%@的收據已打印成功"
+
+msgid "This order is completed!"
+msgstr "訂單完成!"
+
+msgid "New Order"
+msgstr "新訂單"
+
+msgid "Completed Order"
+msgstr "完成訂單"
+
+msgid "Store Created"
+msgstr "創建商店"
+
+msgid "S/N"
+msgstr "貨序號"
+
+msgid "S/L"
+msgstr "分店貨存"
+
+msgid "Stock Level"
+msgstr "貨存"
+
+msgid "Stock Level"
+msgstr "存貨量"
+
+msgid "Chain Info"
+msgstr "連鎖分店資料"
+
+msgid "Make changes for Chain store can only be edited from the location in which they were created."
+msgstr "請聯繫總店有更改關連鎖分店的設定。"
+
+#:  InvoiceTableViewCell.m
+
+msgid "Unfulfilled"
+msgstr "未履行"
+
+msgid "Fulfilled"
+msgstr "已履行"
+
+msgid "Reprint Receipt"
+msgstr "重印收據"
+
+msgid "Reprint Invoice"
+msgstr "重印收據"
+
+msgid "Re-print"
+msgstr "重印"
+
+#:  BPPurchaseOrderFulfillTableViewDataModel
+
+msgid "Please fill empty serial number fields"
+msgstr "請填寫序列號"
+
+#:  BPBrecknellScaleHandler
+
+msgid "Data error! Please make sure scale is correctly configured."
+msgstr "數據錯誤! 請確認稱被正確的配置了。"
+
+msgid "Set as default"
+msgstr "設為默認"
+
+msgid "Unset default"
+msgstr "取消默認"
+
+#:  Inventory - Qty, Log, Stock Level
+
+msgid "Inventory Quantity Preview"
+msgstr "庫存量預覽"
+
+msgid "In Stock"
+msgstr "庫存"
+
+msgid "Overwrite Name"
+msgstr "覆寫貨品名"
+
+msgid "Mandate expiration date"
+msgstr "記錄貨品過期日"
+
+msgid "Select Inventory"
+msgstr "選擇貨品"
+
+msgid "Allow decimal"
+msgstr "允許小數點"
+
+msgid "On Shelf"
+msgstr "貨架上"
+
+msgid "On Shelf (Default)"
+msgstr "貨架上 (默認)"
+
+msgid "Stockroom"
+msgstr "倉庫"
+
+msgid "Reserved for Invoice(upper)"
+msgstr "訂單"
+
+msgid "for Invoice"
+msgstr "預留"
+
+msgid "Reserved for Transfer(upper)"
+msgstr "轉移"
+
+msgid "for Transfer"
+msgstr "預留"
+
+msgid "In Transit from Supplier(upper)"
+msgstr "供應商"
+
+msgid "from Supplier"
+msgstr "運送中"
+
+msgid "In Transit from Transfer(upper)"
+msgstr "轉移"
+
+msgid "from Transfer"
+msgstr "運送中"
+
+msgid "In Transit from Supplier"
+msgstr "供應商運送中"
+
+msgid "In Transit from Transfer"
+msgstr "轉移預留"
+
+msgid "Reserved for Invoice"
+msgstr "訂單預留"
+
+msgid "Reserved for Transfer"
+msgstr "轉移預留"
+
+msgid "Qty Delta(upper)"
+msgstr "數差量"
+
+msgid "Delta"
+msgstr ""
+
+msgid "Latest Qty (On Shelf)(upper)"
+msgstr "最新數量"
+
+msgid "(On Shelf)"
+msgstr "(貨架上)"
+
+msgid "Latest Qty Stockroom(upper)"
+msgstr "最新數量"
+
+msgid "Stockroom"
+msgstr "倉庫"
+
+msgid "Clear All Fulfilled Qty"
+msgstr "履行數量清零"
+
+msgid "Mark All As Fulfilled"
+msgstr "標記為全部履行"
+
+msgid "Add Note"
+msgstr "添加註釋"
+
+msgid "Edit"
+msgstr "編輯紀錄"
+
+msgid "Done"
+msgstr "完成"
+
+msgid "Serial Number"
+msgstr "序列號"
+
+msgid "Fulfill P.O."
+msgstr "履行訂購單"
+
+"Scan or enter serial number here"
+msgstr "請掃描或者輸入序列號"
+
+msgid "Retry"
+msgstr "重試"
+
+#:  Receipt
+
+msgid "Department Sales:"
+msgstr "部門銷售額"
+
+msgid "Visit us at:"
+msgstr "網站:"
+
+msgid "Tips"
+msgstr "小費"
+
+msgid "Reprint"
+msgstr "重印"
+
+msgid "Receipt"
+msgstr "收據"
+
+msgid "RECEIPT"
+msgstr "收據"
+
+msgid "Rounding"
+msgstr "除整"
+
+msgid "Delete Reservation"
+msgstr "刪除預約"
+
+msgid "From: Web"
+msgstr "來自: Web"
+
+msgid "Shop online at:"
+msgstr "網上購物:"
+
+msgid "PURCHASE"
+msgstr "購買"
+
+msgid "Refund on"
+msgstr "退款日期／時間"
+
+msgid "TOTAL"
+msgstr "總數"
+
+msgid "REFUND SUMMARY"
+msgstr "退款摘要"
+
+msgid "PRODUCT REFUND"
+msgstr "退款產品"
+
+msgid "TOTAL REFUND"
+msgstr "退款總數"
+
+msgid "First Payment"
+msgstr "第一項付款"
+
+msgid "Second Payment"
+msgstr "第二項付款"
+
+msgid "Third Payment"
+msgstr "第三項付款"
+
+msgid "Fourth Payment"
+msgstr "第四項付款"
+
+msgid "%dst"
+msgstr "第%d項"
+
+msgid "%dnd"
+msgstr "第%d項"
+
+msgid "%drd"
+msgstr "第%d項"
+
+msgid "%dth"
+msgstr "第%d項"
+
+msgid "REFUND"
+msgstr "退款"
+
+msgid "Store Credit Balance:"
+msgstr "商店代幣餘額:"
+
+msgid "Loyalty Point Balance:"
+msgstr "顧客忠誠計劃餘額:"
+
+msgid "STORE RETURN POLICY"
+msgstr "商店退貨政策"
+
+msgid "POWERED BY BINDO"
+msgstr "BINDO收費系統"
+
+msgid "otherwise"
+msgstr "否則"
+
+msgid "Free delivery within %.1fm for orders above"
+msgstr "在%.1fm以內免費送貨"
+
+msgid "Shop No."
+msgstr "商舖號碼"
+
+msgid "Device No."
+msgstr "機器號碼"
+
+msgid "Receipt No."
+msgstr "收據號碼"
+
+msgid "Serial Number:"
+msgstr "序列號碼"
+
+msgid "TAX REFUND"
+msgstr "退稅"
+
+msgid "CARDHOLDER WILL PAY CARD ISSUER ABOVE"
+msgstr "持卡人簽名同意支付上述款項"
+
+msgid "AMOUNT PURSUANT TO CARDHOLDER AGREEMENT"
+msgstr ""
+
+msgid "CASH"
+msgstr "現金"
+
+msgid "Cash"
+msgstr "現金"
+
+msgid "OCTOPUS"
+msgstr "八達通"
+
+msgid "Device no."
+msgstr "八達通讀卡器號碼"
+
+msgid "Octopus no."
+msgstr "八達通號碼"
+
+msgid "Amount deducted"
+msgstr "八達通扣除金額"
+
+msgid "Remaining value"
+msgstr "八達通餘額"
+
+msgid "Last add value by %@ on %@"
+msgstr "上一次%@增值於 %@"
+
+#:  Octopus Add Value Type Names
+
+msgid "Cash"
+msgstr "現金"
+
+msgid "EFT"
+msgstr "EFT"
+
+msgid "Refund"
+msgstr "退款"
+
+msgid "AAVS"
+msgstr "自動"
+
+msgid "Online"
+msgstr "網上"
+
+msgid "Others"
+msgstr "其他"
+
+msgid "STORE CREDIT"
+msgstr "商店代币"
+
+msgid "AMOUNT %@ VIA %@"
+msgstr "已%@，方式: %@"
+
+msgid "%@ VIA %@"
+msgstr "%@，方式: %@"
+
+msgid "CHECK"
+msgstr "支票"
+
+msgid "SUBTOTAL"
+msgstr "小計"
+
+msgid "DISCOUNT"
+msgstr "折扣"
+
+msgid "If you have any queries on the above transaction,"
+msgstr "客戶如對上述的八達通交易有任何查詢,"
+
+msgid "please keep the receipt and call Octopus"
+msgstr "請保存此存根及致電八達通顧客服務熱線 2266 2222"
+
+msgid "Customer Service Hotline at 2266 2222"
+msgstr ""
+
+msgid "Fulfill Invoice"
+msgstr "履行訂單"
+
+msgid "Fulfill Purchase Order"
+msgstr "履行訂單"
+
+msgid "Serial Number deleted."
+msgstr "序列號已被刪除。"
+
+msgid "Error %@"
+msgstr "發生錯誤(%@)"
+
+msgid "Cannot verify your credentials."
+msgstr "無法驗證您的用戶名或密碼."
+
+msgid "Scale under zero weight"
+msgstr "重量為負值"
+
+msgid "Overcap (over 30.0 lbs)"
+msgstr "重量超過量程 (超過 30.0 lbs)"
+
+msgid "Scale not ready"
+msgstr "啟動中"
+
+msgid "Non-stable weight"
+msgstr "重量未穩定"
+
+msgid "Unknow unit"
+msgstr "未知單位"
+
+msgid "Unknow barcode received"
+msgstr "收到未知編碼"
+
+msgid "Block"
+msgstr "停用"
+
+msgid "BLOCK"
+msgstr "停用"
+
+msgid "Unlock"
+msgstr "解鎖"
+
+msgid "-Sided"
+msgstr " 邊桌"
+
+msgid "Customer Order Record"
+msgstr "顧客食品紀錄"
+
+msgid "Area Name"
+msgstr "區域"
+
+msgid "Area Name: %@"
+msgstr "區域: %@"
+
+msgid "Area Name:"
+msgstr "區域:"
+
+msgid "Cover: %@"
+msgstr "人數: %@"
+
+msgid "Party Size"
+msgstr "人數"
+
+msgid "Table No. %@%@"
+msgstr "台號: %@%@"
+
+msgid "Order Time"
+msgstr "下單時間"
+
+msgid "Customer Code"
+msgstr "顧客編號"
+
+msgid "Cannot find product PLU: %@"
+msgstr "編號為 %@ 的產品不存在"
+
+msgid "Print Time"
+msgstr "打印時間"
+
+msgid "Order Time: %@"
+msgstr "打印時間: %@"
+
+msgid "mins"
+msgstr "分鐘"
+
+msgid "hr(s)"
+msgstr "小時"
+
+msgid "secs ago"
+msgstr "秒前"
+
+msgid "mins ago"
+msgstr "分鐘前"
+
+msgid "days ago"
+msgstr "日前"
+
+msgid "weeks ago"
+msgstr "星期前"
+
+msgid "months ago"
+msgstr "个月前"
+
+msgid "years ago"
+msgstr "年前"
+
+msgid "Unsaved Changes"
+msgstr "訂單未保存"
+
+msgid "Please send to kitchen before split check."
+msgstr "分單前請先發送訂單。"
+
+msgid "Discard"
+msgstr "放棄"
+
+msgid "Would you like to save the changes to current sales?"
+msgstr "保存當前已更改的訂單?"
+
+msgid "Resend All"
+msgstr "發送全部"
+
+msgid "Send %d Remaining"
+msgstr "發送剩餘%d張"
+
+msgid "Clear Table"
+msgstr "清桌"
+
+msgid "New Reservation"
+msgstr "新預訂"
+
+msgid "Pre-Select"
+msgstr "預選"
+
+msgid "Seating Party"
+msgstr "預選座台"
+
+msgid "Choose a table, then tap \"Pre-Select\""
+msgstr "選擇座台，然後按\"預選\""
+
+msgid "DATE & TIME"
+msgstr "日期及時間"
+
+msgid "No Date & Time Selected"
+msgstr "未設置日期及時間"
+
+msgid "Delete Entry"
+msgstr "刪除"
+
+msgid "Move to Another Party"
+msgstr "移到其他訂單"
+
+msgid "Label printer error, would you like to continue?"
+msgstr "標籤打印機錯誤，您想繼續嗎？"
+
+msgid "Overwrite price can be use for standard pricing only"
+msgstr "重新定價只適用於標準價格"
+
+msgid "Service Fee"
+msgstr "服務費"
+
+msgid "Double print check"
+msgstr "打印兩張印單"
+
+msgid "Area"
+msgstr "區域"
+
+msgid "QSR Mode Enable"
+msgstr "快餐店模式"
+
+msgid "Require CVV for card present transactions"
+msgstr "信用刷卡後需輸入CVV"
+
+msgid "Hold an item of the invoice without sending to kitchen"
+msgstr "允許暫存訂單上的產品，不傳送到廚房"
+
+msgid "Please verify CVV for security"
+msgstr "基於保安理由，請輸入CVV"
+
+msgid "It is a failover slip from"
+msgstr "請轉交往"
+
+msgid "Assign Table"
+msgstr "指定台號"
+
+msgid "Hardware Settings"
+msgstr "硬件設置"
+
+msgid "Customer food record"
+msgstr "顧客食品記錄"
+
+msgid "Ref. Number"
+msgstr "單號"
+
+msgid "Cover"
+msgstr "人數"
+
+msgid "Expiration Date"
+msgstr "截止日期"
+
+msgid "Please enter S/N instead of scanning item barcode to add quantity of this item"
+msgstr "請輸入商品序號以增加此貨品的收貨數量"
+
+msgid "Are you sure you want to remove invoice: %@"
+msgstr "確認要從此收貨單中刪除訂單: %@"
+
+msgid "Modifier changed"
+msgstr "附加選項更新"
+
+msgid "Party"
+msgstr "台"
+
+msgid "Tax Total"
+msgstr "加稅合計"
+
+msgid "Sales By Time Segments & Category"
+msgstr "時段和類目銷售量詳細"
+
+msgid "Service Charge Total"
+msgstr "服務費合計"
+
+msgid "Net Sales Before Dis & SVG"
+msgstr "Net Sales Before Dis & SVG"
+
+msgid "Fixed"
+msgstr "固定的"
+
+msgid "Variable"
+msgstr "可變的"
+
+msgid "Advance Discount"
+msgstr "Advance Discount"
+
+msgid "Add Advance Discount"
+msgstr "添加進階折扣"
+
+msgid "Purchase Deposit"
+msgstr "存入預付款"
+
+msgid "Apply Deposit"
+msgstr "使用預付款"
+
+msgid "Priority"
+msgstr "優先級"
+
+msgid "FCStackableDiscount:Not Stackable to All"
+msgstr "不可與其他所有折扣同時使用"
+
+msgid "FCStackableDiscount:Not Stackable to Multiple Discounts"
+msgstr "不可與多個折扣同時使用"
+
+msgid "FCStackableDiscount:Stackable to Multiple Discounts"
+msgstr "可與多個折扣同時使用"
+
+msgid "FCStackableDiscount:Stackable to %@"
+msgstr "可與折扣 %@ 同時使用"
+
+msgid "FCStackableDiscount:Not Stackable to %@"
+msgstr "不可與折扣 %@ 同時使用"
+
+msgid "DiscountEntriesTableViewCell: Variable Discount"
+msgstr "可變的折扣"
+
+msgid "Enter Deposit Amount"
+msgstr "輸入預付款金額"
+
+msgid "Event Type"
+msgstr "用途"
+
+msgid "Anniversaries"
+msgstr "週年紀念"
+
+msgid "Birthday"
+msgstr "生日"
+
+msgid "Business"
+msgstr "業務"
+
+msgid "Ceremonies"
+msgstr "儀式"
+
+msgid "Party"
+msgstr "派對"
+
+msgid "Trade Shows"
+msgstr "貿易展覽會"
+
+msgid "Wedding"
+msgstr "婚禮"
+
+msgid "Other"
+msgstr "其他"
+
+msgid "Active Deposit"
+msgstr "可用的預付款"
+
+msgid "Expired Deposit"
+msgstr "過期的預付款"
+
+msgid "Deposit Amount"
+msgstr "預付款金額"
+
+msgid "Choose %lu Option"
+msgstr "選擇%lu個選項"
+
+msgid "Sorry, this item is sold out"
+msgstr "抱歉, 該商品已售罄"
+
+msgid "Void Reason"
+msgstr "取消原因"
+
+msgid "Please choose Void Reason"
+msgstr "請選擇取消原因"
+
+msgid "Wrong Press"
+msgstr "點擊錯誤"
+
+msgid "System Test"
+msgstr "系統測試"
+
+msgid "Customer Complain"
+msgstr "客人投訴"
+
+msgid "Customer Cancel"
+msgstr "顧客取消"
+
+msgid "Merge Table"
+msgstr "合併桌"
+
+msgid "Double Order"
+msgstr "重複下單"
+
+msgid "Wrong Food"
+msgstr "錯誤食物"
+
+msgid "Problem Food"
+msgstr "問題食物"
+
+msgid "Customer Complaint"
+msgstr "客人投訴"
+
+msgid "Missing Order"
+msgstr "漏單"
+
+msgid "Wrong Order Taken"
+msgstr "下單錯誤"
+
+msgid "Too Late"
+msgstr "太慢"
+
+msgid "Change Food"
+msgstr "修改食物"
+
+msgid "Advanced Settings"
+msgstr "進階設置"
+
+msgid "Connectivity"
+msgstr "連接狀態"
+
+msgid "Current Status"
+msgstr "當前狀態"
+
+msgid "Device WAN IP"
+msgstr "設備外網IP"
+
+msgid "Device LAN IP"
+msgstr "設備內網IP"
+
+msgid "Master Terminal WAN IP"
+msgstr "主終端外網IP"
+
+msgid "Master Terminal LAN IP"
+msgstr "主終端內網IP"
+
+msgid "Master Terminal - Do Not Turn Off."
+msgstr "主終端 - 不要關閉"
+
+msgid "Master Connected."
+msgstr "主終端已連接."
+
+msgid "Master Disconnected."
+msgstr "主終端已斷開."
+
+msgid "Retail Terminal"
+msgstr "零售終端"
+
+msgid "Restaurant/Retail Master&Slave"
+msgstr "餐厅/零售業主終端與子終端"
+
+msgid "Restaurant - Master Terminal Serve as Restaurant  POS Master Terminal"
+msgstr "餐厅-主終端作為餐廳POS系統的主終端機"
+
+msgid "   * Communicate with the Bindo Cloud Server and multiple POS slave terminals"
+msgstr "   * 與Bindo雲服務器及POS系統下多個子終端聯通"
+
+msgid "   * Each restaurant can only have 1 master terminal"
+msgstr "   * 每個餐廳只能擁有一台主終端機"
+
+msgid "   * Serves as the kitchen printing server"
+msgstr "   * 作為後廚打印服務器"
+
+msgid "Restaurant - Slave Terminal via LAN"
+msgstr "餐厅-通過LAN連接子終端機"
+
+msgid "   * Push update to Master via LAN"
+msgstr "   * 通過LAN推送更新至主終端機"
+
+msgid "   * Throw an error if master terminal's WAN IP and slave's WAN IP are different"
+msgstr "   * 當主終端機和子終端機的外網IP不同時將報錯"
+
+msgid "   * Throw an error if master terminal's LAN IP and slave's LAN IP belong to different subnet (192.168.123.x)"
+msgstr "   * 當主終端機與子終端機的LAN IP屬於不同子網絡時，報錯(192.168.123.x)"
+
+msgid "Restaurant - Slave Terminal via cloud (Default)"
+msgstr "餐厅-子終端機通過雲（默認）"
+
+msgid " * Push update to Master via cloud (this is how the current slave works)"
+msgstr " * 通過雲向主終端機推送更新（這是目前子終端機的運行方法）"
+
+msgid " * Similar to #1 because it supports offline mode and cache orders itself"
+msgstr " * 與#1相似（因為它支持線下模式並自動緩存訂單）"
+
+msgid " * Similar to #3 because it communicates to the Cloud Server by itself"
+msgstr " * 與#3相似（因為它自動與雲服務器聯通）"
+
+msgid "Display as shortcut in payment screen"
+msgstr "在支付頁面顯示快捷方式"
+
+msgid "Fixed Amount"
+msgstr "固定數額"
+
+msgid "Unavailable"
+msgstr "無法獲取"
+
+msgid "Print Test"
+msgstr "打印測試"
+
+msgid "Name Printer"
+msgstr "打印機命名"
+
+msgid "Tap to refresh and search printer again"
+msgstr "再次點擊刷新並蒐索打印機"
+
+msgid "Support"
+msgstr "支持"
+
+msgid "Thank you for shopping at %@. Please let us know about your shopping experience by replying to this email."
+msgstr "感謝在（%@) 購買，請回複本郵件告知您的購物體驗。"
+
+msgid "Select Image"
+msgstr "選擇圖片"
+
+msgid "Menu Sub-category button display"
+msgstr "顯示菜單子類按鈕"
+
+msgid "Show product sales breakdown on receipt"
+msgstr "在收據上顯示產品銷售詳情"
+
+msgid "Send App Log to Bindo"
+msgstr "向Bindo發送app日誌"
+
+msgid "No private infomation will be sent."
+msgstr "沒有保密信息待傳送"
+
+msgid "New Pin"
+msgstr "新安全密碼"
+
+msgid "Confirm Pin"
+msgstr "確認安全密碼"
+
+msgid "Old Pin"
+msgstr "舊安全密碼"
+
+msgid "Forgot PIN?"
+msgstr "忘記安全密碼?"
+
+msgid "Remsgid cover"
+msgstr "恢復"
+
+msgid "Please enter your Bindo ID or email."
+msgstr "請輸入您的Bindo ID或郵箱"
+
+msgid "We will send you an email to recover your PIN."
+msgstr "我們將向您發送一封郵件恢復您的安全密碼"
+
+msgid "Email Address"
+msgstr "郵箱"
+
+msgid "Terminal"
+msgstr "終端"
+
+msgid "Are you sure you want to mark \"DN number\" as delivered? It's a irreversible action."
+msgstr "你確認要標記此收貨單為「已收貨」嗎？此標記確認後無法逆轉。"
+
+msgid "Confirm to Add Tips %@?"
+msgstr "確定要收小費 %@ 嗎？"
+
+msgid "Show item price on kitchen slips"
+msgstr "顯示產品價格於廚房單上"
+
+msgid "Can't find master, please try to connect."
+msgstr "未能找到主終端，請鏈接主終端后嘗試。"
+
+msgid "Cannot load store managers"
+msgstr "未能加載管理員列表"
+
+msgid "Are you sure to merge Table %@ to %@"
+msgstr "確認合併桌 %@ 到 %@"
+
+#: Modifier Prefix
+
+msgid "New Modifier Prefix"
+msgstr "新附加選項關前置詞"
+
+msgid "Modifier Prefix"
+msgstr "附加選項關前置詞"
+
+msgid "Modifier Prefix Add"
+msgstr "加"
+
+msgid "Modifier Prefix Less"
+msgstr "少"
+
+msgid "Modifier Prefix More"
+msgstr "多"
+
+msgid "Modifier Prefix Change"
+msgstr "轉"
+
+msgid "Modifier Prefix With"
+msgstr "跟"
+
+msgid "Modifier Prefix No"
+msgstr "免"
+
+msgid "Modifier Prefix Side"
+msgstr "放邊"
+
+msgid "No such item."
+msgstr "沒有此項目."
+
+msgid "Procurement Method"
+msgstr "更改發貨方式"
+
+msgid "Enable line item level procurement method"
+msgstr "允許各列項目有不同送貨方式"
+
+msgid "This discount is Non-stackable to all, please deselect applied discount first."
+msgstr "這折扣是不可以與其他的折扣同時使用，請先取消選擇原有折扣"
+
+msgid "Allow to change options"
+msgstr "可更改套餐項目"
+
+msgid "Please add %@ into order"
+msgstr "請把 %@ 加入訂單"
+
+msgid "Received new order"
+msgstr "收到新訂單"
+
+msgid "Would you like to use latest inventory pricing?"
+msgstr "需要使用庫存最新價格嗎?"
+
+msgid "Sorry, you cannot set this listing as an option, because it's pricing by weight."
+msgstr "對不起，您無法選擇這件商品作為選項，因為這是以重量定價的商品。"
+
+msgid "This is a Fixed Pricing listing, but does not have price option, please set price option in Inventory page."
+msgstr "這是一個固定價格的商品，但是沒有價格選項，請在庫存頁面為設置價格選項."
+
+msgid "The checkout amount is negative, please add some products."
+msgstr " 結帳金額必需是正數，請添加產品入訂單。"
+
+msgid "Current party has not been saved."
+msgstr "請先發送訂單"
+
+msgid "Please select weight unit."
+msgstr "請選擇重量單位。"
+
+msgid "Kitchen Alias"
+msgstr "廚房別名"
+
+msgid "Void Order"
+msgstr "取消訂單"
+
+msgid "Are you sure to remove the item(s) and void this check?"
+msgstr "你確定移除項目並使這張訂單無效嗎？"
+
+msgid "Syncing"
+msgstr "正在同步"
+
+msgid "Add To"
+msgstr "添加到"
+
+msgid "Add To Sales"
+msgstr "添加到訂單"
+
+msgid "Add To Current Sales"
+msgstr "添加到當前訂單"
+
+msgid "Add To Existing Sales"
+msgstr "添加到已有訂單"
+
+msgid "Invalid image"
+msgstr "錯誤的圖片數據"
+
+msgid "Can't start communication with label printer"
+msgstr "不能與打印機連接"
+
+#:  Server Side Localization
+
+msgid "Invoice is cancelled."
+msgstr "訂單已被取消。"
+
+msgid "Invoice is paid."
+msgstr "訂單已經支付。"
+
+msgid "Invoice with redeemed deposit doesn't support return money."
+msgstr "包含已兌換預付款的訂單不支付退款。"
+
+msgid "Would you like to refund excess amount?"
+msgstr "你想退還多餘的金額嗎？"
+
+msgid "Process Full Payment"
+msgstr "全額付款"
+
+msgid "Save New Invoice"
+msgstr "保存訂單"
+
+msgid "Discard Changes"
+msgstr "放棄更改"
+
+msgid "Negative Balance"
+msgstr "負結餘"
+
+msgid "Save and Do Not Process Refund"
+msgstr "保存並且不處理退款"
+
+msgid "Would you like to charge remaining balance?"
+msgstr "你要收取剩餘餘額嗎？"
+
+msgid "Add New Printer"
+msgstr "添加新的打印機"
+
+msgid "Add New Kitchen Printer"
+msgstr "添加新的廚房打印機"
+
+msgid "Printer Name"
+msgstr "打印機名字"
+
+msgid "IP Address"
+msgstr "IP 地址"
+
+msgid "Printer Type"
+msgstr "打印機類型"
+
+msgid "Please input a valid IP address.\n(eg. 192.168.1.1"
+msgstr "請輸入合法的IP 地址.\n(比如: 192.168.1.1"
+
+msgid "IP is already in use by other hardwares."
+msgstr "該IP 地址已被使用."
+
+msgid "Can't connect the printer. Please make sure the IP is correct."
+msgstr "不能連接打印機. 請確認IP 地址是否正確."
+
+msgid "Adopted"
+msgstr "被採用"
+
+msgid "Unsuspended"
+msgstr "取消暫停"
+
+msgid "Suspended"
+msgstr "暫停"
+
+msgid "Suspending kitchen printer will erase all pending kitchen slips. Would you like to continue?"
+msgstr "暫停廚房打印機會清除所有待打印的廚房單，確認繼續嗎？"
+
+msgid "This printer has been connected to your master POS."
+msgstr "該打印機已連接到你的POS."
+
+msgid "Refunds"
+msgstr "退款"
+
+msgid "Sales Breakdown"
+msgstr "銷售統計"
+
+msgid "Total Sales"
+msgstr "總銷售額"
+
+msgid "Ref."
+msgstr "參考碼"
+
+msgid "Print by Cashiers"
+msgstr "由收銀員打印"
+
+msgid "Print by Terminals"
+msgstr "由終端打印"
+
+msgid "Printed on"
+msgstr "打印時間"
+
+msgid "Order via mobile ordering app"
+msgstr "於手機自助下單"
+
+
+#: Left Menu
+
+msgid "Lot Inquiry"
+msgstr "批量查詢"
+
+msgid "Restaurant Menu"
+msgstr "菜單設置"
+
+msgid "Inventory Variance"
+msgstr "庫存變動"
+
+msgid "Promotion Codes"
+msgstr "優惠碼"
+
+msgid "Membership Levels"
+msgstr "會員等級"
+
+msgid "Register Sales"
+msgstr "銷售"
+
+msgid "Line Item Status"
+msgstr "訂單項目狀態"
+
+msgid "Line Item Status Set Up"
+msgstr "訂單項目狀態設置"
+
+msgid "Workflow Set Up"
+msgstr "工作流程設置"
+
+msgid "Return Note"
+msgstr "退貨單"
+
+msgid "Advanced Reports"
+msgstr "高級報表"
+
+msgid "Tableau"
+msgstr "表格"
+
+msgid "Admin"
+msgstr "管理員"
+
+msgid "Inventory Management"
+msgstr "庫存管理"
+
+msgid "Stock Take Management"
+msgstr "盤點管理"
+
+msgid "Production Management"
+msgstr "生產管理"
+
+msgid "CRM"
+msgstr "客戶關係管理"
+
+msgid "Sales Management"
+msgstr "銷售管理"
+
+msgid "Supplier Management"
+msgstr "供應商管理"
+
+msgid "Advanced Management"
+msgstr "進階管理"
+
+msgid "Promotion"
+msgstr "優惠"
+
+msgid "Opening Hours"
+msgstr "開放時間"
+
+msgid "Time Segments"
+msgstr "時段"
+
+msgid "Permissions"
+msgstr "權限"
+
+msgid "Additional Fees"
+msgstr "額外費用"
+
+msgid "Email Template"
+msgstr "電郵模板"
+
+msgid "Currencies"
+msgstr "𠥔率"
+
+msgid "Languages"
+msgstr "語言"
+
+msgid "Custom Attributes"
+msgstr "自定義屬性"
+
+msgid "Stations"
+msgstr "廚房顯示器設定"
+
+msgid "Embedded Barcodes"
+msgstr "嵌入式條碼"
+
+msgid "Table Size Segmentations"
+msgstr "座位人數組別"
+
+msgid "UOM Groups"
+msgstr "計價度量單位"
+
+msgid "Payment Types"
+msgstr "支付方式"
+
+
+
+#: Summary Page
+
+msgid "Product Sold Today"
+msgstr "今日銷售"
+
+msgid "Products Sold Today"
+msgstr "今日銷售"
+
+msgid "Product Sold Last 7 Days"
+msgstr "最近7天銷售"
+
+msgid "Products Sold Last 7 Days"
+msgstr "最近7天銷售"
+
+msgid "Purchased Today"
+msgstr "今日購貨"
+
+msgid "Purchased Last 7 Days"
+msgstr "最近7天購貨"
+
+
+#: Inventory
+
+msgid "New UPC Item"
+msgstr "新建UPC項目"
+
+msgid "Inventory Item"
+msgstr "庫存貨品"
+
+msgid "Non-inventory Item"
+msgstr "非庫存貨品"
+
+msgid "Sellable Item"
+msgstr "可售貨品"
+
+msgid "Non-sellable Item"
+msgstr "不可售賣貨品"
+
+msgid "Product ID"
+msgstr "產品編號"
+
+msgid "Original Price"
+msgstr "原始價格"
+
+msgid "Available Quantity"
+msgstr "可售數量"
+
+msgid "Current Inventory"
+msgstr "現有庫存"
+
+msgid "Item Type"
+msgstr "項目種類"
+
+msgid "Sellable"
+msgstr "可售的"
+
+msgid "Unit of Measure"
+msgstr "單位"
+
+msgid "Extended Features"
+msgstr "伸延功能"
+
+msgid "Exclude from all discount"
+msgstr "不受任何折扣影響"
+
+msgid "Store front allow negative quantity"
+msgstr "容許負庫存"
+
+msgid "Sold out"
+msgstr "售罄"
+
+msgid "Enable expiration date"
+msgstr "支援到期日"
+
+msgid "Images"
+msgstr "圖片"
+
+msgid "This item has not been associated with any supplier."
+msgstr "此產品沒有相關的供應商。"
+
+msgid "Add Supplier"
+msgstr "添加供應商"
+
+msgid "Modifiers Groups"
+msgstr "改碼組別"
+
+msgid "Group name"
+msgstr "組別名稱"
+
+msgid "Enable"
+msgstr "生效"
+
+msgid "Tax Type"
+msgstr "稅類別"
+
+msgid "Method"
+msgstr "方法"
+
+msgid "Threshold"
+msgstr "上限"
+
+msgid "Included in price"
+msgstr "價格已包含"
+
+msgid "Action Date"
+msgstr "實行日期"
+
+msgid "Source"
+msgstr "來源"
+
+msgid "Action"
+msgstr "實行"
+
+msgid "Cost on Order"
+msgstr "訂單成本"
+
+msgid "Cost After"
+msgstr "售後成本"
+
+
+#:--------------------------------------------REPORTS START-----------------------------------------
+#: Reports Page
+
+msgid "Sales Summary Report By Days"
+msgstr "銷售摘要報表 (每日) "
+
+msgid "Revenue Report"
+msgstr "收入報表"
+
+msgid "Daily Summary Report"
+msgstr "每日摘要報表"
+
+msgid "Daily Order and Item Closing Report"
+msgstr "每日訂單及產品結算報表"
+
+msgid "Sales by Hourly Report"
+msgstr "銷售報表 (每小時)"
+
+msgid "Sales by Department Report"
+msgstr "銷售報表 (部門) "
+
+msgid "Sales Performance Summary Report"
+msgstr "銷售員表現摘要報表"
+
+msgid "Sales Breakdown Report"
+msgstr "銷售詳細報表"
+
+msgid "Menu Sales Report"
+msgstr "菜單銷售報表"
+
+msgid "Discount Applied Report"
+msgstr "折扣應用報表"
+
+msgid "Discount Applied Breakdown Report"
+msgstr "折扣應用詳細報表"
+
+msgid "Inventory & Material"
+msgstr "庫存及素材"
+
+msgid "Inventory Flow Report"
+msgstr "庫存流量報表"
+
+msgid "Expiration Date Report"
+msgstr "到期日報表"
+
+msgid "Purchase Order Breakdown Report"
+msgstr "訂貨單詳細報表"
+
+msgid "Receive and Return Note Breakdown Report"
+msgstr "收貨及退貨單報表"
+
+msgid "Inventory Report by Item"
+msgstr "庫存報表 (每件產品) "
+
+msgid "Stock Transfer Breakdown Report"
+msgstr "存貨調動詳細報表"
+
+msgid "Stock Take"
+msgstr "盤點"
+
+msgid "Stock Take Breakdown Report"
+msgstr "盤點詳細報表"
+
+msgid "Stock Take Summary Report"
+msgstr "盤點摘要報表"
+
+msgid "Restaurant"
+msgstr "餐廳"
+
+msgid "Party Report"
+msgstr "客人報表"
+
+msgid "Void Report"
+msgstr "訂單/貨品無效報表"
+
+msgid "Table Usage Report"
+msgstr "座檯使用報表"
+
+msgid "Menu Sales Report"
+msgstr "菜單銷售報表"
+
+msgid "Reservation and Deposit Report"
+msgstr "訂座及預支報表"
+
+msgid "Deposit Credit Report"
+msgstr "預支報表"
+
+msgid "Transaction"
+msgstr "交易報表"
+
+msgid "Voucher Report"
+msgstr "禮券報表"
+
+msgid "Misc"
+msgstr "雜項"
+
+msgid "Courier Performance Breakdown Report"
+msgstr "快遞報表"
+
+
+
+#: sales_summary_report.html
+
+msgid "Show Currency Symbols"
+msgstr "滙出時包含貨幣符號"
+
+msgid "Count"
+msgstr "數額"
+
+msgid "completed paid count"
+msgstr "已完成單（已付）"
+
+msgid "completed unpaid count"
+msgstr "已完成單（未付）"
+
+msgid "completed partial paid count"
+msgstr "已完成單（部份付款）"
+
+msgid "gross profit"
+msgstr "毛利潤"
+
+msgid "net sales"
+msgstr "淨銷售額"
+
+msgid "net sales before discount and service fee"
+msgstr "銷售額（不包含折扣及服務費）"
+
+msgid "gross register sales"
+msgstr "前台銷售總量"
+
+msgid "gross invoice sales"
+msgstr "訂單銷售總量"
+
+msgid "gross web sales"
+msgstr "網絡銷售總量"
+
+msgid "total gross sales"
+msgstr "總銷售量"
+
+msgid "register refunds"
+msgstr "前台退款"
+
+msgid "web refunds"
+msgstr "網絡退款"
+
+msgid "invoice refunds"
+msgstr "訂單退款"
+
+msgid "total refunds"
+msgstr "總退款"
+
+msgid "service fee in total"
+msgstr "服務費總額"
+
+msgid "service fee in total gross sales"
+msgstr "總銷售額內的服務費"
+
+msgid "service fee in total refunds"
+msgstr "退款額內的服務費"
+
+msgid "discount applied"
+msgstr "折扣總額"
+
+msgid "amount discount applied"
+msgstr "金額折扣"
+
+msgid "percentage discount applied"
+msgstr "百分比折扣"
+
+msgid "rounding in total"
+msgstr "取整總額"
+
+msgid "rounding applied"
+msgstr "除整"
+
+msgid "rounding refunded"
+msgstr "退款的取整"
+
+msgid "net cogs"
+msgstr "淨成本"
+
+msgid "register sales cogs"
+msgstr "銷售單成本"
+
+msgid "invoice sales cogs"
+msgstr "訂單成本"
+
+msgid "web sales cogs"
+msgstr "網上銷售成本"
+
+msgid "register refunds cogs"
+msgstr "前台退款成本"
+
+msgid "canceled invoices cogs"
+msgstr "取消的訂單成本"
+
+msgid "web refunds cogs"
+msgstr "網上退款成本"
+
+msgid "purchase order cogs"
+msgstr "購貨單成本"
+
+msgid "octopus transactions value"
+msgstr "八達通總交易額"
+
+msgid "octopus payment value"
+msgstr "八達通付款交易額"
+
+msgid "octopus top up value"
+msgstr "八達通增值交易額"
+
+msgid "count"
+msgstr "數額"
+
+msgid "amount"
+msgstr "合計"
+
+msgid "gross sales internal items"
+msgstr "禮券／商店代幣產生的銷售額"
+
+msgid "non sales internal items"
+msgstr "禮券／商店代幣產生及增值（不計算入銷售）"
+
+msgid "Store credit issuance"
+msgstr "商店代幣發行"
+
+msgid "Store credit issuance discount"
+msgstr "商店代幣發行折扣"
+
+msgid "payment by tender"
+msgstr "付款銷售量"
+
+msgid "tips amount"
+msgstr "小費金額"
+
+msgid "refund by tender"
+msgstr "付款退款"
+
+msgid "discount applied by name"
+msgstr "折扣名稱"
+
+msgid "sales by associates"
+msgstr "店員銷售額"
+
+msgid "sales by time segment"
+msgstr "時段銷售量"
+
+msgid "sales by time segments and departments"
+msgstr "時段及部門銷售額"
+
+msgid "sales by time segment and category"
+msgstr "時段及分類銷售額"
+
+msgid "department"
+msgstr "部門"
+
+msgid "cover"
+msgstr "人數"
+
+msgid "Avg."
+msgstr "平均"
+
+msgid "category"
+msgstr "分類"
+
+
+
+#: sales_summary_report_by_day.html
+
+msgid "Show Currency Symbols in Export"
+msgstr "滙出時包含貨幣符號"
+
+msgid "Total Gross Sales"
+msgstr "總銷售量"
+
+msgid "Total Refunds"
+msgstr "總退款"
+
+msgid "Discount Applied"
+msgstr "折扣總額"
+
+msgid "Rounding In Total"
+msgstr "取整總額"
+
+msgid "Service Fee In Total"
+msgstr "服務費總額"
+
+msgid "Net Non Taxable Sales"
+msgstr "稅後淨銷售"
+
+msgid "Gift Card And Store Credit Purchased"
+msgstr "已購買的禮品及商店代幣"
+
+msgid "Net Tips"
+msgstr "小費"
+
+msgid "Net Cogs"
+msgstr "淨成本"
+
+msgid "Net Payment"
+msgstr "已收款項"
+
+msgid "Payment - Cash"
+msgstr "付款 - 現金"
+
+
+
+#: revenue_report.html
+
+msgid "Meal Period"
+msgstr "時間"
+
+msgid "Order Count"
+msgstr "單數"
+
+msgid "Total Tax"
+msgstr "總稅額"
+
+msgid "Total Tips"
+msgstr "總小費"
+
+msgid "Rounding Amount"
+msgstr "除整金額"
+
+msgid "Discount Amount"
+msgstr "折扣金額"
+
+msgid "Amount Before Tips"
+msgstr "金額(不包括小費）"
+
+msgid "Amount After Tips"
+msgstr "金額(包括小費）"
+
+
+
+#: daily_summary_report.html
+
+msgid "OPERATING STATISTICS"
+msgstr "營運數據"
+
+msgid "Net Sales Average"
+msgstr "平均淨銷售額"
+
+msgid "Cover Avg Net"
+msgstr "每人平均淨銷售額"
+
+msgid "Item Count"
+msgstr "項目數量"
+
+msgid "Item Avg Net"
+msgstr "每項目平均淨銷售額"
+
+msgid "NET SALES"
+msgstr "淨銷售額"
+
+msgid "- Discounts"
+msgstr "- 折扣"
+
+msgid "- Refunds"
+msgstr "- 退款"
+
+msgid "+ Service Charge"
+msgstr "+ 服務費"
+
+msgid "+ Rounding"
+msgstr "+ 取整"
+
+msgid "NON-SALES"
+msgstr "不計算入銷售額的項目"
+
+msgid "Gift Card Purchased"
+msgstr "已購買的禮品"
+
+msgid "Store Credit Purchased"
+msgstr "已購買的商店代幣"
+
+msgid "DISCOUNT BREAKDOWN"
+msgstr "折扣詳細"
+
+msgid "SALES BY DEPARTMENT"
+msgstr "部門銷售量"
+
+msgid "SALES BY MEAL PERIOD"
+msgstr "時段銷售分析"
+
+msgid "Party Count"
+msgstr "人數"
+
+msgid "SALES BY TIME SEGMENT & DEPT"
+msgstr "時段及部門銷售額"
+
+msgid "SALES BY TIME SEGMENT & CATEGORY"
+msgstr "時段及分類銷售額"
+
+msgid "Register COGS"
+msgstr "銷售單成本"
+
+msgid "Invoice COGS"
+msgstr "訂單成本"
+
+msgid "Web COGS"
+msgstr "網上銷售成本"
+
+msgid "Register Refund COGS"
+msgstr "銷售退款成本"
+
+msgid "Invoice Refund COGS"
+msgstr "訂單退款成本"
+
+msgid "Web Refunds COGS"
+msgstr "網上銷售退款成本"
+
+msgid "PO COGS"
+msgstr "購貨單成本"
+
+msgid "Cancelled COGS"
+msgstr "已取消單的成本"
+
+msgid "Parties By Zone"
+msgstr "分區人數"
+
+msgid "Room Name"
+msgstr "分區名稱"
+
+msgid "CHANNEL METRICS"
+msgstr "不同銷售渠道指標"
+
+msgid "Sale Amount"
+msgstr "銷售额"
+
+msgid "% Sales"
+msgstr "銷售百分比"
+
+msgid "Dine-in / Walk-in (offline)"
+msgstr "堂食"
+
+msgid "Pickup (online / offline)"
+msgstr "外賣"
+
+msgid "Delivery (online / offline)"
+msgstr "外送"
+
+msgid "O2O METRICS"
+msgstr "O2O 指標"
+
+msgid "Invoice Sales"
+msgstr "訂單銷售"
+
+msgid "Web Sales"
+msgstr "網上銷售"
+
+msgid "PAYMENT BREAKDOWN"
+msgstr "付款詳細"
+
+msgid "PAYMENT BY ASSOCIATE"
+msgstr "金額（銷售員）"
+
+msgid "ORDER STATUS"
+msgstr "訂單（狀態）"
+
+msgid "Receivable"
+msgstr "應收賬款"
+
+msgid "Invoiced Unpaid"
+msgstr "未付訂單"
+
+msgid "Total Receivables"
+msgstr "總應收賬款"
+
+msgid "Voids"
+msgstr "無效單"
+
+
+
+#: daily_earning_report.html
+
+msgid "Record date"
+msgstr "日期"
+
+msgid "Product Total"
+msgstr "項目總和"
+
+msgid "Cogs"
+msgstr "成本"
+
+
+
+#: daily_order_and_item_closing_report.html
+
+msgid "Sales Income"
+msgstr "銷售收入"
+
+msgid "Number of Invoice"
+msgstr "訂單數量"
+
+msgid "Item Sold Qty"
+msgstr "項目銷售數量"
+
+msgid "Item Return Qty"
+msgstr "退貨數量"
+
+msgid "Total Sold Amount"
+msgstr "總銷售金額"
+
+msgid "Total Return Amount"
+msgstr "總退貨金額"
+
+msgid "Total Discount"
+msgstr "折扣總額"
+
+msgid "Open Orders"
+msgstr "進行中銷售單"
+
+msgid "Created Date"
+msgstr "產生日期"
+
+msgid "Item Qty"
+msgstr "項目數量"
+
+msgid "Item Sales Summary"
+msgstr "項目銷售摘要"
+
+msgid "Item Brand"
+msgstr "品牌"
+
+msgid "Inventory Qty"
+msgstr "庫存數量"
+
+
+
+#:sales_by_hourly_report.html
+
+msgid "Range"
+msgstr "時間段"
+
+msgid "Dine in count"
+msgstr "堂食單數量"
+
+msgid "Dine In Item sold "
+msgstr "堂食銷售項目數量"
+
+msgid "Dine In Gross Sales"
+msgstr "堂食總銷售額"
+
+msgid "Cover"
+msgstr "人數"
+
+msgid "Avg Per Cover"
+msgstr "平均每人消費"
+
+msgid "Pick Up Count"
+msgstr "外賣單數量"
+
+msgid "Pick Up Item Sold"
+msgstr "外賣銷售項目數量"
+
+msgid "Pick Up Gross Sales"
+msgstr "外賣總銷售額"
+
+msgid "Avg Check"
+msgstr "平均每單消費"
+
+msgid "Delivery Count"
+msgstr "外送單數量"
+
+msgid "Delivery Item Sold"
+msgstr "外送銷售項目數量"
+
+msgid "Delivery Gross Sales"
+msgstr "外送總銷售額"
+
+msgid "Order Count"
+msgstr "單數量"
+
+msgid "Item Sold"
+msgstr "已售項目數量"
+
+msgid "Gross Sales"
+msgstr "總銷售額"
+
+msgid "Total discount"
+msgstr "總折扣"
+
+msgid "Total service charge"
+msgstr "總服務費"
+
+msgid "Refund Amount"
+msgstr "退款金額"
+
+msgid "Rounding Amount"
+msgstr "除整金額"
+
+msgid "Net Sales"
+msgstr "淨銷售額"
+
+msgid "Total Tips"
+msgstr "總小費"
+
+msgid "Avg Total"
+msgstr "總平均每單消費"
+
+
+
+#: sales_by_department_report.html
+
+msgid "Top-tier Department"
+msgstr "部門"
+
+msgid "2nd-tier Department"
+msgstr "第二層部門"
+
+msgid "Average Price"
+msgstr "平均售價"
+
+msgid "Average Cost"
+msgstr "平均成本"
+
+msgid "Discount"
+msgstr "折扣"
+
+msgid "Net Sales After Discount"
+msgstr "折扣後淨銷售額"
+
+msgid "Quantity Sold"
+msgstr "已售數量"
+
+msgid "% Quantity"
+msgstr "百份比（以銷售數量計算）"
+
+msgid "Net Sales Before Disc & SVG"
+msgstr "淨銷售額（不包折扣及服務費）"
+
+msgid "% Amount"
+msgstr "百份比（以金額計算）"
+
+msgid "COGS"
+msgstr "成本"
+
+msgid "Profit"
+msgstr "利潤"
+
+msgid "Margin"
+msgstr "利潤百份比"
+
+
+
+#:sales_performance_summary_report.html
+
+msgid "Date From"
+msgstr "開始日期"
+
+msgid "Date To"
+msgstr "結束日期"
+
+msgid "Sales Person"
+msgstr "銷售員"
+
+msgid "Number Of Orders"
+msgstr "單數量"
+
+msgid "Items Sold"
+msgstr "已售項目數量"
+
+msgid "Total Amount"
+msgstr "總金額"
+
+msgid "Discount Amount"
+msgstr "折扣金額"
+
+msgid "Total Tax"
+msgstr "總稅額"
+
+msgid "Final Sales Total"
+msgstr "銷售金額（包含折扣及稅額）"
+
+
+
+#:sales_breakdown_report.html
+
+msgid "Number"
+msgstr "單號"
+
+msgid "Reference Number"
+msgstr "參考號"
+
+msgid "User"
+msgstr "員工"
+
+msgid "Table"
+msgstr "枱號"
+
+msgid "Cover"
+msgstr "人數"
+
+msgid "Product Total"
+msgstr "總金額"
+
+msgid "Service Fee Total"
+msgstr "總服務費"
+
+msgid "Discount"
+msgstr "折扣"
+
+msgid "Tips"
+msgstr "小費"
+
+msgid "Tax"
+msgstr "稅額"
+
+msgid "Total"
+msgstr "總金額（包含折／小費／稅）"
+
+msgid "Status"
+msgstr "單狀態"
+
+msgid "Payment"
+msgstr "付款方法及金額"
+
+msgid "Rounding"
+msgstr "除整"
+
+msgid "Order ID"
+msgstr "單ID"
+
+msgid "Completed Date"
+msgstr "完成日期"
+
+msgid "Completed Time"
+msgstr "完成時間"
+
+msgid "Canceled Date"
+msgstr "取消日期"
+
+msgid "Canceled Time"
+msgstr "取消時間"
+
+msgid "Customer"
+msgstr "客人名稱"
+
+msgid "Shipping Method"
+msgstr "運送方法"
+
+msgid "Created Date"
+msgstr "產生日期"
+
+msgid "Created Time"
+msgstr "產生時間"
+
+
+
+#: sales_performance_report.html
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Time"
+msgstr "時間"
+
+msgid "Order Number"
+msgstr "單號"
+
+msgid "Cashier Name"
+msgstr "收銀員名稱"
+
+msgid "Product Name"
+msgstr "貨品名稱"
+
+msgid "Qty"
+msgstr "數量"
+
+msgid "Cost"
+msgstr "成本"
+
+msgid "Price"
+msgstr "價格"
+
+msgid "Discounts"
+msgstr "折扣"
+
+msgid "Total Collected"
+msgstr "總已收金額"
+
+msgid "Tax"
+msgstr "稅額"
+
+msgid "Payment Method"
+msgstr "付款方法"
+
+msgid "Sales Type"
+msgstr "銷售種類"
+
+
+
+#: menu_sales_report.html
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Time"
+msgstr "時間"
+
+msgid "Menu"
+msgstr "菜單"
+
+msgid "Item"
+msgstr "項目"
+
+msgid "Department"
+msgstr "部門"
+
+msgid "Quantity"
+msgstr "數量"
+
+msgid "Price"
+msgstr "價格"
+
+msgid "Discounts"
+msgstr "折扣"
+
+msgid "Tax"
+msgstr "稅額"
+
+msgid "Final Price"
+msgstr "最終價格"
+
+
+
+#: customer_report.html
+
+msgid "Id"
+msgstr "編號"
+
+msgid "Other Addresses"
+msgstr "其他地址"
+
+msgid "Card On File"
+msgstr "信用卡"
+
+msgid "Total Order"
+msgstr "消費次數"
+
+
+
+#: discount_applied_report.html
+
+msgid "Discount Name"
+msgstr "折扣名稱"
+
+msgid "Flat Discount"
+msgstr "定額折扣"
+
+msgid "Percent Discount"
+msgstr "百份比折扣"
+
+
+
+#: discount_applied_breakdown_report.html
+
+msgid "Store Title"
+msgstr "店舖"
+
+msgid "No. of Transactions"
+msgstr "交易數量"
+
+msgid "Order State"
+msgstr "交易狀態"
+
+msgid "Revenue"
+msgstr "收入"
+
+msgid "Net Revenue"
+msgstr "淨收入"
+
+msgid "Item Percent of Revenue"
+msgstr "項目收入百份比"
+
+msgid "Item Percent of Net Revenue"
+msgstr "項目淨收入百份比"
+
+
+
+#: inventory_report.html
+
+msgid "supplier"
+msgstr "供應商"
+
+msgid "brand"
+msgstr "牌"
+
+msgid "similar"
+msgstr "相近"
+
+msgid "starts with"
+msgstr "始於"
+
+msgid "exact"
+msgstr "精確"
+
+msgid "Gtid"
+msgstr ""
+
+msgid "Bpid"
+msgstr ""
+
+msgid "2nd Barcode"
+msgstr ""
+
+msgid "Listing Reference Codes"
+msgstr "參考碼"
+
+msgid "Product name"
+msgstr "貨品名稱"
+
+msgid "Reorder trigger point"
+msgstr "補貨觸發點"
+
+
+
+#: inventory_summary_report.html
+
+msgid "Total Retail"
+msgstr "貨值（售價）"
+
+msgid "Unit Profit"
+msgstr "每單位利潤"
+
+
+
+#: inventory_flow_report.html
+
+msgid "Barcode"
+msgstr "條碼"
+
+msgid "Quantity on Shelf"
+msgstr "庫存數量"
+
+msgid "Quantity Stockroom"
+msgstr "庫存數量（儲物房）"
+
+msgid "In-transit Supplier"
+msgstr "供應商運送中"
+
+msgid "In transit Transfer"
+msgstr "轉貨中"
+
+msgid "Reserved Invoice"
+msgstr "訂單預留"
+
+msgid "Reserved Transfer"
+msgstr "轉貨預留"
+
+msgid "On-Hand Quantity"
+msgstr "手上數量"
+
+msgid "Quantity Received"
+msgstr "已接收數量"
+
+msgid "Quantity Delta"
+msgstr "數量變動"
+
+msgid "Quantity Oversold"
+msgstr "超賣數量"
+
+msgid "Quantity Adjusted"
+msgstr "調整數量"
+
+
+
+#: serialized_report.html
+
+
+
+#: expiration_date_report.html
+
+msgid "UPC/EAN"
+msgstr ""
+
+msgid "BLU/SKU"
+msgstr ""
+
+msgid "Current Batch"
+msgstr "現時批次"
+
+msgid "Latest Batch"
+msgstr "最新批次"
+
+msgid "Remaining Qty"
+msgstr "餘下數量"
+
+msgid "Theoretically Expired Qty"
+msgstr "理論上已過期數量"
+
+
+
+#: purchase_order_breakdown_report.html
+
+msgid "Last Updated At"
+msgstr "最後更新"
+
+msgid "Submitted At"
+msgstr "提交日期"
+
+msgid "Expected Delivery Date"
+msgstr "預計送貨日期"
+
+msgid "Item Name"
+msgstr "項目名稱"
+
+msgid "Gtid"
+msgstr ""
+
+msgid "Listing Barcode"
+msgstr "條碼"
+
+msgid "Listing Reference Codes"
+msgstr "參考碼"
+
+msgid "Fulfill Qty"
+msgstr "已實現數量"
+
+msgid "Unit Cost"
+msgstr "每單位成本"
+
+msgid "Ordered Cost Value"
+msgstr "訂購成本值"
+
+msgid "Fulfilled Cost Value"
+msgstr "已實現成本值"
+
+msgid "Outstanding Cost Value"
+msgstr "成本值（未到貨）"
+
+msgid "PO Currency"
+msgstr "購貨單貨幣"
+
+msgid "Store Currency"
+msgstr "店舖貨幣"
+
+msgid "Unit Cost in Store Currency"
+msgstr "每單位成本（店貨幣）"
+
+
+
+#: receive_and_return_note_breakdown_report.html
+
+msgid "Document Type"
+msgstr "文件種類"
+
+msgid "Document Number"
+msgstr "文件號碼"
+
+msgid "Expected Receive Date"
+msgstr "預計接收日期"
+
+msgid "Actual Receive Date"
+msgstr "實際接收日期"
+
+msgid "Item Name"
+msgstr "項目名稱"
+
+msgid "UPC/EAN"
+msgstr ""
+
+msgid "Gtid"
+msgstr ""
+
+msgid "Listing Barcode"
+msgstr "條碼"
+
+msgid "Listing Reference Codes"
+msgstr "參考號"
+
+msgid "Qty Expected"
+msgstr "預計數量"
+
+msgid "Qty Received"
+msgstr "已接收數量"
+
+msgid "Fulfillment Note"
+msgstr "備註"
+
+
+
+#: inventory_report_by_item.html
+
+msgid "Inventory Report By Item"
+msgstr "庫存報表 (每件產品) "
+
+msgid "Product Id"
+msgstr "貨品編號"
+
+msgid "Redeemed Coupon Qty"
+msgstr "已兌換優惠券數量"
+
+msgid "Stock Qty"
+msgstr "庫存數量"
+
+msgid "Voucher Qty"
+msgstr "禮券數量"
+
+msgid "Total Qty"
+msgstr "總數量"
+
+msgid "Net Total"
+msgstr "淨金額"
+
+msgid "Store Id"
+msgstr "店舖"
+
+
+
+#: stock_transfer_breakdown_report.html
+
+msgid "Shipping Date"
+msgstr "發貨日期"
+
+msgid "Receiving Date"
+msgstr "收貨日期"
+
+msgid "Direction"
+msgstr "出／入貨"
+
+msgid "Quantity Requested"
+msgstr "要求數量"
+
+msgid "Quantity Departed"
+msgstr "出貨數量"
+
+msgid "Quantity Received"
+msgstr "收貨數量"
+
+
+
+#: stock_take_breakdown_report.html
+
+msgid "End Date"
+msgstr "完成日"
+
+msgid "Session ID"
+msgstr "盤點號碼"
+
+msgid "Barcode"
+msgstr "條碼"
+
+msgid "Stock Take Quantity"
+msgstr "實盤"
+
+
+
+#: stock_take_summary_report.html
+
+msgid "Product Name "
+msgstr "貨品名稱"
+
+msgid "Areas"
+msgstr "區域"
+
+msgid "Expected Qty"
+msgstr "系統數量"
+
+msgid "Stock Take Qty"
+msgstr "實盤數量"
+
+msgid "Difference"
+msgstr "差異"
+
+
+
+#: party_report.html
+
+msgid "Start Date"
+msgstr "開始日期"
+
+msgid "Start Time"
+msgstr "開始時間"
+
+msgid "Close Date"
+msgstr "完成日期"
+
+msgid "Close Time"
+msgstr "完成時間"
+
+msgid "Zone"
+msgstr "區域"
+
+msgid "Table Number"
+msgstr "枱號"
+
+
+
+#: void_report.html
+
+msgid "Voided By"
+msgstr "操作人員"
+
+msgid "Voided Item"
+msgstr "無效項目"
+
+msgid "Reason"
+msgstr "原因"
+
+
+
+#: table_usage_report.html
+
+msgid "Table Name"
+msgstr "枱名稱"
+
+msgid "Table Id"
+msgstr "枱號"
+
+msgid "Table Turnover"
+msgstr "枱被使用次數"
+
+msgid "Avg Duration"
+msgstr "平均用餐時間"
+
+msgid "Avg Gross Sales"
+msgstr "平均總銷售額"
+
+msgid "Avg Total Revenue Per Order"
+msgstr "平均總收入（每單）"
+
+
+
+#: reservation_and_deposit_report.html
+
+msgid "Pre-paid Amount"
+msgstr "預付金額"
+
+msgid "Pre-order Amount"
+msgstr "預訂金額"
+
+msgid "Pre-selected Table"
+msgstr "預選枱號"
+
+msgid "Period"
+msgstr "時段"
+
+
+
+#: deposit_credit_report.html
+
+msgid "Shipping Date"
+msgstr "發貨日期"
+
+msgid "Airprint Invoice"
+msgstr "Airprint 訂單"
+
+msgid "Welcome"
+msgstr "歡迎電郵"
+
+msgid "Password Reset Instruction"
+msgstr "密碼重置說明"
+
+msgid "Password Reset Success"
+msgstr "成功密碼重置"
+
+msgid "Stock Transfer"
+msgstr "庫存傳遞"
+
+msgid "Good Received Note"
+msgstr "收貨單"
+
+msgid "Print Check"
+msgstr "印單"
+
+msgid "Currencies"
+msgstr "𠥔率"
+
+msgid "Receiving Date"
+msgstr "收貨日期"
+
+msgid "Direction"
+msgstr "出／入貨"
+
+
+
+#: product_sold_breakdown_report.html
+
+msgid "GTID"
+msgstr ""
+
+msgid "Top Department"
+msgstr "最高部門"
+
+msgid "Remark"
+msgstr "備註"
+
+
+
+#: product_sold_report.html
+
+msgid "Quantity sold"
+msgstr "已售數量"
+
+
+
+#: octopus_transaction_breakdown_report.html
+
+msgid "Last Add Type"
+msgstr "最後添加類型"
+
+msgid "Last Add Date"
+msgstr "最後添加日期"
+
+msgid "Value"
+msgstr "金額"
+
+
+
+#: transaction_breakdown_report.html
+
+msgid "Tips Amount"
+msgstr "小費金額"
+
+msgid "Voided At"
+msgstr "使無效日期"
+
+msgid "Card Present"
+msgstr "卡存在"
+
+msgid "Tax Amount"
+msgstr "稅額"
+
+msgid "Note"
+msgstr "備註"
+
+
+
+#: batch_report.html
+
+
+
+#: refund_report.html
+
+msgid "Refund Create At"
+msgstr "產生退款日期"
+
+msgid "Order Create At"
+msgstr "交易產生日期"
+
+msgid "Refund Quantity"
+msgstr "退款數量"
+
+msgid "Amount Refunded"
+msgstr "已退金額"
+
+msgid "Issuer.Display Name"
+msgstr "發行人名稱"
+
+
+
+#: accounts_receivable_report.html
+
+msgid "Age(days)"
+msgstr "日"
+
+msgid "Amount Current Due"
+msgstr "已到期金額"
+
+
+
+#: cashier_transaction_report.html
+
+msgid "Business Date"
+msgstr "營業日期"
+
+
+
+#: tax_summary_report.html
+
+
+
+#: voucher_report.html
+
+msgid "Voucher Bcid"
+msgstr "禮券編號"
+
+msgid "Voucher Name"
+msgstr "禮券名稱"
+
+msgid "Voucher Created At"
+msgstr "產生日期"
+
+msgid "Face Value"
+msgstr "面值"
+
+msgid "True Value"
+msgstr "實際價值"
+
+msgid "Expired At"
+msgstr "到期日"
+
+msgid "Sold At"
+msgstr "銷售日期"
+
+msgid "Sold By"
+msgstr "營業員"
+
+msgid "Sold At Order Number"
+msgstr "銷售單號碼"
+
+msgid "Sold At Order Reference Number"
+msgstr "銷售單參考號碼"
+
+msgid "Customer Name"
+msgstr "客人名稱"
+
+msgid "Redeemed At"
+msgstr "兌換日"
+
+msgid "Redeemed At Order Number"
+msgstr "兌換交易號碼"
+
+msgid "Redeemed At Reference Number"
+msgstr "兌換交易參考號碼"
+
+msgid "Sold At Store"
+msgstr "銷售店舖"
+
+msgid "Redeemed At Store"
+msgstr "兌換店舖"
+
+
+
+#: time_clock_report.html
+
+msgid "Clock In Time"
+msgstr "上班時間"
+
+msgid "Clock Out Time"
+msgstr "下班時間"
+
+msgid "Total time"
+msgstr "總工時"
+
+msgid "Adjustment Type"
+msgstr "調整種類"
+
+msgid "Added by"
+msgstr "員工"
+
+
+
+#: courier_performance_breakdown_report.html
+
+msgid "simple"
+msgstr "基本"
+
+msgid "advance"
+msgstr "進階"
+
+msgid "filter..."
+msgstr "過濾"
+
+msgid "filter by"
+msgstr "過濾"
+
+msgid "Courier Add Time"
+msgstr "時間"
+
+msgid "Order Total"
+msgstr "總金額"
+
+#:--------------------------------------------REPORTS END-----------------------------------------

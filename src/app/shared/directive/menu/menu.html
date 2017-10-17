@@ -1,0 +1,51 @@
+<div>
+  <div class='menu__list'>
+    <ul class="main-menu">
+      <li ng-repeat="item in menu.list"
+        ng-if="!item.hidden">
+        <div  ui-sref-active='-active' class="main-menu-item" ng-class="{ 'main-menu-group':!item.isLink && !item.isMenu, 'hide-on-production':item.hideOnProduction }">
+          <span class="menu__group" ng-bind="item.title | translate" ng-if="!item.isLink && !item.isMenu"></span>
+
+          <a ng-class='{ "-disabled": item.disabled }' ng-if="item.isMenu" ng-click="item.menushow=!item.menushow">
+            <i class='main-menu-icon -{{item.icon}}'></i>{{item.title|translate}}
+          </a>
+
+          <a ui-sref='app.dashboard.{{item.route}}'
+             ng-class='{ "-disabled": item.disabled }'
+             ng-if="item.isLink"
+             ng-click="reload(item.route)">
+            <i class='main-menu-icon -{{item.icon}}'></i>
+            {{item.title|translate}}
+            <span class="label" ng-if="item.label">{{item.label}}</span>
+          </a>
+
+          <span ui-sref='app.dashboard.{{item.route}}'></span>
+        </div>
+        <ul class="menu__submenu" ng-if="item.child" ng-show="item.menushow">
+          <li ng-repeat="submenu in item.child" ng-if="!submenu.hidden">
+            <span class="menu__submenu" ng-bind="submenu.title | translate"></span>
+            <ul>
+              <li ng-class="{ menu__submenuitem: true, 'hide-on-production': subitem.hideOnProduction }"
+                  ng-repeat="subitem in submenu.child"
+                  ng-if="!subitem.hidden"
+                  ng-click="reload(subitem.route)"
+                  ui-sref-active='-active' ui-sref='app.dashboard.{{subitem.route}}'>
+                <a style="padding: 0"
+                   >
+                  <span class="menu__submenuitem" ng-bind="subitem.title | translate"></span>
+                </a>
+
+              </li>
+            </ul>
+            </span>
+          </li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class='menu__misc'>
+    <a id="intercom" href='mailto:support@bindo.com'>{{'Report a problem'|translate}}</a>
+    <a href='http://support.bindo.com' target='_blank'>{{'Help'|translate}}</a>
+  </div>
+</div>

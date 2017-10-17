@@ -1,0 +1,85 @@
+var _ = require('lodash')
+
+const REPORTS = [
+	'Revenue Report',
+  'Accounts Receivable Report',
+  'Batch Report',
+  'Courier Performance Breakdown Report',
+  'Customer Report',
+  'Daily Earning Report',
+  'Daily Summary Report',
+  'Discount Applied Report',
+  'Discount Applied Breakdown Report',
+  'Inventory Report',
+  'Inventory Summary Report',
+  'Inventory Flow Report',
+  'Menu Sales Report',
+  'Octopus Transaction Breakdown Report',
+  'Party Report',
+  'Product Sold Breakdown Report',
+  'Product Sold Report',
+  'Refund Report',
+  'Sales Accounting Report',
+  'Sales Breakdown Report',
+  'Sales by Department Report',
+  'Sales by Hour Report',
+  'Sales Performance Report',
+  'Sales Performance Summary Report',
+  'Sales Summary Report',
+  'Stock Transfer Breakdown Report',
+  'Stock Take Breakdown Report',
+  'Stock Take Summary Report',
+  'Serialized Report',
+  'Table Usage Report',
+  'Tax Summary Report',
+  'Time Clock Report',
+  'Transaction Breakdown Report',
+  'Void Report',
+]
+
+describe('Reports Module', function() {
+  it('should view Report Index', function() {
+    browser.get('/#/1651/reports');
+    browser.ignoreSynchronization = true;
+    browser.manage().timeouts().implicitlyWait(1000);
+
+    expect(browser.getTitle()).toEqual('Bindo Dashboard - Reports');
+  });
+
+
+  REPORTS.forEach(function(report) {
+    it('should view Report:' + report, function() {
+      browser.get('/#/1651/reports/' + _.kebabCase(report));
+      browser.ignoreSynchronization = false;
+      browser.manage().timeouts().implicitlyWait(1500);
+
+      expect(element(by.tagName('h2')).getText()).toBe(report);
+
+      if( report !== 'Daily Summary Report' &&
+          report !== 'Sales Summary Report'
+        ) {
+
+        expect(element(by.css('.report-no-rows-message')).getText()).not.toEqual('loading data...');
+      }
+
+      expect(browser.getTitle()).toEqual('Bindo Dashboard - Reports');
+    });
+  })
+
+  REPORTS.forEach(function(report) {
+    it('should export PDF of Report:' + report, function() {
+      browser.get('/#/1651/reports/' + _.kebabCase(report));
+      browser.ignoreSynchronization = false;
+      browser.manage().timeouts().implicitlyWait(500);
+
+
+      if( report !== 'Stock Take Summary Report' &&
+          report !== 'placeholder Report'
+        ) {
+        element(by.css('#test-download-pdf')).click();
+
+      }
+    });
+  })
+
+});

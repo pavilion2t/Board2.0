@@ -1,0 +1,19 @@
+<div class="panel _clearfix">
+  <h2 translate>Reports</h2>
+
+  <div class="card" ng-repeat="reportGroup in filteredReport">
+    <h4 class="_left">{{reportGroup.groupName|translate}}</h4>
+
+    <div class="_clear"></div>
+    <div>
+      <div ng-repeat="report in reportGroup.children">
+        <a ui-sref="app.dashboard.reports.show({report: kebabCase(report.title)})">
+          <p>{{report.title|translate}}</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

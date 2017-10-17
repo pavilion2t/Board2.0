@@ -1,0 +1,10 @@
+<div class='grid__import'>
+  <div class='import__modal'>
+    <div class='_message' ng-if='uploadErrorMessage'>{{uploadErrorMessage}}</div>
+    <h2>Importing {{title|translate}}</h2>
+    <h5>Please prepare a CSV file with the columns:</h5>
+    <p>{{importColumnsString}}</p>
+    <input-file file='uploadedFile'></input-file>
+    <button class='_primary' ng-show='uploadedFile' ng-click='uploadCsv()'>Confirm Upload</button>
+  </div>
+</div>

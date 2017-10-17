@@ -1,0 +1,40 @@
+<div class='edit _device'>
+    <div>
+        <div class='panel'>
+            <div class="xgrid">
+
+                <div class="xgrid-cell -default-100">
+                    <div>
+                        <input-checkbox  label='checkbox-auto-apply' ng-model='currentDevice.whitelist' ng-disabled='!editMode'></input-checkbox>
+                        <b translate>Whitelist</b></p>
+                    </div>
+                    <div>
+                        <input-box type='text' title='{{"Identifier For Vendor"|translate}}' ng-model='currentDevice.identifier_for_vendor' ng-readonly='!editMode'></input-box>
+                    </div>
+                    <div ng-if="!newDevice">
+                       <div>
+                            <input-box type='text' title='{{"Device Name"|translate}}' ng-bind='currentDevice.device_name|decode' ng-readonly='true'></input-box>
+                            <input-box class='_right' type='text' title="{{'Device ID'|translate}}" ng-bind='currentDevice.device_id|decode'  ng-readonly='true'></input-box>
+                        </div>
+                        <div>
+                            <input-box type='text' title='{{"Card Reader Type"|translate}}' ng-model='currentDevice.card_reader_type' ng-readonly='!editMode'></input-box>
+                            <input-box class='_right' type='text' title="{{'Device Model'|translate}}" ng-model='currentDevice.device_model' ng-readonly='!editMode'></input-box>
+                        </div>
+                        <div>
+                            <input-box type='text' title='{{"System Version"|translate}}' ng-model='currentDevice.system_version' ng-readonly='!editMode'></input-box>
+                            <input-box class='_right' type='text' title="{{'App Version'|translate}}" ng-model='currentDevice.app_version' ng-readonly='!editMode'></input-box>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='content-bottom'>
+
+        <h2><span ng-show='editMode'>{{'Edit'|translate}}</span> {{'Device'|translate}} {{currentDevice.device_name}}</h2>
+        <div class='content-bottom-actions'>
+            <!--    <button ng-hide='editMode' class='_secondary' ng-click="enableEditMode()">{{'Edit'|translate}}</button>-->
+                <button ng-show='editMode' ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div id='modal-5' class="modal-content">
+  <div class="modal-header">
+    <h3 class="modal-title" id="myModalLabel" translate>Create Your Store</h3>
+  </div>
+  <div class="modal-body">
+    <div class='modal-subheader'>
+      <div class='modal-done-steps'>
+        <div class='step-box' ng-repeat='step in createRange(1, currentModal)' ng-class='"step-box" + step'>
+          <div class='step' ng-class='{end: step === currentModal - 1}'>
+            <img ng-hide='step === currentModal - 1' src='assets/images/steps-tick.png'>
+            <p ng-show='step === currentModal - 1'>{{step}}</p>
+          </div>
+        </div>
+        <h2 translate>Tax Rate</h2>
+      </div>
+      <div class='modal-remaining-steps'>
+        <span class='step' ng-repeat='step in createRange(currentModal, 6)'>
+          <p>{{step}}</p>
+        </span>
+      </div>
+    </div>
+    <div class='modal-body-content'>
+      <div class='modal-form' name='tax-form'>
+        <div class='tax' ng-repeat='(i, tax) in inputTaxes.taxes'>
+          <input class='tax-name' ng-model='tax.name' placeholder='Input new tax name...' ng-class='{attention: attention && !tax.name}'>
+          <!-- <input class='tax-rate' type='text' value='0.00%' ng-model='tax.rate' ng-pattern='/[0-9]{1,2}.[0-9]{2}%/'> -->
+          <input class='tax-rate' ng-model='tax.rate' ng-class='{invalid: tax.invalid}'>
+
+          <div class='tax-options'>
+            <div>
+              <input id='default-radio-{{i}}' type='radio' ng-value='i' ng-model='inputTaxes.default'>
+              <label for='default-radio-{{i}}'></label>
+            </div>
+            <span class='tax-default'>Default</span>
+            <button class='tax-cancel' ng-click='removeTaxRate(i)'><span>+</span></button>
+          </div>
+        </div>
+      </div>
+      <div class='new-tax-rate' ng-click='addTaxRate()'>
+        <div class='plus'>
+          <p>+</p>
+        </div>
+        <p translate>New Tax Rate</p>
+      </div>
+      <div class='modal-tips'>
+        <div class='question-mark'><p>?</p></div>
+        <div class='tips'><p translate>By filling out this info, you'll be able to automate your tax calculations, saving you a lot of time.</p></div>
+      </div> 
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="_secondary" ng-click='back()'>{{'Go Back'|translate}}</button>
+    <button type="button" class="_primary" ng-click='modal5Continue()'>{{'Continue'|translate}}</button>
+  </div>
+</div>

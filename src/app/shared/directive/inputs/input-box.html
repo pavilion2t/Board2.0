@@ -1,0 +1,4 @@
+<div class='input-box {{class}}'>
+  <p class='input-box__title' ng-class="{_hidden: (model === undefined || model === null || model === '') && !isInvalid}">{{title}}</p>
+  <input class='input-box__input' type='{{type}}' placeholder='{{title|translate}}' ng-model='model' ng-disabled='disabled' ng-readonly='readonly' ng-keyup='checkIfInvalid($event)' min="{{min}}" max="{{max}}">
+</div>

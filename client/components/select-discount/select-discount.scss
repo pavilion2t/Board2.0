@@ -1,0 +1,24 @@
+.select-discount-modal {
+  .discount-filter {
+    padding-bottom: 20px;
+  }
+  .discount-options {
+    margin-left: 5px;
+    border: 1px solid #f8f8f8;
+    .discount {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #f8f8f8;
+      padding-left: 10px;
+      cursor: pointer;
+      &.active, &:hover {
+        background: #ff7800;
+        color: #fff;
+      }
+      .fa {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

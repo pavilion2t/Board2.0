@@ -1,0 +1,128 @@
+<div class='edit _customer'>
+  <div class='edit__body'>
+    <div class='nav-tabs' ng-show="!newCustomer">
+      <a class='nav-tabs-item' ng-class='{"-active": section === "overview"}' ng-click='section = "overview"'>{{'Overview'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "discount"}' ng-click='section = "discount"'>{{'Discount'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "recent_orders"}' ng-click='section = "recent_orders"'>{{'Recent Orders'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "purchased_items"}' ng-click='section = "purchased_items"'>{{'Purchased Items'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "store_credit"}' ng-click='section = "store_credit"'>{{'Store Credit'|translate}}</a>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "loyalty"}' ng-click='section = "loyalty"'>{{'Loyalty'|translate}}</a>
+    </div>
+    <div class='panel' ng-show='section === "overview"'>
+      <div class="xgrid">
+        <div class="xgrid-cell -default-25">
+          <div class='avatar-image'>
+            <img ng-src='{{customer.small_avatar_url}}' placeholder-src="customer">
+          </div>
+          <input-image title="{{'Set Photo'|translate}}" on-select='setPhoto' ng-show='editMode' limit="1"></input-image>
+        </div>
+        <div class="xgrid-cell -default-75">
+          <div>
+            <input-box type='text' title='{{"Full Name"|translate}}' ng-model='customer.name' ng-readonly='!editMode'></input-box>
+            <input-box class='_right' type='text' title="{{'Mobile Phone'|translate}}" ng-model='customer.phone' ng-readonly='!editMode'></input-box>
+          </div>
+          <div>
+            <div class='input-box'>
+              <p class='input-box__title' ng-class='{_hidden: !customer.gender}' translate>Gender</p>
+              <select ng-model='customer.gender' ng-disabled='!editMode'>
+                <option value='' selected translate>Choose Gender...</option>
+                <option value='1' translate>Male</option>
+                <option value='2' translate>Female</option>
+
+              </select>
+            </div>
+            <input-box class='_right' type='text' title='{{"Home Phone"|translate}}' ng-model='customer.home_phone' ng-readonly='!editMode' ng-disabled='!editMode'></input-box>
+          </div>
+          <div>
+              <input-birthday class='input-box' title='{{"Date of Birth"|translate}}' ng-model='customer.date_of_birth' ng-readonly='!editMode' ng-disabled='!editMode'>
+
+              </input-birthday>
+
+            <input-box class='_right' type='text' title='{{"Email"|translate}}' ng-model='customer.email' ng-readonly='!editMode'></input-box>
+
+
+
+          </div>
+          <div>
+              <input-box type='text' title='{{"Address"|translate}}' ng-model='customer.address' ng-readonly='!editMode'></input-box>
+              <input-box class='_right' type='text' title='{{"Customer Code"|translate}}' ng-model='customer.customer_code' ng-readonly='!editMode'></input-box>
+          </div>
+          <div>
+            <input-box type='text' title='{{"Billing Address"|translate}}' ng-model='customer.billing_address' ng-readonly='!editMode'></input-box>
+            <input-box class='_right' type='text' title='{{"Shipping Address"|translate}}' ng-model='customer.shipping_address' ng-readonly='!editMode'></input-box>
+          </div>
+          <div>
+          	<div class='input-box'>
+              <p class='input-box__title' ng-class='{_hidden: !customer.membership_level_id }' translate>Membership Level</p>
+	          	<select ng-model="customer.membership_level_id" ng-options="level.id as level.title for level in membership_levels" ng-disabled='!editMode'>
+	                  <option value="">No Level</option>
+	            </select>
+	            </div>
+          </div>
+          <div>
+            <input-textarea title='{{"Notes"|translate}}' ng-model='customer.notes' ng-readonly='!editMode'></input-textarea>
+          </div>
+          <div ng-if='customer.linked_source_id'>
+            <p>Linked {{customer.linked_source_type}}: {{customer.linked_source_name}} (ID: {{customer.linked_source_id}})</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class='panel' ng-show='section === "discount"'>
+          <div class='panel-section'>
+              <h2 translate>Discount</h2>
+              <select ng-model="customer.discount_id" ng-options="discount.id as discount.name for discount in discounts" ng-disabled="!editMode">
+                  <option value="">No Discount</option>
+              </select>
+          </div>
+      </div>
+    <div class='panel' ng-show='section === "recent_orders"'>
+      <div class='panel-section'>
+        <h2 translate>Recent Orders</h2>
+        <div class='grid'>
+          <editable-grid ng-hide='recentOrders && recentOrders.length === 0' columns='editRecentOrderColumns' data='recentOrders' edit-mode='false'></editable-grid>
+          <p ng-show='recentOrders && recentOrders.length === 0' translate>No Orders Yet.</p>
+        </div>
+      </div>
+    </div>
+    <div class='panel' ng-show='section === "purchased_items"'>
+      <div class='panel-section'>
+        <h2 translate>Purchased Items</h2>
+        <div class='grid'>
+          <editable-grid ng-hide='purchasedItems && purchasedItems.length === 0' columns='editPurchasedItemColumns' data='purchasedItems' edit-mode='false'></editable-grid>
+          <p ng-show='purchasedItems && purchasedItems.length === 0'>{{'No Purchased Items Yet.'|translate}}</p>
+        </div>
+      </div>
+    </div>
+    <div class='panel' ng-show='section === "store_credit"'>
+      <div class='panel-section'>
+        <h2 translate>Store Credit
+          &nbsp; &nbsp; <button class="_primary" ng-click="adjustCredit()">Manual adjust</button></h2>
+
+        <div class='grid'>
+          <editable-grid ng-hide='storeCredit && storeCredit.length === 0' columns='editStoreCreditColumns' data='storeCredit' edit-mode='false'></editable-grid>
+          <p ng-show='storeCredit && storeCredit.length === 0'>{{'No Store Credit Yet.'|translate}}</p>
+        </div>
+      </div>
+    </div>
+    <div class='panel' ng-show='section === "loyalty"'>
+      <div class='panel-section'>
+        <h2 translate>Loyalty
+          &nbsp; &nbsp; <button class="_primary" ng-click="adjustLoyalty()">Manual adjust</button></h2>
+
+        <div class='grid'>
+          <editable-grid ng-hide='loyalty && loyalty.length === 0' columns='editLoyaltyColumns' data='loyalty' edit-mode='false'></editable-grid>
+          <p ng-show='loyalty && loyalty.length === 0'>{{'No Loyalty History.'|translate}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2><span ng-show='editMode'>{{'Edit'|translate}}</span> {{'Customer'|translate}} #{{customer.id}} - {{customer.name}}</h2>
+    <div class='content-bottom-actions'>
+      <button ng-if="editPermission" ng-hide='editMode' class='_secondary' ng-click="enableEditMode()">{{'Edit'|translate}}</button>
+      <button ng-show='editMode' ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+  </div>
+</div>

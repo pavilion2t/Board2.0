@@ -1,0 +1,119 @@
+<div class='edit'>
+  <div class="xgrid">
+    <div class="xgrid-cell -default-100">
+
+      <table class="table listing-table">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th ng-if="isEnablingItem"></th>
+        </tr>
+        <tbody>
+        <tr ng-repeat="listing in additionalfeeshow.listings track by $index">
+          <td>{{listing.name}}</td>
+          <td>{{listing.price|myCurrency}}</td>
+          <td ng-if="isEnablingItem">
+            <button class="_remove _remove-mini" ng-click="remove($index,listing)"></button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="xgrid">
+    <div class="xgrid-cell  -default-100">
+      <add-listings on-close="addItems" single-select="true" ng-if="isEnablingItem"></add-listings>
+    </div>
+  </div>
+  <h3>Procurement Method</h3>
+  <div class="xgrid">
+    <div class="xgrid-cell  -default-100">
+        <span class="xgrid-cell -default-5">
+          <input type="image"
+                 ng-class="{'toggle-on': additionalfeeshow.dineIn, 'toggle-off': !additionalfeeshow.dineIn}"
+                 ng-src="{{additionalfeeshow.dineIn == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+                 ng-click="additionalfeeshow.dineIn = !additionalfeeshow.dineIn;"
+                 ng-model='additionalfeeshow.dineIn'/>
+        </span>
+      <span class="xgrid-cell -default-10"><b>{{'Dine In'|translate}}</b></span>
+    </div>
+  </div>
+  <div class="xgrid">
+    <div class="xgrid-cell  -default-100">
+        <span class="xgrid-cell -default-5">
+          <input type="image"
+                 ng-class="{'toggle-on': additionalfeeshow.pickUp, 'toggle-off': !additionalfeeshow.pickUp}"
+                 ng-src="{{additionalfeeshow.pickUp == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+                 ng-click="additionalfeeshow.pickUp = !additionalfeeshow.pickUp;"
+                 ng-model='additionalfeeshow.pickUp'/>
+        </span>
+      <span class="xgrid-cell -default-10"><b>{{'Pick Up'|translate}}</b></span>
+    </div>
+  </div>
+  <div class="xgrid">
+    <div class="xgrid-cell  -default-100">
+        <span class="xgrid-cell -default-5">
+          <input type="image"
+                 ng-class="{'toggle-on': additionalfeeshow.delivery, 'toggle-off': !additionalfeeshow.delivery}"
+                 ng-src="{{additionalfeeshow.delivery == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+                 ng-click="additionalfeeshow.delivery = !additionalfeeshow.delivery;"
+                 ng-model='additionalfeeshow.delivery'/>
+        </span>
+      <span class="xgrid-cell -default-10"><b>{{'Delivery'|translate}}</b></span>
+    </div>
+  </div>
+  <h3>Apply Settings</h3>
+  <div class="xgrid">
+    <div class="xgrid-cell  -default-50">
+        <span class="xgrid-cell -default-5">
+          <input type="image"
+                 ng-class="{'toggle-on': !additionalfee.auto_apply, 'toggle-off': additionalfee.auto_apply}"
+                 ng-src="{{additionalfee.auto_apply == false ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+                 ng-click="additionalfee.auto_apply = false;"
+                 ng-model='additionalfee.auto_apply'/>
+        </span>
+      <span class="xgrid-cell -default-45"><b>{{'Manually apply to the order'|translate}}</b></span>
+    </div>
+  </div>
+  <div class="xgrid">
+    <div class="xgrid-cell  -default-50">
+        <div class="xgrid-cell -default-5">
+          <input type="image"
+                 ng-class="{'toggle-on': additionalfee.auto_apply, 'toggle-off': !additionalfee.auto_apply}"
+                 ng-src="{{additionalfee.auto_apply == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+                 ng-click="additionalfee.auto_apply = true;"
+                 ng-model='additionalfee.auto_apply'/>
+        </div>
+      <div class="xgrid-cell -default-45">
+        <p><b>{{'Automatically apply'|translate}}</b></p>
+        <p><b>{{'Charge by'|translate}}</b></p>
+        <p>
+          <select class='_full' ng-model="additionalfee.charge_type" ng-disabled="!additionalfee.auto_apply">
+            <option value="1" translate>Per Cover</option>
+            <option value="2" translate>Per Order</option>
+          </select>
+        </p>
+      </div>
+    </div>
+  </div>
+  <h3>Checkout Settings</h3>
+  <div class="xgrid">
+    <div class="xgrid-cell  -default-50">
+        <span class="xgrid-cell -default-5">
+          <input type="image"
+                 ng-class="{'toggle-on': additionalfee.required_in_order, 'toggle-off': !additionalfee.required_in_order}"
+                 ng-src="{{additionalfee.required_in_order == true ? 'assets/images/icons/toggle-on@2x.png': 'assets/images/icons/toggle-off@2x.png'}}"
+                 ng-click="additionalfee.required_in_order = !additionalfee.required_in_order;"
+                 ng-model='additionalfee.required_in_order'/>
+        </span>
+      <span class="xgrid-cell -default-45"><b>{{'Each order must contain the item, otherwise cannot settle the check'|translate}}</b></span>
+    </div>
+  </div>
+  <hr>
+  <div class="_align-right">
+    <button class="_secondary" ng-click="cancel()">Cancel</button>
+    <button class="_primary" ng-click="save()">Save</button>
+  </div>
+  <hr>
+</div>

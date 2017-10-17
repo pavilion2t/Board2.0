@@ -1,0 +1,2400 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: src/app/modules/inventory/overview.html:208
+msgid "&nbsp;"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:90
+msgid ""
+"( Serial\n"
+"\t\t\t\t\t\tNumber Enabled )"
+msgstr ""
+
+#: src/app/modules/item_master/overview.html:37
+msgid ""
+"( Serial\n"
+"\t\t\t\tNumber Enabled )"
+msgstr ""
+
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:18
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:39
+msgid "0"
+msgstr ""
+
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:19
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:40
+msgid "1"
+msgstr ""
+
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:20
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:41
+msgid "2"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:151
+msgid "<b>Total Refund:</b>"
+msgstr ""
+
+#: src/app/modules/event_devices/map.html:10
+msgid ""
+"<div class=\"input-checkbox\">\n"
+"                    <input type=\"checkbox\" ng-model=\"store.device_whitelist_enabled\" id=\"checkbox-whitelist-enabled\" ng-change=\"changeStoreSetting()\">\n"
+"                    <label for=\"checkbox-whitelist-enabled\"></label>\n"
+"                </div>\n"
+"                <b>Store Whitelist Enabled</b>"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:89
+msgid ""
+"<span>Available Quantity <span ng-if=\"listing.serial_number_enabled\" translate=\"\"> ( Serial\n"
+"\t\t\t\t\t\tNumber Enabled ) </span></span>"
+msgstr ""
+
+#: src/app/modules/settings/custom_attributes/custom_attributes_card.html:9
+msgid "<span>Format</span>"
+msgstr ""
+
+#: src/app/modules/settings/custom_attributes/custom_attributes_card.html:18
+msgid "<span>Possible Values</span>"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:185
+msgid "<span>Tax Option</span>"
+msgstr ""
+
+#: src/app/modules/settings/iframe.html:11
+msgid "Access Requested"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:57
+#: src/app/modules/suppliers/supplier_form.html:51
+msgid "Account Number"
+msgstr ""
+
+#: src/app/modules/settings/iframe.html:7
+msgid "Activate Your Storefront"
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:10
+msgid "Add"
+msgstr ""
+
+#: src/app/modules/modifiers/department.html:16
+msgid "Add Department"
+msgstr ""
+
+#: src/app/shared/grid/grid-filter.html:67
+msgid "Add Filter"
+msgstr ""
+
+#: src/app/modules/inventory/new_inventory.html:16
+msgid "Add Image"
+msgstr ""
+
+#: src/app/modules/modifiers/list_modifiers.html:12
+msgid "Add Modifiers To Items"
+msgstr ""
+
+#: src/app/modules/discounts/index.html:24
+msgid "Add New Advanced Discount"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:90
+msgid "Add New Items"
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:126
+msgid "Add New Option"
+msgstr ""
+
+#: src/app/modules/settings/line_item_status_index.html:11
+msgid "Add new status"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:73
+msgid "Add section"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:32
+msgid "Add your first Storefront page! Customize as many online store pages as you like, and simply add the embed codes to your website."
+msgstr ""
+
+#: src/app/modules/settings/iframe_setting.html:10
+msgid "Addition Languages other then English"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:8
+msgid "Additional Languages"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:47
+#: src/app/modules/purchase_orders/purchase_order_form.html:61
+#: src/app/modules/suppliers/supplier_form.html:36
+msgid "Address"
+msgstr ""
+
+#: src/app/modules/settings/email_template/email_template.html:9
+msgid "Airprint Invoice"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:22
+msgid "Align"
+msgstr ""
+
+#: src/app/shared/grid/grid-row-count.html:9
+msgid "All"
+msgstr ""
+
+#: src/app/modules/reports/sales_summary_report.html:18
+msgid "Amount"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_form.html:51
+msgid "Amount Remaining"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:113
+msgid "Amount:"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_2.html:65
+msgid "Apartment / Suite"
+msgstr ""
+
+#: src/app/modules/event_devices/view_device.html:25
+msgid "App Version"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:105
+msgid "Apply to All Departments"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:87
+msgid "Apply to All Items"
+msgstr ""
+
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:30
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:8
+msgid "Arithmetic Rounding"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:59
+msgid "Automatically Apply Discount"
+msgstr ""
+
+#: src/app/modules/settings/additionalfee/additionalfee_new.html:89
+msgid "Automatically apply"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:32
+msgid "Average Sale"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_4.html:39
+msgid "Average Sales Amount"
+msgstr ""
+
+#: src/app/modules/inventory/view_inventory.html:9
+msgid "BOM"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:96
+msgid "Bank transfer"
+msgstr ""
+
+#: src/app/modules/invoices/form.html:16
+#: src/app/modules/invoices/invoice_form.html:10
+msgid "Bill To"
+msgstr ""
+
+#: src/app/modules/inventory/bom.html:2
+msgid "Bill of Materials"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:51
+#: src/app/modules/invoices/invoice_form.html:13
+#: src/app/modules/sales/view_sale.html:26
+msgid "Billing Address"
+msgstr ""
+
+#: src/app/modules/settings/iframe.html:8
+msgid "Bindo Storefront is the easiest way to sell online through your existing website. After requesting access to the Storefront Builder, you can instantly create online store pages that automatically sync with your Bindo POS inventory."
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_4.html:55
+msgid "Bindo supports 99% of merchant processors. Help us connect you to the right processor."
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:143
+#: src/app/modules/item_master/overview.html:85
+msgid "Brand"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:37
+msgid "Btn color"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:38
+msgid "Btn text color"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_3.html:32
+msgid "Business Type"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:18
+msgid "Button background color"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_3.html:62
+msgid "By answering these questions, you can customize your POS and dashboard the way you need it. No more, no less."
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_5.html:47
+msgid "By filling out this info, you'll be able to automate your tax calculations, saving you a lot of time."
+msgstr ""
+
+#: src/app/modules/goods/list_goods.html:15
+#: src/app/modules/inventory/list_inventory.html:15
+#: src/app/modules/item_master/list_itemMaster.html:15
+#: src/app/modules/modifiers/list_modifiers.html:46
+msgid "CSV"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:51
+msgid "Calculate discount after service charge"
+msgstr ""
+
+#: src/app/modules/activating/activating.html:43
+#: src/app/modules/welcome/modals/modal_7.html:41
+msgid "Can't wait? Call"
+msgstr ""
+
+#: src/app/modules/activating/activating.html:38
+#: src/app/modules/customers/adjustCredit.html:7
+#: src/app/modules/customers/adjustLoyalty.html:7
+#: src/app/modules/departments/form.html:15
+#: src/app/modules/inventory/new_inventory.html:32
+#: src/app/modules/invoices/fulfill.html:4
+#: src/app/modules/login/views/recover-password.html:16
+#: src/app/modules/menus/list_menus.html:48
+#: src/app/modules/menus/list_menus.html:79
+#: src/app/modules/menus/view_menu.html:126
+#: src/app/modules/menus/view_menu.html:162
+#: src/app/modules/menus/view_menu.html:72
+#: src/app/modules/menus/view_menu.html:89
+#: src/app/modules/purchase_orders/fulfill.html:4
+#: src/app/modules/purchase_orders/view_purchase_order.html:32
+#: src/app/modules/settings/iframe_new.html:109
+#: src/app/modules/settings/permissions/permissions.html:23
+#: src/app/modules/settings/permissions/permissions.html:81
+#: src/app/modules/stock_transfers/transfer_fulfilling.html:70
+#: src/app/modules/stock_transfers/transfer_shipping.html:73
+#: src/app/modules/welcome/modals/modal_7.html:36
+#: src/app/shared/directive/add_listings/add_listings.html:64
+#: src/app/shared/directive/add_listings/add_listings_input_department.html:19
+#: src/app/shared/directive/add_listings/add_listings_input_select.html:41
+#: src/app/shared/directive/select_discounts/select_discounts.html:28
+#: src/app/shared/directive/select_listings/select_listings.html:43
+#: src/app/shared/edit/add_listings.html:60
+#: src/app/shared/grid/grid-filter.html:103
+msgid "Cancel"
+msgstr ""
+
+#: src/app/modules/event_devices/view_device.html:20
+msgid "Card Reader Type"
+msgstr ""
+
+#: src/app/modules/invoices/do_pdf.html:34
+msgid "Carriage"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:97
+msgid "Cash"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:102
+msgid "Cashier:"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:176
+#: src/app/modules/modifiers/item.html:62
+#: src/app/modules/modifiers/overview.html:86
+msgid "Category"
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:68
+msgid "Change In Price"
+msgstr ""
+
+#: src/app/modules/menus/view_menu.html:35
+msgid "Change Product"
+msgstr ""
+
+#: src/app/modules/menus/view_menu.html:137
+msgid "Change Product of Menu Item"
+msgstr ""
+
+#: src/app/modules/settings/additionalfee/additionalfee_new.html:90
+msgid "Charge by"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:98
+msgid "Check"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:46
+msgid "Check this if this is a store coupon or discount."
+msgstr ""
+
+#: src/app/modules/settings/permissions/permissions.html:11
+msgid "Check to toggle permissions, then press 'Save'"
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:24
+msgid "Choose At Least"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:20
+msgid "Choose Discount Type..."
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:28
+msgid "Choose Gender..."
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:34
+msgid "Choose Same Option"
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:28
+msgid "Choose Up To"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_2.html:69
+msgid "City"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:106
+msgid "Click save to see Embed Code and preview your Storefront page"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:120
+msgid "Close preview"
+msgstr ""
+
+#: src/app/modules/settings/currency/form.html:17
+msgid "Code"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:7
+msgid "Colors"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_1.html:15
+#: src/app/modules/welcome/modals/modal_2.html:15
+msgid "Configure Your Store"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:62
+#: src/app/modules/suppliers/supplier_form.html:39
+msgid "Contact"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:64
+#: src/app/modules/suppliers/supplier_form.html:48
+msgid "Contact Email"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:63
+#: src/app/modules/suppliers/supplier_form.html:42
+msgid "Contact Phone"
+msgstr ""
+
+#: src/app/shared/grid/grid-filter.html:14
+msgid "Contains"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_1.html:56
+#: src/app/modules/welcome/modals/modal_2.html:86
+#: src/app/modules/welcome/modals/modal_3.html:68
+#: src/app/modules/welcome/modals/modal_4.html:61
+#: src/app/modules/welcome/modals/modal_5.html:53
+#: src/app/modules/welcome/modals/modal_6.html:66
+msgid "Continue"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:240
+#: src/app/modules/inventory/suppliers.html:26
+msgid "Cost"
+msgstr ""
+
+#: src/app/modules/reports/sales_summary_report.html:17
+msgid "Count"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:10
+#: src/app/modules/welcome/modals/modal_1.html:31
+msgid "Country"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:148
+msgid "Create Delivery Order"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_receive_order.html:147
+msgid "Create Receive Order"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_3.html:3
+#: src/app/modules/welcome/modals/modal_4.html:3
+#: src/app/modules/welcome/modals/modal_5.html:3
+#: src/app/modules/welcome/modals/modal_6.html:3
+msgid "Create Your Store"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:61
+#: src/app/modules/purchase_orders/view_receive_order.html:60
+msgid "Created At"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:66
+#: src/app/modules/purchase_orders/view_receive_order.html:65
+msgid "Created By"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:70
+msgid "Created at"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:71
+msgid "Created by"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_4.html:14
+msgid "Credit Card Processing"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:99
+msgid "Credit card"
+msgstr ""
+
+#: src/app/modules/inventory/quantity_detail.html:3
+#: src/app/modules/inventory/quantity_detail_with_unit.html:3
+msgid "Current Inventory"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_6.html:26
+msgid "Current POS / Inventory System"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_4.html:25
+msgid "Current Processor"
+msgstr ""
+
+#: src/app/shared/directive/add_listings/add_listings.html:23
+#: src/app/shared/directive/select_listings/select_listings.html:16
+#: src/app/shared/edit/add_listings.html:31
+msgid "Current QTY"
+msgstr ""
+
+#: src/app/modules/inventory/view_inventory.html:7
+msgid "Custom Attributes"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:228
+msgid "Custom Range"
+msgstr ""
+
+#: src/app/modules/settings/iframe_setting.html:22
+msgid "Custom shipping description"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:122
+#: src/app/modules/sales/view_sale.html:24
+#: src/app/shared/directive/add_customer/add_customer_popup.html:18
+msgid "Customer"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:48
+msgid "Customer Code"
+msgstr ""
+
+#: src/app/modules/invoices/form.html:29
+#: src/app/modules/invoices/invoice_form.html:11
+msgid "Customer Email Address"
+msgstr ""
+
+#: src/app/shared/directive/add_customer/add_customer_popup.html:19
+msgid "Customer ID"
+msgstr ""
+
+#: src/app/modules/membership/membership.html:6
+msgid "Customers"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_0.html:3
+msgid "Customize Your Back Office"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:3
+msgid "Customize your Storefront page to fit the look and feel of your website by choosing from the options below. Then simply copy the embed code and add it to your webpage."
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_6.html:14
+msgid "Data Migration"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:21
+msgid "Date"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:37
+msgid "Date of Birth"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:126
+#: src/app/modules/sales/view_sale.html:98
+msgid "Date:"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:100
+msgid "Debit card"
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:11
+msgid "Deduct"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:45
+msgid "Deduct Tax Base"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:298
+msgid "Default Purchase Unit"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:285
+msgid "Default Sales Unit"
+msgstr ""
+
+#: src/app/modules/settings/additionalfee/additionalfee_new.html:63
+msgid "Delivery"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:27
+msgid "Delivery Address"
+msgstr ""
+
+#: src/app/modules/settings/email_template/email_template.html:13
+msgid "Delivery Note"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:3
+msgid "Delivery Order"
+msgstr ""
+
+#: src/app/modules/invoices/do_pdf.html:69
+#: src/app/modules/invoices/view_delivery_order.html:7
+msgid "Delivery Order: &nbsp;"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:141
+msgid "Delivery Refund:"
+msgstr ""
+
+#: src/app/modules/stock_transfers/new_stock_transfer.html:17
+msgid "Departing Store"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:165
+#: src/app/modules/item_master/overview.html:101
+msgid "Department"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:5
+#: src/app/modules/modifiers/department.html:2
+#: src/app/modules/modifiers/setform.html:8
+#: src/app/modules/settings/iframe_new.html:35
+msgid "Departments"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:70
+msgid "Description"
+msgstr ""
+
+#: src/app/modules/event_devices/view_device.html:35
+msgid "Device"
+msgstr ""
+
+#: src/app/modules/event_devices/view_device.html:17
+msgid "Device ID"
+msgstr ""
+
+#: src/app/modules/event_devices/view_device.html:21
+msgid "Device Model"
+msgstr ""
+
+#: src/app/modules/event_devices/view_device.html:16
+msgid "Device Name"
+msgstr ""
+
+#: src/app/modules/event_devices/map.html:19
+msgid "Device Whitelist"
+msgstr ""
+
+#: src/app/modules/settings/additionalfee/additionalfee_new.html:39
+msgid "Dine In"
+msgstr ""
+
+#: src/app/modules/menus/view_menu.html:16
+msgid "Discard"
+msgstr ""
+
+#: src/app/modules/departments/list_departments.html:14
+#: src/app/modules/menus/list_menus.html:89
+#: src/app/modules/menus/view_menu.html:173
+msgid "Discard Changes"
+msgstr ""
+
+#: src/app/modules/inventory/overview_checkbox.html:4
+msgid "Discontinued"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:5
+#: src/app/modules/customers/view_customer.html:73
+#: src/app/modules/invoices/invoice_form.html:43
+msgid "Discount"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:18
+msgid "Discount Type"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:39
+msgid "Discount:"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:238
+msgid "Displayed Date"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:239
+msgid "Displayed Date Range"
+msgstr ""
+
+#: src/app/modules/settings/permissions/roles.html:33
+msgid "Done"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_purchase_order.html:50
+msgid "Download PDF"
+msgstr ""
+
+#: src/app/modules/departments/list_departments.html:2
+#: src/app/modules/menus/list_menus.html:3
+#: src/app/modules/menus/view_menu.html:3
+msgid "Drag to arrange."
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_6.html:60
+msgid "Dreading the POS migration? Don't. Our setup and migration has never taken more than 20 minutes."
+msgstr ""
+
+#: src/app/modules/invoices/form.html:12
+#: src/app/modules/invoices/invoice_form.html:7
+msgid "Due Date"
+msgstr ""
+
+#: src/app/modules/settings/additionalfee/additionalfee_new.html:110
+msgid "Each order must contain the item, otherwise cannot settle the check"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:122
+#: src/app/modules/customers/view_customer.html:124
+#: src/app/modules/departments/listed-department.html:11
+#: src/app/modules/event_devices/view_device.html:35
+#: src/app/modules/event_devices/view_device.html:37
+#: src/app/modules/gift_cards/view_gift-card.html:50
+#: src/app/modules/gift_cards/view_gift-card.html:52
+#: src/app/modules/goods/view_goods.html:153
+#: src/app/modules/goods/view_goods.html:155
+#: src/app/modules/inventory/view_inventory.html:66
+#: src/app/modules/inventory/view_inventory.html:69
+#: src/app/modules/item_master/view_itemMaster.html:26
+#: src/app/modules/item_master/view_itemMaster.html:35
+#: src/app/modules/membership/membership.html:33
+#: src/app/modules/menus/list_menus.html:12
+#: src/app/modules/menus/view_menu.html:51
+#: src/app/modules/modifiers/view_modifierset.html:10
+#: src/app/modules/purchase_orders/view_purchase_order.html:40
+#: src/app/modules/purchase_orders/view_purchase_order.html:52
+#: src/app/modules/settings/custom_fields_index.html:27
+#: src/app/modules/settings/iframe_index.html:25
+#: src/app/modules/settings/iframe_index.html:54
+#: src/app/modules/stock_transfers/view_stock_transfer.html:77
+#: src/app/modules/stock_transfers/view_stock_transfer.html:79
+msgid "Edit"
+msgstr ""
+
+#: src/app/modules/menus/list_menus.html:58
+msgid "Edit Menu"
+msgstr ""
+
+#: src/app/modules/menus/view_menu.html:82
+msgid "Edit Menu Section"
+msgstr ""
+
+#: src/app/modules/settings/permissions/permissions.html:22
+#: src/app/modules/settings/permissions/permissions.html:80
+msgid "Edit Permissions"
+msgstr ""
+
+#: src/app/modules/menus/list_menus.html:13
+msgid "Edit Sections"
+msgstr ""
+
+#: src/app/modules/discounts/index.html:20
+msgid "Edit priority"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:4
+#: src/app/modules/settings/iframe_setting.html:4
+msgid "Edit your general Storefront settings below. These settings will be applied to all Storefront pages that you create."
+msgstr ""
+
+#: src/app/modules/settings/permissions/permissions.html:10
+msgid "Editing Item"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:41
+#: src/app/modules/purchase_orders/purchase_order_form.html:60
+#: src/app/shared/directive/add_customer/add_customer_popup.html:22
+msgid "Email"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:99
+msgid "Embed Code"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:41
+msgid "Embed code"
+msgstr ""
+
+#: src/app/modules/inventory/modifiers.html:9
+msgid "Enable"
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:74
+msgid "Enable Credit Pool"
+msgstr ""
+
+#: src/app/modules/inventory/overview_checkbox.html:9
+msgid "Enable expiration date"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:40
+msgid "Enable multi-section layout"
+msgstr ""
+
+#: src/app/modules/discounts/advanced_discount_form.html:364
+#: src/app/modules/discounts/discount_form.html:74
+msgid "End date"
+msgstr ""
+
+#: src/app/modules/discounts/advanced_discount_form.html:335
+msgid "End time"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:123
+msgid "Enter Miscellaneous charge"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_purchase_order.html:28
+msgid "Enter quantity to fulfill."
+msgstr ""
+
+#: src/app/modules/login/views/recover-password.html:7
+msgid "Enter your email to recover your password."
+msgstr ""
+
+#: src/app/modules/event_devices/map.html:54
+msgid "Event & Devices"
+msgstr ""
+
+#: src/app/modules/goods/list_goods.html:13
+#: src/app/modules/inventory/list_inventory.html:13
+#: src/app/modules/item_master/list_itemMaster.html:13
+#: src/app/modules/modifiers/list_modifiers.html:44
+msgid "Excel"
+msgstr ""
+
+#: src/app/modules/inventory/overview_checkbox.html:6
+msgid "Exclude from all discount"
+msgstr ""
+
+#: src/app/modules/inventory/overview_checkbox.html:5
+msgid "Exempt item from loyalty program"
+msgstr ""
+
+#: src/app/modules/goods/view_goods.html:40
+msgid "Expect '+receivetitle+' Date"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:106
+msgid "Expect delivery date"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_receive_order.html:31
+msgid "Expected Receive Date"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:32
+msgid "Expected Ship Date"
+msgstr ""
+
+#: src/app/modules/customers/customer_grid_view.html:18
+#: src/app/modules/discounts/index.html:18
+#: src/app/modules/invoices/invoice_list.html:18
+#: src/app/shared/grid/grid_view.html:18
+msgid "Export CSV"
+msgstr ""
+
+#: src/app/modules/customers/customer_grid_view.html:16
+#: src/app/modules/discounts/index.html:16
+#: src/app/modules/invoices/invoice_list.html:16
+#: src/app/shared/grid/grid_view.html:16
+msgid "Export Excel"
+msgstr ""
+
+#: src/app/modules/customers/customer_grid_view.html:17
+#: src/app/modules/discounts/index.html:17
+#: src/app/modules/invoices/invoice_list.html:17
+#: src/app/shared/grid/grid_view.html:17
+msgid "Export PDF"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:59
+#: src/app/modules/suppliers/supplier_form.html:16
+msgid "Fax"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:30
+msgid "Female"
+msgstr ""
+
+#: src/app/shared/directive/add_customer/add_customer_button.html:2
+msgid "Find Customer"
+msgstr ""
+
+#: src/app/modules/settings/iframe_setting.html:42
+msgid "Flat rate shipping"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_0.html:9
+msgid "For easier access, bookmark https://dashboard.bindo.com"
+msgstr ""
+
+#: src/app/modules/login/views/main-login.html:21
+msgid "Forgot Password?"
+msgstr ""
+
+#: src/app/modules/settings/iframe_setting.html:43
+msgid "Free shipping"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:25
+msgid "From"
+msgstr ""
+
+#: src/app/modules/invoices/fulfill.html:6
+#: src/app/modules/purchase_orders/fulfill.html:5
+msgid "Fulfill"
+msgstr ""
+
+#: src/app/modules/goods/view_goods.html:130
+#: src/app/modules/purchase_orders/view_purchase_order.html:33
+msgid "Fulfill All"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_purchase_order.html:24
+msgid "Fulfill Item"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_purchase_order.html:49
+msgid "Fulfill Items"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_purchase_order.html:34
+msgid "Fulfill Specified"
+msgstr ""
+
+#: src/app/modules/stock_transfers/transfer_fulfilling.html:3
+msgid "Fulfill Transfer"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:80
+#: src/app/modules/purchase_orders/view_receive_order.html:79
+msgid "Fulfilling"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:82
+#: src/app/modules/purchase_orders/view_receive_order.html:81
+msgid "Fulfillment note"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:21
+msgid "Full Name"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:26
+#: src/app/shared/directive/add_customer/add_customer_popup.html:20
+msgid "Gender"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:3
+#: src/app/modules/settings/iframe_setting.html:1
+msgid "General Settings"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_2.html:3
+msgid "Getting Started"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_1.html:52
+#: src/app/modules/welcome/modals/modal_2.html:85
+#: src/app/modules/welcome/modals/modal_3.html:67
+#: src/app/modules/welcome/modals/modal_4.html:60
+#: src/app/modules/welcome/modals/modal_5.html:52
+#: src/app/modules/welcome/modals/modal_6.html:65
+msgid "Go Back"
+msgstr ""
+
+#: src/app/modules/invoices/do_pdf.html:29
+msgid "Goods Aspect"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:79
+msgid "Gross Margin"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:56
+msgid "Gross Profit"
+msgstr ""
+
+#: src/app/modules/inventory/modifiers.html:7
+msgid "Group name"
+msgstr ""
+
+#: src/app/modules/invoices/do_pdf.html:21
+msgid "Handling Liable To"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:35
+#: src/app/modules/settings/iframe_new.html:44
+msgid "Header"
+msgstr ""
+
+#: src/app/shared/directive/menu/menu.html:49
+msgid "Help"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:13
+msgid "Hide price"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:39
+#: src/app/modules/settings/iframe_new.html:12
+msgid "Highlight color"
+msgstr ""
+
+#: src/app/modules/gift_cards/view_gift-card.html:41
+msgid "History"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:34
+msgid "Home Phone"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_3.html:53
+msgid "How did your hear about Bindo POS?"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_6.html:48
+msgid "I Need to Migrate"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_6.html:30
+msgid "I've Been Using It since"
+msgstr ""
+
+#: src/app/modules/event_devices/view_device.html:12
+msgid "Identifier For Vendor"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:36
+msgid "Image size"
+msgstr ""
+
+#: src/app/modules/customers/customer_grid_view.html:14
+#: src/app/modules/customers/customer_grid_view.html:20
+#: src/app/modules/discounts/index.html:14
+#: src/app/modules/inventory/list_inventory.html:17
+#: src/app/modules/invoices/invoice_list.html:14
+#: src/app/shared/grid/grid_view.html:14
+msgid "Import"
+msgstr ""
+
+#: src/app/modules/inventory/overview_checkbox.html:3
+msgid "In Store Only"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:81
+#: src/app/modules/purchase_orders/view_receive_order.html:80
+msgid "In Transit"
+msgstr ""
+
+#: src/app/modules/settings/tax_options.html:33
+msgid "Include Service Charge"
+msgstr ""
+
+#: src/app/modules/settings/tax_options.html:29
+msgid "Included In Price"
+msgstr ""
+
+#: src/app/modules/stock_transfers/new_stock_transfer.html:6
+#: src/app/modules/stock_transfers/view_stock_transfer.html:7
+msgid "Incoming Transfer"
+msgstr ""
+
+#: src/app/modules/settings/custom_attributes/custom_attributes.html:2
+msgid "Inventory"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_list.html:19
+#: src/app/modules/settings/email_template/email_template.html:8
+msgid "Invoice"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:54
+msgid "Invoice Number"
+msgstr ""
+
+#: src/app/shared/grid/grid-filter.html:15
+msgid "Is"
+msgstr ""
+
+#: src/app/shared/grid/grid-filter.html:16
+msgid "Is Between"
+msgstr ""
+
+#: src/app/shared/directive/add_listings/add_listings.html:21
+#: src/app/shared/directive/select_listings/select_listings.html:15
+#: src/app/shared/edit/add_listings.html:30
+msgid "Item"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:248
+msgid "Item Type"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:83
+#: src/app/modules/modifiers/item.html:2
+#: src/app/modules/modifiers/setform.html:7
+#: src/app/modules/purchase_orders/purchase_order_form.html:117
+msgid "Items"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:30
+msgid "Kitchen Alias"
+msgstr ""
+
+#: src/app/modules/settings/languages/languages.html:3
+msgid "Languages"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:89
+msgid "Large"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:47
+msgid "Leave it unchecked if this is a manufacturer coupon."
+msgstr ""
+
+#: src/app/modules/invoices/invoice_form.html:22
+msgid "Line Items"
+msgstr ""
+
+#: src/app/modules/inventory/log.html:2
+#: src/app/modules/inventory/view_inventory.html:11
+#: src/app/modules/item_master/log.html:1
+#: src/app/modules/item_master/view_itemMaster.html:11
+msgid "Log"
+msgstr ""
+
+#: src/app/modules/login/views/main-login.html:27
+msgid "Log In"
+msgstr ""
+
+#: src/app/shared/directive/header/profile/header-profile.html:22
+msgid "Logout"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:9
+msgid "Loyalty"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:110
+msgid ""
+"Loyalty\n"
+"          &nbsp; &nbsp; <button class=\"_primary\" ng-click=\"adjustLoyalty()\">Manual adjust</button>"
+msgstr ""
+
+#: src/app/modules/discounts/advanced_discount_form.html:571
+msgid "MAX QTY"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:29
+msgid "Male"
+msgstr ""
+
+#: src/app/modules/settings/additionalfee/additionalfee_new.html:76
+msgid "Manually apply to the order"
+msgstr ""
+
+#: src/app/modules/item_master/overview.html:29
+msgid "Manufacturer Barcode"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_purchase_order.html:44
+msgid "Mark as submitted"
+msgstr ""
+
+#: src/app/modules/inventory/view_inventory.html:46
+msgid "Matrix"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:58
+msgid "Maximum # of products to show"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:88
+msgid "Medium (default)"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:56
+msgid "Membership Level"
+msgstr ""
+
+#: src/app/modules/discounts/discount_form.html:65
+msgid "Mix and Match"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:22
+msgid "Mobile Phone"
+msgstr ""
+
+#: src/app/modules/modifiers/view_modifierset.html:10
+msgid "Modifier Group"
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:51
+msgid "Modifier ID"
+msgstr ""
+
+#: src/app/modules/inventory/modifiers.html:8
+#: src/app/modules/inventory/view_inventory.html:8
+msgid "Modifiers"
+msgstr ""
+
+#: src/app/modules/inventory/modifiers.html:2
+msgid "Modifiers Groups"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:226
+msgid "Month"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_4.html:46
+msgid "Monthly Revenue"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:40
+msgid "Multi section layout"
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:18
+msgid "Multiple"
+msgstr ""
+
+#: src/app/shared/directive/add_listings/add_listings_input_select.html:18
+msgid "NAME"
+msgstr ""
+
+#: src/app/modules/departments/form.html:6
+#: src/app/modules/invoices/view_delivery_order.html:77
+#: src/app/modules/menus/list_menus.html:31
+#: src/app/modules/menus/list_menus.html:62
+#: src/app/modules/menus/view_menu.html:69
+#: src/app/modules/menus/view_menu.html:86
+#: src/app/modules/modifiers/item.html:61
+#: src/app/modules/modifiers/overview.html:47
+#: src/app/modules/modifiers/overview.html:85
+#: src/app/modules/purchase_orders/view_receive_order.html:76
+msgid "Name"
+msgstr ""
+
+#: src/app/modules/customers/customer_grid_view.html:21
+#: src/app/modules/discounts/index.html:26
+#: src/app/modules/invoices/invoice_list.html:19
+#: src/app/modules/invoices/invoice_list.html:20
+#: src/app/modules/suppliers/new_supplier.html:4
+#: src/app/shared/grid/grid_view.html:19
+msgid "New"
+msgstr ""
+
+#: src/app/modules/inventory/list_inventory.html:20
+msgid "New Custom Item"
+msgstr ""
+
+#: src/app/modules/goods/list_goods.html:17
+msgid "New Damage {{abbrtitle}} from P.O."
+msgstr ""
+
+#: src/app/modules/departments/list_departments.html:13
+msgid "New Department"
+msgstr ""
+
+#: src/app/modules/settings/additionalfee/additionalfee.html:11
+msgid "New Fee"
+msgstr ""
+
+#: src/app/modules/stock_transfers/list_stock_transfers.html:17
+msgid "New Incoming Stock Transfer"
+msgstr ""
+
+#: src/app/modules/inventory/new_inventory.html:24
+#: src/app/modules/membership/membership.html:31
+#: src/app/modules/settings/email_template/list_email_template.html:7
+msgid "New Item"
+msgstr ""
+
+#: src/app/modules/menus/list_menus.html:27
+msgid "New Menu"
+msgstr ""
+
+#: src/app/modules/menus/view_menu.html:100
+msgid "New Menu Item - Choose the Product to Display"
+msgstr ""
+
+#: src/app/modules/menus/view_menu.html:65
+msgid "New Menu Section"
+msgstr ""
+
+#: src/app/modules/modifiers/list_modifiers.html:48
+msgid "New Modifier"
+msgstr ""
+
+#: src/app/modules/modifiers/new_modifierset.html:9
+msgid "New Modifier Group"
+msgstr ""
+
+#: src/app/modules/stock_transfers/list_stock_transfers.html:18
+msgid "New Outgoing Stock Transfer"
+msgstr ""
+
+#: src/app/modules/purchase_orders/new_purchase_order.html:10
+msgid "New Purchase Order"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_5.html:43
+msgid "New Tax Rate"
+msgstr ""
+
+#: src/app/modules/inventory/list_inventory.html:19
+msgid "New UPC Item"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:60
+msgid "New page"
+msgstr ""
+
+#: src/app/modules/goods/list_goods.html:18
+msgid "New {{abbrtitle}} from P.O."
+msgstr ""
+
+#: src/app/modules/inventory/new_inventory.html:39
+#: src/app/modules/inventory/new_inventory.html:6
+msgid "New {{title}}"
+msgstr ""
+
+#: src/app/modules/inventory/new_inventory.html:33
+msgid "Next"
+msgstr ""
+
+#: src/app/modules/inventory/storelevel.html:5
+msgid "No Data."
+msgstr ""
+
+#: src/app/modules/inventory/log.html:5
+#: src/app/modules/item_master/log.html:8
+msgid "No Log Yet."
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:115
+msgid "No Loyalty History."
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:84
+msgid "No Orders Yet."
+msgstr ""
+
+#: src/app/modules/suppliers/view_supplier.html:17
+msgid "No Products Yet."
+msgstr ""
+
+#: src/app/modules/suppliers/view_supplier.html:26
+msgid "No Purchase Orders Yet."
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:93
+msgid "No Purchased Items Yet."
+msgstr ""
+
+#: src/app/shared/grid/grid-filter.html:76
+msgid "No Saved Searches"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:104
+msgid "No Store Credit Yet."
+msgstr ""
+
+#: src/app/modules/summary/summary.html:176
+#: src/app/modules/summary/summary.html:212
+msgid "No items sold in the period."
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:94
+msgid "No transactions"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_2.html:53
+msgid "None of the above"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:63
+msgid "Notes"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:49
+msgid "Number"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_3.html:25
+msgid "Number of Locations"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_6.html:37
+msgid "Number of Registers"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_3.html:39
+msgid "Number of Unique SKUs"
+msgstr ""
+
+#: src/app/modules/discounts/advanced_discount_form.html:550
+#: src/app/modules/discounts/advanced_discount_form.html:713
+msgid "OUTCOME OPTION"
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:17
+msgid "One Option"
+msgstr ""
+
+#: src/app/modules/stock_transfers/list_stock_transfers.html:2
+msgid "Only chain store and function enabled can transfer stock."
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:22
+msgid "Order Number"
+msgstr ""
+
+#: src/app/modules/settings/iframe_setting.html:53
+msgid "Order amount to qualify for free shipping"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:78
+#: src/app/modules/purchase_orders/view_receive_order.html:77
+msgid "Ordered"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:149
+msgid "Original Price"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:101
+msgid "Other"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:137
+msgid "Others"
+msgstr ""
+
+#: src/app/modules/activating/activating.html:11
+#: src/app/modules/welcome/modals/modal_7.html:9
+msgid "Our staff will contact you within 24 hours to help set you up."
+msgstr ""
+
+#: src/app/modules/stock_transfers/new_stock_transfer.html:5
+#: src/app/modules/stock_transfers/view_stock_transfer.html:6
+msgid "Outgoing Transfer"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:4
+#: src/app/modules/discounts/discount_form.html:4
+#: src/app/modules/inventory/view_inventory.html:5
+#: src/app/modules/item_master/view_itemMaster.html:7
+#: src/app/modules/membership/membership.html:5
+#: src/app/modules/modifiers/overview.html:2
+#: src/app/modules/modifiers/setform.html:6
+#: src/app/modules/purchase_orders/view_purchase_order.html:7
+#: src/app/modules/suppliers/view_supplier.html:4
+msgid "Overview"
+msgstr ""
+
+#: src/app/modules/suppliers/view_supplier.html:23
+#: src/app/modules/suppliers/view_supplier.html:6
+msgid "P.O. History"
+msgstr ""
+
+#: src/app/modules/goods/list_goods.html:14
+#: src/app/modules/inventory/list_inventory.html:14
+#: src/app/modules/item_master/list_itemMaster.html:14
+#: src/app/modules/modifiers/list_modifiers.html:45
+msgid "PDF"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:124
+msgid "PLU/SKU"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:69
+#: src/app/modules/purchase_orders/view_receive_order.html:53
+msgid "PO Number"
+msgstr ""
+
+#: src/app/modules/discounts/advanced_discount_form.html:556
+#: src/app/modules/discounts/advanced_discount_form.html:720
+msgid "PRODUCTS"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:31
+msgid "Page Settings"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_form.html:50
+#: src/app/modules/purchase_orders/purchase_order_form.html:86
+msgid "Paid"
+msgstr ""
+
+#: src/app/modules/departments/form.html:8
+msgid "Parent Department"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:85
+msgid "Partial paid"
+msgstr ""
+
+#: src/app/modules/login/views/main-login.html:9
+msgid "Password"
+msgstr ""
+
+#: src/app/modules/settings/email_template/email_template.html:11
+msgid "Password Reset Instruction"
+msgstr ""
+
+#: src/app/modules/settings/email_template/email_template.html:12
+msgid "Password Reset Success"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:93
+msgid "Payment Method"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:81
+msgid "Payment Status"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_pdf.html:10
+msgid "Payment Terms"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:110
+msgid "Payment due date"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:108
+msgid "Payment:"
+msgstr ""
+
+#: src/app/modules/settings/additionalfee/additionalfee_new.html:93
+msgid "Per Cover"
+msgstr ""
+
+#: src/app/modules/settings/additionalfee/additionalfee_new.html:94
+msgid "Per Order"
+msgstr ""
+
+#: src/app/modules/settings/permissions/permissions.html:17
+msgid "Permission Settings"
+msgstr ""
+
+#: src/app/shared/directive/add_customer/add_customer_popup.html:21
+msgid "Phone"
+msgstr ""
+
+#: src/app/modules/suppliers/supplier_form.html:5
+msgid "Phone 1"
+msgstr ""
+
+#: src/app/modules/suppliers/supplier_form.html:8
+msgid "Phone 2"
+msgstr ""
+
+#: src/app/modules/settings/additionalfee/additionalfee_new.html:51
+msgid "Pick Up"
+msgstr ""
+
+#: src/app/modules/settings/iframe_setting.html:44
+msgid "Pick up only"
+msgstr ""
+
+#: src/app/modules/activating/activating.html:12
+#: src/app/modules/welcome/modals/modal_7.html:10
+msgid "Please make sure your contact info is correct, or we won't be able to activate your store."
+msgstr ""
+
+#: src/app/modules/settings/iframe_setting.html:3
+msgid "Please set your general Storefront settings to get started. These settings will be applied to all Storefront pages that you create."
+msgstr ""
+
+#: src/app/modules/settings/policy/policy.html:3
+msgid "Policies"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:112
+msgid "Preview Storefront"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:129
+#: src/app/modules/item_master/overview.html:72
+#: src/app/shared/directive/add_listings/add_listings.html:22
+msgid "Price"
+msgstr ""
+
+#: src/app/modules/activating/activating.html:48
+#: src/app/modules/welcome/modals/modal_7.html:46
+msgid "Privacy Policy"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_4.html:32
+msgid "Processing Needed by"
+msgstr ""
+
+#: src/app/modules/modifiers/item.html:64
+#: src/app/modules/modifiers/overview.html:88
+msgid "Product ID"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:81
+msgid "Product Image Size"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:136
+msgid "Product Refund:"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:49
+msgid "Product departments"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:11
+msgid "Product layout"
+msgstr ""
+
+#: src/app/modules/suppliers/view_supplier.html:14
+msgid "Products"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_6.html:44
+msgid "Pros & Cons (Optional)"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_purchase_order.html:40
+msgid "Purchase Order"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:7
+#: src/app/modules/customers/view_customer.html:90
+msgid "Purchased Items"
+msgstr ""
+
+#: src/app/modules/discounts/advanced_discount_form.html:577
+#: src/app/modules/discounts/advanced_discount_form.html:735
+msgid "QTY"
+msgstr ""
+
+#: src/app/modules/inventory/quantity_detail.html:41
+#: src/app/modules/inventory/quantity_detail_with_unit.html:53
+msgid "QTY In Transit from Supplier"
+msgstr ""
+
+#: src/app/modules/inventory/quantity_detail.html:46
+#: src/app/modules/inventory/quantity_detail_with_unit.html:60
+msgid "QTY In Transit from Transfer"
+msgstr ""
+
+#: src/app/modules/inventory/quantity_detail.html:31
+#: src/app/modules/inventory/quantity_detail_with_unit.html:39
+msgid "QTY Reserved for Invoice"
+msgstr ""
+
+#: src/app/modules/inventory/quantity_detail.html:36
+#: src/app/modules/inventory/quantity_detail_with_unit.html:46
+msgid "QTY Reserved for Transfer"
+msgstr ""
+
+#: src/app/shared/directive/add_listings/add_listings.html:24
+#: src/app/shared/edit/add_listings.html:32
+msgid "QTY requested"
+msgstr ""
+
+#: src/app/modules/item_master/overview.html:37
+#: src/app/modules/modifiers/overview.html:63
+msgid "Quantity"
+msgstr ""
+
+#: src/app/modules/inventory/quantity_detail.html:16
+#: src/app/modules/inventory/quantity_detail_with_unit.html:18
+msgid "Quantity Available"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:12
+msgid "Quick add"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_list.html:20
+msgid "Quote"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_purchase_order.html:8
+msgid "R.O."
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_receive_order.html:3
+msgid "Receive Order"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_receive_order.html:7
+msgid "Receive Order: &nbsp;"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_receive_order.html:78
+msgid "Received"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_receive_order.html:38
+msgid "Received Date"
+msgstr ""
+
+#: src/app/modules/stock_transfers/new_stock_transfer.html:13
+msgid "Receiving Store"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:6
+#: src/app/modules/customers/view_customer.html:81
+msgid "Recent Orders"
+msgstr ""
+
+#: src/app/modules/login/views/recover-password.html:18
+msgid "Recover"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:207
+msgid "Reference Code"
+msgstr ""
+
+#: src/app/modules/goods/view_goods.html:37
+#: src/app/modules/invoices/form.html:11
+#: src/app/modules/invoices/invoice_form.html:6
+msgid "Reference Number"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:130
+msgid "Refund Reason:"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:122
+msgid "Refund(s)"
+msgstr ""
+
+#: src/app/modules/goods/view_goods.html:137
+#: src/app/modules/goods/view_goods.html:142
+#: src/app/modules/invoices/do_pdf.html:41
+msgid "Remarks"
+msgstr ""
+
+#: src/app/modules/login/views/main-login.html:15
+msgid "Remember me for 7 days"
+msgstr ""
+
+#: src/app/modules/departments/listed-department.html:14
+#: src/app/modules/menus/list_menus.html:14
+#: src/app/modules/menus/view_menu.html:36
+#: src/app/modules/menus/view_menu.html:52
+msgid "Remove"
+msgstr ""
+
+#: src/app/shared/directive/inputs/input-file.html:10
+msgid "Remove File"
+msgstr ""
+
+#: src/app/modules/inventory/overview_images.html:11
+msgid "Remove Image"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:65
+msgid "Remove section"
+msgstr ""
+
+#: src/app/shared/directive/menu/menu.html:48
+msgid "Report a problem"
+msgstr ""
+
+#: src/app/modules/settings/iframe.html:10
+msgid "Request Access"
+msgstr ""
+
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:31
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:9
+msgid "Round Down"
+msgstr ""
+
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:11
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:33
+msgid "Round To Nearest Five"
+msgstr ""
+
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:10
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:32
+msgid "Round Up"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_form.html:46
+msgid "Rounding"
+msgstr ""
+
+#: src/app/modules/settings/rounding_behavior/rounding_behavior.html:3
+msgid "Rounding Behavior"
+msgstr ""
+
+#: src/app/modules/inventory/storelevel.html:2
+#: src/app/modules/inventory/view_inventory.html:12
+msgid "S/L"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_3.html:46
+msgid "SKUs with Barcodes"
+msgstr ""
+
+#: src/app/modules/reports/sales_summary_report.html:2
+msgid "Sales Summary Report"
+msgstr ""
+
+#: src/app/modules/departments/form.html:16
+#: src/app/modules/menus/list_menus.html:49
+#: src/app/modules/menus/list_menus.html:80
+#: src/app/modules/menus/view_menu.html:127
+#: src/app/modules/menus/view_menu.html:163
+#: src/app/modules/menus/view_menu.html:17
+#: src/app/modules/menus/view_menu.html:73
+#: src/app/modules/menus/view_menu.html:90
+#: src/app/modules/settings/iframe_new.html:110
+#: src/app/modules/settings/permissions/permissions.html:24
+#: src/app/modules/settings/permissions/permissions.html:82
+#: src/app/shared/directive/add_listings/add_listings.html:65
+#: src/app/shared/directive/add_listings/add_listings_input_department.html:20
+#: src/app/shared/directive/add_listings/add_listings_input_select.html:42
+#: src/app/shared/directive/select_discounts/select_discounts.html:29
+#: src/app/shared/directive/select_listings/select_listings.html:44
+#: src/app/shared/edit/add_listings.html:61
+#: src/app/shared/grid/grid-filter.html:104
+#: src/app/shared/grid/grid-filter.html:81
+msgid "Save"
+msgstr ""
+
+#: src/app/modules/departments/list_departments.html:15
+#: src/app/modules/menus/list_menus.html:90
+#: src/app/modules/menus/view_menu.html:174
+msgid "Save Changes"
+msgstr ""
+
+#: src/app/shared/grid/grid-filter.html:96
+msgid "Save Filter"
+msgstr ""
+
+#: src/app/modules/stock_transfers/transfer_fulfilling.html:71
+msgid "Save Fulfilled Quantities"
+msgstr ""
+
+#: src/app/modules/stock_transfers/transfer_shipping.html:74
+msgid "Save New Quantities"
+msgstr ""
+
+#: src/app/shared/grid/grid-filter.html:79
+msgid "Saved Searches"
+msgstr ""
+
+#: src/app/shared/grid/grid-filter.html:82
+msgid "Search"
+msgstr ""
+
+#: src/app/modules/item_master/overview.html:63
+msgid "Secondary Barcode"
+msgstr ""
+
+#: src/app/shared/directive/add_customer/add_customer_popup.html:23
+#: src/app/shared/directive/add_listings/add_listings.html:25
+#: src/app/shared/directive/add_listings/add_listings.html:50
+msgid "Select"
+msgstr ""
+
+#: src/app/shared/directive/add_customer/add_customer_popup.html:3
+msgid "Select Customer"
+msgstr ""
+
+#: src/app/shared/directive/select_discounts/select_discounts.html:3
+msgid "Select Discount"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:86
+msgid "Select Image Size..."
+msgstr ""
+
+#: src/app/shared/directive/add_listings/add_listings.html:3
+#: src/app/shared/directive/select_listings/select_listings.html:3
+#: src/app/shared/edit/add_listings.html:4
+msgid "Select Inventory"
+msgstr ""
+
+#: src/app/shared/grid/grid-filter.html:13
+#: src/app/shared/grid/grid-filter.html:22
+msgid "Select Type"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:274
+msgid "Select UOM Group"
+msgstr ""
+
+#: src/app/modules/stock_transfers/new_stock_transfer.html:36
+msgid "Select a store before adding items"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_3.html:27
+#: src/app/modules/welcome/modals/modal_3.html:34
+#: src/app/modules/welcome/modals/modal_3.html:41
+#: src/app/modules/welcome/modals/modal_3.html:48
+#: src/app/modules/welcome/modals/modal_4.html:27
+#: src/app/modules/welcome/modals/modal_4.html:34
+#: src/app/modules/welcome/modals/modal_4.html:41
+#: src/app/modules/welcome/modals/modal_4.html:48
+#: src/app/modules/welcome/modals/modal_6.html:39
+msgid "Select an Answer"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:258
+msgid "Sellable"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:79
+msgid "Sent"
+msgstr ""
+
+#: src/app/modules/inventory/view_inventory.html:39
+msgid "Serial Number"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_form.html:44
+msgid "Service Fee"
+msgstr ""
+
+#: src/app/modules/invoices/fulfill.html:5
+msgid "Set Fulfull All"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:17
+msgid "Set Photo"
+msgstr ""
+
+#: src/app/modules/modifiers/overview.html:3
+msgid "Set Title"
+msgstr ""
+
+#: src/app/modules/invoices/view_delivery_order.html:39
+msgid "Ship Date"
+msgstr ""
+
+#: src/app/modules/invoices/form.html:33
+#: src/app/modules/invoices/invoice_form.html:16
+msgid "Ship To"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:52
+#: src/app/modules/invoices/invoice_form.html:17
+msgid "Shipping Address"
+msgstr ""
+
+#: src/app/modules/invoices/do_pdf.html:49
+msgid "Shipping Agent 1"
+msgstr ""
+
+#: src/app/modules/invoices/do_pdf.html:54
+msgid "Shipping Agent 2"
+msgstr ""
+
+#: src/app/modules/invoices/do_pdf.html:16
+msgid "Shipping Method"
+msgstr ""
+
+#: src/app/modules/settings/iframe_setting.html:49
+msgid "Shipping rate"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:9
+msgid "Shipping type"
+msgstr ""
+
+#: src/app/shared/grid/grid-row-count.html:4
+msgid "Show"
+msgstr ""
+
+#: src/app/modules/reports/download_report.html:5
+msgid "Show Currency Symbols"
+msgstr ""
+
+#: src/app/modules/reports/_gridReport.html:12
+msgid "Show Currency Symbols in Export"
+msgstr ""
+
+#: src/app/shared/grid/grid-row-count.html:2
+#: src/app/shared/grid/grid-row-count.html:3
+msgid "Showing"
+msgstr ""
+
+#: src/app/modules/login/views/main-login.html:23
+msgid "Sign Up"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:87
+msgid "Small"
+msgstr ""
+
+#: src/app/modules/inventory/overview_checkbox.html:8
+msgid "Sold out"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_0.html:13
+msgid "Start"
+msgstr ""
+
+#: src/app/modules/discounts/advanced_discount_form.html:358
+#: src/app/modules/discounts/discount_form.html:70
+msgid "Start date"
+msgstr ""
+
+#: src/app/modules/discounts/advanced_discount_form.html:331
+msgid "Start time"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:20
+#: src/app/modules/welcome/modals/modal_2.html:74
+msgid "State"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:72
+msgid "Status"
+msgstr ""
+
+#: src/app/modules/settings/line_item_status_index.html:1
+msgid "Status not set yet."
+msgstr ""
+
+#: src/app/modules/stock_transfers/view_stock_transfer.html:77
+msgid "Stock Transfer"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:8
+msgid "Store Credit"
+msgstr ""
+
+#: src/app/modules/customers/view_customer.html:99
+msgid ""
+"Store Credit\n"
+"          &nbsp; &nbsp; <button class=\"_primary\" ng-click=\"adjustCredit()\">Manual adjust</button>"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_3.html:14
+msgid "Store Info"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_1.html:27
+msgid "Store Name"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_1.html:41
+msgid "Store Phone Number"
+msgstr ""
+
+#: src/app/modules/inventory/overview_checkbox.html:7
+msgid "Store front allow negative quantity"
+msgstr ""
+
+#: src/app/modules/purchase_orders/view_purchase_order.html:43
+msgid "Submit via Email"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_form.html:41
+#: src/app/modules/purchase_orders/purchase_order_form.html:136
+msgid "Subtotal"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:79
+msgid "Subtotal:"
+msgstr ""
+
+#: src/app/modules/goods/view_goods.html:12
+#: src/app/modules/purchase_orders/view_receive_order.html:48
+#: src/app/modules/suppliers/new_supplier.html:4
+msgid "Supplier"
+msgstr ""
+
+#: src/app/modules/inventory/suppliers.html:3
+#: src/app/modules/inventory/view_inventory.html:6
+msgid "Suppliers"
+msgstr ""
+
+#: src/app/modules/settings/currency/currency.html:6
+msgid "Support Multiple Currency"
+msgstr ""
+
+#: src/app/modules/event_devices/view_device.html:24
+msgid "System Version"
+msgstr ""
+
+#: src/app/modules/discounts/advanced_discount_form.html:564
+#: src/app/modules/discounts/advanced_discount_form.html:729
+msgid "TYPE"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_form.html:42
+msgid "Tax"
+msgstr ""
+
+#: src/app/modules/item_master/overview.html:89
+msgid "Tax Option"
+msgstr ""
+
+#: src/app/modules/departments/listed-department.html:12
+#: src/app/modules/inventory/tax.html:2
+#: src/app/modules/inventory/view_inventory.html:10
+msgid "Tax Options"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_5.html:14
+msgid "Tax Rate"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:146
+msgid "Tax Refund:"
+msgstr ""
+
+#: src/app/modules/settings/tax_options_form.html:15
+msgid "Tax Type"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:37
+#: src/app/modules/sales/view_sale.html:83
+msgid "Tax:"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:58
+msgid "Tel"
+msgstr ""
+
+#: src/app/modules/login/views/recover-password.html:8
+msgid "The email you entered is invalid."
+msgstr ""
+
+#: src/app/modules/settings/tax_options_form.html:32
+msgid "Threshold or Exemption"
+msgstr ""
+
+#: src/app/modules/menus/list_menus.html:44
+#: src/app/modules/menus/list_menus.html:75
+msgid "Time Available From"
+msgstr ""
+
+#: src/app/modules/menus/list_menus.html:45
+#: src/app/modules/menus/list_menus.html:76
+msgid "Time Available To"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_form.html:45
+msgid "Tips"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:6
+#: src/app/modules/inventory/overview.html:61
+#: src/app/modules/item_master/overview.html:5
+#: src/app/modules/membership/membership.html:13
+#: src/app/modules/purchase_orders/miscellaneous_charge.html:2
+#: src/app/modules/settings/time_segment_row.html:5
+#: src/app/modules/suppliers/supplier_form.html:2
+#: src/app/shared/directive/select_discounts/select_discounts.html:11
+msgid "Title"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:223
+msgid "Today"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:186
+msgid "Top Departments by Sales"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:146
+msgid "Top Items by Sales"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_form.html:47
+#: src/app/modules/purchase_orders/purchase_order_form.html:138
+msgid "Total"
+msgstr ""
+
+#: src/app/modules/inventory/quantity_detail.html:26
+#: src/app/modules/inventory/quantity_detail_with_unit.html:32
+msgid "Total Cost"
+msgstr ""
+
+#: src/app/modules/invoices/invoice_form.html:40
+#: src/app/modules/purchase_orders/purchase_order_form.html:135
+msgid "Total Quantity"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:75
+msgid "Total Quantity:"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:7
+msgid "Total Sales"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:87
+msgid "Total:"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:114
+msgid "Track Quantity"
+msgstr ""
+
+#: src/app/modules/sales/view_sale.html:93
+msgid "Transaction(s)"
+msgstr ""
+
+#: src/app/modules/stock_transfers/new_stock_transfer.html:30
+#: src/app/modules/stock_transfers/view_stock_transfer.html:44
+msgid "Transferred Items"
+msgstr ""
+
+#: src/app/modules/inventory/overview.html:82
+msgid "UPC/EAN"
+msgstr ""
+
+#: src/app/shared/directive/add_listings/add_listings.html:53
+msgid "Un-select"
+msgstr ""
+
+#: src/app/modules/inventory/quantity_detail.html:21
+#: src/app/modules/inventory/quantity_detail_with_unit.html:25
+msgid "Unit Cost"
+msgstr ""
+
+#: src/app/modules/item_master/overview.html:50
+msgid "Unlimited"
+msgstr ""
+
+#: src/app/modules/purchase_orders/purchase_order_form.html:84
+msgid "Unpaid"
+msgstr ""
+
+#: src/app/modules/activating/activating.html:39
+#: src/app/modules/welcome/modals/modal_7.html:37
+msgid "Update"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_7.html:17
+msgid "Update Contact Info"
+msgstr ""
+
+#: src/app/modules/stock_transfers/transfer_shipping.html:3
+msgid "Update Shipment Quantities"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:242
+msgid "Updated at"
+msgstr ""
+
+#: src/app/shared/directive/inputs/input-file.html:7
+#: src/app/shared/directive/inputs/input-image.html:18
+msgid "Upload"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_0.html:8
+msgid "Use Bindo Dashboard to manage your stores."
+msgstr ""
+
+#: src/app/modules/discounts/advanced_discount_form.html:581
+#: src/app/modules/discounts/advanced_discount_form.html:739
+msgid "VALUE"
+msgstr ""
+
+#: src/app/modules/settings/iframe_index.html:53
+msgid "View"
+msgstr ""
+
+#: src/app/modules/gift_cards/view_gift-card.html:50
+msgid "View Gift Card"
+msgstr ""
+
+#: src/app/modules/modifiers/view_modifierset.html:17
+msgid "View Only"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_1.html:47
+msgid "We need to know your store location so we can assign someone in your area to assist you."
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_7.html:45
+msgid "We'll never share your info with third parties."
+msgstr ""
+
+#: src/app/modules/summary/summary.html:225
+msgid "Week"
+msgstr ""
+
+#: src/app/modules/settings/email_template/email_template.html:10
+msgid "Welcome"
+msgstr ""
+
+#: src/app/modules/event_devices/view_device.html:9
+msgid "Whitelist"
+msgstr ""
+
+#: src/app/modules/departments/listed-department.html:13
+msgid "Workflow"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:227
+msgid "Year"
+msgstr ""
+
+#: src/app/modules/summary/summary.html:224
+msgid "Yesterday"
+msgstr ""
+
+#: src/app/modules/departments/list_departments.html:2
+#: src/app/modules/menus/list_menus.html:3
+#: src/app/modules/menus/view_menu.html:4
+msgid "You currently have unsaved changes."
+msgstr ""
+
+#: src/app/modules/activating/activating.html:17
+#: src/app/modules/activating/activating.html:31
+#: src/app/modules/welcome/modals/modal_7.html:15
+#: src/app/modules/welcome/modals/modal_7.html:29
+msgid "Your Email:"
+msgstr ""
+
+#: src/app/modules/activating/activating.html:16
+#: src/app/modules/activating/activating.html:27
+#: src/app/modules/welcome/modals/modal_7.html:14
+#: src/app/modules/welcome/modals/modal_7.html:25
+msgid "Your Phone Number:"
+msgstr ""
+
+#: src/app/modules/activating/activating.html:10
+#: src/app/modules/welcome/modals/modal_7.html:8
+msgid "Your Store Is Being Activated"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_2.html:78
+msgid "ZIP Code"
+msgstr ""
+
+#: src/app/modules/welcome/modals/modal_1.html:37
+msgid "Zip Code"
+msgstr ""
+
+#: src/app/modules/customers/adjustCredit.html:8
+#: src/app/modules/customers/adjustLoyalty.html:8
+msgid "adjust"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:58
+#: src/app/modules/settings/iframe_setting.html:44
+msgid "default"
+msgstr ""
+
+#: src/app/modules/settings/iframe_new.html:49
+msgid "leave blank to show all products"
+msgstr ""
+
+#: src/app/shared/grid/grid-row-count.html:2
+#: src/app/shared/grid/grid-row-count.html:3
+msgid "of"
+msgstr ""
+
+#: src/app/modules/settings/iframe_setting.html:22
+#: src/app/modules/settings/iframe_setting.html:53
+msgid "optional"
+msgstr ""
+
+#: src/app/shared/grid/grid-row-count.html:2
+#: src/app/shared/grid/grid-row-count.html:3
+msgid "results"
+msgstr ""
+
+#: src/app/modules/settings/currency/form.html:23
+msgid "symbol"
+msgstr ""
+
+#: src/app/modules/activating/activating.html:43
+#: src/app/modules/welcome/modals/modal_7.html:41
+msgid "to get started right away!"
+msgstr ""
+
+#: src/app/modules/settings/currency/form.html:29
+msgid "value"
+msgstr ""
+
+#: src/app/modules/item_master/overview.html:51
+msgid "{{listing.quantity|number}}"
+msgstr ""
+
+#: src/app/modules/settings/currency/form.html:4
+msgid "{{title}}"
+msgstr ""

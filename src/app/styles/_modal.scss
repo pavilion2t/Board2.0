@@ -1,0 +1,136 @@
+.modal-backdrop {
+  @include modal-backdrop
+}
+
+// MODALS
+._modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 4px;
+  background: rgb(255,255,255);
+
+  .modal__header {
+    height: 35px;
+    background-color: rgb(248,248,248);
+    border-radius: 5px 5px 0 0;
+
+    h5 {
+      color: $text-light-brown;
+      font-size: 16px;
+      line-height: 35px;
+      text-align: center;
+    }
+  }
+  .modal__content {
+    padding: 10px;
+    input {
+      width: 320px;
+    }
+  }
+  .modal__bottom {
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid rgb(220,220,220);
+    text-align: right;
+  }
+}
+
+
+// TODO: refactor to component
+.mega-modal {
+  position: absolute;
+  top: 100px;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+  width: 80%;
+  max-width: 960px;
+  max-height: 640px;
+  margin: auto;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__header {
+    height: 35px;
+    background-color: rgb(248,248,248);
+
+    h5 {
+      color: $text-light-brown;
+      font-size: 16px;
+      line-height: 35px;
+      text-align: center;
+    }
+  }
+  &__content {
+    padding: 1em;
+  }
+  &__fixed-content {
+    position: absolute;
+    top:40px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+  }
+  &__bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(220,220,220);
+    text-align: right;
+  }
+
+  &__saving {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.8);
+  }
+  &__saving-message {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 120px;
+    height: 40px;
+    margin-left: -60px;
+    margin-top: -20px;
+    background-color: rgba(57,64,76,0.8);
+    border-radius: 40px;
+    text-align: center;
+    p {
+      font-weight: 700;
+      color: white;
+      line-height: 40px;
+      i {
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+  &__message {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+._stock-transfer {
+  .edit__transfer-type {
+    font-size: 36px;
+    margin: 10px 0;
+    text-transform: uppercase;
+  }
+}

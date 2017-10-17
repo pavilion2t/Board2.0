@@ -1,0 +1,34 @@
+
+
+<div class='panel-section' >
+  <div class="xgrid">
+    <div class="xgrid-cell -default-100">
+    <p>Template Type</p>
+      <select class='_full' ng-model="template.template_type">
+        <option value="email_receipt" translate>Email Receipt</option>
+        <option value="airprint_invoice" translate>Airprint Invoice</option>
+        <option value="welcome" translate>Welcome</option>
+        <option value="password_reset_instruction" translate>Password Reset Instruction</option>
+        <option value="password_reset_success" translate>Password Reset Success</option>
+        <option value="delivery_order" translate>Delivery Note</option>
+        <option value="purchase_order" translate>Purchase Order</option>
+        <option value="stock_transfer" translate>Stock Transfer</option>
+        <option value="good_received_note" translate>Good Received Note</option>
+        <option value="receipt" translate>Receipt</option>
+        <option value="print_check" translate>Print Check</option>
+      </select>
+    </div>
+  </div>
+  <div class="xgrid">
+    <div class="xgrid-cell">
+      <input-box class='_full' title='Subject' ng-model='template.subject' type='text'></input-box>
+    </div>
+    <div class="xgrid-cell">
+      <input-box class='_full' title='From' ng-model='template.from' type='text'></input-box>
+    </div>
+  </div>
+  <textarea id="mytextarea"></textarea>
+</div>
+
+<button class="_primary _right" ng-click="addTemplate()">Save Template</button>
+<button class="_secondary _right" ng-click="loadDefault()">Load Default</button>

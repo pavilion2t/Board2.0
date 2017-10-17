@@ -1,0 +1,57 @@
+<div class='panel-section'>
+  <input-box class='_full' type='text' title='{{"Title"|translate}}' ng-model='supplier.name' ng-readonly='!editMode'></input-box>
+  <div class="xgrid">
+    <div class="xgrid-cell">
+      <input-box type='text' class='_full' title='{{"Phone 1"|translate}}' ng-model='supplier.phone' ng-readonly='!editMode'></input-box>
+    </div>
+    <div class="xgrid-cell">
+      <input-box type='text' class='_full' title='{{"Phone 2"|translate}}' ng-model='supplier.phone_2' ng-readonly='!editMode'></input-box>
+    </div>
+  </div>
+  <div>
+
+  <div class="xgrid">
+    
+    <div class="xgrid-cell">
+      <input-box type='text' class='_full' title='{{"Fax"|translate}}' ng-model='supplier.fax' ng-readonly='!editMode'></input-box>
+    </div>
+    <div class="xgrid-cell">
+      <div class="_full input-box  input-box">
+      <p class="input-box__title">&nbsp;</p>
+      <ui-select ng-model="supplier.currency" ng-disabled="!editMode" theme="select2" 
+        class="form-control -full" on-select="onSelectCallback($item, $model)">
+            <ui-select-match placeholder="Search currency...">{{$select.selected.name}}</ui-select-match>
+            <ui-select-choices repeat="c.currency_to as c in currency | filter: $select.search" >
+                <span ng-bind-html="c.name | highlight: $select.search"></span>
+                <span class="pull-right _margin-right-1em">{{c.symbol}}</span>
+                <span class="pull-right _margin-right-1em"> {{c.currency_to}} </span>
+                <span class="pull-right _margin-right-1em"> {{c.rate}} </span>
+            </ui-select-choices>
+        </ui-select>
+        </div>
+    </div>
+
+  </div>
+  </div>
+  <input-box class='_full' type='text' title='{{"Address"|translate}}' ng-model='supplier.address' ng-readonly='!editMode'></input-box>
+  <div class="xgrid">
+    <div class="xgrid-cell">
+      <input-box type='text' class='_full' title='{{"Contact"|translate}}' ng-model='supplier.contact' ng-readonly='!editMode'></input-box>
+    </div>
+    <div class="xgrid-cell">
+      <input-box type='text' class='_full' title='{{"Contact Phone"|translate}}' ng-model='supplier.contact_phone' ng-readonly='!editMode'></input-box>
+    </div>
+  </div>
+  </div>
+  <div class="xgrid">
+    <div class="xgrid-cell">
+      <input-box type='text' class='_full' title='{{"Contact Email"|translate}}' ng-model='supplier.contact_email' ng-readonly='!editMode'></input-box>
+    </div>
+    <div class="xgrid-cell">
+      <input-box type='text' class='_full' title='{{"Account Number"|translate}}' ng-model='supplier.account_number' ng-readonly='!editMode'></input-box>
+    </div>
+  </div>
+</div>
+<div class='panel-section'>
+  <input-textarea title='Notes' ng-model='supplier.note' ng-readonly='!editMode'></input-textarea>
+</div>

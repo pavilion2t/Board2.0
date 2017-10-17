@@ -1,0 +1,17 @@
+<div class=''>
+  <h3>{{title|translate}}</h3>
+</div>
+<div class='_message' ng-if='createErrorMessage'>{{createErrorMessage}}</div>
+<div class=''>
+  <input-box title='{{"Name"|translate}}' ng-model='newDepartment.name' type='text'></input-box>
+  <div class='input-box _full'>
+    <p class='input-box__title _full'>{{'Parent Department'|translate}}</p>
+    <select ng-model='newDepartment.parent_id'
+            ng-options="dept.id as dept.display for dept in selectDepartments">
+    </select>
+  </div>
+</div>
+<div class=''>
+  <button class='_secondary' ng-click='closeThisDialog(null)'>{{'Cancel'|translate}}</button>
+  <button class='_primary' ng-click='save(newDepartment)'>{{'Save'|translate}}</button>
+</div>

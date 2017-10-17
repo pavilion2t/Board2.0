@@ -1,0 +1,56 @@
+<div class='panel'>
+      <h1>{{title}}</h1>
+      <h2>{{storeName}}</h2>
+      <div class='panel-section'>
+        <div>
+          <input-box type='text' title='{{"Reference Number"|translate}}' ng-model='invoice.reference_number' ng-readonly='!editMode'></input-box>
+          <input-date class='_right' title='{{"Due Date"|translate}}' ng-model='invoice.due_date' ng-readonly='!editMode'></input-date>
+        </div>
+        <fieldset style="margin-top: 10px;">
+          <input-box type='text' title='{{"Bill To"|translate}}' ng-model='invoice.bill_to_display' ng-readonly='true'></input-box>
+          <input-box class='_right' type='text' title='{{"Customer Email Address"|translate}}' ng-model='invoice.customer_email' ng-readonly='true'></input-box>
+
+          <input-box type='text' title='{{"Billing Address"|translate}}' ng-model='invoice.billing_address_display' ng-readonly='true'></input-box>
+        </fieldset>
+        <fieldset style="margin-top: 20px;">
+          <input-box type='text' title='{{"Ship To"|translate}}' ng-model='invoice.ship_to_display' ng-readonly='true'></input-box>
+          <input-box class='_right' type='text' title='{{"Shipping Address"|translate}}' ng-model='invoice.shipping_address_display' ng-readonly='true'></input-box>
+        </fieldset>
+      </div>
+
+      <div class='panel-section'>
+        <h2>{{'Line Items'|translate}}</h2>
+        <editable-grid columns='editColumns' data='lineItems' edit-mode='editMode'
+          ng-show='lineItems.length'
+          remove-callback='editColumnRemoveCallback'
+          ></editable-grid>
+
+        <add-listings on-close="addItems" ng-show="editMode"></add-listings>
+        <add-listings-by-barcode line-items="lineItems" add-items="addItems" ng-show="editMode"> </add-listings-by-barcode>
+      </div>
+      <div class='panel-section'>
+
+        <div class="xgrid">
+          <div class="xgrid-cell -default-60">
+            <input-textarea title="Note" ng-model="invoice.note" ng-readonly="!editMode"></input-textarea>
+          </div>
+          <div class="xgrid-cell -default-40">
+            <br>
+            <ul class="list-unstyled">
+              <li>{{"Total Quantity"|translate}}: {{calItemTotalQuantity(lineItems)}}</li>
+              <li>{{"Subtotal"|translate}}: {{invoice.subtotal | myCurrency}}</li>
+              <li>{{"Tax"|translate}}: {{invoice.initial_tax | myCurrency}}</li>
+              <li>{{"Discount"|translate}}: {{invoice.discount_total | myCurrency}}</li>
+              <li>{{"Service Fee"|translate}}: {{invoice.initial_service_fee | myCurrency}}</li>
+              <li>{{"Tips"|translate}}: {{invoice.initial_tips | myCurrency}}</li>
+              <li>{{"Rounding"|translate}}: {{invoice.initial_rounding | myCurrency}}</li>
+              <li>{{"Total"|translate}}: {{invoice.initial_total | myCurrency}}</li>
+            </ul>
+            <ul>
+              <li>{{"Paid"|translate}}: {{invoice.paid_total | myCurrency}}</li>
+              <li>{{"Amount Remaining"|translate}}: {{invoice.amount_lefted | myCurrency}}</li>
+			</ul>
+          </div>
+        </div>
+      </div>
+    </div>

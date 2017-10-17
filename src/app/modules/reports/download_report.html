@@ -1,0 +1,6 @@
+<span ng-hide="$root.layout=='UIWebView'">
+<button ng-disabled="requestCounter !== 0" class="_button _secondary" ng-click="download('csv')">&darr; CSV</button>
+<button ng-disabled="requestCounter !== 0" class="_button _secondary" ng-click="download('pdf')" id="test-download-pdf" >&darr; PDF</button>
+<button ng-disabled="requestCounter !== 0" class="_button _secondary" ng-click="download('xls')">&darr; Excel</button>
+  <span style="display: inline-flex;"><input-checkbox label='currency' ng-model='showCurrency.value'></input-checkbox> {{'Show Currency Symbols'|translate}}</span>
+</span>

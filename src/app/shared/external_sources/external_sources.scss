@@ -1,0 +1,229 @@
+a.ext-grid__link {
+	font-size: inherit;
+	font-weight: normal;
+	color: $orange;
+	word-break: break-word;
+}
+
+//search styles
+.ext-search__form {
+	background-color: white;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-width: 500px;
+	input.search__input {
+		width: 100%;
+		border: 1px solid #ccc;
+	}
+	button.search__button {
+		background-color: transparent;
+		color: $orange;
+		position: absolute;
+		right: 0;
+		top: 0px;
+		line-height: 28px;
+		min-width: 0;
+		margin: 3px;
+		i {
+			font-size: 17px;
+		}
+	}
+	button._secondary {
+		height: 35px;
+		margin: 0;
+		min-width: 100%;
+	}
+	input[type="text"], input[type="number"], input[type="password"] {
+		height: 35px !important;
+		width: 100%;
+	}
+	.select2-container.form-control {
+		text-transform: uppercase;
+		width: 100%;
+		.select2-drop {
+			ul.select2-results {
+				text-align: left;
+				padding: 0;
+				> li {
+					padding-left: 4px;
+				}
+				.select2-disabled {
+					color: #ccc;
+					background-color: white;
+					&.select2-highlighted .select2-result-label {
+						color: #ccc;
+						background-color: white;
+					}
+				}
+			}
+		}
+		a.select2-choice {
+			font-family: Lato, "Open Sans", "helvetica neue", helvetica, "arial sans";
+			font-size: inherit;
+			text-align: left;
+			abbr {
+				right: 30px;
+			}
+			&.select2-default {
+				color: #CCCCCC !important;
+				padding-top: 2px;
+			}
+		}
+		.select2-choices {
+			font-family: Lato, "Open Sans", "helvetica neue", helvetica, "arial sans";
+			.select2-search-field input {
+				font-family: Lato, "Open Sans", "helvetica neue", helvetica, "arial sans";
+				font-weight: bold;
+			}
+		}
+	}
+}
+.ext-search__grid {
+	.row {
+		padding: 0;
+	}
+}
+.ext-search-paging__section {
+	text-align: right;
+	.ext-search-results-heading {
+		font-size: 16px;
+		margin-bottom: 10px;
+		color: #39414C;
+		.results-count {
+			margin-left: 2px;
+			margin-right: 2px;
+		}
+	}
+	a {
+		&.previous {
+			margin-right: 10px;
+		}
+		&.next {
+			margin-left: 10px;
+		}
+	}
+}
+button.searched-term {
+	background-color: rgba(57, 64, 76, 0.8);
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 13px;
+	cursor: default;
+	min-width: 0;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.crm-status-cell, .crm-status-cell a {
+	font-size: inherit;
+	text-transform: uppercase;
+	button.crm-status {
+		font-size: 11px;
+		color: white;
+		background-color: gray;
+	}
+}
+
+//listing styles
+.ext-listing {
+	.ext-listing__header {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	.ext-listing__tables {
+		margin-top: 20px;
+		&.row {
+			padding: 0;
+		}
+		table.ext-listing__table {
+			background: #ffffff;
+			word-wrap: break-word;
+			.ext-listing__table-header {
+				th {
+					background: #22262e;
+					color: #ffffff;
+					font-size: inherit;
+				}
+			}
+			.ext-listing__table-title {
+				text-transform: uppercase;
+			}
+		}
+
+		//factual listing specific styles
+		@media (max-width: 1200px) { 
+			.crosswalks-table__container {
+				padding-left: 0 !important;
+			}
+		}
+		table.ext-listing__table {
+			.factual-listing__country {				
+				text-transform: uppercase;
+			}
+		}
+
+	}
+}
+
+#ext-listing__modal {
+	.modal-dialog {
+		background: #ffffff;
+		.modal-dialog__header {
+			width: 100%;
+			background-color: #CCCCCC;
+			padding: 20px;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		.modal-dialog__content {
+			padding: 20px;
+			.modal-dialog__buttons {
+				padding: 30px 0 0;
+				button {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+.store-search {
+	margin-top: 20px;
+	border: 1px solid #e5e5e5;
+	.ext-search__form {
+		background-color: #e5e5e5;
+	}
+	.store-search__desc {
+		padding: 0 20px 20px 20px;
+	}
+	.store-search__result {
+		padding: 20px;
+		border-top: 1px solid #e5e5e5;
+		button {
+			margin: 0;
+		}
+	}
+}
+
+.store-create__container {
+	background-color: #ffffff;
+	padding: 10px 25px;
+	word-wrap: break-word;
+	&.listing-info {
+		margin-bottom: 20px;
+		@media (max-width: 992px) {
+			margin: 20px 0 0 -20px;
+		}
+	}
+}
+.yelp-checkbox__container {
+	color: $orange;
+	input {
+		margin-right: 10px;
+	}
+
+}

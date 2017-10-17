@@ -1,0 +1,48 @@
+<div id='modal-7' class="modal-content">
+<!--   <div class="modal-header">
+    <h3 class="modal-title" id="myModalLabel">Create Your Store</h3>
+  </div>
+ -->  <div class="modal-body">
+    <div class='modal-body-content'>
+      <img src='assets/images/activating.png'>
+      <h2 translate>Your Store Is Being Activated</h2>
+      <p translate>Our staff will contact you within 24 hours to help set you up.</p>
+      <p translate>Please make sure your contact info is correct, or we won't be able to activate your store.</p>
+      <!-- Current Contact -->
+      <div ng-hide='updatingContact || !contact.phone || !contact.email' class='contact-info'>
+        <div class='current-contact'>
+          <p><span class='contact-title'>{{'Your Phone Number:'|translate}}</span> {{contact.phone}}</p>
+          <p><span class='contact-title'>{{'Your Email:'|translate}}</span> {{contact.email}}</p>
+        </div>
+        <button type='button' class='_secondary' ng-click='updateContact()'>{{'Update Contact Info'|translate}}</button>
+      </div>
+
+      <!-- Update Contact -->
+      <div ng-show='updatingContact || !contact.phone || !contact.email' class='contact-info'>
+        <div class='update-contact'>
+          <form class='modal-form' ng-submit='confirmUpdate(newContact)'>
+            <div>
+              <span class='contact-title' translate>Your Phone Number: </span>
+              <input class='input-large' ng-model='newContact.phone' ng-class='{attention: attention && !newContact.phone}'>
+            </div>
+            <div class='bottom'>
+              <span class='contact-title' translate>Your Email: </span>
+              <input class='input-large' ng-model='newContact.email' ng-class='{attention: attention && !newContact.email}'>
+            </div>
+            <input type='submit'>
+          </form>
+        </div>
+        <div ng-show='true' class='contact-options'>
+          <button type="button" class="_secondary" ng-click='cancelUpdate()'>{{'Cancel'|translate}}</button>
+          <button type="button" class="_primary" ng-click='confirmUpdate(newContact)'>{{'Update'|translate}}</button>
+        </div>
+      </div>
+
+      <p class='cant-wait'>{{'Can't wait? Call'|translate}} <b>1-800-My-Bindo</b> {{'to get started right away!'|translate}}</p>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <p><img src='assets/images/secure-lock-small.png'> {{'We'll never share your info with third parties.'|translate}}</p>
+    <a href='' translate>Privacy Policy</a>
+  </div>
+</div>

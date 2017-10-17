@@ -1,0 +1,32 @@
+<div class='panel-section'>
+  <h2 class="_left" translate>Tax Options</h2>
+
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th translate>Name</th>
+      <th translate>Tax Type</th>
+      <th translate>Tax Rate</th>
+      <th translate>Method</th>
+      <th translate>Threshold</th>
+      <th translate>Included in price</th>
+      <th translate>Priority</th>
+      <th translate>Enable</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="taxOption in taxOptions">
+      <td>{{taxOption.name}}</td>
+      <td>{{taxOption.tax_type_name}}</td>
+      <td>{{taxOption.tax_rate_text}}</td>
+      <td>{{taxOption.method_name}}</td>
+      <td>{{taxOption.threshold}}</td>
+      <td>{{taxOption.included_in_price ? 'YES': 'NO'}}</td>
+      <td>{{taxOption.priority}}</td>
+      <td><input type="checkbox" ng-model="taxOption.checked" ng-click="validateTaxOptions(taxOptions, taxOption)" ng-disabled="!editMode"></td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

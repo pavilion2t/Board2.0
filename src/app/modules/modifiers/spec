@@ -1,0 +1,22 @@
+describe('Modifiers Module', function() {
+	beforeEach(function() {
+    browser.get('/#/1651/modifiers');
+	})
+
+ it('should view Modifiers', function() {
+    browser.get('/#/1651/modifiers');
+    browser.ignoreSynchronization = false;
+
+    expect(browser.getTitle()).toEqual('Bindo Dashboard - Modifiers');
+  });
+
+  it('should link to a Modifiers when click on link', function(){
+    element(by.css('.slick-cell a')).click()
+    expect(browser.getCurrentUrl()).toMatch(/modifiers\/\d*/);
+  })
+
+  it('should link to new Modifiers page on "new modifier" button', function(){
+    element(by.css('button._new')).click()
+    expect(browser.getCurrentUrl()).toMatch(/modifiers\/new/);
+  })
+});

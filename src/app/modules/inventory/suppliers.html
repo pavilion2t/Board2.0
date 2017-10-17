@@ -1,0 +1,48 @@
+
+      <div>
+        <h2 translate>Suppliers</h2>
+          <div class='_supplier card' ng-repeat='supplier in listing.suppliers'>
+            <p ng-if='listing.suppliers.length > 1'>
+              <input-checkbox name="default-supplier" label='{{supplier.id}}' ng-model='supplier.default' ng-disabled='!editMode' ng-click="resetDefault(listing.suppliers, supplier, !editMode)"></input-checkbox> Mark as default supplier
+            </p>
+            <!-- Choose a Supplier... -->
+            <div>
+              <div class='input-box'>
+                <p class='input-box__title' translate>Supplier Name</p>
+                <select
+                    ng-model='supplier.supplier_id'
+                    ng-disabled='!editMode'
+                    ng-options="s.id as s.name for s in suppliers"
+                    >
+                </select>
+              </div>
+              <input-box class='_right' type='text' title='Supplier Product ID' ng-model='supplier.supplier_product_id' ng-readonly='!editMode'></input-box>
+            </div>
+            <div>
+              <input-box type='number' title='Reorder Trigger Point' ng-model='supplier.reorder_point' ng-readonly='!editMode'></input-box>
+
+
+                <div class='input-box _right' ng-if="viewCostPermission">
+                    <p class='input-box__title' translate>Cost</p>
+                    <input class='input-box__input' type='text' ng-model='supplier.cost' ng-readonly='!editMode' ui-money-mask="2">
+                </div>
+
+            </div>
+            <div>
+              <input-box type='number' title='Reorder Amount' ng-model='supplier.reorder_level' ng-readonly='!editMode'></input-box>
+              <div class='input-box _right'>
+                <p class='input-box__title' translate>Margin</p>
+                <input ng-if='supplier.cost === undefined' type='text' value='' readonly />
+                <input ng-if='!(supplier.cost === undefined)' type='text' value='{{((1 - (supplier.cost / listing.price)) * 100).toFixed(2)}}%' readonly />
+              </div>
+            </div>
+            <button ng-if='listing.suppliers.length > 1' class='_remove' ng-click='removeSupplier(supplier)' ng-show="editMode">remove this supplier</button>
+
+          </div>
+          <button class='_add' ng-show='editMode' ng-click='addSupplier()' translate>Add Supplier</button>
+        </div>
+        <div class="card" ng-show='listing && listing.suppliers.length === 0 && !editMode'>
+          <h2 translate>This item has not been associated with any supplier.</h2>
+        </div>
+
+      </div>

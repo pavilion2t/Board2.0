@@ -1,0 +1,26 @@
+<div class='panel-section'>
+  <h2>{{"Modifiers Groups"|translate}}</h2>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>{{'Group name'|translate}}</th>
+      <th>{{'Modifiers'|translate}}</th>
+      <th>{{'Enable'|translate}}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="modifierGroup in modifierGroups">
+      <td>{{modifierGroup.name}}</td>
+      <td>
+        <span ng-repeat="modifier in modifierGroup.modifiers">
+          {{modifier.name}} /&nbsp;
+        </span>
+      </td>
+      <td>
+        <input-checkbox label="m-{{modifierGroup.id}}" ng-model="modifierGroup.selected" ng-disabled="!editMode"></input-checkbox>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

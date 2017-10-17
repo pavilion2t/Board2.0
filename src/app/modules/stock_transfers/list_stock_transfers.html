@@ -1,0 +1,21 @@
+<div class="_message" ng-if="!isAllowStoreTransfer">
+  <p>{{'Only chain store and function enabled can transfer stock.'|translate}}</p>
+</div>
+
+<div class='grid'>
+  <grid-filter></grid-filter>
+  <grid-body ng-hide='gridIsEmpty'></grid-body>
+  <grid-empty ng-show='gridIsEmpty'></grid-empty>
+  <grid-pagination ng-hide='loadingGrid || returnAll || gridIsEmpty || pagination.total_pages < 2' ng-model='testPageNumber'></grid-pagination>
+  <grid-row-count ng-hide='loadingGrid || gridIsEmpty'></grid-row-count>
+  <grid-import ng-show='isImporting'></grid-import>
+
+  <div class='content-bottom'>
+    <h2>{{title|translate}}</h2>
+    <!-- beware: actions only usable for 25 per page view -->
+    <div class='content-bottom-actions' ng-if="isAllowStoreTransfer">
+      <button ng-if="editPermission" class='_new' ng-click='createNewIncomingStockTransfer()'>{{'New Incoming Stock Transfer'|translate}}</button>
+      <button ng-if="editPermission" class='_new' ng-click='createNewOutgoingStockTransfer()'>{{'New Outgoing Stock Transfer'|translate}}</button>
+    </div>
+  </div>
+</div>

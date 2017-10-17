@@ -1,0 +1,178 @@
+<div class='view-menu'>
+  <div class='_message' ng-hide='isLoadingList'>
+    {{'Drag to arrange.'|translate}}
+    <span ng-if='getObjectsToUpdate(menuSections).length'> {{'You currently have unsaved changes.'|translate}}</span>
+  </div>
+  <h2>{{menu.name}}</h2>
+
+  <h4 class="pull-right">Checkbox for removal</h4>
+  <div class="_clear"></div>
+  <div class='menu-list'>
+    <div ui-sortable='menuSectionSortingOptions'>
+      <div class='menu-list-section' ng-repeat='section in menuSections' ng-init="sectionIndex=$index">
+        <div class='_bar'>
+          <span class='_name' ng-if="!section._editing">{{section.name}}</span>
+          <input valid-input name="listingName" class="input-box__input" type="text" placeholder="Title" ng-model="section._editingTitle" ng-if="section._editing" ng-required="true">
+          <button ng-if="section._editing" class='_secondary' ng-click='discardSectionChanges(section)'>{{'Discard'|translate}}</button>
+      	  <button ng-if="section._editing" class='_primary' ng-click='saveSectionChanges(section)'>{{'Save'|translate}}</button>
+
+        </div>
+        <div class='menu-list-items'>
+          <div ui-sortable='menuItemSortingOptions'>
+            <div class='menu-list-item' ng-repeat='(i, item) in section.favorites' ng-init="favoritesIndex=$index">
+              <div class='_bar'>
+                <span class='_name'>{{item.listing.name}}</span>
+                <input-checkbox class="pull-right" label='checkbox_{{sectionIndex}}_{{favoritesIndex}}' ng-model='item._deleting'></input-checkbox>
+
+              </div>
+
+              <!-- MENU ITEM ACTIONS -->
+
+              <!--
+              <div class='_toggle' ng-click='showActions[i] = !showActions[i]'><i class='fa fa-angle-down actions-arrow'></i></div>
+              <div class='_actions' ng-show='showActions[i]' ng-mouseleave='showActions[i] = false'>
+
+                <button class='actions-button' ng-click='startEditingMenuItem(item)'>{{'Change Product'|translate}}</button>
+                <button class='actions-button' ng-click='removeMenuItem(item)'>{{'Remove'|translate}}</button>
+              </div> -->
+            </div>
+          </div>
+
+          <add-listings ng-if="editPermission" on-close="addItems" single-select="true" callback-item="section"></add-listings>
+
+           <!--
+          <button class='menu-list-new-item' ng-click='startCreatingNewMenuItem(section)'>
+            New Menu Item
+          </button>  -->
+        </div>
+        <!-- MENU SECTION ACTIONS -->
+        <div class='_toggle' ng-click='showActions = !showActions'><i class='fa fa-angle-down actions-arrow'></i></div>
+        <div class='_actions' ng-show='showActions' ng-mouseleave='showActions = false'>
+          <button class='actions-button' ng-click='startEditingMenuSection(section)'>{{'Edit'|translate}}</button>
+          <button class='actions-button' ng-click='removeMenuSection(section)'>{{'Remove'|translate}}</button>
+        </div>
+      </div>
+    </div>
+    <button style="padding-bottom:15px;" class='menu-list-new-section' ng-click='startCreatingNewMenuSection()'>
+      New Menu Section
+    </button>
+  </div>
+
+  <!-- CREATING NEW MENU SECTION -->
+  <div class='menu-section-create' ng-show='isCreatingNewMenuSection'>
+    <div class='menu-section-create-modal _modal'>
+      <div class='modal__header'>
+        <h5>{{'New Menu Section'|translate}}</h5>
+      </div>
+      <div class='_message' ng-if='createErrorMessage'>{{createErrorMessage}}</div>
+      <div class='modal__content'>
+        <input-box title='{{"Name"|translate}}' ng-model='newMenuSection.name' type='text'></input-box>
+      </div>
+      <div class='modal__bottom'>
+        <button class='_secondary' ng-click='cancelCreatingNewMenuSection()'>{{'Cancel'|translate}}</button>
+        <button class='_primary' ng-click='saveNewMenuSection()'>{{'Save'|translate}}</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDITING MENU SECTION -->
+  <div class='menu-section-create' ng-show='isEditingMenuSection'>
+    <div class='menu-section-create-modal _modal'>
+      <div class='modal__header'>
+        <h5>{{'Edit Menu Section'|translate}}</h5>
+      </div>
+      <div class='_message' ng-if='editrrorMessage'>{{editErrorMessage}}</div>
+      <div class='modal__content'>
+        <input-box title='{{"Name"|translate}}' ng-model='editedMenuSection.name' type='text'></input-box>
+      </div>
+      <div class='modal__bottom'>
+        <button class='_secondary' ng-click='cancelEditingMenuSection()'>{{'Cancel'|translate}}</button>
+        <button class='_primary' ng-click='updateMenuSection()'>{{'Save'|translate}}</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CREATING NEW MENU ITEM -->
+  <!--
+  <div class='menu-item-create' ng-show='isCreatingNewMenuItem'>
+    <div class='menu-item-create-modal _modal'>
+      <div class='modal__header'>
+        <h5>{{'New Menu Item - Choose the Product to Display'|translate}}</h5>
+      </div>
+      <div class='_message' ng-if='createErrorMessage'>{{createErrorMessage}}</div>
+      <div class='modal__content'>
+        <form ng-submit='searchListings(keyword)'>
+          <input class='search__keyword' type='text' placeholder='Search in Inventory...' ng-model='keyword'>
+          <input type='submit' class='_primary search__submit _margin-0' value='Search'>
+        </form>
+        <div class='menu-item-create-listings'>
+          <div class='_listing' ng-repeat='(i, listing) in selectableListings'>
+            <div class='_info'>
+              <img placeholder-src="inventory" class='listing-table__figure' ng-src='{{listing.image_url}}'>
+              <h5>{{listing.name}}</h5>
+              <p ng-show='listing.upc'>Code: {{listing.upc}}</p>
+            </div>
+            <div class='_radio'>
+              <!-- stupid hack for now
+              <div class='input-radio'>
+                <input id='listing-{{i}}' type='radio' ng-value='listing.id' ng-model='newMenuItem.listing_id'>
+                <label for='listing-{{i}}'></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='modal__bottom'>
+        <button class='_secondary' ng-click='cancelCreatingNewMenuItem()'>{{'Cancel'|translate}}</button>
+        <button class='_primary' ng-click='saveNewMenuItem()'>{{'Save'|translate}}</button>
+      </div>
+    </div>
+  </div>-->
+
+  <!-- EDITING MENU ITEM -->
+  <!--
+  <div class='menu-item-create' ng-show='isEditingMenuItem'>
+    <div class='menu-item-create-modal _modal'>
+      <div class='modal__header'>
+        <h5>{{'Change Product of Menu Item'|translate}}</h5>
+      </div>
+      <div class='_message' ng-if='editErrorMessage'>{{editErrorMessage}}</div>
+      <div class='modal__content'>
+        <form ng-submit='searchListings(keyword)'>
+          <input class='search__keyword' type='text' placeholder='Search in Inventory...' ng-model='keyword'>
+          <input type='submit' class='_primary search__submit _margin-0' value='Search'>
+        </form>
+        <div class='menu-item-create-listings'>
+          <div class='_listing' ng-repeat='(i, listing) in selectableListings'>
+            <div class='_info'>
+              <img placeholder-src="inventory" class='listing-table__figure' ng-src='{{listing.image_url}}'>
+              <h5>{{listing.name}}</h5>
+              <p ng-show='listing.upc'>Code: {{listing.upc}}</p>
+            </div>
+            <div class='_radio'>
+              <div class='input-radio'>
+                <input id='edit-listing-{{i}}' type='radio' ng-value='listing.id' ng-model='editedMenuItem.listing_id'>
+                <label for='edit-listing-{{i}}'></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='modal__bottom'>
+        <button ng-if="editPermission" class='_secondary' ng-click='cancelEditingMenuItem()'>{{'Cancel'|translate}}</button>
+        <button ng-if="editPermission" class='_primary' ng-click='updateMenuItem()'>{{'Save'|translate}}</button>
+      </div>
+    </div>
+  </div> -->
+
+  <div class='content-bottom'>
+    <h2>{{title|translate}}</h2>
+    <!-- beware: actions only usable for 25 per page view -->
+    <div class='content-bottom-actions'>
+      {{getSectionToUpdate(menu)}}
+      <button ng-if="editPermission" ng-show='getObjectsToUpdate(menuSections).length' class='_secondary' ng-click='discardChanges()'>{{'Discard Changes'|translate}}</button>
+      <button ng-if="editPermission" ng-show='getObjectsToUpdate(menuSections).length' class='_primary' ng-click='saveChanges()'>{{'Save Changes'|translate}}</button>
+
+    </div>
+  </div>
+</div>

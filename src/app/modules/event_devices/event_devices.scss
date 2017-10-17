@@ -1,0 +1,33 @@
+.device-map-wrapper {
+  min-height: 500px;
+}
+
+.whitelist-infowindow {
+  div {
+      display:inline-block;
+      width:100%;
+      span:nth-child(1) {
+          float: left;
+          width: 50%;
+          color: black;
+          font-weight:bold;
+      }
+
+      span:nth-child(2) {
+          float: right;
+          width: 50%;
+          color: black;
+      }
+      span.store{
+          color: orange;
+      }
+      br {
+
+      }
+  }
+
+}
+
+.device-faded {
+  opacity: .2;
+}

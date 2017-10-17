@@ -1,0 +1,7 @@
+<h4>Enter Miscellaneous charge</h4>
+<input-box type="text" title="{{'Title'|translate}}" ng-model="charge.name"></input-box>
+<input-box type="number" title="Amount (e.g $5.00)" ng-model="charge.price"></input-box>
+<p>
+<button class="_secondary" ng-click="closeThisDialog(null)">Cancel</button>
+<button class="_primary" ng-click="closeThisDialog(charge)">Add</button>
+</p>

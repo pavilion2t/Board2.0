@@ -1,0 +1,201 @@
+.griddle {
+  .table {
+    margin-bottom: 0;
+  }
+}
+
+.griddle .griddle-previous, .griddle .griddle-page, .griddle .griddle-next{
+  float:left;
+  width:33%;
+  min-height:1px;
+  margin-top:5px;
+}
+.griddle .griddle-page{
+  text-align:center;
+}
+
+.griddle .griddle-next{
+  text-align:right;
+
+  button {
+    border: none;
+    background: #fff;
+  }
+}
+
+.griddle .griddle-next, .griddle .griddle-previous {
+  button {
+    border: none;
+    background: #fff;
+
+    &:hover {
+      color: #ff7800;
+    }
+  }
+}
+
+.data-table {
+  border-collapse: separate;
+
+  thead {
+    background: $grid-header-background;
+    color: $grid-header-color;
+
+  }
+
+  th {
+    height: $grid-header-height;
+    line-height: $grid-header-line-height;
+    padding: $grid-header-padding ($grid-header-padding * 2);
+    font-size: $grid-header-font-size;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    border: none;
+  }
+
+  tbody + tbody {
+    border-top: 0;
+  }
+
+  tbody {
+    background: $grid-cell-background;
+    color: $grid-cell-color;
+  }
+
+  td {
+    height: $grid-cell-height;
+    line-height: $grid-cell-line-height;
+    padding: $grid-cell-padding;
+    font-size: $grid-cell-font-size;
+    text-overflow: ellipsis;
+    border: 1px dotted transparent;
+    border-right-color: $grid-cell-border-color;
+    &:last-child {
+      border-right-color: transparent;
+    }
+  }
+  tr:last-child {
+    td{
+      border-bottom-color: transparent;
+    }
+  }
+
+  a {
+    color: $grid-cell-color;
+  }
+}
+
+.data-table--all-border {
+  td {
+    border-right-color: $grid-cell-border-color;
+    border-bottom-color: $grid-cell-border-color;
+  }
+}
+.data-table--v-border {
+  td {
+    border-right-color: $grid-cell-border-color;
+    border-bottom-color: transparent;
+  }
+}
+.data-table--h-border {
+  td {
+    border-right-color: transparent;
+    border-bottom-color: $grid-cell-border-color;
+  }
+}
+.data-table--no-border {
+  td {
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+}
+.data-table--primary-link {
+  a {
+    color: $brand-primary;
+  }
+}
+
+.griddle-nodata {
+  padding: 5em;
+  text-align: center;
+}
+
+.offset-table {
+  border-collapse: separate;
+  background-color: rgba(0, 0, 0, 0);
+  border-spacing: 0 2px;
+  font-weight: bold;
+
+  thead {
+    background-color: darkgrey;
+    color: $grid-header-color;
+  }
+
+  th {
+    height: $grid-header-height;
+    line-height: $grid-header-line-height;
+    padding: $grid-header-padding ($grid-header-padding * 2);
+    font-size: $grid-header-font-size;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    border: none;
+  }
+
+  tbody + tbody {
+    border-top: 0;
+  }
+
+  tbody {
+    background-color: rgba(0, 0, 0, 0);
+    color: $grid-cell-color;
+  }
+
+  td {
+    height: $grid-cell-height;
+    line-height: $grid-cell-line-height;
+    font-size: $grid-cell-font-size;
+    text-overflow: ellipsis;
+    border: 0;
+    border-right-color: $grid-cell-border-color;
+    padding: 0;
+    &:last-child {
+      border-right-color: transparent;
+    }
+    a {
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+
+  td:not(:first-child) {
+    background-color: #fff;
+    padding: $grid-cell-padding;
+  }
+
+  td:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  td:first-child {
+    border: 0;
+    div {
+      height: 100%;
+      padding-left: 10px;
+      background-color: #fff;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      display: flex;
+      span{
+        line-height: 44px;
+        font-size: $grid-cell-font-size;
+      }
+    }
+  }
+
+  a {
+    color: $grid-cell-color;
+  }
+}

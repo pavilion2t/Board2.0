@@ -1,0 +1,25 @@
+  <div class="bar__profile">
+  <div class="profile__user">
+    <div class="username">{{$cookies.user_name}}</div>
+    <div class="user-type">owner</div>
+  </div>
+  <div class="profile__pic">
+    <img ng-src="{{$cookies.user_image}}" placeholder-src="user">
+  </div>
+  <div class='profile-menu-toggle' ng-click='toggleMenu($event)'>
+    <i class="fa fa-angle-down"></i>
+  </div>
+  <div class="profile-menu" ng-show='showHeaderProfileMenu'>
+    <ul class="profile-menu-list">
+      <li><span class="a" ng-click="setLang('en')">English</span></li>
+      <li><span class="a" ng-click="setLang('it')">Italiano</span></li>
+      <li><span class="a" ng-click="setLang('es')">Español</span></li>
+      <li><span class="a" ng-click="setLang('zh_HK')">中文（繁）</span></li>
+      <li><span class="a" ng-click="setLang('zh_CN')">中文（簡）</span></li>
+      <li><span class="a" ng-click="setLang('ja_JP')">日本語</span></li>
+    </ul>
+    <ul class="profile-menu-list">
+      <li><span class="a" ng-click='logout()' >{{'Logout'|translate}}</span></li>
+    </ul>
+  </div>
+</div>

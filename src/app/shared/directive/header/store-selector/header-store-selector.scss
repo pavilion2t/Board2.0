@@ -1,0 +1,184 @@
+.bar__store-selector {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  cursor: pointer;
+
+  .store-selector__current {
+    >div {
+      display: inline-block;
+      vertical-align: text-top;
+    }
+    .current__image {
+      float: left;
+      width: 40px;
+      height: 40px;
+      border: 1px solid rbga(0,0,0,.1);
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    .current__details {
+      height: 40px;
+      p {
+        font-size: 14px;
+        margin: 0;
+        line-height: 18px;
+
+        &.details__title {
+          font-weight: 700;
+        }
+      }
+    }
+    .current__selector {
+      height: 40px;
+      position: relative;
+
+      .selector__toggle {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+
+        margin: 0 10px;
+
+        width: 18px;
+        height: 18px;
+        border: 1px solid $text-light-brown;
+        border-radius: 50%;
+
+        .actions-arrow {
+          position: absolute;
+          left: 3.5px;
+          top: 1px;
+          font-size: 14px;
+          color: $text-light-brown;
+        }
+      }
+    }
+  }
+  .store-selector__dropdown {
+    position: absolute;
+    left: -10px;
+    top: 48px;
+    width: 460px;
+    background-color: rgb(53,72,90);
+    padding: 4px 0 50px;
+    border-radius: 4px;
+    z-index: 1000;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      top: -5px;
+      left: 20px;
+      margin-right: 4px;
+    }
+    &:before {
+      border-bottom: 8px solid rgb(53,72,90);
+      margin-top: -1px;
+    }
+    &:after{
+      border-bottom: 8px solid rgb(53,72,90);
+      margin-top: 1px;
+      z-index: 1;
+    }
+
+    .dropdown__options {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgb(53,72,90);
+
+      box-shadow: 0 -1px 0 0 rgba(255,255,255, .2);
+      padding: 10px;
+      overflow: hidden;
+
+      button {
+        width: 145px;
+        text-align: center;
+        margin: 0;
+
+        &:last-child {
+          float: right;
+        }
+        &._select {
+          background-color: rgb(64,82,99);
+          color: white;
+        }
+        &._apply {
+          background-color: white;
+          color: rgb(41,57,73);
+        }
+      }
+    }
+    .dropdown__stores {
+      max-height: 380px;
+      overflow-y: auto;
+
+      .stores__store {
+        .store__info {
+          position: relative;
+          padding: 10px;
+
+          // prevent hover effect on iPad
+          // .no-touch on <body>
+          .no-touch &:hover, &._current {
+            background-color: rgba(0,0,0,.2);
+          }
+          &:first-child {
+            border-radius: 4px 4px 0 0;
+          }
+          &:last-child {
+            border-radius: 0 0 4px 4px;
+          }
+          .info__image {
+            float: left;
+            width: 40px;
+            height: 40px;
+            border: 1px solid rbga(0,0,0,.1);
+            border-radius: 4px;
+            margin-right: 10px;
+          }
+          .info__details {
+            height: 40px;
+            padding: 2px 0;
+
+            p {
+              font-size: 14px;
+              line-height: 18px;
+              margin: 0;
+              color: white;
+              margin-right: 50px;
+
+              &.details__title {
+                font-weight: 700;
+              }
+              &.details__associate {
+                font-size: 0.7em;
+              }
+            }
+          }
+        }
+      }
+      .info__checkbox {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        transform: scale(1.2,1.2);
+
+        label {
+          background: transparent;
+          border: 1px solid white;
+          &:after {
+            border-color: white;
+          }
+        }
+      }
+      .store__children {
+        padding-left: 25px;
+      }
+    }
+  }
+}

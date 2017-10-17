@@ -1,0 +1,56 @@
+<div class='edit'>
+
+  <div class="status-bar" ng-class=" '-'+order.state "></div>
+
+  <div class='edit__body'>
+    <div class='nav-tabs'>
+      <a class='nav-tabs-item' ng-class='{"-active": section === "overview"}' ng-click='section = "overview"'>{{'Overview'|translate}}</a>
+      <a ng-show="receive_order_visible" class='nav-tabs-item' ng-class='{"-active": section === "ro"}' ng-click='section = "ro"'>{{'R.O.'|translate}}</a>
+    </div>
+
+
+    <div class='panel' ng-controller="PurchaseOrderFormController" ng-show='section === "overview"'>
+  	 <ng-include src="'app/modules/purchase_orders/purchase_order_form.html' "></ng-include>
+    </div>
+    <div class='panel' ng-controller="PurchaseOrderROController" ng-show='section === "ro"'>
+  	 <ng-include src="'app/modules/purchase_orders/view_receive_order.html' "></ng-include>
+    </div>
+  </div>
+
+
+  <div class='edit__purchase-item-fulfill' ng-show='isFulfillingItem'>
+    <div class='purchase-item-fulfill__modal _modal'>
+      <div class='modal__header'>
+        <h5 translate>Fulfill Item</h5>
+      </div>
+      <div class='modal__content'>
+        <div class='_message' ng-if='fulfillItemMessage'>{{fulfillItemMessage}}</div>
+        <p translate>Enter quantity to fulfill.</p>
+        <input-box title='Quantity' ng-model='fulfillQuantity' type='number'></input-box>
+      </div>
+      <div class='modal__bottom'>
+        <button class='_secondary' ng-click='cancelFulfillingPurchasingItem()'>{{'Cancel'|translate}}</button>
+        <button class='_primary' ng-click='fulfillAllPurchaseItem()'>{{'Fulfill All'|translate}}</button>
+        <button class='_primary' ng-click='fulfillSpecifiedPurchaseItem(fulfillQuantity)'>{{'Fulfill Specified'|translate}}</button>
+      </div>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2><span ng-show='editMode'>{{'Edit'|translate}}</span> {{'Purchase Order'|translate}} #{{order.number}}</h2>
+    <div class='content-bottom-actions'>
+      <span ng-hide='editMode'>
+        <button ng-show="order.state === 'pending'" class='_secondary' ng-click='submitViaEmail()'>{{'Submit via Email'|translate}}</button>
+        <button ng-show="order.state === 'pending'" class='_secondary' ng-click='markAsSubmitted()'>{{'Mark as submitted'|translate}}</button>
+
+
+
+
+        <button ng-show="canFulfill(order) && !receive_order_visible" class='_secondary' ng-click='fulfill()'>{{'Fulfill Items'|translate}}</button>
+        <button class='_secondary' ng-click='exportPDF()'>{{'Download PDF'|translate}}</button>
+      </span>
+      <button ng-if="editPermission" ng-hide="editMode || order.state === 'canceled'" class='_secondary ng-hide' ng-click='enableEditMode()'>{{'Edit'|translate}}</button>
+      <button ng-show='editMode' ng-class='{"_primary": action[3], "_secondary": !action[3]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()' ng-if='!action[2] || (order && action[2](order))'>{{action[0]}}</button></div>
+    </div>
+  </div>
+</div>

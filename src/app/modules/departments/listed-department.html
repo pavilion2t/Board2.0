@@ -1,0 +1,17 @@
+<div class="list__department">
+  <div class="department__name">
+    <span>{{department.name}}</span> &nbsp;
+    <small ng-if="storeTitle !== '' && storeTitle !== null" class="label" ng-hide="isEditable">{{storeTitle}}</small>
+    <small class="noTitle" ng-if="storeTitle === '' || storeTitle === null" class="label" ng-hide="isEditable">Default By Chain</small>
+  </div>
+  <div class="department__toggle" ng-click="showActions = !showActions">
+    <i class="fa fa-angle-down actions-arrow"></i>
+  </div>
+  <div class="department__actions" ng-show="showActions" ng-mouseleave="showActions = false">
+    <button class="actions-button" ng-show="isEditable" ng-click="editDepartment()">{{'Edit'|translate}}</button>
+    <button class="actions-button" ng-show="isEditable" ng-click="editTaxOptions()">{{'Tax Options'|translate}}</button>
+    <button class="actions-button" ng-click="editWorkflow()">{{'Workflow'|translate}}</button>
+    <button class="actions-button" ng-show="isEditable" ng-click="removeDepartment()">{{'Remove'|translate}}</button>
+  </div>
+
+</div>

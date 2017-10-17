@@ -1,0 +1,114 @@
+$fonts: Lato, "Open Sans", "Helvetica Neue", Helvetica, "Arial Sans";
+
+// COLORS
+$orange: rgb(255,120,0);
+$gray: rgb(80,84,88);
+$light-gray: rgb(204,204,204);
+$green: rgb(115,209,190);
+$red: rgb(255,93,93);
+$blue: rgb(193,211,223);
+$text-dark-brown: rgb(95,74,61);
+$text-light-brown: rgb(158,146,138);
+$text-orange: rgb(255,154,64);
+$border-orange: rgb(255,142,0);
+
+// LENGTHS
+$header-height: 60px;
+$bottom-height: 50px;
+$menu-width: 250px;
+
+$small-only: "screen and (max-width: 959px)";
+$large-only: "screen and (min-width: 960px)";
+
+// Global values
+// --------------------------------------------------
+$base-background-color: #e9eff3;
+$base-color: #9a9998;
+$base-font-family: Lato,"Open Sans","helvetica neue",helvetica,"arial sans";
+
+$menu-background-color:#485260;
+$menu-selected-background-color:#39414c;
+$header-seperater-color:#5a636f;
+
+$dark : #333;
+$medium : #222;
+$light : #111;
+
+$border-color: #cccccc;
+$splitter-color: #f0f0f0;
+$hidden-section-bg-color: #f8f8f8;
+
+$info-bg: #616670;
+
+//text color
+$text-dark: #5e4b3d;
+$text-medium: #a89d95;
+$text-light: #f2efed;
+
+//slick-grid
+$cell-text-color: $text-dark;
+$pagination-color: #9e928a;
+
+//status color
+$status-cancelled: #aaa;
+$status-paid: #8cd678;
+$status-active: rgb(255,201,30);
+$status-draft: #49bbeb;
+$status-overdued: #ff5d5d;
+$status-expired: #bb80ef;
+$status-partially_paid: rgb(255,180,39);
+$status-unpaid: #ff9530;
+$status-partially_fulfilled: rgb(73,187,235);
+$status-approved: rgb(255,149,48);
+
+// Colors
+$color-orange: #FF7800;
+$color-white: #ffffff;
+$color-dark : #1B1E24;
+$color-green: #0aa699;
+$color-green-dark: $color-green - $dark;
+$color-blue: #00acec;
+$color-yellow: #FDD01C ;
+$color-red: #f35958;
+$color-grey: #8b91a0;
+$color-black: #1b1e24;
+$color-purple: #852b99;
+
+//Grids
+
+$grid-header-bg-color: #ccc;
+$grid-header-color: $text-medium;
+
+// Body
+$body-background: $base-background-color;
+$body-color: #9a9998;
+$body-font-family : $base-font-family;
+$body-font-size : 14px;
+
+
+// Theme Color
+$color-primary: #0aa699;
+$color-primary-hover: $color-primary - #111;
+$font-color-primary: $color-white;
+
+$color-success: #0aa699;
+$color-success-mask: #f3faf8;
+$font-color-success: $color-white;
+
+$color-danger: #F35958;
+$color-danger-mask: #fff6f4;
+$font-color-danger: $color-white;
+
+$color-warning: #FDD01C;
+$color-warning-mask: #fffcee;
+$font-color-warning: $color-dark ;
+
+$color-info: #0090D9;
+$color-info-mask: #ebf6fb;
+$font-color-info: $color-white;
+
+$color-dark: $base-background-color;
+$font-color-dark: $color-white;
+
+$color-important: $color-danger;
+$font-color-important: $font-color-danger;

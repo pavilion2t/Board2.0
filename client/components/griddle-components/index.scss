@@ -1,0 +1,31 @@
+.table,
+.data-table {
+  .credit-card-details {
+    margin: 0 10px;
+    &__row {
+      font-size: 0.9em;
+      line-height: 2em;
+      color: #8e8e8e;
+    }
+    &__label {
+      display: inline-block;
+      width: 50%;
+    }
+    &__value {
+      display: inline-block;
+      width: 50%;
+      text-align: right;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.media {
+  ._name {
+    font-weight: bold;
+  }
+
+  ._code {
+    color: #999;
+  }
+}

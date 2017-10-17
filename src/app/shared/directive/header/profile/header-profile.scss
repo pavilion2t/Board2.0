@@ -1,0 +1,91 @@
+.bar__profile {
+  position: relative;
+  display: inline-block;
+  float: right;
+  min-width: 140px;
+  text-align: right;
+
+  .profile__user {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+
+    .username {
+      text-align: right;
+    }
+    .user-type {
+      color: #a89d95;
+      text-align: right;
+      line-height: 1;
+    }
+  }
+  .profile__pic {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 100px;
+    float: left;
+    margin-top: 2px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+}
+.profile-menu {
+  @include action-dropdown;
+
+  position: absolute;
+  top: 100%;
+  right: 4px;
+  z-index: 1000;
+  padding: 0;
+  text-align: left;
+
+  &-toggle {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    margin: 12px;
+    border: 1px solid $text-light-brown;
+    border-radius: 50%;
+
+    i {
+      position: absolute;
+      left: 3.5px;
+      top: 2px;
+      font-size: 14px;
+      color: $text-light-brown;
+    }
+  }
+  &-list {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+      padding: 0;
+    }
+    a, .a {
+      display: block;
+      padding: 0.2em 1em;
+      line-height: 2;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $orange;
+        color: #fff;
+      }
+    }
+  }
+  &-list + &-list {
+    border-top: 1px solid #eee;
+  }
+
+}
+

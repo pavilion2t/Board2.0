@@ -1,0 +1,18 @@
+<h2 translate>Images</h2>
+<div class="_clear">
+  <div ng-repeat='image in productImages' class='inventory-thumbnail'>
+
+    <div class="clearfix">
+      <img ng-src='{{image.medium_image_url}}' style="max-height:200px; width:auto; max-width:300px;">
+    </div>
+    <div class="clearfix">
+      <p ng-if="image.default"><span class="label label-success">Default</span></p>
+      <p ng-if="!image.default && editMode"><a ng-click="setImageAsDefault(image)">Set as Default</a></p>
+      <button class="_remove" ng-click='removePhoto(image)' ng-hide='!editMode || listing.upc'>{{'Remove Image'|translate}}</button>
+    </div>
+    <br>
+  </div>
+</div>
+<div class="_clear">
+  <input-image title='Add Image' ng-show='editMode' on-select='addImage' ></input-image>
+</div>

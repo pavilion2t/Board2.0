@@ -1,0 +1,25 @@
+<div class="panel _clearfix fixed-panel grid-report">
+  <h2>{{title|translate}}</h2>
+  <div class="report-filter">
+    <form ng-submit="update()">
+      <report-time-filter range="range" advance="advanceTimeFilter" ng-if="!disableTimeFilter"></report-time-filter>
+
+      <button class="_primary" translate>Update</button> &nbsp;&nbsp;
+      <span ng-hide="$root.layout=='UIWebView'">
+      <button class="_button _secondary" ng-click="download('csv')" ng-disabled="$root.requestCounter !== 0">&darr; CSV</button>
+      <button class="_button _secondary" ng-click="download('pdf')" id="test-download-pdf" ng-disabled="$root.requestCounter !== 0">&darr; PDF</button>
+      <button class="_button _secondary" ng-click="download('xls')" ng-disabled="$root.requestCounter !== 0">&darr; Excel</button>
+      <span style="display: inline-flex;"><input-checkbox label='currency' ng-model='showCurrency.value'></input-checkbox> {{'Show Currency Symbols in Export'|translate}}</span>
+      </span>
+    </form>
+  </div>
+  <br>
+  <div ui-grid="gridOptions" class="ag-fresh fixed-grid" ui-grid-resize-columns ui-grid-grouping ui-grid-exporter>
+    <div class="report-no-rows" ng-show="gridMessage">
+      <div class="report-no-rows-message">
+        <span>{{gridMessage}}</span>
+      </div>
+    </div>
+  </div>
+  <index-paginator ng-if="pagingReady" fetch-data="update" pagination="pagination"/>
+</div>

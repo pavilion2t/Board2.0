@@ -1,0 +1,40 @@
+<div class="store-search">
+	<div class="ext-search__form">
+	  <div class="row">
+	    <form ng-submit='searchStores(storeName, zipcode)'>
+	      <div class="col-xs-6 col-md-6">
+	        <input class='search__input' type='text' placeholder='Store name*' ng-model='searchStoreName' ng-change="updateSearchTerm('storeName', searchStoreName)">
+	      </div>
+	      <div class="col-xs-6 col-md-6" >
+	        <input class='search__input' type='text' placeholder='Zipcode*' ng-model='searchZipcode' ng-change="updateSearchTerm('zipcode', searchZipcode)">
+	        <button class='search__button' type="submit" ng-click="searchStores(storeName, zipcode)">
+	          <i class="search__icon fa fa-search"></i>
+	        </button>
+	      </div>
+	    </form>
+	  </div>
+	</div>
+	<div class="store-search__results">
+		<div class="store-search__desc">
+			<span ng-show="searchedStores.length > 0">
+				{{searchedStores.length}} similar store(s) found in Bindo
+			</span>
+			<span ng-show="searchedStores.length == 0">
+				No similar stores found in Bindo
+			</span>
+		</div>
+		<div class="store-search__result" ng-repeat="store in searchedStores">
+			<div class="store-search__result-content pull-left">
+	  		<div ng-if="store.store_name"><strong>{{store.store_name}}</strong></div>
+	  		<div ng-if="store.address">{{store.address}}<span ng-if="store.city">, {{store.city}}</span><span ng-if="store.state">, {{store.state}}</span><span ng-if="store.zipcode"> {{store.zipcode}}</span></div>
+	  		<div ng-if="store.phone">{{store.phone}}</div>
+	  	</div>
+	  	<div class="store-search__result-button pull-right">
+	  		<button class="_new" disabled>
+	  			Merge
+	  		</button>
+	  	</div>
+	  	<div class="clearfix"></div>
+		</div>
+	</div>
+</div>

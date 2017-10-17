@@ -1,0 +1,17 @@
+<div>
+  <div class="card" ng-repeat="attribute in attributes track by $index" >
+    <h3 class="_left _margin-0">{{attribute.name}}
+      <small>{{attribute.field_format|titleCase}}</small>
+    </h3>
+
+
+    <div class="_right">
+      <button class="_secondary" ng-if="!attribute._show && !attribute._new" ng-click="attribute._show=!attribute._show">Edit</button>
+      <button class="_secondary" ng-if="attribute._show && !attribute._new" ng-click="attribute._show=!attribute._show">Hide</button>
+    </div>
+    <div class="_clear"></div>
+    <div ng-if="attribute._show" ng-include="'app/modules/settings/custom_attributes/custom_attributes_card.html'">
+    </div>
+  </div>
+  <button ng-if="!adding" class="_add ng-scope" ng-click="add()">Add New Attribute</button>
+</div>

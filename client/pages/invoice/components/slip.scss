@@ -1,0 +1,71 @@
+$main-color: #5e4b3d;
+$cell-space: 2px;
+$split-space: 10px;
+
+/*******************\
+ * Slip in Invoice page
+\*******************/
+.slip {
+    width: 100%;
+}
+
+/*******************\
+ * Item title
+\*******************/
+.slip__title {
+    padding: $cell-space 0;
+    font-size: 20px;
+}
+
+/*******************\
+ * Item field
+\*******************/
+.slip__field {
+    width: 40%;
+    padding: $cell-space 0;
+}
+
+/*******************\
+ * Item value
+\*******************/
+.slip__value {
+    width: 40%;
+    padding: $cell-space 0;
+    text-align: right;
+}
+
+/*******************\
+ * Detail row
+\*******************/
+.slip__detail {
+
+}
+
+/*******************\
+ * Total row
+\*******************/
+.slip__total {
+    font-weight: bold;
+    color: $main-color;
+}
+
+/*******************\
+ * Bold helper
+\*******************/
+.slip__detail--bold {
+    font-weight: bold;
+    color: $main-color;
+}
+
+/*******************\
+ * Seperator between detail and total
+\*******************/
+.slip__detail--last-row {
+    border-bottom: 1px solid $main-color;
+}
+.slip__detail--last-row .slip__field {
+    padding-bottom: $split-space;
+}
+.slip__detail--last-row .slip__value {
+    padding-bottom: $split-space;
+}

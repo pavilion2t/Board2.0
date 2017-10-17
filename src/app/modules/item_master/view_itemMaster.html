@@ -1,0 +1,43 @@
+<form name="myForm" class="form-horizontal" novalidate>
+	<div class='edit'>
+		<div class='edit__body'>
+			<div class='nav-tabs'>
+				<a class='nav-tabs-item'
+					ng-class='{"-active": section === "overview"}'
+					ng-click='section = "overview"'>{{'Overview'|translate}}</a>
+				<a class='nav-tabs-item'
+					ng-class='{"-active": section === "log"}'
+          ng-show="showLog"
+					ng-click='section = "log"'>{{'Log'|translate}}</a>
+			</div>
+			<div class='panel' ng-show='section === "overview"'>
+				<div class='panel-section'>
+					<div ng-include=" 'app/modules/item_master/overview.html' "></div>
+				</div>
+			</div>
+			<div class='panel' ng-show='section === "log"'>
+				<div class='panel-section'>
+					<div ng-include=" 'app/modules/item_master/log.html' "></div>
+				</div>
+			</div>
+		</div>
+		<div class='content-bottom'>
+			<h2>
+				<span ng-show='editMode'>{{"Edit"|translate}} </span>Inventory
+				#{{listing.id}} - {{listing.name}}
+			</h2>
+			<div class='content-bottom-actions'>
+				<button ng-hide='editMode' class='_secondary'
+					ng-click="showQuantityDetail()">{{'Quantity
+					Detail'|translate}}</button>
+
+				<button ng-hide='editMode' class='_secondary' ng-if="editPermission"
+					ng-click="enableEditMode()">{{'Edit'|translate}}</button>
+				<button ng-show='editMode'
+					ng-class='{"_primary": action[2], "_secondary": !action[2]}'
+					ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button>
+			</div>
+		</div>
+	</div>
+	</div>
+</form>

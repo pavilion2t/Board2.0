@@ -1,0 +1,21 @@
+<div class='input-box _file'>
+  <p class='input-box__title' ng-hide='hasImage()'>{{title|translate}}</p>
+
+  <div ng-repeat="selectedImage in selectedImages">
+    <div class="clearfix">
+      <img image-preview="selectedImage" class="img-preview">
+    </div>
+    <div class="clearfix">
+      <button class="_remove" ng-click='removePhoto(selectedImage)'>Remove Photo</button>
+    </div>
+
+  </div>
+
+  <input id='upload-image' class='input-box__file' type='file' ng-hide="hideUpload()" input-image-read >
+  <label for='upload-image' ng-hide="hideUpload()">
+    <div class='_add'>
+      <div class='_add__plus'><span>+</span></div>
+      {{'Upload'|translate}}
+    </div>
+  </label>
+</div>

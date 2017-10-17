@@ -1,0 +1,20 @@
+<div class='edit _edit-modifier'>
+  <div class='edit__body'>
+
+
+      <modifier-set-form></modifier-set-form>
+
+
+  </div>
+  <div class='content-bottom' ng-if="modifierSet.store_id === currentStore">
+    <h2><span ng-show='editMode'>{{'Edit'|translate}} </span>{{'Modifier Group'|translate}} {{modifierGroup.name}}</h2>
+    <div class='content-bottom-actions'>
+      <button ng-if="editPermission" ng-hide='editMode' class='_secondary' ng-click="enableEditMode()">Edit</button>
+      <button ng-show='editMode' ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+  </div>
+    <div class='content-bottom' ng-if="modifierSet.store_id !== currentStore">
+        <h2 translate>View Only</h2>
+    </div>
+
+</div>

@@ -1,0 +1,250 @@
+<div class='summary' ng-if="visible">
+  <div class='summary__metrics'>
+
+    <div class='metrics__tile _total-sales'>
+      <div class='tile__main' ng-hide='isLoadingMetrics'>
+        <p class='main__amount'>{{currentTotalSales | myCurrency}}</p>
+        <p class='main__title' translate>Total Sales</p>
+      </div>
+      <div class='tile__main _loading' ng-show='isLoadingMetrics'>
+        <i class='fa fa-spin fa-circle-o-notch fa-3x'></i>
+      </div>
+
+      <div class='tile__change' ng-hide='isLoadingMetrics || isMultiStore'>
+        <metrics-detail changes="totalSalesChange"></metrics-detail>
+      </div>
+      <div class='tile__stores' ng-hide='isLoadingMetrics || !isMultiStore'>
+
+        <metrics-detail title=" 'All Stores' " changes="totalSalesChange" amount="currentTotalSales"></metrics-detail>
+
+        <div ng-repeat='(i, store) in summaryCurrentStores track by store.id'>
+          <metrics-detail title=" store.title " changes="totalSalesChanges[i]" amount="currentTotalSaleses[i]"></metrics-detail>
+        </div>
+      </div>
+      <div class='tile__change _loading' ng-show='isLoadingMetrics'>
+        <i class='fa fa-spin fa-circle-o-notch'></i>
+      </div>
+    </div>
+
+    <div class='metrics__tile _average-sale'>
+      <div class='tile__main' ng-hide='isLoadingMetrics'>
+        <p class='main__amount'>{{currentAverageSale | myCurrency}}</p>
+        <p class='main__title' translate>Average Sale</p>
+      </div>
+      <div class='tile__main _loading' ng-show='isLoadingMetrics'>
+        <i class='fa fa-spin fa-circle-o-notch fa-3x'></i>
+      </div>
+
+      <div class='tile__change' ng-hide='isLoadingMetrics || isMultiStore'>
+        <metrics-detail changes="averageSaleChange"></metrics-detail>
+      </div>
+      <div class='tile__stores' ng-hide='isLoadingMetrics || !isMultiStore'>
+        <metrics-detail title=" 'All Stores' " changes="averageSaleChange" amount="currentAverageSale"></metrics-detail>
+
+        <div ng-repeat='(i, store) in summaryCurrentStores'>
+          <metrics-detail title=" store.title " changes="averageSaleChanges[i]" amount="currentAverageSales[i]"></metrics-detail>
+        </div>
+      </div>
+      <div class='tile__change _loading' ng-show='isLoadingMetrics'>
+        <i class='fa fa-spin fa-circle-o-notch'></i>
+      </div>
+    </div>
+
+    <div class='metrics__tile _gross-profit'>
+      <div class='tile__main' ng-hide='isLoadingMetrics'>
+        <p class='main__amount'>{{(currentGrossProfit) | myCurrency}}</p>
+        <p class='main__title' translate>Gross Profit</p>
+      </div>
+      <div class='tile__main _loading' ng-show='isLoadingMetrics'>
+        <i class='fa fa-spin fa-circle-o-notch fa-3x'></i>
+      </div>
+
+      <div class='tile__change' ng-hide='isLoadingMetrics || isMultiStore'>
+        <metrics-detail changes="grossProfitChange"></metrics-detail>
+      </div>
+      <div class='tile__stores' ng-hide='isLoadingMetrics || !isMultiStore'>
+        <metrics-detail title=" 'All Stores' " changes="grossProfitChange" amount="currentGrossProfit"></metrics-detail>
+        <div ng-repeat='(i, store) in summaryCurrentStores'>
+          <metrics-detail title=" store.title " changes="grossProfitChanges[i]" amount="currentGrossProfits[i]"></metrics-detail>
+        </div>
+      </div>
+      <div class='tile__change _loading' ng-show='isLoadingMetrics'>
+        <i class='fa fa-spin fa-circle-o-notch'></i>
+      </div>
+    </div>
+
+    <div class='metrics__tile _average-margin'>
+      <div class='tile__main' ng-hide='isLoadingMetrics'>
+        <p class='main__amount'>{{(currentGrossMargin * 100).toFixed(2)}}%</p>
+        <p class='main__title' translate>Gross Margin</p>
+      </div>
+      <div class='tile__main _loading' ng-show='isLoadingMetrics'>
+        <i class='fa fa-spin fa-circle-o-notch fa-3x'></i>
+      </div>
+
+      <div class='tile__change' ng-hide='isLoadingMetrics || isMultiStore'>
+        <metrics-detail changes="grossMarginChange"></metrics-detail>
+      </div>
+      <div class='tile__stores' ng-hide='isLoadingMetrics || !isMultiStore'>
+        <metrics-detail title=" 'All Stores' " changes="grossMarginChange" margin="currentGrossMargin"></metrics-detail>
+
+        <div ng-repeat='(i, store) in summaryCurrentStores'>
+          <metrics-detail title=" store.title " changes="grossMarginChanges[i]" margin="currentGrossMargins[i]"></metrics-detail>
+        </div>
+      </div>
+      <div class='tile__change _loading' ng-show='isLoadingMetrics'>
+        <i class='fa fa-spin fa-circle-o-notch'></i>
+      </div>
+    </div>
+  </div>
+
+  <div class='summary__metrics'>
+    <div class="metrics__tile">
+      <div class="number-card">
+        <div class="number-card-number">{{ productSoldToday || 0 | number}}</div>
+        <div translate class="number-card-title" ng-show='productSoldToday > 1'>Products Sold Today</div>
+        <div translate class="number-card-title" ng-show='productSoldToday <= 1'>Product Sold Today</div>
+      </div>
+    </div>
+    <div class="metrics__tile">
+      <div class="number-card">
+        <div class="number-card-number">{{ productSoldWeek || 0 | number}}</div>
+        <div translate class="number-card-title" ng-show='productSoldToday > 1'>Products Sold Last 7 Days</div>
+        <div translate class="number-card-title" ng-show='productSoldToday <= 1'>Product Sold Last 7 Days</div>
+      </div>
+    </div>
+    <div class="metrics__tile">
+      <div class="number-card">
+        <div class="number-card-number">{{ purchaseToday || 0 | myCurrency}}</div>
+        <div translate class="number-card-title">Purchased Today</div>
+      </div>
+    </div>
+    <div class="metrics__tile">
+      <div class="number-card">
+        <div class="number-card-number">{{ purchaseWeek || 0 | myCurrency}}</div>
+        <div translate class="number-card-title">Purchased Last 7 Days</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="summary__metrics summary-stores" ng-show="summaryCurrentStores.length > 1">
+    <div class="metrics__tile" ng-repeat="store in summaryCurrentStores" >
+      <div class="summary__store" style="background-image: url({{store.logo_url}})">
+        <div class="summary__store__info">
+          <div class="summary__store__title">
+            <p>{{store.title}}</p>
+            <p>{{store.address1}}</p>
+          </div>
+          <div class="summary__store__sales">
+            Today sales: {{store.product_sales | myCurrency}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='summary__tops'>
+    <div class='tops__tile'>
+      <div class='tile__title'>
+        <h5 translate>Top Items by Sales</h5>
+      </div>
+      <div class='tile__list' ng-hide='isLoadingTopProducts'>
+        <table ng-show='topProducts.length'>
+          <tr class="list__item" ng-repeat='(i, product) in topProducts'>
+            <td class="item__thumbnail">
+              <img placeholder-src="inventory" ng-src="{{product.big_thumb}}" alt="" width="50" height="50">
+
+            </td>
+            <td class='item__text'>
+            <p class='left__name'>{{i+1}}. {{product.name}}</p>
+
+            </td>
+            <td class='item__number'>
+              <p class='right__sales'>{{product.sales | myCurrency}}</p>
+              <p class='right__change' ng-if='product.change !== null'>{{(product.change * 100).toFixed(2)}}%
+                <i ng-show='product.change > 0' class='fa fa-arrow-up'></i>
+                <i ng-show='product.change < 0' class='fa fa-arrow-down'></i>
+                <i ng-show='product.change === 0' class='fa fa-minus'></i>
+              </p>
+              <p class='right__change' ng-if='product.change === null'>-</p>
+
+            </td>
+          </tr>
+        </table>
+
+        <div class='list__empty' ng-hide='topProducts.length'>
+          <div class='empty__logo'>
+            <img src='assets/images/icons/inventory@2x.png'>
+          </div>
+          <p class='empty__title' translate>No items sold in the period.</h5>
+        </div>
+      </div>
+      <div class='tile__list _loading' ng-show='isLoadingTopProducts'>
+        <i class='fa fa-spin fa-circle-o-notch'></i>
+      </div>
+    </div>
+
+    <div class='tops__tile'>
+      <div class='tile__title'>
+        <h5 translate>Top Departments by Sales</h5>
+      </div>
+      <div class='tile__list' ng-hide='isLoadingTopDepartments'>
+
+        <table  g-show='topProducts.length'>
+          <tr class='list__item' ng-repeat='(i, department) in topDepartments'>
+            <td class='item__text'>
+              <p class='left__name'>{{i+1}}. {{department.name}}</p>
+              <p class='left__ratio'>{{(department.ratio * 100).toFixed(2)}}%</p>
+            </td>
+            <td class='item__number'>
+              <p class='right__sales'>{{department.sales | myCurrency}}</p>
+              <p class='right__change' ng-if='department.change !== null'>{{(department.change * 100).toFixed(2)}}%
+                <i ng-show='department.change > 0' class='fa fa-arrow-up'></i>
+                <i ng-show='department.change < 0' class='fa fa-arrow-down'></i>
+                <i ng-show='department.change === 0' class='fa fa-minus'></i>
+              </p>
+              <p class='right__change' ng-if='department.change === null'>-</p>
+            </td>
+          </tr>
+        </table>
+
+        <div class='list__empty' ng-hide='topProducts.length'>
+          <div class='empty__logo'>
+            <img src='assets/images/icons/inventory@2x.png'>
+          </div>
+          <p class='empty__title' translate>No items sold in the period.</h5>
+        </div>
+      </div>
+      <div class='tile__list _loading' ng-show='isLoadingTopDepartments'>
+        <i class='fa fa-spin fa-circle-o-notch'></i>
+      </div>
+    </div>
+  </div>
+
+  <div class='content-bottom summary__bottom'>
+    <div class='bottom__toggle'>
+      <button class='toggle__option' ng-class='{_active: timeframe === "today"}' ng-click='changeTimeframe("today")'>{{'Today'|translate}}</button>
+      <button class='toggle__option' ng-class='{_active: timeframe === "yesterday"}' ng-click='changeTimeframe("yesterday")'>{{'Yesterday'|translate}}</button>
+      <button class='toggle__option' ng-class='{_active: timeframe === "week"}' ng-click='changeTimeframe("week")'>{{'Week'|translate}}</button>
+      <button class='toggle__option' ng-class='{_active: timeframe === "month"}' ng-click='changeTimeframe("month")'>{{'Month'|translate}}</button>
+      <button class='toggle__option' ng-class='{_active: timeframe === "year"}' ng-click='changeTimeframe("year")'>{{'Year'|translate}}</button>
+      <button class='toggle__option _custom-range' ng-class='{_active: timeframe === "custom"}' ng-click='changeTimeframe("custom");setCustomRange()' summary-date-picker>{{'Custom Range'|translate}}</button>
+    </div>
+    <div class='bottom__date-picker' ng-show='isChoosingCustomRange' summary-date-picker>
+      <input class='date-picker__input' type='text' ng-model='summaryFactory.newT1' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder='From'>
+      <div class='date-picker__and'>To</div>
+      <input class='date-picker__input' type='text' ng-model='summaryFactory.newT2' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder='To'>
+      <button class='date-picker__apply _primary' ng-click='applyCustomRange()'>Apply</button>
+      <button class='date-picker__apply _secondary' ng-click='cancelSettingCustomRange()'>Cancel</button>
+    </div>
+    <div class='bottom__date-range'>
+      <p ng-show='currentT1 === currentT2'>{{'Displayed Date'|translate}}: {{currentT1}}</p>
+      <p ng-hide='currentT1 === currentT2'>{{'Displayed Date Range'|translate}}: {{currentT1}} - {{currentT2}}</p>
+    </div>
+    <div class='bottom__updated-at' ng-show='lastUpdateTime'>
+      <p>{{'Updated at'|translate}} {{lastUpdateTime}}</p>
+      <button class='updated-at__refresh' ng-click='updateData()'>
+        <img src='assets/images/overview_refresh.png' ng-class='{"fa-spin": isLoadingMetrics || isLoadingTopProducts || isLoadingTopDepartments}'>
+      </button>
+    </div>
+  </div>
+</div>

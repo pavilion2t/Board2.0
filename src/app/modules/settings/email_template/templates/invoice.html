@@ -1,0 +1,341 @@
+<html>
+<head>
+  <meta content="en-us" http-equiv="Content-Language">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Bindo Order Confirmation | {{ order.status }}</title>
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div marginwidth="0" marginheight="0" style="margin:0;padding:0;background-color:#E9EFF3;min-height:100%!important;width:100%!important">
+  <div>
+    <div></div>
+    <div></div>
+  </div>
+
+    {% if order.status == 'active' %}
+    {% assign status_color = "#49bbrb" %}
+    {% elsif order.status == 'expired' %}
+    {% assign status_color = "#bb80ef" %}
+    {% elsif order.status == 'overdued' %}
+    {% assign status_color = "#ff5d5d" %}
+    {% elsif order.status == 'unpaid' %}
+    {% assign status_color = "#ff9530" %}
+    {% elsif order.status == 'partially_paid' %}
+    {% assign status_color = "#ffc81e" %}
+    {% elsif order.status == 'partially_paid' %}
+    {% assign status_color = "#8cd678" %}
+    {% endif %}
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse">
+      <tbody>
+      <tr>
+        <td align="center" valign="top">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;background-color:#E9EFF3;border-top:0;border-bottom:0">
+            <tbody>
+            <tr>
+              <td align="center" valign="top" style="padding-right:6%;padding-left:6%;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse; max-width: 780px;">
+                  <tbody>
+                  <tr>
+                    <td align="center" valign="top">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;background-color:#ffffff;border-top:0;border-bottom:0">
+                        <tbody>
+                        <tr>
+                          <td valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse">
+                              <tbody>
+                              <tr>
+                                <td style="padding:0 30px;">
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top-width:0px;border-collapse:collapse">
+                                    <tbody>
+                                    <tr>
+                                      <td style="font-family: Lato,'Open Sans','helvetica neue',helvetica,'arial sans';">
+                                        <div class="invoice-supplier-content" style="width: 100%;margin-bottom: 50px;">
+                                          {% if store.logo %}
+
+                                          <div class="invoice-supplier-img" style="float: left;margin-right: 2%;">
+                                            ||| store.logo |||
+                                          </div>
+                                          {% endif %}
+
+                                          <div class="invoice-supplier-info" style="float: none;">
+                                            <div class="invoice-supplier-name" style="color: #5e4b3d;font-weight: bold;">{{ store.name }}</div>
+                                            <div class="invoice-supplier-phone">{{ store.phone }}</div>
+                                            <div class="invoice-supplier-address">{{store.address}}</div>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse">
+                              <tbody>
+                              <tr>
+                                <td valign="top">
+                                  <table cellpadding="0" cellspacing="0" align="left" border="0" width="100%" style="border-collapse:collapse;">
+                                    <tbody>
+                                    <tr>
+                                      <td style="padding:9px 30px;text-align:center;font-family: Lato,'Open Sans','helvetica neue',helvetica,'arial sans';" valign="top">
+                                        <div class="go-to-center" style="width: 100%;">
+                                          <h1 style="color: #5e4b3d;font-weight: bold;line-height: 1;margin: 0 0 10px 0;padding: 10px;text-transform: uppercase;vertical-align: center; background: #697C88; font-size: 24px; color: #fff;">{{order.type}}</h1>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse">
+                              <tbody>
+                              <tr>
+                                <td valign="top">
+                                  <table cellpadding="0" cellspacing="0" align="left" border="0" width="100%" style="border-collapse:collapse;">
+                                    <tbody>
+                                    <tr>
+                                      <td style="padding:9px 30px;font-family: Lato,'Open Sans','helvetica neue',helvetica,'arial sans';" valign="top">
+                                        <div class="invoice-header" style="font-weight: 400;color: #5e4b3d;">
+                                          <div class="invoice-row" style="clear:both">
+                                            <div class="invoice-text" style="margin-bottom: 15px;">
+                                              {{order.type}} Number:
+                                              <span style="color:#9e928a;">{{ order.ref }}</span>
+                                            </div>
+                                          </div>
+                                          <div class="invoice-row" style="clear:both">
+                                            <div class="invoice-text" style="margin-bottom: 15px;">
+                                              Name:
+                                              <span style="color:#9e928a;">{{order.customer.name}}</span>
+                                            </div>
+                                            <div class="invoice-text" style="margin-bottom: 15px;">
+                                              Email:
+                                              <span style="color:#9e928a;">{{ order.customer.email }}</span>
+                                            </div>
+                                          </div>
+                                          <div class="invoice-row" style="clear:both">
+                                            <div class="invoice-text" style="margin-bottom: 15px;">
+                                              Billed to:
+                                              <span style="color:#9e928a;">{{ order.billing_address }} </span>
+                                            </div>
+                                          </div>
+                                          <div class="invoice-row" style="clear:both">
+                                            {% if order.type == 'Invoice' %}
+                                            <div class="invoice-text" style="margin-bottom: 15px;">
+                                              Shipped to:
+                                              <span style="color:#9e928a;">{{ order.delivery_address }}</span>
+                                            </div>
+                                            {% endif %}
+                                            <div class="invoice-text" style="margin-bottom: 15px;">
+                                              Created at:
+                                              <span style="color:#9e928a;">{{ order.create_date | date "%F %R"}}</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse">
+                              <tbody>
+                              <tr>
+                                <td valign="top">
+                                  <table cellpadding="0" cellspacing="0" align="left" border="0" width="100%" style="border-collapse:collapse;">
+                                    <tbody>
+                                    <tr>
+                                      <td style="padding:9px 30px;font-family: Lato,'Open Sans','helvetica neue',helvetica,'arial sans';" valign="top">
+                                        <div class="invoice-list-header" style="border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;text-transform: uppercase;font-weight: bold;color: #9e928a;min-height: 25px;">
+                                          <div class="invoice-row" style="margin: 5px 0;clear:both;">
+                                            <div class="text-left go-to-left" style="float: left;text-align: left;">
+                                              item
+                                            </div>
+                                            <div class="text-right go-to-right" style="float: right;text-align: right;">
+                                              amount
+                                            </div>
+                                          </div>
+                                        </div>
+                                        {% for line_item in order.line_items %}
+                                        <div class="invoice-list">
+                                          <div class="invoice-row" style="margin: 20px 0;clear:both; min-height: 40px;">
+
+                                            <div class="text-left go-to-left" style="float: left;text-align: left;">
+                                              <div>{{ line_item.label }}</div>
+                                              <div class="invoice-item-qty" style="color: #9e928a;font-weight: 400;line-height: 1.5;">{{ line_item.quantity }} X $ {{ line_item.price }}</div>
+                                              {% for discount_entry in line_item.discounts %}
+                                              <div style="color: #9e928a;font-weight: 400;line-height: 1.5;">
+                                                {{ discount_entry.name }}-${{ discount_entry.amount | round: 2}}
+                                              </div>
+                                              {% endfor %}
+                                            </div>
+                                            <div class="text-right go-to-right" style="float: right;text-align: right;">
+                                              <div>${{line_item.total | round: 2}}</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        {% endfor %}
+
+                                        <div class="invoice-total" style="border-bottom: 1px solid #eee;border-top: 1px solid #eee;">
+                                          <div class="invoice-row" style="margin: 20px 0; clear: both">
+                                            <div class="text-left go-to-left" style="float: left;text-align: left;">
+                                              {{ order.note | newline_to_br }}
+                                            </div>
+                                            <div class="text-right go-to-right" style="float: right;text-align: right;">
+                                              <div class="invoice-total-col" style="width: 200px;margin-bottom: 10px; min-height: 20px;">
+                                                <div class="go-to-left" style="float: left;">Subtotal:</div>
+                                                <div class="text-align-right go-to-right" style="float: right;">${{ order.subtotal | round:2}}</div>
+                                              </div>
+
+                                              <div class="invoice-total-col" style="width: 200px;margin-bottom: 10px; min-height: 20px;">
+                                                <div class="go-to-left" style="float: left;">Discount:</div>
+                                                <div class="text-align-right go-to-right" style="float: right;">-${{ order.discount_amount | round: 2}}</div>
+                                              </div>
+
+                                              <div class="invoice-total-col" style="width: 200px;margin-bottom: 10px; min-height: 20px;">
+                                                <div class="go-to-left" style="float: left;">Tax:</div>
+                                                <div class="text-align-right go-to-right" style="float: right;">${{ order.tax_amount }}</div>
+                                              </div>
+
+                                              <div class="invoice-total-col invoice-total-col-bold" style="width: 200px;margin-bottom: 10px;font-weight: bold;color: #5e4b3d; min-height: 20px;">
+                                                <div class="go-to-left" style="float: left;">Total:</div>
+                                                <div class="text-align-right go-to-right" style="float: right;">${{order.total_amount | round : 2 }}</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            {% if store.policy == empty %}
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse">
+                              <tbody>
+                              <tr>
+                                <td valign="top">
+                                  <table cellpadding="0" cellspacing="0" align="left" border="0" width="100%" style="border-collapse:collapse;">
+                                    <tbody>
+                                    <tr>
+                                      <td style="padding:9px 30px;font-family: Lato,'Open Sans','helvetica neue',helvetica,'arial sans';" valign="top">
+                                        <div class="invoice-tnc" style="color: #D2CEC9;line-height: 150%;clear:both;">
+                                          <div class="invoice-tnc-header" style="margin-bottom: 10px;font-weight: bold;">Terms and Conditions</div>
+                                          <div class="invoice-tnc-content">{{ store.policy | newline_to_br}}</div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            {% endif %}
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse">
+                              <tbody>
+                              <tr>
+                                <td style="padding:30px">
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top-width:0px;border-collapse:collapse">
+                                    <tbody>
+                                    <tr>
+                                      <td>
+                                        <span></span>
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" valign="top" style="padding-right:6%;padding-left:6%;">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse; max-width: 780px;">
+            <tbody>
+            <tr>
+              <td align="center" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;border-top:0;border-bottom:0">
+                  <tbody>
+                  <tr>
+                    <td valign="top">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse">
+                        <tbody>
+                        <tr>
+                          <td style="padding:0;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse">
+                              <tbody>
+                              <tr>
+                                <td style="font-family: Lato,'Open Sans','helvetica neue',helvetica,'arial sans';">
+                                  <div class="invoice-footer" style="margin: 40px 0;">
+                                    <div class="invoice-top-header-right" style="float: right;margin-left: 20px; font-size: 14px;">
+                                      <div>
+                                        <i class="status-icon active" style="width: 10px;height: 10px;-moz-border-radius: 90px;-webkit-border-radius: 90px;border-radius: 90px;display: inline-block;margin-right: 10px;background: none;background-color:{{status_color}}; margin-top: 25px;"></i>
+
+                                        {{order.status }}</div>
+                                    </div>
+                                  </div>
+                                  <div class="invoice-footer-bottom" style="border-top: 1px solid #D2CEC9;padding-top: 20px;padding-bottom: 20px;color: #D2CEC9; font-size: 14px;">
+                                    &copy;2016 Bindo Labs, Inc. All rights reserved. Bindo is a registered trademark of Bindo Labs.
+                                  </div>
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse">
+                        <tbody>
+                        <tr>
+                          <td valign="top" style="padding:9px">
+                            <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+                              <tbody>
+                              <tr>
+                                <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;">
+                                  <span></span>
+                                </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+</div>
+</body>
+</html>

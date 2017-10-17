@@ -1,0 +1,53 @@
+button._remove {
+  background: 0 0;
+  text-align: left;
+  border: none;
+
+  &:before {
+    content: 'x';
+    display: block;
+    float: left;
+    position: relative;
+    box-sizing: content-box;
+    top: 0;
+    width: 19px;
+    height: 19px;
+    line-height: .8;
+    margin: 0 10px 0 -10px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid #9e928a;
+    color: #9e928a;
+    background-color: transparent;
+  }
+
+  &:hover{
+    &:before{
+      color: #ff5d5d;
+      border-color: #ff5d5d;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.remove-btn {
+  &.__has-title {
+    .outer {
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .inner {
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}

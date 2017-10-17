@@ -1,0 +1,9 @@
+describe('Gift Cards Module', function() {
+  it('should view Gift Cards', function() {
+    browser.get('/#/1651/gift-cards');
+    browser.ignoreSynchronization = true;
+    browser.manage().timeouts().implicitlyWait(1000);
+
+    expect(browser.getTitle()).toEqual('Bindo Dashboard - Gift Cards');
+  });
+});

@@ -1,0 +1,99 @@
+@mixin clearfix {
+  &:after {
+    content: " ";
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+  }
+}
+
+$radius: 5px;
+
+.payment-refund {
+  .balance-form {
+    @include clearfix();
+    display: block;
+    float: left;
+    width: 45%;
+    background: #f8f8f8;
+    color: #333;
+    border-radius: $radius;
+
+    &__item {
+      @include clearfix();
+      padding: 5px 15px;
+
+      &__label {
+        float: left;
+      }
+      &__value {
+        float: right;
+      }
+      &:first-child {
+        padding-top: 15px;
+      }
+      &:last-child {
+        padding-bottom: 15px;
+      }
+    }
+
+    &__result {
+      background: #ffebda;
+      color: #ff7300;
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: $radius;
+    }
+  }
+
+  &-form {
+    @include clearfix();
+    display: block;
+    float: right;
+    width: 50%;
+
+    select {
+      text-transform: capitalize;
+    }
+  }
+
+  &__result {
+    display: none;
+    background: #ffebda;
+    color: #ff7300;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: $radius;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  &--success {
+    .balance-form {
+      width: 100%;
+    }
+    .payment-refund-form {
+      display: none;
+    }
+    .payment-refund__result {
+      display: block;
+    }
+  }
+
+  .credit-card-form {
+    &__expire-date {
+      display: block;
+      width: 100%;
+    }
+    &__expire-month {
+      margin-right: 4px;
+    }
+    &__expire-month,
+    &__expire-year {
+      display: inline-block;
+      width: calc(50% - 2px);
+    }
+  }
+}

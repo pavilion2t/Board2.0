@@ -1,0 +1,51 @@
+<div class='grid'>
+  <grid-filter></grid-filter>
+  <grid-body ng-hide='gridIsEmpty'></grid-body>
+  <grid-empty ng-show='gridIsEmpty'></grid-empty>
+  <grid-pagination ng-hide='loadingGrid || returnAll || gridIsEmpty || pagination.total_pages < 2' ng-model='testPageNumber'></grid-pagination>
+  <grid-row-count ng-hide='loadingGrid || gridIsEmpty'></grid-row-count>
+  <grid-import ng-show='isImporting'></grid-import>
+
+  <div class='grid__add-modifiers' ng-show='isAddingModifiers'>
+    <div class='add-modifiers__modal _modal'>
+      <div class='modal__header'>
+        <h5>{{'Add Modifiers To Items'|translate}}</h5>
+      </div>
+      <div class='_message' ng-if='uploadErrorMessage'>{{createErrorMessage}}</div>
+      <div class='modal__content'>
+        <form class='content__search' ng-submit='searchInventory(keyword)'>
+          <input class='search__keyword' type='text' placeholder='Search in Inventory...' ng-model='keyword'>
+          <input type='submit' class='_primary search__submit' value='Search'>
+        </form>
+        <div class='content__results'>
+          <div class='results__item' ng-repeat='(i, listing) in displayedListings' ng-class='{_selected: selectedItemIndex === i}'>
+            <img placeholder-src="inventory" class='item__image' src='{{listing.image_url}}'>
+            <div class='item__details'>
+              <h5>{{listing.name}}</h5>
+              <p ng-show='listing.upc'>Code: {{listing.upc}}</p>
+            </div>
+            <div class='item__select'>
+              <input-checkbox label='listing-{{i}}' ng-model='newListingsToAdd[listing.id]'></input-checkbox>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='modal__bottom'>
+        <button class='_secondary' ng-click='cancelAddingModifiers()'>Cancel</button>
+        <button class='_primary' ng-click='saveAddingModifiers()' ng-disabled='!isEnablingSaveButton()'>Save</button>
+      </div>
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2>{{title|translate}}</h2>
+    <!-- beware: actions only usable for 25 per page view -->
+    <div class='content-bottom-actions'>
+      <button class='_secondary' ng-click='exportExcel()'>{{'Excel'|translate}}{{getSelectedItems().length ? " Selected" : ""}} </button>
+      <button class='_secondary' ng-click='exportPdf()'>{{'PDF'|translate}}{{getSelectedItems().length ? " Selected" : ""}} </button>
+      <button class='_secondary' ng-click='exportCsv()'>{{'CSV'|translate}}{{getSelectedItems().length ? " Selected" : ""}} </button>
+    
+      <button ng-if="editPermission" class='_new' ng-click='createNewItem()'>{{'New Modifier'|translate}}</button>
+    </div>
+  </div>
+</div>

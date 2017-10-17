@@ -1,0 +1,170 @@
+<div class='sale'>
+  <div class='sale__body'>
+    <div class='body__receipt'>
+
+      <div class='receipt__header _section' ng-show='order'>
+        <h5 class='header__title'>{{store.title}}</h5>
+        <p>
+          <span>{{store.address1}}</span>
+          <span ng-if='store.address2'>, {{store.address2}}</span>
+          <span ng-if='store.city || store.state || store.zipcode'>, </span>
+          <span>{{store.city}} {{store.state}} {{store.zipcode}}</span>
+          </p>
+        <p>
+          <span>{{store.phone}}</span>
+          <span ng-if='store.phone && store.homepage'> / </span>
+          <span>{{store.homepage}}</span>
+        </p>
+      </div>
+      <div class='_section' ng-show='order'>
+        <p class='_right'>{{'State'|translate}}: {{order.state}}</p>
+        <p ng-if='order.completed_at'>{{'Date'|translate}}: {{order.completed_at | moment}}</p>
+        <p ng-if='order.number'>{{'Order Number'|translate}}: {{order.number}}</p>
+        <p ng-if='order.sale_transactions.length'>Cashier: {{order.sale_transactions[0].cashier_name}}</p>
+        <p ng-if='order.customer_name'>{{'Customer'|translate}}: {{order.customer_name}}</p>
+        <p ng-if='order.humanized_from'>{{'From'|translate}}: {{order.humanized_from}}</p>
+        <p ng-if='order.billing_address'>{{'Billing Address'|translate}}: {{order.billing_address}}</p>
+        <p ng-if='order.shipping_address'>{{'Delivery Address'|translate}}: {{order.shipping_address}}</p>
+      </div>
+      <div class='receipt__list _section' ng-show='order'>
+        <div class='list__item' ng-repeat='item in order.line_items'>
+          <div class='item__image'>
+            <img src='assets/images/inventory_placeholder.png'>
+          </div>
+          <div class='item__details'>
+            <p>{{item.label}}</p>
+            <p class='details__amount'>{{item.quantity}} x {{item.unit_price | myCurrency}}</p>
+            <p class='details__amount' ng-if="item.tax_option_id && tax_options_amount > 1"><span translate>Tax:</span> {{item.tax_name}} ({{item.tax_rate|percentage}})</p>
+            <div ng-if="item.discount_entries.length >= 1">
+                <p class='details__amount' ng-repeat="discount in item.discount_entries"><span translate>Discount: </span>
+                    <span>{{discount.discount_name}}
+                        <span ng-if="discount.discount_amount !== '0.0'">({{discount.discount_amount|currency}})</span>
+                        <span ng-if="discount.discount_percentage !== '0.0'">({{discount.discount_percentage|percentage}})</span>
+                    </span>
+                </p>
+            </div>
+            <div item-status class="item__status-select" ng-show="item.line_item_code && line_item_code_enabled">
+              <p ng-click="showStatus=!showStatus">
+                set status <i class="fa fa-caret-down"></i> :
+                {{getStatusName(item.line_item_status_id)}}
+                </p>
+
+              <small ng-click="showStatusHistory(item.line_item_code)">status history</small>
+              <div class="item__status-list panel" ng-show="showStatus">
+                <span class="label-status -small"
+                      ng-repeat="status in statusList"
+                      ng-click="setItemStatus(order, item, status.id)">{{status.status}} </span>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class='item__total'>
+            <p>{{item.total | myCurrency}}</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+      <div class='receipt__summary _section' ng-show='order'>
+        <div>
+          <p translate>Total Quantity:</p>
+          <p class='_right'>{{totalQuantity}}</p>
+        </div>
+        <div>
+          <p translate>Subtotal:</p>
+          <p class='_right'>{{order.initial_product_total | myCurrency}}</p>
+        </div>
+        <div>
+          <p><span translate>Tax:</span><span ng-if="tax_options_amount === 1"> &nbsp; {{current_tax_options.tax_name}} ({{current_tax_options.tax_rate|percentage}})</span></p>
+          <p class='_right'>{{order.initial_tax | myCurrency}}</p>
+        </div>
+        <div>
+          <p><b translate>Total:</b></p>
+          <p class='_right'><b>{{order.initial_total | myCurrency}}</b></p>
+        </div>
+      </div>
+
+
+        <div class='receipt__summary _section'><span translate>Transaction(s)</span></div>
+        <p ng-show='order.sale_transactions.length === 0' translate>No transactions</p>
+        <div class='receipt__summary _section' ng-repeat='transaction in order.sale_transactions'>
+            <div>
+                <div>
+                    <p translate>Date:</p>
+                    <p class='_right'>{{transaction.created_at|moment}}</p>
+                </div>
+                <div>
+                    <p translate>Cashier:</p>
+                    <p class='_right'>{{transaction.cashier_name}}</p>
+                </div>
+
+
+                <div>
+                    <p translate>Payment:</p>
+                    <p class='_right'>{{transaction.payment}}</p>
+                </div>
+
+                <div>
+                    <p translate>Amount:</p>
+                    <p class='_right'>{{transaction.amount| myCurrency}}</p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class='receipt__summary _section' ng-show='order.refunds.length > 0'><span translate>Refund(s)</span></div>
+        <div class='receipt__summary _section' ng-show='order.refunds.length > 0' ng-repeat='refund in order.refunds'>
+            <div>
+                <div>
+                    <p translate>Date:</p>
+                    <p class='_right'>{{refund.created_at|moment}}</p>
+                </div>
+                <div>
+                    <p translate>Refund Reason:</p>
+                    <p class='_right'>{{refund.refund_reason}}</p>
+                </div>
+
+
+                <div>
+                    <p translate>Product Refund:</p>
+                    <p class='_right'>{{refund.product_total| myCurrency}}</p>
+                </div>
+
+                <div>
+                    <p translate>Delivery Refund:</p>
+                    <p class='_right'>{{refund.delivery| myCurrency}}</p>
+                </div>
+
+                <div>
+                    <p translate>Tax Refund:</p>
+                    <p class='_right'>{{refund.tax| myCurrency}}</p>
+                </div>
+
+                <div>
+                    <p translate><b>Total Refund:</b></p>
+                    <p class='_right'><b>{{refund.total| myCurrency}}</b></p>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+  </div>
+
+  <div class='content-bottom'>
+    <h2><span ng-show='editMode'>Edit</span> Sale #{{order.number}}</h2>
+    <div class='content-bottom-actions'>
+      <button ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]}}</button></div>
+    </div>
+  </div>
+</div>

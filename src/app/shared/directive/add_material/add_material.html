@@ -1,0 +1,92 @@
+<div class='add-listings' style="height:600px">
+    <div class='ngdialog-header add-listings-header' style="position:relative;height:100px">
+      <form >
+
+
+        <div class="xgrid">
+
+          <div class="xgrid-cell -default-75">
+            <input class='_full' type='text' placeholder='Search ...' ng-model='keyword' ng-change="test()">
+
+          </div>
+          <div class="xgrid-cell -default-25">
+            <button class="_full _primary" ng-click='search()'>Search</button>
+          </div>
+        </div>
+        <!--
+
+        <div class="xgrid">
+          <div class="xgrid-cell -default-33">
+            <select class='_full' ng-model="search.status" ng-options="filter as filter.label for filter in statusOptions">
+
+            </select>
+          </div>
+          <div class="xgrid-cell -default-33" ng-if="!supplier">
+            <ui-select class="_full" ng-model="search.supplier" theme="select2" class="form-control">
+              <ui-select-match placeholder=" Select or search supplier...">{{$select.selected.name}}</ui-select-match>
+              <ui-select-choices repeat="supplier as supplier in suppliers | filter: $select.search">
+                <span ng-bind-html="supplier.name | highlight: $select.search"></span>
+              </ui-select-choices>
+            </ui-select>
+          </div>
+        </div>
+-->
+
+
+
+      </form>
+    </div>
+
+    <div class="editable-grid-wrapper" style="position:absolute;width:100%;padding:15px;height:calc(100% - 160px)">
+      <h1 ng-show="searching">Searching...</h1>
+      <table class="editable-grid" ng-class="{_edit: editMode}" ng-show="!searching">
+        <thead class="editable-grid__head">
+        <tr>
+          <th class="editable-grid__cell editable-grid__head-cell"><span ng-if="factory.type === '0'">Inventory</span><span ng-if="factory.type === '1'">Material</span></td>
+          <td class="editable-grid__cell editable-grid__head-cell">ID</td>
+          <td class="editable-grid__cell editable-grid__head-cell">Cost</td>
+          <td class="editable-grid__cell editable-grid__head-cell"></td>
+        </tr>
+        </thead>
+        <tbody class="editable-grid__body">
+        <tr ng-repeat="item in bom">
+          <td>
+            <span ng-bind="item.name"></span>
+            <span></span>
+          </td>
+          <td>
+            <span  ng-bind="item.product_id"></span>
+          </td>
+          <td>
+            <span ng-bind="item.cost"></span>
+          </td>
+
+          <td>
+
+            <input type="image" ng-class="{'toggle-on': item._selected, 'toggle-off': !item._selected}" ng-click="selectOrder(item)" src="{{item._selected?'assets/images/icons/toggle-on@2x.png':'assets/images/icons/toggle-off@2x.png'}}" class="toggle-on">
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  <div class="xgrid" style="position:absolute;width:100%;bottom:0px;padding: 15px;height:60px;margin-left: 0px;    background-color: #eee;">
+
+    <div class="xgrid-cell -default-10">
+      <button class="_full _secondary" ng-click='previous()'>Previous</button>
+
+    </div>
+    <div class="xgrid-cell -default-10">
+
+      <button class="_full _secondary" ng-click='next()'>Next</button>
+    </div>
+    <div class="xgrid-cell -default-35">
+
+
+    </div>
+    <div class="xgrid-cell -default-25">
+      <button class="_full _primary" ng-click='confirm()'>Continue</button>
+    </div>
+  </div>
+
+</div>

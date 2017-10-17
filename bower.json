@@ -1,0 +1,85 @@
+{
+  "name": "dashboardbindo",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.11.3",
+    "angular-cookies": "1.3.20",
+    "angular-animate": "1.3.20",
+    "angular-resource": "1.3.20",
+    "angular-route": "1.3.20",
+    "angular-sanitize": "1.3.20",
+    "angular": "1.3.20",
+    "slickgrid": "2.1.0",
+    "jquery.event.drag-drop": "https://github.com/devongovett/jquery.event.drag.git#2.2",
+    "jquery-ui": "1.11.4",
+    "font-awesome": "4.3.0",
+    "ngmap": "1.10.0",
+    "ngDialog": "0.3.12",
+    "angular-ui-select": "0.11.2",
+    "selectize": "0.8.5",
+    "moment": "2.10.3",
+    "moment-timezone": "0.4.0",
+    "slidr": "0.5.0",
+    "angular-ui-router": "0.2.15",
+    "angular-ui-date": "0.0.7",
+    "oauth-signature": "1.3.0",
+    "lodash": "3.9.3",
+    "angular-ui-sortable": "0.13.3",
+    "angular-cookie": "4.0.6",
+    "angular-mocks": "1.4.0",
+    "angular-minicolors": "0.0.5",
+    "angular-gettext": "2.0.5",
+    "select2": "3.4.5",
+    "angular-permission": "~0.3.1",
+    "angular-ui-grid": "3.1.1",
+    "angular-input-masks": "2.5.0",
+    "html2canvas": "0.4.1",
+    "validate": "validate.js#~0.9.0",
+    "ui-grid-draggable-rows": "^0.3.2",
+    "bignumber.js": "^3.0.1",
+    "papaparse": "^4.1.2",
+    "jszip": "^3.1.3",
+    "react": "https://github.com/reactjs/react-bower",
+    "colorpick": "./src/app/lib/colorpick.js",
+    "exporter": "./src/app/lib/exporter.js",
+    "jspdf": "~1.3.2",
+    "jspdf.debug": "./src/app/lib/jspdf.debug.js",
+    "jspdf.extend": "./src/app/lib/jspdf.extend.js",
+    "modernizr.custom": "./src/app/lib/modernizr.custom.js",
+    "jspdf-autotable": "~2.0.1"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "angular": "1.3.20"
+  },
+  "overrides": {
+    "slickgrid": {
+      "main": [
+        "./lib/jquery.event.drag-2.2.js",
+        "./lib/jquery.event.drop-2.2.js",
+        "./lib/jquery-ui-1.11.3.js",
+        "slick.core.js",
+        "slick.dataview.js",
+        "slick.formatters.js",
+        "slick.grid.js",
+        "slick.groupitemmetadataprovider.js",
+        "./controls/slick.pager.js",
+        "./controls/slick.columnpicker.js",
+        "./plugins/slick.cellrangedecorator.js",
+        "./plugins/slick.cellrangeselector.js",
+        "./plugins/slick.rowselectionmodel.js",
+        "slick.grid.css"
+      ]
+    },
+    "angular-ui-grid": {
+      "main": [
+        "./ui-grid.css",
+        "./ui-grid.eot",
+        "./ui-grid.js",
+        "./ui-grid.svg",
+        "./ui-grid.ttf",
+        "./ui-grid.woff"
+      ]
+    }
+  }
+}

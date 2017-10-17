@@ -1,0 +1,92 @@
+.login {
+  // common elements
+  .login__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    margin-left: -225px;
+    border: 1px $light-gray solid;
+    border-radius: 4px;
+    background-color: white;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+    }
+    .box__logo {
+      background-color: $orange;
+      padding: 25px 0;
+      text-align: center;
+      border-radius: 4px 4px 0 0;
+    }
+    .box__form {
+      border-bottom: 1px solid rgba(204,204,204,.3);
+      padding: 20px 40px;
+      input {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        &:disabled {
+           cursor: default;
+        }
+      }
+      img {
+        margin: 40px;
+      }
+      ._message {
+        font-weight: 400;
+      }
+      .form__remember {
+        margin-top: 20px;
+        line-height: 24px;
+
+        .input-checkbox {
+          position: relative;
+          top: 4px;
+        }
+      }
+    }
+    .box__options {
+      padding: 20px 40px;
+      text-align: right;
+      .options__forgot-password {
+        float: left;
+        line-height: 30px;
+        color: $text-light-brown;
+      }
+      button, ._button {
+        margin-bottom: 0;
+        &.options__back-to-dashboard {
+          width: 180px;
+        }
+        &.options__set-new-password {
+          width: 140px;
+        }
+      }
+    }
+    &._main {
+      margin-top: -210px;
+    }
+    &._recover-password {
+      margin-top: -210px;
+      .box__form {
+        padding: 50px 40px;
+      }
+    }
+    &._recovery-email-sent, &._reset-password, &._reset-password-success {
+      margin-top: -230px;
+    }
+  }
+  .login__disclaimer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 360px;
+    margin-left: -180px;
+    text-align: center;
+  }
+  i {
+    margin-right: 10px;
+  }
+}

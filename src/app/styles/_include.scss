@@ -1,0 +1,52 @@
+@import "mixins";
+@import "variables";
+
+
+.status-icon {
+    // background-color: $color-white;
+    width: 10px;
+    height: 10px;
+    border-radius: 90px;
+    display: inline-block;
+    margin-right: 10px;
+    background: none;
+
+    &.cancelled,&.canceled,&.refunded,&.voided{
+        background-color:$status-cancelled;
+    }
+    &.paid,&.fulfilled,&.received,&.sent{
+        background-color:$status-paid;
+    }
+    &.active,&.created,&.pending,&.unfulfilled,&.pending_pick_up{
+        background-color:$status-active;
+    }
+    &.draft{
+        background-color:$status-draft;
+    }
+    &.overdued{
+        background-color:$status-overdued;
+    }
+    &.expired{
+        background-color:$status-expired;
+    }
+    &.partial_paid,&.submitted, &.pending_confirmation{
+        background-color:$status-partially_paid;
+    }
+    &.unpaid{
+        background-color:$status-unpaid;
+    }
+    &.partially_fulfilled,&.in_transit,&.partially_received,&.partially_sent{
+        background-color: $status-partially_fulfilled;
+    }
+    &.approved{
+        background-color: $status-approved;
+    }
+}
+
+[ng-click] {
+    cursor: pointer;
+}
+
+.table  {
+    width: 100%;
+}

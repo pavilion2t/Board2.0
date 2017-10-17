@@ -1,0 +1,38 @@
+<div>
+  <div class='ngdialog-header'>
+    Tax Options
+  </div>
+  <div class="ngdialog-body">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th translate>Name</th>
+          <th translate>Tax Type</th>
+          <th translate>Tax Rate</th>
+          <th translate>Method</th>
+          <th translate>Threshold</th>
+          <th translate>Included in price</th>
+          <th translate>Priority</th>
+          <th translate>Enable</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="taxOption in taxOptions">
+          <td>{{taxOption.name}}</td>
+          <td>{{taxOption.tax_type_name}}</td>
+          <td>{{taxOption.tax_rate_text}}</td>
+          <td>{{taxOption.method_name}}</td>
+          <td>{{taxOption.threshold}}</td>
+          <td>{{taxOption.included_in_price ? 'YES': 'NO'}}</td>
+          <td>{{taxOption.priority}}</td>
+          <td><input type="checkbox" ng-model="taxOption.checked" ng-click="validateTaxOptions(taxOptions, taxOption)"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class='ngdialog-footer _align-right'>
+    <button class="_primary" ng-click="updateTaxOptions(taxOption)">Save Tax Option</button>
+  </div>
+</div>
+

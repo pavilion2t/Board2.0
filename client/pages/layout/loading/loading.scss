@@ -1,0 +1,48 @@
+$spinnercolor: #ffcc00;
+$trailcolor: #f99;
+
+@keyframes rotate{
+  from { transform:rotate(0deg); }
+  to { transform:rotate(360deg); }
+}
+
+.loading-spinner {
+
+  &-wrapper {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 250px;
+    height: 0;
+    text-align: center
+  }
+
+  &-box {
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+    color: #FF7800;
+    font-size: 16px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgba(198, 197, 196, 0.42);
+    border-top: none;
+    box-shadow: 0 15px 14px -10px rgba(0,0,0,0.2);
+    padding: 8px 16px;
+  }
+
+  animation: rotate 0.8s infinite linear;
+  border: 1px $trailcolor solid;
+  border-top-color:$spinnercolor;
+  border-bottom-color:$spinnercolor;
+  border-radius: 50%;
+  display:inline-block;
+  height: 12px;
+  width:  12px;
+  vertical-align: -2px;
+  height: 20px;
+  width: 20px;
+  vertical-align: -4px;
+  margin-right: 5px;
+}
+

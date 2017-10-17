@@ -1,0 +1,179 @@
+.main-menu {
+  background: #35485A;
+  padding: 0;
+  margin: 0;
+  li.main-menu-item {
+      cursor:pointer;
+    }
+
+  .menu__submenu {
+    background: #444;
+    list-style-type: none;
+    padding:0px;
+
+    &-title {
+      padding: 20px;
+      color:#fff;
+    }
+
+    &.nodisplay{
+      display:none;
+    }
+
+    li.menu__submenuitem {
+      background: #222525;
+      cursor:pointer;
+
+      a {
+        padding: 0;
+        padding-bottom: 0;
+        margin-left:30px;
+      }
+    }
+  }
+  .main-menu-group{
+  	background-color: #2a3a48;
+  }
+  .menu__group {
+    padding: 12px 20px;
+    color: #fff
+  }
+
+  &-item {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(255,255,255,.5);
+    padding: 0;
+    margin: 0;
+
+    a {
+      color: rgba(255,255,255,.5);
+      display: block;
+      padding: 12px 20px;
+      text-decoration: none;
+
+      &.-disabled {
+        pointer-events: none;
+        cursor: default;
+        opacity: 0.4;
+      }
+    }
+
+    &:hover > a, & a.-active {
+      text-decoration: none;
+      background-color: rgba(255,255,255,.06);
+      color: white;
+    }
+  }
+
+  &-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    vertical-align: -10px;
+
+    &.-dashboard,&.-summary {
+      background-image: url(images/icons/overview.png);
+    }
+    &.-inventory,&.-stock-transfers,&.-item-master {
+      background-image: url(images/icons/inventory.png);
+    }
+    &.-production-orders {
+      background-image: url(images/icons/production-orders.png);
+      background-size: contain;
+    }
+    &.-inventory-variance {
+      background-image: url(images/icons/inventory-variance.png);
+      background-size: contain;
+    }
+    &.-departments {
+      background-image: url(images/icons/departments.png);
+    }
+    &.-discounts {
+      background-image: url(images/icons/discounts.png);
+    }
+    &.-customers {
+      background-image: url(images/icons/customers.png);
+    }
+    &.-gift-cards {
+      background-image: url(images/icons/gift-cards.png);
+    }
+    &.-membership-levels {
+      background-image: url(images/icons/membership.png);
+    }
+    &.-sales{
+      background-image: url(images/icons/sales.png);
+    }
+    &.-invoices {
+      background-image: url(images/icons/invoices.png);
+    }
+    &.-suppliers {
+      background-image: url(images/icons/suppliers.png);
+    }
+    &.-modifiers {
+      background-image: url(images/icons/modifiers.png);
+    }
+    &.-purchase-orders {
+      background-image: url(images/icons/purchase-orders.png);
+    }
+    &.-time-clock {
+      background-image: url(images/icons/time-clock.png);
+    }
+    &.-reports {
+      background-image: url(images/icons/reports.png);
+    }
+    &.-register {
+      background-image: url(images/icons/register-shifts.png);
+    }
+    &.-bank-accounts {
+      background-image: url(images/icons/overview.png);
+    }
+    &.-billings {
+      background-image: url(images/icons/overview.png);
+    }
+    &.-merchant-services {
+      background-image: url(images/icons/overview.png);
+    }
+    &.-settings{
+      background-image: url(images/icons/settings.png);
+    }
+    &.-combo {
+      background-image: url(images/icons/combo.png);
+    }
+    &.-event-devices {
+      background-image: url(images/icons/event.png);
+    }
+    &.-line-items {
+      background-image: url(images/icons/line-item-status.png);
+    }
+    &.-line-item-status-set-up {
+      background-image: url(images/icons/line-item-status-set-up.png);
+    }
+    &.-workflow-set-up {
+      background-image: url(images/icons/workflow-set-up.png);
+    }
+    &.-vouchers {
+      background-image: url(images/icons/voucher.png);
+    }
+    &.-loyalty {
+      background-image: url(images/icons/loyalty.png);
+    }
+    &.-material {
+      background-image: url(images/icons/material.png);
+    }
+    &.-membership-level {
+      background-image: url(images/icons/membership-level.png);
+    }
+    &.-menus {
+      background-image: url(images/icons/menu.png);
+    }
+    &.-delivery-note, &.-delivery-note-d2 {
+      background-image: url(images/icons/delivery-note.png);
+    }
+  }
+}

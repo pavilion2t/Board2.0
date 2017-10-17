@@ -1,0 +1,2081 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: app/modules/modifiers/modifiersController.js:29
+msgid "# of Items"
+msgstr "アイテム＃"
+
+#: app/modules/modifiers/view_modifier.html:52
+msgid "* Price must greater then 0"
+msgstr "価格必ず0以上"
+
+#: app/modules/modifiers/view_modifier.html:77
+msgid "* Price must lesser then 0"
+msgstr "価格必ず0以下"
+
+#: app/modules/time_clock/timeClockController.js:18
+#: app/modules/time_clock/timeClockController.js:57
+msgid "API"
+msgstr "API"
+
+#: app/modules/settings/iframe.html:11
+msgid "Access Requested"
+msgstr "アクセル申し込む中"
+
+#: app/modules/purchase_orders/purchase_order_form.html:18
+#: app/modules/suppliers/view_supplier.html:26
+msgid "Account Number"
+msgstr "アカウントナンバー"
+
+#: app/modules/bank_accounts/bankAccountsController.js:8
+msgid "Account Type"
+msgstr "アカウントタイプ"
+
+#: app/modules/settings/iframe.html:7
+msgid "Activate Your Storefront"
+msgstr "アウトフロントをアクティブ"
+
+#: app/shared/grid/grid-filter.html:47
+msgid "Add Filter"
+msgstr "フィルタを付け加え"
+
+#: app/modules/inventory/new_inventory.html:44
+msgid "Add Image"
+msgstr "画像を追加"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:36
+#: app/modules/stock_transfers/view_stock_transfer.html:39
+msgid "Add Items"
+msgstr "アイテムを追加"
+
+#: app/modules/modifiers/list_modifiers.html:12
+msgid "Add Modifiers To Items"
+msgstr "モディファイをアイテムに追加"
+
+#: app/modules/invoices/new_invoice.html:30
+#: app/modules/purchase_orders/purchase_order_form.html:80
+msgid "Add New Items"
+msgstr "新しいアイテムを追加"
+
+#: app/modules/modifiers/new_modifier.html:17
+#: app/modules/modifiers/new_modifier.html:26
+#: app/modules/modifiers/new_modifier.html:50
+#: app/modules/modifiers/new_modifier.html:71
+#: app/modules/modifiers/new_modifier.html:78
+#: app/modules/modifiers/view_modifier.html:19
+#: app/modules/modifiers/view_modifier.html:30
+#: app/modules/modifiers/view_modifier.html:59
+#: app/modules/modifiers/view_modifier.html:67
+#: app/modules/modifiers/view_modifier.html:84
+#: app/modules/modifiers/view_modifier.html:92
+msgid "Add To Price"
+msgstr "価格に付け加え"
+
+#: app/modules/settings/line_item_status_index.html:10
+msgid "Add new status"
+msgstr "新しい状態を追加"
+
+#: app/modules/settings/iframe_new.html:73
+msgid "Add section"
+msgstr "新しいセクションを追加"
+
+#: app/modules/settings/iframe_index.html:32
+msgid ""
+"Add your first Storefront page! Customize as many online store pages as you "
+"like, and simply add the embed codes to your website."
+msgstr ""
+"はじめのストアフロントパージを追加！カスタムオンラインストアページ、簡単に埋め込みコードをウェブに追加する。"
+
+#: app/modules/modifiers/new_modifier.html:43
+#: app/modules/modifiers/view_modifier.html:50
+msgid "Add-on Options"
+msgstr "付加の選択"
+
+#: app/modules/settings/iframe_setting.html:10
+msgid "Addition Languages other then English"
+msgstr "英語以外の言語を使用"
+
+#: app/modules/settings/iframe_index.html:8
+msgid "Additional Languages"
+msgstr "他のの言語"
+
+#: app/modules/customers/customersController.js:59
+#: app/modules/customers/customersController.js:99
+#: app/modules/purchase_orders/purchase_order_form.html:22
+#: app/modules/suppliers/suppliersController.js:14
+#: app/modules/suppliers/suppliersController.js:21
+#: app/modules/suppliers/view_supplier.html:19
+msgid "Address"
+msgstr "住所"
+
+#: app/modules/settings/iframe_index.html:22
+msgid "Align"
+msgstr "合わせ"
+
+#: app/shared/grid/grid-row-count.html:9
+msgid "All"
+msgstr "全て"
+
+#: app/modules/summary/summary.html:150
+msgid "All Stores"
+msgstr "全てのストア"
+
+#: app/modules/modifiers/new_modifier.html:66
+#: app/modules/modifiers/view_modifier.html:76
+msgid "Allows you to deselect unwanted options"
+msgstr "不要な選択削除されるを許可する"
+
+#: app/modules/modifiers/new_modifier.html:44
+#: app/modules/modifiers/view_modifier.html:51
+msgid "Allows you to select multiple add-ons to the item"
+msgstr "複数付加の選択を許可する"
+
+#: app/modules/inventory/view_inventory.html:134
+#: app/modules/modifiers/new_modifier.html:11
+#: app/modules/modifiers/view_modifier.html:12
+msgid "Allows you to select one option for each Single Choice Modifier"
+msgstr "シングル選項付加の選択を許可する"
+
+#: app/modules/invoices/invoicesQuotesController.js:40
+#: app/modules/invoices/invoicesQuotesController.js:79
+msgid "Amount"
+msgstr "金額"
+
+#: app/modules/discounts/new_discount.html:12
+#: app/modules/discounts/view_discount.html:14
+msgid "Amount Off"
+msgstr "金額減る"
+
+#: app/modules/welcome/modals/modal_2.html:65
+msgid "Apartment / Suite"
+msgstr "アパートメント / ユニット"
+
+#: app/modules/time_clock/timeClockController.js:12
+#: app/modules/time_clock/timeClockController.js:51
+msgid "Associate"
+msgstr "アソシエイト"
+
+#: app/modules/inventory/new_inventory.html:7
+#: app/modules/inventory/new_inventory.html:75
+#: app/modules/inventory/view_inventory.html:109
+msgid "Attributes"
+msgstr "属性"
+
+#: app/modules/discounts/discountsController.js:72
+msgid "Auto Apply Discount"
+msgstr "自動化値引き"
+
+#: app/modules/discounts/new_discount.html:30
+#: app/modules/discounts/view_discount.html:31
+msgid "Automatically Apply Discount"
+msgstr "自動に値引きを使用"
+
+#: app/modules/summary/summary.html:63
+msgid "Average Sale"
+msgstr "平均販売"
+
+#: app/modules/welcome/modals/modal_4.html:39
+msgid "Average Sales Amount"
+msgstr "平均販売金額"
+
+#: app/modules/purchase_orders/purchase_order_form.html:57
+msgid "Bank transfer"
+msgstr "銀行振込"
+
+#: app/modules/invoices/new_invoice.html:11
+#: app/modules/invoices/view_invoice.html:11
+msgid "Bill To"
+msgstr "請求書の送付先"
+
+#: app/modules/invoices/invoicesQuotesController.js:36
+msgid "Bill to"
+msgstr "請求書の送付先"
+
+#: app/modules/customers/customersController.js:81
+#: app/modules/customers/view_customer.html:41
+msgid "Billing Address"
+msgstr "請求先の住所"
+
+#: app/modules/time_clock/timeClockController.js:15
+#: app/modules/time_clock/timeClockController.js:54
+msgid "Bindo Account Manager"
+msgstr "Bindo アカウントマネージャー"
+
+#: app/modules/time_clock/timeClockController.js:13
+#: app/modules/time_clock/timeClockController.js:52
+msgid "Bindo Sales Associate"
+msgstr "Bindo 営業アシスタント"
+
+#: app/modules/time_clock/timeClockController.js:14
+#: app/modules/time_clock/timeClockController.js:53
+msgid "Bindo Sales Manager"
+msgstr "Bindo 営業部長"
+
+#: app/modules/settings/iframe.html:8
+msgid ""
+"Bindo Storefront is the easiest way to sell online through your existing "
+"website. After requesting access to the Storefront Builder, you can "
+"instantly create online store pages that automatically sync with your Bindo "
+"POS inventory."
+msgstr ""
+"Bindo Storefrontはあなた今のウェブを簡単にオンラインストアになる方法。ストアパージ申し込めたら"
+"オンラインストアページをできたらすぐにBindo POSのアイテム自動同步ができる。"
+
+#: app/modules/welcome/modals/modal_4.html:55
+msgid ""
+"Bindo supports 99% of merchant processors. Help us connect you to the right "
+"processor."
+msgstr ""
+"Bindo は99%の貿易プロセッサーをサポートしています。正確のプロセッサーへの接続を教えてください。"
+
+#: app/modules/customers/customersController.js:36
+msgid "Birthday (MM-DD)"
+msgstr "生月日（月-日）"
+
+#: app/modules/inventory/new_inventory.html:19
+#: app/modules/inventory/view_inventory.html:22
+msgid "Brand"
+msgstr "ブランド"
+
+#: app/modules/settings/iframe_index.html:37
+msgid "Btn color"
+msgstr "ボタン色"
+
+#: app/modules/settings/iframe_index.html:38
+msgid "Btn text color"
+msgstr "ボタン文字色"
+
+#: app/modules/welcome/modals/modal_3.html:32
+msgid "Business Type"
+msgstr "ビジネスの種類"
+
+#: app/modules/settings/iframe_new.html:18
+msgid "Button background color"
+msgstr "ボタン背景色"
+
+#: app/modules/sales/salesController.js:25
+msgid "Buyer"
+msgstr "バイヤー"
+
+#: app/modules/welcome/modals/modal_3.html:62
+msgid ""
+"By answering these questions, you can customize your POS and dashboard the "
+"way you need it. No more, no less."
+msgstr "質問を教えてたら、POSとダッシュボードをカスタマイズができる，あなたにぴったり。"
+
+#: app/modules/welcome/modals/modal_5.html:47
+msgid ""
+"By filling out this info, you'll be able to automate your tax calculations, "
+"saving you a lot of time."
+msgstr "ここで入力したら自動化の税計算ができて、手間を省く。"
+
+#: app/modules/activating/activating.html:43
+#: app/modules/welcome/modals/modal_7.html:41
+msgid "Can't wait? Call"
+msgstr "待ち時間に耐えられない？電話して"
+
+#: app/modules/activating/activating.html:38
+#: app/modules/departments/list_departments.html:26
+#: app/modules/departments/listed-department.html:29
+#: app/modules/inventory/new_inventory.html:92
+#: app/modules/invoices/view_invoice.html:51
+#: app/modules/menus/list_menus.html:47
+#: app/modules/menus/list_menus.html:77
+#: app/modules/menus/view_menu.html:107
+#: app/modules/menus/view_menu.html:143
+#: app/modules/menus/view_menu.html:54
+#: app/modules/menus/view_menu.html:71
+#: app/modules/purchase_orders/fulfill.html:4
+#: app/modules/purchase_orders/view_purchase_order.html:21
+#: app/modules/settings/iframe_new.html:109
+#: app/modules/stock_transfers/view_stock_transfer.html:116
+#: app/modules/stock_transfers/view_stock_transfer.html:63
+#: app/modules/stock_transfers/view_stock_transfer.html:81
+#: app/modules/stock_transfers/view_stock_transfer.html:99
+#: app/modules/welcome/modals/modal_7.html:36
+#: app/modules/login/views/recover-password.html:17
+#: app/shared/edit/add_listings.html:60 app/shared/grid/grid-filter.html:83
+msgid "キャンセル"
+msgstr "取消"
+
+#: app/modules/gift_cards/giftCardsController.js:13
+#: app/modules/gift_cards/giftCardsController.js:25
+msgid "Card Number"
+msgstr "カードナンバー"
+
+#: app/modules/purchase_orders/purchase_order_form.html:58
+msgid "Cash"
+msgstr "現金"
+
+#: app/modules/inventory/inventoryController.js:94
+msgid "Category"
+msgstr "カテゴリ"
+
+#: app/modules/menus/view_menu.html:21
+msgid "Change Product"
+msgstr "商品を變更"
+
+#: app/modules/menus/view_menu.html:117
+msgid "Change Product of Menu Item"
+msgstr "メニューの商品を變更"
+
+#: app/modules/purchase_orders/purchase_order_form.html:59
+msgid "Check"
+msgstr "チェック"
+
+#: app/modules/discounts/new_discount.html:23
+#: app/modules/discounts/view_discount.html:24
+msgid "Check this if this is a store coupon or discount."
+msgstr "クーポンやまたは値引きをチェックする"
+
+#: app/modules/discounts/new_discount.html:10
+#: app/modules/discounts/view_discount.html:12
+msgid "Choose Discount Type..."
+msgstr "値引きの種類を選んでください"
+
+#: app/modules/customers/new_customer.html:19
+#: app/modules/customers/view_customer.html:29
+msgid "Choose Gender..."
+msgstr "性別を選んで"
+
+#: app/modules/inventory/new_inventory.html:52
+msgid "Choose a Supplier..."
+msgstr "サプライヤーを選んで......"
+
+#: app/modules/welcome/modals/modal_2.html:69
+msgid "City"
+msgstr "市"
+
+#: app/modules/settings/iframe_new.html:106
+msgid "Click save to see Embed Code and preview your Storefront page"
+msgstr "保存して埋め込みコードを取得とストアフォロトページプレビューする"
+
+#: app/modules/settings/iframe_new.html:120
+msgid "Close preview"
+msgstr "プレビューをやめる"
+
+#: app/modules/inventory/new_inventory.html:14
+#: app/modules/inventory/view_inventory.html:17
+msgid "Code"
+msgstr "コード"
+
+#: app/modules/settings/iframe_new.html:7
+msgid "Colors"
+msgstr "色"
+
+#: app/modules/inventory/new_inventory.html:70
+#: app/modules/inventory/new_inventory.html:76
+msgid "Coming soon..."
+msgstr "近日公開"
+
+#: app/modules/welcome/modals/modal_1.html:15
+#: app/modules/welcome/modals/modal_2.html:15
+msgid "Configure Your Store"
+msgstr "ストアを設定"
+
+#: app/modules/purchase_orders/purchase_order_form.html:23
+#: app/modules/suppliers/suppliersController.js:15
+#: app/modules/suppliers/suppliersController.js:22
+#: app/modules/suppliers/view_supplier.html:21
+msgid "Contact"
+msgstr "連絡"
+
+#: app/modules/purchase_orders/purchase_order_form.html:25
+#: app/modules/suppliers/view_supplier.html:25
+msgid "Contact Email"
+msgstr "連絡メール"
+
+#: app/modules/purchase_orders/purchase_order_form.html:24
+#: app/modules/suppliers/view_supplier.html:22
+msgid "Contact Phone"
+msgstr "連絡電話"
+
+#: app/shared/grid/grid-filter.html:13
+msgid "Contains"
+msgstr "含む"
+
+#: app/modules/welcome/modals/modal_1.html:56
+#: app/modules/welcome/modals/modal_2.html:86
+#: app/modules/welcome/modals/modal_3.html:68
+#: app/modules/welcome/modals/modal_4.html:61
+#: app/modules/welcome/modals/modal_5.html:53
+#: app/modules/welcome/modals/modal_6.html:66
+msgid "Continue"
+msgstr "続き"
+
+#: app/modules/inventory/inventoryController.js:178
+#: app/modules/inventory/new_inventory.html:57
+msgid "Cost"
+msgstr "料金"
+
+#: app/modules/settings/iframe_index.html:10
+#: app/modules/welcome/modals/modal_1.html:31
+msgid "Country"
+msgstr "国"
+
+#: app/modules/welcome/modals/modal_3.html:3
+#: app/modules/welcome/modals/modal_4.html:3
+#: app/modules/welcome/modals/modal_5.html:3
+#: app/modules/welcome/modals/modal_6.html:3
+msgid "Create Your Store"
+msgstr "自分のストアをはじめる"
+
+#: app/modules/bank_accounts/bankAccountsController.js:12
+msgid "Created At"
+msgstr "　日から作成した"
+
+#: app/modules/purchase_orders/purchase_order_form.html:31
+msgid "Created at"
+msgstr "　時から作成した"
+
+#: app/modules/purchase_orders/purchase_order_form.html:32
+msgid "Created by"
+msgstr "　が作成した"
+
+#: app/modules/welcome/modals/modal_4.html:14
+msgid "Credit Card Processing"
+msgstr "クレジットかーどを処理中"
+
+#: app/modules/purchase_orders/purchase_order_form.html:60
+msgid "Credit card"
+msgstr "クレジットかー"
+
+#: app/modules/welcome/modals/modal_6.html:26
+msgid "Current POS / Inventory System"
+msgstr "現在のPOS / 在庫システム"
+
+#: app/modules/welcome/modals/modal_4.html:25
+msgid "Current Processor"
+msgstr "現在のプロセッサー"
+
+#: app/modules/inventory/inventoryController.js:176
+#: app/shared/edit/add_listings.html:31
+msgid "Current QTY"
+msgstr "現在の数量"
+
+#: app/modules/summary/summary.html:288
+msgid "Custom Range"
+msgstr "カスタムの範囲"
+
+#: app/modules/settings/iframe_setting.html:22
+msgid "Custom shipping description"
+msgstr "カスタム発送の說明"
+
+#: app/modules/customers/customersController.js:35
+#: app/modules/customers/view_customer.html:92
+#: app/modules/invoices/invoicesQuotesController.js:76
+#: app/modules/sales/view_sale.html:24
+msgid "Customer"
+msgstr "お客様"
+
+#: app/modules/invoices/new_invoice.html:16
+msgid "Customer Email Address"
+msgstr "お客様のメール"
+
+#: app/modules/customers/customersController.js:55
+msgid "Customer Profile Type"
+msgstr "お客様プロフィールの種類"
+
+#: app/shared/menu/menu-generic.html:40
+msgid "Customers"
+msgstr "お客様"
+
+#: app/modules/welcome/modals/modal_0.html:3
+msgid "Customize Your Back Office"
+msgstr "カスタムバックオフィス"
+
+#: app/modules/settings/iframe_new.html:3
+msgid ""
+"Customize your Storefront page to fit the look and feel of your website by "
+"choosing from the options below. Then simply copy the embed code and add it "
+"to your webpage."
+msgstr ""
+"ストアフォロトページをカスタムしたら、以下のオプションを選択し、自分らしいのストアを作れる。簡単に"
+"埋め込みコードをコピーしてウェブに加え。"
+
+#: app/modules/welcome/modals/modal_6.html:14
+msgid "Data Migration"
+msgstr "データ移行"
+
+#: app/modules/invoices/invoicesQuotesController.js:37
+#: app/modules/invoices/invoicesQuotesController.js:77
+#: app/modules/purchase_orders/purchaseOrdersController.js:25
+#: app/modules/sales/view_sale.html:21
+msgid "Date"
+msgstr "日"
+
+#: app/modules/customers/customersController.js:61
+msgid "Date Created"
+msgstr "作成した日"
+
+#: app/modules/customers/customersController.js:79
+#: app/modules/customers/view_customer.html:37
+msgid "Date of Birth"
+msgstr "生年月日"
+
+#: app/modules/customers/customersController.js:100
+#: app/modules/customers/customersController.js:60
+msgid "Date of Birth (MM-DD)"
+msgstr "生月日 （月-日）"
+
+#: app/modules/purchase_orders/purchase_order_form.html:61
+msgid "Debit card"
+msgstr "デビットカード"
+
+#: app/modules/discounts/discountsController.js:71
+#: app/modules/discounts/new_discount.html:22
+#: app/modules/discounts/view_discount.html:23
+msgid "Deduct Tax Base"
+msgstr "課税標準を減る"
+
+#: app/modules/inventory/view_inventory.html:141
+#: app/modules/inventory/view_inventory.html:146
+#: app/modules/inventory/view_inventory.html:164
+#: app/modules/inventory/view_inventory.html:169
+#: app/modules/inventory/view_inventory.html:182
+#: app/modules/inventory/view_inventory.html:187
+#: app/modules/modifiers/new_modifier.html:19
+#: app/modules/modifiers/new_modifier.html:28
+#: app/modules/modifiers/new_modifier.html:74
+#: app/modules/modifiers/new_modifier.html:79
+#: app/modules/modifiers/view_modifier.html:21
+#: app/modules/modifiers/view_modifier.html:32
+#: app/modules/modifiers/view_modifier.html:63
+#: app/modules/modifiers/view_modifier.html:88
+#: app/modules/modifiers/view_modifier.html:93
+msgid "Default"
+msgstr "デフォルト"
+
+#: app/modules/modifiers/view_modifier.html:68
+msgid "Default:"
+msgstr "デフォルト"
+
+#: app/modules/sales/view_sale.html:26
+msgid "Delivery Address"
+msgstr "配達先住所"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:19
+#: app/modules/stock_transfers/stockTransferController.js:69
+msgid "Departing Store"
+msgstr "出発するストア"
+
+#: app/modules/inventory/new_inventory.html:30
+#: app/modules/inventory/view_inventory.html:34
+msgid "Department"
+msgstr "デパートメント"
+
+#: app/modules/settings/iframe_new.html:35
+#: app/shared/menu/menu-generic.html:28
+msgid "Departments"
+msgstr "デパートメント"
+
+#: app/modules/inventory/new_inventory.html:12
+msgid "Description (Optional)"
+msgstr "説明 (随意)"
+
+#: app/modules/departments/list_departments.html:39
+#: app/modules/menus/list_menus.html:87
+#: app/modules/menus/view_menu.html:154
+msgid "Discard Changes"
+msgstr "変更をやめる"
+
+#: app/modules/inventory/new_inventory.html:40
+#: app/modules/inventory/view_inventory.html:44
+msgid "Discontinued"
+msgstr "打ち切る"
+
+#: app/modules/discounts/discountsController.js:31
+#: app/modules/discounts/discountsController.js:70
+msgid "Discount"
+msgstr "折扣"
+
+#: app/modules/discounts/view_discount.html:10
+msgid "Discount Type"
+msgstr "値引き"
+
+#: app/shared/menu/menu-generic.html:34
+msgid "Discounts"
+msgstr "値引き"
+
+#: app/modules/summary/summary.html:298
+msgid "Displayed Date"
+msgstr "表示の日"
+
+#: app/modules/summary/summary.html:299
+msgid "Displayed Date Range"
+msgstr "表示日の範囲"
+
+#: app/modules/departments/list_departments.html:2
+#: app/modules/menus/list_menus.html:3
+#: app/modules/menus/view_menu.html:3
+msgid "Drag to arrange."
+msgstr "ドラッグでアレンジ。"
+
+#: app/modules/welcome/modals/modal_6.html:60
+msgid ""
+"Dreading the POS migration? Don't. Our setup and migration has never taken "
+"more than 20 minutes."
+msgstr "POSの移動が躊躇している？大丈夫。私達のインストールと移動は２０分超えたことが一度もない。"
+
+#: app/modules/invoices/new_invoice.html:7
+msgid "Due Date"
+msgstr "期限"
+
+#: app/modules/customers/view_customer.html:92
+#: app/modules/customers/view_customer.html:94
+#: app/modules/departments/listed-department.html:8
+#: app/modules/inventory/view_inventory.html:207
+#: app/modules/inventory/view_inventory.html:209
+#: app/modules/invoices/view_invoice.html:59
+#: app/modules/menus/list_menus.html:12
+#: app/modules/menus/view_menu.html:33
+#: app/modules/modifiers/view_modifier.html:104
+#: app/modules/purchase_orders/view_purchase_order.html:29
+#: app/modules/purchase_orders/view_purchase_order.html:31
+#: app/modules/settings/custom_fields_index.html:27
+#: app/modules/settings/iframe_index.html:25
+#: app/modules/settings/iframe_index.html:54
+#: app/modules/stock_transfers/view_stock_transfer.html:123
+#: app/modules/stock_transfers/view_stock_transfer.html:125
+msgid "Edit"
+msgstr "編集"
+
+#: app/modules/departments/listed-department.html:15
+msgid "Edit Department"
+msgstr "デパートメントを編集"
+
+#: app/modules/menus/list_menus.html:57
+msgid "Edit Menu"
+msgstr "メニューを編集"
+
+#: app/modules/menus/view_menu.html:64
+msgid "Edit Menu Section"
+msgstr "メニューセクションを編集"
+
+#: app/modules/menus/list_menus.html:13
+msgid "Edit Sections"
+msgstr "セクションを編集"
+
+#: app/modules/settings/iframe_index.html:4
+#: app/modules/settings/iframe_setting.html:4
+msgid ""
+"Edit your general Storefront settings below. These settings will be applied "
+"to all Storefront pages that you create."
+msgstr "ストアの一般設定を編集する。この設定は今まで作成した全てのストアに適用します。"
+
+#: app/modules/customers/customersController.js:56
+#: app/modules/customers/customersController.js:80
+#: app/modules/customers/customersController.js:96
+#: app/modules/customers/view_customer.html:38
+#: app/modules/purchase_orders/purchase_order_form.html:21
+#: app/modules/suppliers/suppliersController.js:13
+#: app/modules/suppliers/suppliersController.js:20
+#: app/modules/suppliers/view_supplier.html:16
+msgid "Email"
+msgstr "メール"
+
+#: app/modules/settings/iframe_new.html:99
+msgid "Embed Code"
+msgstr "埋め込みコード"
+
+#: app/modules/settings/iframe_index.html:41
+msgid "Embed code"
+msgstr "埋め込みコード"
+
+#: app/modules/settings/iframe_new.html:40
+msgid "Enable multi-section layout"
+msgstr "マルチセクションのレイアウトを使用する"
+
+#: app/modules/purchase_orders/purchase_order_form.html:81
+msgid "Enter Miscellaneous charge"
+msgstr "雑費を入力"
+
+#: app/modules/purchase_orders/view_purchase_order.html:17
+#: app/modules/stock_transfers/view_stock_transfer.html:77
+msgid "Enter quantity to fulfill."
+msgstr "追加の数量を入力"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:59
+msgid "Enter quantity to send."
+msgstr "発送の数量を入力"
+
+#: app/modules/login/views/recover-password.html:8
+msgid "Enter your email to recover your password."
+msgstr "メールを入力してパスワードをリセットする"
+
+#: app/modules/inventory/new_inventory.html:41
+#: app/modules/inventory/view_inventory.html:45
+msgid "Exempt item from loyalty program"
+msgstr "アイテムをロイヤルティプログラムから外す"
+
+#: app/modules/purchase_orders/purchase_order_form.html:67
+msgid "Expect delivery date"
+msgstr "予想の配送日"
+
+#: app/modules/departments/list_departments.html:37
+#: app/modules/inventory/list_inventory.html:13
+#: app/shared/grid/grid_view.html:15
+msgid "Export"
+msgstr "輸出"
+
+#: app/modules/purchase_orders/purchase_order_form.html:20
+#: app/modules/suppliers/view_supplier.html:17
+msgid "Fax"
+msgstr "ファックス"
+
+#: app/modules/customers/new_customer.html:21
+#: app/modules/customers/view_customer.html:31
+msgid "Female"
+msgstr "女"
+
+#: app/modules/settings/iframe_setting.html:42
+msgid "Flat rate shipping"
+msgstr "シングル配送料"
+
+#: app/modules/welcome/modals/modal_0.html:9
+msgid "For easier access, bookmark https://dashboard.bindo.com"
+msgstr "簡単にアクセスできる度ブックマークする https://dashboard.bindo.com"
+
+#: app/modules/login/views/main-login.html:22
+msgid "Forgot Password?"
+msgstr "パスワードを忘れた場合"
+
+#: app/modules/settings/iframe_setting.html:43
+msgid "Free shipping"
+msgstr "送料無料"
+
+#: app/modules/sales/view_sale.html:25
+msgid "From"
+msgstr "來自"
+
+#: app/modules/purchase_orders/fulfill.html:5
+msgid "Fulfill"
+msgstr "追加"
+
+#: app/modules/invoices/view_invoice.html:52
+#: app/modules/purchase_orders/view_purchase_order.html:22
+#: app/modules/stock_transfers/view_stock_transfer.html:82
+msgid "Fulfill All"
+msgstr "全てを追加"
+
+#: app/modules/purchase_orders/view_purchase_order.html:13
+#: app/modules/stock_transfers/view_stock_transfer.html:73
+msgid "Fulfill Item"
+msgstr "追加アイテム"
+
+#: app/modules/invoices/view_invoice.html:53
+#: app/modules/purchase_orders/view_purchase_order.html:23
+#: app/modules/stock_transfers/view_stock_transfer.html:83
+msgid "Fulfill Specified"
+msgstr "追加の選択"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:108
+msgid "Fulfill Transfer"
+msgstr "追加の移転"
+
+#: app/modules/customers/view_customer.html:22
+msgid "Full Name"
+msgstr "お名前"
+
+#: app/modules/customers/customersController.js:57
+#: app/modules/customers/customersController.js:77
+#: app/modules/customers/customersController.js:97
+#: app/modules/customers/view_customer.html:27
+msgid "Gender"
+msgstr "性別"
+
+#: app/modules/settings/iframe_index.html:3
+#: app/modules/settings/iframe_setting.html:1
+msgid "General Settings"
+msgstr "通用設定"
+
+#: app/modules/welcome/modals/modal_2.html:3
+msgid "Getting Started"
+msgstr "はじめる"
+
+#: app/shared/menu/menu-generic.html:46
+msgid "Gift Cards"
+msgstr "ギフトカード"
+
+#: app/modules/welcome/modals/modal_1.html:52
+#: app/modules/welcome/modals/modal_2.html:85
+#: app/modules/welcome/modals/modal_3.html:67
+#: app/modules/welcome/modals/modal_4.html:60
+#: app/modules/welcome/modals/modal_5.html:52
+#: app/modules/welcome/modals/modal_6.html:65
+msgid "Go Back"
+msgstr "戻す"
+
+#: app/modules/summary/summary.html:175
+msgid "Gross Margin"
+msgstr "粗利益率"
+
+#: app/modules/summary/summary.html:119
+msgid "Gross Profit"
+msgstr "粗利益"
+
+#: app/modules/modifiers/modifiersController.js:27
+msgid "Group Name"
+msgstr "グループ名"
+
+#: app/modules/modifiers/new_modifier.html:6
+#: app/modules/modifiers/view_modifier.html:6
+msgid "Group Title"
+msgstr "グループタイトル"
+
+#: app/modules/settings/iframe_new.html:35
+#: app/modules/settings/iframe_new.html:44
+msgid "Header"
+msgstr "ヘッダ"
+
+#: app/shared/menu/menu-generic.html:137
+msgid "Help"
+msgstr "ヘルプ"
+
+#: app/modules/settings/iframe_index.html:13
+msgid "Hide price"
+msgstr "価格を非表示にする"
+
+#: app/modules/settings/iframe_index.html:39
+#: app/modules/settings/iframe_new.html:12
+msgid "Highlight color"
+msgstr "ハイライトカラー"
+
+#: app/modules/gift_cards/view_gift-card.html:24
+msgid "History"
+msgstr "履歴"
+
+#: app/modules/customers/customersController.js:78
+#: app/modules/customers/view_customer.html:34
+msgid "Home Phone"
+msgstr "自宅の電話"
+
+#: app/modules/welcome/modals/modal_3.html:53
+msgid "How did your hear about Bindo POS?"
+msgstr "どこからBindo POSを知ることでしょか？"
+
+#: app/modules/welcome/modals/modal_6.html:48
+msgid "I Need to Migrate"
+msgstr "移行する必要があります"
+
+#: app/modules/welcome/modals/modal_6.html:30
+msgid "I've Been Using It since"
+msgstr "　から使用はじめた"
+
+#: app/modules/settings/iframe_index.html:36
+msgid "Image size"
+msgstr "画像のサイズ"
+
+#: app/shared/grid/grid_view.html:14
+msgid "Import"
+msgstr "輸入"
+
+#: app/modules/inventory/inventoryController.js:78
+msgid "In Stock"
+msgstr "在庫あり"
+
+#: app/modules/inventory/new_inventory.html:39
+#: app/modules/inventory/view_inventory.html:43
+msgid "In Store Only"
+msgstr "店內限定"
+
+#: app/modules/stock_transfers/stockTransferController.js:68
+msgid "In/Out"
+msgstr "輸入/輸出"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:6
+#: app/modules/stock_transfers/view_stock_transfer.html:7
+msgid "Incoming Transfer"
+msgstr "着信転送"
+
+#: app/shared/menu/menu-generic.html:14
+msgid "Inventory"
+msgstr "商品目録"
+
+#: app/modules/invoices/invoicesQuotesController.js:42
+msgid "Inventory Status"
+msgstr "商品目録状態"
+
+#: app/modules/invoices/view_invoice.html:59
+msgid "Invoice"
+msgstr "請求書"
+
+#: app/shared/menu/menu-generic.html:66
+msgid "Invoices"
+msgstr "請求書"
+
+#: app/shared/grid/grid-filter.html:14
+msgid "Is"
+msgstr "はい"
+
+#: app/shared/grid/grid-filter.html:15
+msgid "Is Between"
+msgstr "の間"
+
+#: app/shared/edit/add_listings.html:30
+msgid "Item"
+msgstr "アイテム"
+
+#: app/modules/purchase_orders/purchase_order_form.html:78
+msgid "Items"
+msgstr "アイテム"
+
+#: app/modules/time_clock/timeClockController.js:17
+#: app/modules/time_clock/timeClockController.js:56
+msgid "Junior Associate"
+msgstr "ジュニアアシスタント"
+
+#: app/modules/settings/iframe_new.html:89
+msgid "Large"
+msgstr "大きい"
+
+#: app/modules/time_clock/timeClockController.js:31
+#: app/modules/time_clock/timeClockController.js:70
+msgid "Last Clock-in At"
+msgstr "最後のログイン"
+
+#: app/modules/time_clock/timeClockController.js:32
+#: app/modules/time_clock/timeClockController.js:44
+#: app/modules/time_clock/timeClockController.js:71
+msgid "Last Session Length"
+msgstr "最後のセッションの長さ"
+
+#: app/modules/modifiers/modifiersController.js:30
+msgid "Last Updated"
+msgstr "最終更新"
+
+#: app/modules/discounts/new_discount.html:24
+#: app/modules/discounts/view_discount.html:25
+msgid "Leave it unchecked if this is a manufacturer coupon."
+msgstr "如果這是制造商優惠券，保留未選狀態。"
+
+#: app/modules/invoices/new_invoice.html:28
+#: app/modules/invoices/view_invoice.html:28
+msgid "Line Items"
+msgstr "項目"
+
+#: app/modules/settings/line_item_status.html:2
+#: app/modules/settings/settings.html:21
+msgid "Line item status"
+msgstr "インアイテムの状態"
+
+#: app/modules/gift_cards/giftCardsController.js:15
+msgid "Linked At"
+msgstr "へのリンク"
+
+#: app/modules/inventory/view_inventory.html:10
+#: app/modules/inventory/view_inventory.html:196
+msgid "Log"
+msgstr "記録"
+
+#: app/modules/login/views/main-login.html:28
+msgid "Log In"
+msgstr "ログイン"
+
+#: app/shared/header/profile/header-profile.html:21
+msgid "Logout"
+msgstr "ログアウト"
+
+#: app/modules/customers/view_customer.html:82
+msgid "Loyalty"
+msgstr "お客様のロイヤリティ"
+
+#: app/modules/customers/view_customer.html:8
+msgid "Loyalty Program"
+msgstr "お客様のロイヤリティプログラム"
+
+#: app/modules/customers/new_customer.html:20
+#: app/modules/customers/view_customer.html:30
+msgid "Male"
+msgstr "男"
+
+#: app/modules/time_clock/timeClockController.js:11
+#: app/modules/time_clock/timeClockController.js:50
+msgid "Manager"
+msgstr "管理者"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:95
+msgid "Mark All As Departed"
+msgstr "全てを配達にマークする"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:112
+msgid "Mark All As Fulfilled"
+msgstr "全てを追加したにマークする"
+
+#: app/modules/inventory/new_inventory.html:51
+msgid "Mark as default supplier"
+msgstr "デフォルトのサプライヤにマークする"
+
+#: app/modules/inventory/view_inventory.html:103
+msgid "Matrix"
+msgstr "マトリックス"
+
+#: app/modules/settings/iframe_new.html:58
+msgid "Maximum # of products to show"
+msgstr "最大 # の商品を表示"
+
+#: app/modules/settings/iframe_new.html:88
+msgid "Medium (default)"
+msgstr "中"
+
+#: app/modules/customers/customersController.js:76
+#: app/modules/customers/view_customer.html:23
+msgid "Mobile Phone"
+msgstr "携帯"
+
+#: app/modules/modifiers/view_modifier.html:104
+msgid "Modifier Group"
+msgstr "モディファイグループ"
+
+#: app/modules/modifiers/new_modifier.html:13
+#: app/modules/modifiers/view_modifier.html:14
+msgid "Modifier Title"
+msgstr "モディファイタイトル"
+
+#: app/modules/inventory/view_inventory.html:116
+#: app/modules/inventory/view_inventory.html:9
+#: app/shared/menu/menu-generic.html:21
+msgid "Modifiers"
+msgstr " モディファイ"
+
+#: app/modules/summary/summary.html:286
+msgid "Month"
+msgstr "月"
+
+#: app/modules/welcome/modals/modal_4.html:46
+msgid "Monthly Revenue"
+msgstr "月収入"
+
+#: app/modules/settings/iframe_index.html:40
+msgid "Multi section layout"
+msgstr "マルチセクションのレイアウト"
+
+#: app/modules/inventory/new_inventory.html:25
+msgid "NONE"
+msgstr "無"
+
+#: app/modules/bank_accounts/bankAccountsController.js:7
+#: app/modules/customers/customersController.js:54
+#: app/modules/customers/customersController.js:75
+#: app/modules/customers/customersController.js:95
+#: app/modules/departments/list_departments.html:16
+#: app/modules/menus/list_menus.html:31
+#: app/modules/menus/list_menus.html:61
+#: app/modules/menus/view_menu.html:51
+#: app/modules/menus/view_menu.html:68
+#: app/modules/time_clock/timeClockController.js:29
+#: app/modules/time_clock/timeClockController.js:42
+#: app/modules/time_clock/timeClockController.js:68
+msgid "Name"
+msgstr "名前"
+
+#: app/modules/suppliers/new_supplier.html:4
+#: app/shared/grid/grid_view.html:16
+msgid "New"
+msgstr "新しいを作成"
+
+#: app/modules/modifiers/new_modifier.html:61
+#: app/modules/modifiers/view_modifier.html:71
+msgid "New Add-on Option"
+msgstr "新しいの追加オプション"
+
+#: app/modules/inventory/list_inventory.html:15
+msgid "New Custom Item"
+msgstr "新しいのカスタムアイテム"
+
+#: app/modules/customers/new_customer.html:43
+msgid "New Customer"
+msgstr "新しいのお客様"
+
+#: app/modules/departments/list_departments.html:12
+#: app/modules/departments/list_departments.html:38
+msgid "New Department"
+msgstr "新しいのデパートメント"
+
+#: app/modules/stock_transfers/list_stock_transfers.html:17
+msgid "New Incoming Stock Transfer"
+msgstr "新しいの収入ストック移転"
+
+#: app/modules/inventory/new_inventory.html:99
+msgid "New Inventory Item"
+msgstr "新建庫存物料"
+
+#: app/modules/invoices/new_invoice.html:41
+msgid "New Invoice"
+msgstr "新しい請求書"
+
+#: app/modules/inventory/list_inventory.html:14
+#: app/modules/inventory/new_inventory.html:84
+msgid "New Item"
+msgstr "新しいアイテム"
+
+#: app/modules/menus/list_menus.html:27
+msgid "New Menu"
+msgstr "新メニュー"
+
+#: app/modules/menus/view_menu.html:81
+msgid "New Menu Item - Choose the Product to Display"
+msgstr "新選單 -  選擇顯示商品"
+
+#: app/modules/menus/view_menu.html:47
+msgid "New Menu Section"
+msgstr "新しいメニューセクション"
+
+#: app/modules/modifiers/list_modifiers.html:44
+msgid "New Modifier"
+msgstr "新しいモディファイ"
+
+#: app/modules/modifiers/new_modifier.html:89
+msgid "New Modifier Group"
+msgstr "新しいモディファイグループ"
+
+#: app/modules/modifiers/new_modifier.html:82
+#: app/modules/modifiers/view_modifier.html:96
+msgid "New Opt-out Option"
+msgstr "新しいオプトアウトオプション"
+
+#: app/modules/modifiers/new_modifier.html:35
+#: app/modules/modifiers/view_modifier.html:42
+msgid "New Option"
+msgstr "新しいオプション"
+
+#: app/modules/stock_transfers/list_stock_transfers.html:18
+msgid "New cStock Transfer"
+msgstr "新しい外向性のストック移転"
+
+#: app/modules/purchase_orders/new_purchase_order.html:11
+msgid "New Purchase Order"
+msgstr "新しい注文オーダー"
+
+#: app/modules/modifiers/new_modifier.html:39
+#: app/modules/modifiers/view_modifier.html:46
+msgid "New Single Choice Modifier"
+msgstr "新しいシングルモディファイ"
+
+#: app/modules/welcome/modals/modal_5.html:43
+msgid "New Tax Rate"
+msgstr "新しい税率"
+
+#: app/modules/settings/iframe_index.html:60
+msgid "New page"
+msgstr "新しいページ"
+
+#: app/modules/inventory/new_inventory.html:93
+msgid "Next"
+msgstr "次"
+
+#: app/modules/inventory/view_inventory.html:199
+msgid "No Log Yet."
+msgstr "まだレログがありません"
+
+#: app/modules/customers/view_customer.html:85
+msgid "No Loyalty History."
+msgstr "ロイヤリティ履歴"
+
+#: app/modules/customers/view_customer.html:58
+msgid "No Orders Yet."
+msgstr "注文はまだありません。"
+
+#: app/modules/suppliers/view_supplier.html:38
+msgid "No Products Yet."
+msgstr "アイテムはまだありません"
+
+#: app/modules/suppliers/view_supplier.html:47
+msgid "No Purchase Orders Yet."
+msgstr "購入注文まだありません。"
+
+#: app/modules/customers/view_customer.html:67
+msgid "No Purchased Items Yet."
+msgstr "購入アイテムまだありません"
+
+#: app/shared/grid/grid-filter.html:56
+msgid "No Saved Searches"
+msgstr "保存しら検査はありません"
+
+#: app/modules/customers/view_customer.html:76
+msgid "No Store Credit Yet."
+msgstr "ストアクレジットはまだありません。"
+
+#: app/modules/inventory/new_inventory.html:64
+msgid "No Suppliers Yet."
+msgstr "サプライヤーはまだありません。"
+
+#: app/modules/summary/summary.html:240
+#: app/modules/summary/summary.html:272
+msgid "No items sold in the period."
+msgstr "この時期の販売はありません"
+
+#: app/modules/welcome/modals/modal_2.html:53
+msgid "None of the above"
+msgstr "全てはありません"
+
+#: app/modules/customers/view_customer.html:46
+#: app/modules/discounts/discountsController.js:73
+msgid "Notes"
+msgstr "ノート"
+
+#: app/modules/bank_accounts/bankAccountsController.js:6
+#: app/modules/invoices/invoicesQuotesController.js:39
+#: app/modules/invoices/invoicesQuotesController.js:78
+#: app/modules/stock_transfers/stockTransferController.js:165
+#: app/modules/stock_transfers/stockTransferController.js:67
+msgid "Number"
+msgstr "ナンバー"
+
+#: app/modules/welcome/modals/modal_3.html:25
+msgid "Number of Locations"
+msgstr "場所の数量"
+
+#: app/modules/welcome/modals/modal_6.html:37
+msgid "Number of Registers"
+msgstr "キャッシャーの数量"
+
+#: app/modules/welcome/modals/modal_3.html:39
+msgid "Number of Unique SKUs"
+msgstr "ユニークなSKUの数量"
+
+#: app/modules/stock_transfers/list_stock_transfers.html:2
+msgid "Only chain store and function enabled can transfer stock."
+msgstr "チェーンストアと機能だけ有効転送ストックが出来る"
+
+#: app/modules/modifiers/new_modifier.html:65
+#: app/modules/modifiers/view_modifier.html:75
+msgid "Opt-out Options"
+msgstr "退出選項"
+
+#: app/modules/modifiers/new_modifier.html:16
+#: app/modules/modifiers/new_modifier.html:25
+#: app/modules/modifiers/new_modifier.html:47
+#: app/modules/modifiers/new_modifier.html:69
+#: app/modules/modifiers/new_modifier.html:77
+#: app/modules/modifiers/view_modifier.html:18
+#: app/modules/modifiers/view_modifier.html:29
+#: app/modules/modifiers/view_modifier.html:56
+#: app/modules/modifiers/view_modifier.html:66
+#: app/modules/modifiers/view_modifier.html:81
+#: app/modules/modifiers/view_modifier.html:91
+msgid "Option Name"
+msgstr "オプション名"
+
+#: app/modules/sales/salesController.js:24
+#: app/modules/sales/salesController.js:39
+msgid "Order Date"
+msgstr "注文日"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:23
+#: app/modules/sales/salesController.js:23
+#: app/modules/sales/salesController.js:38
+#: app/modules/sales/view_sale.html:22
+msgid "Order Number"
+msgstr "注文番号"
+
+#: app/modules/invoices/invoicesQuotesController.js:41
+msgid "Order Status"
+msgstr "注文の状況"
+
+#: app/modules/settings/iframe_setting.html:53
+msgid "Order amount to qualify for free shipping"
+msgstr "送料無料の最低金額"
+
+#: app/modules/purchase_orders/purchase_order_form.html:62
+msgid "Other"
+msgstr "他"
+
+#: app/modules/purchase_orders/purchase_order_form.html:93
+msgid "Others"
+msgstr "他"
+
+#: app/modules/activating/activating.html:11
+#: app/modules/welcome/modals/modal_7.html:9
+msgid "Our staff will contact you within 24 hours to help set you up."
+msgstr "スタッフが２４時間内連絡する。 "
+
+#: app/modules/stock_transfers/new_stock_transfer.html:5
+#: app/modules/stock_transfers/view_stock_transfer.html:6
+msgid "Outgoing Transfer"
+msgstr "送出移送"
+
+#: app/modules/customers/view_customer.html:4
+#: app/modules/inventory/new_inventory.html:4
+#: app/modules/inventory/view_inventory.html:4
+#: app/modules/suppliers/view_supplier.html:4
+msgid "Overview"
+msgstr "概要"
+
+#: app/modules/suppliers/view_supplier.html:44
+#: app/modules/suppliers/view_supplier.html:6
+msgid "P.O. History"
+msgstr "購入注文履歴"
+
+#: app/modules/purchase_orders/purchase_order_form.html:30
+msgid "PO Number"
+msgstr "購入注文番号"
+
+#: app/modules/settings/iframe_index.html:31
+msgid "Page Settings"
+msgstr "ページの設定"
+
+#: app/modules/purchase_orders/purchase_order_form.html:47
+msgid "Paid"
+msgstr "支払い済み"
+
+#: app/modules/departments/list_departments.html:18
+msgid "Parent Department"
+msgstr "上のデパートメント"
+
+#: app/modules/purchase_orders/purchase_order_form.html:46
+msgid "Partial paid"
+msgstr "部分的の支払い"
+
+#: app/modules/login/views/main-login.html:10
+msgid "Password"
+msgstr "パスワード"
+
+#: app/modules/purchase_orders/purchase_order_form.html:54
+msgid "Payment Method"
+msgstr "支払方法"
+
+#: app/modules/purchase_orders/purchase_order_form.html:42
+msgid "Payment Status"
+msgstr "支払状況"
+
+#: app/modules/purchase_orders/purchase_order_form.html:71
+msgid "Payment due date"
+msgstr "支払期限"
+
+#: app/modules/discounts/new_discount.html:11
+#: app/modules/discounts/view_discount.html:13
+msgid "Percentage Off"
+msgstr "パーセントをオフ"
+
+#: app/modules/customers/customersController.js:98
+#: app/modules/suppliers/suppliersController.js:12
+#: app/modules/suppliers/suppliersController.js:19
+msgid "Phone"
+msgstr "電話"
+
+#: app/modules/suppliers/view_supplier.html:12
+msgid "Phone 1"
+msgstr "電話 1"
+
+#: app/modules/suppliers/view_supplier.html:13
+msgid "Phone 2"
+msgstr "電話 2"
+
+#: app/modules/settings/iframe_setting.html:44
+msgid "Pick up only"
+msgstr "ストア限定"
+
+#: app/modules/activating/activating.html:12
+#: app/modules/welcome/modals/modal_7.html:10
+msgid ""
+"Please make sure your contact info is correct, or we won't be able to "
+"activate your store."
+msgstr "連絡の情報を確認してください、間違えた場合はストアのはじめはできません。"
+
+#: app/modules/settings/iframe_setting.html:3
+msgid ""
+"Please set your general Storefront settings to get started. These settings "
+"will be applied to all Storefront pages that you create."
+msgstr "最初はストアフロントの一般設定から始めてください。この設定は作成した全てのストアに応用する。"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:91
+msgid "Prepare for Shipment"
+msgstr "出荷の準備"
+
+#: app/modules/settings/iframe_new.html:112
+msgid "Preview Storefront"
+msgstr "ストアフロントのプレビュー"
+
+#: app/modules/inventory/inventoryController.js:103
+#: app/modules/inventory/inventoryController.js:177
+#: app/modules/inventory/inventoryController.js:79
+#: app/modules/inventory/inventoryController.js:96
+#: app/modules/inventory/new_inventory.html:18
+#: app/modules/inventory/view_inventory.html:21
+msgid "Price"
+msgstr "価格"
+
+#: app/modules/bank_accounts/bankAccountsController.js:10
+msgid "Primary"
+msgstr "プライマリ"
+
+#: app/modules/activating/activating.html:48
+#: app/modules/welcome/modals/modal_7.html:46
+msgid "Privacy Policy"
+msgstr "個人情報保護方針"
+
+#: app/modules/welcome/modals/modal_4.html:32
+msgid "Processing Needed by"
+msgstr "必要処理中"
+
+#: app/modules/inventory/inventoryController.js:76
+msgid "Product"
+msgstr "商品"
+
+#: app/modules/settings/iframe_new.html:81
+msgid "Product Image Size"
+msgstr "商品画像のサイズ"
+
+#: app/modules/inventory/inventoryController.js:93
+#: app/modules/inventory/inventoryController.js:99
+msgid "Product Name"
+msgstr "商品の名"
+
+#: app/modules/settings/iframe_new.html:49
+msgid "Product departments"
+msgstr "商品のデパートメント"
+
+#: app/modules/settings/iframe_index.html:11
+msgid "Product layout"
+msgstr "商品レイアウト"
+
+#: app/modules/suppliers/view_supplier.html:35
+msgid "Products"
+msgstr "商品"
+
+#: app/modules/inventory/inventoryController.js:179
+msgid "Profit"
+msgstr "利潤"
+
+#: app/modules/welcome/modals/modal_6.html:44
+msgid "Pros & Cons (Optional)"
+msgstr "利点と欠点（任意）"
+
+#: app/modules/purchase_orders/view_purchase_order.html:29
+msgid "Purchase Order"
+msgstr "購入注文"
+
+#: app/shared/menu/menu-generic.html:78
+msgid "Purchase Orders"
+msgstr "購入注文"
+
+#: app/modules/customers/view_customer.html:6
+#: app/modules/customers/view_customer.html:64
+msgid "Purchased Items"
+msgstr "購入したアイテム"
+
+#: app/modules/inventory/inventoryController.js:175
+msgid "QTY Delta"
+msgstr "求めの数量"
+
+#: app/modules/stock_transfers/stockTransferController.js:72
+msgid "QTY Departed"
+msgstr "去るの数量"
+
+#: app/modules/stock_transfers/stockTransferController.js:73
+msgid "QTY Received"
+msgstr "受信した数量"
+
+#: app/modules/stock_transfers/stockTransferController.js:71
+msgid "QTY Requested"
+msgstr "求めた数量"
+
+#: app/modules/inventory/inventoryController.js:102
+#: app/modules/inventory/inventoryController.js:95
+msgid "QTY on shelf"
+msgstr "棚の在庫数量"
+
+#: app/shared/edit/add_listings.html:32
+msgid "QTY requested"
+msgstr "求めた数量"
+
+#: app/modules/inventory/inventoryController.js:101
+#: app/modules/inventory/new_inventory.html:15
+#: app/modules/inventory/view_inventory.html:18
+#: app/modules/sales/salesController.js:26
+msgid "Quantity"
+msgstr "数量"
+
+#: app/modules/settings/iframe_index.html:12
+msgid "Quick add"
+msgstr "クイック追加"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:15
+#: app/modules/stock_transfers/stockTransferController.js:70
+msgid "Receiving Store"
+msgstr "受け取るのストア"
+
+#: app/modules/customers/view_customer.html:5
+#: app/modules/customers/view_customer.html:55
+msgid "Recent Orders"
+msgstr "最近の注文"
+
+#: app/modules/login/views/recover-password.html:19
+msgid "Recover"
+msgstr "回復"
+
+#: app/modules/invoices/new_invoice.html:6
+msgid "Reference Number"
+msgstr "整理番号"
+
+#: app/modules/login/views/main-login.html:16
+msgid "Remember me for 7 days"
+msgstr "７日間で覚える"
+
+#: app/modules/departments/listed-department.html:9
+#: app/modules/menus/list_menus.html:14
+#: app/modules/menus/view_menu.html:22
+#: app/modules/menus/view_menu.html:34
+msgid "Remove"
+msgstr "削除"
+
+#: app/shared/inputs/input-file.html:10
+msgid "Remove File"
+msgstr "ファイルを削除"
+
+#: app/modules/inventory/view_inventory.html:51
+msgid "Remove Image"
+msgstr "画像を削除"
+
+#: app/modules/modifiers/new_modifier.html:36
+#: app/modules/modifiers/view_modifier.html:43
+msgid "Remove Modifier"
+msgstr "追加オプションを削除"
+
+#: app/modules/settings/iframe_new.html:65
+msgid "Remove section"
+msgstr "セクションを削除"
+
+#: app/modules/inventory/new_inventory.html:58
+msgid "Reorder Amount"
+msgstr "再び注文の数量"
+
+#: app/modules/inventory/new_inventory.html:56
+msgid "Reorder Trigger Point"
+msgstr "再び注文のひきがね点"
+
+#: app/shared/menu/menu-generic.html:136
+msgid "Report a problem"
+msgstr "問題を報告"
+
+#: app/modules/settings/iframe.html:10
+msgid "Request Access"
+msgstr "アクセスを求め"
+
+#: app/modules/time_clock/timeClockController.js:30
+#: app/modules/time_clock/timeClockController.js:43
+#: app/modules/time_clock/timeClockController.js:69
+msgid "Role"
+msgstr "役割"
+
+#: app/modules/bank_accounts/bankAccountsController.js:9
+msgid "Routing"
+msgstr "ルーティング"
+
+#: app/modules/welcome/modals/modal_3.html:46
+msgid "SKUs with Barcodes"
+msgstr "バーコード付きのSKU"
+
+#: app/shared/menu/menu-generic.html:60
+msgid "Sales"
+msgstr "販売額"
+
+#: app/modules/inventory/inventoryController.js:174
+msgid "Sales/Purchase Order"
+msgstr "販売/購入注文"
+
+#: app/modules/departments/list_departments.html:27
+#: app/modules/departments/listed-department.html:30
+#: app/modules/menus/list_menus.html:48
+#: app/modules/menus/list_menus.html:78
+#: app/modules/menus/view_menu.html:108
+#: app/modules/menus/view_menu.html:144
+#: app/modules/menus/view_menu.html:55
+#: app/modules/menus/view_menu.html:72
+#: app/modules/settings/iframe_new.html:110
+#: app/shared/edit/add_listings.html:61 app/shared/grid/grid-filter.html:61
+#: app/shared/grid/grid-filter.html:84
+msgid "Save"
+msgstr "保存"
+
+#: app/modules/departments/list_departments.html:40
+#: app/modules/menus/list_menus.html:88
+#: app/modules/menus/view_menu.html:155
+msgid "Save Changes"
+msgstr "変更を保存"
+
+#: app/shared/grid/grid-filter.html:76
+msgid "Save Filter"
+msgstr "フィルタを保存"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:100
+#: app/modules/stock_transfers/view_stock_transfer.html:117
+msgid "Save New Quantities"
+msgstr "新しい数量を保存する"
+
+#: app/shared/grid/grid-filter.html:59
+msgid "Saved Searches"
+msgstr "保存された検索"
+
+#: app/shared/grid/grid-filter.html:62
+msgid "Search"
+msgstr "検索"
+
+#: app/modules/settings/iframe_new.html:86
+msgid "Select Image Size..."
+msgstr "画像のサイズを選択..."
+
+#: app/shared/edit/add_listings.html:4
+msgid "Select Inventory"
+msgstr "商品目録を選択"
+
+#: app/shared/grid/grid-filter.html:12 app/shared/grid/grid-filter.html:21
+msgid "Select Type"
+msgstr "種類を選択"
+
+#: app/modules/welcome/modals/modal_3.html:27
+#: app/modules/welcome/modals/modal_3.html:34
+#: app/modules/welcome/modals/modal_3.html:41
+#: app/modules/welcome/modals/modal_3.html:48
+#: app/modules/welcome/modals/modal_4.html:27
+#: app/modules/welcome/modals/modal_4.html:34
+#: app/modules/welcome/modals/modal_4.html:41
+#: app/modules/welcome/modals/modal_4.html:48
+#: app/modules/welcome/modals/modal_6.html:39
+msgid "Select an Answer"
+msgstr "答えを選択"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:64
+msgid "Send All"
+msgstr "全部発送"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:65
+msgid "Send Specified"
+msgstr "指定的發送"
+
+#: app/modules/inventory/new_inventory.html:6
+#: app/modules/inventory/new_inventory.html:69
+#: app/modules/inventory/view_inventory.html:97
+msgid "Serial Number"
+msgstr "シリアルナンバー"
+
+#: app/modules/customers/new_customer.html:6
+#: app/modules/customers/view_customer.html:17
+msgid "Set Photo"
+msgstr "写真を設定"
+
+#: app/modules/settings/settings.html:32
+#: app/shared/menu/menu-generic.html:122
+msgid "Settings"
+msgstr "設定"
+
+#: app/modules/invoices/new_invoice.html:20
+#: app/modules/invoices/view_invoice.html:20
+msgid "Shipped To"
+msgstr "発送"
+
+#: app/modules/customers/customersController.js:82
+#: app/modules/customers/view_customer.html:42
+msgid "Shipping Address"
+msgstr "発送住所"
+
+#: app/modules/settings/iframe_setting.html:49
+msgid "Shipping rate"
+msgstr "輸送料金"
+
+#: app/modules/settings/iframe_index.html:9
+msgid "Shipping type"
+msgstr "輸送タイプ"
+
+#: app/shared/grid/grid-row-count.html:4
+msgid "Show"
+msgstr "表す"
+
+#: app/shared/grid/grid-row-count.html:2 app/shared/grid/grid-row-count.html:3
+msgid "Showing"
+msgstr "表す"
+
+#: app/modules/login/views/main-login.html:24
+msgid "Sign Up"
+msgstr "登録"
+
+#: app/modules/inventory/view_inventory.html:133
+#: app/modules/modifiers/new_modifier.html:10
+#: app/modules/modifiers/view_modifier.html:11
+msgid "Single Choice Modifier"
+msgstr "シングル選択のモディファイ"
+
+#: app/modules/settings/iframe_new.html:87
+msgid "Small"
+msgstr "小"
+
+#: app/modules/welcome/modals/modal_0.html:13
+msgid "Start"
+msgstr "はじめて"
+
+#: app/modules/sales/salesController.js:27
+#: app/modules/sales/view_sale.html:20
+#: app/modules/stock_transfers/stockTransferController.js:166
+#: app/modules/stock_transfers/stockTransferController.js:74
+#: app/modules/welcome/modals/modal_2.html:74
+msgid "State"
+msgstr "状態"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:27
+#: app/modules/purchase_orders/purchase_order_form.html:33
+msgid "Status"
+msgstr "状態"
+
+#: app/modules/settings/line_item_status_index.html:1
+msgid "Status not set yet."
+msgstr "状態は設定されていない"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:123
+msgid "Stock Transfer"
+msgstr "ストック転送"
+
+#: app/shared/menu/menu-generic.html:84
+msgid "Stock Transfers"
+msgstr "ストック転送"
+
+#: app/modules/inventory/inventoryController.js:77
+msgid "Store"
+msgstr "ストア"
+
+#: app/modules/customers/view_customer.html:7
+#: app/modules/customers/view_customer.html:73
+msgid "Store Credit"
+msgstr "ストアクレジット"
+
+#: app/modules/welcome/modals/modal_3.html:14
+msgid "Store Info"
+msgstr "ストア情報"
+
+#: app/modules/welcome/modals/modal_1.html:27
+msgid "Store Name"
+msgstr "ストア名"
+
+#: app/modules/welcome/modals/modal_1.html:41
+msgid "Store Phone Number"
+msgstr "ストアの電話番号"
+
+#: app/modules/settings/settings.html:16
+msgid "Storefront"
+msgstr "ストアフロント"
+
+#: app/modules/purchase_orders/purchase_order_form.html:92
+msgid "Subtotal"
+msgstr "小計："
+
+#: app/modules/sales/view_sale.html:62
+msgid "Subtotal:"
+msgstr "小計："
+
+#: app/shared/menu/menu-generic.html:7
+msgid "Summary"
+msgstr "概要"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:24
+#: app/modules/suppliers/new_supplier.html:4
+msgid "Supplier"
+msgstr "サプライヤー"
+
+#: app/modules/inventory/new_inventory.html:53
+msgid "Supplier ID"
+msgstr "サプライヤー ID"
+
+#: app/modules/suppliers/suppliersController.js:11
+#: app/modules/suppliers/suppliersController.js:18
+msgid "Supplier Name"
+msgstr "サプライヤー名"
+
+#: app/modules/inventory/new_inventory.html:54
+msgid "Supplier Product ID"
+msgstr "サプライヤー　商品のID"
+
+#: app/modules/inventory/new_inventory.html:49
+#: app/modules/inventory/new_inventory.html:5
+#: app/modules/inventory/view_inventory.html:5
+#: app/modules/inventory/view_inventory.html:60
+#: app/shared/menu/menu-generic.html:72
+msgid "Suppliers"
+msgstr "サプライヤー"
+
+#: app/modules/inventory/new_inventory.html:23
+#: app/modules/inventory/view_inventory.html:26
+msgid "Tax Option"
+msgstr "税金のオプション"
+
+#: app/modules/welcome/modals/modal_5.html:14
+msgid "Tax Rate"
+msgstr "税金の率"
+
+#: app/modules/sales/view_sale.html:66
+msgid "Tax:"
+msgstr "税金:"
+
+#: app/modules/purchase_orders/purchase_order_form.html:19
+msgid "Tel"
+msgstr "電話"
+
+#: app/modules/login/views/recover-password.html:9
+msgid "The email you entered is invalid."
+msgstr "入力したメールは無効です。"
+
+#: app/modules/menus/list_menus.html:43
+#: app/modules/menus/list_menus.html:73
+msgid "Time Available From"
+msgstr "開始時間"
+
+#: app/modules/menus/list_menus.html:44
+#: app/modules/menus/list_menus.html:74
+msgid "Time Available To"
+msgstr "終わる時間"
+
+#: app/modules/discounts/discountsController.js:29
+#: app/modules/discounts/discountsController.js:68
+#: app/modules/inventory/new_inventory.html:11
+#: app/modules/inventory/view_inventory.html:14
+#: app/modules/purchase_orders/miscellaneous_charge.html:2
+#: app/modules/suppliers/view_supplier.html:10
+msgid "Title"
+msgstr "タイトル"
+
+#: app/modules/summary/summary.html:283
+msgid "Today"
+msgstr "今日"
+
+#: app/modules/summary/summary.html:250
+msgid "Top Departments by Sales"
+msgstr "販売による上位部門"
+
+#: app/modules/summary/summary.html:219
+msgid "Top Items by Sales"
+msgstr "販売による上位アイテム"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:26
+#: app/modules/purchase_orders/purchase_order_form.html:94
+#: app/modules/sales/salesController.js:28
+#: app/modules/sales/salesController.js:42
+msgid "Total"
+msgstr "合計"
+
+#: app/modules/sales/view_sale.html:58
+msgid "Total Item:"
+msgstr "合計アイテム"
+
+#: app/modules/purchase_orders/purchase_order_form.html:91
+msgid "Total Quantity"
+msgstr "合計数量"
+
+#: app/modules/summary/summary.html:7
+msgid "Total Sales"
+msgstr "合計販売"
+
+#: app/modules/sales/view_sale.html:70
+msgid "Total:"
+msgstr "合計"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:32
+#: app/modules/stock_transfers/view_stock_transfer.html:35
+msgid "Transferred Items"
+msgstr "転送されたアイテム"
+
+#: app/modules/discounts/discountsController.js:30
+#: app/modules/discounts/discountsController.js:69
+#: app/modules/modifiers/modifiersController.js:28
+msgid "Type"
+msgstr "タイプ"
+
+#: app/modules/inventory/inventoryController.js:100
+msgid "UPC"
+msgstr "UPC"
+
+#: app/modules/purchase_orders/purchase_order_form.html:45
+msgid "Unpaid"
+msgstr "未払い"
+
+#: app/modules/activating/activating.html:39
+#: app/modules/welcome/modals/modal_7.html:37
+msgid "Update"
+msgstr "アップデイト"
+
+#: app/modules/welcome/modals/modal_7.html:17
+msgid "Update Contact Info"
+msgstr "連絡情報を更新する"
+
+#: app/modules/inventory/inventoryController.js:104
+msgid "Updated At"
+msgstr "アップデイト"
+
+#: app/modules/summary/summary.html:302
+msgid "Updated at"
+msgstr "アップデイト"
+
+#: app/shared/inputs/input-file.html:7
+msgid "Upload"
+msgstr "アップロード"
+
+#: app/modules/welcome/modals/modal_0.html:8
+msgid "Use Bindo Dashboard to manage your stores."
+msgstr "Bindo Dashboardを使ってストアを管理する"
+
+#: app/modules/time_clock/timeClockController.js:16
+#: app/modules/time_clock/timeClockController.js:55
+msgid "Vendor Salespeople"
+msgstr "ベンダー営業担当者"
+
+#: app/modules/bank_accounts/bankAccountsController.js:11
+msgid "Verified"
+msgstr "検証した"
+
+#: app/modules/settings/iframe_index.html:53
+msgid "View"
+msgstr "見る"
+
+#: app/modules/gift_cards/view_gift-card.html:33
+msgid "View Gift Card"
+msgstr "ギフトカードを見る"
+
+#: app/modules/welcome/modals/modal_1.html:47
+msgid ""
+"We need to know your store location so we can assign someone in your area to "
+"assist you."
+msgstr "ストアの場所を教えてください、スタッフがすぐにストアに行って手伝いします。"
+
+#: app/modules/welcome/modals/modal_7.html:45
+msgid "We'll never share your info with third parties."
+msgstr "第三者に個人情報を共有することはありません。"
+
+#: app/modules/summary/summary.html:285
+msgid "Week"
+msgstr "週"
+
+#: app/modules/summary/summary.html:287
+msgid "Year"
+msgstr "年"
+
+#: app/modules/summary/summary.html:284
+msgid "Yesterday"
+msgstr "昨日"
+
+#: app/modules/departments/list_departments.html:2
+#: app/modules/menus/list_menus.html:3
+#: app/modules/menus/view_menu.html:3
+msgid "You currently have unsaved changes."
+msgstr "現在未保存の変更があります。"
+
+#: app/modules/activating/activating.html:17
+#: app/modules/activating/activating.html:31
+#: app/modules/welcome/modals/modal_7.html:15
+#: app/modules/welcome/modals/modal_7.html:29
+msgid "Your Email:"
+msgstr "あなたのメール:"
+
+#: app/modules/activating/activating.html:16
+#: app/modules/activating/activating.html:27
+#: app/modules/welcome/modals/modal_7.html:14
+#: app/modules/welcome/modals/modal_7.html:25
+msgid "Your Phone Number:"
+msgstr "あなたの電話番号："
+
+#: app/modules/activating/activating.html:10
+#: app/modules/welcome/modals/modal_7.html:8
+msgid "Your Store Is Being Activated"
+msgstr "ストアがはじめた"
+
+#: app/modules/welcome/modals/modal_2.html:78
+msgid "ZIP Code"
+msgstr "郵便番号"
+
+#: app/modules/welcome/modals/modal_1.html:37
+msgid "Zip Code"
+msgstr "郵便番号"
+
+#: app/modules/settings/iframe_new.html:58
+#: app/modules/settings/iframe_setting.html:44
+msgid "default"
+msgstr "デフォルト"
+
+#: app/modules/settings/iframe_new.html:49
+msgid "leave blank to show all products"
+msgstr "全ての製品が表示できるように、ブランクのままにしてください"
+
+#: app/shared/grid/grid-row-count.html:2 app/shared/grid/grid-row-count.html:3
+msgid "of"
+msgstr "の"
+
+#: app/modules/settings/iframe_setting.html:22
+#: app/modules/settings/iframe_setting.html:53
+msgid "optional"
+msgstr "オプショナル"
+
+#: app/shared/grid/grid-row-count.html:2 app/shared/grid/grid-row-count.html:3
+msgid "results"
+msgstr "結果"
+
+#: app/modules/activating/activating.html:43
+#: app/modules/welcome/modals/modal_7.html:41
+msgid "to get started right away!"
+msgstr "始めましょう！"
+
+#~ msgid "Center"
+#~ msgstr "センター"
+
+#~ msgid ""
+#~ "Customize your online store page by choosing from the options below, then "
+#~ "simply copy the embed code and add it to your website."
+#~ msgstr "オプションで自分らしいのストアを作れ、コードウェブに加え。"
+
+#~ msgid "Delete"
+#~ msgstr "削除"
+
+#~ msgid "Leave blank to show products in all departments"
+#~ msgstr "すべての部門を表示する場合は、空白のままにしてください"
+
+#~ msgid "Left (default)"
+#~ msgstr "左（デフォルト）"
+
+#~ msgid "Main Layout"
+#~ msgstr "メインレイアウト"
+
+#~ msgid "New Storefront Page"
+#~ msgstr "新しいストアページ"
+
+#~ msgid "Page Header"
+#~ msgstr "ページのヘッダ"
+
+#~ msgid "Remove Photo"
+#~ msgstr "写真を削除"
+
+#~ msgid "Saving..."
+#~ msgstr "保存中..."
+
+#~ msgid "Select Text Align..."
+#~ msgstr "テキスト整列を選択する……"
+
+#~ msgid "Show quick add button"
+#~ msgstr "クイック購入ボタンを表示する"
+
+#~ msgid "Top Categories by Sales"
+#~ msgstr "販売による上位カテゴリ"
+
+#~ msgid "No Sales Yet."
+#~ msgstr "販売はまだされていません。"
+
+#~ msgid "e.g."
+#~ msgstr "例："
+
+#~ msgid "Loading..."
+#~ msgstr "読み込み中"
+
+#~ msgid "Tax"
+#~ msgstr "稅金"
+
+#~ msgid "Total Item"
+#~ msgstr "全アイテム"
+
+#~ msgid "set status"
+#~ msgstr "状態の設定"

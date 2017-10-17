@@ -1,0 +1,46 @@
+
+<div class="xgrid">
+  <div class="xgrid-cell -default-75">
+    <input-box type="text" class="_full" title="Tax Name" ng-model="taxOption.name" required ng-readonly="taxOption.store_id !== store_id"/>
+  </div>
+  <div class="xgrid-cell -default-25">
+    <input-box type="text" class="_full" title="Priority" ng-model="taxOption.priority" ng-readonly="taxOption.store_id !== store_id"/>
+
+  </div>
+</div>
+
+<div class="xgrid">
+  <div class="xgrid-cell -default-25">
+    <input-wrapper>
+      <label>{{'Tax Type'|translate}}</label>
+      <select
+        ng-disabled="taxOption.store_id !== store_id"
+        class="_full"
+        ng-model="taxOption.tax_type"
+        ng-options="taxType.id as taxType.name for taxType in taxTypes"
+      ></select>
+    </input-wrapper>
+  </div>
+  <div class="xgrid-cell -default-25" ng-if="!isRateDollar(taxOption.tax_type)">
+    <input-box type="text" class="_full" title="Tax Rate(%)" ng-model="taxOption.tax_rate" ng-readonly="taxOption.store_id !== store_id" />
+  </div>
+  <div class="xgrid-cell -default-25" ng-if="isRateDollar(taxOption.tax_type)">
+    <input-box type="text" class="_full" title="Tax Rate($)" ng-model="taxOption.tax_rate" ng-readonly="taxOption.store_id !== store_id"/>
+  </div>
+  <div class="xgrid-cell -default-25">
+    <input-wrapper>
+      <label>{{'Threshold or Exemption'|translate}}</label>
+      <select
+        ng-disabled="taxOption.store_id !== store_id"
+        class="_full"
+        ng-model="taxOption.method"
+        ng-options="taxMethod.id as taxMethod.name for taxMethod in taxMethods"
+      ></select>
+      <span class="text-note">* {{taxMethods[taxOption.method-1].detail}}</span>
+    </input-wrapper>
+  </div>
+
+  <div class="xgrid-cell -default-25">
+    <input-box type="text" class="_full" title="Threshold amount" ng-model="taxOption.threshold" ng-readonly="taxOption.store_id !== store_id"/>
+  </div>
+</div>

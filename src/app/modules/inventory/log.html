@@ -1,0 +1,7 @@
+<div class='panel-section'>
+  <h2>{{'Log'|translate}}</h2>
+  <div class='grid'>
+    <editable-grid ng-hide='quantityHistory && quantityHistory.length === 0' columns='editSalesColumns' data='quantityHistory' edit-mode='false'></editable-grid>
+    <p ng-show='quantityHistory && quantityHistory.length === 0'>{{'No Log Yet.'|translate}}</p>
+  </div>
+</div>

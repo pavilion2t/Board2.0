@@ -1,0 +1,2 @@
+action,customer_id,name,membership_level,phone,home_phone,gender,date_of_birth,email,billing_address,shipping_address,notes,customer_photo,store_credit,loyalty_point,special_discount
+add,,Bindo,,1231231234,1231231234,M,10-10,test@bindo.com,"40 Bindo St, Bindo City","40 Bindo St, Bindo City",Testing,jpg.jpg,,,

@@ -1,0 +1,16 @@
+<div class='mertics-detail'>
+  <p class='mertics-detail-change' ng-if='changes !== "N/A"'>
+    {{(changes * 100).toFixed(2)}}%
+    <i ng-show='changes > 0' class='fa fa-arrow-up'></i>
+    <i ng-show='changes < 0' class='fa fa-arrow-down'></i>
+    <i ng-show='changes === 0' class='fa fa-minus'></i>
+  </p>
+  <p class='mertics-detail-change' ng-if='changes === "N/A"'>
+    N/A
+    <i class='fa fa-minus'></i>
+  </p>
+  <p class='mertics-detail-amount' ng-if="amount !== undefined">{{amount | myCurrency}}</p>
+  <p class='mertics-detail-amount' ng-if="margin !== undefined">{{(margin * 100).toFixed(2)}}%</p>
+
+  <p class='mertics-detail-title' ng-if="title">{{title}}</p>
+</div>

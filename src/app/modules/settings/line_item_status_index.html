@@ -1,0 +1,12 @@
+<p ng-show="statusList.length < 1" translate>Status not set yet.</p>
+<ul class="list-inline">
+  <li ng-repeat="status in statusList">
+    <span class="label-status" >{{status.status}}
+    <a class="label-status__del" ng-click="deleteStatus(status.id)" ng-show="status.id>0">&times;</a></span>
+  </li>
+</ul>
+<hr>
+<form ng-submit="createStatus()">
+  <input type="text" ng-model="newStatus">
+  <button class="_primary" ng-disabled="!newStatus"><i class="fa fa-plus"></i> {{'Add new status'|translate}} </button>
+</form>

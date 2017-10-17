@@ -1,0 +1,150 @@
+      <div class='panel-section'>
+
+        <h2 class="_margin-top-0">{{store_name}}</h2>
+        <div class="xgrid" ng-show="isEditStore">
+          <div class="xgrid-cell">
+            <div class='input-box' ng-show="editMode">
+              <p class='input-box__title'>Stores</p>
+
+              <ui-select on-select="onSelectedStore($item)" ng-model="current_store_id" theme="select2" class="form-control" style="width:330px;">
+                <ui-select-match placeholder=" Select or search store...">{{$select.selected.title}}</ui-select-match>
+
+                <ui-select-choices repeat="store.id as store in stores | filter: $select.search">
+                  <span ng-bind-html="store.title | highlight: $select.search"></span>
+                </ui-select-choices>
+
+              </ui-select>
+            </div>
+          </div>
+        </div>
+
+        <div class="xgrid">
+          <div class="xgrid-cell -default-25">
+            <div class='input-box -full' ng-show="editMode">
+              <p class='input-box__title'>Supplier</p>
+              <ui-select class="_full" ng-model="order.supplier_id" theme="select2" class="form-control">
+                <ui-select-match placeholder=" Select or search supplier...">{{$select.selected.name}}</ui-select-match>
+                <ui-select-choices repeat="supplier.id as supplier in suppliers | filter: $select.search">
+                  <span ng-bind-html="supplier.name | highlight: $select.search"></span>
+                </ui-select-choices>
+              </ui-select>
+            </div>
+          </div>
+          <div class="xgrid-cell -default-45">
+            <div class='input-box -full' ng-show="editMode">
+              <p class='input-box__title'>PO CURRENCY</p>
+
+              <ui-select ng-model="now_currency" ng-disabled="!editMode" theme="select2"
+                class="_full" on-select="onSelectCurrencyCallback($item, $model)">
+                <ui-select-match placeholder="Search currency...">{{$select.selected.name}}</ui-select-match>
+                <ui-select-choices repeat="c.currency_to as c in currency | filter: $select.search" >
+                    <span ng-bind-html="c.name | highlight: $select.search"></span>
+                    <span class="pull-right _margin-right-1em">{{c.symbol}}</span>
+                    <span class="pull-right _margin-right-1em"> {{c.currency_to}} </span>
+                    <span class="pull-right _margin-right-1em"> {{c.rate}} </span>
+                </ui-select-choices>
+              </ui-select>
+            </div>
+          </div>
+          <div class="xgrid-cell -default-50"></div>
+
+
+        </div>
+        <div class="xgrid">
+          <div class="xgrid-cell -default-70">
+            <h2 class="_margin-top-0">{{cookSupplier(order.supplier_id).name}}</h2>
+            <ul class="list-unstyled">
+              <li>{{'Account Number'|translate}}: {{cookSupplier(order.supplier_id).account_number || 'N/A'}}</li>
+              <li>{{'Tel'|translate}}: {{cookSupplier(order.supplier_id).phone || 'N/A'}}</li>
+              <li>{{'Fax'|translate}}: {{cookSupplier(order.supplier_id).fax || 'N/A'}}</li>
+              <li>{{'Email'|translate}}: {{cookSupplier(order.supplier_id).email || 'N/A'}}</li>
+              <li>{{'Address'|translate}}: {{cookSupplier(order.supplier_id).address || 'N/A'}}</li>
+              <li>{{'Contact'|translate}}: {{cookSupplier(order.supplier_id).contact || 'N/A'}}</li>
+              <li>{{'Contact Phone'|translate}}: {{cookSupplier(order.supplier_id).contact_phone || 'N/A'}}</li>
+              <li>{{'Contact Email'|translate}}: {{cookSupplier(order.supplier_id).contact_email || 'N/A'}}</li>
+            </ul>
+          </div>
+          <div class="xgrid-cell -default-30">
+            <ul class="list-unstyled">
+              <li>{{'PO Number'|translate}}: {{order.number}}</li>
+              <li>{{'Created at'|translate}}: {{order.created_at | moment }}</li>
+              <li>{{'Created by'|translate}}: {{order.created_by}}</li>
+              <li>{{'Status'|translate}}: {{order.state}}</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="panel-section xgrid">
+        <div class="xgrid-cell -default-25">
+          <input-wrapper>
+            <label>{{'Payment Status'|translate}}</label>
+             <select class="select -full" ng-model="order.payment_state" ng-readonly='!editMode' ng-disabled='!editMode'>
+              <option>N/A</option>
+              <option value="unpaid">{{'Unpaid'|translate}}</option>
+              <option value="partial_paid">{{'Partial paid'|translate}}</option>
+              <option value="paid">{{'Paid'|translate}}</option>
+            </select>
+
+          </input-wrapper>
+        </div>
+         <div class="xgrid-cell -default-25">
+           <input-wrapper>
+             <label>{{'Payment Method'|translate}}</label>
+             <select class="select -full" ng-model="order.payment_method" ng-readonly='!editMode' ng-disabled='!editMode'>
+               <option value="">N/A</option>
+               <option value="bank_transfer">{{'Bank transfer'|translate}}</option>
+               <option value="cash">{{'Cash'|translate}}</option>
+               <option value="check">{{'Check'|translate}}</option>
+               <option value="credit_card">{{'Credit card'|translate}}</option>
+               <option value="debit_card">{{'Debit card'|translate}}</option>
+               <option value="other">{{'Other'|translate}}</option>
+             </select>
+           </input-wrapper>
+        </div>
+        <div class="xgrid-cell -default-25">
+          <label>{{'Expect delivery date'|translate}}</label>
+          <input class='input -full' type='text' ng-model='order.expect_delivery_date' ui-date='dateOptions' ui-date-format='yy-mm-dd' ng-readonly='!editMode' ng-disabled='!editMode'>
+        </div>
+        <div class="xgrid-cell -default-25">
+          <label>{{'Payment due date'|translate}}</label>
+          <input class='input -full' type='text' ng-model='order.payment_due_date' ui-date='dateOptions' ui-date-format='yy-mm-dd' ng-readonly='!editMode' ng-disabled='!editMode'>
+        </div>
+      </div>
+
+
+      <div class="panel-section">
+        <h3>{{'Items'|translate}}</h3>
+
+        <editable-grid columns="editColumns" data="order.purchase_items" edit-mode="editMode" row-height="editRowHeight" ng-show="order.purchase_items.length"></editable-grid>
+
+        <add-listings on-close="addItems" ng-show="editMode" store-id="current_store_id" ></add-listings>
+
+        <button class="_add" ng-click="openMiscChargeDialog()" ng-show="editMode" >{{"Enter Miscellaneous charge"|translate}}</button>
+
+        <add-listings-by-barcode line-items="lineItems" add-items="addItems" ng-show="editMode"> </add-listings-by-barcode>
+      </div>
+
+      <div class="xgrid">
+        <div class="xgrid-cell -default-80">
+          <input-textarea title="Note" ng-model="order.remarks" ng-readonly="!editMode"></input-textarea>
+        </div>
+        <div class="xgrid-cell -default-20">
+          <br>
+          <ul class="list-unstyled">
+            <li>{{"Total Quantity"|translate}}: {{calItemTotalQuantity(order.purchase_items)}}</li>
+            <li>{{"Subtotal"|translate}}: {{getCurrency()}} {{calItemTotal(order.purchase_items, "listing")}}</li>
+            <li>{{"Others"|translate}}: {{getCurrency()}} {{calItemTotal(order.purchase_items, "other")}}</li>
+            <li><b>{{"Total"|translate}}: {{getCurrency()}} {{calItemTotal(order.purchase_items, "all")}} </b></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class='panel-section'>
+        <div class="xgrid -gallery">
+          <div ng-repeat='image in order.purchase_order_images' class="xgrid-cell -default-25">
+            <img ng-src="{{image.image_url}}" alt="{{image.note}}" class="_rs-image">
+          </div>
+        </div>
+        <input-image title='Add Image' on-select='addImage' ng-show="editMode"></input-image>
+      </div>

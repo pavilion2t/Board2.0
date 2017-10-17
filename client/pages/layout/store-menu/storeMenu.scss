@@ -1,0 +1,127 @@
+.store-selector {
+  position: relative;
+  height: 40px;
+  width: 400px;
+  cursor: pointer;
+  float: left;
+
+  .current-store {
+    .input-checkbox {
+      display: none;
+    }
+  }
+
+  .selector__toggle {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+
+    margin: 0 10px;
+
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+
+    .actions-arrow {
+      position: absolute;
+      left: 3.5px;
+      top: 1px;
+      font-size: 14px;
+    }
+  }
+  &.-open .store-selector__dropdown{
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  .store-selector__dropdown {
+    display: none;
+    position: absolute;
+    left: -10px;
+    top: 48px;
+    width: 460px;
+    color: #fff;
+    background-color: rgb(53,72,90);
+    // padding: 5px 0 50px;
+    padding: 5px 0 5px;
+    border-radius: 4px;
+    z-index: 1000;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      top: -5px;
+      left: 20px;
+      margin-right: 4px;
+    }
+    &:before {
+      border-bottom: 8px solid rgb(53,72,90);
+      margin-top: -1px;
+    }
+    &:after{
+      border-bottom: 8px solid rgb(53,72,90);
+      margin-top: 1px;
+      z-index: 1;
+    }
+
+    .dropdown__options {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgb(53,72,90);
+
+      box-shadow: 0 -1px 0 0 rgba(255,255,255, .2);
+      padding: 10px;
+      overflow: hidden;
+
+      .btn {
+        width: 144px;
+        text-align: center;
+        margin: 0 1px;
+
+        &-select {
+          background-color: rgb(64,82,99);
+          color: white;
+        }
+        &-apply {
+          background-color: white;
+          color: rgb(41,57,73);
+        }
+      }
+    }
+    > .dropdown__stores {
+      max-height: 380px;
+      min-height: 60vh;
+      overflow-y: auto;
+    }
+    .dropdown__store {
+      padding: 10px;
+
+      &.-child {
+        padding-left: 25px
+      }
+
+      &:hover {
+        background-color: rgba(0,0,0,.2);
+      }
+
+      .info__checkbox {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        transform: scale(1.2,1.2);
+
+        label {
+          background: transparent;
+          border: 1px solid white;
+          &:after {
+            border-color: white;
+          }
+        }
+      }
+    }
+  }
+}

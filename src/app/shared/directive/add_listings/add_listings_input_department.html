@@ -1,0 +1,23 @@
+<div class='add-listings'>
+    <div class='ngdialog-header add-listings-header'>
+      <h3 class="pull-left" ng-bind="title"></h3>
+    </div>
+    <div class='_message' ng-if='addErrorMessage'>{{addErrorMessage}}</div>
+    <div class="ngdialog-body">
+      <div class='grid'>
+        <div class='grid__list _departments department__children' ng-model='listedDepartments'>
+          <div ng-repeat='department in listedDepartments'>
+            <add-listings-listed-departments selected="department.selected" department='department' departments='departments' listed-departments='listedDepartments'></add-listings-listed-departments>
+          </div>
+        </div>
+      </div>
+
+      <p class="_margin-2em" ng-show="searching">Searching inventory...</p>
+      <p class="_margin-2em" ng-show="addErrorMessage">{{addErrorMessage}}</p>
+    </div>
+    <div class='ngdialog-footer _align-right'>
+      <button class='_secondary' ng-click='closeThisDialog(null)'>{{'Cancel'|translate}}</button>
+      <button class='_primary' ng-click='add()'>{{'Save'|translate}}</button>
+    </div>
+
+</div>

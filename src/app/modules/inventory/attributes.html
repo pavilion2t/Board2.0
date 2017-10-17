@@ -1,0 +1,15 @@
+<div class="xgrid" ng-repeat="attribute in attributes">
+  <div class="xgrid-cell  -default-25">
+    <h3 ng-bind="attribute.custom_field_name"></h3>
+  </div>
+  <div class="xgrid-cell  -default-25">
+    <select style="float:left;width:70%" ng-if="attribute.field_format === 'list'" ng-model="attribute.value" ng-disabled='!editMode'>
+      <option value=""></option>
+      <option ng-repeat="value in attribute.possible_values" value="{{value}}">{{value}}</option>
+    </select>
+    <input ng-if="attribute.field_format === 'string'" type="text" style="float:left;width:70%" ng-model="attribute.value"  ng-readonly='!editMode'/>
+    <div  style="background-color:{{attribute.value|colorFilter}};" class="color-review">&nbsp;</div>
+  </div>
+  <div class="xgrid-cell -default-25">
+  </div>
+</div>

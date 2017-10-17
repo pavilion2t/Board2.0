@@ -1,0 +1,12 @@
+<div class="panel _clearfix fixed-panel">
+  <h2 translate>Voucher Report</h2>
+  <div class="report-filter">
+    <span ng-include="'app/modules/reports/download_report.html'"></span>
+  </div>
+  <br>
+  <div ui-grid="gridOptions" ui-grid-resize-columns ui-grid-grouping ui-grid-exporter  filter="filter">
+
+  </div>
+
+</div>
+

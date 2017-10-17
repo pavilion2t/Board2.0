@@ -1,0 +1,74 @@
+  .grid__list._departments {
+    position: relative;
+
+    .list__department {
+      position: relative;
+      margin-bottom: 4px;
+
+      .department__name {
+        background-color: white;
+        color: $text-dark-brown;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 3px 10px;
+        // margin-bottom: 4px;
+        border-radius: 4px;
+      }
+      small.noTitle {
+        background-color: #ccc;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      .department__children {
+        position: relative;
+        padding-left: 20px;
+
+        >div:first-child {
+          margin-top: 4px;
+        }
+        &._empty {
+          padding-top: 0;
+        }
+        &._expanded {
+          min-height: 10px !important;
+          background-color: rgba(220,220,220, 0.5);
+          border-radius: 0 0 4px 4px;
+        }
+      }
+      .department__toggle {
+        cursor: pointer;
+
+        position: absolute;
+        right: 15px;
+        top: 7px;
+        width: 18px;
+        height: 18px;
+        border: 1px solid $orange;
+        border-radius: 50%;
+
+        .actions-arrow {
+          position: absolute;
+          left: 3.5px;
+          top: 1px;
+          font-size: 14px;
+          color: $orange;
+        }
+      }
+      .department__actions {
+        right: 6px;
+        top: 40px;
+        @include action-dropdown;
+      }
+      .department__edit {
+        @include modal-backdrop;
+
+        .edit__modal {
+          width: 350px;
+          height: 240px;
+          margin-left: -170px;
+          margin-top: -120px;
+        }
+      }
+    }
+  }

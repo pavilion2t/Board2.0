@@ -1,0 +1,22 @@
+describe('Inventory Module', function() {
+	beforeEach(function() {
+    browser.get('/#/1651/inventory');
+	})
+
+  it('should view Inventory', function() {
+    browser.get('/#/1651/inventory');
+    browser.ignoreSynchronization = false;
+
+    expect(browser.getTitle()).toEqual('Bindo Dashboard - Inventory');
+  });
+
+  it('should link to a inventory when click on link', function(){
+    element(by.css('._inventory-item a')).click()
+    expect(browser.getCurrentUrl()).toMatch(/inventory\/\d*/);
+  })
+
+  it('should link to new inventory page on "new item" button', function(){
+    element(by.css('button._new')).click()
+    expect(browser.getCurrentUrl()).toMatch(/inventory\/new\/item/);
+  })
+});

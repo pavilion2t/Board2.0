@@ -1,0 +1,61 @@
+div[class^='po-item']{
+  float: left;
+  padding: 0 10px 0 0;
+}
+
+.po-item-head{
+  width: 390px;
+}
+.po-item{
+  width: 110px;
+}
+
+.po-item-close{
+  width: 70px;
+}
+
+#purchase_order{
+  .form-table-header,.form-content-row{
+    min-width: 1400px;
+  }
+  .form-table-scroll-content{
+    overflow: auto;
+  }
+}
+
+._rs-image {
+  max-width: 100%
+}
+
+.ngdialog.fulfill-modal .ngdialog-content {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.receive_order_table .receive_order_field {
+  width: 100px;
+}
+
+.table-csv {
+  border: 1px solid #ccc;
+
+  thead {
+    background-color: #eee;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+
+  }
+}
+
+.edit__purchase-item-fulfill {
+  @include modal-backdrop;
+
+  .purchase-item-fulfill__modal {
+    width: 360px;
+    height: 240px;
+    margin-left: -180px;
+    margin-top: -120px;
+  }
+}

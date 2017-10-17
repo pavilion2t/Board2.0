@@ -1,0 +1,13 @@
+<div class='input-box {{class}}'>
+
+  <p class='input-box__title' ng-class="{_hidden: (model === undefined || model === null || model === '') && !isInvalid}" ng-if='!hideTitle'>{{title|translate}}</p>
+  <div class="xgrid">
+      <div class="xgrid-cell -default-70" >
+          <input type="text" ng-model="hours"/>
+      </div>
+      <div  class="xgrid-cell -default-30">
+          <select ng-model="meridiem" ng-options="meridiem.value as meridiem.display for meridiem in meridiems" ng-change="updateModel()">
+          </select>
+      </div>
+   </div>
+</div>

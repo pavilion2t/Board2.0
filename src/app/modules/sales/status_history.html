@@ -1,0 +1,7 @@
+<h2>Status History</h2>
+<table class="table">
+  <tr ng-repeat="status in statusHistory">
+    <td><span class="label-status">{{status.line_item_status.status}}</span></td>
+    <td>{{status.created_at}}</td>
+  </tr>
+</table>

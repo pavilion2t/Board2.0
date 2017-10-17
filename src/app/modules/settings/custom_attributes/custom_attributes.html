@@ -1,0 +1,8 @@
+<div class='nav-tabs'>
+  <a class='nav-tabs-item' ng-class='{"-active": section === "inventory"}' ng-click='section = "inventory"'>{{'Inventory'|translate}}</a>
+</div>
+
+<div class='panel' ng-show='section === "inventory"'>
+  <div ng-include=" 'app/modules/settings/custom_attributes/custom_attributes_inventory.html' "></div>
+
+</div>

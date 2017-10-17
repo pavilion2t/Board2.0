@@ -1,0 +1,37 @@
+<div class="panel _clearfix">
+  <h2>{{"Sales Summary Report"|translate}}</h2>
+  <div class="report-filter">
+    <input class='date-picker__input' type='text' ng-model='dateFrom' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder='From'>
+    <input class='date-picker__input' type='text' ng-model='dateTo' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder='To'>
+
+    <button class="_primary" ng-click="update()" translate>Update</button> &nbsp;&nbsp;&nbsp;&nbsp;
+	<span ng-include="'app/modules/reports/download_report.html'"></span>
+  </div>
+  <hr>
+  <div class="xgrid">
+    <div class="xgrid-cell">
+      <table class="table sales-summary-report-table">
+        <thead>
+          <tr>
+            <th class="title"></th>
+            <th class="count">{{"Count"|translate}}</th>
+            <th class="amount">{{"Amount"|translate}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="report in summaryReportA track by report.title">
+            <th class="_capitalize">{{word(report.title)|translate}}</th>
+            <td>{{report.count}}</td>
+            <td>{{report.amount | myCurrencyReport}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="xgrid-cell">
+      <div ng-repeat="report in summaryReportB">
+        <sales-summary-report-table report="report"></sales-summary-report-table>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class='discounts'>
+
+  <div ng-style="getTableHeight()" id="grid1" ui-grid="gridOptions" class="grid" ui-grid-auto-resize ui-grid-draggable-rows></div>
+
+  <div class="_clear"></div>
+  <div class='content-bottom'>
+    <h2>{{title|translate}}</h2>
+    <div class='content-bottom-actions'>
+      <button ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+  </div>
+</div>

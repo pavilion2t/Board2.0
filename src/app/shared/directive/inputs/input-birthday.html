@@ -1,0 +1,10 @@
+<div class='input-box {{class}}'>
+  <p class='input-box__title' ng-class="{_hidden: (model === undefined || model === null || model === '') && !isInvalid}" ng-if='!hideTitle'>{{title|translate}}</p>
+  <input class='datePicker_input' type='text' ng-model='model' placeholder='{{title|translate}}' ng-readonly='readonly' ng-disabled='disabled' ng-click='dateClick()'>
+    <div class='datePicker_select' style="display:none;padding:10px;width:100px">
+        <select ng-model="month" style="float:left;width:50%" ng-change="changeMonth()"><option value=""></option><option ng-repeat="monthi in months" value="{{monthi}}">{{monthi}}</option></select>
+        <select ng-model="day" style="float:left;width:50%" ng-change="changeDay()"><option value=""></option><option ng-repeat="dayi in days" value="{{dayi}}">{{dayi}}</option></select>
+    </div>
+</div>
+
+

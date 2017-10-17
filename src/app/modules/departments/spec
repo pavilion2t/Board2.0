@@ -1,0 +1,9 @@
+describe('Departments Module', function() {
+  it('should view Departments', function() {
+    browser.get('/#/1651/departments');
+    browser.ignoreSynchronization = true;
+    browser.manage().timeouts().implicitlyWait(1000);
+
+    expect(browser.getTitle()).toEqual('Bindo Dashboard - Departments');
+  });
+});

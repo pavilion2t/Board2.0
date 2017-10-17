@@ -1,0 +1,58 @@
+<div id='modal-1' class='modal-content'>
+  <div class='modal-header'>
+    <h3 class='modal-title' id='myModalLabel'>Getting Started</h3>
+  </div>
+  <div class='modal-body'>
+    <div class='modal-subheader'>
+      <div class='modal-done-steps'>
+        <!-- special config for first modal -->
+        <div class='step-box' ng-repeat='step in createRange(1, currentModal + 1)' ng-class='"step-box" + step'>
+          <div class='step' ng-class='{end: step === currentModal}'>
+            <img ng-hide='step === currentModal' src='assets/images/steps-tick.png'>
+            <p ng-show='step === currentModal'>{{step}}</p>
+          </div>
+        </div>
+        <h2 translate>Configure Your Store</h2>
+      </div>
+      <div class='modal-remaining-steps'>
+        <span class='step' ng-repeat='step in createRange(currentModal + 1, 6)'>
+          <p>{{step}}</p>
+        </span>
+      </div>
+    </div>
+    <div class='modal-body-content'>
+      <form class='modal-form up'>
+
+        <div class='input-large'>
+          <p translate>Store Name</p>
+          <input ng-model='searchedStore.store_name' name='store-name' ng-class='{attention: attention && !searchedStore.store_name}'>
+        </div>
+        <div class='input-medium left'>
+          <p translate>Country</p>
+          <select name='country' ng-model='searchedStore.country' ng-class='{attention: attention && !searchedStore.country}'>
+            <option value="US" selected>United States</option>
+          </select>
+        </div>
+        <div class='input-small right'>
+          <p translate>Zip Code</p>
+          <input name='zip-code' ng-model='searchedStore.zip' ng-class='{attention: attention && !searchedStore.zip}'>
+        </div>
+        <div class='input-large'>
+          <p translate>Store Phone Number</p>
+          <input name='store-phone-number' ng-model='searchedStore.phone' ng-class='{attention: attention && !searchedStore.phone}' input-phone>
+        </div>
+      </form>
+      <div class='modal-tips'>
+        <div class='question-mark'><p>?</p></div>
+        <div class='tips'><p translate>We need to know your store location so we can assign someone in your area to assist you.</p></div>
+      </div> 
+    </div>
+  </div>
+  <div class='modal-footer'>
+    <button type='button' class='_secondary' ng-click='back()'>{{'Go Back'|translate}}</button>
+
+<!--     <button type='button' class='btn modal-button-forward' ng-click='searchStore(searchedStore, true);nextModal()'>Continue</button>
+ -->
+    <button type='button' class='_primary' ng-click='continue()'>{{'Continue'|translate}}</button>
+  </div>
+</div>

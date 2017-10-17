@@ -1,0 +1,34 @@
+<h2>Edit roles</h2>
+
+<form ng-submit="createRole(newRoleName)">
+  <input type="text" ng-model="newRoleName"> <button class="_primary">Create new role</button>
+</form>
+
+<div class="card">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Role</th>
+        <th>
+          <div class="_align-right">
+            Edit
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="role in storeRoles">
+        <th>{{role.name}}</th>
+        <td>
+          <div class="_align-right">
+            <button class="_secondary" ng-click="removeRole(role)">remove</button></td>
+          </div>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr>
+<p class="_align-right">
+  <button class="_primary" ng-click="closeDialog()">{{"Done"|translate}}</button>
+</p>

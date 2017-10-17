@@ -1,0 +1,38 @@
+<form name="myForm" class="form-horizontal" novalidate>
+  <div class='edit _new-inventory'>
+    <div class='edit__body'>
+      <div class='nav-tabs'>
+        <a class='nav-tabs-item' ng-class='{"-active": section === "overview"}' ng-click='section = "overview"'>{{'Overview'|translate}}</a>
+        <a class='nav-tabs-item' ng-class='{"-active": section === "customers"}' ng-click='section = "customers"'>{{'Customers'|translate}}</a>
+      </div>
+      <div class='panel'>
+
+        <div class='panel-section' ng-if='section === "overview"'>
+          <div class="xgrid">
+            <div class="xgrid-cell">
+              <input-box class='_full' type='text' title='{{"Title"|translate}}' ng-model='membership.title' ng-readonly='!editMode'></input-box>
+            </div>
+          </div>
+          <div class="xgrid">
+            <div class="xgrid-cell">
+              <input-textarea title='Note (Optional)' ng-model='membership.note' ng-readonly='!editMode'></input-textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class='panel-section' ng-if='section === "customers"'>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class='content-bottom'>
+      <h2 translate>New Item</h2>
+      <div class='content-bottom-actions'>
+        <button ng-if="editPermission" ng-hide='editMode' class='_secondary' ng-click="enableEditMode()">{{'Edit'|translate}}</button>
+        <button ng-hide='!editMode' ng-class='{"_primary": action[2], "_secondary": !action[2]}' ng-repeat='(i, action) in bottomActions' ng-click='action[1]()'>{{action[0]|translate}}</button></div>
+    </div>
+  </div>
+  </div>
+</form>

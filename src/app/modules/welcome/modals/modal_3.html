@@ -1,0 +1,70 @@
+<div id='modal-3' class="modal-content">
+  <div class="modal-header">
+    <h3 class="modal-title" id="myModalLabel" translate>Create Your Store</h3>
+  </div>
+  <div class="modal-body">
+    <div class='modal-subheader'>
+      <div class='modal-done-steps'>
+        <div class='step-box' ng-repeat='step in createRange(1, currentModal)' ng-class='"step-box" + step'>
+          <div class='step' ng-class='{end: step === currentModal - 1}'>
+            <img ng-hide='step === currentModal - 1' src='assets/images/steps-tick.png'>
+            <p ng-show='step === currentModal - 1'>{{step}}</p>
+          </div>
+        </div>
+        <h2 translate>Store Info</h2>
+      </div>
+      <div class='modal-remaining-steps'>
+        <span class='step' ng-repeat='step in createRange(currentModal, 6)'>
+          <p>{{step}}</p>
+        </span>
+      </div>
+    </div>
+    <div class='modal-body-content'>
+      <form class='modal-form up'>
+        <div class='input-medium left'>
+          <p translate>Number of Locations</p>
+          <select name='survey_number_of_locations' ng-model='answers.locationNumber' ng-class='{attention: attention && !answers.locationNumber}'>
+            <option value='' disabled selected>{{'Select an Answer'|translate}}</option>
+            <option ng-repeat='(i, option) in locationNumbers' ng-value='option'>{{option}}</option>
+          </select>
+        </div>
+        <div class='input-medium right'>
+          <p translate>Business Type</p>
+          <select name='survey_store_type' ng-model='answers.businessType' ng-class='{attention: attention && !answers.businessType}'>
+            <option value='' disabled selected>{{'Select an Answer'|translate}}</option>
+            <option ng-repeat='(i, option) in businessTypes' ng-value='option'>{{option}}</option>
+          </select>
+        </div>
+        <div class='input-medium left'>
+          <p translate>Number of Unique SKUs</p>
+          <select name='survey_number_of_unique_skus' ng-model='answers.uniqueSKU' ng-class='{attention: attention && !answers.uniqueSKU}'>
+            <option value='' disabled selected>{{'Select an Answer'|translate}}</option>
+            <option ng-repeat='(i, option) in uniqueSKUs' ng-value='option'>{{option}}</option>
+          </select>
+        </div>
+        <div class='input-medium right'>
+          <p translate>SKUs with Barcodes</p>
+          <select name='survey_sku_with_barcodes' ng-model='answers.barcodePercentage' ng-class='{attention: attention && !answers.barcodePercentage}'>
+            <option value='' disabled selected>{{'Select an Answer'|translate}}</option>
+            <option ng-repeat='(i, option) in barcodePercentages' ng-value='option'>{{option}}</option>
+          </select>
+        </div>
+        <div class='input-medium left'>
+          <p translate>How did your hear about Bindo POS?</p>
+          <select name='survey_channel' ng-model='answers.hearAbout' ng-class='{attention: attention && !answers.hearAbout}'>
+            <option value='' disabled selected>Select an Answer</option>
+            <option ng-repeat='(i, option) in hearAbouts' ng-value='option'>{{option}}</option>
+          </select>
+        </div>
+      </form>
+      <div class='modal-tips'>
+        <div class='question-mark'><p>?</p></div>
+        <div class='tips'><p translate>By answering these questions, you can customize your POS and dashboard the way you need it. No more, no less.</p></div>
+      </div> 
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="_secondary" ng-click='back()'>{{'Go Back'|translate}}</button>
+    <button type="button" class="_primary" ng-click='surveyContinue()'>{{'Continue'|translate}}</button>
+  </div>
+</div>

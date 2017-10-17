@@ -1,0 +1,88 @@
+<div id='modal-2' class='modal-content'>
+  <div class='modal-header'>
+    <h3 class='modal-title' id='myModalLabel' translate>Getting Started</h3>
+  </div>
+
+  <div class='modal-body'>
+    <div class='modal-subheader'>
+      <div class='modal-done-steps'>
+        <div class='step-box' ng-repeat='step in createRange(1, currentModal)' ng-class='"step-box" + step'>
+          <div class='step' ng-class='{end: step === currentModal - 1}'>
+            <img ng-hide='step === currentModal - 1' src='assets/images/steps-tick.png'>
+            <p ng-show='step === currentModal - 1'>{{step}}</p>
+          </div>
+        </div>
+        <h2 translate>Configure Your Store</h2>
+      </div>
+      <div class='modal-remaining-steps'>
+        <span class='step' ng-repeat='step in createRange(currentModal, 6)'>
+          <p>{{step}}</p>
+        </span>
+      </div>
+    </div>
+    <div id='map' ng-hide='modal2MissingData'>
+    </div>
+
+    <h2 class='loading' ng-show='modal2Loading && !modal2MissingData'>Loading...</h2>
+
+    <form class='suggested-form' ng-hide='modal2Loading || modal2MissingData'>
+      <div ng-repeat='(i, store) in suggestedStores'>
+        <div class='suggested-store' ng-class='{selected: store === selectedStore}'>
+          <div class='suggested-store-radio'>
+            <input type='radio' id='store-radio-{{i}}' ng-model='$parent.selectedStore' ng-value='store' ng-change='selectStore(store)'>
+            <label for='store-radio-{{i}}'>
+          </div>
+          <div class='suggested-store-left'>
+            <p class='store-name'>{{store.store_name}}</p>
+            <p>{{store.address}}</p>
+          </div>
+          <div class='suggested-store-right'>
+            <p>{{store.city}} {{store.zipcode}}</p>
+            <p>{{store.phone}}</p>
+          </div>
+        </div>
+      </div>
+      <!-- 'None of the above' -->
+      <div>
+        <div class='suggested-store none' ng-class='{selected: !selectedStore}'>
+          <div class='suggested-store-radio'>
+            <input type='radio' id='store-radio-none' ng-model='selectedStore' ng-value='null' ng-change='selectStore(null)'>
+            <label for='store-radio-none'>
+          </div>
+          <div class='suggested-store-left'>
+            <p class='store-name' translate>None of the above</p>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form class='modal-form up' ng-show='modal2MissingData'>
+      <div class='input-large'>
+        <p>Street Address</p>
+        <input name='street-address' ng-model='finalStore.address1' ng-class='{attention: attention && !finalStore.address}'>
+      </div>
+      <div class='input-large'>
+        <p translate>Apartment / Suite</p>
+        <input class='optional' name='apartment' ng-model='finalStore.address2'>
+      </div>
+      <div class='input-large'>
+        <p translate>City</p>
+        <input name='city' ng-model='finalStore.city' ng-class='{attention: attention && !finalStore.city}'>
+      </div>
+      <br>
+      <div class='input-medium'>
+        <p translate>State</p>
+        <input name='state' ng-model='finalStore.state' ng-class='{attention: attention && !finalStore.state}'>
+      </div>
+      <div class='input-small'>
+        <p translate>ZIP Code</p>
+        <input name='zipcode' ng-model='finalStore.zipcode' ng-class='{attention: attention && !finalStore.zipcode}'>
+      </div>
+    </form>
+
+  </div>
+  <div class='modal-footer'>
+    <button type='button' class='_secondary' ng-click='modal2Back()'>{{'Go Back'|translate}}</button>
+    <button type='button' class='_primary' ng-click='modal2Continue()'>{{'Continue'|translate}}</button>
+  </div>
+</div>

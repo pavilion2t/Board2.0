@@ -1,0 +1,13 @@
+<div ng-show="iframeActive">
+  <ui-view></ui-view>
+</div>
+
+<div ng-hide="iframeActive" class="iframe-unactivated">
+  <img src='assets/images/activating.png'>
+  <h2 translate>Activate Your Storefront</h2>
+  <p translate>Bindo Storefront is the easiest way to sell online through your existing website. After requesting access to the Storefront Builder, you can instantly create online store pages that automatically sync with your Bindo POS inventory.</p>
+  <div class="iframe-request">
+    <button class="_primary" ng-click="requestIframeActivation()" ng-hide="iframeActivationRequested">{{'Request Access'|translate}}</button>
+    <button class="_secondary" ng-show="iframeActivationRequested" disabled>{{'Access Requested'|translate}}</button>
+  </div>
+</div>

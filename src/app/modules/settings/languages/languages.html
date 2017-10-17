@@ -1,0 +1,35 @@
+<div class='edit'>
+
+  <h1 translate>Languages</h1>
+
+  <div class="xgrid" ng-repeat="language in languages">
+    <div class="xgrid-cell -default-40">
+      <span ng-bind="languageMap[language.locale]"></span>
+    </div>
+    <div class="xgrid-cell -default-20">
+      <span ng-bind="language.locale"></span>
+    </div>
+    <div class="xgrid-cell -default-40">
+      <div class="_align-right">
+        <button class="_remove" ng-click="delete(language)">Delete</button>
+      </div>
+
+    </div>
+  </div>
+  <button ng-if="!addEnabled" class="_add" ng-click="add()">Add New Language</button>
+  <div class="xgrid" ng-if="addEnabled">
+    <div class="xgrid-cell -default-40">
+      <select id="lang_drop_down" ng-options="lang as lang.value for lang in languageList track by lang.key" ng-model="newLanguage" ng-change="changeLanguage()"></select>
+    </div>
+    <div class="xgrid-cell -default-20">
+      <span ng-bind="newLanguage.key"></span>
+    </div>
+    <div class="xgrid-cell -default-40">
+      <div class="_align-right">
+        <button class="_primary" ng-click="save()">Add</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>

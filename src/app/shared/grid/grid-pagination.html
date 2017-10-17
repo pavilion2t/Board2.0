@@ -1,0 +1,17 @@
+<div class='grid__pagination'>
+  <span class='pagination__link' ng-hide='pageNumber === 1'>
+    <a ng-click='goToFirstPage()'>«</a>
+  </span>
+  <span class='pagination__link' ng-hide='pageNumber === 1'>
+    <a ng-click='goToPreviousPage()'>‹</a>
+  </span>
+  <span class='pagination__link' ng-repeat='(i, number) in paginationLinks'>
+    <a ng-click='goToPage(number)' ng-class='{_current: number === pageNumber}'>{{number}}</a>
+  </span>
+  <span class='pagination__link' ng-hide='pageNumber === totalPages'>
+    <a ng-click='goToNextPage()'>›</a>
+  </span>
+  <span class='pagination__link' ng-hide='pageNumber === totalPages'>
+    <a ng-click='goToLastPage()'>»</a>
+  </span>
+</div>

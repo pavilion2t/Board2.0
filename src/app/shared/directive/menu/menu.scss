@@ -1,0 +1,249 @@
+.content__menu {
+  background-color: rgb(53,72,90);
+  padding: 0;
+  margin: 0;
+}
+.menu__list {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 50px;
+  overflow: auto;
+
+  padding-bottom: 70px;
+
+  ul {
+    list-style-disc: none;
+    padding: 0;
+    margin: 0;
+    span.menu__submenu {
+      color: #fff;
+      margin-left:20px;
+      font-size: 1.2em;
+    }
+    li.menu__submenuitem{
+      position: relative;
+    }
+    .-active span.menu__submenuitem {
+      color: #AAA;
+    }
+    span.menu__submenuitem {
+      padding: 0px 0px;
+      color: #888;
+      margin-left:30px;
+      font-size: 1.1em;
+    }
+    .menu__submenuitem:hover span.menu__submenuitem {
+      color: #AAA;
+    }
+
+    ul.menu__submenu {
+      background: #444;
+      list-style-type: none;
+
+      li.menu__submenuitem {
+        background: #222525;
+        height: 30px;
+        line-height: 30px;
+
+        &.-active,&:hover {
+          background: #303030;
+        }
+      }
+    }
+  }
+  .main-menu-group{
+    background-color: #2a3a48;
+  }
+  .menu__group {
+    padding: 12px 20px;
+    color: #fff
+
+  }
+
+}
+
+.menu__misc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  background-color: rgb(53,72,90);
+  box-shadow: 0 -1px 0 0 rgba(255,255,255, .1);
+
+  a {
+    color: rgba(255,255,255,.5);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+}
+
+.main-menu-item {
+
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(255, 255, 255, .5);
+  padding: 0;
+  margin: 0;
+
+  a {
+    color: rgba(255, 255, 255, .5);
+    display: block;
+    padding: 10px 0 10px 16px;
+    text-decoration: none;
+
+    &.-disabled {
+      pointer-events: none;
+      cursor: default;
+      opacity: 0.4;
+    }
+  }
+
+  &:hover a, &.-active a {
+    background-color: rgba(255, 255, 255, .06);
+    color: white;
+  }
+}
+
+.main-menu-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    vertical-align: -10px;
+
+
+    &.-dashboard,&.-summary {
+      background-image: url(../assets/images/icons/overview.png);
+    }
+    &.-inventory,&.-stock-transfers,&.-item-master {
+      background-image: url(../assets/images/icons/inventory.png);
+    }
+    &.-lot-inquiry {
+      background-image: url(../assets/images/icons/lot-inquiry.svg);
+      background-size: 30px 30px;
+    }
+    &.-departments {
+      background-image: url(../assets/images/icons/departments.png);
+    }
+    &.-discounts {
+      background-image: url(../assets/images/icons/discounts.png);
+    }
+    &.-customers {
+      background-image: url(../assets/images/icons/customers.png);
+    }
+    &.-gift-cards {
+      background-image: url(../assets/images/icons/gift-cards.png);
+    }
+    &.-sales{
+      background-image: url(../assets/images/icons/sales.png);
+    }
+    &.-invoices {
+      background-image: url(../assets/images/icons/invoices.png);
+    }
+    &.-goods {
+      background-image: url(../assets/images/icons/grn.png);
+    }
+    &.-returnnote {
+      background-image: url(../assets/images/icons/returnnote.png);
+    }
+    &.-suppliers {
+      background-image: url(../assets/images/icons/suppliers.png);
+    }
+    &.-modifiers {
+      background-image: url(../assets/images/icons/modifiers.png);
+    }
+    &.-production-orders {
+      background-image: url(../assets/images/icons/production-orders.png);
+      background-size: contain;
+    }
+    &.-purchase-orders {
+      background-image: url(../assets/images/icons/purchase-orders.png);
+    }
+    &.-inventory-variance {
+      background-image: url(../assets/images/icons/inventory-variance.png);
+      background-size: contain;
+    }
+    &.-time-clock {
+      background-image: url(../assets/images/icons/time-clock.png);
+    }
+    &.-reports, &.-advanced-report, &.-tableau {
+      background-image: url(../assets/images/icons/reports.png);
+    }
+    &.-register {
+      background-image: url(../assets/images/icons/register-shifts.png);
+    }
+    &.-bank-accounts {
+      background-image: url(../assets/images/icons/overview.png);
+    }
+    &.-billings {
+      background-image: url(../assets/images/icons/overview.png);
+    }
+    &.-merchant-services {
+      background-image: url(../assets/images/icons/overview.png);
+    }
+    &.-settings{
+      background-image: url(../assets/images/icons/settings.png);
+    }
+    &.-combo {
+      background-image: url(../assets/images/icons/combo.png);
+    }
+    &.-event-devices {
+      background-image: url(../assets/images/icons/event.png);
+    }
+    &.-line-items {
+      background-image: url(../assets/images/icons/line-item-status.png);
+    }
+    &.-line-item-status-set-up {
+      background-image: url(../assets/images/icons/line-item-status-set-up.png);
+    }
+    &.-workflow-set-up {
+      background-image: url(../assets/images/icons/workflow-set-up.png);
+    }
+    &.-vouchers {
+      background-image: url(../assets/images/icons/voucher.png);
+    }
+    &.-loyalty {
+      background-image: url(../assets/images/icons/loyalty.png);
+    }
+    &.-material {
+      background-image: url(../assets/images/icons/material.png);
+    }
+    &.-membership {
+      background-image: url(../assets/images/icons/membership-level.png);
+    }
+    &.-menus {
+      background-image: url(../assets/images/icons/menu.png);
+    }
+    &.-delivery-note {
+      background-image: url(../assets/images/icons/delivery-note.png);
+    }
+}
+
+
+.main-menu-item.hide-on-production:after {
+    content: "Dev";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 30px;
+    padding: 10px;
+    color: red;
+}
+.menu__submenuitem.hide-on-production:after {
+    content: "Dev";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: red;
+}

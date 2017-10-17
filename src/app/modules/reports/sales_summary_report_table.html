@@ -1,0 +1,17 @@
+<table class="table sales-summary-report-table">
+  <thead>
+    <tr>
+      <th class="title ">{{word(report.title)|translate}}</th>
+      <th class="_capitalize" ng-repeat="c in columns">{{word(c)|translate}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-class="{_bold : row.bold}" ng-repeat="row in report.data">
+      <td>{{word(row.tender || row.name)|translate}}</th>
+      <td ng-repeat="c in columns track by $index">
+        <span ng-if="filters[$index]==='myCurrencyReport'">{{row[c]|myCurrencyReport}}</span>
+        <span ng-if="filters[$index]!=='myCurrencyReport'">{{row[c]}}</span>
+
+    </tr>
+  </tbody>
+</table>

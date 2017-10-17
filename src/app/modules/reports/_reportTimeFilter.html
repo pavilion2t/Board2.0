@@ -1,0 +1,25 @@
+<input  class='date-picker__input report-filter-date'
+        type='text'
+        ng-model='_start'
+        ui-date='filterDateOptions'
+        ui-date-format='yy-mm-dd'
+        placeholder="{{'From' | translate}}">
+
+<select ng-show="showTime"
+        ng-model='_startTime'
+        ng-options="value as key for (key, value) in hours"></select>
+
+<input  class='date-picker__input report-filter-date'
+        type='text'
+        ng-model='_end'
+        ui-date='filterDateOptions'
+        ui-date-format='yy-mm-dd'
+        placeholder="{{'To' | translate}}">
+
+<select ng-show="showTime"
+        ng-model='_endTime'
+        ng-options="value as key for (key, value) in hours"></select>
+
+<span class="link-control"
+      ng-click="toggleAdvanceFilter()"
+      ng-show="advance">{{ showTime ? 'simple' : 'advance' | translate }}</span>

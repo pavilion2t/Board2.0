@@ -1,0 +1,62 @@
+<div class="panel _clearfix">
+  <h2>Daily System Sales Detail Report</h2>
+  <div class="report-filter">
+    <input class='date-picker__input' type='text' ng-model='dateFrom' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder='From'>
+    <input class='date-picker__input' type='text' ng-model='dateTo' ui-date='filterDateOptions' ui-date-format='yy-mm-dd' placeholder='To'>
+
+    <button class="_primary" ng-click="update()">Update</button> &nbsp;&nbsp;&nbsp;&nbsp;
+
+  </div>
+  <hr>
+  <div class="xgrid">
+    <div class='xgrid-cell -default-50'>
+      <div ng-repeat="report in summaryReportA">
+        <table class="dsr-table table-horizontal _margin-right-1em">
+          <thead>
+            <tr>
+              <th colspan="{{report.schema.length}}" class="title">{{report.title}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th ng-repeat="col in report.schema">{{ col.name }}</th></tr>
+            <tr ng-repeat="data in report.data">
+              <td ng-repeat="col in report.schema">{{ applyFilter(data[col.key], col.filter) }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class='xgrid-cell -default-50'>
+      <div ng-repeat="report in summaryReportB">
+        <table class="dsr-table table-horizontal _margin-right-1em">
+          <thead>
+            <tr>
+              <th colspan="{{report.schema.length}}" class="title">{{report.title}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th ng-repeat="col in report.schema">{{ col.name }}</th></tr>
+            <tr ng-repeat="data in report.data">
+              <td ng-repeat="col in report.schema">{{ applyFilter(data[col.key], col.filter) }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div ng-repeat="report in summaryReportC">
+    <table class="dsr-table table-horizontal _margin-right-1em">
+      <thead>
+        <tr>
+          <th colspan="{{report.schema.length}}" class="title">{{report.title}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th ng-repeat="col in report.schema">{{ col.name }}</th></tr>
+        <tr ng-repeat="data in report.data">
+          <td ng-repeat="col in report.schema">{{ applyFilter(data[col.key], col.filter) }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div><!--End of Page -->

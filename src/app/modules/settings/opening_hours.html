@@ -1,0 +1,27 @@
+<p>Opening Hours</p>
+<div ng-repeat="weekday in weekdays">
+
+    <div class="xgrid">
+        <div class="xgrid-cell -default-50">
+            <span ng-bind="weekday.display"></span>
+        </div>
+        <div class="xgrid-cell -default-50">
+            <button class="_primary" ng-click="copyHours(weekday)">Copy to all days</button>
+        </div>
+    </div>
+    <div ng-repeat="hours in opening_hours[weekday.value] track by $index">
+        <div time-segment-row index="$index" has-title="false" hours="hours" collection="opening_hours[weekday.value]" weekday="weekday" class="_full"></div>
+    </div>
+    <a ng-click="addNewHours(weekday)" class="_button _add">Add New Hours</a>
+    <hr>
+</div>
+
+
+
+
+
+    <div class="_right">
+        <button class="_secondary" ng-click="deleteOpeningHours()">Delete</button>
+        <button class="_primary" ng-click="saveOpeningHours()">Save</button>
+    </div>
+<hr>

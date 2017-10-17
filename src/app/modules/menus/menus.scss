@@ -1,0 +1,165 @@
+.list-menus {
+  .menus-list {
+    &-menu, &-new-menu {
+      height: 30px;
+      background-color: white;
+      margin-top: 5px;
+      border-radius: 4px;
+      line-height: 30px;
+    }
+    &-menu {
+      position: relative;
+      color: $text-dark-brown;
+      padding: 0 10px;
+
+      ._actions {
+
+      }
+    }
+    &-new-menu {
+      width: 100%;
+      text-align: left;
+      color: $text-orange;
+      border: 1px solid $border-orange;
+    }
+  }
+
+  ._toggle {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+
+    width: 18px;
+    height: 18px;
+    border: 1px solid $orange;
+    border-radius: 9px;
+
+    i {
+      position: absolute;
+      color: $orange;
+      left: 3.5px;
+      top: 1px;
+    }
+  }
+  ._actions {
+    right: 6px;
+    top: 40px;
+    @include action-dropdown;
+  }
+
+  .menus-create {
+    @include modal-backdrop;
+
+    &-modal {
+      width: 350px;
+      height: 530px;
+      margin-left: -175px;
+      margin-top: -265px;
+    }
+    &-saving {
+      @include modal-backdrop;
+
+      ._saving-message {
+        @include modal-loading;
+      }
+    }
+  }
+}
+.view-menu {
+  .menu-list {
+    &-items {
+      padding-left: 20px;
+    }
+    &-section, &-item {
+      position: relative;
+
+      ._bar {
+        height: 30px;
+        background-color: white;
+        margin-top: 5px;
+        border-radius: 4px;
+        line-height: 30px;
+        padding: 0 10px;
+      }
+      ._name {
+        color: $text-dark-brown;
+        line-height: 30px;
+      }
+    }
+    &-new-section, &-new-item {
+      background-color: white;
+      width: 100%;
+      text-align: left;
+      margin-top: 5px;
+      color: $text-orange;
+      border: 1px solid $border-orange;
+    }
+
+    ._toggle {
+      position: absolute;
+      right: 15px;
+      top: 7px;
+
+      width: 18px;
+      height: 18px;
+      border: 1px solid $orange;
+      border-radius: 9px;
+
+      i {
+        position: absolute;
+        color: $orange;
+        left: 3.5px;
+        top: 1px;
+      }
+    }
+    ._actions {
+      right: 6px;
+      top: 40px;
+      @include action-dropdown;
+    }
+  }
+
+  .menu-section-create {
+    @include modal-backdrop;
+
+    &-modal {
+      width: 350px;
+      height: 250px;
+      margin-left: -175px;
+      margin-top: -125px;
+    }
+  }
+
+  .menu-item-create {
+    @include modal-backdrop;
+
+    &-modal {
+      width: 750px;
+      height: 480px;
+      margin-left: -375px;
+      margin-top: -240px;
+    }
+    .modal__content {
+      height: 645px;
+      overflow-y: hidden;
+    }
+    &-listings {
+      overflow-y: auto;
+      padding: 10px 0;
+
+      ._listing {
+        ._info, ._radio {
+          display: inline-block;
+          vertical-align: text-top;
+        }
+        ._info {
+          width: 90%;
+          margin-right: -4px;
+        }
+        ._radio {
+          width: 10%;
+        }
+      }
+    }
+  }
+}

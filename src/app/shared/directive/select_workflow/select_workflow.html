@@ -1,0 +1,27 @@
+<div>
+  <div class='ngdialog-header'>
+    Workflow
+  </div>
+  <div class="ngdialog-body">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Selected</th>
+        <th>Title</th>
+        <th>Workflow</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="workflow in workflows">
+        <td><input type="checkbox" ng-model="workflow.checked" ng-click="select(workflow)"></td>
+        <td>{{workflow.name}}</td>
+        <td>{{workflow.label}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class='ngdialog-footer _align-right'>
+    <button class="_primary" ng-click="updateWorkflow()">Save Workflow</button>
+  </div>
+</div>
+

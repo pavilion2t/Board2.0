@@ -1,0 +1,24 @@
+.login-layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  &-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-footer {
+    text-align: center;
+    color: #9a9998;
+    font-size: 14px;
+    padding-bottom: 1.5em;
+
+    p {
+      line-height: 1.5;
+      margin: 0
+    }
+  }
+}

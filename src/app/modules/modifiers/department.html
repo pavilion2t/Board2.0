@@ -1,0 +1,18 @@
+<div class='panel-section'>
+    <h3 translate>Departments</h3>
+
+    <div ng-repeat="departmentObject in modifierSet.departmentset track by $index">
+        <div class="xgrid">
+            <div class="xgrid-cell -default-80">
+                <select  class='_full' ng-model='departmentObject' ng-disabled='!editMode' ng-options="item as item.stackdisplay for item in departmentsSorted track by item.id" ng-change="changeDepartment(departmentObject,$index)">
+                    <option value=''>NONE</option>
+                </select>
+            </div>
+            <div class="xgrid-cell -default-20">
+                <button ng-if="editMode" class="_remove _remove-mini" ng-click="deleteDepartment($index)">Delete</button>
+            </div>
+        </div>
+    </div>
+    <a ng-if="editMode" ng-click="addDepartment()" class="_button _add" translate>Add Department</a>
+</div>
+

@@ -1,0 +1,9 @@
+<h2>Adjust Credit</h2>
+<label for="">Amount (can be less then zero)</label>
+<input type="number" ng-model="adjust.amount" class="_full">
+<label for="">Note</label>
+<textarea cols="30" rows="10" ng-model="adjust.note"></textarea>
+<p class="_align-right">
+  <button class="_secondary" ng-click="closeThisDialog(null)">{{"Cancel"|translate}}</button>
+  <button class="_primary" ng-click="closeThisDialog(adjust)">{{"adjust"|translate}}</button>
+</p>

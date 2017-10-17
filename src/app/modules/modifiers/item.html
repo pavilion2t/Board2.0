@@ -1,0 +1,94 @@
+<div class='panel-section'>
+    <h3 translate>Items</h3>
+    <span>Applies to {{modifierSet.product_ids.length}} item(s)</span>
+
+<!--
+    <div class="xgrid" ng-if="editMode">
+        <div class="xgrid-cell -default-30">
+            <div class='_full input-box'>
+                <p class='input-box__title' translate>Name</p>
+                <input name="ID" class='input-box__input' type='text' ng-model='modifierSet.searchItemName' ng-readonly='!editMode'>
+            </div>
+        </div>
+        <div class="xgrid-cell -default-30">
+            <div class='_full input-box'>
+                <p class='input-box__title' translate>Product ID</p>
+                <input name="ID" class='input-box__input' type='text' ng-model='modifierSet.searchItemId' ng-readonly='!editMode'>
+            </div>
+        </div>
+        <div class="xgrid-cell -default-30">
+            <p class="input-box__title" >&nbsp;</p>
+            <button class="_primary" ng-click="searchItem()">Search</button>
+        </div>
+    </div>-->
+
+    <add-listings on-close="addItems2" ng-show="editMode" single-select="true"></add-listings>
+
+  <!--
+    <table class="editable-grid" ng-class="{_edit: editMode}" ng-if="selectableListings.length > 0 && editMode">
+        <thead class="editable-grid__head">
+            <tr>
+                <th class="editable-grid__cell editable-grid__head-cell" style="width: 30%;">Item</th>
+                <th class="editable-grid__cell editable-grid__head-cell" style="width: 30%;">Product ID</th>
+                <th class="editable-grid__cell editable-grid__head-cell" style="width: 30%;">Select</th>
+            </tr>
+        </thead>
+        <tr ng-repeat="listing in selectableListings">
+            <td class="editable-grid__cell" ng-bind="listing.name"></td>
+            <td class="editable-grid__cell" ng-bind="listing.product_id"></td>
+            <td class="editable-grid__cell">
+                <button class="_primary" ng-if="!listing.selected" ng-click="toggleItem(listing)">Add</button>
+                <button class="_primary" ng-if="listing.selected" ng-click="toggleItem(listing)">Remove</button>
+            </td>
+        </tr>
+
+    </table>
+    <hr>
+  <!--
+    <div>Product ID:</div>
+    <span ng-repeat="product in modifierSet.product_ids">{{product}}
+        <br>
+    </span>
+-->
+
+
+  <div class="xgrid" ng-if="modifierSet._product.length > 0">
+
+    <table class="editable-grid _edit receive_order_table" ng-class="{_edit: editMode}">
+      <thead class="editable-grid__head">
+      <tr>
+
+        <th class="editable-grid__cell editable-grid__head-cell" style="width: 40%;" translate>Name</th>
+        <th class="editable-grid__cell editable-grid__head-cell" style="width: 40%;" translate>Category</th>
+
+        <th class="editable-grid__cell editable-grid__head-cell" style="width: 20%;" translate>Product ID</th>
+
+
+        <th class="editable-grid__cell editable-grid__head-cell -icon-cell">&nbsp;</th>
+      </tr>
+      </thead>
+      <tbody class="editable-grid__body">
+
+      <tr ng-repeat="product in modifierSet._product track by $index">
+        <td class="editable-grid__cell">
+          <img style="width:50px" class="item__image" ng-if="product.image_url" src="{{product.image_url}}">
+          <img style="width:50px" class="item__image" ng-if="!product.image_url" src="assets/images/inventory_placeholder.png">
+          <span style="vertical-align: top;" ng-bind="product.name"></span>
+        </td>
+        <td class="editable-grid__cell">
+          <span ng-bind="product.category_name"></span>
+        </td>
+        <td class="editable-grid__cell">
+          <span ng-bind="product.product_id"></span>
+        </td>
+        <td class="editable-grid__cell">
+          <button class="_remove _remove-mini" ng-show="editMode" ng-click="removeProductTab(product,$index)"></button>
+        </td>
+
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+

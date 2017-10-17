@@ -1,0 +1,60 @@
+<div class="card">
+    <div id="google-map" map-lazy-load="https://maps.google.com/maps/api/js" class="device-map-wrapper">
+        <map zoom="11" center="{{mapCenter}}"  zoom-to-include-markers="auto" style="height:500px">
+            <marker id="store" ng-repeat="(key, value) in deviceStore" position="{{value.position}}" title="{{value.title}}" on-click="storeSelected(event,value)"></marker>
+            <marker ng-repeat="(key, value) in devicePosition" icon="assets/images/markers/number_{{value.markerindex}}.png" position="{{value.position}}" title="{{value.title}}" on-click="deviceSelected(event,value)" ></marker>
+        </map>
+    </div>
+    <div class="_margin-2em-0 _clearfix">
+        <div class="_left">
+            <label for="checkbox-whitelist-enabled"><b translate>
+                <div class="input-checkbox">
+                    <input type="checkbox" ng-model="store.device_whitelist_enabled" id="checkbox-whitelist-enabled" ng-change="changeStoreSetting()">
+                    <label for="checkbox-whitelist-enabled"></label>
+                </div>
+                <b>Store Whitelist Enabled</b>
+            </label>
+        </div>
+        <div class="_right" ng-show="store.device_whitelist_enabled">
+            <b translate>Device Whitelist</b>
+            <button class="_secondary ng-binding" ng-click="changeWhiteListAll()">Check All</button>
+            <button class="_secondary ng-binding" ng-click="changeWhiteListNone()">Check None</button>
+        </div>
+
+    </div>
+
+    <table class="listing-table" ng-class="store.device_whitelist_enabled ? '': 'device-faded' ">
+        <thead>
+        <tr>
+            <th class="_select">Index</th>
+            <th class="_select">ID for Vendor</th>
+            <th class="_select">Name</th>
+            <th class="_item">Model</th>
+            <th class="">App Ver.</th>
+            <th class="">App Type</th>
+            <th class="">Whitelist</th>
+            <th class="">View</th>
+            <th class="">Delete</th>
+        </tr>
+        </thead>
+        <tr ng-repeat="device in devices">
+            <td ng-bind="device.index"></td>
+            <td ng-bind="device.identifier_for_vendor"></td>
+            <td ng-bind="device.device_name|decode"></td>
+            <td ng-bind="device.device_model"></td>
+            <td ng-bind="device.app_version"></td>
+            <td ng-bind="device.app_type"></td>
+            <td class="_text-center"><div class="input-checkbox"><input type="checkbox" ng-model="device.whitelist" id="check_{{device.id}}" ng-change="changeWhiteList(device)"><label for="check_{{device.id}}"></label></div></td>
+            <td><button class="_secondary ng-binding" ng-click="editDevice(device)">View</button></td>
+            <td><button class="_secondary ng-binding" ng-click="deleteDevice(device)">Delete</button></td>
+        </tr>
+    </table>
+
+    <div class='content-bottom'>
+      <h2>{{'Event & Devices'|translate}}</h2>
+
+      <div class='content-bottom-actions'>
+        <button class="_new ng-binding" ng-click="newDevice()" ng-show="store.device_whitelist_enabled">New Device</button>
+      </div>
+    </div>
+</div>

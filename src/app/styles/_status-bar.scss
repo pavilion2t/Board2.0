@@ -1,0 +1,59 @@
+
+
+// TODO: refactor to align with variables.scss
+$status-cancelled: #aaa;
+$status-paid: #8cd678;
+$status-active: rgb(255,201,30);
+$status-draft: #49bbeb;
+$status-overdued: #ff5d5d;
+$status-expired: #bb80ef;
+$status-partially_paid: rgb(255,180,39);
+$status-unpaid: #ff9530;
+$status-partially_fulfilled: rgb(73,187,235);
+$status-approved: rgb(255,149,48);
+
+
+// <div class="status-bar" ng-class=" '-'+stockTransfer.state ">
+// </div>
+
+
+.status-bar {
+  
+  height: 4px; 
+  position: relative;
+  
+}
+
+.status-bar,  .status-bar__label{
+
+  &.-cancelled ,&.-canceled{
+      background-color:$status-cancelled;
+  }
+  &.-paid ,&.-fulfilled{
+      background-color:$status-paid;
+  }
+  &.-active ,&.-created ,&.-pending ,&.-unfulfilled{
+      background-color:$status-active;
+  }
+  &.-draft{
+      background-color:$status-draft;
+  }
+  &.-overdued{
+      background-color:$status-overdued;
+  }
+  &.-expired{
+      background-color:$status-expired;
+  }
+  &.-partially_paid ,&.-submitted{
+      background-color:$status-partially_paid;
+  }
+  &.-unpaid{
+      background-color:$status-unpaid;
+  }
+  &.-partially_fulfilled ,&.-in_transit, &.-partially_received{
+      background-color: $status-partially_fulfilled;
+  }
+  &.-approved{
+      background-color: $status-approved;
+  }
+}

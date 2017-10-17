@@ -1,0 +1,136 @@
+
+._margin-0 {
+  margin: 0 !important;
+}
+._margin-2em {
+  margin: 2em !important;
+}
+._margin-2em-0 {
+  margin: 2em 0 !important;
+}
+._margin-top-0 {
+  margin-top: 0 !important;
+}
+._margin-right-1em {
+  margin-right: 1em !important;
+}
+._padding-0 {
+  padding: 0 !important;
+}
+
+._padding-1 {
+  padding: 1px !important;
+}
+
+._size-60 {
+  width: 60px;
+  height: 60px
+}
+._clear {
+    clear: both
+}
+._clearfix {
+  @include clearfix
+}
+
+._visibility-hidden {
+  visibility: hidden !important;
+}
+._nowrap {
+  white-space: nowrap !important;
+}
+._full-width {
+  width: 100%;
+}
+._90-width{
+  width: 90%;
+}
+._text-center {
+  text-align: center !important;
+}
+._capitalize {
+  text-transform: capitalize;
+}
+
+._left {
+  float: left;
+}
+._right {
+  float: right;
+}
+._clear {
+  clear: both;
+}
+._clearfix {
+  &:before,
+  &:after {
+     display:table;
+     line-height:0;
+     content:"";
+  }
+  &:after {
+     clear:both;
+  }
+}
+._bold {
+  font-weight: bold;
+}
+._full {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+._half {
+  width: 50% !important;
+  max-width: 50% !important;
+  box-sizing: border-box;
+}
+
+._unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+._move {
+  cursor: move;
+}
+
+._align-right {
+  text-align: right;
+}
+
+._align-center {
+  text-align: center;
+}
+
+._hidden {
+  visibility: hidden;
+  display: none;
+  width: 0;
+  height: 0;
+}
+._fade {
+  opacity: 0.3;
+}
+._inline_flex{
+  display: inline-flex;
+}
+._message {
+  margin-bottom: 10px;
+  background-color: rgb(158,186,204);
+  border-radius: 2px;
+  padding: 0.7em;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  line-height: 24px;
+}
+
+.text-note {
+  color: #999;
+}
+
+form.form-inline{
+  display: inline-block;
+}
+

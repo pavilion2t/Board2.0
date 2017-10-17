@@ -1,0 +1,129 @@
+<div ng-show="iframeActive" class="settings-shift-xgrid">
+  <h2>Page Settings</h2>
+  <p class="iframe-desc" translate>Customize your Storefront page to fit the look and feel of your website by choosing from the options below. Then simply copy the embed code and add it to your webpage.</p>
+
+  <div class="xgrid">
+    <div class="xgrid-cell -default-15">
+      <h4 class="_margin-0">{{'Colors'|translate}}</h4>
+    </div>
+    <div class="xgrid-cell -default-85">
+      <div class="xgrid">
+        <div class="xgrid-cell -33">
+          <label class=" control-label" for="C1">{{'Highlight color'|translate}}</label>
+          <div class="">
+            <input class="form-control" type="text" minicolors ng-model="iframe_page.highlight_color">
+          </div>
+        </div>
+        <div class="xgrid-cell -33">
+          <label class=" control-label" for="C1">{{'Button background color'|translate}}</label>
+          <div class="">
+            <input class="form-control" type="text" minicolors ng-model="iframe_page.btn_color">
+          </div>
+
+        </div>
+        <div class="xgrid-cell -33">
+          <label class=" control-label" for="C1">Button text color</label>
+          <div class="">
+            <input class="form-control" type="text" minicolors ng-model="iframe_page.btn_text_color">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="xgrid">
+    <div class="xgrid-cell -default-15">
+      <h4 class="_margin-0">{{'Header'|translate}} &amp; {{'Departments'|translate}}</h4>
+    </div>
+    <div class="xgrid-cell -default-85">
+      <label>
+          <input type='checkbox' class='iframe-checkbox' ng-model="iframe_page.multi_section_layout" ng-change="checkSections(iframe_page.iframe_page_sections)">
+          {{'Enable multi-section layout'|translate}}
+      </label>
+      <div ng-repeat="(key, iframe_page_section) in iframe_page.iframe_page_sections track by $index" class="card" ng-hide="iframe_page_section.delete">
+        <p>
+          <label>{{'Header'|translate}}</label>
+          <input type="text" ng-model="iframe_page_section.header" ng-change="printSections(iframe_page.iframe_page_sections)">
+        </p>
+
+        <p>
+          <label>{{'Product departments'|translate}} ({{'leave blank to show all products'|translate}})</label>
+          <ui-select multiple ng-model="iframe_page_section.department_ids" theme="select2" class="form-control" style="width:330px;">
+            <ui-select-match placeholder="Select departments...">{{$select.selected[$index].name}}</ui-select-match>
+            <ui-select-choices repeat="department.id as department in departments | filter: $select.search">
+              {{department.name}}
+            </ui-select-choices>
+          </ui-select>
+        </p>
+        <p ng-if="iframe_page.multi_section_layout">
+          <label>{{'Maximum # of products to show'|translate}} ({{'default'|translate}}: 20)</label>
+          <input type="number"
+                 ng-model="iframe_page_section.max_item_limit"
+                 min=0
+                 name="max_item_limit">
+        </p>
+
+        <button class="_remove" ng-click="removeSection(iframe_page.iframe_page_sections, iframe_page_section)" ng-show="key > 0">{{'Remove section'|translate}}</button>
+
+      </div>
+
+      <div>
+
+
+        <button class="_button _add" ng-click="addSection(iframe_page.iframe_page_sections)" ng-if="iframe_page.multi_section_layout">
+          {{'Add section'|translate}}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="xgrid">
+    <div class="xgrid-cell -default-15">
+      <h4 class="_margin-0" translate>Product Image Size</h4>
+    </div>
+    <div class="xgrid-cell -default-85">
+      <p>
+        <select name="" id="" ng-model="iframe_page.image_size">
+          <option value="">{{'Select Image Size...'|translate}}</option>
+          <option value="small">{{'Small'|translate}}</option>
+          <option value="medium">{{'Medium (default)'|translate}}</option>
+          <option value="large">{{'Large'|translate}}</option>
+        </select>
+      </p>
+    </div>
+  </div>
+
+
+  <hr>
+  <div class="xgrid">
+    <div class="xgrid-cell -default-15">
+      <h4 class="_margin-0">{{'Embed Code'|translate}}</h4>
+    </div>
+    <div class="xgrid-cell -default-85">
+      <code class="code-block" ng-if="iframePageId">
+        <span>{{code(iframePageId)}}</span>
+      </code>
+      <p ng-if="!iframePageId">
+        {{'Click save to see Embed Code and preview your Storefront page'|translate}}
+      </p>
+
+      <button class="_secondary" ng-click="goToIndex()">{{'Cancel'|translate}}</button>
+      <button class="_primary" ng-click="saveIframePage(iframe_page)">{{'Save'|translate}}</button>
+      <a ng-click="showPreview()" ng-if="iframePageId">
+        <b>{{'Preview Storefront'|translate}}</b>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="xgrid">
+    <div class="preview-box" ng-if="previewIframe">
+      <button class="preview-box__close" ng-click="closePreview()">{{'Close preview'|translate}}</button>
+      <div ng-bind-html="code(iframePageId)"></div>
+    </div>
+  </div>
+
+  <hr>
+
+  <p class="_align-right"><button ng-click="deleteIframePage(iframe_page.id)" class="btn-link-danger">delete this page</button></p>
+
+</div>

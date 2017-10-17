@@ -1,0 +1,61 @@
+/* Do not remove the comments below. It's the markers used by wiredep to inject
+   sass dependencies when defined in the bower.json of your dependencies */
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+@import "./styles/variables";
+@import "./styles/mixins";
+@import "./styles/modal";
+@import "./styles/base";
+@import "./styles/input";
+@import "./styles/grid";
+@import "./styles/helper";
+@import "./styles/ui-";
+@import "./styles/layout";
+@import "./styles/form-block";
+@import "./styles/include";
+@import "./styles/component";
+@import "./styles/status-bar";
+@import "./styles/third-party";
+
+@import "shared/edit/add_listing";
+@import "shared/grid/grid";
+@import "shared/grid/editable-grid";
+@import "shared/directive/add_listings/add_listings";
+@import "shared/directive/add_po/add_po";
+@import "shared/directive/header/header";
+@import "shared/directive/header/store-selector/header-store-selector";
+@import "shared/directive/header/profile/header-profile";
+@import "shared/directive/menu/menu";
+@import "shared/directive/select_department/select_department";
+@import "shared/directive/select_listings/select_listings";
+@import "shared/external_sources/external_sources";
+@import "shared/directive/message/message";
+
+@import "modules/login/login";
+@import "modules/welcome/welcome";
+@import "modules/departments/departments";
+@import "modules/summary/summary";
+@import "modules/inventory/inventory";
+@import "modules/item_master/itemMaster";
+@import "modules/sales/sale";
+@import "modules/purchase_orders/purchase_order";
+@import "modules/settings/settings";
+@import "modules/modifiers/modifiers";
+@import "modules/stock_transfers/stock_transfers";
+@import "modules/line_items/line_items";
+@import "modules/reports/reports";
+@import "modules/menus/menus";
+@import "modules/event_devices/event_devices";
+
+/* Do not remove the comments below. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+// injector
+// endinjector

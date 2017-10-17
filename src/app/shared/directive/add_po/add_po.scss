@@ -1,0 +1,15 @@
+.ngdialog.new-grn-from-po {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  .ngdialog-content {
+    position: relative;
+    height: 90%;
+    margin-left: 6%;
+    margin-right: 6%;
+    left: inherit;
+    overflow: scroll;
+    width: 90%;
+  }
+}

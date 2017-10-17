@@ -1,0 +1,39 @@
+<div class='bar__store-selector'>
+  <!-- SINGLE STORE MODE -->
+  <div class='store-selector__current' ng-click='startUpdatingCurrentStore()' ng-if='currentStores.length <= 1'>
+    <img class='current__image' ng-src='{{currentStores[0].logo_url}}' placeholder-src="store">
+    <div class='current__details'>
+      <p class='details__title'>{{currentStores[0].title}}</p>
+      <p class='details__address' ng-if='currentStores[0]._children'>
+        Chain with {{currentStores[0]._children.length}} Stores
+      </p>
+      <p class='details__address' ng-if='!currentStores[0]._children'>{{currentStores[0].address1}} <span class='details__associate' ng-if="currentStores[0].associate_type!=='MANAGER'">( {{currentStores[0].associate_type|titleCase}} )</span></p>
+    </div>
+    <div class='current__selector'>
+      <div class="selector__toggle"><i class="fa fa-angle-down actions-arrow"></i></div>
+    </div>
+  </div>
+  <div class='store-selector__current' ng-click='startUpdatingCurrentStore()' ng-if='currentStores.length > 1'>
+    <img class='current__image' src='assets/images/store_placeholder.png' placeholder-src="store">
+    <div class='current__details'>
+      <p class='details__title'>{{currentStores.length}} Stores/Chains Selected</p>
+    </div>
+    <div class='current__selector'>
+      <div class="selector__toggle"><i class="fa fa-angle-down actions-arrow"></i></div>
+    </div>
+  </div>
+
+  <div class='store-selector__dropdown' ng-show='$root.isSelectingStores'>
+    <div class='dropdown__stores'>
+      <div ng-repeat="store in stores | orderBy: 'title'">
+        <header-store-selector-item store="store"></header-store-selector-item>
+      </div>
+    </div>
+    <div class='dropdown__options'>
+      <button class='_select' ng-click='deselectAllStores()'>Deselect All</button>
+      <button class='_select' ng-click='selectAllStores()'>Select All</button>
+      <button class='_apply' ng-if='selectError' style='color: red'>{{selectError}}</button>
+      <button class='_apply' ng-if='!selectError' ng-click='updateCurrentStore($root.updatedStore)'>Apply</button>
+    </div>
+  </div>
+</div>

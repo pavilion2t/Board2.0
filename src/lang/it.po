@@ -1,0 +1,2092 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app/modules/modifiers/modifiersController.js:29
+msgid "# of Items"
+msgstr "# di Prodotti"
+
+#: app/modules/modifiers/view_modifier.html:52
+msgid "* Price must greater then 0"
+msgstr "* Prezzo deve maggiore quindi 0"
+
+#: app/modules/modifiers/view_modifier.html:77
+msgid "* Price must lesser then 0"
+msgstr "* Prezzo deve quindi minore di 0"
+
+#: app/modules/time_clock/timeClockController.js:18
+#: app/modules/time_clock/timeClockController.js:57
+msgid "API"
+msgstr "API"
+
+#: app/modules/settings/iframe.html:11
+msgid "Access Requested"
+msgstr "Accesso Richiesto"
+
+#: app/modules/purchase_orders/purchase_order_form.html:18
+#: app/modules/suppliers/view_supplier.html:26
+msgid "Account Number"
+msgstr "Numero di Conto"
+
+#: app/modules/bank_accounts/bankAccountsController.js:8
+msgid "Account Type"
+msgstr "Tipologia di Conto"
+
+#: app/modules/settings/iframe.html:7
+msgid "Activate Your Storefront"
+msgstr "Attiva la Tua Vetrina"
+
+#: app/shared/grid/grid-filter.html:47
+msgid "Add Filter"
+msgstr "Aggiungi Filtro"
+
+#: app/modules/inventory/new_inventory.html:44
+msgid "Add Image"
+msgstr "Aggiungi Immagine"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:36
+#: app/modules/stock_transfers/view_stock_transfer.html:39
+msgid "Add Items"
+msgstr "Aggiungi Prodotti"
+
+#: app/modules/modifiers/list_modifiers.html:12
+msgid "Add Modifiers To Items"
+msgstr "Aggiungi Modifiche ai Prodotti"
+
+#: app/modules/invoices/new_invoice.html:30
+#: app/modules/purchase_orders/purchase_order_form.html:80
+msgid "Add New Items"
+msgstr "Aggiungi Nuovi Prodotti"
+
+#: app/modules/modifiers/new_modifier.html:17
+#: app/modules/modifiers/new_modifier.html:26
+#: app/modules/modifiers/new_modifier.html:50
+#: app/modules/modifiers/new_modifier.html:71
+#: app/modules/modifiers/new_modifier.html:78
+#: app/modules/modifiers/view_modifier.html:19
+#: app/modules/modifiers/view_modifier.html:30
+#: app/modules/modifiers/view_modifier.html:59
+#: app/modules/modifiers/view_modifier.html:67
+#: app/modules/modifiers/view_modifier.html:84
+#: app/modules/modifiers/view_modifier.html:92
+msgid "Add To Price"
+msgstr "Aggiungi al Prezzo"
+
+#: app/modules/settings/line_item_status_index.html:10
+msgid "Add new status"
+msgstr "Aggiungi nuovo stato"
+
+#: app/modules/settings/iframe_new.html:73
+msgid "Add section"
+msgstr "Aggiungi al Prezzo"
+
+#: app/modules/settings/iframe_index.html:32
+msgid ""
+"Add your first Storefront page! Customize as many online store pages as you "
+"like, and simply add the embed codes to your website."
+msgstr ""
+"Aggiungere la prima pagina di Storefront! Personalizzare molti negozio on-"
+"line pagine come ti piace e semplicemente aggiungere i codici embed al tuo "
+"sito Web."
+
+#: app/modules/modifiers/new_modifier.html:43
+#: app/modules/modifiers/view_modifier.html:50
+msgid "Add-on Options"
+msgstr "Opzioni Aggiuntive"
+
+#: app/modules/settings/iframe_setting.html:10
+msgid "Addition Languages other then English"
+msgstr "Aggiunta altri inglese quindi lingue"
+
+#: app/modules/settings/iframe_index.html:8
+msgid "Additional Languages"
+msgstr "Lingue aggiuntive"
+
+#: app/modules/customers/customersController.js:59
+#: app/modules/customers/customersController.js:99
+#: app/modules/purchase_orders/purchase_order_form.html:22
+#: app/modules/suppliers/suppliersController.js:14
+#: app/modules/suppliers/suppliersController.js:21
+#: app/modules/suppliers/view_supplier.html:19
+msgid "Address"
+msgstr "Indirizzo"
+
+#: app/modules/settings/iframe_index.html:22
+msgid "Align"
+msgstr "Allinea"
+
+#: app/shared/grid/grid-row-count.html:9
+msgid "All"
+msgstr "Tutto"
+
+#: app/modules/summary/summary.html:150
+msgid "All Stores"
+msgstr "Tutti i Negozi"
+
+#: app/modules/modifiers/new_modifier.html:66
+#: app/modules/modifiers/view_modifier.html:76
+msgid "Allows you to deselect unwanted options"
+msgstr "Ti permette di deselezionare le optioni indesiderate"
+
+#: app/modules/modifiers/new_modifier.html:44
+#: app/modules/modifiers/view_modifier.html:51
+msgid "Allows you to select multiple add-ons to the item"
+msgstr "Ti permette di aggiungere più componenti all’articolo"
+
+#: app/modules/inventory/view_inventory.html:134
+#: app/modules/modifiers/new_modifier.html:11
+#: app/modules/modifiers/view_modifier.html:12
+msgid "Allows you to select one option for each Single Choice Modifier"
+msgstr ""
+"Ti permette di selezionare un’opzione per ogni Modificatore Scelta Singola"
+
+#: app/modules/invoices/invoicesQuotesController.js:40
+#: app/modules/invoices/invoicesQuotesController.js:79
+msgid "Amount"
+msgstr "Importo"
+
+#: app/modules/discounts/new_discount.html:12
+#: app/modules/discounts/view_discount.html:14
+msgid "Amount Off"
+msgstr "Fuori Importo"
+
+#: app/modules/welcome/modals/modal_2.html:65
+msgid "Apartment / Suite"
+msgstr "Appartamento / Stanza"
+
+#: app/modules/time_clock/timeClockController.js:12
+#: app/modules/time_clock/timeClockController.js:51
+msgid "Associate"
+msgstr "Associato"
+
+#: app/modules/inventory/new_inventory.html:7
+#: app/modules/inventory/new_inventory.html:75
+#: app/modules/inventory/view_inventory.html:109
+msgid "Attributes"
+msgstr "Attributi"
+
+#: app/modules/discounts/discountsController.js:72
+msgid "Auto Apply Discount"
+msgstr "Applica Sconto Automatica"
+
+#: app/modules/discounts/new_discount.html:30
+#: app/modules/discounts/view_discount.html:31
+msgid "Automatically Apply Discount"
+msgstr "Applica sconto automaticamente"
+
+#: app/modules/summary/summary.html:63
+msgid "Average Sale"
+msgstr "Vendita Media"
+
+#: app/modules/welcome/modals/modal_4.html:39
+msgid "Average Sales Amount"
+msgstr "Importo Vendite Medio"
+
+#: app/modules/purchase_orders/purchase_order_form.html:57
+msgid "Bank transfer"
+msgstr "Bonifico bancario"
+
+#: app/modules/invoices/new_invoice.html:11
+#: app/modules/invoices/view_invoice.html:11
+msgid "Bill To"
+msgstr "Fatturare a"
+
+#: app/modules/invoices/invoicesQuotesController.js:36
+msgid "Bill to"
+msgstr "Fatturare a"
+
+#: app/modules/customers/customersController.js:81
+#: app/modules/customers/view_customer.html:41
+msgid "Billing Address"
+msgstr "Indirizzo di Fatturazione"
+
+#: app/modules/time_clock/timeClockController.js:15
+#: app/modules/time_clock/timeClockController.js:54
+msgid "Bindo Account Manager"
+msgstr "Bindo Account Manager"
+
+#: app/modules/time_clock/timeClockController.js:13
+#: app/modules/time_clock/timeClockController.js:52
+msgid "Bindo Sales Associate"
+msgstr "Bindo Sales Associate"
+
+#: app/modules/time_clock/timeClockController.js:14
+#: app/modules/time_clock/timeClockController.js:53
+msgid "Bindo Sales Manager"
+msgstr "Bindo Sales Manager"
+
+#: app/modules/settings/iframe.html:8
+msgid ""
+"Bindo Storefront is the easiest way to sell online through your existing "
+"website. After requesting access to the Storefront Builder, you can "
+"instantly create online store pages that automatically sync with your Bindo "
+"POS inventory."
+msgstr ""
+"La vetrina di Bindo è il modo più semplice per vendere online attraverso il "
+"tuo sito web. Dopo aver richiesto l’accesso al Costruttore Vetrina, puoi "
+"creare in modo istantaneo pagine del tuo negozio online che saranno "
+"sincronizzate automaticamente con il tuo inventario Bindo POS"
+
+#: app/modules/welcome/modals/modal_4.html:55
+msgid ""
+"Bindo supports 99% of merchant processors. Help us connect you to the right "
+"processor."
+msgstr ""
+"Bindo supporta il 99% dei processori commerciali. Aiutaci a connetterti con "
+"il processore giusto."
+
+#: app/modules/customers/customersController.js:36
+msgid "Birthday (MM-DD)"
+msgstr "Compleanno (MM-GG)"
+
+#: app/modules/inventory/new_inventory.html:19
+#: app/modules/inventory/view_inventory.html:22
+msgid "Brand"
+msgstr "Marchio"
+
+#: app/modules/settings/iframe_index.html:37
+msgid "Btn color"
+msgstr "Colore di BTN"
+
+#: app/modules/settings/iframe_index.html:38
+msgid "Btn text color"
+msgstr "Seleziona Allineamento Testo…"
+
+#: app/modules/welcome/modals/modal_3.html:32
+msgid "Business Type"
+msgstr "Tipo di Attività"
+
+#: app/modules/settings/iframe_new.html:18
+msgid "Button background color"
+msgstr "Mostra Bottone di Aggiunta Rapida"
+
+#: app/modules/sales/salesController.js:25
+msgid "Buyer"
+msgstr "Responsabile Acquisti"
+
+#: app/modules/welcome/modals/modal_3.html:62
+msgid ""
+"By answering these questions, you can customize your POS and dashboard the "
+"way you need it. No more, no less."
+msgstr ""
+"Rispondendo a queste domande puoi personalizzare il tuo POS e il pannello di "
+"controllo nel modo che preferisci. Niente di più, niente di meno."
+
+#: app/modules/welcome/modals/modal_5.html:47
+msgid ""
+"By filling out this info, you'll be able to automate your tax calculations, "
+"saving you a lot of time."
+msgstr ""
+"Riempendo queste informazioni, sarai in grado di automatizzare il calcolo "
+"delle tasse, risparmiando molto tempo."
+
+#: app/modules/activating/activating.html:43
+#: app/modules/welcome/modals/modal_7.html:41
+msgid "Can't wait? Call"
+msgstr "Non puoi aspettare? Chiama"
+
+#: app/modules/activating/activating.html:38
+#: app/modules/departments/list_departments.html:26
+#: app/modules/departments/listed-department.html:29
+#: app/modules/inventory/new_inventory.html:92
+#: app/modules/invoices/view_invoice.html:51
+#: app/modules/menus/list_menus.html:47
+#: app/modules/menus/list_menus.html:77
+#: app/modules/menus/view_menu.html:107
+#: app/modules/menus/view_menu.html:143
+#: app/modules/menus/view_menu.html:54
+#: app/modules/menus/view_menu.html:71
+#: app/modules/purchase_orders/fulfill.html:4
+#: app/modules/purchase_orders/view_purchase_order.html:21
+#: app/modules/settings/iframe_new.html:109
+#: app/modules/stock_transfers/view_stock_transfer.html:116
+#: app/modules/stock_transfers/view_stock_transfer.html:63
+#: app/modules/stock_transfers/view_stock_transfer.html:81
+#: app/modules/stock_transfers/view_stock_transfer.html:99
+#: app/modules/welcome/modals/modal_7.html:36
+#: app/modules/login/views/recover-password.html:17
+#: app/shared/edit/add_listings.html:60 app/shared/grid/grid-filter.html:83
+msgid "Cancel"
+msgstr "Cancella"
+
+#: app/modules/gift_cards/giftCardsController.js:13
+#: app/modules/gift_cards/giftCardsController.js:25
+msgid "Card Number"
+msgstr "Numero di Carta"
+
+#: app/modules/purchase_orders/purchase_order_form.html:58
+msgid "Cash"
+msgstr "Contanti"
+
+#: app/modules/inventory/inventoryController.js:94
+msgid "Category"
+msgstr "Categoria"
+
+#: app/modules/menus/view_menu.html:21
+msgid "Change Product"
+msgstr "Cambia in prodotto"
+
+#: app/modules/menus/view_menu.html:117
+msgid "Change Product of Menu Item"
+msgstr "Prodotto del cambiamento di voce di Menu"
+
+#: app/modules/purchase_orders/purchase_order_form.html:59
+msgid "Check"
+msgstr "Verifica"
+
+#: app/modules/discounts/new_discount.html:23
+#: app/modules/discounts/view_discount.html:24
+msgid "Check this if this is a store coupon or discount."
+msgstr "Spuntalo se è un buono o uno sconto del negozio"
+
+#: app/modules/discounts/new_discount.html:10
+#: app/modules/discounts/view_discount.html:12
+msgid "Choose Discount Type..."
+msgstr "Scegli il Tipo di Sconto…"
+
+#: app/modules/customers/new_customer.html:19
+#: app/modules/customers/view_customer.html:29
+msgid "Choose Gender..."
+msgstr "Scegli il Genere…"
+
+#: app/modules/inventory/new_inventory.html:52
+msgid "Choose a Supplier..."
+msgstr "Scegli il Fornitore…"
+
+#: app/modules/welcome/modals/modal_2.html:69
+msgid "City"
+msgstr "Città"
+
+#: app/modules/settings/iframe_new.html:106
+msgid "Click save to see Embed Code and preview your Storefront page"
+msgstr ""
+"Fare clic su Salva per visualizzare codice Embed e visualizzare in anteprima "
+"la pagina Storefront"
+
+#: app/modules/settings/iframe_new.html:120
+msgid "Close preview"
+msgstr "Chiudi anteprima"
+
+#: app/modules/inventory/new_inventory.html:14
+#: app/modules/inventory/view_inventory.html:17
+msgid "Code"
+msgstr "Codice"
+
+#: app/modules/settings/iframe_new.html:7
+msgid "Colors"
+msgstr "Colori"
+
+#: app/modules/inventory/new_inventory.html:70
+#: app/modules/inventory/new_inventory.html:76
+msgid "Coming soon..."
+msgstr "Prossimamente…"
+
+#: app/modules/welcome/modals/modal_1.html:15
+#: app/modules/welcome/modals/modal_2.html:15
+msgid "Configure Your Store"
+msgstr "Configura il Tuo Negozio"
+
+#: app/modules/purchase_orders/purchase_order_form.html:23
+#: app/modules/suppliers/suppliersController.js:15
+#: app/modules/suppliers/suppliersController.js:22
+#: app/modules/suppliers/view_supplier.html:21
+msgid "Contact"
+msgstr "Contatto"
+
+#: app/modules/purchase_orders/purchase_order_form.html:25
+#: app/modules/suppliers/view_supplier.html:25
+msgid "Contact Email"
+msgstr "Email Contatto"
+
+#: app/modules/purchase_orders/purchase_order_form.html:24
+#: app/modules/suppliers/view_supplier.html:22
+msgid "Contact Phone"
+msgstr "Contatto telefonico"
+
+#: app/shared/grid/grid-filter.html:13
+msgid "Contains"
+msgstr "Contiene"
+
+#: app/modules/welcome/modals/modal_1.html:56
+#: app/modules/welcome/modals/modal_2.html:86
+#: app/modules/welcome/modals/modal_3.html:68
+#: app/modules/welcome/modals/modal_4.html:61
+#: app/modules/welcome/modals/modal_5.html:53
+#: app/modules/welcome/modals/modal_6.html:66
+msgid "Continue"
+msgstr "Continua"
+
+#: app/modules/inventory/inventoryController.js:178
+#: app/modules/inventory/new_inventory.html:57
+msgid "Cost"
+msgstr "Costo"
+
+#: app/modules/settings/iframe_index.html:10
+#: app/modules/welcome/modals/modal_1.html:31
+msgid "Country"
+msgstr "Nazione"
+
+#: app/modules/welcome/modals/modal_3.html:3
+#: app/modules/welcome/modals/modal_4.html:3
+#: app/modules/welcome/modals/modal_5.html:3
+#: app/modules/welcome/modals/modal_6.html:3
+msgid "Create Your Store"
+msgstr "Crea il Tuo Negozio"
+
+#: app/modules/bank_accounts/bankAccountsController.js:12
+msgid "Created At"
+msgstr "Creato A"
+
+#: app/modules/purchase_orders/purchase_order_form.html:31
+msgid "Created at"
+msgstr "Creazione"
+
+#: app/modules/purchase_orders/purchase_order_form.html:32
+msgid "Created by"
+msgstr "Creato da"
+
+#: app/modules/welcome/modals/modal_4.html:14
+msgid "Credit Card Processing"
+msgstr "Processore Carta di Credito"
+
+#: app/modules/purchase_orders/purchase_order_form.html:60
+msgid "Credit card"
+msgstr "Carta di credito"
+
+#: app/modules/welcome/modals/modal_6.html:26
+msgid "Current POS / Inventory System"
+msgstr "POS/Sistema di Gestione Inventario Attuale"
+
+#: app/modules/welcome/modals/modal_4.html:25
+msgid "Current Processor"
+msgstr "Processore Attuale"
+
+#: app/modules/inventory/inventoryController.js:176
+#: app/shared/edit/add_listings.html:31
+msgid "Current QTY"
+msgstr "Qtà’ Attuale"
+
+#: app/modules/summary/summary.html:288
+msgid "Custom Range"
+msgstr "Intervallo Personalizzato"
+
+#: app/modules/settings/iframe_setting.html:22
+msgid "Custom shipping description"
+msgstr "Indirizzo di Spedizione"
+
+#: app/modules/customers/customersController.js:35
+#: app/modules/customers/view_customer.html:92
+#: app/modules/invoices/invoicesQuotesController.js:76
+#: app/modules/sales/view_sale.html:24
+msgid "Customer"
+msgstr "Cliente"
+
+#: app/modules/invoices/new_invoice.html:16
+msgid "Customer Email Address"
+msgstr "Indirizzo Email Cliente"
+
+#: app/modules/customers/customersController.js:55
+msgid "Customer Profile Type"
+msgstr "Tipologia Profilo Cliente"
+
+#: app/shared/menu/menu-generic.html:40
+msgid "Customers"
+msgstr "Cliente"
+
+#: app/modules/welcome/modals/modal_0.html:3
+msgid "Customize Your Back Office"
+msgstr "Personalizza la Tua Amministrazione"
+
+#: app/modules/settings/iframe_new.html:3
+msgid ""
+"Customize your Storefront page to fit the look and feel of your website by "
+"choosing from the options below. Then simply copy the embed code and add it "
+"to your webpage."
+msgstr ""
+"Personalizza la tua pagina di Storefront per adattare l'aspetto del tuo sito "
+"Web scegliendo tra le opzioni qui sotto. Poi basta copiare il codice embed e "
+"aggiungerlo alla tua pagina Web."
+
+#: app/modules/welcome/modals/modal_6.html:14
+msgid "Data Migration"
+msgstr "Data di Migrazione"
+
+#: app/modules/invoices/invoicesQuotesController.js:37
+#: app/modules/invoices/invoicesQuotesController.js:77
+#: app/modules/purchase_orders/purchaseOrdersController.js:25
+#: app/modules/sales/view_sale.html:21
+msgid "Date"
+msgstr "Data"
+
+#: app/modules/customers/customersController.js:61
+msgid "Date Created"
+msgstr "Data Creata"
+
+#: app/modules/customers/customersController.js:79
+#: app/modules/customers/view_customer.html:37
+msgid "Date of Birth"
+msgstr "Data di Nascita"
+
+#: app/modules/customers/customersController.js:100
+#: app/modules/customers/customersController.js:60
+msgid "Date of Birth (MM-DD)"
+msgstr "Data di Nascita (MM-GG)"
+
+#: app/modules/purchase_orders/purchase_order_form.html:61
+msgid "Debit card"
+msgstr "Carte di debito"
+
+#: app/modules/discounts/discountsController.js:71
+#: app/modules/discounts/new_discount.html:22
+#: app/modules/discounts/view_discount.html:23
+msgid "Deduct Tax Base"
+msgstr "Deduci Base Imponibile"
+
+#: app/modules/inventory/view_inventory.html:141
+#: app/modules/inventory/view_inventory.html:146
+#: app/modules/inventory/view_inventory.html:164
+#: app/modules/inventory/view_inventory.html:169
+#: app/modules/inventory/view_inventory.html:182
+#: app/modules/inventory/view_inventory.html:187
+#: app/modules/modifiers/new_modifier.html:19
+#: app/modules/modifiers/new_modifier.html:28
+#: app/modules/modifiers/new_modifier.html:74
+#: app/modules/modifiers/new_modifier.html:79
+#: app/modules/modifiers/view_modifier.html:21
+#: app/modules/modifiers/view_modifier.html:32
+#: app/modules/modifiers/view_modifier.html:63
+#: app/modules/modifiers/view_modifier.html:88
+#: app/modules/modifiers/view_modifier.html:93
+msgid "Default"
+msgstr "Predefinito"
+
+#: app/modules/modifiers/view_modifier.html:68
+msgid "Default:"
+msgstr "Predefinito"
+
+#: app/modules/sales/view_sale.html:26
+msgid "Delivery Address"
+msgstr "Indirizzo di Spedizione"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:19
+#: app/modules/stock_transfers/stockTransferController.js:69
+msgid "Departing Store"
+msgstr "Negozio in Partenza"
+
+#: app/modules/inventory/new_inventory.html:30
+#: app/modules/inventory/view_inventory.html:34
+msgid "Department"
+msgstr "Dipartimento"
+
+#: app/modules/settings/iframe_new.html:35
+#: app/shared/menu/menu-generic.html:28
+msgid "Departments"
+msgstr "Dipartimenti"
+
+#: app/modules/inventory/new_inventory.html:12
+msgid "Description (Optional)"
+msgstr "Descrizione (Opzionale)"
+
+#: app/modules/departments/list_departments.html:39
+#: app/modules/menus/list_menus.html:87
+#: app/modules/menus/view_menu.html:154
+msgid "Discard Changes"
+msgstr "Modifiche Scartate"
+
+#: app/modules/inventory/new_inventory.html:40
+#: app/modules/inventory/view_inventory.html:44
+msgid "Discontinued"
+msgstr "Interrotto"
+
+#: app/modules/discounts/discountsController.js:31
+#: app/modules/discounts/discountsController.js:70
+msgid "Discount"
+msgstr "Sconto"
+
+#: app/modules/discounts/view_discount.html:10
+msgid "Discount Type"
+msgstr "Tipologia di Sconto"
+
+#: app/shared/menu/menu-generic.html:34
+msgid "Discounts"
+msgstr "Sconti"
+
+#: app/modules/summary/summary.html:298
+msgid "Displayed Date"
+msgstr "Data Visualizzata"
+
+#: app/modules/summary/summary.html:299
+msgid "Displayed Date Range"
+msgstr "Intervallo Data visualizzata"
+
+#: app/modules/departments/list_departments.html:2
+#: app/modules/menus/list_menus.html:3
+#: app/modules/menus/view_menu.html:3
+msgid "Drag to arrange."
+msgstr "Trascina per ordinare."
+
+#: app/modules/welcome/modals/modal_6.html:60
+msgid ""
+"Dreading the POS migration? Don't. Our setup and migration has never taken "
+"more than 20 minutes."
+msgstr ""
+"Spaventato dal trasferimento del POS? Non esserlo. La nostra installazione e "
+"trasferimento non hanno mai richiesto più di 20 minuti."
+
+#: app/modules/invoices/new_invoice.html:7
+msgid "Due Date"
+msgstr "Data di Scadenza"
+
+#: app/modules/customers/view_customer.html:92
+#: app/modules/customers/view_customer.html:94
+#: app/modules/departments/listed-department.html:8
+#: app/modules/inventory/view_inventory.html:207
+#: app/modules/inventory/view_inventory.html:209
+#: app/modules/invoices/view_invoice.html:59
+#: app/modules/menus/list_menus.html:12
+#: app/modules/menus/view_menu.html:33
+#: app/modules/modifiers/view_modifier.html:104
+#: app/modules/purchase_orders/view_purchase_order.html:29
+#: app/modules/purchase_orders/view_purchase_order.html:31
+#: app/modules/settings/custom_fields_index.html:27
+#: app/modules/settings/iframe_index.html:25
+#: app/modules/settings/iframe_index.html:54
+#: app/modules/stock_transfers/view_stock_transfer.html:123
+#: app/modules/stock_transfers/view_stock_transfer.html:125
+msgid "Edit"
+msgstr "Modifica"
+
+#: app/modules/departments/listed-department.html:15
+msgid "Edit Department"
+msgstr "Modifica Dipartimento"
+
+#: app/modules/menus/list_menus.html:57
+msgid "Edit Menu"
+msgstr "Menu Modifica"
+
+#: app/modules/menus/view_menu.html:64
+msgid "Edit Menu Section"
+msgstr "Modifica Dipartimento"
+
+#: app/modules/menus/list_menus.html:13
+msgid "Edit Sections"
+msgstr "Modifica Dipartimento"
+
+#: app/modules/settings/iframe_index.html:4
+#: app/modules/settings/iframe_setting.html:4
+msgid ""
+"Edit your general Storefront settings below. These settings will be applied "
+"to all Storefront pages that you create."
+msgstr ""
+"Modificare le impostazioni generali di Storefront qui sotto. Queste "
+"impostazioni verranno applicate a tutte le pagine di Storefront che si "
+"creano."
+
+#: app/modules/customers/customersController.js:56
+#: app/modules/customers/customersController.js:80
+#: app/modules/customers/customersController.js:96
+#: app/modules/customers/view_customer.html:38
+#: app/modules/purchase_orders/purchase_order_form.html:21
+#: app/modules/suppliers/suppliersController.js:13
+#: app/modules/suppliers/suppliersController.js:20
+#: app/modules/suppliers/view_supplier.html:16
+msgid "Email"
+msgstr "Email"
+
+#: app/modules/settings/iframe_new.html:99
+msgid "Embed Code"
+msgstr "Codice Incorporato"
+
+#: app/modules/settings/iframe_index.html:41
+msgid "Embed code"
+msgstr "Embed Code:"
+
+#: app/modules/settings/iframe_new.html:40
+msgid "Enable multi-section layout"
+msgstr "Attiva layout multi-sezione"
+
+#: app/modules/purchase_orders/purchase_order_form.html:81
+msgid "Enter Miscellaneous charge"
+msgstr "Inserisci spese varie"
+
+#: app/modules/purchase_orders/view_purchase_order.html:17
+#: app/modules/stock_transfers/view_stock_transfer.html:77
+msgid "Enter quantity to fulfill."
+msgstr "Inserisci la quantità da completare."
+
+#: app/modules/stock_transfers/view_stock_transfer.html:59
+msgid "Enter quantity to send."
+msgstr "Inserisci la quantità da inviare."
+
+#: app/modules/login/views/recover-password.html:8
+msgid "Enter your email to recover your password."
+msgstr "Inserisci la tua email per recuperare la password."
+
+#: app/modules/inventory/new_inventory.html:41
+#: app/modules/inventory/view_inventory.html:45
+msgid "Exempt item from loyalty program"
+msgstr "Escludi l’articolo dal programma fedeltà"
+
+#: app/modules/purchase_orders/purchase_order_form.html:67
+msgid "Expect delivery date"
+msgstr "Data di consegna"
+
+#: app/modules/departments/list_departments.html:37
+#: app/modules/inventory/list_inventory.html:13
+#: app/shared/grid/grid_view.html:15
+msgid "Export"
+msgstr "Esporta"
+
+#: app/modules/purchase_orders/purchase_order_form.html:20
+#: app/modules/suppliers/view_supplier.html:17
+msgid "Fax"
+msgstr "Fax"
+
+#: app/modules/customers/new_customer.html:21
+#: app/modules/customers/view_customer.html:31
+msgid "Female"
+msgstr "Femmina"
+
+#: app/modules/settings/iframe_setting.html:42
+msgid "Flat rate shipping"
+msgstr "Spedizione forfettario"
+
+#: app/modules/welcome/modals/modal_0.html:9
+msgid "For easier access, bookmark https://dashboard.bindo.com"
+msgstr ""
+"Per un accesso più semplice, aggiungi ai segnalibri https://dashboard.bindo."
+"com"
+
+#: app/modules/login/views/main-login.html:22
+msgid "Forgot Password?"
+msgstr "Password dimenticata?"
+
+#: app/modules/settings/iframe_setting.html:43
+msgid "Free shipping"
+msgstr "Indirizzo di Spedizione"
+
+#: app/modules/sales/view_sale.html:25
+msgid "From"
+msgstr "Da"
+
+#: app/modules/purchase_orders/fulfill.html:5
+msgid "Fulfill"
+msgstr "Inserisci la quantità da completare."
+
+#: app/modules/invoices/view_invoice.html:52
+#: app/modules/purchase_orders/view_purchase_order.html:22
+#: app/modules/stock_transfers/view_stock_transfer.html:82
+msgid "Fulfill All"
+msgstr "Completa Tutti"
+
+#: app/modules/purchase_orders/view_purchase_order.html:13
+#: app/modules/stock_transfers/view_stock_transfer.html:73
+msgid "Fulfill Item"
+msgstr "Completa Prodotto"
+
+#: app/modules/invoices/view_invoice.html:53
+#: app/modules/purchase_orders/view_purchase_order.html:23
+#: app/modules/stock_transfers/view_stock_transfer.html:83
+msgid "Fulfill Specified"
+msgstr "Completa Specificato"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:108
+msgid "Fulfill Transfer"
+msgstr "Completa Trasferimento"
+
+#: app/modules/customers/view_customer.html:22
+msgid "Full Name"
+msgstr "Nome Completo"
+
+#: app/modules/customers/customersController.js:57
+#: app/modules/customers/customersController.js:77
+#: app/modules/customers/customersController.js:97
+#: app/modules/customers/view_customer.html:27
+msgid "Gender"
+msgstr "Genere"
+
+#: app/modules/settings/iframe_index.html:3
+#: app/modules/settings/iframe_setting.html:1
+msgid "General Settings"
+msgstr "Settaggi Generali"
+
+#: app/modules/welcome/modals/modal_2.html:3
+msgid "Getting Started"
+msgstr "Iniziare"
+
+#: app/shared/menu/menu-generic.html:46
+msgid "Gift Cards"
+msgstr "Carte Regalo"
+
+#: app/modules/welcome/modals/modal_1.html:52
+#: app/modules/welcome/modals/modal_2.html:85
+#: app/modules/welcome/modals/modal_3.html:67
+#: app/modules/welcome/modals/modal_4.html:60
+#: app/modules/welcome/modals/modal_5.html:52
+#: app/modules/welcome/modals/modal_6.html:65
+msgid "Go Back"
+msgstr "Vai Indietro"
+
+#: app/modules/summary/summary.html:175
+msgid "Gross Margin"
+msgstr "Margine Lordo"
+
+#: app/modules/summary/summary.html:119
+msgid "Gross Profit"
+msgstr "Profitto Lordo"
+
+#: app/modules/modifiers/modifiersController.js:27
+msgid "Group Name"
+msgstr "Nome Gruppo"
+
+#: app/modules/modifiers/new_modifier.html:6
+#: app/modules/modifiers/view_modifier.html:6
+msgid "Group Title"
+msgstr "Titolo Gruppo"
+
+#: app/modules/settings/iframe_new.html:35
+#: app/modules/settings/iframe_new.html:44
+msgid "Header"
+msgstr "Intestazione Pagina"
+
+#: app/shared/menu/menu-generic.html:137
+msgid "Help"
+msgstr "Aiuto"
+
+#: app/modules/settings/iframe_index.html:13
+msgid "Hide price"
+msgstr "Nascondi Prezzo"
+
+#: app/modules/settings/iframe_index.html:39
+#: app/modules/settings/iframe_new.html:12
+msgid "Highlight color"
+msgstr "Colore evidenziazione"
+
+#: app/modules/gift_cards/view_gift-card.html:24
+msgid "History"
+msgstr "Storia"
+
+#: app/modules/customers/customersController.js:78
+#: app/modules/customers/view_customer.html:34
+msgid "Home Phone"
+msgstr "Numero di Casa"
+
+#: app/modules/welcome/modals/modal_3.html:53
+msgid "How did your hear about Bindo POS?"
+msgstr "Come hai saputo di Bindo POS?"
+
+#: app/modules/welcome/modals/modal_6.html:48
+msgid "I Need to Migrate"
+msgstr "Ho Bisogno di Trasferire"
+
+#: app/modules/welcome/modals/modal_6.html:30
+msgid "I've Been Using It since"
+msgstr "Lo Sto utilizzando Da"
+
+#: app/modules/settings/iframe_index.html:36
+msgid "Image size"
+msgstr "Dimensioni immagine"
+
+#: app/shared/grid/grid_view.html:14
+msgid "Import"
+msgstr "Importa"
+
+#: app/modules/inventory/inventoryController.js:78
+msgid "In Stock"
+msgstr "In Giacenza"
+
+#: app/modules/inventory/new_inventory.html:39
+#: app/modules/inventory/view_inventory.html:43
+msgid "In Store Only"
+msgstr "Solo in Negozio"
+
+#: app/modules/stock_transfers/stockTransferController.js:68
+msgid "In/Out"
+msgstr "Dentro/Fuori"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:6
+#: app/modules/stock_transfers/view_stock_transfer.html:7
+msgid "Incoming Transfer"
+msgstr "Trasferimento in Arrivo"
+
+#: app/shared/menu/menu-generic.html:14
+msgid "Inventory"
+msgstr "Inventario"
+
+#: app/modules/invoices/invoicesQuotesController.js:42
+msgid "Inventory Status"
+msgstr "Stato Inventario"
+
+#: app/modules/invoices/view_invoice.html:59
+msgid "Invoice"
+msgstr "Fattura"
+
+#: app/shared/menu/menu-generic.html:66
+msgid "Invoices"
+msgstr "Fatture"
+
+#: app/shared/grid/grid-filter.html:14
+msgid "Is"
+msgstr "E’"
+
+#: app/shared/grid/grid-filter.html:15
+msgid "Is Between"
+msgstr "E’ tra"
+
+#: app/shared/edit/add_listings.html:30
+msgid "Item"
+msgstr "Prodotto"
+
+#: app/modules/purchase_orders/purchase_order_form.html:78
+msgid "Items"
+msgstr "# di Prodotti"
+
+#: app/modules/time_clock/timeClockController.js:17
+#: app/modules/time_clock/timeClockController.js:56
+msgid "Junior Associate"
+msgstr "Associato Junior"
+
+#: app/modules/settings/iframe_new.html:89
+msgid "Large"
+msgstr "Largo"
+
+#: app/modules/time_clock/timeClockController.js:31
+#: app/modules/time_clock/timeClockController.js:70
+msgid "Last Clock-in At"
+msgstr "Ultima Timbrata A"
+
+#: app/modules/time_clock/timeClockController.js:32
+#: app/modules/time_clock/timeClockController.js:44
+#: app/modules/time_clock/timeClockController.js:71
+msgid "Last Session Length"
+msgstr "Lunghezza Ultima Sessione"
+
+#: app/modules/modifiers/modifiersController.js:30
+msgid "Last Updated"
+msgstr "Ultimo Aggiornamento"
+
+#: app/modules/discounts/new_discount.html:24
+#: app/modules/discounts/view_discount.html:25
+msgid "Leave it unchecked if this is a manufacturer coupon."
+msgstr "Lascialo non spuntato se è un buono produttore."
+
+#: app/modules/invoices/new_invoice.html:28
+#: app/modules/invoices/view_invoice.html:28
+msgid "Line Items"
+msgstr "Voci Prodotto"
+
+#: app/modules/settings/line_item_status.html:2
+#: app/modules/settings/settings.html:21
+msgid "Line item status"
+msgstr "Stato Voce Prodotto"
+
+#: app/modules/gift_cards/giftCardsController.js:15
+msgid "Linked At"
+msgstr "Collegato A"
+
+#: app/modules/inventory/view_inventory.html:10
+#: app/modules/inventory/view_inventory.html:196
+msgid "Log"
+msgstr "Registra"
+
+#: app/modules/login/views/main-login.html:28
+msgid "Log In"
+msgstr "Accedi"
+
+#: app/shared/header/profile/header-profile.html:21
+msgid "Logout"
+msgstr "Uscita"
+
+#: app/modules/customers/view_customer.html:82
+msgid "Loyalty"
+msgstr "Fedeltà"
+
+#: app/modules/customers/view_customer.html:8
+msgid "Loyalty Program"
+msgstr "Programma Fedeltà"
+
+#: app/modules/customers/new_customer.html:20
+#: app/modules/customers/view_customer.html:30
+msgid "Male"
+msgstr "Maschio"
+
+#: app/modules/time_clock/timeClockController.js:11
+#: app/modules/time_clock/timeClockController.js:50
+msgid "Manager"
+msgstr "Manager"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:95
+msgid "Mark All As Departed"
+msgstr "Contrassegna tutto come estinto"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:112
+msgid "Mark All As Fulfilled"
+msgstr "Contrassegna tutto come completato"
+
+#: app/modules/inventory/new_inventory.html:51
+msgid "Mark as default supplier"
+msgstr "Contrassegna come fornitore predefinito"
+
+#: app/modules/inventory/view_inventory.html:103
+msgid "Matrix"
+msgstr "Matrice"
+
+#: app/modules/settings/iframe_new.html:58
+msgid "Maximum # of products to show"
+msgstr "Mostra"
+
+#: app/modules/settings/iframe_new.html:88
+msgid "Medium (default)"
+msgstr "Medio (predefinito)"
+
+#: app/modules/customers/customersController.js:76
+#: app/modules/customers/view_customer.html:23
+msgid "Mobile Phone"
+msgstr "Cellulare"
+
+#: app/modules/modifiers/view_modifier.html:104
+msgid "Modifier Group"
+msgstr "Gruppo Modifica"
+
+#: app/modules/modifiers/new_modifier.html:13
+#: app/modules/modifiers/view_modifier.html:14
+msgid "Modifier Title"
+msgstr "Titolo Modifica"
+
+#: app/modules/inventory/view_inventory.html:116
+#: app/modules/inventory/view_inventory.html:9
+#: app/shared/menu/menu-generic.html:21
+msgid "Modifiers"
+msgstr "Modifiche"
+
+#: app/modules/summary/summary.html:286
+msgid "Month"
+msgstr "Mese"
+
+#: app/modules/welcome/modals/modal_4.html:46
+msgid "Monthly Revenue"
+msgstr "Ricavo Mensile"
+
+#: app/modules/settings/iframe_index.html:40
+msgid "Multi section layout"
+msgstr "Layout Principale"
+
+#: app/modules/inventory/new_inventory.html:25
+msgid "NONE"
+msgstr "Nessun di quelli sopra"
+
+#: app/modules/bank_accounts/bankAccountsController.js:7
+#: app/modules/customers/customersController.js:54
+#: app/modules/customers/customersController.js:75
+#: app/modules/customers/customersController.js:95
+#: app/modules/departments/list_departments.html:16
+#: app/modules/menus/list_menus.html:31
+#: app/modules/menus/list_menus.html:61
+#: app/modules/menus/view_menu.html:51
+#: app/modules/menus/view_menu.html:68
+#: app/modules/time_clock/timeClockController.js:29
+#: app/modules/time_clock/timeClockController.js:42
+#: app/modules/time_clock/timeClockController.js:68
+msgid "Name"
+msgstr "Nome"
+
+#: app/modules/suppliers/new_supplier.html:4
+#: app/shared/grid/grid_view.html:16
+msgid "New"
+msgstr "Nuovo"
+
+#: app/modules/modifiers/new_modifier.html:61
+#: app/modules/modifiers/view_modifier.html:71
+msgid "New Add-on Option"
+msgstr "Nuovo Opzione Aggiuntiva"
+
+#: app/modules/inventory/list_inventory.html:15
+msgid "New Custom Item"
+msgstr "Nuovo Prodotto Personalizzato"
+
+#: app/modules/customers/new_customer.html:43
+msgid "New Customer"
+msgstr "Nuovo Cliente"
+
+#: app/modules/departments/list_departments.html:12
+#: app/modules/departments/list_departments.html:38
+msgid "New Department"
+msgstr "Nuovo Dipartimento"
+
+#: app/modules/stock_transfers/list_stock_transfers.html:17
+msgid "New Incoming Stock Transfer"
+msgstr "Nuovo Trasferimento Giacenza in Arrivo"
+
+#: app/modules/inventory/new_inventory.html:99
+msgid "New Inventory Item"
+msgstr "Nuova Voce Inventario"
+
+#: app/modules/invoices/new_invoice.html:41
+msgid "New Invoice"
+msgstr "Nuova Fattura"
+
+#: app/modules/inventory/list_inventory.html:14
+#: app/modules/inventory/new_inventory.html:84
+msgid "New Item"
+msgstr "Nuovo Prodotto"
+
+#: app/modules/menus/list_menus.html:27
+msgid "New Menu"
+msgstr "Nuovo Cliente"
+
+#: app/modules/menus/view_menu.html:81
+msgid "New Menu Item - Choose the Product to Display"
+msgstr "Nuovo Menu elemento - Scegli il prodotto da visualizzare"
+
+#: app/modules/menus/view_menu.html:47
+msgid "New Menu Section"
+msgstr "Nuova sezione del Menu"
+
+#: app/modules/modifiers/list_modifiers.html:44
+msgid "New Modifier"
+msgstr "Nuovo Modificatore"
+
+#: app/modules/modifiers/new_modifier.html:89
+msgid "New Modifier Group"
+msgstr "Nuovo Gruppo Modificatore"
+
+#: app/modules/modifiers/new_modifier.html:82
+#: app/modules/modifiers/view_modifier.html:96
+msgid "New Opt-out Option"
+msgstr "Nuova Opzione di Cancellazione"
+
+#: app/modules/modifiers/new_modifier.html:35
+#: app/modules/modifiers/view_modifier.html:42
+msgid "New Option"
+msgstr "Nuova Opzione"
+
+#: app/modules/stock_transfers/list_stock_transfers.html:18
+msgid "New Outgoing Stock Transfer"
+msgstr "Nuovo Trasferimento Magazzino in Uscita"
+
+#: app/modules/purchase_orders/new_purchase_order.html:11
+msgid "New Purchase Order"
+msgstr "Ordine d’Acquisto"
+
+#: app/modules/modifiers/new_modifier.html:39
+#: app/modules/modifiers/view_modifier.html:46
+msgid "New Single Choice Modifier"
+msgstr "Nuovo Modificatore a Scelta Singola"
+
+#: app/modules/welcome/modals/modal_5.html:43
+msgid "New Tax Rate"
+msgstr "Nuova Aliquota Fiscale"
+
+#: app/modules/settings/iframe_index.html:60
+msgid "New page"
+msgstr "Nuova Pagina Vetrina"
+
+#: app/modules/inventory/new_inventory.html:93
+msgid "Next"
+msgstr "Prossimo"
+
+#: app/modules/inventory/view_inventory.html:199
+msgid "No Log Yet."
+msgstr "Ancora Nessun Registro."
+
+#: app/modules/customers/view_customer.html:85
+msgid "No Loyalty History."
+msgstr "Nessuna Storia Fedeltà."
+
+#: app/modules/customers/view_customer.html:58
+msgid "No Orders Yet."
+msgstr "Ancora Nessun Ordine."
+
+#: app/modules/suppliers/view_supplier.html:38
+msgid "No Products Yet."
+msgstr "Ancora Nessun Prodotto."
+
+#: app/modules/suppliers/view_supplier.html:47
+msgid "No Purchase Orders Yet."
+msgstr "Ancora Nessun Ordine d’Acquisto."
+
+#: app/modules/customers/view_customer.html:67
+msgid "No Purchased Items Yet."
+msgstr "Ancora Nessun Prodotto Acquistato."
+
+#: app/shared/grid/grid-filter.html:56
+msgid "No Saved Searches"
+msgstr "Nessuna Ricerca Salvata"
+
+#: app/modules/customers/view_customer.html:76
+msgid "No Store Credit Yet."
+msgstr "Ancora Nessun Credito Negozio."
+
+#: app/modules/inventory/new_inventory.html:64
+msgid "No Suppliers Yet."
+msgstr "Ancora Nessun Fornitore."
+
+#: app/modules/summary/summary.html:240
+#: app/modules/summary/summary.html:272
+msgid "No items sold in the period."
+msgstr "Nessun Prodotto Venduto in Questo Periodo."
+
+#: app/modules/welcome/modals/modal_2.html:53
+msgid "None of the above"
+msgstr "Nessun di quelli sopra"
+
+#: app/modules/customers/view_customer.html:46
+#: app/modules/discounts/discountsController.js:73
+msgid "Notes"
+msgstr "Note"
+
+#: app/modules/bank_accounts/bankAccountsController.js:6
+#: app/modules/invoices/invoicesQuotesController.js:39
+#: app/modules/invoices/invoicesQuotesController.js:78
+#: app/modules/stock_transfers/stockTransferController.js:165
+#: app/modules/stock_transfers/stockTransferController.js:67
+msgid "Number"
+msgstr "Numero"
+
+#: app/modules/welcome/modals/modal_3.html:25
+msgid "Number of Locations"
+msgstr "Numero di Sedi"
+
+#: app/modules/welcome/modals/modal_6.html:37
+msgid "Number of Registers"
+msgstr "Numero di Registri"
+
+#: app/modules/welcome/modals/modal_3.html:39
+msgid "Number of Unique SKUs"
+msgstr "Numero di Uniche SKU"
+
+#: app/modules/stock_transfers/list_stock_transfers.html:2
+msgid "Only chain store and function enabled can transfer stock."
+msgstr "Solo la catena di negozi e la funzione attivata può trasferire stock."
+
+#: app/modules/modifiers/new_modifier.html:65
+#: app/modules/modifiers/view_modifier.html:75
+msgid "Opt-out Options"
+msgstr "Opzioni di Cancellazione"
+
+#: app/modules/modifiers/new_modifier.html:16
+#: app/modules/modifiers/new_modifier.html:25
+#: app/modules/modifiers/new_modifier.html:47
+#: app/modules/modifiers/new_modifier.html:69
+#: app/modules/modifiers/new_modifier.html:77
+#: app/modules/modifiers/view_modifier.html:18
+#: app/modules/modifiers/view_modifier.html:29
+#: app/modules/modifiers/view_modifier.html:56
+#: app/modules/modifiers/view_modifier.html:66
+#: app/modules/modifiers/view_modifier.html:81
+#: app/modules/modifiers/view_modifier.html:91
+msgid "Option Name"
+msgstr "Opzione Nome"
+
+#: app/modules/sales/salesController.js:24
+#: app/modules/sales/salesController.js:39
+msgid "Order Date"
+msgstr "Data Ordine"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:23
+#: app/modules/sales/salesController.js:23
+#: app/modules/sales/salesController.js:38
+#: app/modules/sales/view_sale.html:22
+msgid "Order Number"
+msgstr "Numero Ordine"
+
+#: app/modules/invoices/invoicesQuotesController.js:41
+msgid "Order Status"
+msgstr "Stato Ordine"
+
+#: app/modules/settings/iframe_setting.html:53
+msgid "Order amount to qualify for free shipping"
+msgstr "Quantità di ordine a qualificarsi per la spedizione gratuita"
+
+#: app/modules/purchase_orders/purchase_order_form.html:62
+msgid "Other"
+msgstr "Altro"
+
+#: app/modules/purchase_orders/purchase_order_form.html:93
+msgid "Others"
+msgstr "Altri"
+
+#: app/modules/activating/activating.html:11
+#: app/modules/welcome/modals/modal_7.html:9
+msgid "Our staff will contact you within 24 hours to help set you up."
+msgstr "Il nostro staff ti contatterà entro 24 ore per aiutarti a configurare"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:5
+#: app/modules/stock_transfers/view_stock_transfer.html:6
+msgid "Outgoing Transfer"
+msgstr "Trasferimento in Uscita"
+
+#: app/modules/customers/view_customer.html:4
+#: app/modules/inventory/new_inventory.html:4
+#: app/modules/inventory/view_inventory.html:4
+#: app/modules/suppliers/view_supplier.html:4
+msgid "Overview"
+msgstr "Panoramica"
+
+#: app/modules/suppliers/view_supplier.html:44
+#: app/modules/suppliers/view_supplier.html:6
+msgid "P.O. History"
+msgstr "Cronologia Ordini d’Acquisto"
+
+#: app/modules/purchase_orders/purchase_order_form.html:30
+msgid "PO Number"
+msgstr "Numero ordine d’acquisto"
+
+#: app/modules/settings/iframe_index.html:31
+msgid "Page Settings"
+msgstr "Impostazioni pagina"
+
+#: app/modules/purchase_orders/purchase_order_form.html:47
+msgid "Paid"
+msgstr "Pagato"
+
+#: app/modules/departments/list_departments.html:18
+msgid "Parent Department"
+msgstr "Dipartimento Principale"
+
+#: app/modules/purchase_orders/purchase_order_form.html:46
+msgid "Partial paid"
+msgstr "Parziale pagato"
+
+#: app/modules/login/views/main-login.html:10
+msgid "Password"
+msgstr "Password"
+
+#: app/modules/purchase_orders/purchase_order_form.html:54
+msgid "Payment Method"
+msgstr "Metodo di Pagamento"
+
+#: app/modules/purchase_orders/purchase_order_form.html:42
+msgid "Payment Status"
+msgstr "Stato del Pagamento"
+
+#: app/modules/purchase_orders/purchase_order_form.html:71
+msgid "Payment due date"
+msgstr "Pagamento data di scadenza"
+
+#: app/modules/discounts/new_discount.html:11
+#: app/modules/discounts/view_discount.html:13
+msgid "Percentage Off"
+msgstr "Percentuale Dedotta"
+
+#: app/modules/customers/customersController.js:98
+#: app/modules/suppliers/suppliersController.js:12
+#: app/modules/suppliers/suppliersController.js:19
+msgid "Phone"
+msgstr "Telefono"
+
+#: app/modules/suppliers/view_supplier.html:12
+msgid "Phone 1"
+msgstr "Telefono 1"
+
+#: app/modules/suppliers/view_supplier.html:13
+msgid "Phone 2"
+msgstr "Telefono 2"
+
+#: app/modules/settings/iframe_setting.html:44
+msgid "Pick up only"
+msgstr "Solo in Negozio"
+
+#: app/modules/activating/activating.html:12
+#: app/modules/welcome/modals/modal_7.html:10
+msgid ""
+"Please make sure your contact info is correct, or we won't be able to "
+"activate your store."
+msgstr ""
+"Assicurati che il tuo contatto sia corretto o non saremo in grado di "
+"attivare il tuo negozio."
+
+#: app/modules/settings/iframe_setting.html:3
+msgid ""
+"Please set your general Storefront settings to get started. These settings "
+"will be applied to all Storefront pages that you create."
+msgstr ""
+"Si prega di impostare le impostazioni generali di Storefront per iniziare. "
+"Queste impostazioni verranno applicate a tutte le pagine di Storefront che "
+"si creano."
+
+#: app/modules/stock_transfers/view_stock_transfer.html:91
+msgid "Prepare for Shipment"
+msgstr "Prepara per la Spedizione"
+
+#: app/modules/settings/iframe_new.html:112
+msgid "Preview Storefront"
+msgstr "Vetrina"
+
+#: app/modules/inventory/inventoryController.js:103
+#: app/modules/inventory/inventoryController.js:177
+#: app/modules/inventory/inventoryController.js:79
+#: app/modules/inventory/inventoryController.js:96
+#: app/modules/inventory/new_inventory.html:18
+#: app/modules/inventory/view_inventory.html:21
+msgid "Price"
+msgstr "Prezzo"
+
+#: app/modules/bank_accounts/bankAccountsController.js:10
+msgid "Primary"
+msgstr "Primario"
+
+#: app/modules/activating/activating.html:48
+#: app/modules/welcome/modals/modal_7.html:46
+msgid "Privacy Policy"
+msgstr "Normativa sul trattamento dei dati personali"
+
+#: app/modules/welcome/modals/modal_4.html:32
+msgid "Processing Needed by"
+msgstr "Elaborazione richiesta da"
+
+#: app/modules/inventory/inventoryController.js:76
+msgid "Product"
+msgstr "Prodotto"
+
+#: app/modules/settings/iframe_new.html:81
+msgid "Product Image Size"
+msgstr "Seleziona Taglia Immagine…"
+
+#: app/modules/inventory/inventoryController.js:93
+#: app/modules/inventory/inventoryController.js:99
+msgid "Product Name"
+msgstr "Nome Prodotto"
+
+#: app/modules/settings/iframe_new.html:49
+msgid "Product departments"
+msgstr "Prodotto"
+
+#: app/modules/settings/iframe_index.html:11
+msgid "Product layout"
+msgstr "Layout Principale"
+
+#: app/modules/suppliers/view_supplier.html:35
+msgid "Products"
+msgstr "Prodotti"
+
+#: app/modules/inventory/inventoryController.js:179
+msgid "Profit"
+msgstr "Profitto"
+
+#: app/modules/welcome/modals/modal_6.html:44
+msgid "Pros & Cons (Optional)"
+msgstr "Pro & Contro (Opzionale)"
+
+#: app/modules/purchase_orders/view_purchase_order.html:29
+msgid "Purchase Order"
+msgstr "Ordine d’Acquisto"
+
+#: app/shared/menu/menu-generic.html:78
+msgid "Purchase Orders"
+msgstr "Ordini d’Acquisto"
+
+#: app/modules/customers/view_customer.html:6
+#: app/modules/customers/view_customer.html:64
+msgid "Purchased Items"
+msgstr "Prodotti Acquistati"
+
+#: app/modules/inventory/inventoryController.js:175
+msgid "QTY Delta"
+msgstr "Qtà Delta"
+
+#: app/modules/stock_transfers/stockTransferController.js:72
+msgid "QTY Departed"
+msgstr "Qtà Estinta"
+
+#: app/modules/stock_transfers/stockTransferController.js:73
+msgid "QTY Received"
+msgstr "Qtà Ricevuta"
+
+#: app/modules/stock_transfers/stockTransferController.js:71
+msgid "QTY Requested"
+msgstr "Qtà Richiesta"
+
+#: app/modules/inventory/inventoryController.js:102
+#: app/modules/inventory/inventoryController.js:95
+msgid "QTY on shelf"
+msgstr "Qtà sugli scaffali"
+
+#: app/shared/edit/add_listings.html:32
+msgid "QTY requested"
+msgstr "Qtà richiesta"
+
+#: app/modules/inventory/inventoryController.js:101
+#: app/modules/inventory/new_inventory.html:15
+#: app/modules/inventory/view_inventory.html:18
+#: app/modules/sales/salesController.js:26
+msgid "Quantity"
+msgstr "Quantità"
+
+#: app/modules/settings/iframe_index.html:12
+msgid "Quick add"
+msgstr "Mostra Bottone di Aggiunta Rapida"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:15
+#: app/modules/stock_transfers/stockTransferController.js:70
+msgid "Receiving Store"
+msgstr "Negozio Ricevente"
+
+#: app/modules/customers/view_customer.html:5
+#: app/modules/customers/view_customer.html:55
+msgid "Recent Orders"
+msgstr "Ordini Recenti"
+
+#: app/modules/login/views/recover-password.html:19
+msgid "Recover"
+msgstr "Recupera"
+
+#: app/modules/invoices/new_invoice.html:6
+msgid "Reference Number"
+msgstr "Numero di Riferimento"
+
+#: app/modules/login/views/main-login.html:16
+msgid "Remember me for 7 days"
+msgstr "Ricordami per 7 giorni"
+
+#: app/modules/departments/listed-department.html:9
+#: app/modules/menus/list_menus.html:14
+#: app/modules/menus/view_menu.html:22
+#: app/modules/menus/view_menu.html:34
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: app/shared/inputs/input-file.html:10
+msgid "Remove File"
+msgstr "Rimuovi file"
+
+#: app/modules/inventory/view_inventory.html:51
+msgid "Remove Image"
+msgstr "Rimuovi Immagine"
+
+#: app/modules/modifiers/new_modifier.html:36
+#: app/modules/modifiers/view_modifier.html:43
+msgid "Remove Modifier"
+msgstr "Rimuovi Modificatore"
+
+#: app/modules/settings/iframe_new.html:65
+msgid "Remove section"
+msgstr "Rimuovi Immagine"
+
+#: app/modules/inventory/new_inventory.html:58
+msgid "Reorder Amount"
+msgstr "Importo Nuovo Ordine"
+
+#: app/modules/inventory/new_inventory.html:56
+msgid "Reorder Trigger Point"
+msgstr "Punto di Innesco Nuovo Ordine"
+
+#: app/shared/menu/menu-generic.html:136
+msgid "Report a problem"
+msgstr "Segnala un problema"
+
+#: app/modules/settings/iframe.html:10
+msgid "Request Access"
+msgstr "Richiesta d’Accesso"
+
+#: app/modules/time_clock/timeClockController.js:30
+#: app/modules/time_clock/timeClockController.js:43
+#: app/modules/time_clock/timeClockController.js:69
+msgid "Role"
+msgstr "Ruole"
+
+#: app/modules/bank_accounts/bankAccountsController.js:9
+msgid "Routing"
+msgstr "Percorso"
+
+#: app/modules/welcome/modals/modal_3.html:46
+msgid "SKUs with Barcodes"
+msgstr "SKU con il Codice a Barre"
+
+#: app/shared/menu/menu-generic.html:60
+msgid "Sales"
+msgstr "Vendite"
+
+#: app/modules/inventory/inventoryController.js:174
+msgid "Sales/Purchase Order"
+msgstr "Ordine di Vendita/Acquisto"
+
+#: app/modules/departments/list_departments.html:27
+#: app/modules/departments/listed-department.html:30
+#: app/modules/menus/list_menus.html:48
+#: app/modules/menus/list_menus.html:78
+#: app/modules/menus/view_menu.html:108
+#: app/modules/menus/view_menu.html:144
+#: app/modules/menus/view_menu.html:55
+#: app/modules/menus/view_menu.html:72
+#: app/modules/settings/iframe_new.html:110
+#: app/shared/edit/add_listings.html:61 app/shared/grid/grid-filter.html:61
+#: app/shared/grid/grid-filter.html:84
+msgid "Save"
+msgstr "Salva"
+
+#: app/modules/departments/list_departments.html:40
+#: app/modules/menus/list_menus.html:88
+#: app/modules/menus/view_menu.html:155
+msgid "Save Changes"
+msgstr "Salva Modifiche"
+
+#: app/shared/grid/grid-filter.html:76
+msgid "Save Filter"
+msgstr "Salva Filtro"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:100
+#: app/modules/stock_transfers/view_stock_transfer.html:117
+msgid "Save New Quantities"
+msgstr "Salva Nuove Quantità"
+
+#: app/shared/grid/grid-filter.html:59
+msgid "Saved Searches"
+msgstr "Ricerche Salvate"
+
+#: app/shared/grid/grid-filter.html:62
+msgid "Search"
+msgstr "Cerca"
+
+#: app/modules/settings/iframe_new.html:86
+msgid "Select Image Size..."
+msgstr "Seleziona Taglia Immagine…"
+
+#: app/shared/edit/add_listings.html:4
+msgid "Select Inventory"
+msgstr "Seleziona Inventario"
+
+#: app/shared/grid/grid-filter.html:12 app/shared/grid/grid-filter.html:21
+msgid "Select Type"
+msgstr "Seleziona Tipologia"
+
+#: app/modules/welcome/modals/modal_3.html:27
+#: app/modules/welcome/modals/modal_3.html:34
+#: app/modules/welcome/modals/modal_3.html:41
+#: app/modules/welcome/modals/modal_3.html:48
+#: app/modules/welcome/modals/modal_4.html:27
+#: app/modules/welcome/modals/modal_4.html:34
+#: app/modules/welcome/modals/modal_4.html:41
+#: app/modules/welcome/modals/modal_4.html:48
+#: app/modules/welcome/modals/modal_6.html:39
+msgid "Select an Answer"
+msgstr "Seleziona una Risposta"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:64
+msgid "Send All"
+msgstr "Invia Tutto"
+
+#: app/modules/stock_transfers/view_stock_transfer.html:65
+msgid "Send Specified"
+msgstr "Invia Specificato"
+
+#: app/modules/inventory/new_inventory.html:6
+#: app/modules/inventory/new_inventory.html:69
+#: app/modules/inventory/view_inventory.html:97
+msgid "Serial Number"
+msgstr "Numero di Serie"
+
+#: app/modules/customers/new_customer.html:6
+#: app/modules/customers/view_customer.html:17
+msgid "Set Photo"
+msgstr "Imposta Foto"
+
+#: app/modules/settings/settings.html:32
+#: app/shared/menu/menu-generic.html:122
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: app/modules/invoices/new_invoice.html:20
+#: app/modules/invoices/view_invoice.html:20
+msgid "Shipped To"
+msgstr "Spedito A"
+
+#: app/modules/customers/customersController.js:82
+#: app/modules/customers/view_customer.html:42
+msgid "Shipping Address"
+msgstr "Indirizzo di Spedizione"
+
+#: app/modules/settings/iframe_setting.html:49
+msgid "Shipping rate"
+msgstr "Aliquota Fiscale"
+
+#: app/modules/settings/iframe_index.html:9
+msgid "Shipping type"
+msgstr "Tipologia"
+
+#: app/shared/grid/grid-row-count.html:4
+msgid "Show"
+msgstr "Mostra"
+
+#: app/shared/grid/grid-row-count.html:2 app/shared/grid/grid-row-count.html:3
+msgid "Showing"
+msgstr "Mostra"
+
+#: app/modules/login/views/main-login.html:24
+msgid "Sign Up"
+msgstr "Iscriviti"
+
+#: app/modules/inventory/view_inventory.html:133
+#: app/modules/modifiers/new_modifier.html:10
+#: app/modules/modifiers/view_modifier.html:11
+msgid "Single Choice Modifier"
+msgstr "Modificatore Scelta Singola"
+
+#: app/modules/settings/iframe_new.html:87
+msgid "Small"
+msgstr "Small"
+
+#: app/modules/welcome/modals/modal_0.html:13
+msgid "Start"
+msgstr "Inizia"
+
+#: app/modules/sales/salesController.js:27
+#: app/modules/sales/view_sale.html:20
+#: app/modules/stock_transfers/stockTransferController.js:166
+#: app/modules/stock_transfers/stockTransferController.js:74
+#: app/modules/welcome/modals/modal_2.html:74
+msgid "State"
+msgstr "Stato"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:27
+#: app/modules/purchase_orders/purchase_order_form.html:33
+msgid "Status"
+msgstr "Stato"
+
+#: app/modules/settings/line_item_status_index.html:1
+msgid "Status not set yet."
+msgstr "Stato non ancora impostato."
+
+#: app/modules/stock_transfers/view_stock_transfer.html:123
+msgid "Stock Transfer"
+msgstr "Trasferimento Magazzino"
+
+#: app/shared/menu/menu-generic.html:84
+msgid "Stock Transfers"
+msgstr "Trsaferimenti Magazzino"
+
+#: app/modules/inventory/inventoryController.js:77
+msgid "Store"
+msgstr "Negozio"
+
+#: app/modules/customers/view_customer.html:7
+#: app/modules/customers/view_customer.html:73
+msgid "Store Credit"
+msgstr "Credito Negozio"
+
+#: app/modules/welcome/modals/modal_3.html:14
+msgid "Store Info"
+msgstr "Informazioni Negozio"
+
+#: app/modules/welcome/modals/modal_1.html:27
+msgid "Store Name"
+msgstr "Nome Negozio"
+
+#: app/modules/welcome/modals/modal_1.html:41
+msgid "Store Phone Number"
+msgstr "Numero di Telefono Negozio"
+
+#: app/modules/settings/settings.html:16
+msgid "Storefront"
+msgstr "Vetrina"
+
+#: app/modules/purchase_orders/purchase_order_form.html:92
+msgid "Subtotal"
+msgstr "Subtotale"
+
+#: app/modules/sales/view_sale.html:62
+msgid "Subtotal:"
+msgstr "Subtotale:"
+
+#: app/shared/menu/menu-generic.html:7
+msgid "Summary"
+msgstr "Sommario"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:24
+#: app/modules/suppliers/new_supplier.html:4
+msgid "Supplier"
+msgstr "Fornitore"
+
+#: app/modules/inventory/new_inventory.html:53
+msgid "Supplier ID"
+msgstr "ID Fornitore"
+
+#: app/modules/suppliers/suppliersController.js:11
+#: app/modules/suppliers/suppliersController.js:18
+msgid "Supplier Name"
+msgstr "Nome Fornitore"
+
+#: app/modules/inventory/new_inventory.html:54
+msgid "Supplier Product ID"
+msgstr "ID Prodotto Fornitore"
+
+#: app/modules/inventory/new_inventory.html:49
+#: app/modules/inventory/new_inventory.html:5
+#: app/modules/inventory/view_inventory.html:5
+#: app/modules/inventory/view_inventory.html:60
+#: app/shared/menu/menu-generic.html:72
+msgid "Suppliers"
+msgstr "Fornitore"
+
+#: app/modules/inventory/new_inventory.html:23
+#: app/modules/inventory/view_inventory.html:26
+msgid "Tax Option"
+msgstr "Opzione Tasse"
+
+#: app/modules/welcome/modals/modal_5.html:14
+msgid "Tax Rate"
+msgstr "Aliquota Fiscale"
+
+#: app/modules/sales/view_sale.html:66
+msgid "Tax:"
+msgstr "Tassa:"
+
+#: app/modules/purchase_orders/purchase_order_form.html:19
+msgid "Tel"
+msgstr "Tel"
+
+#: app/modules/login/views/recover-password.html:9
+msgid "The email you entered is invalid."
+msgstr "L’email inserita non è valida."
+
+#: app/modules/menus/list_menus.html:43
+#: app/modules/menus/list_menus.html:73
+msgid "Time Available From"
+msgstr "Tempo a disposizione da"
+
+#: app/modules/menus/list_menus.html:44
+#: app/modules/menus/list_menus.html:74
+msgid "Time Available To"
+msgstr "Tempo a disposizione"
+
+#: app/modules/discounts/discountsController.js:29
+#: app/modules/discounts/discountsController.js:68
+#: app/modules/inventory/new_inventory.html:11
+#: app/modules/inventory/view_inventory.html:14
+#: app/modules/purchase_orders/miscellaneous_charge.html:2
+#: app/modules/suppliers/view_supplier.html:10
+msgid "Title"
+msgstr "Titolo"
+
+#: app/modules/summary/summary.html:283
+msgid "Today"
+msgstr "Oggi"
+
+#: app/modules/summary/summary.html:250
+msgid "Top Departments by Sales"
+msgstr "I migliori reparti di vendite"
+
+#: app/modules/summary/summary.html:219
+msgid "Top Items by Sales"
+msgstr "Top Prodotti per Vendite"
+
+#: app/modules/purchase_orders/purchaseOrdersController.js:26
+#: app/modules/purchase_orders/purchase_order_form.html:94
+#: app/modules/sales/salesController.js:28
+#: app/modules/sales/salesController.js:42
+msgid "Total"
+msgstr "Totale"
+
+#: app/modules/sales/view_sale.html:58
+msgid "Total Item:"
+msgstr "Totale Prodotto:"
+
+#: app/modules/purchase_orders/purchase_order_form.html:91
+msgid "Total Quantity"
+msgstr "Quantità Totale"
+
+#: app/modules/summary/summary.html:7
+msgid "Total Sales"
+msgstr "Vendite Totali"
+
+#: app/modules/sales/view_sale.html:70
+msgid "Total:"
+msgstr "Totale:"
+
+#: app/modules/stock_transfers/new_stock_transfer.html:32
+#: app/modules/stock_transfers/view_stock_transfer.html:35
+msgid "Transferred Items"
+msgstr "Prodotti Trasferiti"
+
+#: app/modules/discounts/discountsController.js:30
+#: app/modules/discounts/discountsController.js:69
+#: app/modules/modifiers/modifiersController.js:28
+msgid "Type"
+msgstr "Tipologia"
+
+#: app/modules/inventory/inventoryController.js:100
+msgid "UPC"
+msgstr "UPC"
+
+#: app/modules/purchase_orders/purchase_order_form.html:45
+msgid "Unpaid"
+msgstr "Non pagato"
+
+#: app/modules/activating/activating.html:39
+#: app/modules/welcome/modals/modal_7.html:37
+msgid "Update"
+msgstr "Aggiorna"
+
+#: app/modules/welcome/modals/modal_7.html:17
+msgid "Update Contact Info"
+msgstr "Aggiorna Informazioni Contatto"
+
+#: app/modules/inventory/inventoryController.js:104
+msgid "Updated At"
+msgstr "Aggiornato A"
+
+#: app/modules/summary/summary.html:302
+msgid "Updated at"
+msgstr "Aggiornato A"
+
+#: app/shared/inputs/input-file.html:7
+msgid "Upload"
+msgstr "Carica"
+
+#: app/modules/welcome/modals/modal_0.html:8
+msgid "Use Bindo Dashboard to manage your stores."
+msgstr "Usa il pannello di controllo di Bindo per gestire i tuoi negozi."
+
+#: app/modules/time_clock/timeClockController.js:16
+#: app/modules/time_clock/timeClockController.js:55
+msgid "Vendor Salespeople"
+msgstr "Venditori"
+
+#: app/modules/bank_accounts/bankAccountsController.js:11
+msgid "Verified"
+msgstr "Verificato"
+
+#: app/modules/settings/iframe_index.html:53
+msgid "View"
+msgstr "Visualizza"
+
+#: app/modules/gift_cards/view_gift-card.html:33
+msgid "View Gift Card"
+msgstr "Vedi Carta Regalo"
+
+#: app/modules/welcome/modals/modal_1.html:47
+msgid ""
+"We need to know your store location so we can assign someone in your area to "
+"assist you."
+msgstr ""
+"Abbiamo bisogno di conoscere la posizione del tuo negozio per poterti "
+"assegnare qualcuno nella tua area per l’assistenza."
+
+#: app/modules/welcome/modals/modal_7.html:45
+msgid "We'll never share your info with third parties."
+msgstr "Non condivideremo mai le tua informazioni con terze parti."
+
+#: app/modules/summary/summary.html:285
+msgid "Week"
+msgstr "Settimana"
+
+#: app/modules/summary/summary.html:287
+msgid "Year"
+msgstr "Anno"
+
+#: app/modules/summary/summary.html:284
+msgid "Yesterday"
+msgstr "Ieri"
+
+#: app/modules/departments/list_departments.html:2
+#: app/modules/menus/list_menus.html:3
+#: app/modules/menus/view_menu.html:3
+msgid "You currently have unsaved changes."
+msgstr "Hai delle modifiche non ancora salvate."
+
+#: app/modules/activating/activating.html:17
+#: app/modules/activating/activating.html:31
+#: app/modules/welcome/modals/modal_7.html:15
+#: app/modules/welcome/modals/modal_7.html:29
+msgid "Your Email:"
+msgstr "La Tua Email:"
+
+#: app/modules/activating/activating.html:16
+#: app/modules/activating/activating.html:27
+#: app/modules/welcome/modals/modal_7.html:14
+#: app/modules/welcome/modals/modal_7.html:25
+msgid "Your Phone Number:"
+msgstr "Il Tuo Numero di Telefono:"
+
+#: app/modules/activating/activating.html:10
+#: app/modules/welcome/modals/modal_7.html:8
+msgid "Your Store Is Being Activated"
+msgstr "Il Tuo Negozio è Stato Attivato"
+
+#: app/modules/welcome/modals/modal_2.html:78
+msgid "ZIP Code"
+msgstr "Codice ZIP"
+
+#: app/modules/welcome/modals/modal_1.html:37
+msgid "Zip Code"
+msgstr "Codice Zip"
+
+#: app/modules/settings/iframe_new.html:58
+#: app/modules/settings/iframe_setting.html:44
+msgid "default"
+msgstr "predefinito"
+
+#: app/modules/settings/iframe_new.html:49
+msgid "leave blank to show all products"
+msgstr "Lascia vuoto per vedere i prodotti in tutti i dipartimenti"
+
+#: app/shared/grid/grid-row-count.html:2 app/shared/grid/grid-row-count.html:3
+msgid "of"
+msgstr "di"
+
+#: app/modules/settings/iframe_setting.html:22
+#: app/modules/settings/iframe_setting.html:53
+msgid "optional"
+msgstr "facoltativo"
+
+#: app/shared/grid/grid-row-count.html:2 app/shared/grid/grid-row-count.html:3
+msgid "results"
+msgstr "Risultati"
+
+#: app/modules/activating/activating.html:43
+#: app/modules/welcome/modals/modal_7.html:41
+msgid "to get started right away!"
+msgstr "per iniziare immediatamente!"
+
+#~ msgid "Center"
+#~ msgstr "Centro"
+
+#~ msgid ""
+#~ "Customize your online store page by choosing from the options below, then "
+#~ "simply copy the embed code and add it to your website."
+#~ msgstr ""
+#~ "Personalizza il tuo negozio online scegliendo le opzioni sottostanti, poi "
+#~ "copia semplicemente il codice incorporato e aggiungilo al tuo sito web"
+
+#~ msgid "Delete"
+#~ msgstr "Cancella"
+
+#~ msgid "Leave blank to show products in all departments"
+#~ msgstr "Lascia vuoto per vedere i prodotti in tutti i dipartimenti"
+
+#~ msgid "Left (default)"
+#~ msgstr "Sinistra (predefinito)"
+
+#~ msgid "Main Layout"
+#~ msgstr "Layout Principale"
+
+#~ msgid "New Storefront Page"
+#~ msgstr "Nuova Pagina Vetrina"
+
+#~ msgid "Page Header"
+#~ msgstr "Intestazione Pagina"
+
+#~ msgid "Remove Photo"
+#~ msgstr "Rimuovi Foto"
+
+#~ msgid "Saving..."
+#~ msgstr "Salvataggio…"
+
+#~ msgid "Select Text Align..."
+#~ msgstr "Seleziona Allineamento Testo…"
+
+#~ msgid "Show quick add button"
+#~ msgstr "Mostra Bottone di Aggiunta Rapida"
+
+#~ msgid "Top Categories by Sales"
+#~ msgstr "Top Categorie per Vendite"

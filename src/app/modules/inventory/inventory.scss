@@ -1,0 +1,58 @@
+
+.enter-code {
+  width: 400px;
+  height: 240px;
+  margin-left: -170px;
+  margin-top: -120px;
+}
+
+.inventory-thumbnail {
+  float: left;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+  margin: 0 10px 10px 0;
+
+  img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: content-box;
+  }
+
+
+}
+.inventory-name{
+   display:block;
+ }
+.grid ._inventory-item p.thumbnail-text{
+  font-size:0.8em;
+  margin-bottom:0;
+  line-height: 1.1em;
+}
+
+.table__condensed {
+  font-size: 0.9em;
+  line-height: 1.3em;
+  font-family: Lato, "Open Sans", "Helvetica Neue", Helvetica, "Arial Sans";
+
+  tr {
+    height: 21px;
+  }
+
+  ._undelined {
+    border-bottom: 1px solid black;
+  }
+
+  th, td {
+    padding: 0;
+  }
+
+  ._align-right {
+    text-align: right;
+  }
+
+  ._align-center {
+    text-align: center;
+    padding-left: 20px;
+  }
+}
